@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
     [SerializeField] private TextMeshProUGUI moneyText;
     private int money;
+    [SerializeField] private UpgradeManager upgradeManager;
 
     private void Awake()
     {
@@ -28,5 +29,15 @@ public class UIManager : MonoBehaviour
     {
         money += amount;
         moneyText.text = money.ToString();
+    }
+
+    public void ShowUpgradeMenu()
+    {
+        upgradeManager.gameObject.SetActive(true);
+    }
+
+    public void HideUpgradeMenu()
+    {
+        upgradeManager.gameObject.SetActive(false);
     }
 }

@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
 
-    public float power;
+    public ScrapeTool tool;
     [SerializeField] private PlayerMovementController movementController;
     [SerializeField] private List<Collectable> collectables;
     [SerializeField] private int collectablesLimit;
@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnPeelableDetection(float amount, float _power)
     {
-        if (power > _power)
+        if (tool.power > _power)
             amount = 100;
         movementController.SetSpeedMultiplayer(amount);
     }
