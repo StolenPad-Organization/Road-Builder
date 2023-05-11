@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &22437032
 RectTransform:
   m_ObjectHideFlags: 0
@@ -93,7 +93,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &22402050
 RectTransform:
   m_ObjectHideFlags: 0
@@ -169,7 +169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &22403860
 RectTransform:
   m_ObjectHideFlags: 0
@@ -483,12 +483,12 @@ MonoBehaviour:
   tensionAccentRight: {fileID: 11499812}
   scalingAxis: 1
   anchor: 0
-  joystickTouchSize: 0
-  joystickSize: 2.5
-  radiusModifier: 4.5
-  dynamicPositioning: 0
-  customTouchSize_X: 50
-  customTouchSize_Y: 75
+  joystickTouchSize: 3
+  joystickSize: 3
+  radiusModifier: 5
+  dynamicPositioning: 1
+  customTouchSize_X: 100
+  customTouchSize_Y: 100
   customTouchSizePos_X: 0
   customTouchSizePos_Y: 0
   customSpacing_X: 5
@@ -502,16 +502,16 @@ MonoBehaviour:
   targetTapCount: 2
   deadZone: 0
   disableVisuals: 0
-  useFade: 0
-  fadeUntouched: 1
-  fadeTouched: 0.5
+  useFade: 1
+  fadeUntouched: 0
+  fadeTouched: 0
   fadeInDuration: 1
   fadeOutDuration: 1
   useAnimation: 0
   joystickAnimator: {fileID: 9597794}
-  showHighlight: 1
+  showHighlight: 0
   highlightColor: {r: 1, g: 1, b: 1, a: 1}
-  showTension: 1
+  showTension: 0
   tensionColorNone: {r: 0, g: 0, b: 0, a: 0.34509805}
   tensionColorFull: {r: 0.118, g: 0.992, b: 0, a: 1}
   joystickName: 
@@ -543,7 +543,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167390}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -586,8 +586,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.1362305, y: 1.136261}
-  m_SizeDelta: {x: 227.25, y: 227.25}
+  m_AnchoredPosition: {x: 22.53003, y: 388.92004}
+  m_SizeDelta: {x: 833.4, y: 833.4}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &183738
 GameObject:
@@ -606,7 +606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &22424358
 RectTransform:
   m_ObjectHideFlags: 0

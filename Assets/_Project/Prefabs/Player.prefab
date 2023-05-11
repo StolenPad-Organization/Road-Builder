@@ -245,12 +245,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ef8c718fd8897e47a253288f94bf6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 20
   movementController: {fileID: 292923692710631058}
   collectables: []
   collectablesLimit: 10
   collectableOffest: 0.25
   collectableParent: {fileID: 292923691918724916}
+  scrapeTool: {fileID: 0}
+  scrapeToolsPrefabs:
+  - {fileID: 1388916831762253005, guid: 518b85797c9f16949b276ec6d2ca23ad, type: 3}
+  - {fileID: 1388916831762253005, guid: 213a7668060dc764d84580ce29b6933d, type: 3}
+  - {fileID: 1388916831762253005, guid: 9d99ffbe5a94e3a4aaa2d10894f290eb, type: 3}
+  - {fileID: 1388916831762253005, guid: fa083924d98966a428f140ded2fec74d, type: 3}
+  - {fileID: 1388916831762253005, guid: 81be2824ceb551b4ea93a1254083dadf, type: 3}
+  scrapeToolIndex: 0
+  scrapeToolHolder: {fileID: 438134064}
 --- !u!54 &292923692710631060
 Rigidbody:
   m_ObjectHideFlags: 0

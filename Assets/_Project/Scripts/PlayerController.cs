@@ -6,12 +6,18 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
 
-    public ScrapeTool tool;
+    
     [SerializeField] private PlayerMovementController movementController;
     [SerializeField] private List<Collectable> collectables;
     [SerializeField] private int collectablesLimit;
     [SerializeField] private float collectableOffest;
     [SerializeField] private Transform collectableParent;
+
+    [Header("Scrape Tools")]
+    public ScrapeTool scrapeTool;
+    [SerializeField] private ScrapeTool[] scrapeToolsPrefabs;
+    public int scrapeToolIndex;
+    [SerializeField] private Transform scrapeToolHolder;
 
     private void Awake()
     {
@@ -20,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        
+        ChangeScrapeTool(scrapeToolIndex);
     }
 
     void Update()
@@ -30,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnPeelableDetection(float amount, float _power)
     {
-        if (tool.power > _power)
+        if (scrapeTool.power > _power)
             amount = 100;
         movementController.SetSpeedMultiplayer(amount);
     }
@@ -48,5 +54,12 @@ public class PlayerController : MonoBehaviour
         Collectable collectable = collectables[collectables.Count - 1];
         collectables.Remove(collectable);
         collectable.Sell(sellPoint);
+    }
+
+    public void ChangeScrapeTool(int index)
+    {
+        if(scrapeTool != null)
+            Destroy(scrapeTool.gameObject);
+        scrapeTool = Instantiate(scrapeToolsPrefabs[index], scrapeToolHolder);
     }
 }

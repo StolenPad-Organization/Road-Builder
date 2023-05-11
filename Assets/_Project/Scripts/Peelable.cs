@@ -25,7 +25,7 @@ public class Peelable : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        power -= PlayerController.instance.tool.power;
+        power -= PlayerController.instance.scrapeTool.power;
         if(power <= 0)
         {
             CollectablesPooler.Instance.GetCollectable(collectableType, transform.position);
