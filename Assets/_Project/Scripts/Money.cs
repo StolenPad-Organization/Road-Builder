@@ -29,6 +29,7 @@ public class Money : MonoBehaviour
     {
         target.used = false;
         MoneyPooler.instance.ReturnMoney(this);
+        UIManager.instance.UpdateMoney(value);
     }
 
     void Update()
