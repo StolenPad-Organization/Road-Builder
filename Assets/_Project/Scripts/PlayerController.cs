@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField] private PlayerMovementController movementController;
     [SerializeField] private List<Collectable> collectables;
-    [SerializeField] private int collectablesLimit;
+    [SerializeField] private float collectablesLimit;
     [SerializeField] private float collectableOffest;
     [SerializeField] private Transform collectableParent;
 
@@ -61,5 +61,10 @@ public class PlayerController : MonoBehaviour
         if(scrapeTool != null)
             Destroy(scrapeTool.gameObject);
         scrapeTool = Instantiate(scrapeToolsPrefabs[index], scrapeToolHolder);
+    }
+
+    public void UpgradeCollectablesLimit(float value)
+    {
+        collectablesLimit = value;
     }
 }

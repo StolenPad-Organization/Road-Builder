@@ -6,6 +6,7 @@ public class UpgradeManager : MonoBehaviour
 {
     private PlayerController playerController;
     [SerializeField] private Upgrade shovelUpgrade;
+    [SerializeField] private Upgrade loadUpgrade;
 
     private void Start()
     {
@@ -24,5 +25,10 @@ public class UpgradeManager : MonoBehaviour
             playerController.scrapeToolIndex++;
             playerController.ChangeScrapeTool(playerController.scrapeToolIndex);
         }
+    }
+
+    public void OnLoadUpgrade()
+    {
+        playerController.UpgradeCollectablesLimit(loadUpgrade.value);
     }
 }

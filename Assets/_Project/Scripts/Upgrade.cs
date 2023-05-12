@@ -11,7 +11,7 @@ public class Upgrade : MonoBehaviour
     public int level;
     [SerializeField] private TextMeshProUGUI levelText;
     public float value;
-    [SerializeField] private float addValue;
+    public float addValue;
     [SerializeField] private Image[] steps;
     public int stepIndex;
     [SerializeField] private Color lockedStepColor;
