@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
 
-    
     [SerializeField] private PlayerMovementController movementController;
     [SerializeField] private List<Collectable> collectables;
     [SerializeField] private float collectablesLimit;
     [SerializeField] private float collectableOffest;
     [SerializeField] private Transform collectableParent;
+    [SerializeField] private GameObject model;
+    public AsphaltMachine asphaltMachine;
 
     [Header("Scrape Tools")]
     public ScrapeTool scrapeTool;
@@ -66,5 +68,21 @@ public class PlayerController : MonoBehaviour
     public void UpgradeCollectablesLimit(float value)
     {
         collectablesLimit = value;
+    }
+
+    public void GetOnAsphaltMachine(Transform playerSeat, AsphaltMachine _asphaltMachine)
+    {
+        asphaltMachine = _asphaltMachine;
+        movementController.canMove = false;
+        model.transform.SetParent(playerSeat);
+        model.transform.DOLocalJump(Vector3.zero, 2, 1, 0.7f);
+        model.transform.DOScale(1, 0.7f);
+        model.transform.DOLocalRotate(Vector3.zero, 0.7f);
+        transform.rotation = _asphaltMachine.transform.rotation;
+        transform.DOMove(_asphaltMachine.transform.position, 0.7f).OnComplete(() =>
+        {
+            _asphaltMachine.transform.SetParent(transform);
+            movementController.canMove = true; 
+        });
     }
 }

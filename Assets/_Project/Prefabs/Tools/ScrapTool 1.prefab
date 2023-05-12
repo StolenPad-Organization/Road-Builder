@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 222581348081985425}
   - component: {fileID: 1388916831762253005}
   - component: {fileID: 6006367521167905721}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: ScrapTool 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e633e2ebf0c4cf4585512fa882ee642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolType: 1
   power: 2
   shovelHead: {fileID: 590284875681865764}
   scaleFactor: 0.5
@@ -76,7 +75,7 @@ GameObject:
   m_Component:
   - component: {fileID: 222581349565768565}
   - component: {fileID: 222581349565768566}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 222581349636887287}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8188981331604995591}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: shovel1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +186,7 @@ GameObject:
   - component: {fileID: 5974243042452792568}
   - component: {fileID: 7739730407792560645}
   - component: {fileID: 1805070711224813890}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +270,7 @@ GameObject:
   - component: {fileID: 5175555590586780546}
   - component: {fileID: 5055955708890261288}
   - component: {fileID: 2391011761862652283}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface6
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -250,6 +250,8 @@ MonoBehaviour:
   collectablesLimit: 10
   collectableOffest: 0.25
   collectableParent: {fileID: 292923691918724916}
+  model: {fileID: 292923692308197820}
+  asphaltMachine: {fileID: 0}
   scrapeTool: {fileID: 0}
   scrapeToolsPrefabs:
   - {fileID: 1388916831762253005, guid: 518b85797c9f16949b276ec6d2ca23ad, type: 3}
@@ -283,7 +285,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292923692710631056}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
