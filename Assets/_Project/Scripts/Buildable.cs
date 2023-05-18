@@ -29,7 +29,11 @@ public class Buildable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        BuildPiece();
+        if(PlayerController.instance.asphaltMachine != null)
+        {
+            if(PlayerController.instance.asphaltMachine.UseAsphalt())
+                BuildPiece();
+        }
     }
 
     private void BuildPiece()

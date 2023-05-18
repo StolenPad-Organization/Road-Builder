@@ -9,9 +9,15 @@ public class AsphaltMachine : MonoBehaviour
     [SerializeField] private GameObject playerTrigger;
     [SerializeField] private GameObject partsTrigger;
     private bool used;
+    [SerializeField] private int asphaltCount;
+    [SerializeField] private int asphaltCapacity;
+    [SerializeField] private GameObject[] asphaltObjects;
+    [SerializeField] private int consumeRate;
+    [SerializeField] private int consumeValue;
+
     void Start()
     {
-        
+        asphaltCapacity = asphaltObjects.Length;
     }
 
     void Update()
@@ -28,5 +34,31 @@ public class AsphaltMachine : MonoBehaviour
             playerTrigger.SetActive(false);
             partsTrigger.SetActive(true);
         }
+    }
+
+    public void FillAsphalt()
+    {
+        if (asphaltCount >= asphaltCapacity) return;
+        asphaltObjects[asphaltCount].SetActive(true);
+        asphaltCount++;
+    }
+
+    public bool UseAsphalt()
+    {
+        if (asphaltCount <= 0)
+        { 
+            return false; 
+        }
+        if (consumeRate == consumeValue)
+        {
+            consumeValue = 0;
+            asphaltCount--;
+            asphaltObjects[asphaltCount].SetActive(false);
+        }
+        else
+        {
+            consumeValue++;
+        }    
+        return true;
     }
 }

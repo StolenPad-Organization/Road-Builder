@@ -4,7 +4,7 @@ public class PaintArea : MonoBehaviour
 {
     public GameObject paintObjectPrefab;
     public Transform paintParent;
-    public Collider paintAreaCollider;
+    public Collider[] paintAreaColliders;
 
     public float paintRadius = 1f;
 
@@ -15,10 +15,12 @@ public class PaintArea : MonoBehaviour
         if (isPainting)
         {
             Vector3 playerPosition = transform.position;
-
-            if (paintAreaCollider.bounds.Contains(playerPosition))
+            for (int i = 0; i < paintAreaColliders.Length; i++)
             {
-                GameObject paintObject = Instantiate(paintObjectPrefab, playerPosition, transform.rotation, paintParent);
+                if (paintAreaColliders[i].bounds.Contains(playerPosition))
+                {
+                    GameObject paintObject = Instantiate(paintObjectPrefab, playerPosition, transform.rotation, paintParent);
+                }
             }
         }
     }

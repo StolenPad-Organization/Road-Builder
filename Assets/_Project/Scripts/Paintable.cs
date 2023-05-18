@@ -25,7 +25,11 @@ public class Paintable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        PaintPiece();
+        if (PlayerController.instance.paintMachine != null)
+        {
+            if (PlayerController.instance.paintMachine.UsePaint())
+                PaintPiece();
+        }
     }
 
     private void PaintPiece()
@@ -34,9 +38,9 @@ public class Paintable : MonoBehaviour
         paintableRenderer.enabled = true;
         transform.position = PlayerController.instance.paintMachine.partsSpawnPoint.position + PlayerController.instance.paintMachine.partsSpawnPoint.right * Random.Range(-0.5f, 0.5f);
         transform.localScale = Vector3.zero;
-        transform.DOLocalJump(initialPos, 1.5f, 1, 0.5f);
-        transform.DOLocalRotate(initialRot, 0.5f);
-        transform.DOScale(initialscale, 0.5f);
+        transform.DOLocalMove(initialPos, 0.3f);
+        transform.DOLocalRotate(initialRot, 0.3f);
+        transform.DOScale(initialscale, 0.3f);
     }
 
     public void SetPaintableEditor()
