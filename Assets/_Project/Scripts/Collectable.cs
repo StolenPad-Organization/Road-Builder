@@ -7,6 +7,7 @@ public class Collectable : MonoBehaviour
 {
     public CollectableType collectableType;
     [SerializeField] private Collider collectableCollider;
+    public Peelable peelable;
     void Start()
     {
         
@@ -14,10 +15,10 @@ public class Collectable : MonoBehaviour
 
     private void OnEnable()
     {
-        Spawn();
+        //Spawn();
     }
 
-    private void Spawn()
+    public void Spawn()
     {
         collectableCollider.enabled = false;
         transform.DOJump(transform.position, 1, 1, 0.4f).OnComplete(() =>
@@ -31,6 +32,7 @@ public class Collectable : MonoBehaviour
         collectableCollider.enabled = false;
         transform.SetParent(collectableParent);
         transform.DOLocalJump(Vector3.up * index * collectableOffest, collectableOffest * index * 3, 1, 0.4f);
+        peelable.OnCollect();
     }
 
     private void OnTriggerEnter(Collider other)

@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class Peelable : MonoBehaviour
 {
+    [SerializeField] private int index;
     [SerializeField] private float power;
     [SerializeField] private float speedAmount;
     [SerializeField] private CollectableType collectableType;
@@ -28,8 +30,30 @@ public class Peelable : MonoBehaviour
         power -= PlayerController.instance.scrapeTool.power;
         if(power <= 0)
         {
-            CollectablesPooler.Instance.GetCollectable(collectableType, transform.position);
+            GameManager.instance.SavePeelable(index, true, false);
+            Collectable collectable = CollectablesPooler.Instance.GetCollectable(collectableType, transform.position);
+            collectable.peelable = this;
+            collectable.Spawn();
             gameObject.SetActive(false);
+            GameManager.instance.OnBlockRemove();
         }
+    }
+
+    public void SetPeelableEditor(int _index)
+    {
+        index = _index;
+        EditorUtility.SetDirty(this);
+        EditorUtility.SetDirty(gameObject);
+    }
+
+    public void LoadCollectable()
+    {
+        Collectable collectable = CollectablesPooler.Instance.GetCollectable(collectableType, transform.position);
+        collectable.peelable = this;
+    }
+
+    public void OnCollect()
+    {
+        GameManager.instance.SavePeelable(index, true, true);
     }
 }

@@ -47,5 +47,6 @@ MonoBehaviour:
   collectablesPrefabs:
   - {fileID: 4225926424727637272, guid: b3efb4f5456ff6b4cae1ff9fb4d652b1, type: 3}
   - {fileID: 4225926424727637272, guid: 8b3c8dd4195651c4a9770694b5d17dd9, type: 3}
-  poolSize: 5
+  poolSize: 10
   expandable: 1
+  collectableParent: {fileID: 0}

@@ -18,9 +18,20 @@ public class PaintableManager : MonoBehaviour
     [ContextMenu("Set Paintable Parts")]
     private void SetPaintableParts()
     {
-        foreach (var part in paintableParts)
+        for (int i = 0; i < paintableParts.Length; i++)
         {
-            part.SetPaintableEditor();
+            paintableParts[i].SetPaintableEditor(i);
+        }
+    }
+
+    public void LoadPaintables(List<PaintableData> paintableDatas)
+    {
+        for (int i = 0; i < paintableParts.Length; i++)
+        {
+            if (paintableDatas[i].IsPainted)
+            {
+                paintableParts[i].LoadPaintable();
+            }
         }
     }
 }

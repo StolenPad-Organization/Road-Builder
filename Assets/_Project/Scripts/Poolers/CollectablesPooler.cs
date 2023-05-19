@@ -14,6 +14,7 @@ public class CollectablesPooler : MonoBehaviour
     public List<Collectable> collectablesPrefabs;
     [SerializeField] private int poolSize = 5;
     [SerializeField] private bool expandable = true;
+    [SerializeField] private Transform collectableParent;
 
     private Dictionary<CollectableType, Queue<Collectable>> poolDictionary = new Dictionary<CollectableType, Queue<Collectable>>();
 
@@ -30,7 +31,7 @@ public class CollectablesPooler : MonoBehaviour
 
             for (int i = 0; i < poolSize; i++)
             {
-                Collectable obj = Instantiate(collectable);
+                Collectable obj = Instantiate(collectable, collectableParent);
                 obj.gameObject.SetActive(false);
                 objectPool.Enqueue(obj);
             }
@@ -57,7 +58,7 @@ public class CollectablesPooler : MonoBehaviour
                 {
                     if (item.collectableType == collectableType)
                     {
-                        obj = Instantiate(item);
+                        obj = Instantiate(item, collectableParent);
                         break;
                     }
                 }

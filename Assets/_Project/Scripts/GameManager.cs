@@ -1,0 +1,201 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public enum LevelState
+{
+    PeelingStage,
+    BuildingStage,
+    PaintingStage
+}
+
+public class GameManager : MonoBehaviour
+{
+    public static GameManager instance;
+
+    [SerializeField] private PlayerController player;
+    [SerializeField] private LevelState levelState;
+    [SerializeField] private GameObject removableBlock;
+    [SerializeField] private GameObject upgrades;
+    [SerializeField] private AsphaltMachine asphaltMachine;
+    [SerializeField] private GameObject asphaltBlock;
+    [SerializeField] private AsphaltAmmo asphaltAmmo;
+    [SerializeField] private PaintingMachine paintingMachine;
+    [SerializeField] private GameObject paintBlock;
+    [SerializeField] private PaintAmmo paintAmmo;
+
+    [Header("Blocks Progress")]
+    [SerializeField] private int maxBlocks;
+    [SerializeField] private int currentBlocks;
+    [SerializeField] private PeelableManager peelableManager;
+
+    [Header("Asphalt Progress")]
+    [SerializeField] private int maxAsphalt;
+    [SerializeField] private int currentAsphalt;
+    [SerializeField] private BuildableManager buildableManager;
+
+    [Header("Paint Progress")]
+    [SerializeField] private int maxPaint;
+    [SerializeField] private int currentPaint;
+    [SerializeField] private PaintableManager paintableManager;
+
+    [Header("level Progress")]
+    private LevelData levelData;
+    private LevelProgressData levelProgressData;
+    private PlayerData playerData;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    IEnumerator Start()
+    {
+        player = PlayerController.instance;
+        levelData = Database.Instance.GetLevelData();
+        levelProgressData = Database.Instance.GetLevelProgressData(levelData.LevelValue - 1);
+        playerData = Database.Instance.GetPlayerData();
+        yield return new WaitForEndOfFrame();
+        LoadStage();
+    }
+
+    void Update()
+    {
+        
+    }
+
+    public void OnBlockRemove()
+    {
+        currentBlocks++;
+        CheckBlocks();
+    }
+    private void CheckBlocks()
+    {
+        if (currentBlocks == maxBlocks)
+            ShowAsphaltMachine();
+    }
+    private void ShowAsphaltMachine()
+    {
+        levelState = LevelState.BuildingStage;
+        asphaltMachine.gameObject.SetActive(true);
+    }
+    public void StartAsphaltStage()
+    {
+        upgrades.SetActive(false);
+        removableBlock.SetActive(false);
+        //PlayerController.instance.RemovePeelingAndCollectingTools();
+        asphaltBlock.SetActive(true);
+        asphaltAmmo.gameObject.SetActive(true);
+    }
+
+    public void OnRoadBuild()
+    {
+        currentAsphalt++;
+        CheckAsphalt();
+    }
+    private void CheckAsphalt()
+    {
+        if (currentAsphalt == maxAsphalt)
+            ShowPaintMachine();
+    }
+    private void ShowPaintMachine()
+    {
+        levelState = LevelState.PaintingStage;
+        PlayerController.instance.GetOffAsphaltMachine();
+        paintingMachine.gameObject.SetActive(true);
+    }
+    public void StartPaintStage()
+    {
+        //PlayerController.instance.GetOffAsphaltMachine();
+        asphaltAmmo.gameObject.SetActive(false);
+        paintBlock.SetActive(true);
+        paintAmmo.gameObject.SetActive(true);
+    }
+
+    public void OnRoadPaint()
+    {
+        currentPaint++;
+        CheckPaint();
+    }
+    private void CheckPaint()
+    {
+        if (currentPaint == maxPaint)
+            Win();
+    }
+    private void Win()
+    {
+        Debug.Log("YOU WIN!");
+        // Unlock next level and reset this level progress (if the player can play again this level)
+    }
+
+    private void LoadStage()
+    {
+        // Load player position and rotation
+        player.transform.position = playerData.PlayerPosition;
+        player.transform.eulerAngles = playerData.PlayerRotation;
+
+        //load level State
+        levelState = levelProgressData.LevelState;
+
+        switch (levelState)
+        {
+            case LevelState.PeelingStage:
+                // load collectables and peelables
+                peelableManager.LoadPeelables(levelProgressData.PeelableDatas);
+                break;
+            case LevelState.BuildingStage:
+                // load buildable and building machine
+                buildableManager.LoadBuildables(levelProgressData.BuildableDatas);
+                upgrades.SetActive(false);
+                removableBlock.SetActive(false);
+                asphaltMachine.gameObject.SetActive(true);
+                asphaltBlock.SetActive(true);
+                break;
+            case LevelState.PaintingStage:
+                // load paintable and painting machine and buildables
+                buildableManager.LoadBuildables(levelProgressData.BuildableDatas);
+                paintableManager.LoadPaintables(levelProgressData.PaintableDatas);
+                upgrades.SetActive(false);
+                removableBlock.SetActive(false);
+                asphaltBlock.SetActive(true);
+                paintingMachine.gameObject.SetActive(true);
+                paintBlock.gameObject.SetActive(true);
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void OnApplicationQuit()
+    {
+        SaveStage();
+        Database.Instance.SaveData();
+    }
+
+    private void SaveStage()
+    {
+        // save all levelprogress data and player data
+        levelProgressData.LevelState = levelState;
+        playerData.PlayerPosition = player.transform.position;
+        playerData.PlayerRotation = player.transform.eulerAngles;
+
+        Database.Instance.SetLevelProgressData(levelProgressData, levelData.LevelValue - 1);
+        Database.Instance.SetPlayerData(playerData);
+    }
+
+    public void SavePeelable(int index, bool isPeeled, bool isCollected)
+    {
+        levelProgressData.PeelableDatas[index].IsPeeled = isPeeled;
+        levelProgressData.PeelableDatas[index].IsCollected = isCollected;
+    }
+
+    public void SaveBuildable(int index, bool isBuilded)
+    {
+        levelProgressData.BuildableDatas[index].IsBuilded = isBuilded;
+    }
+
+    public void SavePaintable(int index, bool IsPainted)
+    {
+        levelProgressData.PaintableDatas[index].IsPainted = IsPainted;
+    }
+}

@@ -36,10 +36,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            GetOffAsphaltMachine();
-        }
+
     }
 
     public void OnPeelableDetection(float amount, float _power)
@@ -94,6 +91,7 @@ public class PlayerController : MonoBehaviour
 
     public void GetOnAsphaltMachine(Transform playerSeat, AsphaltMachine _asphaltMachine)
     {
+        RemovePeelingAndCollectingTools();
         asphaltMachine = _asphaltMachine;
         movementController.canMove = false;
         model.transform.SetParent(playerSeat);
@@ -104,12 +102,14 @@ public class PlayerController : MonoBehaviour
         transform.DOMove(_asphaltMachine.transform.position, 0.7f).OnComplete(() =>
         {
             _asphaltMachine.transform.SetParent(transform);
-            movementController.canMove = true; 
+            movementController.canMove = true;
+            GameManager.instance.StartAsphaltStage();
         });
     }
 
     public void GetOffAsphaltMachine()
     {
+        if (asphaltMachine == null) return;
         asphaltMachine.gameObject.SetActive(false);
         asphaltMachine.transform.SetParent(null);
         model.transform.SetParent(transform);
@@ -121,5 +121,13 @@ public class PlayerController : MonoBehaviour
     public void ActivateWheelBarrow(WheelBarrow _wheelBarrow)
     {
         wheelBarrow = _wheelBarrow;
+    }
+
+    public void RemovePeelingAndCollectingTools()
+    {
+        if(wheelBarrow != null)
+            wheelBarrow.gameObject.SetActive(false);
+        collectableParent.gameObject.SetActive(false);
+        scrapeToolHolder.gameObject.SetActive(false);
     }
 }

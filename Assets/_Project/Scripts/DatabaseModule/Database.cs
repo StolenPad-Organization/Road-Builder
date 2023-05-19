@@ -121,4 +121,24 @@ public class Database : MonoBehaviour
     {
         data.LevelData = value;
     }
+
+    public PlayerData GetPlayerData()
+    {
+        return data.PlayerData;
+    }
+
+    public void SetPlayerData(PlayerData value)
+    {
+        data.PlayerData = value;
+    }
+
+    public LevelProgressData GetLevelProgressData(int index)
+    {
+        return data.LevelProgressDatas[index];
+    }
+
+    public void SetLevelProgressData(LevelProgressData value, int index)
+    {
+        data.LevelProgressDatas[index] = value;
+    }
 }

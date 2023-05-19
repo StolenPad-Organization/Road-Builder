@@ -18,9 +18,20 @@ public class BuildableManager : MonoBehaviour
     [ContextMenu("Set Buildable Parts")]
     private void SetBuildableParts()
     {
-        foreach (var part in buildableParts)
+        for (int i = 0; i < buildableParts.Length; i++)
         {
-            part.SetBuildableEditor();
+            buildableParts[i].SetBuildableEditor(i);
+        }
+    }
+
+    public void LoadBuildables(List<BuildableData> buildableDatas)
+    {
+        for (int i = 0; i < buildableParts.Length; i++)
+        {
+            if (buildableDatas[i].IsBuilded)
+            {
+                buildableParts[i].LoadBuildable();
+            }
         }
     }
 }

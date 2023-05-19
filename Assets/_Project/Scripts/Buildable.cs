@@ -6,6 +6,7 @@ using UnityEditor;
 
 public class Buildable : MonoBehaviour
 {
+    [SerializeField] private int index;
     [SerializeField] private Renderer buildableRenderer;
     [SerializeField] private Collider buildableCollider;
     [SerializeField] private Vector3 initialPos;
@@ -38,12 +39,14 @@ public class Buildable : MonoBehaviour
 
     private void BuildPiece()
     {
+        GameManager.instance.SaveBuildable(index, true);
         buildableCollider.enabled = false;
         buildableRenderer.enabled = true;
         transform.position = PlayerController.instance.asphaltMachine.partsSpawnPoint.position + PlayerController.instance.asphaltMachine.partsSpawnPoint.right * Random.Range(-1.5f, 1.5f);
         transform.localScale = Vector3.zero;
-        transform.DOLocalJump(initialPos, 0.25f, 1, 0.25f).OnComplete(()=> 
+        transform.DOLocalJump(initialPos, 0.25f, 1, 0.25f).OnComplete(()=>
         {
+            GameManager.instance.OnRoadBuild();
             //smoke = SmokePooler.instance.GetSmoke();
             //smoke.transform.position = transform.position + Vector3.up * 0.2f;
         });
@@ -62,11 +65,21 @@ public class Buildable : MonoBehaviour
             });
     }
 
-    public void SetBuildableEditor()
+    public void SetBuildableEditor(int _index)
     {
+        index = _index;
         buildableCollider = GetComponent<Collider>();
         buildableRenderer = GetComponent<Renderer>();
         EditorUtility.SetDirty(this);
         EditorUtility.SetDirty(gameObject);
+    }
+
+    public void LoadBuildable()
+    {
+        buildableCollider.enabled = false;
+        buildableRenderer.enabled = true;
+        GameManager.instance.OnRoadBuild();
+        Material material = buildableRenderer.material;
+        material.SetColor("_EmissionColor", Color.black);
     }
 }
