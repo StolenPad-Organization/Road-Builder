@@ -14,6 +14,11 @@ public class PlayerData
     public int Money = 0;
     public Vector3 PlayerPosition;
     public Vector3 PlayerRotation;
+    public bool HasWheelBarrow;
+    public Vector3 WheelBarrowPosition;
+    public Vector3 WheelBarrowRotation;
+    public List<CollectableData> wheelBarrowCollectables;
+    public List<CollectableData> playerCollectables;
 }
 
 [System.Serializable]
@@ -42,4 +47,17 @@ public class LevelProgressData
     public List<PeelableData> PeelableDatas;
     public List<BuildableData> BuildableDatas;
     public List<PaintableData> PaintableDatas;
+}
+
+[System.Serializable]
+public class CollectableData
+{
+    public CollectableType CollectableType;
+    public Peelable Peelable;
+
+    public CollectableData(CollectableType collectableType, Peelable peelable)
+    {
+        CollectableType = collectableType;
+        Peelable = peelable;
+    }
 }

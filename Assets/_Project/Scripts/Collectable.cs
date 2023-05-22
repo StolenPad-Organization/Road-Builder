@@ -15,7 +15,7 @@ public class Collectable : MonoBehaviour
 
     private void OnEnable()
     {
-        //Spawn();
+        
     }
 
     public void Spawn()
@@ -50,5 +50,13 @@ public class Collectable : MonoBehaviour
             money.transform.position = SellManager.instance.transform.position;
             money.Spawn();
         });
+    }
+
+    public void LoadCollectable(int index, float collectableOffest, Transform collectableParent, Peelable _peelable)
+    {
+        collectableCollider.enabled = false;
+        transform.SetParent(collectableParent);
+        transform.localPosition = Vector3.up * index * collectableOffest;
+        peelable = _peelable;
     }
 }

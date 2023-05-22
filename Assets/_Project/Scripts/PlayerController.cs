@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject model;
     public AsphaltMachine asphaltMachine;
     public PaintingMachine paintMachine;
-    [SerializeField] private WheelBarrow wheelBarrow;
+    public WheelBarrow wheelBarrow;
     public Transform wheelBarrowFollowTransform;
 
     [Header("Scrape Tools")]
@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
         if (collectables.Count >= collectablesLimit) return;
         collectable.Collect(collectables.Count, collectableOffest, collectableParent);
         collectables.Add(collectable);
+        GameManager.instance.AddCollectableData(true, collectable.collectableType, collectable.peelable);
     }
 
     public void SellCollectable(Transform sellPoint)
@@ -75,6 +76,7 @@ public class PlayerController : MonoBehaviour
         Collectable collectable = collectables[collectables.Count - 1];
         collectables.Remove(collectable);
         collectable.Sell(sellPoint);
+        GameManager.instance.RemoveCollectableData(true, collectable.collectableType, collectable.peelable);
     }
 
     public void ChangeScrapeTool(int index)
@@ -129,5 +131,16 @@ public class PlayerController : MonoBehaviour
             wheelBarrow.gameObject.SetActive(false);
         collectableParent.gameObject.SetActive(false);
         scrapeToolHolder.gameObject.SetActive(false);
+    }
+
+    public void LoadCollectables(List<CollectableData> collectableDatas)
+    {
+        Collectable collectable;
+        for (int i = 0; i < collectableDatas.Count; i++)
+        {
+            collectable = CollectablesPooler.Instance.GetCollectable(collectableDatas[i].CollectableType, Vector3.down * 10);
+            collectable.LoadCollectable(collectables.Count, collectableOffest, collectableParent, collectableDatas[i].Peelable);
+            collectables.Add(collectable);
+        }
     }
 }

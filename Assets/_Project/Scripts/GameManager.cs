@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private PaintingMachine paintingMachine;
     [SerializeField] private GameObject paintBlock;
     [SerializeField] private PaintAmmo paintAmmo;
+    [SerializeField] private WheelBarrow wheelBarrow;
 
     [Header("Blocks Progress")]
     [SerializeField] private int maxBlocks;
@@ -142,6 +143,14 @@ public class GameManager : MonoBehaviour
             case LevelState.PeelingStage:
                 // load collectables and peelables
                 peelableManager.LoadPeelables(levelProgressData.PeelableDatas);
+                if (playerData.HasWheelBarrow)
+                {
+                    wheelBarrow.transform.position = playerData.WheelBarrowPosition;
+                    wheelBarrow.transform.eulerAngles = playerData.WheelBarrowRotation;
+                    wheelBarrow.ActivateWheelBarrow();
+                    wheelBarrow.LoadCollectables(playerData.wheelBarrowCollectables);
+                }
+                player.LoadCollectables(playerData.playerCollectables);
                 break;
             case LevelState.BuildingStage:
                 // load buildable and building machine
@@ -178,6 +187,12 @@ public class GameManager : MonoBehaviour
         levelProgressData.LevelState = levelState;
         playerData.PlayerPosition = player.transform.position;
         playerData.PlayerRotation = player.transform.eulerAngles;
+        if(player.wheelBarrow != null)
+        {
+            playerData.HasWheelBarrow = true;
+            playerData.WheelBarrowPosition = player.wheelBarrow.transform.position;
+            playerData.WheelBarrowRotation = player.wheelBarrow.transform.eulerAngles;
+        }
 
         Database.Instance.SetLevelProgressData(levelProgressData, levelData.LevelValue - 1);
         Database.Instance.SetPlayerData(playerData);
@@ -197,5 +212,48 @@ public class GameManager : MonoBehaviour
     public void SavePaintable(int index, bool IsPainted)
     {
         levelProgressData.PaintableDatas[index].IsPainted = IsPainted;
+    }
+
+    public void AddCollectableData(bool IsPlayer, CollectableType collectableType, Peelable peelable)
+    {
+        if (IsPlayer)
+        {
+            playerData.playerCollectables.Add(new CollectableData(collectableType, peelable));
+        }
+        else
+        {
+            playerData.wheelBarrowCollectables.Add(new CollectableData(collectableType, peelable));
+        }
+    }
+
+    public void RemoveCollectableData(bool IsPlayer, CollectableType collectableType, Peelable peelable)
+    {
+        CollectableData collectableData = null;
+        if (IsPlayer)
+        {
+            for (int i = 0; i < playerData.playerCollectables.Count; i++)
+            {
+                if(playerData.playerCollectables[i].CollectableType == collectableType && playerData.playerCollectables[i].Peelable == peelable)
+                {
+                    collectableData = playerData.playerCollectables[i];
+                    break;
+                }
+            }
+            if(collectableData != null)
+                playerData.playerCollectables.Remove(collectableData);
+        }
+        else
+        {
+            for (int i = 0; i < playerData.wheelBarrowCollectables.Count; i++)
+            {
+                if (playerData.wheelBarrowCollectables[i].CollectableType == collectableType && playerData.wheelBarrowCollectables[i].Peelable == peelable)
+                {
+                    collectableData = playerData.wheelBarrowCollectables[i];
+                    break;
+                }
+            }
+            if (collectableData != null)
+                playerData.wheelBarrowCollectables.Remove(collectableData);
+        }
     }
 }
