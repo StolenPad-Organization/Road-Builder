@@ -47,6 +47,7 @@ public class LevelProgressData
     public List<PeelableData> PeelableDatas;
     public List<BuildableData> BuildableDatas;
     public List<PaintableData> PaintableDatas;
+    public List<MoneyData> MoneyDatas;
 }
 
 [System.Serializable]
@@ -59,5 +60,18 @@ public class CollectableData
     {
         CollectableType = collectableType;
         Peelable = peelable;
+    }
+}
+
+[System.Serializable]
+public class MoneyData
+{
+    public int Index;
+    public int Price;
+
+    public MoneyData(int index, int price)
+    {
+        Index = index;
+        Price = price;
     }
 }

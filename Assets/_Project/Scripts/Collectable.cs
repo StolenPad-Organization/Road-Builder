@@ -8,6 +8,7 @@ public class Collectable : MonoBehaviour
     public CollectableType collectableType;
     [SerializeField] private Collider collectableCollider;
     public Peelable peelable;
+    public int price;
     void Start()
     {
         
@@ -48,7 +49,7 @@ public class Collectable : MonoBehaviour
             CollectablesPooler.Instance.ReturnCollectable(this);
             Money money = MoneyPooler.instance.GetMoney();
             money.transform.position = SellManager.instance.transform.position;
-            money.Spawn();
+            money.Spawn(price);
         });
     }
 

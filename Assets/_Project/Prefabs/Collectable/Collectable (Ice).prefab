@@ -48,6 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectableType: 0
   collectableCollider: {fileID: 4225926424727637273}
+  peelable: {fileID: 0}
+  price: 4
 --- !u!65 &4225926424727637273
 BoxCollider:
   m_ObjectHideFlags: 0

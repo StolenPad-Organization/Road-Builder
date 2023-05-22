@@ -13,8 +13,9 @@ public class Money : MonoBehaviour
         
     }
 
-    public void Spawn()
+    public void Spawn(int price)
     {
+        value = price;
         target = SellManager.instance.GetMoneySpot();
         if (target == null) return;
         target.used = true;
@@ -23,6 +24,7 @@ public class Money : MonoBehaviour
         {
             moneyCollider.enabled = true;
         });
+        GameManager.instance.AddMoneyData(target.index, value);
     }
 
     private void Collect()
@@ -30,6 +32,7 @@ public class Money : MonoBehaviour
         target.used = false;
         MoneyPooler.instance.ReturnMoney(this);
         UIManager.instance.UpdateMoney(value);
+        GameManager.instance.RemoveMoneyData(target.index, value);
     }
 
     void Update()
@@ -40,5 +43,13 @@ public class Money : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Collect();
+    }
+
+    public void LoadMoeny(int price, MoneySpot moneySpot)
+    {
+        value = price;
+        target = moneySpot;
+        target.used = true;
+        transform.position = target.transform.position;
     }
 }

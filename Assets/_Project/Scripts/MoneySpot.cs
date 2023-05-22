@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class MoneySpot : MonoBehaviour
 {
+    public int index;
     public bool used;
 }

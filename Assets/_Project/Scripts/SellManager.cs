@@ -19,7 +19,10 @@ public class SellManager : MonoBehaviour
 
     void Start()
     {
-        
+        for (int i = 0; i < moneySpots.Length; i++)
+        {
+            moneySpots[i].index = i;
+        }
     }
 
     void Update()
@@ -58,5 +61,15 @@ public class SellManager : MonoBehaviour
             }
         }
         return null;
+    }
+
+    public void LoadMoeny(List<MoneyData> moneyDatas)
+    {
+        Money money;
+        for (int i = 0; i < moneyDatas.Count; i++)
+        {
+            money = MoneyPooler.instance.GetMoney();
+            money.LoadMoeny(moneyDatas[i].Price, moneySpots[moneyDatas[i].Index]);
+        }
     }
 }

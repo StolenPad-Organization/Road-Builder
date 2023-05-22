@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject paintBlock;
     [SerializeField] private PaintAmmo paintAmmo;
     [SerializeField] private WheelBarrow wheelBarrow;
+    [SerializeField] private SellManager sellManager;
 
     [Header("Blocks Progress")]
     [SerializeField] private int maxBlocks;
@@ -151,6 +152,7 @@ public class GameManager : MonoBehaviour
                     wheelBarrow.LoadCollectables(playerData.wheelBarrowCollectables);
                 }
                 player.LoadCollectables(playerData.playerCollectables);
+                sellManager.LoadMoeny(levelProgressData.MoneyDatas);
                 break;
             case LevelState.BuildingStage:
                 // load buildable and building machine
@@ -255,5 +257,25 @@ public class GameManager : MonoBehaviour
             if (collectableData != null)
                 playerData.wheelBarrowCollectables.Remove(collectableData);
         }
+    }
+
+    public void AddMoneyData(int index, int price)
+    {
+        levelProgressData.MoneyDatas.Add(new MoneyData(index, price));
+    }
+
+    public void RemoveMoneyData(int index, int price)
+    {
+        MoneyData moneyData = null;
+        for (int i = 0; i < levelProgressData.MoneyDatas.Count; i++)
+        {
+            if(levelProgressData.MoneyDatas[i].Index == index && levelProgressData.MoneyDatas[i].Price == price)
+            {
+                moneyData = levelProgressData.MoneyDatas[i];
+                break;
+            }   
+        }
+        if (moneyData != null)
+            levelProgressData.MoneyDatas.Remove(moneyData);
     }
 }
