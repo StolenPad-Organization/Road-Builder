@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class UpgradeManager : MonoBehaviour
 {
-    private PlayerController playerController;
-    [SerializeField] private Upgrade shovelUpgrade;
-    [SerializeField] private Upgrade loadUpgrade;
+    public static UpgradeManager instance;
 
+    public PlayerController playerController;
+    public Upgrade shovelUpgrade;
+    public Upgrade loadUpgrade;
+
+    private void Awake()
+    {
+        instance = this;
+    }
     private void Start()
     {
-        playerController = PlayerController.instance;
+        //playerController = PlayerController.instance;
     }
 
     public void OnShovelUpgrade()
@@ -22,7 +28,7 @@ public class UpgradeManager : MonoBehaviour
         }
         else
         {
-            playerController.scrapeToolIndex++;
+            playerController.scrapeToolIndex = shovelUpgrade.loops;
             playerController.ChangeScrapeTool(playerController.scrapeToolIndex);
         }
     }
@@ -30,5 +36,13 @@ public class UpgradeManager : MonoBehaviour
     public void OnLoadUpgrade()
     {
         playerController.UpgradeCollectablesLimit(loadUpgrade.value);
+    }
+
+    public void LoadShovel()
+    {
+        playerController.scrapeToolIndex = shovelUpgrade.loops;
+        playerController.ChangeScrapeTool(playerController.scrapeToolIndex);
+        playerController.scrapeTool.UpdateShovelScale(shovelUpgrade.stepIndex);
+        playerController.scrapeTool.power = shovelUpgrade.value;
     }
 }

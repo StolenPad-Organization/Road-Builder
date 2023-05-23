@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private PaintAmmo paintAmmo;
     [SerializeField] private WheelBarrow wheelBarrow;
     [SerializeField] private SellManager sellManager;
+    [SerializeField] private UpgradeManager upgradeManager;
 
     [Header("Blocks Progress")]
     [SerializeField] private int maxBlocks;
@@ -59,6 +60,11 @@ public class GameManager : MonoBehaviour
         playerData = Database.Instance.GetPlayerData();
         yield return new WaitForEndOfFrame();
         LoadStage();
+        upgradeManager.playerController = player;
+        upgradeManager.shovelUpgrade.upgradeManager = upgradeManager;
+        upgradeManager.shovelUpgrade.LoadUpgrade();
+        upgradeManager.loadUpgrade.upgradeManager = upgradeManager;
+        upgradeManager.loadUpgrade.LoadUpgrade();
     }
 
     void Update()
@@ -195,6 +201,9 @@ public class GameManager : MonoBehaviour
             playerData.WheelBarrowPosition = player.wheelBarrow.transform.position;
             playerData.WheelBarrowRotation = player.wheelBarrow.transform.eulerAngles;
         }
+        playerData.Money = UIManager.instance.money;
+        UpgradeManager.instance.shovelUpgrade.SaveUpgradeData();
+        UpgradeManager.instance.loadUpgrade.SaveUpgradeData();
 
         Database.Instance.SetLevelProgressData(levelProgressData, levelData.LevelValue - 1);
         Database.Instance.SetPlayerData(playerData);

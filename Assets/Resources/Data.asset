@@ -17,8 +17,13 @@ MonoBehaviour:
     LevelTextValue: 1
   PlayerData:
     Money: 0
-    PlayerPosition: {x: 5.8104987, y: 0, z: 0.30681628}
-    PlayerRotation: {x: -0, y: 218.45372, z: 0}
+    PlayerPosition: {x: 1.3446137, y: 0, z: -5.1992188}
+    PlayerRotation: {x: -0, y: 236.95659, z: 0}
+    HasWheelBarrow: 0
+    WheelBarrowPosition: {x: 0, y: 0, z: 0}
+    WheelBarrowRotation: {x: 0, y: 0, z: 0}
+    wheelBarrowCollectables: []
+    playerCollectables: []
   LevelProgressDatas:
   - LevelState: 0
     PeelableDatas:
@@ -2520,3 +2525,17 @@ MonoBehaviour:
     - IsPainted: 0
     - IsPainted: 0
     - IsPainted: 0
+    MoneyDatas: []
+  upgradeDatas:
+  - upgradeType: 0
+    Loops: 0
+    Level: 0
+    Value: 1
+    StepIndex: -1
+    Cost: 20
+  - upgradeType: 1
+    Loops: 0
+    Level: 0
+    Value: 10
+    StepIndex: -1
+    Cost: 20

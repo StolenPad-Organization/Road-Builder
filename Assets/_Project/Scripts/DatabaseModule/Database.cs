@@ -141,4 +141,24 @@ public class Database : MonoBehaviour
     {
         data.LevelProgressDatas[index] = value;
     }
+
+    public UpgradeData GetUpgradeData(UpgradeType upgradeType)
+    {
+        for (int i = 0; i < data.upgradeDatas.Count; i++)
+        {
+            if (data.upgradeDatas[i].upgradeType == upgradeType)
+                return data.upgradeDatas[i];
+        }
+
+        return null;
+    }
+
+    public void SetUpgradeData(UpgradeType upgradeType, UpgradeData value)
+    {
+        for (int i = 0; i < data.upgradeDatas.Count; i++)
+        {
+            if (data.upgradeDatas[i].upgradeType == upgradeType)
+                data.upgradeDatas[i] = value;
+        }
+    }
 }

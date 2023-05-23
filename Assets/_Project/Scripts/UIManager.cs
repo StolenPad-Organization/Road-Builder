@@ -7,8 +7,9 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
     [SerializeField] private TextMeshProUGUI moneyText;
-    private int money;
+    public int money;
     [SerializeField] private UpgradeManager upgradeManager;
+    [SerializeField] private TextMeshProUGUI levelText;
 
     private void Awake()
     {
@@ -17,7 +18,8 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        UpdateMoney(0);
+        UpdateMoney(Database.Instance.GetPlayerData().Money);
+        levelText.text = "Level " + Database.Instance.GetLevelData().LevelTextValue;
     }
 
     void Update()

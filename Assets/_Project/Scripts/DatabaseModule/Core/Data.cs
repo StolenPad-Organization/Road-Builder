@@ -75,3 +75,14 @@ public class MoneyData
         Price = price;
     }
 }
+
+[System.Serializable]
+public class UpgradeData
+{
+    public UpgradeType upgradeType;
+    public int Loops;
+    public int Level;
+    public float Value;
+    public int StepIndex;
+    public int Cost;
+}
