@@ -202,8 +202,12 @@ public class GameManager : MonoBehaviour
             playerData.WheelBarrowRotation = player.wheelBarrow.transform.eulerAngles;
         }
         playerData.Money = UIManager.instance.money;
-        UpgradeManager.instance.shovelUpgrade.SaveUpgradeData();
-        UpgradeManager.instance.loadUpgrade.SaveUpgradeData();
+        //check for stage
+        if(levelState == LevelState.PeelingStage)
+        {
+            UpgradeManager.instance.shovelUpgrade.SaveUpgradeData();
+            UpgradeManager.instance.loadUpgrade.SaveUpgradeData();
+        }
 
         Database.Instance.SetLevelProgressData(levelProgressData, levelData.LevelValue - 1);
         Database.Instance.SetPlayerData(playerData);

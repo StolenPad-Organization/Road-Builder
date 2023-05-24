@@ -11,6 +11,8 @@ public class PaintingMachine : MonoBehaviour
     [SerializeField] private float paintValue;
     [SerializeField] private float paintFillRate;
     [SerializeField] private float paintConsumeRate;
+    public float paintDuration;
+    public float paintDelay;
 
     void Start()
     {
