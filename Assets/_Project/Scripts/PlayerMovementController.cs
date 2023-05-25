@@ -6,14 +6,16 @@ public class PlayerMovementController : MonoBehaviour
 {
     [SerializeField] private UltimateJoystick joystick;
     [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float paintMoveSpeed = 5f;
     [SerializeField] private Animator anim;
     private Vector3 moveDirection;
     public bool canMove = false;
     [SerializeField] private float speedMultiplayer = 100;
+    private PlayerController playerController;
 
     void Start()
     {
-        
+        playerController = PlayerController.instance;
     }
 
     public void SetSpeedMultiplayer(float amount)
@@ -28,7 +30,11 @@ public class PlayerMovementController : MonoBehaviour
         float horizontalInput = joystick.HorizontalAxis;
         float verticalInput = joystick.VerticalAxis;
 
-        moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized * (moveSpeed * (speedMultiplayer / 100));
+        if(playerController.paintMachine == null)
+            moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized * (moveSpeed * (speedMultiplayer / 100));
+        else
+            moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized * (paintMoveSpeed * (speedMultiplayer / 100));
+
         if (moveDirection != Vector3.zero)
         {
             transform.rotation = Quaternion.LookRotation(moveDirection);

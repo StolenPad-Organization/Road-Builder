@@ -24,6 +24,7 @@ public class Upgrade : MonoBehaviour
     [SerializeField] private Sprite[] lockedStepSprites;
     [SerializeField] private Sprite[] unlockedStepSprites;
     public UpgradeManager upgradeManager;
+    [SerializeField] private Button buyButton;
 
     [Header("Upgrade & Cost")]
     [SerializeField] private int cost;
@@ -79,6 +80,7 @@ public class Upgrade : MonoBehaviour
 
     public void Buy()
     {
+        UIManager.instance.UpdateMoney(-cost);
         cost += (costAddPrecentage * cost)/100;
         costText.text = cost.ToString();
         stepIndex++;
@@ -109,11 +111,20 @@ public class Upgrade : MonoBehaviour
         level++;
         levelText.text = "Lvl " + level;
         value += addValue;
+
+        upgradeManager.CheckButtons();
     }
 
-    private void CheckButton()
+    public void CheckButton()
     {
-
+        if(UIManager.instance.money < cost)
+        {
+            buyButton.interactable = false;
+        }
+        else
+        {
+            buyButton.interactable = true;
+        }
     }
 
     public void SaveUpgradeData()

@@ -65,6 +65,7 @@ public class GameManager : MonoBehaviour
         upgradeManager.shovelUpgrade.LoadUpgrade();
         upgradeManager.loadUpgrade.upgradeManager = upgradeManager;
         upgradeManager.loadUpgrade.LoadUpgrade();
+        upgradeManager.CheckButtons();
     }
 
     void Update()
@@ -79,6 +80,7 @@ public class GameManager : MonoBehaviour
     }
     private void CheckBlocks()
     {
+        UIManager.instance.UpdateProgressBar((float)currentBlocks / (float)maxBlocks);
         if (currentBlocks == maxBlocks)
             ShowAsphaltMachine();
     }
@@ -162,6 +164,7 @@ public class GameManager : MonoBehaviour
                 break;
             case LevelState.BuildingStage:
                 // load buildable and building machine
+                player.RemovePeelingAndCollectingTools();
                 buildableManager.LoadBuildables(levelProgressData.BuildableDatas);
                 upgrades.SetActive(false);
                 removableBlock.SetActive(false);
@@ -170,6 +173,7 @@ public class GameManager : MonoBehaviour
                 break;
             case LevelState.PaintingStage:
                 // load paintable and painting machine and buildables
+                player.RemovePeelingAndCollectingTools();
                 buildableManager.LoadBuildables(levelProgressData.BuildableDatas);
                 paintableManager.LoadPaintables(levelProgressData.PaintableDatas);
                 upgrades.SetActive(false);
@@ -203,11 +207,8 @@ public class GameManager : MonoBehaviour
         }
         playerData.Money = UIManager.instance.money;
         //check for stage
-        if(levelState == LevelState.PeelingStage)
-        {
-            UpgradeManager.instance.shovelUpgrade.SaveUpgradeData();
-            UpgradeManager.instance.loadUpgrade.SaveUpgradeData();
-        }
+        upgradeManager.shovelUpgrade.SaveUpgradeData();
+        upgradeManager.loadUpgrade.SaveUpgradeData();
 
         Database.Instance.SetLevelProgressData(levelProgressData, levelData.LevelValue - 1);
         Database.Instance.SetPlayerData(playerData);

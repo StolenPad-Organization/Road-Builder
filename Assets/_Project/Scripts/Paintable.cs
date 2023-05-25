@@ -67,5 +67,7 @@ public class Paintable : MonoBehaviour
         paintableCollider.enabled = false;
         paintableRenderer.enabled = true;
         GameManager.instance.OnRoadPaint();
+        Material mat = paintableRenderer.material;
+        mat.SetFloat("_Animation", 0.0f);
     }
 }

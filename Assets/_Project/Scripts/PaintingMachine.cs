@@ -13,6 +13,9 @@ public class PaintingMachine : MonoBehaviour
     [SerializeField] private float paintConsumeRate;
     public float paintDuration;
     public float paintDelay;
+    [SerializeField] private ParticleSystem paintEffect;
+    [SerializeField] private float painteffectDuration;
+    [SerializeField] private float painteffectRemainingTime;
 
     void Start()
     {
@@ -21,7 +24,17 @@ public class PaintingMachine : MonoBehaviour
 
     void Update()
     {
-        
+        if(painteffectRemainingTime <= 0)
+        {
+            if(paintEffect.isPlaying)
+                paintEffect.Stop();
+        }
+        else
+        {
+            painteffectRemainingTime -= Time.deltaTime;
+            if (!paintEffect.isPlaying)
+                paintEffect.Play();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -51,6 +64,7 @@ public class PaintingMachine : MonoBehaviour
             return false;
         }
         paintValue -= paintConsumeRate;
+        painteffectRemainingTime = painteffectDuration;
         return true;
     }
 }

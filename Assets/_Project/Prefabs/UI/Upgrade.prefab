@@ -443,6 +443,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 05524db57914ee64fb281b524ad93704, type: 3}
   - {fileID: 21300000, guid: 65e90be597d8e0b4f9dda2d913cfbe18, type: 3}
   upgradeManager: {fileID: 0}
+  buyButton: {fileID: 5584293540688455512}
   cost: 20
   costAddPrecentage: 25
   costText: {fileID: 5483714141519330230}
@@ -1177,7 +1178,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1187,10 +1188,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: 49413bf8abe87b54d878b8a0e3ec6a1d, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 49413bf8abe87b54d878b8a0e3ec6a1d, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: 49413bf8abe87b54d878b8a0e3ec6a1d, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: 23ae37b002daf3e41a4e90e52394857c, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted

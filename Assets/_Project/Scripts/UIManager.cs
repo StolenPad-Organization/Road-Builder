@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public int money;
     [SerializeField] private UpgradeManager upgradeManager;
     [SerializeField] private TextMeshProUGUI levelText;
+    [SerializeField] private ProgressUIManager progressBar;
 
     private void Awake()
     {
@@ -41,5 +42,10 @@ public class UIManager : MonoBehaviour
     public void HideUpgradeMenu()
     {
         upgradeManager.gameObject.SetActive(false);
+    }
+
+    public void UpdateProgressBar(float value)
+    {
+        progressBar.UpdateProgressBar(value);
     }
 }

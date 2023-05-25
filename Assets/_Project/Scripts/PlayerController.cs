@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float collectableOffest;
     [SerializeField] private Transform collectableParent;
     [SerializeField] private GameObject model;
+    [SerializeField] private GameObject fullWarning;
     public AsphaltMachine asphaltMachine;
     public PaintingMachine paintMachine;
     public WheelBarrow wheelBarrow;
@@ -60,6 +61,10 @@ public class PlayerController : MonoBehaviour
         collectable.Collect(collectables.Count, collectableOffest, collectableParent);
         collectables.Add(collectable);
         GameManager.instance.AddCollectableData(true, collectable.collectableType, collectable.peelable);
+        if (collectables.Count >= collectablesLimit)
+        {
+            fullWarning.SetActive(true);
+        }
     }
 
     public void SellCollectable(Transform sellPoint)
@@ -69,6 +74,8 @@ public class PlayerController : MonoBehaviour
             if (wheelBarrow.collectables.Count > 0)
             {
                 wheelBarrow.SellCollectable(sellPoint);
+                if(fullWarning.activeInHierarchy)
+                    fullWarning.SetActive(false);
                 return;
             }
         }
@@ -77,6 +84,8 @@ public class PlayerController : MonoBehaviour
         collectables.Remove(collectable);
         collectable.Sell(sellPoint);
         GameManager.instance.RemoveCollectableData(true, collectable.collectableType, collectable.peelable);
+        if (fullWarning.activeInHierarchy)
+            fullWarning.SetActive(false);
     }
 
     public void ChangeScrapeTool(int index)

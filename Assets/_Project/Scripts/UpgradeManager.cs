@@ -19,6 +19,11 @@ public class UpgradeManager : MonoBehaviour
         //playerController = PlayerController.instance;
     }
 
+    private void OnEnable()
+    {
+        CheckButtons();
+    }
+
     public void OnShovelUpgrade()
     {
         if(playerController.scrapeToolIndex == shovelUpgrade.loops)
@@ -44,5 +49,11 @@ public class UpgradeManager : MonoBehaviour
         playerController.ChangeScrapeTool(playerController.scrapeToolIndex);
         playerController.scrapeTool.UpdateShovelScale(shovelUpgrade.stepIndex);
         playerController.scrapeTool.power = shovelUpgrade.value;
+    }
+
+    public void CheckButtons()
+    {
+        shovelUpgrade.CheckButton();
+        loadUpgrade.CheckButton();
     }
 }
