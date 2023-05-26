@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public PaintingMachine paintMachine;
     public WheelBarrow wheelBarrow;
     public Transform wheelBarrowFollowTransform;
+    public ArrowController arrowController;
 
     [Header("Scrape Tools")]
     public ScrapeTool scrapeTool;

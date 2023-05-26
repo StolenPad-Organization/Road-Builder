@@ -88,6 +88,7 @@ public class GameManager : MonoBehaviour
     {
         levelState = LevelState.BuildingStage;
         asphaltMachine.gameObject.SetActive(true);
+        player.arrowController.PointToObject(asphaltMachine.gameObject);
     }
     public void StartAsphaltStage()
     {
@@ -96,6 +97,7 @@ public class GameManager : MonoBehaviour
         //PlayerController.instance.RemovePeelingAndCollectingTools();
         asphaltBlock.SetActive(true);
         asphaltAmmo.gameObject.SetActive(true);
+        player.arrowController.PointToObject(asphaltAmmo.gameObject);
     }
 
     public void OnRoadBuild()
@@ -113,6 +115,7 @@ public class GameManager : MonoBehaviour
         levelState = LevelState.PaintingStage;
         PlayerController.instance.GetOffAsphaltMachine();
         paintingMachine.gameObject.SetActive(true);
+        player.arrowController.PointToObject(paintingMachine.gameObject);
     }
     public void StartPaintStage()
     {
@@ -120,6 +123,7 @@ public class GameManager : MonoBehaviour
         asphaltAmmo.gameObject.SetActive(false);
         paintBlock.SetActive(true);
         paintAmmo.gameObject.SetActive(true);
+        player.arrowController.PointToObject(paintAmmo.gameObject);
     }
 
     public void OnRoadPaint()
