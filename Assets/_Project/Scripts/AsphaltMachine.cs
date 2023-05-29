@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class AsphaltMachine : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class AsphaltMachine : MonoBehaviour
     void Start()
     {
         asphaltCapacity = asphaltObjects.Length;
+        OnSpawn();
     }
 
     void Update()
@@ -60,5 +62,15 @@ public class AsphaltMachine : MonoBehaviour
             consumeValue++;
         }    
         return true;
+    }
+
+    public void OnSpawn()
+    {
+        used = true;
+        transform.DOMove(Vector3.zero, 2.0f).OnComplete(() => 
+        {
+            used = false;
+            PlayerController.instance.arrowController.PointToObject(gameObject);
+        });
     }
 }

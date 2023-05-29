@@ -19,7 +19,7 @@ public class PaintingMachine : MonoBehaviour
 
     void Start()
     {
-        
+        OnSpawn();
     }
 
     void Update()
@@ -66,5 +66,15 @@ public class PaintingMachine : MonoBehaviour
         paintValue -= paintConsumeRate;
         painteffectRemainingTime = painteffectDuration;
         return true;
+    }
+
+    public void OnSpawn()
+    {
+        used = true;
+        transform.DOMove(Vector3.right * 1.75f, 2.0f).OnComplete(()=>
+        {
+            used = false;
+            PlayerController.instance.arrowController.PointToObject(gameObject);
+        });
     }
 }
