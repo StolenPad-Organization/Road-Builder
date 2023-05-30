@@ -15,6 +15,8 @@ public class AsphaltMachine : MonoBehaviour
     [SerializeField] private GameObject[] asphaltObjects;
     [SerializeField] private int consumeRate;
     [SerializeField] private int consumeValue;
+    [SerializeField] private GameObject fullWarning;
+    [SerializeField] private GameObject emptyWarning;
 
     void Start()
     {
@@ -40,15 +42,30 @@ public class AsphaltMachine : MonoBehaviour
 
     public void FillAsphalt()
     {
-        if (asphaltCount >= asphaltCapacity) return;
+        if (asphaltCount >= asphaltCapacity)
+        {
+            if (!fullWarning.activeInHierarchy)
+            {
+                fullWarning.SetActive(true);
+            }
+            return;
+        }
         asphaltObjects[asphaltCount].SetActive(true);
         asphaltCount++;
+        if (emptyWarning.activeInHierarchy)
+        {
+            emptyWarning.SetActive(false);
+        }
     }
 
     public bool UseAsphalt()
     {
         if (asphaltCount <= 0)
-        { 
+        {
+            if (!emptyWarning.activeInHierarchy)
+            {
+                emptyWarning.SetActive(true);
+            }
             return false; 
         }
         if (consumeRate == consumeValue)
@@ -60,7 +77,11 @@ public class AsphaltMachine : MonoBehaviour
         else
         {
             consumeValue++;
-        }    
+        }
+        if (fullWarning.activeInHierarchy)
+        {
+            fullWarning.SetActive(false);
+        }
         return true;
     }
 

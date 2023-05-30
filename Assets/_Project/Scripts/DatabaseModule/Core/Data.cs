@@ -6,6 +6,7 @@ public class LevelData
 {
     public int LevelValue = 1;
     public int LevelTextValue = 1;
+    public int Zone = 1;
 }
 
 [System.Serializable]

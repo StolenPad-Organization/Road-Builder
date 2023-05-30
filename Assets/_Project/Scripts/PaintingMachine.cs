@@ -16,6 +16,8 @@ public class PaintingMachine : MonoBehaviour
     [SerializeField] private ParticleSystem paintEffect;
     [SerializeField] private float painteffectDuration;
     [SerializeField] private float painteffectRemainingTime;
+    [SerializeField] private GameObject fullWarning;
+    [SerializeField] private GameObject emptyWarning;
 
     void Start()
     {
@@ -52,8 +54,19 @@ public class PaintingMachine : MonoBehaviour
 
     public void FillPaint()
     {
-        if (paintValue >= paintCapacity) return;
+        if (paintValue >= paintCapacity)
+        {
+            if (!fullWarning.activeInHierarchy)
+            {
+                fullWarning.SetActive(true);
+            }
+            return; 
+        }
         paintValue += paintFillRate;
+        if (emptyWarning.activeInHierarchy)
+        {
+            emptyWarning.SetActive(false);
+        }
     }
 
     public bool UsePaint()
@@ -61,10 +74,18 @@ public class PaintingMachine : MonoBehaviour
         if (paintValue <= 0)
         {
             paintValue = 0;
+            if (!emptyWarning.activeInHierarchy)
+            {
+                emptyWarning.SetActive(true);
+            }
             return false;
         }
         paintValue -= paintConsumeRate;
         painteffectRemainingTime = painteffectDuration;
+        if (fullWarning.activeInHierarchy)
+        {
+            fullWarning.SetActive(false);
+        }
         return true;
     }
 
