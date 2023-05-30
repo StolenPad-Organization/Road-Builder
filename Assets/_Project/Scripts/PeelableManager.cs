@@ -36,7 +36,7 @@ public class PeelableManager : MonoBehaviour
                     peelableParts[i].LoadCollectable();
                 }
                 peelableParts[i].gameObject.SetActive(false);
-                GameManager.instance.OnBlockRemove();
+                GameManager.instance.currentStage.currentZone.OnBlockRemove();
             }
         }
     }

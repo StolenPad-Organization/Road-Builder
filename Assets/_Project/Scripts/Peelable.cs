@@ -30,12 +30,12 @@ public class Peelable : MonoBehaviour
         power -= PlayerController.instance.scrapeTool.power;
         if(power <= 0)
         {
-            GameManager.instance.SavePeelable(index, true, false);
+            GameManager.instance.currentStage.currentZone.SavePeelable(index, true, false);
             Collectable collectable = CollectablesPooler.Instance.GetCollectable(collectableType, transform.position);
             collectable.peelable = this;
             collectable.Spawn();
             gameObject.SetActive(false);
-            GameManager.instance.OnBlockRemove();
+            GameManager.instance.currentStage.currentZone.OnBlockRemove();
         }
     }
 
@@ -54,6 +54,6 @@ public class Peelable : MonoBehaviour
 
     public void OnCollect()
     {
-        GameManager.instance.SavePeelable(index, true, true);
+        GameManager.instance.currentStage.currentZone.SavePeelable(index, true, true);
     }
 }

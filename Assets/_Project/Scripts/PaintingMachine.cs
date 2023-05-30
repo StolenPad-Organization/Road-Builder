@@ -48,7 +48,7 @@ public class PaintingMachine : MonoBehaviour
             transform.SetParent(PlayerController.instance.transform);
             transform.DOLocalJump(Vector3.zero, 1.5f, 1, 0.5f);
             transform.DOLocalRotate(Vector3.zero, 0.5f);
-            GameManager.instance.StartPaintStage();
+            GameManager.instance.currentStage.currentZone.StartPaintStage();
         }
     }
 

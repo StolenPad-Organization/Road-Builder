@@ -6,7 +6,6 @@ public class LevelData
 {
     public int LevelValue = 1;
     public int LevelTextValue = 1;
-    public int Zone = 1;
 }
 
 [System.Serializable]
@@ -44,7 +43,21 @@ public class PaintableData
 [System.Serializable]
 public class LevelProgressData
 {
-    public LevelState LevelState;
+    public int StageIndex = 0;
+    public List<StageData> StageDatas;
+}
+
+[System.Serializable]
+public class StageData 
+{
+    public int ZoneIndex = 0;
+    public List<ZoneData> ZoneDatas;
+}
+
+[System.Serializable]
+public class ZoneData
+{
+    public ZoneState ZoneState;
     public List<PeelableData> PeelableDatas;
     public List<BuildableData> BuildableDatas;
     public List<PaintableData> PaintableDatas;

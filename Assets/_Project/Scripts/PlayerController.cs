@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
         if (collectables.Count >= collectablesLimit) return;
         collectable.Collect(collectables.Count, collectableOffest, collectableParent);
         collectables.Add(collectable);
-        GameManager.instance.AddCollectableData(true, collectable.collectableType, collectable.peelable);
+        GameManager.instance.currentStage.currentZone.AddCollectableData(true, collectable.collectableType, collectable.peelable);
         if (collectables.Count >= collectablesLimit)
         {
             fullWarning.SetActive(true);
@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
         Collectable collectable = collectables[collectables.Count - 1];
         collectables.Remove(collectable);
         collectable.Sell(sellPoint);
-        GameManager.instance.RemoveCollectableData(true, collectable.collectableType, collectable.peelable);
+        GameManager.instance.currentStage.currentZone.RemoveCollectableData(true, collectable.collectableType, collectable.peelable);
         if (fullWarning.activeInHierarchy)
             fullWarning.SetActive(false);
     }
@@ -115,7 +115,7 @@ public class PlayerController : MonoBehaviour
         {
             _asphaltMachine.transform.SetParent(transform);
             movementController.canMove = true;
-            GameManager.instance.StartAsphaltStage();
+            GameManager.instance.currentStage.currentZone.StartAsphaltStage();
         });
     }
 
