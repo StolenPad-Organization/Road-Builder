@@ -24,13 +24,13 @@ public class PaintableManager : MonoBehaviour
         }
     }
 
-    public void LoadPaintables(List<PaintableData> paintableDatas)
+    public void LoadPaintables(List<PaintableData> paintableDatas, bool check)
     {
         for (int i = 0; i < paintableParts.Length; i++)
         {
             if (paintableDatas[i].IsPainted)
             {
-                paintableParts[i].LoadPaintable();
+                paintableParts[i].LoadPaintable(check);
             }
         }
     }

@@ -4,18 +4,11 @@ using UnityEngine;
 
 public class SellManager : MonoBehaviour
 {
-    public static SellManager instance;
-
     [SerializeField] private Transform sellPoint;
     [SerializeField] private bool selling;
     [SerializeField] private float sellRate;
     [SerializeField] private float nextSell;
     [SerializeField] MoneySpot[] moneySpots;
-
-    private void Awake()
-    {
-        instance = this;
-    }
 
     void Start()
     {

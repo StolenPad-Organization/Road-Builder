@@ -14,7 +14,7 @@ public class CollectablesPooler : MonoBehaviour
     public List<Collectable> collectablesPrefabs;
     [SerializeField] private int poolSize = 5;
     [SerializeField] private bool expandable = true;
-    [SerializeField] private Transform collectableParent;
+    public Transform collectableParent;
 
     private Dictionary<CollectableType, Queue<Collectable>> poolDictionary = new Dictionary<CollectableType, Queue<Collectable>>();
 
@@ -77,6 +77,11 @@ public class CollectablesPooler : MonoBehaviour
         Collectable pooledObject = objectPool.Dequeue();
         pooledObject.transform.position = position;
         pooledObject.gameObject.SetActive(true);
+
+        if(pooledObject.transform.parent != collectableParent)
+        {
+            pooledObject.transform.SetParent(collectableParent);
+        }
 
         return pooledObject;
     }

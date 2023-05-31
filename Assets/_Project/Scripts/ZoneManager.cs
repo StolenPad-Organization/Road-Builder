@@ -26,8 +26,9 @@ public class ZoneManager : MonoBehaviour
     [SerializeField] private GameObject paintBlock;
     [SerializeField] private PaintAmmo paintAmmo;
     [SerializeField] private WheelBarrow wheelBarrow;
-    [SerializeField] private SellManager sellManager;
+    public SellManager sellManager;
     [SerializeField] private UpgradeManager upgradeManager;
+    [SerializeField] private Transform collectableParent;
 
     [Header("Blocks Progress")]
     [SerializeField] private int maxBlocks;
@@ -140,6 +141,10 @@ public class ZoneManager : MonoBehaviour
     }
     private void CompleteZone()
     {
+        paintingMachine.transform.SetParent(null);
+        paintingMachine.gameObject.SetActive(false);
+        paintAmmo.gameObject.SetActive(false);
+
         zoneState = ZoneState.Complete;
         GameManager.instance.SaveLevel();
         // Unlock next Zone
@@ -148,7 +153,7 @@ public class ZoneManager : MonoBehaviour
 
     public void UnlockZone()
     {
-        zoneState = ZoneState.PeelingStage;
+        zoneData.ZoneState = ZoneState.PeelingStage;
         LoadZone();
     }
 
@@ -165,6 +170,8 @@ public class ZoneManager : MonoBehaviour
         {
             case ZoneState.PeelingStage:
                 // load collectables and peelables
+                upgrades.SetActive(true);
+                CollectablesPooler.Instance.collectableParent = collectableParent;
                 peelableManager.LoadPeelables(zoneData.PeelableDatas);
                 if (playerData.HasWheelBarrow)
                 {
@@ -179,7 +186,7 @@ public class ZoneManager : MonoBehaviour
             case ZoneState.BuildingStage:
                 // load buildable and building machine
                 player.RemovePeelingAndCollectingTools();
-                buildableManager.LoadBuildables(zoneData.BuildableDatas);
+                buildableManager.LoadBuildables(zoneData.BuildableDatas, true);
                 upgrades.SetActive(false);
                 removableBlock.SetActive(false);
                 asphaltMachine.gameObject.SetActive(true);
@@ -188,8 +195,8 @@ public class ZoneManager : MonoBehaviour
             case ZoneState.PaintingStage:
                 // load paintable and painting machine and buildables
                 player.RemovePeelingAndCollectingTools();
-                buildableManager.LoadBuildables(zoneData.BuildableDatas);
-                paintableManager.LoadPaintables(zoneData.PaintableDatas);
+                buildableManager.LoadBuildables(zoneData.BuildableDatas, false);
+                paintableManager.LoadPaintables(zoneData.PaintableDatas, true);
                 upgrades.SetActive(false);
                 removableBlock.SetActive(false);
                 asphaltBlock.SetActive(true);
@@ -199,8 +206,10 @@ public class ZoneManager : MonoBehaviour
             case ZoneState.Complete:
                 upgrades.SetActive(false);
                 removableBlock.SetActive(false);
-                buildableManager.LoadBuildables(zoneData.BuildableDatas);
-                paintableManager.LoadPaintables(zoneData.PaintableDatas);
+                asphaltBlock.SetActive(true);
+                paintBlock.gameObject.SetActive(true);
+                buildableManager.LoadBuildables(zoneData.BuildableDatas, false);
+                paintableManager.LoadPaintables(zoneData.PaintableDatas, false);
                 break;
             case ZoneState.Locked:
                 upgrades.SetActive(false);
@@ -222,6 +231,8 @@ public class ZoneManager : MonoBehaviour
             playerData.WheelBarrowPosition = player.wheelBarrow.transform.position;
             playerData.WheelBarrowRotation = player.wheelBarrow.transform.eulerAngles;
         }
+        if (zoneState == ZoneState.Complete)
+            playerData.HasWheelBarrow = false;
         playerData.Money = UIManager.instance.money;
         //check for stage
         upgradeManager.shovelUpgrade.SaveUpgradeData();

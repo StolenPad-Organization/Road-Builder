@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void UnlockNextZone()
     {
+        PlayerController.instance.ResetForNextZone();
         currentStage.UnlockNextZone();
     }
 

@@ -153,4 +153,13 @@ public class PlayerController : MonoBehaviour
             collectables.Add(collectable);
         }
     }
+
+    public void ResetForNextZone()
+    {
+        //ChangeScrapeTool(scrapeToolIndex);
+        scrapeToolHolder.gameObject.SetActive(true);
+        wheelBarrow = null;
+        collectableParent.gameObject.SetActive(true);
+        paintMachine = null;
+    }
 }

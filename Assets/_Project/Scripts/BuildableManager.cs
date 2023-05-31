@@ -24,13 +24,13 @@ public class BuildableManager : MonoBehaviour
         }
     }
 
-    public void LoadBuildables(List<BuildableData> buildableDatas)
+    public void LoadBuildables(List<BuildableData> buildableDatas, bool check)
     {
         for (int i = 0; i < buildableParts.Length; i++)
         {
             if (buildableDatas[i].IsBuilded)
             {
-                buildableParts[i].LoadBuildable();
+                buildableParts[i].LoadBuildable(check);
             }
         }
     }

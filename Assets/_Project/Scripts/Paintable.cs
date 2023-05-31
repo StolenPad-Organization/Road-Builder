@@ -62,11 +62,12 @@ public class Paintable : MonoBehaviour
         EditorUtility.SetDirty(gameObject);
     }
 
-    public void LoadPaintable()
+    public void LoadPaintable(bool check)
     {
         paintableCollider.enabled = false;
         paintableRenderer.enabled = true;
-        GameManager.instance.currentStage.currentZone.OnRoadPaint();
+        if(check)
+            GameManager.instance.currentStage.currentZone.OnRoadPaint();
         Material mat = paintableRenderer.material;
         mat.SetFloat("_Animation", 0.0f);
     }

@@ -74,11 +74,12 @@ public class Buildable : MonoBehaviour
         EditorUtility.SetDirty(gameObject);
     }
 
-    public void LoadBuildable()
+    public void LoadBuildable(bool check)
     {
         buildableCollider.enabled = false;
         buildableRenderer.enabled = true;
-        GameManager.instance.currentStage.currentZone.OnRoadBuild();
+        if(check)
+            GameManager.instance.currentStage.currentZone.OnRoadBuild();
         Material material = buildableRenderer.material;
         material.SetColor("_EmissionColor", Color.black);
     }

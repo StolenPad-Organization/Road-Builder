@@ -16,7 +16,7 @@ public class Money : MonoBehaviour
     public void Spawn(int price)
     {
         value = price;
-        target = SellManager.instance.GetMoneySpot();
+        target = GameManager.instance.currentStage.currentZone.sellManager.GetMoneySpot();
         if (target == null) return;
         target.used = true;
         moneyCollider.enabled = false;
