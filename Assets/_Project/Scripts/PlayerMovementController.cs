@@ -77,15 +77,23 @@ public class PlayerMovementController : MonoBehaviour
         anim.SetBool("Drive", drive);
         if (!drive)
         {
-            if (playerController.scrapeToolHolder.gameObject.activeInHierarchy)
+            if (!move)
             {
-                anim.SetBool("Push", move);
-                anim.SetBool("Walk", !move);
+                anim.SetBool("Push", false);
+                anim.SetBool("Walk", false);
             }
             else
             {
-                anim.SetBool("Push", !move);
-                anim.SetBool("Walk", move);
+                if (playerController.scrapeToolHolder.gameObject.activeInHierarchy || playerController.paintMachine != null)
+                {
+                    anim.SetBool("Push", move);
+                    anim.SetBool("Walk", !move);
+                }
+                else
+                {
+                    anim.SetBool("Push", !move);
+                    anim.SetBool("Walk", move);
+                }
             }
         }
         else
@@ -93,7 +101,6 @@ public class PlayerMovementController : MonoBehaviour
             anim.SetBool("Push", false);
             anim.SetBool("Walk", false);
         }
-
     }
 
     private void SetPushSpeed()

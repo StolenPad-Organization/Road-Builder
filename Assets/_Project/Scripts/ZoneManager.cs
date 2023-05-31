@@ -29,6 +29,7 @@ public class ZoneManager : MonoBehaviour
     public SellManager sellManager;
     [SerializeField] private UpgradeManager upgradeManager;
     [SerializeField] private Transform collectableParent;
+    public Transform machinesPosition;
 
     [Header("Blocks Progress")]
     [SerializeField] private int maxBlocks;
@@ -137,10 +138,11 @@ public class ZoneManager : MonoBehaviour
     private void CheckPaint()
     {
         if (currentPaint == maxPaint)
-            CompleteZone();
+            StartCoroutine(CompleteZone());
     }
-    private void CompleteZone()
+    private IEnumerator CompleteZone()
     {
+        yield return new WaitForSeconds(1.0f);
         paintingMachine.transform.SetParent(null);
         paintingMachine.gameObject.SetActive(false);
         paintAmmo.gameObject.SetActive(false);

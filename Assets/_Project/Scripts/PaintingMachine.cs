@@ -92,7 +92,7 @@ public class PaintingMachine : MonoBehaviour
     public void OnSpawn()
     {
         used = true;
-        transform.DOMove(Vector3.right * 1.75f, 2.0f).OnComplete(()=>
+        transform.DOMove(GameManager.instance.currentStage.currentZone.machinesPosition.position + Vector3.right * 1.75f, 2.0f).OnComplete(()=>
         {
             used = false;
             PlayerController.instance.arrowController.PointToObject(gameObject);

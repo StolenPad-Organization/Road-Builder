@@ -88,7 +88,7 @@ public class AsphaltMachine : MonoBehaviour
     public void OnSpawn()
     {
         used = true;
-        transform.DOMove(Vector3.zero, 2.0f).OnComplete(() => 
+        transform.DOMove(GameManager.instance.currentStage.currentZone.machinesPosition.position, 2.0f).OnComplete(() => 
         {
             used = false;
             PlayerController.instance.arrowController.PointToObject(gameObject);
