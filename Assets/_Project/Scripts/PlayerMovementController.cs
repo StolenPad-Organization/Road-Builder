@@ -12,6 +12,8 @@ public class PlayerMovementController : MonoBehaviour
     public bool canMove = false;
     [SerializeField] private float speedMultiplayer = 100;
     private PlayerController playerController;
+    private bool drive;
+    private bool move;
 
     void Start()
     {
@@ -38,6 +40,11 @@ public class PlayerMovementController : MonoBehaviour
         if (moveDirection != Vector3.zero)
         {
             transform.rotation = Quaternion.LookRotation(moveDirection);
+            ToggleMoveAnimation(true);
+        }
+        else
+        {
+            ToggleMoveAnimation(false);
         }
 
         transform.Translate(moveDirection * Time.deltaTime, Space.World);
@@ -48,5 +55,49 @@ public class PlayerMovementController : MonoBehaviour
             if (speedMultiplayer > 100)
                 speedMultiplayer = 100;
         }
+        SetPushSpeed();
+    }
+
+    public void ToggleMovementAnimation(bool activate)
+    {
+        move = activate;
+        drive = !activate;
+        SetAnimation();
+    }
+
+    private void ToggleMoveAnimation(bool activate)
+    {
+        if (drive || move == activate) return;
+        move = activate;
+        SetAnimation();
+    }
+
+    private void SetAnimation()
+    {
+        anim.SetBool("Drive", drive);
+        if (!drive)
+        {
+            if (playerController.scrapeToolHolder.gameObject.activeInHierarchy)
+            {
+                anim.SetBool("Push", move);
+                anim.SetBool("Walk", !move);
+            }
+            else
+            {
+                anim.SetBool("Push", !move);
+                anim.SetBool("Walk", move);
+            }
+        }
+        else
+        {
+            anim.SetBool("Push", false);
+            anim.SetBool("Walk", false);
+        }
+
+    }
+
+    private void SetPushSpeed()
+    {
+        anim.SetFloat("PushSpeed", speedMultiplayer / 100);
     }
 }

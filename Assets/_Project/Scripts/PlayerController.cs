@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     public ScrapeTool scrapeTool;
     [SerializeField] private ScrapeTool[] scrapeToolsPrefabs;
     public int scrapeToolIndex;
-    [SerializeField] private Transform scrapeToolHolder;
+    public Transform scrapeToolHolder;
 
     private void Awake()
     {
@@ -111,6 +111,7 @@ public class PlayerController : MonoBehaviour
         model.transform.DOScale(1, 0.7f);
         model.transform.DOLocalRotate(Vector3.zero, 0.7f);
         transform.rotation = _asphaltMachine.transform.rotation;
+        movementController.ToggleMovementAnimation(false);
         transform.DOMove(_asphaltMachine.transform.position, 0.7f).OnComplete(() =>
         {
             _asphaltMachine.transform.SetParent(transform);
@@ -128,6 +129,7 @@ public class PlayerController : MonoBehaviour
         model.transform.DOLocalJump(Vector3.zero, 2, 1, 0.7f);
         model.transform.DOScale(1, 0.7f);
         model.transform.DOLocalRotate(Vector3.zero, 0.7f);
+        movementController.ToggleMovementAnimation(true);
     }
 
     public void ActivateWheelBarrow(WheelBarrow _wheelBarrow)
