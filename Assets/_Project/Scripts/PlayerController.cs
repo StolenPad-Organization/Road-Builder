@@ -103,6 +103,7 @@ public class PlayerController : MonoBehaviour
 
     public void GetOnAsphaltMachine(Transform playerSeat, AsphaltMachine _asphaltMachine)
     {
+        fullWarning.SetActive(false);
         RemovePeelingAndCollectingTools();
         asphaltMachine = _asphaltMachine;
         movementController.canMove = false;

@@ -9,6 +9,8 @@ public class Peelable : MonoBehaviour
     [SerializeField] private float power;
     [SerializeField] private float speedAmount;
     [SerializeField] private CollectableType collectableType;
+    public MeshFilter peelableMeshFilter;
+    public MeshRenderer peelableRenderer;
 
     void Start()
     {
@@ -42,6 +44,8 @@ public class Peelable : MonoBehaviour
     public void SetPeelableEditor(int _index)
     {
         index = _index;
+        peelableMeshFilter = GetComponent<MeshFilter>();
+        peelableRenderer = GetComponent<MeshRenderer>();
         EditorUtility.SetDirty(this);
         EditorUtility.SetDirty(gameObject);
     }
@@ -50,6 +54,7 @@ public class Peelable : MonoBehaviour
     {
         Collectable collectable = CollectablesPooler.Instance.GetCollectable(collectableType, transform.position);
         collectable.peelable = this;
+        collectable.loadCollectableShape();
     }
 
     public void OnCollect()

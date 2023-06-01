@@ -7,6 +7,8 @@ public class Collectable : MonoBehaviour
 {
     public CollectableType collectableType;
     [SerializeField] private Collider collectableCollider;
+    [SerializeField] private MeshFilter collectableMeshFilter;
+    [SerializeField] private MeshRenderer collectableRenderer;
     public Peelable peelable;
     public int price;
     void Start()
@@ -21,6 +23,7 @@ public class Collectable : MonoBehaviour
 
     public void Spawn()
     {
+        loadCollectableShape();
         collectableCollider.enabled = false;
         transform.DOJump(transform.position, 1, 1, 0.4f).OnComplete(() =>
         {
@@ -59,5 +62,12 @@ public class Collectable : MonoBehaviour
         transform.SetParent(collectableParent);
         transform.localPosition = Vector3.up * index * collectableOffest;
         peelable = _peelable;
+        loadCollectableShape();
+    }
+
+    public void loadCollectableShape()
+    {
+        collectableMeshFilter.mesh = peelable.peelableMeshFilter.mesh;
+        collectableRenderer.material = peelable.peelableRenderer.material;
     }
 }
