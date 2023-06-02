@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     private LevelProgressData levelProgressData;
     [SerializeField] private StageManager[] stages;
     public StageManager currentStage;
+    private bool gameStarted;
 
     private void Awake()
     {
@@ -18,11 +19,14 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Start()
     {
+        Application.targetFrameRate = 60;
         yield return new WaitForSeconds(0.1f);
         levelData = Database.Instance.GetLevelData();
         levelProgressData = Database.Instance.GetLevelProgressData(levelData.LevelValue - 1);
         currentStage = stages[levelProgressData.StageIndex];
         LoadLevel();
+        yield return new WaitForSeconds(0.1f);
+        gameStarted = true;
     }
 
     void Update()
@@ -47,6 +51,12 @@ public class GameManager : MonoBehaviour
     private void OnApplicationQuit()
     {
         SaveLevel();
+    }
+
+    private void OnApplicationPause()
+    {
+        if(gameStarted)
+            SaveLevel();
     }
 
     public void SaveLevel()

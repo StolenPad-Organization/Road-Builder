@@ -15,6 +15,7 @@ public class BuildableManager : MonoBehaviour
         
     }
 
+#if UNITY_EDITOR
     [ContextMenu("Set Buildable Parts")]
     private void SetBuildableParts()
     {
@@ -23,6 +24,7 @@ public class BuildableManager : MonoBehaviour
             buildableParts[i].SetBuildableEditor(i);
         }
     }
+#endif
 
     public void LoadBuildables(List<BuildableData> buildableDatas, bool check)
     {

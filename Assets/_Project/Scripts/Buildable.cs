@@ -65,6 +65,7 @@ public class Buildable : MonoBehaviour
             });
     }
 
+#if UNITY_EDITOR
     public void SetBuildableEditor(int _index)
     {
         index = _index;
@@ -73,6 +74,7 @@ public class Buildable : MonoBehaviour
         EditorUtility.SetDirty(this);
         EditorUtility.SetDirty(gameObject);
     }
+#endif
 
     public void LoadBuildable(bool check)
     {

@@ -16,6 +16,7 @@ public class PeelableManager : MonoBehaviour
         
     }
 
+#if UNITY_EDITOR
     [ContextMenu("Set Peelable Parts")]
     private void SetPeelableParts()
     {
@@ -24,6 +25,7 @@ public class PeelableManager : MonoBehaviour
             peelableParts[i].SetPeelableEditor(i);
         }
     }
+#endif
 
     public void LoadPeelables(List<PeelableData> PeelableDatas)
     {

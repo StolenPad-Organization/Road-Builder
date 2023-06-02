@@ -40,7 +40,7 @@ public class Peelable : MonoBehaviour
             GameManager.instance.currentStage.currentZone.OnBlockRemove();
         }
     }
-
+#if UNITY_EDITOR
     public void SetPeelableEditor(int _index)
     {
         index = _index;
@@ -49,6 +49,7 @@ public class Peelable : MonoBehaviour
         EditorUtility.SetDirty(this);
         EditorUtility.SetDirty(gameObject);
     }
+#endif
 
     public void LoadCollectable()
     {

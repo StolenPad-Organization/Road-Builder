@@ -132,6 +132,7 @@ public class PlayerController : MonoBehaviour
         model.transform.DOScale(1, 0.7f);
         model.transform.DOLocalRotate(Vector3.zero, 0.7f);
         movementController.ToggleMovementAnimation(true);
+        asphaltMachine = null;
     }
 
     public void ActivateWheelBarrow(WheelBarrow _wheelBarrow)

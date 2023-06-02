@@ -53,6 +53,7 @@ public class Paintable : MonoBehaviour
         transform.DOScale(initialscale, 0.1f);
     }
 
+#if UNITY_EDITOR
     public void SetPaintableEditor(int _index)
     {
         index = _index;
@@ -61,6 +62,7 @@ public class Paintable : MonoBehaviour
         EditorUtility.SetDirty(this);
         EditorUtility.SetDirty(gameObject);
     }
+#endif
 
     public void LoadPaintable(bool check)
     {

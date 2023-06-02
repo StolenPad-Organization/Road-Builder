@@ -14,7 +14,7 @@ public class PaintableManager : MonoBehaviour
     {
 
     }
-
+#if UNITY_EDITOR
     [ContextMenu("Set Paintable Parts")]
     private void SetPaintableParts()
     {
@@ -23,6 +23,7 @@ public class PaintableManager : MonoBehaviour
             paintableParts[i].SetPaintableEditor(i);
         }
     }
+#endif
 
     public void LoadPaintables(List<PaintableData> paintableDatas, bool check)
     {
