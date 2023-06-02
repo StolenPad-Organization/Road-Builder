@@ -107,12 +107,13 @@ public class PlayerController : MonoBehaviour
         RemovePeelingAndCollectingTools();
         asphaltMachine = _asphaltMachine;
         movementController.canMove = false;
+        if (asphaltMachine.drivable)
+            movementController.ToggleMovementAnimation(false);
         model.transform.SetParent(playerSeat);
         model.transform.DOLocalJump(Vector3.zero, 2, 1, 0.7f);
         model.transform.DOScale(1, 0.7f);
         model.transform.DOLocalRotate(Vector3.zero, 0.7f);
         transform.rotation = _asphaltMachine.transform.rotation;
-        movementController.ToggleMovementAnimation(false);
         transform.DOMove(_asphaltMachine.transform.position, 0.7f).OnComplete(() =>
         {
             _asphaltMachine.transform.SetParent(transform);

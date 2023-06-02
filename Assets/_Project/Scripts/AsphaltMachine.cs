@@ -17,6 +17,7 @@ public class AsphaltMachine : MonoBehaviour
     [SerializeField] private int consumeValue;
     [SerializeField] private GameObject fullWarning;
     [SerializeField] private GameObject emptyWarning;
+    public bool drivable;
 
     void Start()
     {
