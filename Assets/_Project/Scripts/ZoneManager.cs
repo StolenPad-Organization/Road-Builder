@@ -30,6 +30,7 @@ public class ZoneManager : MonoBehaviour
     [SerializeField] private UpgradeManager upgradeManager;
     [SerializeField] private Transform collectableParent;
     public Transform machinesPosition;
+    [SerializeField] private GameObject zoneCollider;
 
     [Header("Blocks Progress")]
     [SerializeField] private int maxBlocks;
@@ -171,6 +172,8 @@ public class ZoneManager : MonoBehaviour
         switch (zoneState)
         {
             case ZoneState.PeelingStage:
+                if (zoneCollider != null)
+                    zoneCollider.gameObject.SetActive(false);
                 // load collectables and peelables
                 upgrades.SetActive(true);
                 CollectablesPooler.Instance.collectableParent = collectableParent;
@@ -186,6 +189,8 @@ public class ZoneManager : MonoBehaviour
                 sellManager.LoadMoeny(zoneData.MoneyDatas);
                 break;
             case ZoneState.BuildingStage:
+                if (zoneCollider != null)
+                    zoneCollider.gameObject.SetActive(false);
                 // load buildable and building machine
                 player.RemovePeelingAndCollectingTools();
                 buildableManager.LoadBuildables(zoneData.BuildableDatas, true);
@@ -195,6 +200,8 @@ public class ZoneManager : MonoBehaviour
                 asphaltBlock.SetActive(true);
                 break;
             case ZoneState.PaintingStage:
+                if (zoneCollider != null)
+                    zoneCollider.gameObject.SetActive(false);
                 // load paintable and painting machine and buildables
                 player.RemovePeelingAndCollectingTools();
                 buildableManager.LoadBuildables(zoneData.BuildableDatas, false);
@@ -206,6 +213,8 @@ public class ZoneManager : MonoBehaviour
                 paintBlock.gameObject.SetActive(true);
                 break;
             case ZoneState.Complete:
+                if (zoneCollider != null)
+                    zoneCollider.gameObject.SetActive(false);
                 upgrades.SetActive(false);
                 removableBlock.SetActive(false);
                 asphaltBlock.SetActive(true);
