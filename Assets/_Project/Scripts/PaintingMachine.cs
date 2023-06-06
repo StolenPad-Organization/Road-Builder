@@ -49,6 +49,7 @@ public class PaintingMachine : MonoBehaviour
             transform.DOLocalJump(Vector3.zero, 1.5f, 1, 0.5f);
             transform.DOLocalRotate(Vector3.zero, 0.5f);
             GameManager.instance.currentStage.currentZone.StartPaintStage();
+            PlayerController.instance.TogglePaintCollider(true);
         }
     }
 

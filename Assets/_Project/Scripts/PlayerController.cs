@@ -26,6 +26,11 @@ public class PlayerController : MonoBehaviour
     public int scrapeToolIndex;
     public Transform scrapeToolHolder;
 
+    [Header("Machines Colliders")]
+    [SerializeField] private GameObject buildCollider;
+    [SerializeField] private GameObject paintCollider;
+    [SerializeField] private GameObject cementCollider;
+
     private void Awake()
     {
         instance = this;
@@ -108,7 +113,12 @@ public class PlayerController : MonoBehaviour
         asphaltMachine = _asphaltMachine;
         movementController.canMove = false;
         if (asphaltMachine.drivable)
+        {
             movementController.ToggleMovementAnimation(false);
+            cementCollider.SetActive(true);
+        }
+        else
+            buildCollider.SetActive(true);
         model.transform.SetParent(playerSeat);
         model.transform.DOLocalJump(Vector3.zero, 2, 1, 0.7f);
         model.transform.DOScale(1, 0.7f);
@@ -133,6 +143,8 @@ public class PlayerController : MonoBehaviour
         model.transform.DOLocalRotate(Vector3.zero, 0.7f);
         movementController.ToggleMovementAnimation(true);
         asphaltMachine = null;
+        cementCollider.SetActive(false);
+        buildCollider.SetActive(false);
     }
 
     public void ActivateWheelBarrow(WheelBarrow _wheelBarrow)
@@ -166,5 +178,11 @@ public class PlayerController : MonoBehaviour
         wheelBarrow = null;
         collectableParent.gameObject.SetActive(true);
         paintMachine = null;
+        TogglePaintCollider(false);
+    }
+
+    public void TogglePaintCollider(bool activate)
+    {
+        paintCollider.SetActive(activate);
     }
 }

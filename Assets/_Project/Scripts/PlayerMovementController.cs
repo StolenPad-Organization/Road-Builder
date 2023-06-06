@@ -14,6 +14,7 @@ public class PlayerMovementController : MonoBehaviour
     private PlayerController playerController;
     private bool drive;
     private bool move;
+    [SerializeField] private Rigidbody rb;
 
     void Start()
     {
@@ -25,7 +26,7 @@ public class PlayerMovementController : MonoBehaviour
         speedMultiplayer = amount;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         
         if (!canMove) return;
@@ -39,15 +40,19 @@ public class PlayerMovementController : MonoBehaviour
 
         if (moveDirection != Vector3.zero)
         {
-            transform.rotation = Quaternion.LookRotation(moveDirection);
+            //transform.rotation = Quaternion.LookRotation(moveDirection);
+            rb.MoveRotation(Quaternion.LookRotation(moveDirection));
             ToggleMoveAnimation(true);
         }
         else
         {
             ToggleMoveAnimation(false);
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
         }
 
-        transform.Translate(moveDirection * Time.deltaTime, Space.World);
+        //transform.Translate(moveDirection * Time.deltaTime, Space.World);
+        rb.MovePosition(transform.position + moveDirection * Time.deltaTime);
 
         if (speedMultiplayer != 100)
         {
