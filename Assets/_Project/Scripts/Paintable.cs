@@ -35,14 +35,14 @@ public class Paintable : MonoBehaviour
 
     private void PaintPiece()
     {
-        GameManager.instance.currentStage.currentZone.SavePaintable(index, true);
+        GameManager.instance.currentZone.SavePaintable(index, true);
         paintableCollider.enabled = false;
         paintableRenderer.enabled = true;
         transform.position = PlayerController.instance.paintMachine.partsSpawnPoint.position + PlayerController.instance.paintMachine.partsSpawnPoint.right * Random.Range(-0.5f, 0.5f);
         transform.localScale = Vector3.zero;
         transform.DOLocalMove(initialPos, 0.1f).OnComplete(() =>
         {
-            GameManager.instance.currentStage.currentZone.OnRoadPaint();
+            GameManager.instance.currentZone.OnRoadPaint();
 
             Material mat = paintableRenderer.material;
             float t = 1.0f;
@@ -69,7 +69,7 @@ public class Paintable : MonoBehaviour
         paintableCollider.enabled = false;
         paintableRenderer.enabled = true;
         if(check)
-            GameManager.instance.currentStage.currentZone.OnRoadPaint();
+            GameManager.instance.currentZone.OnRoadPaint();
         Material mat = paintableRenderer.material;
         mat.SetFloat("_Animation", 0.0f);
     }

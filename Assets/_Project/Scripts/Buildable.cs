@@ -39,14 +39,14 @@ public class Buildable : MonoBehaviour
 
     private void BuildPiece()
     {
-        GameManager.instance.currentStage.currentZone.SaveBuildable(index, true);
+        GameManager.instance.currentZone.SaveBuildable(index, true);
         buildableCollider.enabled = false;
         buildableRenderer.enabled = true;
         transform.position = PlayerController.instance.asphaltMachine.partsSpawnPoint.position + PlayerController.instance.asphaltMachine.partsSpawnPoint.right * Random.Range(-1.5f, 1.5f);
         transform.localScale = Vector3.zero;
         transform.DOLocalJump(initialPos, 0.25f, 1, 0.25f).OnComplete(()=>
         {
-            GameManager.instance.currentStage.currentZone.OnRoadBuild();
+            GameManager.instance.currentZone.OnRoadBuild();
             //smoke = SmokePooler.instance.GetSmoke();
             //smoke.transform.position = transform.position + Vector3.up * 0.2f;
         });
@@ -81,7 +81,7 @@ public class Buildable : MonoBehaviour
         buildableCollider.enabled = false;
         buildableRenderer.enabled = true;
         if(check)
-            GameManager.instance.currentStage.currentZone.OnRoadBuild();
+            GameManager.instance.currentZone.OnRoadBuild();
         Material material = buildableRenderer.material;
         material.SetColor("_EmissionColor", Color.black);
     }

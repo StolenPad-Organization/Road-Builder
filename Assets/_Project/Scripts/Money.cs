@@ -16,7 +16,7 @@ public class Money : MonoBehaviour
     public void Spawn(int price)
     {
         value = price;
-        target = GameManager.instance.currentStage.currentZone.sellManager.GetMoneySpot();
+        target = GameManager.instance.currentZone.sellManager.GetMoneySpot();
         if (target == null) return;
         target.used = true;
         moneyCollider.enabled = false;
@@ -24,7 +24,7 @@ public class Money : MonoBehaviour
         {
             moneyCollider.enabled = true;
         });
-        GameManager.instance.currentStage.currentZone.AddMoneyData(target.index, value);
+        GameManager.instance.currentZone.AddMoneyData(target.index, value);
     }
 
     private void Collect()
@@ -32,7 +32,7 @@ public class Money : MonoBehaviour
         target.used = false;
         MoneyPooler.instance.ReturnMoney(this);
         UIManager.instance.UpdateMoney(value);
-        GameManager.instance.currentStage.currentZone.RemoveMoneyData(target.index, value);
+        GameManager.instance.currentZone.RemoveMoneyData(target.index, value);
     }
 
     void Update()

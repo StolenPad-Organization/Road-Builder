@@ -43,13 +43,6 @@ public class PaintableData
 [System.Serializable]
 public class LevelProgressData
 {
-    public int StageIndex = 0;
-    public List<StageData> StageDatas;
-}
-
-[System.Serializable]
-public class StageData 
-{
     public int ZoneIndex = 0;
     public List<ZoneData> ZoneDatas;
 }

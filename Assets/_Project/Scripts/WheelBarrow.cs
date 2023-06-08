@@ -18,7 +18,7 @@ public class WheelBarrow : MonoBehaviour
         playerTransform = PlayerController.instance.wheelBarrowFollowTransform;
     }
 
-    void Update()
+    void LateUpdate()
     {
         if (used)
         {
@@ -31,7 +31,7 @@ public class WheelBarrow : MonoBehaviour
         if (collectables.Count >= collectablesLimit) return;
         collectable.Collect(collectables.Count, collectableOffest, collectableParent);
         collectables.Add(collectable);
-        GameManager.instance.currentStage.currentZone.AddCollectableData(false, collectable.collectableType, collectable.peelable);
+        GameManager.instance.currentZone.AddCollectableData(false, collectable.collectableType, collectable.peelable);
     }
     public void SellCollectable(Transform sellPoint)
     {
@@ -39,7 +39,7 @@ public class WheelBarrow : MonoBehaviour
         Collectable collectable = collectables[collectables.Count - 1];
         collectables.Remove(collectable);
         collectable.Sell(sellPoint);
-        GameManager.instance.currentStage.currentZone.RemoveCollectableData(false, collectable.collectableType, collectable.peelable);
+        GameManager.instance.currentZone.RemoveCollectableData(false, collectable.collectableType, collectable.peelable);
     }
 
     private void OnTriggerEnter(Collider other)

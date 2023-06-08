@@ -51,7 +51,7 @@ public class Collectable : MonoBehaviour
         {
             CollectablesPooler.Instance.ReturnCollectable(this);
             Money money = MoneyPooler.instance.GetMoney();
-            money.transform.position = GameManager.instance.currentStage.currentZone.sellManager.transform.position;
+            money.transform.position = GameManager.instance.currentZone.sellManager.transform.position;
             money.Spawn(price);
         });
     }

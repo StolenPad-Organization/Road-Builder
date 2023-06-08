@@ -46,7 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectablesPrefabs:
   - {fileID: 4225926424727637272, guid: b3efb4f5456ff6b4cae1ff9fb4d652b1, type: 3}
-  - {fileID: 4225926424727637272, guid: 8b3c8dd4195651c4a9770694b5d17dd9, type: 3}
-  poolSize: 10
+  - {fileID: 4225926424727637272, guid: 10c579baefe01ed4d982cb664188ce16, type: 3}
+  - {fileID: 4225926424727637272, guid: e0c776ec104c5a94ca00bf10d2aaea7d, type: 3}
+  - {fileID: 4225926424727637272, guid: e784e4fd191058440ac7a94f3ddf91b9, type: 3}
+  - {fileID: 4225926424727637272, guid: 7165124264f5fc34da039683171ebed0, type: 3}
+  - {fileID: 4225926424727637272, guid: e0cd8a20bc03aec4fa5ddc264b6545d5, type: 3}
+  poolSize: 5
   expandable: 1
   collectableParent: {fileID: 0}

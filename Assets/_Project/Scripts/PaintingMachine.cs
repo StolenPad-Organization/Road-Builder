@@ -48,7 +48,7 @@ public class PaintingMachine : MonoBehaviour
             transform.SetParent(PlayerController.instance.transform);
             transform.DOLocalJump(Vector3.zero, 1.5f, 1, 0.5f);
             transform.DOLocalRotate(Vector3.zero, 0.5f);
-            GameManager.instance.currentStage.currentZone.StartPaintStage();
+            GameManager.instance.currentZone.StartPaintStage();
             PlayerController.instance.TogglePaintCollider(true);
         }
     }
@@ -93,7 +93,7 @@ public class PaintingMachine : MonoBehaviour
     public void OnSpawn()
     {
         used = true;
-        transform.DOMove(GameManager.instance.currentStage.currentZone.machinesPosition.position + Vector3.right * 1.75f, 2.0f).OnComplete(()=>
+        transform.DOMove(GameManager.instance.currentZone.machinesPosition.position + Vector3.right * 1.75f, 2.0f).OnComplete(()=>
         {
             used = false;
             PlayerController.instance.arrowController.PointToObject(gameObject);

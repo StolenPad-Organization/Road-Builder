@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
 
     private LevelData levelData;
     private LevelProgressData levelProgressData;
-    [SerializeField] private StageManager[] stages;
-    public StageManager currentStage;
+    [SerializeField] private ZoneManager[] zones;
+    public ZoneManager currentZone;
     private bool gameStarted;
 
     private void Awake()
@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         levelData = Database.Instance.GetLevelData();
         levelProgressData = Database.Instance.GetLevelProgressData(levelData.LevelValue - 1);
-        currentStage = stages[levelProgressData.StageIndex];
+        currentZone = zones[levelProgressData.ZoneIndex];
         LoadLevel();
         yield return new WaitForSeconds(0.1f);
         gameStarted = true;
@@ -36,16 +36,30 @@ public class GameManager : MonoBehaviour
 
     private void LoadLevel()
     {
-        for (int i = 0; i < stages.Length; i++)
+        //load zones
+        for (int i = 0; i < zones.Length; i++)
         {
-            stages[i].LoadStage(levelProgressData.StageDatas[i]);
+            zones[i].InitZone(levelProgressData.ZoneDatas[i]);
         }
     }
 
     public void UnlockNextZone()
     {
         PlayerController.instance.ResetForNextZone();
-        currentStage.UnlockNextZone();
+        if (levelProgressData.ZoneIndex + 1 < levelProgressData.ZoneDatas.Count)
+        {
+            levelProgressData.ZoneIndex++;
+            currentZone = zones[levelProgressData.ZoneIndex];
+            currentZone.UnlockZone();
+        }
+        else
+        {
+            WinLevel();
+        }
+    }
+    public void WinLevel()
+    {
+        Debug.Log("Level Complete , YOU WIN!");
     }
 
     private void OnApplicationQuit()
@@ -61,7 +75,7 @@ public class GameManager : MonoBehaviour
 
     public void SaveLevel()
     {
-        levelProgressData.StageDatas[levelProgressData.StageIndex] = currentStage.SaveStage();
+        levelProgressData.ZoneDatas[levelProgressData.ZoneIndex] = currentZone.SaveZone();
         Database.Instance.SetLevelProgressData(levelProgressData, levelData.LevelValue - 1);
         Database.Instance.SaveData();
     }

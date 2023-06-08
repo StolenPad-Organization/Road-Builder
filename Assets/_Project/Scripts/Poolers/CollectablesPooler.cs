@@ -4,8 +4,12 @@ using UnityEngine;
 
 public enum CollectableType
 {
-    Snow,
-    Rock
+    Type1,
+    Type2,
+    Type3,
+    Type4,
+    Type5,
+    Type6
 }
 
 public class CollectablesPooler : MonoBehaviour
