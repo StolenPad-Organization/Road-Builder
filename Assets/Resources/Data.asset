@@ -16,581 +16,441 @@ MonoBehaviour:
     LevelValue: 1
     LevelTextValue: 1
   PlayerData:
-    Money: 196
-    PlayerPosition: {x: 6.9500375, y: 0, z: -2.0034032}
-    PlayerRotation: {x: -0, y: 83.15724, z: 0}
-    HasWheelBarrow: 1
-    WheelBarrowPosition: {x: 3.4749684, y: 0.083333336, z: -2.4204109}
-    WheelBarrowRotation: {x: -0, y: 83.24508, z: -0}
-    wheelBarrowCollectables: []
+    Money: 115
+    PlayerPosition: {x: 0, y: 0, z: 0}
+    PlayerRotation: {x: -0, y: 0, z: 0}
+    HasWheelBarrow: 0
+    WheelBarrowPosition: {x: 0, y: 0, z: 0}
+    WheelBarrowRotation: {x: -0, y: 0, z: 0}
+    wheelBarrowCollectables:
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
     playerCollectables: []
   upgradeDatas:
   - upgradeType: 0
-    Loops: 0
-    Level: 10
-    Value: 11
-    StepIndex: 9
-    Cost: 175
+    Loops: 1
+    Level: 18
+    Value: 19
+    StepIndex: 7
+    Cost: 1035
   - upgradeType: 1
-    Loops: 0
-    Level: 7
-    Value: 11.75
-    StepIndex: 6
-    Cost: 90
+    Loops: 1
+    Level: 11
+    Value: 12.75
+    StepIndex: 0
+    Cost: 218
   LevelProgressDatas:
-  - ZoneIndex: 0
+  - ZoneIndex: 1
     ZoneDatas:
     - ZoneState: 1
       PeelableDatas:
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
@@ -598,86 +458,294 @@ MonoBehaviour:
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
@@ -692,154 +760,92 @@ MonoBehaviour:
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
@@ -7385,13 +7391,7 @@ MonoBehaviour:
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
-        IsCollected: 0
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
@@ -7421,7 +7421,7 @@ MonoBehaviour:
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
@@ -7747,7 +7747,7 @@ MonoBehaviour:
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
@@ -7869,13 +7869,15 @@ MonoBehaviour:
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 0
+      - IsPeeled: 1
+        IsCollected: 1
+      - IsPeeled: 1
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
@@ -7887,7 +7889,7 @@ MonoBehaviour:
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
@@ -7949,6 +7951,8 @@ MonoBehaviour:
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
+      - IsPeeled: 1
+        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
@@ -8147,6 +8151,8 @@ MonoBehaviour:
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
+      - IsPeeled: 1
+        IsCollected: 1
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
