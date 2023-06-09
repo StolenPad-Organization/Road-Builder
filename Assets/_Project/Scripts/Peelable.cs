@@ -49,6 +49,19 @@ public class Peelable : MonoBehaviour
         EditorUtility.SetDirty(this);
         EditorUtility.SetDirty(gameObject);
     }
+
+    public void SetMaterialEditor(Material mat)
+    {
+        peelableRenderer.material = mat;
+        EditorUtility.SetDirty(peelableRenderer);
+        EditorUtility.SetDirty(gameObject);
+    }
+
+    public void SetPowerSpeed(float _power, float _speed)
+    {
+        power = _power;
+        speedAmount = _speed;
+    }
 #endif
 
     public void LoadCollectable()

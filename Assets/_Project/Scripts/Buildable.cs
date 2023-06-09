@@ -74,6 +74,12 @@ public class Buildable : MonoBehaviour
         EditorUtility.SetDirty(this);
         EditorUtility.SetDirty(gameObject);
     }
+    public void SetMaterialEditor(Material mat)
+    {
+        buildableRenderer.material = mat;
+        EditorUtility.SetDirty(buildableRenderer);
+        EditorUtility.SetDirty(gameObject);
+    }
 #endif
 
     public void LoadBuildable(bool check)
