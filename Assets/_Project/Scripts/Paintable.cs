@@ -62,6 +62,13 @@ public class Paintable : MonoBehaviour
         EditorUtility.SetDirty(this);
         EditorUtility.SetDirty(gameObject);
     }
+
+    public void SetMaterialEditor(Material mat)
+    {
+        paintableRenderer.material = mat;
+        EditorUtility.SetDirty(paintableRenderer);
+        EditorUtility.SetDirty(gameObject);
+    }
 #endif
 
     public void LoadPaintable(bool check)

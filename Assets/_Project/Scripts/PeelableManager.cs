@@ -6,7 +6,7 @@ using UnityEditor;
 public class PeelableManager : MonoBehaviour
 {
     [SerializeField] private List<Peelable> peelableParts;
-    private List<Renderer> renderers = new List<Renderer>();
+    private List<MeshRenderer> renderers = new List<MeshRenderer>();
     [SerializeField] private Transform[] blockHolders;
     [SerializeField] private Material[] mats;
     [SerializeField] private float[] powers;
@@ -52,11 +52,11 @@ public class PeelableManager : MonoBehaviour
         }
     }
 
-    private List<Renderer> GetRenderers(Transform t,List<Renderer> renderers)
+    private List<MeshRenderer> GetRenderers(Transform t,List<MeshRenderer> renderers)
     {
         foreach (Transform item in t)
         {
-            if (item.TryGetComponent<Renderer>(out Renderer rd))
+            if (item.TryGetComponent<MeshRenderer>(out MeshRenderer rd))
             {
                 renderers.Add(rd);
             }

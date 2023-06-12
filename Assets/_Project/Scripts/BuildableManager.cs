@@ -6,7 +6,7 @@ using UnityEngine;
 public class BuildableManager : MonoBehaviour
 {
     [SerializeField] private List<Buildable> buildableParts;
-    private List<Renderer> renderers = new List<Renderer>();
+    private List<MeshRenderer> renderers = new List<MeshRenderer>();
     [SerializeField] private Transform[] blockHolders;
     [SerializeField] private Material[] mats;
 
@@ -50,11 +50,11 @@ public class BuildableManager : MonoBehaviour
             buildableParts[i].SetBuildableEditor(i);
         }
     }
-    private List<Renderer> GetRenderers(Transform t, List<Renderer> renderers)
+    private List<MeshRenderer> GetRenderers(Transform t, List<MeshRenderer> renderers)
     {
         foreach (Transform item in t)
         {
-            if (item.TryGetComponent<Renderer>(out Renderer rd))
+            if (item.TryGetComponent<MeshRenderer>(out MeshRenderer rd))
             {
                 renderers.Add(rd);
             }
