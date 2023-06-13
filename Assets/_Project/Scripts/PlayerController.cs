@@ -185,4 +185,9 @@ public class PlayerController : MonoBehaviour
     {
         paintCollider.SetActive(activate);
     }
+
+    public bool MovementCheck()
+    {
+        return movementController.MovementCheck();
+    }
 }

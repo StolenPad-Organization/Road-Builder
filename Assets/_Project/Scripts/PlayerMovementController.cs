@@ -113,4 +113,9 @@ public class PlayerMovementController : MonoBehaviour
     {
         anim.SetFloat("PushSpeed", speedMultiplayer / 100);
     }
+
+    public bool MovementCheck()
+    {
+        return moveDirection != Vector3.zero;
+    }
 }

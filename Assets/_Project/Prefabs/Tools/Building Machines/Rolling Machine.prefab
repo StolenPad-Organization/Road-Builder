@@ -750,7 +750,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696569332}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.51, z: -2.41}
+  m_LocalPosition: {x: -0, y: 0.51, z: 2.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -768,7 +768,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.07, y: 2.8656936, z: 3.57}
+  m_Size: {x: 6.07, y: 2.8656936, z: 2.95}
   m_Center: {x: 0.018180478, y: 0.9328468, z: 6.775438e-17}
 --- !u!1 &746212197
 GameObject:
@@ -1669,7 +1669,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1376462083}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.289, y: 2.9, z: 0.245}
+  m_LocalPosition: {x: -0.32, y: 2.9, z: -0.33}
   m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2975,7 +2975,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3453140232962627983}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.95, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
@@ -2988,7 +2988,7 @@ Transform:
   - {fileID: 2502208195690363774}
   m_Father: {fileID: 7141974560817773826}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4056022045323066898
 GameObject:
   m_ObjectHideFlags: 0
@@ -3532,6 +3532,7 @@ GameObject:
   - component: {fileID: 7141974560817773826}
   - component: {fileID: 1795269719}
   - component: {fileID: 1795269720}
+  - component: {fileID: 966333296493570678}
   m_Layer: 10
   m_Name: Rolling Machine
   m_TagString: Untagged
@@ -3619,6 +3620,7 @@ MonoBehaviour:
   drivable: 1
   scalingObject: {fileID: 2577361207470148421}
   scalingRate: 0.03
+  anim: {fileID: 966333296493570678}
 --- !u!54 &1795269720
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3635,6 +3637,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &966333296493570678
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7141974560817773827}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d4472e661a4d99d42a7efeb104f9dc78, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7365009587150716122
 GameObject:
   m_ObjectHideFlags: 0

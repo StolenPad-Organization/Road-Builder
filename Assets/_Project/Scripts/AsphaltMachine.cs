@@ -20,6 +20,7 @@ public class AsphaltMachine : MonoBehaviour
     public bool drivable;
     [SerializeField] private Transform scalingObject;
     [SerializeField] private float scalingRate;
+    [SerializeField] private Animator anim;
 
     void Start()
     {
@@ -29,7 +30,18 @@ public class AsphaltMachine : MonoBehaviour
 
     void Update()
     {
-        
+        if (used)
+        {
+            if (!anim.GetBool("Run") && PlayerController.instance.MovementCheck())
+            {
+                anim.SetBool("Run", true);
+            }
+
+            if (anim.GetBool("Run") && !PlayerController.instance.MovementCheck())
+            {
+                anim.SetBool("Run", false);
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -102,10 +114,12 @@ public class AsphaltMachine : MonoBehaviour
     public void OnSpawn()
     {
         used = true;
+        anim.SetBool("Run", true);
         transform.DOMove(GameManager.instance.currentZone.machinesPosition.position, 2.0f).OnComplete(() => 
         {
             used = false;
             PlayerController.instance.arrowController.PointToObject(gameObject);
+            anim.SetBool("Run", false);
         });
     }
 }
