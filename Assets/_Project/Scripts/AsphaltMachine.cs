@@ -18,6 +18,8 @@ public class AsphaltMachine : MonoBehaviour
     [SerializeField] private GameObject fullWarning;
     [SerializeField] private GameObject emptyWarning;
     public bool drivable;
+    [SerializeField] private Transform scalingObject;
+    [SerializeField] private float scalingRate;
 
     void Start()
     {
@@ -51,7 +53,10 @@ public class AsphaltMachine : MonoBehaviour
             }
             return;
         }
-        asphaltObjects[asphaltCount].SetActive(true);
+        if (scalingObject == null)
+            asphaltObjects[asphaltCount].SetActive(true);
+        else
+            SetObjectScale();
         asphaltCount++;
         if (emptyWarning.activeInHierarchy)
         {
@@ -73,7 +78,10 @@ public class AsphaltMachine : MonoBehaviour
         {
             consumeValue = 0;
             asphaltCount--;
-            asphaltObjects[asphaltCount].SetActive(false);
+            if (scalingObject == null)
+                asphaltObjects[asphaltCount].SetActive(false);
+            else
+                SetObjectScale();
         }
         else
         {
@@ -84,6 +92,11 @@ public class AsphaltMachine : MonoBehaviour
             fullWarning.SetActive(false);
         }
         return true;
+    }
+
+    private void SetObjectScale()
+    {
+        scalingObject.localScale = Vector3.one + (new Vector3(0,1,1) * scalingRate * asphaltCount);
     }
 
     public void OnSpawn()
