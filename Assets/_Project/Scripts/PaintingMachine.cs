@@ -18,6 +18,7 @@ public class PaintingMachine : MonoBehaviour
     [SerializeField] private float painteffectRemainingTime;
     [SerializeField] private GameObject fullWarning;
     [SerializeField] private GameObject emptyWarning;
+    [SerializeField] private Animator anim;
 
     void Start()
     {
@@ -36,6 +37,19 @@ public class PaintingMachine : MonoBehaviour
             painteffectRemainingTime -= Time.deltaTime;
             if (!paintEffect.isPlaying)
                 paintEffect.Play();
+        }
+
+        if (used)
+        {
+            if (!anim.GetBool("Run") && PlayerController.instance.MovementCheck())
+            {
+                anim.SetBool("Run", true);
+            }
+
+            if (anim.GetBool("Run") && !PlayerController.instance.MovementCheck())
+            {
+                anim.SetBool("Run", false);
+            }
         }
     }
 
@@ -93,10 +107,12 @@ public class PaintingMachine : MonoBehaviour
     public void OnSpawn()
     {
         used = true;
+        anim.SetBool("Run", true);
         transform.DOMove(GameManager.instance.currentZone.machinesPosition.position + Vector3.right * 1.75f, 2.0f).OnComplete(()=>
         {
             used = false;
             PlayerController.instance.arrowController.PointToObject(gameObject);
+            anim.SetBool("Run", false);
         });
     }
 }

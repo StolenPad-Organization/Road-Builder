@@ -35,7 +35,7 @@ public class Collectable : MonoBehaviour
     {
         collectableCollider.enabled = false;
         transform.SetParent(collectableParent);
-        transform.DOLocalJump(Vector3.up * index * collectableOffest, collectableOffest * index * 3, 1, 0.4f);
+        transform.DOLocalJump(Vector3.up * index * collectableOffest, 1, 1, 0.4f);
         peelable.OnCollect();
     }
 

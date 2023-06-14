@@ -20,6 +20,9 @@ public class AsphaltMachine : MonoBehaviour
     public bool drivable;
     [SerializeField] private Transform scalingObject;
     [SerializeField] private float scalingRate;
+    [SerializeField] private float maxScale;
+    [SerializeField] private Transform scalingObjectHolder;
+    [SerializeField] private Vector2 movingYLimits;
     [SerializeField] private Animator anim;
 
     void Start()
@@ -109,6 +112,10 @@ public class AsphaltMachine : MonoBehaviour
     private void SetObjectScale()
     {
         scalingObject.localScale = Vector3.one + (new Vector3(0,1,1) * scalingRate * asphaltCount);
+        float t = Mathf.InverseLerp(1, maxScale, scalingObject.localScale.y);
+        Vector3 newPos = scalingObjectHolder.transform.localPosition;
+        newPos.y = Mathf.Lerp(movingYLimits.x, movingYLimits.y, t);
+        scalingObjectHolder.transform.localPosition = newPos;
     }
 
     public void OnSpawn()

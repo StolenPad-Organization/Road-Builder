@@ -92,6 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e5cfd3949c6a454f8321b406e01eb3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
   shovelUpgrade: {fileID: 206978556799206407}
   loadUpgrade: {fileID: 3051089401732594523}
 --- !u!1 &597726406796501816
@@ -767,7 +768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1980631460545302305, guid: ef8dcc896440f364dbd9896e151cbcae, type: 3}
       propertyPath: addValue
-      value: 0.25
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1980631460545302305, guid: ef8dcc896440f364dbd9896e151cbcae, type: 3}
       propertyPath: upgradeType
