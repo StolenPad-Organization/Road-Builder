@@ -8,7 +8,7 @@ public class PaintingMachine : MonoBehaviour
     public Transform partsSpawnPoint;
     private bool used;
     [SerializeField] private float paintCapacity;
-    [SerializeField] private float paintValue;
+    public float paintValue;
     [SerializeField] private float paintFillRate;
     [SerializeField] private float paintConsumeRate;
     public float paintDuration;

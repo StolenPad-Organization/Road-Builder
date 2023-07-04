@@ -7,7 +7,7 @@ using UnityEditor;
 public class Buildable : MonoBehaviour
 {
     [SerializeField] private int index;
-    [SerializeField] private Renderer buildableRenderer;
+    public Renderer buildableRenderer;
     [SerializeField] private Collider buildableCollider;
     [SerializeField] private Vector3 initialPos;
     [SerializeField] private Vector3 initialWorldPos;

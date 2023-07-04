@@ -49,6 +49,7 @@ MonoBehaviour:
   power: 12
   shovelHead: {fileID: 7058715386305152867}
   scaleFactor: 0.5
+  showing: 0
 --- !u!54 &6006367521167905721
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -90,7 +91,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222581349565768564}
   m_LocalRotation: {x: 0.30070576, y: -0, z: -0, w: 0.953717}
-  m_LocalPosition: {x: 0, y: 0.23478585, z: -0.14842938}
+  m_LocalPosition: {x: 0, y: 0.025, z: -0.296}
   m_LocalScale: {x: 1, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -108,7 +109,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.34077907, y: 0.66439164, z: 1.0230265}
+  m_Size: {x: 0.34077907, y: 2, z: 1.0230265}
   m_Center: {x: 0.003463924, y: -0.22725755, z: 0.4871602}
 --- !u!1 &222581349636887286
 GameObject:

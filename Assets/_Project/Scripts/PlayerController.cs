@@ -7,13 +7,13 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
 
-    [SerializeField] private PlayerMovementController movementController;
+    public PlayerMovementController movementController;
     [SerializeField] private List<Collectable> collectables;
     [SerializeField] private float collectablesLimit;
     [SerializeField] private float collectableOffest;
     [SerializeField] private Transform collectableParent;
     [SerializeField] private GameObject model;
-    [SerializeField] private GameObject fullWarning;
+    public GameObject fullWarning;
     public AsphaltMachine asphaltMachine;
     public PaintingMachine paintMachine;
     public WheelBarrow wheelBarrow;
@@ -25,6 +25,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private ScrapeTool[] scrapeToolsPrefabs;
     public int scrapeToolIndex;
     public Transform scrapeToolHolder;
+    float lastToolUsingTime;
+    [SerializeField] private float toolCoolDown;
+    public Transform hidePos;
+    public Transform showPos;
 
     [Header("Machines Colliders")]
     [SerializeField] private GameObject buildCollider;
@@ -43,7 +47,17 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-
+        if(lastToolUsingTime <= 0)
+        {
+            lastToolUsingTime = toolCoolDown;
+            //complete making the tool hides after not using it for a while
+            if(scrapeTool.showing)
+                scrapeTool.ShowTool(false);
+        }
+        else
+        {
+            lastToolUsingTime -= Time.deltaTime;
+        }
     }
 
     public void OnPeelableDetection(float amount, float _power)
@@ -51,11 +65,18 @@ public class PlayerController : MonoBehaviour
         if (scrapeTool.power > _power)
             amount = 100;
         movementController.SetSpeedMultiplayer(amount);
+        lastToolUsingTime = toolCoolDown;
+        if(!scrapeTool.showing)
+            scrapeTool.ShowTool(true);
     }
 
     public void OnCollect(Collectable collectable)
     {
-        if(wheelBarrow != null)
+        lastToolUsingTime = toolCoolDown;
+        if (!scrapeTool.showing)
+            scrapeTool.ShowTool(true);
+
+        if (wheelBarrow != null)
         {
             if (wheelBarrow.collectables.Count < wheelBarrow.collectablesLimit)
             {
@@ -99,6 +120,7 @@ public class PlayerController : MonoBehaviour
         if(scrapeTool != null)
             Destroy(scrapeTool.gameObject);
         scrapeTool = Instantiate(scrapeToolsPrefabs[index], scrapeToolHolder);
+        scrapeTool.ShowTool(false);
     }
 
     public void UpgradeCollectablesLimit(float value)
@@ -129,6 +151,8 @@ public class PlayerController : MonoBehaviour
             _asphaltMachine.transform.SetParent(transform);
             movementController.canMove = true;
             GameManager.instance.currentZone.StartAsphaltStage();
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         });
     }
 
@@ -173,6 +197,24 @@ public class PlayerController : MonoBehaviour
 
     public void ResetForNextZone()
     {
+        int x = collectables.Count;
+        for (int i = 0; i < x; i++)
+        {
+            GameManager.instance.currentZone.RemoveCollectableData(true, collectables[0].collectableType, collectables[0].peelable);
+            CollectablesPooler.Instance.ReturnCollectable(collectables[0]);
+            collectables.Remove(collectables[0]);
+        }
+        if(wheelBarrow != null)
+        {
+            x = wheelBarrow.collectables.Count;
+            for (int i = 0; i < x; i++)
+            {
+                GameManager.instance.currentZone.RemoveCollectableData(false, wheelBarrow.collectables[0].collectableType, wheelBarrow.collectables[0].peelable);
+                CollectablesPooler.Instance.ReturnCollectable(wheelBarrow.collectables[0]);
+                wheelBarrow.collectables.Remove(wheelBarrow.collectables[0]);
+            }
+        }
+
         //ChangeScrapeTool(scrapeToolIndex);
         scrapeToolHolder.gameObject.SetActive(true);
         wheelBarrow = null;

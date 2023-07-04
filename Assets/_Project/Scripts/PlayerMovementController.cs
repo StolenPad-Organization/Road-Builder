@@ -92,8 +92,24 @@ public class PlayerMovementController : MonoBehaviour
                 if (playerController.scrapeToolHolder.gameObject.activeInHierarchy || playerController.paintMachine != null || 
                     (playerController.asphaltMachine != null && !playerController.asphaltMachine.drivable))
                 {
-                    anim.SetBool("Push", move);
-                    anim.SetBool("Walk", !move);
+                    if (playerController.scrapeToolHolder.gameObject.activeInHierarchy)
+                    {
+                        if (playerController.scrapeTool.showing)
+                        {
+                            anim.SetBool("Push", move);
+                            anim.SetBool("Walk", !move);
+                        }
+                        else
+                        {
+                            anim.SetBool("Push", !move);
+                            anim.SetBool("Walk", move);
+                        }
+                    }
+                    else
+                    {
+                        anim.SetBool("Push", move);
+                        anim.SetBool("Walk", !move);
+                    }
                 }
                 else
                 {

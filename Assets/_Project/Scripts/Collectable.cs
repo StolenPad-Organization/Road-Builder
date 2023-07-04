@@ -67,7 +67,12 @@ public class Collectable : MonoBehaviour
 
     public void loadCollectableShape()
     {
-        collectableMeshFilter.mesh = peelable.peelableMeshFilter.mesh;
-        collectableRenderer.material = peelable.peelableRenderer.material;
+        if (!peelable.diffirentCollectable)
+        {
+            collectableMeshFilter.mesh = peelable.peelableMeshFilter.mesh;
+            collectableRenderer.material = peelable.peelableRenderer.material;
+            collectableMeshFilter.gameObject.transform.localScale = Vector3.one * 0.75f;
+            collectableMeshFilter.gameObject.transform.localEulerAngles = Vector3.zero;
+        }
     }
 }

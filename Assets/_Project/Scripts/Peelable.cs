@@ -6,11 +6,12 @@ using UnityEditor;
 public class Peelable : MonoBehaviour
 {
     [SerializeField] private int index;
-    [SerializeField] private float power;
+    public float power;
     [SerializeField] private float speedAmount;
     [SerializeField] private CollectableType collectableType;
     public MeshFilter peelableMeshFilter;
     public MeshRenderer peelableRenderer;
+    public bool diffirentCollectable;
 
     void Start()
     {

@@ -16,15 +16,15 @@ public class ZoneManager : MonoBehaviour
     //public static ZoneManager instance;
 
     [SerializeField] private PlayerController player;
-    [SerializeField] private ZoneState zoneState;
+    public ZoneState zoneState;
     [SerializeField] private GameObject removableBlock;
     [SerializeField] private GameObject upgrades;
-    [SerializeField] private AsphaltMachine asphaltMachine;
+    public AsphaltMachine asphaltMachine;
     [SerializeField] private GameObject asphaltBlock;
-    [SerializeField] private AsphaltAmmo asphaltAmmo;
-    [SerializeField] private PaintingMachine paintingMachine;
+    public AsphaltAmmo asphaltAmmo;
+    public PaintingMachine paintingMachine;
     [SerializeField] private GameObject paintBlock;
-    [SerializeField] private PaintAmmo paintAmmo;
+    public PaintAmmo paintAmmo;
     [SerializeField] private WheelBarrow wheelBarrow;
     public SellManager sellManager;
     [SerializeField] private UpgradeManager upgradeManager;
@@ -35,17 +35,17 @@ public class ZoneManager : MonoBehaviour
     [Header("Blocks Progress")]
     [SerializeField] private int maxBlocks;
     [SerializeField] private int currentBlocks;
-    [SerializeField] private PeelableManager peelableManager;
+    public PeelableManager peelableManager;
 
     [Header("Asphalt Progress")]
     [SerializeField] private int maxAsphalt;
     [SerializeField] private int currentAsphalt;
-    [SerializeField] private BuildableManager buildableManager;
+    public BuildableManager buildableManager;
 
     [Header("Paint Progress")]
     [SerializeField] private int maxPaint;
     [SerializeField] private int currentPaint;
-    [SerializeField] private PaintableManager paintableManager;
+    public PaintableManager paintableManager;
 
     [Header("Data Progress")]
     private LevelData levelData;

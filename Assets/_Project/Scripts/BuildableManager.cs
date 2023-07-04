@@ -91,4 +91,29 @@ public class BuildableManager : MonoBehaviour
             }
         }
     }
+
+    public Buildable ReturnNearestBuildable()
+    {
+        Buildable target = null;
+        for (int i = 0; i < buildableParts.Count; i++)
+        {
+            if (target == null)
+            {
+                if (!buildableParts[i].buildableRenderer.enabled)
+                    target = buildableParts[i];
+            }
+            else
+            {
+                if (!buildableParts[i].buildableRenderer.enabled
+                    && Vector3.Distance(buildableParts[i].transform.position, PlayerController.instance.transform.position)
+                    < Vector3.Distance(target.transform.position, PlayerController.instance.transform.position))
+                {
+                    target = buildableParts[i];
+                }
+            }
+
+        }
+
+        return target;
+    }
 }

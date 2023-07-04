@@ -90,4 +90,29 @@ public class PaintableManager : MonoBehaviour
             }
         }
     }
+
+    public Paintable ReturnNearestPaintable()
+    {
+        Paintable target = null;
+        for (int i = 0; i < paintableParts.Count; i++)
+        {
+            if (target == null)
+            {
+                if (!paintableParts[i].paintableRenderer.enabled)
+                    target = paintableParts[i];
+            }
+            else
+            {
+                if (!paintableParts[i].paintableRenderer.enabled
+                    && Vector3.Distance(paintableParts[i].transform.position, PlayerController.instance.transform.position)
+                    < Vector3.Distance(target.transform.position, PlayerController.instance.transform.position))
+                {
+                    target = paintableParts[i];
+                }
+            }
+
+        }
+
+        return target;
+    }
 }

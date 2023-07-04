@@ -112,4 +112,29 @@ public class PeelableManager : MonoBehaviour
             }
         }
     }
+
+    public Peelable ReturnNearestPeelable()
+    {
+        Peelable target = null; 
+        for (int i = 0; i < peelableParts.Count; i++)
+        {
+            if(target == null)
+            {
+                if (peelableParts[i].gameObject.activeInHierarchy)
+                    target = peelableParts[i];
+            }
+            else
+            {
+                if (peelableParts[i].gameObject.activeInHierarchy
+                    && Vector3.Distance(peelableParts[i].transform.position,PlayerController.instance.transform.position) 
+                    < Vector3.Distance(target.transform.position, PlayerController.instance.transform.position))
+                {
+                    target = peelableParts[i];
+                }
+            }
+            
+        }
+
+        return target;
+    }
 }

@@ -10,7 +10,7 @@ public class AsphaltMachine : MonoBehaviour
     [SerializeField] private GameObject playerTrigger;
     [SerializeField] private GameObject partsTrigger;
     private bool used;
-    [SerializeField] private int asphaltCount;
+    public int asphaltCount;
     [SerializeField] private int asphaltCapacity;
     [SerializeField] private GameObject[] asphaltObjects;
     [SerializeField] private int consumeRate;

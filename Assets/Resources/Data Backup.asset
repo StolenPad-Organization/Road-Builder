@@ -12210,7 +12210,9 @@ MonoBehaviour:
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
+      - IsPeeled: 0
+        IsCollected: 0
+      - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
@@ -12240,7 +12242,7 @@ MonoBehaviour:
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
@@ -12566,7 +12568,7 @@ MonoBehaviour:
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
@@ -12688,15 +12690,13 @@ MonoBehaviour:
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
-        IsCollected: 1
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
@@ -12708,7 +12708,7 @@ MonoBehaviour:
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
       - IsPeeled: 0
         IsCollected: 0
@@ -13559,17 +13559,6 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       PaintableDatas:
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0

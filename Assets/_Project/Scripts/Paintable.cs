@@ -7,7 +7,7 @@ using UnityEditor;
 public class Paintable : MonoBehaviour
 {
     [SerializeField] private int index;
-    [SerializeField] private Renderer paintableRenderer;
+    public Renderer paintableRenderer;
     [SerializeField] private Collider paintableCollider;
     [SerializeField] private Vector3 initialPos;
     [SerializeField] private Vector3 initialRot;

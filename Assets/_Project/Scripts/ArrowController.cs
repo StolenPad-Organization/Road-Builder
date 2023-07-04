@@ -9,9 +9,57 @@ public class ArrowController : MonoBehaviour
     [SerializeField] private float checkDistance;
     private Vector3 lookpos;
 
+    [SerializeField] private float checkTargetCooldown;
+    private float nextTargetCheck;
+    GameManager gameManager;
+
     void Start()
     {
-        
+        nextTargetCheck = checkTargetCooldown;
+        gameManager = GameManager.instance;
+    }
+
+    private void Update()
+    {
+        if(nextTargetCheck <= 0)
+        {
+            nextTargetCheck = checkTargetCooldown;
+            if(target == null)
+            {
+                GetNewTarget();
+            }
+        }
+        else
+        {
+            nextTargetCheck -= Time.deltaTime;
+        }
+    }
+
+    private void GetNewTarget()
+    {
+        switch (gameManager.currentZone.zoneState)
+        {
+            case ZoneState.PeelingStage:
+                if(PlayerController.instance.fullWarning.activeInHierarchy)
+                    PointToObject(gameManager.currentZone.sellManager.gameObject);
+                else
+                    PointToObject(gameManager.currentZone.peelableManager.ReturnNearestPeelable().gameObject);
+                break;
+            case ZoneState.BuildingStage:
+                if(gameManager.currentZone.asphaltMachine.asphaltCount <= 0)
+                    PointToObject(gameManager.currentZone.asphaltAmmo.gameObject);
+                else
+                    PointToObject(gameManager.currentZone.buildableManager.ReturnNearestBuildable().gameObject);
+                break;
+            case ZoneState.PaintingStage:
+                if(gameManager.currentZone.paintingMachine.paintValue <= 0)
+                    PointToObject(gameManager.currentZone.paintAmmo.gameObject);
+                else
+                    PointToObject(gameManager.currentZone.paintableManager.ReturnNearestPaintable().gameObject);
+                break;
+            default:
+                break;
+        }
     }
 
     void LateUpdate()
