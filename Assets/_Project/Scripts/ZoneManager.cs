@@ -158,6 +158,10 @@ public class ZoneManager : MonoBehaviour
     {
         zoneData.ZoneState = ZoneState.PeelingStage;
         LoadZone();
+        if(zoneCollider != null)
+        {
+            PlayerController.instance.arrowController.PointToObject(zoneCollider);
+        }
     }
 
     private void LoadZone()

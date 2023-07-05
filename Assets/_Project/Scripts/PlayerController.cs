@@ -165,10 +165,10 @@ public class PlayerController : MonoBehaviour
         model.transform.DOLocalJump(Vector3.zero, 2, 1, 0.7f);
         model.transform.DOScale(1, 0.7f);
         model.transform.DOLocalRotate(Vector3.zero, 0.7f);
-        movementController.ToggleMovementAnimation(true);
         asphaltMachine = null;
         cementCollider.SetActive(false);
         buildCollider.SetActive(false);
+        movementController.ToggleMovementAnimation(true);
     }
 
     public void ActivateWheelBarrow(WheelBarrow _wheelBarrow)
@@ -178,7 +178,25 @@ public class PlayerController : MonoBehaviour
 
     public void RemovePeelingAndCollectingTools()
     {
-        if(wheelBarrow != null)
+        int x = collectables.Count;
+        for (int i = 0; i < x; i++)
+        {
+            GameManager.instance.currentZone.RemoveCollectableData(true, collectables[0].collectableType, collectables[0].peelable);
+            CollectablesPooler.Instance.ReturnCollectable(collectables[0]);
+            collectables.Remove(collectables[0]);
+        }
+        if (wheelBarrow != null)
+        {
+            x = wheelBarrow.collectables.Count;
+            for (int i = 0; i < x; i++)
+            {
+                GameManager.instance.currentZone.RemoveCollectableData(false, wheelBarrow.collectables[0].collectableType, wheelBarrow.collectables[0].peelable);
+                CollectablesPooler.Instance.ReturnCollectable(wheelBarrow.collectables[0]);
+                wheelBarrow.collectables.Remove(wheelBarrow.collectables[0]);
+            }
+        }
+
+        if (wheelBarrow != null)
             wheelBarrow.gameObject.SetActive(false);
         collectableParent.gameObject.SetActive(false);
         scrapeToolHolder.gameObject.SetActive(false);
@@ -197,30 +215,13 @@ public class PlayerController : MonoBehaviour
 
     public void ResetForNextZone()
     {
-        int x = collectables.Count;
-        for (int i = 0; i < x; i++)
-        {
-            GameManager.instance.currentZone.RemoveCollectableData(true, collectables[0].collectableType, collectables[0].peelable);
-            CollectablesPooler.Instance.ReturnCollectable(collectables[0]);
-            collectables.Remove(collectables[0]);
-        }
-        if(wheelBarrow != null)
-        {
-            x = wheelBarrow.collectables.Count;
-            for (int i = 0; i < x; i++)
-            {
-                GameManager.instance.currentZone.RemoveCollectableData(false, wheelBarrow.collectables[0].collectableType, wheelBarrow.collectables[0].peelable);
-                CollectablesPooler.Instance.ReturnCollectable(wheelBarrow.collectables[0]);
-                wheelBarrow.collectables.Remove(wheelBarrow.collectables[0]);
-            }
-        }
-
         //ChangeScrapeTool(scrapeToolIndex);
         scrapeToolHolder.gameObject.SetActive(true);
         wheelBarrow = null;
         collectableParent.gameObject.SetActive(true);
         paintMachine = null;
         TogglePaintCollider(false);
+        movementController.ToggleMovementAnimation(true);
     }
 
     public void TogglePaintCollider(bool activate)

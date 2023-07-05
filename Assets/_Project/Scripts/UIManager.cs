@@ -31,7 +31,7 @@ public class UIManager : MonoBehaviour
     public void UpdateMoney(int amount)
     {
         money += amount;
-        moneyText.text = money.ToString();
+        moneyText.text = ReturnNumberText(money);
     }
 
     public void ShowUpgradeMenu()
@@ -47,5 +47,22 @@ public class UIManager : MonoBehaviour
     public void UpdateProgressBar(float value)
     {
         progressBar.UpdateProgressBar(value);
+    }
+
+    public string ReturnNumberText(int num)
+    {
+        int a, b;
+        a = num / 1000;
+        b = num % 1000;
+        if(a == 0)
+        {
+            return b.ToString();
+        }
+        else
+        {
+            if(b/100 != 0)
+                b /= 100;
+            return a + "." + b +" k";
+        }
     }
 }

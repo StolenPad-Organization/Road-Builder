@@ -53,7 +53,7 @@ public class Upgrade : MonoBehaviour
             stepIndex = upgradeData.StepIndex;
         }
 
-        costText.text = cost.ToString();
+        costText.text = UIManager.instance.ReturnNumberText(cost);
         levelText.text = "Lvl " + level;
         for (int i = 0; i < stepIndex+1; i++)
         {
@@ -82,7 +82,7 @@ public class Upgrade : MonoBehaviour
     {
         UIManager.instance.UpdateMoney(-cost);
         cost += (costAddPrecentage * cost)/100;
-        costText.text = cost.ToString();
+        costText.text = UIManager.instance.ReturnNumberText(cost);
         stepIndex++;
         if(stepIndex < steps.Length)
         {
