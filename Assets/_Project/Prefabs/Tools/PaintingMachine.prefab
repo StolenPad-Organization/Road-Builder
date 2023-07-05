@@ -535,7 +535,7 @@ BoxCollider:
   m_GameObject: {fileID: 5960236475853937507}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 2}
   m_Center: {x: 0.67, y: 0.5, z: 1.65}
@@ -552,6 +552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   partsSpawnPoint: {fileID: 1927439657}
+  used: 0
   paintCapacity: 10
   paintValue: 0
   paintFillRate: 0.3
@@ -564,6 +565,7 @@ MonoBehaviour:
   fullWarning: {fileID: 1013188394261611699}
   emptyWarning: {fileID: 2324286535654034964}
   anim: {fileID: 3949997452899001599}
+  machineCollider: {fileID: 5960236475853937504}
 --- !u!95 &3949997452899001599
 Animator:
   serializedVersion: 4

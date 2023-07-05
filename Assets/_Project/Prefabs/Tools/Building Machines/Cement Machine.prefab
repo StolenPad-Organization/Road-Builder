@@ -869,7 +869,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &784992098
 Transform:
   m_ObjectHideFlags: 0
@@ -3253,6 +3253,9 @@ MonoBehaviour:
   drivable: 0
   scalingObject: {fileID: 0}
   scalingRate: 0
+  maxScale: 0
+  scalingObjectHolder: {fileID: 0}
+  movingYLimits: {x: 0, y: 0}
   anim: {fileID: 8260559025643774222}
 --- !u!54 &1795269720
 Rigidbody:

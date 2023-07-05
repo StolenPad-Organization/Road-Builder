@@ -19,10 +19,10 @@ public class ZoneManager : MonoBehaviour
     public ZoneState zoneState;
     [SerializeField] private GameObject removableBlock;
     [SerializeField] private GameObject upgrades;
-    public AsphaltMachine asphaltMachine;
+    public BuildMachine asphaltMachine;
     [SerializeField] private GameObject asphaltBlock;
-    public AsphaltAmmo asphaltAmmo;
-    public PaintingMachine paintingMachine;
+    public BuildAmmo asphaltAmmo;
+    public PaintMachine paintingMachine;
     [SerializeField] private GameObject paintBlock;
     public PaintAmmo paintAmmo;
     [SerializeField] private WheelBarrow wheelBarrow;
@@ -94,6 +94,8 @@ public class ZoneManager : MonoBehaviour
         zoneState = ZoneState.BuildingStage;
         asphaltMachine.gameObject.SetActive(true);
         player.arrowController.PointToObject(asphaltMachine.gameObject);
+
+        asphaltMachine.OnSpawn();
     }
     public void StartAsphaltStage()
     {
@@ -121,6 +123,8 @@ public class ZoneManager : MonoBehaviour
         PlayerController.instance.GetOffAsphaltMachine();
         paintingMachine.gameObject.SetActive(true);
         player.arrowController.PointToObject(paintingMachine.gameObject);
+
+        paintingMachine.OnSpawn();
     }
     public void StartPaintStage()
     {
@@ -202,6 +206,8 @@ public class ZoneManager : MonoBehaviour
                 removableBlock.SetActive(false);
                 asphaltMachine.gameObject.SetActive(true);
                 asphaltBlock.SetActive(true);
+
+                asphaltMachine.OnSpawn();
                 break;
             case ZoneState.PaintingStage:
                 if (zoneCollider != null)
@@ -215,6 +221,8 @@ public class ZoneManager : MonoBehaviour
                 asphaltBlock.SetActive(true);
                 paintingMachine.gameObject.SetActive(true);
                 paintBlock.gameObject.SetActive(true);
+
+                paintingMachine.OnSpawn();
                 break;
             case ZoneState.Complete:
                 if (zoneCollider != null)

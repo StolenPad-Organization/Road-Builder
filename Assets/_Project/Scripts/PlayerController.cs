@@ -14,8 +14,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform collectableParent;
     [SerializeField] private GameObject model;
     public GameObject fullWarning;
-    public AsphaltMachine asphaltMachine;
-    public PaintingMachine paintMachine;
+    public BuildMachine asphaltMachine;
+    public PaintMachine paintMachine;
     public WheelBarrow wheelBarrow;
     public Transform wheelBarrowFollowTransform;
     public ArrowController arrowController;
@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour
         collectablesLimit = value;
     }
 
-    public void GetOnAsphaltMachine(Transform playerSeat, AsphaltMachine _asphaltMachine)
+    public void GetOnAsphaltMachine(Transform playerSeat, BuildMachine _asphaltMachine)
     {
         fullWarning.SetActive(false);
         RemovePeelingAndCollectingTools();
