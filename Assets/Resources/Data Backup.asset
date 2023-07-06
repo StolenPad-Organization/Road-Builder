@@ -24,7 +24,7 @@ MonoBehaviour:
     WheelBarrowRotation: {x: -0, y: 0, z: 0}
     wheelBarrowCollectables: []
     playerCollectables: []
-  upgradeDatas:
+  UpgradeDatas:
   - upgradeType: 0
     Loops: 0
     Level: 0
@@ -14018,3 +14018,16 @@ MonoBehaviour:
       - IsPainted: 0
       - IsPainted: 0
       MoneyDatas: []
+  MachineUpgradeDatas:
+  - machineUpgradeType: 0
+    Loops: 0
+    Level: 1
+    Value: 1
+    StepIndex: 0
+    Cost: 1000
+  - machineUpgradeType: 1
+    Loops: 0
+    Level: 1
+    Value: 1
+    StepIndex: 0
+    Cost: 1000

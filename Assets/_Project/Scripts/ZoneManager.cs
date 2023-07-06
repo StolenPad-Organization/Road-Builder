@@ -19,7 +19,7 @@ public class ZoneManager : MonoBehaviour
     public ZoneState zoneState;
     [SerializeField] private GameObject removableBlock;
     [SerializeField] private GameObject upgrades;
-    public BuildMachine asphaltMachine;
+    public BuildMachine buildMachine;
     [SerializeField] private GameObject asphaltBlock;
     public BuildAmmo asphaltAmmo;
     public PaintMachine paintingMachine;
@@ -28,9 +28,11 @@ public class ZoneManager : MonoBehaviour
     [SerializeField] private WheelBarrow wheelBarrow;
     public SellManager sellManager;
     [SerializeField] private UpgradeManager upgradeManager;
+    public BuildMachineUpgradeMenu buildMachineUpgradeMenu;
     [SerializeField] private Transform collectableParent;
     public Transform machinesPosition;
     [SerializeField] private GameObject zoneCollider;
+    [SerializeField] private GameObject machineUpgradeTrigger;
 
     [Header("Blocks Progress")]
     [SerializeField] private int maxBlocks;
@@ -92,14 +94,16 @@ public class ZoneManager : MonoBehaviour
     private void ShowAsphaltMachine()
     {
         zoneState = ZoneState.BuildingStage;
-        asphaltMachine.gameObject.SetActive(true);
-        player.arrowController.PointToObject(asphaltMachine.gameObject);
+        buildMachine.gameObject.SetActive(true);
+        player.arrowController.PointToObject(buildMachine.gameObject);
 
-        asphaltMachine.OnSpawn();
+        buildMachine.OnSpawn();
     }
     public void StartAsphaltStage()
     {
         upgrades.SetActive(false);
+        if (buildMachine.machineUpgradeType != MachineUpgradeType.none)
+            machineUpgradeTrigger.SetActive(true);
         removableBlock.SetActive(false);
         //PlayerController.instance.RemovePeelingAndCollectingTools();
         asphaltBlock.SetActive(true);
@@ -129,6 +133,7 @@ public class ZoneManager : MonoBehaviour
     public void StartPaintStage()
     {
         //PlayerController.instance.GetOffAsphaltMachine();
+        machineUpgradeTrigger.SetActive(false);
         asphaltAmmo.gameObject.SetActive(false);
         paintBlock.SetActive(true);
         paintAmmo.gameObject.SetActive(true);
@@ -170,6 +175,12 @@ public class ZoneManager : MonoBehaviour
 
     private void LoadZone()
     {
+        if (GameManager.instance.currentZone == this && buildMachine.machineUpgradeType != MachineUpgradeType.none)
+        {
+            buildMachineUpgradeMenu.buildMachineUpgrade.LoadUpgrade(buildMachine.machineUpgradeType);
+            buildMachineUpgradeMenu.UpgradeMachine();
+            buildMachineUpgradeMenu.CheckButtons();
+        }
         // Load player position and rotation
         player.transform.position = playerData.PlayerPosition;
         player.transform.eulerAngles = playerData.PlayerRotation;
@@ -204,10 +215,12 @@ public class ZoneManager : MonoBehaviour
                 buildableManager.LoadBuildables(zoneData.BuildableDatas, true);
                 upgrades.SetActive(false);
                 removableBlock.SetActive(false);
-                asphaltMachine.gameObject.SetActive(true);
+                buildMachine.gameObject.SetActive(true);
                 asphaltBlock.SetActive(true);
+                if (buildMachine.machineUpgradeType != MachineUpgradeType.none)
+                    machineUpgradeTrigger.SetActive(true);
 
-                asphaltMachine.OnSpawn();
+                buildMachine.OnSpawn();
                 break;
             case ZoneState.PaintingStage:
                 if (zoneCollider != null)
@@ -260,6 +273,8 @@ public class ZoneManager : MonoBehaviour
         //check for stage
         upgradeManager.shovelUpgrade.SaveUpgradeData();
         upgradeManager.loadUpgrade.SaveUpgradeData();
+
+        buildMachineUpgradeMenu.buildMachineUpgrade.SaveUpgradeData();
 
         Database.Instance.SetPlayerData(playerData);
 

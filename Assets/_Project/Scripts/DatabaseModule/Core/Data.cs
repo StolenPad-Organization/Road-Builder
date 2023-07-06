@@ -93,3 +93,14 @@ public class UpgradeData
     public int StepIndex;
     public int Cost;
 }
+
+[System.Serializable]
+public class MachineUpgradeData
+{
+    public MachineUpgradeType machineUpgradeType;
+    public int Loops;
+    public int Level;
+    public float Value;
+    public int StepIndex;
+    public int Cost;
+}

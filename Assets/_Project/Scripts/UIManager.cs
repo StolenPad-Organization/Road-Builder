@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI moneyText;
     public int money;
     [SerializeField] private UpgradeManager upgradeManager;
+    [SerializeField] private BuildMachineUpgradeMenu buildMachineUpgradeMenu;
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private ProgressUIManager progressBar;
 
@@ -64,5 +65,15 @@ public class UIManager : MonoBehaviour
                 b /= 100;
             return a + "." + b +" k";
         }
+    }
+
+    public void ShowMachineUpgradeMenu()
+    {
+        buildMachineUpgradeMenu.gameObject.SetActive(true);
+    }
+
+    public void HideMachineUpgradeMenu()
+    {
+        buildMachineUpgradeMenu.gameObject.SetActive(false);
     }
 }

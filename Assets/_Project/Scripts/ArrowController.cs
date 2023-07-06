@@ -46,7 +46,7 @@ public class ArrowController : MonoBehaviour
                     PointToObject(gameManager.currentZone.peelableManager.ReturnNearestPeelable().gameObject);
                 break;
             case ZoneState.BuildingStage:
-                if(gameManager.currentZone.asphaltMachine.asphaltCount <= 0)
+                if(gameManager.currentZone.buildMachine.asphaltCount <= 0)
                     PointToObject(gameManager.currentZone.asphaltAmmo.gameObject);
                 else
                     PointToObject(gameManager.currentZone.buildableManager.ReturnNearestBuildable().gameObject);

@@ -3209,10 +3209,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c03f61f3f12fbf42bdf993eff4589bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  machineUpgradeType: 2
   playerSeat: {fileID: 1376462084}
   partsSpawnPoint: {fileID: 1665942918}
   playerTrigger: {fileID: 784992096}
   partsTrigger: {fileID: 696569332}
+  used: 0
   asphaltCount: 0
   asphaltCapacity: 0
   asphaltObjects:
@@ -3253,10 +3255,14 @@ MonoBehaviour:
   drivable: 0
   scalingObject: {fileID: 0}
   scalingRate: 0
+  minScale: 0
   maxScale: 0
   scalingObjectHolder: {fileID: 0}
   movingYLimits: {x: 0, y: 0}
   anim: {fileID: 8260559025643774222}
+  buildMachineUpgrades: []
+  upgradeIndex: 0
+  hasUpgrade: 0
 --- !u!54 &1795269720
 Rigidbody:
   m_ObjectHideFlags: 0

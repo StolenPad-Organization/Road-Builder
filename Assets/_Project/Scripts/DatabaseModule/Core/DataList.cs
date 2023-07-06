@@ -5,6 +5,7 @@ public class DataList : ScriptableObject
 {
     public LevelData LevelData;
     public PlayerData PlayerData;
-    public List<UpgradeData> upgradeDatas;
+    public List<UpgradeData> UpgradeDatas;
     public List<LevelProgressData> LevelProgressDatas;
+    public List<MachineUpgradeData> MachineUpgradeDatas;
 }

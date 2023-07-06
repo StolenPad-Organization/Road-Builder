@@ -5,6 +5,7 @@ using DG.Tweening;
 
 public class BuildMachine : MonoBehaviour
 {
+    public MachineUpgradeType machineUpgradeType;
     [SerializeField] private Transform playerSeat;
     public Transform partsSpawnPoint;
     [SerializeField] private GameObject playerTrigger;
@@ -20,14 +21,19 @@ public class BuildMachine : MonoBehaviour
     public bool drivable;
     [SerializeField] private Transform scalingObject;
     [SerializeField] private float scalingRate;
+    [SerializeField] private float minScale;
     [SerializeField] private float maxScale;
     [SerializeField] private Transform scalingObjectHolder;
     [SerializeField] private Vector2 movingYLimits;
     [SerializeField] private Animator anim;
+    [SerializeField] private BuildMachineUpgrade[] buildMachineUpgrades;
+    [SerializeField] private int upgradeIndex;
+    [SerializeField] private bool hasUpgrade;
 
     void Start()
     {
         asphaltCapacity = asphaltObjects.Length;
+        //SetUpgrade(upgradeIndex);
         //OnSpawn();
     }
 
@@ -44,6 +50,10 @@ public class BuildMachine : MonoBehaviour
             {
                 anim.SetBool("Run", false);
             }
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            SetUpgrade(Random.Range(0,3));
         }
     }
 
@@ -111,8 +121,8 @@ public class BuildMachine : MonoBehaviour
 
     private void SetObjectScale()
     {
-        scalingObject.localScale = Vector3.one + (new Vector3(0,1,1) * scalingRate * asphaltCount);
-        float t = Mathf.InverseLerp(1, maxScale, scalingObject.localScale.y);
+        scalingObject.localScale = new Vector3(1, minScale, minScale) + (new Vector3(0,1,1) * scalingRate * asphaltCount);
+        float t = Mathf.InverseLerp(minScale, maxScale, scalingObject.localScale.y);
         Vector3 newPos = scalingObjectHolder.transform.localPosition;
         newPos.y = Mathf.Lerp(movingYLimits.x, movingYLimits.y, t);
         scalingObjectHolder.transform.localPosition = newPos;
@@ -130,5 +140,26 @@ public class BuildMachine : MonoBehaviour
             PlayerController.instance.arrowController.PointToObject(gameObject);
         //    anim.SetBool("Run", false);
         //});
+    }
+
+    public void SetUpgrade(int index)
+    {
+        if (!hasUpgrade) return;
+        buildMachineUpgrades[upgradeIndex].gameObject.SetActive(false);
+        if (index > 0)
+            anim.SetLayerWeight(index, 0);
+        upgradeIndex = index;
+        buildMachineUpgrades[upgradeIndex].gameObject.SetActive(true);
+        playerSeat = buildMachineUpgrades[upgradeIndex].playerSeat;
+        consumeRate = buildMachineUpgrades[upgradeIndex].consumeRate;
+        anim.SetLayerWeight(index, 1);
+        if (scalingObject != null)
+        {
+            scalingObject = buildMachineUpgrades[upgradeIndex].scalingObject;
+            scalingObjectHolder = buildMachineUpgrades[upgradeIndex].scalingObjectHolder;
+            SetObjectScale();
+        }
+        if (used)
+            PlayerController.instance.GetOnAsphaltMachine(playerSeat, this);
     }
 }

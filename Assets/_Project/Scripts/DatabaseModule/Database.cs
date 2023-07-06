@@ -144,10 +144,10 @@ public class Database : MonoBehaviour
 
     public UpgradeData GetUpgradeData(UpgradeType upgradeType)
     {
-        for (int i = 0; i < data.upgradeDatas.Count; i++)
+        for (int i = 0; i < data.UpgradeDatas.Count; i++)
         {
-            if (data.upgradeDatas[i].upgradeType == upgradeType)
-                return data.upgradeDatas[i];
+            if (data.UpgradeDatas[i].upgradeType == upgradeType)
+                return data.UpgradeDatas[i];
         }
 
         return null;
@@ -155,10 +155,30 @@ public class Database : MonoBehaviour
 
     public void SetUpgradeData(UpgradeType upgradeType, UpgradeData value)
     {
-        for (int i = 0; i < data.upgradeDatas.Count; i++)
+        for (int i = 0; i < data.UpgradeDatas.Count; i++)
         {
-            if (data.upgradeDatas[i].upgradeType == upgradeType)
-                data.upgradeDatas[i] = value;
+            if (data.UpgradeDatas[i].upgradeType == upgradeType)
+                data.UpgradeDatas[i] = value;
+        }
+    }
+
+    public MachineUpgradeData GetMachineUpgradeData(MachineUpgradeType upgradeType)
+    {
+        for (int i = 0; i < data.MachineUpgradeDatas.Count; i++)
+        {
+            if (data.MachineUpgradeDatas[i].machineUpgradeType == upgradeType)
+                return data.MachineUpgradeDatas[i];
+        }
+
+        return null;
+    }
+
+    public void SetMachineUpgradeData(MachineUpgradeType upgradeType, MachineUpgradeData value)
+    {
+        for (int i = 0; i < data.MachineUpgradeDatas.Count; i++)
+        {
+            if (data.MachineUpgradeDatas[i].machineUpgradeType == upgradeType)
+                data.MachineUpgradeDatas[i] = value;
         }
     }
 }

@@ -12,7 +12,7 @@ public class PlayerMovementController : MonoBehaviour
     public bool canMove = false;
     [SerializeField] private float speedMultiplayer = 100;
     private PlayerController playerController;
-    private bool drive;
+    [SerializeField] private bool drive;
     private bool move;
     [SerializeField] private Rigidbody rb;
 
@@ -61,6 +61,10 @@ public class PlayerMovementController : MonoBehaviour
                 speedMultiplayer = 100;
         }
         SetPushSpeed();
+        if(drive && !anim.GetBool("Drive") || !drive && anim.GetBool("Drive"))
+        {
+            anim.SetBool("Drive", drive);
+        }
     }
 
     public void ToggleMovementAnimation(bool activate)
