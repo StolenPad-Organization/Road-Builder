@@ -29,12 +29,14 @@ public class BuildMachine : MonoBehaviour
     [SerializeField] private BuildMachineUpgrade[] buildMachineUpgrades;
     [SerializeField] private int upgradeIndex;
     [SerializeField] private bool hasUpgrade;
+    private Vector3 ammoInitialScale;
 
     void Start()
     {
         asphaltCapacity = asphaltObjects.Length;
         //SetUpgrade(upgradeIndex);
         //OnSpawn();
+        ammoInitialScale = asphaltObjects[0].transform.localScale;
     }
 
     void Update()
@@ -50,10 +52,6 @@ public class BuildMachine : MonoBehaviour
             {
                 anim.SetBool("Run", false);
             }
-        }
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            SetUpgrade(Random.Range(0,3));
         }
     }
 
@@ -79,7 +77,12 @@ public class BuildMachine : MonoBehaviour
             return;
         }
         if (scalingObject == null)
+        {
             asphaltObjects[asphaltCount].SetActive(true);
+            asphaltObjects[asphaltCount].transform.DOKill();
+            asphaltObjects[asphaltCount].transform.localScale = Vector3.zero;
+            asphaltObjects[asphaltCount].transform.DOScale(ammoInitialScale, 0.5f);
+        }
         else
             SetObjectScale();
         asphaltCount++;
@@ -104,7 +107,9 @@ public class BuildMachine : MonoBehaviour
             consumeValue = 0;
             asphaltCount--;
             if (scalingObject == null)
-                asphaltObjects[asphaltCount].SetActive(false);
+            {
+                asphaltObjects[asphaltCount].transform.DOScale(0, 0.5f);
+            }
             else
                 SetObjectScale();
         }
