@@ -36,10 +36,12 @@ public class ScrapeTool : MonoBehaviour
     private void OnDisable()
     {
         transform.DOKill();
+        shovelHead.transform.DOKill();
     }
 
     private void OnDestroy()
     {
         transform.DOKill();
+        shovelHead.transform.DOKill();
     }
 }
