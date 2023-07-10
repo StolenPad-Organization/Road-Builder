@@ -14,6 +14,7 @@ public class Buildable : MonoBehaviour
     [SerializeField] private Vector3 initialRot;
     [SerializeField] private Vector3 initialscale;
     private ParticleSystem smoke;
+    private GameObject copy;
 
     void Start()
     {
@@ -49,6 +50,8 @@ public class Buildable : MonoBehaviour
             GameManager.instance.currentZone.OnRoadBuild();
             //smoke = SmokePooler.instance.GetSmoke();
             //smoke.transform.position = transform.position + Vector3.up * 0.2f;
+            if(copy!=null)
+                copy.SetActive(true);
         });
         transform.DOLocalRotate(initialRot, 0.25f);
         transform.DOScale(initialscale, 0.25f);
@@ -77,7 +80,16 @@ public class Buildable : MonoBehaviour
     public void SetMaterialEditor(Material mat)
     {
         buildableRenderer.material = mat;
+
+        if (copy != null)
+            DestroyImmediate(copy);
+        copy = Instantiate(buildableRenderer.gameObject, buildableRenderer.transform);
+        copy.transform.localScale = new Vector3(1.2f, 0.5f, 1.2f);
+        copy.GetComponent<Renderer>().enabled = true;
+        copy.SetActive(false);
+
         EditorUtility.SetDirty(buildableRenderer);
+        EditorUtility.SetDirty(this);
         EditorUtility.SetDirty(gameObject);
     }
 #endif
