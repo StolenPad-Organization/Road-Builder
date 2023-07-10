@@ -9,15 +9,17 @@ public class BuildableManager : MonoBehaviour
     private List<MeshRenderer> renderers = new List<MeshRenderer>();
     [SerializeField] private Transform[] blockHolders;
     [SerializeField] private Material[] mats;
+    [SerializeField] private Material[] copyMats;
+    [SerializeField] private float copyCenter = 0.0f;
 
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        
+
     }
 
 #if UNITY_EDITOR
@@ -79,6 +81,40 @@ public class BuildableManager : MonoBehaviour
             }
         }
     }
+
+    [ContextMenu("Set Buildable Copy")]
+    private void SetBuildableCopy()
+    {
+        Undo.IncrementCurrentGroup();
+        Undo.SetCurrentGroupName("created copies");
+        int undoId = Undo.GetCurrentGroup();
+        for (int i = 0; i < blockHolders.Length; i++)
+        {
+            renderers.Clear();
+            renderers = GetRenderers(blockHolders[i], renderers);
+            foreach (var item in renderers)
+            {
+                var copy = item.gameObject.GetComponent<Buildable>().SetBuildableCopy(copyMats[i], copyCenter);
+                Undo.RegisterCreatedObjectUndo(copy, "created Copy");
+            }
+        }
+        Undo.CollapseUndoOperations(undoId);
+    }
+
+    [ContextMenu("Remove Buildable Copy")]
+    private void RemoveBuildableCopy()
+    {
+        for (int i = 0; i < blockHolders.Length; i++)
+        {
+            renderers.Clear();
+            renderers = GetRenderers(blockHolders[i], renderers);
+            foreach (var item in renderers)
+            {
+                item.gameObject.GetComponent<Buildable>().RemoveCopy();
+            }
+        }
+    }
+
 #endif
 
     public void LoadBuildables(List<BuildableData> buildableDatas, bool check)

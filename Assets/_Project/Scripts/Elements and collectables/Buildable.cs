@@ -14,7 +14,7 @@ public class Buildable : MonoBehaviour
     [SerializeField] private Vector3 initialRot;
     [SerializeField] private Vector3 initialscale;
     private ParticleSystem smoke;
-    private GameObject copy;
+    [SerializeField] private GameObject copy;
 
     void Start()
     {
@@ -45,12 +45,13 @@ public class Buildable : MonoBehaviour
         buildableRenderer.enabled = true;
         transform.position = PlayerController.instance.asphaltMachine.partsSpawnPoint.position + PlayerController.instance.asphaltMachine.partsSpawnPoint.right * Random.Range(-1.5f, 1.5f);
         transform.localScale = Vector3.zero;
-        transform.DOLocalJump(initialPos, 0.25f, 1, 0.25f).OnComplete(()=>
+        transform.DOLocalJump(initialPos, 0.25f, 1, 0.265f).OnComplete(()=>
         {
             GameManager.instance.currentZone.OnRoadBuild();
             //smoke = SmokePooler.instance.GetSmoke();
             //smoke.transform.position = transform.position + Vector3.up * 0.2f;
-            if(copy!=null)
+
+            if (copy != null)
                 copy.SetActive(true);
         });
         transform.DOLocalRotate(initialRot, 0.25f);
@@ -81,14 +82,38 @@ public class Buildable : MonoBehaviour
     {
         buildableRenderer.material = mat;
 
+        EditorUtility.SetDirty(buildableRenderer);
+        EditorUtility.SetDirty(this);
+        EditorUtility.SetDirty(gameObject);
+    }
+
+    public GameObject SetBuildableCopy(Material mat, float ycenter)
+    {
         if (copy != null)
             DestroyImmediate(copy);
         copy = Instantiate(buildableRenderer.gameObject, buildableRenderer.transform);
-        copy.transform.localScale = new Vector3(1.2f, 0.5f, 1.2f);
+        copy.transform.localScale = new Vector3(1.5f, 0.01f, 1.5f);
+        copy.transform.localPosition = Vector3.up * ycenter;
         copy.GetComponent<Renderer>().enabled = true;
+        copy.GetComponent<Renderer>().material = mat;
         copy.SetActive(false);
 
-        EditorUtility.SetDirty(buildableRenderer);
+        DestroyImmediate(copy.GetComponent<BoxCollider>());
+        DestroyImmediate(copy.GetComponent<Buildable>());
+
+        EditorUtility.SetDirty(copy);
+        EditorUtility.SetDirty(this);
+        EditorUtility.SetDirty(gameObject);
+
+        return copy;
+    }
+
+    public void RemoveCopy()
+    {
+        if (copy != null)
+            DestroyImmediate(copy);
+        copy = null;
+
         EditorUtility.SetDirty(this);
         EditorUtility.SetDirty(gameObject);
     }
@@ -102,5 +127,7 @@ public class Buildable : MonoBehaviour
             GameManager.instance.currentZone.OnRoadBuild();
         Material material = buildableRenderer.material;
         material.SetColor("_EmissionColor", Color.black);
+        if (copy != null)
+            copy.SetActive(true);
     }
 }
