@@ -93,6 +93,9 @@ public class PlayerMovementController : MonoBehaviour
             }
             else
             {
+                if(playerController == null)
+                    playerController = PlayerController.instance;
+
                 if (playerController.scrapeToolHolder.gameObject.activeInHierarchy || playerController.paintMachine != null || 
                     (playerController.asphaltMachine != null && !playerController.asphaltMachine.drivable))
                 {

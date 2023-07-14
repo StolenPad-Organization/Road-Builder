@@ -12,17 +12,24 @@ public class WheelBarrow : MonoBehaviour
     [SerializeField] private bool used;
     [SerializeField] private NavMeshAgent agent;
     private Transform playerTransform;
+    Vector3 velocity = Vector3.zero;
+
+    private void Awake()
+    {
+        agent.updatePosition = false;
+    }
 
     void Start()
     {
         playerTransform = PlayerController.instance.wheelBarrowFollowTransform;
     }
 
-    void LateUpdate()
+    void FixedUpdate()
     {
         if (used)
         {
             agent.SetDestination(playerTransform.position);
+            transform.position = Vector3.SmoothDamp(transform.position, agent.nextPosition, ref velocity, 0.1f);
         }
     }
 
