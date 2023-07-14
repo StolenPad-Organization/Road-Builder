@@ -1,3 +1,4 @@
+using HomaGames.HomaBelly;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,8 +20,10 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Start()
     {
+        DefaultAnalytics.GameplayStarted();
         Application.targetFrameRate = 60;
         yield return new WaitForSeconds(0.1f);
+        DefaultAnalytics.LevelStarted(1);
         levelData = Database.Instance.GetLevelData();
         levelProgressData = Database.Instance.GetLevelProgressData(levelData.LevelValue - 1);
         currentZone = zones[levelProgressData.ZoneIndex];
@@ -60,6 +63,7 @@ public class GameManager : MonoBehaviour
     public void WinLevel()
     {
         Debug.Log("Level Complete , YOU WIN!");
+        DefaultAnalytics.LevelCompleted();
     }
 
     private void OnApplicationQuit()
