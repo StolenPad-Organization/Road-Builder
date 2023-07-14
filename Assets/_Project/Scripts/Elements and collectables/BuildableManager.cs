@@ -11,6 +11,7 @@ public class BuildableManager : MonoBehaviour
     [SerializeField] private Material[] mats;
     [SerializeField] private Material[] copyMats;
     [SerializeField] private float copyCenter = 0.0f;
+    [SerializeField] private float copySize = 1.5f;
 
     void Start()
     {
@@ -94,7 +95,7 @@ public class BuildableManager : MonoBehaviour
             renderers = GetRenderers(blockHolders[i], renderers);
             foreach (var item in renderers)
             {
-                var copy = item.gameObject.GetComponent<Buildable>().SetBuildableCopy(copyMats[i], copyCenter);
+                var copy = item.gameObject.GetComponent<Buildable>().SetBuildableCopy(copyMats[i], copyCenter, copySize);
                 Undo.RegisterCreatedObjectUndo(copy, "created Copy");
             }
         }

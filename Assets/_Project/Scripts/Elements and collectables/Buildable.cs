@@ -87,12 +87,12 @@ public class Buildable : MonoBehaviour
         EditorUtility.SetDirty(gameObject);
     }
 
-    public GameObject SetBuildableCopy(Material mat, float ycenter)
+    public GameObject SetBuildableCopy(Material mat, float ycenter, float copySize)
     {
         if (copy != null)
             DestroyImmediate(copy);
         copy = Instantiate(buildableRenderer.gameObject, buildableRenderer.transform);
-        copy.transform.localScale = new Vector3(1.5f, 0.01f, 1.5f);
+        copy.transform.localScale = new Vector3(copySize, 0.01f, copySize);
         copy.transform.localPosition = Vector3.up * ycenter;
         copy.GetComponent<Renderer>().enabled = true;
         copy.GetComponent<Renderer>().material = mat;
