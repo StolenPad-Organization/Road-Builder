@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public WheelBarrow wheelBarrow;
     public Transform wheelBarrowFollowTransform;
     public ArrowController arrowController;
+    [SerializeField] private ParticleSystem paintFootprintsEffect;
 
     [Header("Scrape Tools")]
     public ScrapeTool scrapeTool;
@@ -232,5 +233,24 @@ public class PlayerController : MonoBehaviour
     public bool MovementCheck()
     {
         return movementController.MovementCheck();
+    }
+
+    public void ActivateFootPrints(bool activate)
+    {
+        if (activate)
+        {
+            paintFootprintsEffect.Play();
+            CancelInvoke(nameof(DisableFootPrints));
+            Invoke(nameof(DisableFootPrints), 4);
+        }
+        else
+        {
+            paintFootprintsEffect.Stop();
+        }
+    }
+
+    private void DisableFootPrints()
+    {
+        ActivateFootPrints(false);
     }
 }
