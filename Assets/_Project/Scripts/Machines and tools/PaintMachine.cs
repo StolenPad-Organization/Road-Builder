@@ -96,7 +96,6 @@ public class PaintMachine : MonoBehaviour
             }
             return false;
         }
-        PlayerController.instance.ActivateFootPrints(true);
         paintValue -= paintConsumeRate;
         painteffectRemainingTime = painteffectDuration;
         if (fullWarning.activeInHierarchy)
