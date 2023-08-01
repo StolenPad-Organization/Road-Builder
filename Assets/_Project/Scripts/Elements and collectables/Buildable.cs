@@ -127,7 +127,7 @@ public class Buildable : MonoBehaviour
             GameManager.instance.currentZone.OnRoadBuild();
         Material material = buildableRenderer.material;
         material.SetColor("_EmissionColor", Color.black);
-        if (copy != null)
-            copy.SetActive(true);
+        //if (copy != null)
+        //    copy.SetActive(true);
     }
 }

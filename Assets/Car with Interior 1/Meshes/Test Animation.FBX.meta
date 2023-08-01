@@ -1,0 +1,577 @@
+fileFormatVersion: 2
+guid: 5bdb726039f51664fa66d4b7006a0d1b
+timeCreated: 1486106539
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Car_MC_Blue_Body
+    100002: Car_MC_Blue_Body_Back Wheel Position1
+    100004: Car_MC_Blue_Body_Back Wheel Position2
+    100006: Car_MC_Blue_Body_Back Wheel Rotation1
+    100008: Car_MC_Blue_Body_Back Wheel Rotation2
+    100010: Car_MC_Blue_Body_Direction Locator1
+    100012: Car_MC_Blue_Body_Direction Locator2
+    100014: Car_MC_Blue_Body_drift control
+    100016: Car_MC_Blue_Body_Front Wheel Direction1
+    100018: Car_MC_Blue_Body_Front Wheel Direction2
+    100020: Car_MC_Blue_Body_Front Wheel Position1
+    100022: Car_MC_Blue_Body_Front Wheel Position2
+    100024: Car_MC_Blue_Body_Front Wheel Rotation1
+    100026: Car_MC_Blue_Body_Front Wheel Rotation2
+    100028: Car_MC_Blue_Body_Locators control
+    100030: Car_MC_Blue_Body_VehicleControl
+    100032: Car_MC_Blue_WheelBL
+    100034: Car_MC_Blue_WheelBR
+    100036: Car_MC_Blue_WheelFL
+    100038: Car_MC_Blue_WheelFR
+    100040: Car_MC_Green_Body
+    100042: Car_MC_Green_Body_Back Wheel Position1
+    100044: Car_MC_Green_Body_Back Wheel Position2
+    100046: Car_MC_Green_Body_Back Wheel Rotation1
+    100048: Car_MC_Green_Body_Back Wheel Rotation2
+    100050: Car_MC_Green_Body_Direction Locator1
+    100052: Car_MC_Green_Body_Direction Locator2
+    100054: Car_MC_Green_Body_drift control
+    100056: Car_MC_Green_Body_Front Wheel Direction1
+    100058: Car_MC_Green_Body_Front Wheel Direction2
+    100060: Car_MC_Green_Body_Front Wheel Position1
+    100062: Car_MC_Green_Body_Front Wheel Position2
+    100064: Car_MC_Green_Body_Front Wheel Rotation1
+    100066: Car_MC_Green_Body_Front Wheel Rotation2
+    100068: Car_MC_Green_Body_Locators control
+    100070: Car_MC_Green_Body_VehicleControl
+    100072: Car_MC_Green_WheelBL
+    100074: Car_MC_Green_WheelBR
+    100076: Car_MC_Green_WheelFL
+    100078: Car_MC_Green_WheelFR
+    100080: Car_MC_Red_Body
+    100082: Car_MC_Red_Body_Back Wheel Position1
+    100084: Car_MC_Red_Body_Back Wheel Position2
+    100086: Car_MC_Red_Body_Back Wheel Rotation1
+    100088: Car_MC_Red_Body_Back Wheel Rotation2
+    100090: Car_MC_Red_Body_Direction Locator1
+    100092: Car_MC_Red_Body_Direction Locator2
+    100094: Car_MC_Red_Body_drift control
+    100096: Car_MC_Red_Body_Front Wheel Direction1
+    100098: Car_MC_Red_Body_Front Wheel Direction2
+    100100: Car_MC_Red_Body_Front Wheel Position1
+    100102: Car_MC_Red_Body_Front Wheel Position2
+    100104: Car_MC_Red_Body_Front Wheel Rotation1
+    100106: Car_MC_Red_Body_Front Wheel Rotation2
+    100108: Car_MC_Red_Body_Locators control
+    100110: Car_MC_Red_Body_VehicleControl
+    100112: Car_MC_Red_WheelBL
+    100114: Car_MC_Red_WheelBR
+    100116: Car_MC_Red_WheelFL
+    100118: Car_MC_Red_WheelFR
+    100120: Car_MC_Yellow_Body
+    100122: Car_MC_Yellow_Body_Back Wheel Position1
+    100124: Car_MC_Yellow_Body_Back Wheel Position2
+    100126: Car_MC_Yellow_Body_Back Wheel Rotation1
+    100128: Car_MC_Yellow_Body_Back Wheel Rotation2
+    100130: Car_MC_Yellow_Body_Direction Locator1
+    100132: Car_MC_Yellow_Body_Direction Locator2
+    100134: Car_MC_Yellow_Body_drift control
+    100136: Car_MC_Yellow_Body_Front Wheel Direction1
+    100138: Car_MC_Yellow_Body_Front Wheel Direction2
+    100140: Car_MC_Yellow_Body_Front Wheel Position1
+    100142: Car_MC_Yellow_Body_Front Wheel Position2
+    100144: Car_MC_Yellow_Body_Front Wheel Rotation1
+    100146: Car_MC_Yellow_Body_Front Wheel Rotation2
+    100148: Car_MC_Yellow_Body_Locators control
+    100150: Car_MC_Yellow_Body_VehicleControl
+    100152: Car_MC_Yellow_WheelBL
+    100154: Car_MC_Yellow_WheelBR
+    100156: Car_MC_Yellow_WheelFL
+    100158: Car_MC_Yellow_WheelFR
+    100160: Line001
+    100162: object013
+    100164: //RootNode
+    400000: Car_MC_Blue_Body
+    400002: Car_MC_Blue_Body_Back Wheel Position1
+    400004: Car_MC_Blue_Body_Back Wheel Position2
+    400006: Car_MC_Blue_Body_Back Wheel Rotation1
+    400008: Car_MC_Blue_Body_Back Wheel Rotation2
+    400010: Car_MC_Blue_Body_Direction Locator1
+    400012: Car_MC_Blue_Body_Direction Locator2
+    400014: Car_MC_Blue_Body_drift control
+    400016: Car_MC_Blue_Body_Front Wheel Direction1
+    400018: Car_MC_Blue_Body_Front Wheel Direction2
+    400020: Car_MC_Blue_Body_Front Wheel Position1
+    400022: Car_MC_Blue_Body_Front Wheel Position2
+    400024: Car_MC_Blue_Body_Front Wheel Rotation1
+    400026: Car_MC_Blue_Body_Front Wheel Rotation2
+    400028: Car_MC_Blue_Body_Locators control
+    400030: Car_MC_Blue_Body_VehicleControl
+    400032: Car_MC_Blue_WheelBL
+    400034: Car_MC_Blue_WheelBR
+    400036: Car_MC_Blue_WheelFL
+    400038: Car_MC_Blue_WheelFR
+    400040: Car_MC_Green_Body
+    400042: Car_MC_Green_Body_Back Wheel Position1
+    400044: Car_MC_Green_Body_Back Wheel Position2
+    400046: Car_MC_Green_Body_Back Wheel Rotation1
+    400048: Car_MC_Green_Body_Back Wheel Rotation2
+    400050: Car_MC_Green_Body_Direction Locator1
+    400052: Car_MC_Green_Body_Direction Locator2
+    400054: Car_MC_Green_Body_drift control
+    400056: Car_MC_Green_Body_Front Wheel Direction1
+    400058: Car_MC_Green_Body_Front Wheel Direction2
+    400060: Car_MC_Green_Body_Front Wheel Position1
+    400062: Car_MC_Green_Body_Front Wheel Position2
+    400064: Car_MC_Green_Body_Front Wheel Rotation1
+    400066: Car_MC_Green_Body_Front Wheel Rotation2
+    400068: Car_MC_Green_Body_Locators control
+    400070: Car_MC_Green_Body_VehicleControl
+    400072: Car_MC_Green_WheelBL
+    400074: Car_MC_Green_WheelBR
+    400076: Car_MC_Green_WheelFL
+    400078: Car_MC_Green_WheelFR
+    400080: Car_MC_Red_Body
+    400082: Car_MC_Red_Body_Back Wheel Position1
+    400084: Car_MC_Red_Body_Back Wheel Position2
+    400086: Car_MC_Red_Body_Back Wheel Rotation1
+    400088: Car_MC_Red_Body_Back Wheel Rotation2
+    400090: Car_MC_Red_Body_Direction Locator1
+    400092: Car_MC_Red_Body_Direction Locator2
+    400094: Car_MC_Red_Body_drift control
+    400096: Car_MC_Red_Body_Front Wheel Direction1
+    400098: Car_MC_Red_Body_Front Wheel Direction2
+    400100: Car_MC_Red_Body_Front Wheel Position1
+    400102: Car_MC_Red_Body_Front Wheel Position2
+    400104: Car_MC_Red_Body_Front Wheel Rotation1
+    400106: Car_MC_Red_Body_Front Wheel Rotation2
+    400108: Car_MC_Red_Body_Locators control
+    400110: Car_MC_Red_Body_VehicleControl
+    400112: Car_MC_Red_WheelBL
+    400114: Car_MC_Red_WheelBR
+    400116: Car_MC_Red_WheelFL
+    400118: Car_MC_Red_WheelFR
+    400120: Car_MC_Yellow_Body
+    400122: Car_MC_Yellow_Body_Back Wheel Position1
+    400124: Car_MC_Yellow_Body_Back Wheel Position2
+    400126: Car_MC_Yellow_Body_Back Wheel Rotation1
+    400128: Car_MC_Yellow_Body_Back Wheel Rotation2
+    400130: Car_MC_Yellow_Body_Direction Locator1
+    400132: Car_MC_Yellow_Body_Direction Locator2
+    400134: Car_MC_Yellow_Body_drift control
+    400136: Car_MC_Yellow_Body_Front Wheel Direction1
+    400138: Car_MC_Yellow_Body_Front Wheel Direction2
+    400140: Car_MC_Yellow_Body_Front Wheel Position1
+    400142: Car_MC_Yellow_Body_Front Wheel Position2
+    400144: Car_MC_Yellow_Body_Front Wheel Rotation1
+    400146: Car_MC_Yellow_Body_Front Wheel Rotation2
+    400148: Car_MC_Yellow_Body_Locators control
+    400150: Car_MC_Yellow_Body_VehicleControl
+    400152: Car_MC_Yellow_WheelBL
+    400154: Car_MC_Yellow_WheelBR
+    400156: Car_MC_Yellow_WheelFL
+    400158: Car_MC_Yellow_WheelFR
+    400160: Line001
+    400162: object013
+    400164: //RootNode
+    2300000: Car_MC_Blue_Body
+    2300002: Car_MC_Blue_WheelBL
+    2300004: Car_MC_Blue_WheelBR
+    2300006: Car_MC_Blue_WheelFL
+    2300008: Car_MC_Blue_WheelFR
+    2300010: Car_MC_Green_Body
+    2300012: Car_MC_Green_WheelBL
+    2300014: Car_MC_Green_WheelBR
+    2300016: Car_MC_Green_WheelFL
+    2300018: Car_MC_Green_WheelFR
+    2300020: Car_MC_Red_Body
+    2300022: Car_MC_Red_WheelBL
+    2300024: Car_MC_Red_WheelBR
+    2300026: Car_MC_Red_WheelFL
+    2300028: Car_MC_Red_WheelFR
+    2300030: Car_MC_Yellow_Body
+    2300032: Car_MC_Yellow_WheelBL
+    2300034: Car_MC_Yellow_WheelBR
+    2300036: Car_MC_Yellow_WheelFL
+    2300038: Car_MC_Yellow_WheelFR
+    2300040: object013
+    3300000: Car_MC_Blue_Body
+    3300002: Car_MC_Blue_WheelBL
+    3300004: Car_MC_Blue_WheelBR
+    3300006: Car_MC_Blue_WheelFL
+    3300008: Car_MC_Blue_WheelFR
+    3300010: Car_MC_Green_Body
+    3300012: Car_MC_Green_WheelBL
+    3300014: Car_MC_Green_WheelBR
+    3300016: Car_MC_Green_WheelFL
+    3300018: Car_MC_Green_WheelFR
+    3300020: Car_MC_Red_Body
+    3300022: Car_MC_Red_WheelBL
+    3300024: Car_MC_Red_WheelBR
+    3300026: Car_MC_Red_WheelFL
+    3300028: Car_MC_Red_WheelFR
+    3300030: Car_MC_Yellow_Body
+    3300032: Car_MC_Yellow_WheelBL
+    3300034: Car_MC_Yellow_WheelBR
+    3300036: Car_MC_Yellow_WheelFL
+    3300038: Car_MC_Yellow_WheelFR
+    3300040: object013
+    4300000: object013
+    4300002: Car_MC_Yellow_Body
+    4300004: Car_MC_Yellow_WheelFR
+    4300006: Car_MC_Yellow_WheelFL
+    4300008: Car_MC_Yellow_WheelBL
+    4300010: Car_MC_Yellow_WheelBR
+    4300012: Car_MC_Green_Body
+    4300014: Car_MC_Green_WheelFL
+    4300016: Car_MC_Green_WheelFR
+    4300018: Car_MC_Green_WheelBL
+    4300020: Car_MC_Green_WheelBR
+    4300022: Car_MC_Blue_Body
+    4300024: Car_MC_Blue_WheelFL
+    4300026: Car_MC_Blue_WheelFR
+    4300028: Car_MC_Blue_WheelBL
+    4300030: Car_MC_Blue_WheelBR
+    4300032: Car_MC_Red_Body
+    4300034: Car_MC_Red_WheelFL
+    4300036: Car_MC_Red_WheelFR
+    4300038: Car_MC_Red_WheelBL
+    4300040: Car_MC_Red_WheelBR
+    7400000: test only just for checking
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: test only just for checking
+      takeName: test only just for checking
+      firstFrame: 0
+      lastFrame: 2000
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control/Car_MC_Blue_Body
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control/Car_MC_Blue_Body_Back
+          Wheel Position1
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control/Car_MC_Blue_Body_Back
+          Wheel Position1/Car_MC_Blue_Body_Back Wheel Rotation1
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control/Car_MC_Blue_Body_Back
+          Wheel Position1/Car_MC_Blue_Body_Back Wheel Rotation1/Car_MC_Blue_WheelBL
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control/Car_MC_Blue_Body_Back
+          Wheel Position2
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control/Car_MC_Blue_Body_Back
+          Wheel Position2/Car_MC_Blue_Body_Back Wheel Rotation2
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control/Car_MC_Blue_Body_Back
+          Wheel Position2/Car_MC_Blue_Body_Back Wheel Rotation2/Car_MC_Blue_WheelBR
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control/Car_MC_Blue_Body_Front
+          Wheel Position1
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control/Car_MC_Blue_Body_Front
+          Wheel Position1/Car_MC_Blue_Body_Front Wheel Direction1
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control/Car_MC_Blue_Body_Front
+          Wheel Position1/Car_MC_Blue_Body_Front Wheel Direction1/Car_MC_Blue_Body_Front
+          Wheel Rotation1
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control/Car_MC_Blue_Body_Front
+          Wheel Position1/Car_MC_Blue_Body_Front Wheel Direction1/Car_MC_Blue_Body_Front
+          Wheel Rotation1/Car_MC_Blue_WheelFL
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control/Car_MC_Blue_Body_Front
+          Wheel Position2
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control/Car_MC_Blue_Body_Front
+          Wheel Position2/Car_MC_Blue_Body_Front Wheel Direction2
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control/Car_MC_Blue_Body_Front
+          Wheel Position2/Car_MC_Blue_Body_Front Wheel Direction2/Car_MC_Blue_Body_Front
+          Wheel Rotation2
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_drift control/Car_MC_Blue_Body_Front
+          Wheel Position2/Car_MC_Blue_Body_Front Wheel Direction2/Car_MC_Blue_Body_Front
+          Wheel Rotation2/Car_MC_Blue_WheelFR
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_Locators control
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_Locators control/Car_MC_Blue_Body_Direction
+          Locator1
+        weight: 1
+      - path: Car_MC_Blue_Body_VehicleControl/Car_MC_Blue_Body_Locators control/Car_MC_Blue_Body_Direction
+          Locator2
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control/Car_MC_Green_Body
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control/Car_MC_Green_Body_Back
+          Wheel Position1
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control/Car_MC_Green_Body_Back
+          Wheel Position1/Car_MC_Green_Body_Back Wheel Rotation1
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control/Car_MC_Green_Body_Back
+          Wheel Position1/Car_MC_Green_Body_Back Wheel Rotation1/Car_MC_Green_WheelBL
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control/Car_MC_Green_Body_Back
+          Wheel Position2
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control/Car_MC_Green_Body_Back
+          Wheel Position2/Car_MC_Green_Body_Back Wheel Rotation2
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control/Car_MC_Green_Body_Back
+          Wheel Position2/Car_MC_Green_Body_Back Wheel Rotation2/Car_MC_Green_WheelBR
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control/Car_MC_Green_Body_Front
+          Wheel Position1
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control/Car_MC_Green_Body_Front
+          Wheel Position1/Car_MC_Green_Body_Front Wheel Direction1
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control/Car_MC_Green_Body_Front
+          Wheel Position1/Car_MC_Green_Body_Front Wheel Direction1/Car_MC_Green_Body_Front
+          Wheel Rotation1
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control/Car_MC_Green_Body_Front
+          Wheel Position1/Car_MC_Green_Body_Front Wheel Direction1/Car_MC_Green_Body_Front
+          Wheel Rotation1/Car_MC_Green_WheelFL
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control/Car_MC_Green_Body_Front
+          Wheel Position2
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control/Car_MC_Green_Body_Front
+          Wheel Position2/Car_MC_Green_Body_Front Wheel Direction2
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control/Car_MC_Green_Body_Front
+          Wheel Position2/Car_MC_Green_Body_Front Wheel Direction2/Car_MC_Green_Body_Front
+          Wheel Rotation2
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_drift control/Car_MC_Green_Body_Front
+          Wheel Position2/Car_MC_Green_Body_Front Wheel Direction2/Car_MC_Green_Body_Front
+          Wheel Rotation2/Car_MC_Green_WheelFR
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_Locators control
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_Locators control/Car_MC_Green_Body_Direction
+          Locator1
+        weight: 1
+      - path: Car_MC_Green_Body_VehicleControl/Car_MC_Green_Body_Locators control/Car_MC_Green_Body_Direction
+          Locator2
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control/Car_MC_Red_Body
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control/Car_MC_Red_Body_Back
+          Wheel Position1
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control/Car_MC_Red_Body_Back
+          Wheel Position1/Car_MC_Red_Body_Back Wheel Rotation1
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control/Car_MC_Red_Body_Back
+          Wheel Position1/Car_MC_Red_Body_Back Wheel Rotation1/Car_MC_Red_WheelBL
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control/Car_MC_Red_Body_Back
+          Wheel Position2
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control/Car_MC_Red_Body_Back
+          Wheel Position2/Car_MC_Red_Body_Back Wheel Rotation2
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control/Car_MC_Red_Body_Back
+          Wheel Position2/Car_MC_Red_Body_Back Wheel Rotation2/Car_MC_Red_WheelBR
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control/Car_MC_Red_Body_Front
+          Wheel Position1
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control/Car_MC_Red_Body_Front
+          Wheel Position1/Car_MC_Red_Body_Front Wheel Direction1
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control/Car_MC_Red_Body_Front
+          Wheel Position1/Car_MC_Red_Body_Front Wheel Direction1/Car_MC_Red_Body_Front
+          Wheel Rotation1
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control/Car_MC_Red_Body_Front
+          Wheel Position1/Car_MC_Red_Body_Front Wheel Direction1/Car_MC_Red_Body_Front
+          Wheel Rotation1/Car_MC_Red_WheelFL
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control/Car_MC_Red_Body_Front
+          Wheel Position2
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control/Car_MC_Red_Body_Front
+          Wheel Position2/Car_MC_Red_Body_Front Wheel Direction2
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control/Car_MC_Red_Body_Front
+          Wheel Position2/Car_MC_Red_Body_Front Wheel Direction2/Car_MC_Red_Body_Front
+          Wheel Rotation2
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_drift control/Car_MC_Red_Body_Front
+          Wheel Position2/Car_MC_Red_Body_Front Wheel Direction2/Car_MC_Red_Body_Front
+          Wheel Rotation2/Car_MC_Red_WheelFR
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_Locators control
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_Locators control/Car_MC_Red_Body_Direction
+          Locator1
+        weight: 1
+      - path: Car_MC_Red_Body_VehicleControl/Car_MC_Red_Body_Locators control/Car_MC_Red_Body_Direction
+          Locator2
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control/Car_MC_Yellow_Body
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control/Car_MC_Yellow_Body_Back
+          Wheel Position1
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control/Car_MC_Yellow_Body_Back
+          Wheel Position1/Car_MC_Yellow_Body_Back Wheel Rotation1
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control/Car_MC_Yellow_Body_Back
+          Wheel Position1/Car_MC_Yellow_Body_Back Wheel Rotation1/Car_MC_Yellow_WheelBL
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control/Car_MC_Yellow_Body_Back
+          Wheel Position2
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control/Car_MC_Yellow_Body_Back
+          Wheel Position2/Car_MC_Yellow_Body_Back Wheel Rotation2
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control/Car_MC_Yellow_Body_Back
+          Wheel Position2/Car_MC_Yellow_Body_Back Wheel Rotation2/Car_MC_Yellow_WheelBR
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control/Car_MC_Yellow_Body_Front
+          Wheel Position1
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control/Car_MC_Yellow_Body_Front
+          Wheel Position1/Car_MC_Yellow_Body_Front Wheel Direction1
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control/Car_MC_Yellow_Body_Front
+          Wheel Position1/Car_MC_Yellow_Body_Front Wheel Direction1/Car_MC_Yellow_Body_Front
+          Wheel Rotation1
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control/Car_MC_Yellow_Body_Front
+          Wheel Position1/Car_MC_Yellow_Body_Front Wheel Direction1/Car_MC_Yellow_Body_Front
+          Wheel Rotation1/Car_MC_Yellow_WheelFR
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control/Car_MC_Yellow_Body_Front
+          Wheel Position2
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control/Car_MC_Yellow_Body_Front
+          Wheel Position2/Car_MC_Yellow_Body_Front Wheel Direction2
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control/Car_MC_Yellow_Body_Front
+          Wheel Position2/Car_MC_Yellow_Body_Front Wheel Direction2/Car_MC_Yellow_Body_Front
+          Wheel Rotation2
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_drift control/Car_MC_Yellow_Body_Front
+          Wheel Position2/Car_MC_Yellow_Body_Front Wheel Direction2/Car_MC_Yellow_Body_Front
+          Wheel Rotation2/Car_MC_Yellow_WheelFL
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_Locators control
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_Locators control/Car_MC_Yellow_Body_Direction
+          Locator1
+        weight: 1
+      - path: Car_MC_Yellow_Body_VehicleControl/Car_MC_Yellow_Body_Locators control/Car_MC_Yellow_Body_Direction
+          Locator2
+        weight: 1
+      - path: Line001
+        weight: 1
+      - path: object013
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
