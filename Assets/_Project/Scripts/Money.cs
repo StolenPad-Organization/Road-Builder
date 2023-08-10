@@ -8,6 +8,8 @@ public class Money : MonoBehaviour
     [SerializeField] private Collider moneyCollider;
     [SerializeField] private int value;
     private MoneySpot target;
+    [SerializeField] private ParticleSystem moneyPickingVfx;
+
     void Start()
     {
         
@@ -42,6 +44,11 @@ public class Money : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        moneyPickingVfx.transform.SetParent(null);
+        moneyPickingVfx.transform.position = transform.position + (Vector3.up * 0.25f);
+        moneyPickingVfx.gameObject.SetActive(true);
+        moneyPickingVfx.Play();
+
         Collect();
     }
 
