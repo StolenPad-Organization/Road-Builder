@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float toolCoolDown;
     public Transform hidePos;
     public Transform showPos;
+    [SerializeField] private ParticleSystem dustVFX;
 
     [Header("Machines Colliders")]
     [SerializeField] private GameObject buildCollider;
@@ -68,6 +69,11 @@ public class PlayerController : MonoBehaviour
         lastToolUsingTime = toolCoolDown;
         if(!scrapeTool.showing)
             scrapeTool.ShowTool(true);
+    }
+
+    public void EmitDust()
+    {
+        dustVFX.Play();
     }
 
     public void OnCollect(Collectable collectable)

@@ -17,13 +17,33 @@ MonoBehaviour:
     LevelTextValue: 1
   PlayerData:
     Money: 9999708
-    PlayerPosition: {x: 3.643572, y: -0.0000038146973, z: 44.324844}
-    PlayerRotation: {x: -0, y: 160.01689, z: 0}
+    PlayerPosition: {x: -32.907436, y: -0.000003874302, z: 18.15161}
+    PlayerRotation: {x: -0, y: 142.63335, z: 0}
     HasWheelBarrow: 0
     WheelBarrowPosition: {x: 0, y: 0, z: 0}
     WheelBarrowRotation: {x: -0, y: 0, z: 0}
     wheelBarrowCollectables: []
-    playerCollectables: []
+    playerCollectables:
+    - CollectableType: 1
+      Peelable: {fileID: 0}
+    - CollectableType: 1
+      Peelable: {fileID: 0}
+    - CollectableType: 1
+      Peelable: {fileID: 0}
+    - CollectableType: 1
+      Peelable: {fileID: 0}
+    - CollectableType: 1
+      Peelable: {fileID: 0}
+    - CollectableType: 1
+      Peelable: {fileID: 0}
+    - CollectableType: 1
+      Peelable: {fileID: 0}
+    - CollectableType: 1
+      Peelable: {fileID: 0}
+    - CollectableType: 1
+      Peelable: {fileID: 0}
+    - CollectableType: 1
+      Peelable: {fileID: 0}
   UpgradeDatas:
   - upgradeType: 0
     Loops: 0
