@@ -9,11 +9,17 @@ public class ScrapeTool : MonoBehaviour
     [SerializeField] private GameObject shovelHead;
     [SerializeField] private float scaleFactor;
     public bool showing;
-    
+    private bool canShake;
+    private Vector3 currentScale;
+    private Tween shakeTween = null;
 
     public void UpdateShovelScale(int scaleMultiplier)
     {
-        shovelHead.transform.DOScaleX(1 + (scaleFactor * scaleMultiplier), 0.5f);
+        shovelHead.transform.DOScaleX(1 + (scaleFactor * scaleMultiplier), 0.5f).OnComplete(()=> 
+        {
+            currentScale = shovelHead.transform.localScale;
+            canShake = true;
+        });
     }
 
     public void ShowTool(bool show)
@@ -31,6 +37,15 @@ public class ScrapeTool : MonoBehaviour
         }
         transform.DOLocalMove(Vector3.zero, 0.3f);
         transform.DOLocalRotate(Vector3.zero, 0.3f);
+    }
+
+    public void ShakeTool()
+    {
+        if (shakeTween != null || !canShake) return;
+        shakeTween = shovelHead.transform.DOScale(currentScale * 2f, 0.2f).OnComplete(() =>
+        {
+            shakeTween = shovelHead.transform.DOScale(currentScale, 0.2f).OnComplete(() => shakeTween = null);
+        });
     }
 
     private void OnDisable()

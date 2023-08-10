@@ -31,6 +31,7 @@ public class Peelable : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         power -= PlayerController.instance.scrapeTool.power;
+        PlayerController.instance.scrapeTool.ShakeTool();
         if(power <= 0)
         {
             GameManager.instance.currentZone.SavePeelable(index, true, false);
