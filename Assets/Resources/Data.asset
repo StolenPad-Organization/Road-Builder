@@ -17,8 +17,8 @@ MonoBehaviour:
     LevelTextValue: 1
   PlayerData:
     Money: 0
-    PlayerPosition: {x: -79.273994, y: -0.0012961626, z: 15.07977}
-    PlayerRotation: {x: -0.00006455809, y: 242.13545, z: -0.0033688156}
+    PlayerPosition: {x: 0, y: 0, z: 0}
+    PlayerRotation: {x: -0, y: 0, z: 0}
     HasWheelBarrow: 0
     WheelBarrowPosition: {x: 0, y: 0, z: 0}
     WheelBarrowRotation: {x: -0, y: 0, z: 0}
@@ -40,7 +40,7 @@ MonoBehaviour:
   LevelProgressDatas:
   - ZoneIndex: 0
     ZoneDatas:
-    - ZoneState: 3
+    - ZoneState: 1
       PeelableDatas:
       - IsPeeled: 0
         IsCollected: 0
@@ -13560,7 +13560,6 @@ MonoBehaviour:
       - IsBuilded: 0
       PaintableDatas:
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
@@ -13573,9 +13572,7 @@ MonoBehaviour:
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
@@ -13584,14 +13581,10 @@ MonoBehaviour:
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
@@ -13684,38 +13677,24 @@ MonoBehaviour:
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
@@ -13806,10 +13785,31 @@ MonoBehaviour:
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0

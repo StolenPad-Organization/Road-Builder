@@ -55,10 +55,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Animation: 1
-    - _NoiseScale: 20
+    - _Animation: 0
+    - _NoiseScale: 200
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _use_Position: 0
     m_Colors:
     - _Vector2: {r: -1.5, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
