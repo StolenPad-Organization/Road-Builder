@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
     public Transform hidePos;
     public Transform showPos;
     [SerializeField] private ParticleSystem dustVFX;
+    [SerializeField] private Transform rightCheck;
+    [SerializeField] private Transform leftCheck;
 
     [Header("Machines Colliders")]
     [SerializeField] private GameObject buildCollider;
@@ -59,6 +61,15 @@ public class PlayerController : MonoBehaviour
         {
             lastToolUsingTime -= Time.deltaTime;
         }
+    }
+
+    public Vector3 GetClosestCheckDirection(Vector3 pos)
+    {
+        //used to decide if collectable spawns right or left of the tool to make a path 
+        if (Vector3.Distance(pos, rightCheck.transform.position) < Vector3.Distance(pos, leftCheck.transform.position))
+            return transform.right;
+        else
+            return transform.right * -1;
     }
 
     public void OnPeelableDetection(float amount, float _power)

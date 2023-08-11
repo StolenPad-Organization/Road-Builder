@@ -21,20 +21,22 @@ public class Collectable : MonoBehaviour
         
     }
 
-    public void Spawn()
+    public void Spawn(Vector3 collectablePosition, Vector3 collectableRotation)
     {
         loadCollectableShape();
         collectableCollider.enabled = false;
-        transform.DOJump(transform.position, 1, 1, 0.4f).OnComplete(() =>
+        transform.DOJump(collectablePosition, 0.25f, 1, 0.4f).OnComplete(() =>
         {
             collectableCollider.enabled = true;
         });
+        transform.DOLocalRotate(collectableRotation, 0.4f);
     }
 
     public void Collect(int index, float collectableOffest, Transform collectableParent)
     {
         collectableCollider.enabled = false;
         transform.SetParent(collectableParent);
+        transform.DOLocalRotate(Vector3.zero, 0.4f);
         transform.DOLocalJump(Vector3.up * index * collectableOffest, 1, 1, 0.4f);
         peelable.OnCollect();
     }

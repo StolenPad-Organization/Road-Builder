@@ -12,6 +12,8 @@ public class Peelable : MonoBehaviour
     public MeshFilter peelableMeshFilter;
     public MeshRenderer peelableRenderer;
     public bool diffirentCollectable;
+    private Vector3 collectablePosition;
+    private Vector3 collectableRotation;
 
     void Start()
     {
@@ -34,10 +36,13 @@ public class Peelable : MonoBehaviour
         PlayerController.instance.scrapeTool.ShakeTool();
         if(power <= 0)
         {
-            GameManager.instance.currentZone.SavePeelable(index, true, false);
+            collectablePosition = transform.position + (PlayerController.instance.GetClosestCheckDirection(transform.position));
+            collectablePosition += Vector3.up * Random.Range(0.0f, 0.5f);
+            collectableRotation = new Vector3(Random.Range(-25f, 25f), Random.Range(-90f, 90f), Random.Range(-25f, 25f));
+            GameManager.instance.currentZone.SavePeelable(index, true, false, collectablePosition, collectableRotation);
             Collectable collectable = CollectablesPooler.Instance.GetCollectable(collectableType, transform.position);
             collectable.peelable = this;
-            collectable.Spawn();
+            collectable.Spawn(collectablePosition, collectableRotation);
             gameObject.SetActive(false);
             GameManager.instance.currentZone.OnBlockRemove();
         }
@@ -66,15 +71,19 @@ public class Peelable : MonoBehaviour
     }
 #endif
 
-    public void LoadCollectable()
+    public void LoadCollectable(PeelableData peelableData)
     {
+        collectablePosition = peelableData.CollectablePosition;
+        collectableRotation = peelableData.CollectableRotation;
         Collectable collectable = CollectablesPooler.Instance.GetCollectable(collectableType, transform.position);
         collectable.peelable = this;
+        collectable.transform.position = collectablePosition;
+        collectable.transform.localEulerAngles = collectableRotation;
         collectable.loadCollectableShape();
     }
 
     public void OnCollect()
     {
-        GameManager.instance.currentZone.SavePeelable(index, true, true);
+        GameManager.instance.currentZone.SavePeelable(index, true, true, collectablePosition, collectableRotation);
     }
 }

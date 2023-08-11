@@ -105,7 +105,7 @@ public class PeelableManager : MonoBehaviour
             {
                 if (!PeelableDatas[i].IsCollected)
                 {
-                    peelableParts[i].LoadCollectable();
+                    peelableParts[i].LoadCollectable(PeelableDatas[i]);
                 }
                 peelableParts[i].gameObject.SetActive(false);
                 GameManager.instance.currentZone.OnBlockRemove();

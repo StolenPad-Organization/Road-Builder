@@ -281,10 +281,12 @@ public class ZoneManager : MonoBehaviour
         return zoneData;
     }
 
-    public void SavePeelable(int index, bool isPeeled, bool isCollected)
+    public void SavePeelable(int index, bool isPeeled, bool isCollected, Vector3 collectablePosition, Vector3 collectableRotation)
     {
         zoneData.PeelableDatas[index].IsPeeled = isPeeled;
         zoneData.PeelableDatas[index].IsCollected = isCollected;
+        zoneData.PeelableDatas[index].CollectablePosition = collectablePosition;
+        zoneData.PeelableDatas[index].CollectableRotation = collectableRotation;
     }
 
     public void SaveBuildable(int index, bool isBuilded)

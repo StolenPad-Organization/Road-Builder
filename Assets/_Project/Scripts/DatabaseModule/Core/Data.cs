@@ -26,6 +26,8 @@ public class PeelableData
 {
     public bool IsPeeled;
     public bool IsCollected;
+    public Vector3 CollectablePosition;
+    public Vector3 CollectableRotation;
 }
 
 [System.Serializable]
