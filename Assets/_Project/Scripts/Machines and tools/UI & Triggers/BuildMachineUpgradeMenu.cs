@@ -21,7 +21,7 @@ public class BuildMachineUpgradeMenu : MonoBehaviour
 
     public void UpgradeMachine()
     {
-        GameManager.instance.currentZone.buildMachine.SetUpgrade(buildMachineUpgrade.level-1);
+        GameManager.instance.currentZone.buildMachine.SetUpgrade(buildMachineUpgrade.loops);
     }
 
     public void CheckButtons()

@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7778115684645694066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5520025645173635033}
+  m_Layer: 0
+  m_Name: Molten_Metal_Drops
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 64
+  m_IsActive: 1
+--- !u!4 &5520025645173635033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7778115684645694066}
+  m_LocalRotation: {x: 0.08343484, y: -0.5729436, z: -0.8105815, w: 0.08793088}
+  m_LocalPosition: {x: -9.1, y: 25.8, z: -25.8}
+  m_LocalScale: {x: 1.5999998, y: 1.6, z: 1.6000003}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4149419197397403498}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -113.913, y: -215.61, z: 35.981995}
+--- !u!1001 &718747987652001280
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5520025645173635033}
+    m_Modifications:
+    - target: {fileID: 3489220685564819818, guid: a2091f1537458de4988812a733dfae8d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489220685564819818, guid: a2091f1537458de4988812a733dfae8d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.3064437
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489220685564819818, guid: a2091f1537458de4988812a733dfae8d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.7488375
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489220685564819818, guid: a2091f1537458de4988812a733dfae8d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.5364833
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489220685564819818, guid: a2091f1537458de4988812a733dfae8d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.2950312
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489220685564819818, guid: a2091f1537458de4988812a733dfae8d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.85144067
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489220685564819818, guid: a2091f1537458de4988812a733dfae8d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.28717932
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489220685564819818, guid: a2091f1537458de4988812a733dfae8d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.32485923
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489220685564819818, guid: a2091f1537458de4988812a733dfae8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -43.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489220685564819818, guid: a2091f1537458de4988812a733dfae8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 148.031
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489220685564819818, guid: a2091f1537458de4988812a733dfae8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 155.779
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489220685565068610, guid: a2091f1537458de4988812a733dfae8d, type: 3}
+      propertyPath: m_Name
+      value: WaterVertical
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a2091f1537458de4988812a733dfae8d, type: 3}
+--- !u!4 &4149419197397403498 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3489220685564819818, guid: a2091f1537458de4988812a733dfae8d, type: 3}
+  m_PrefabInstance: {fileID: 718747987652001280}
+  m_PrefabAsset: {fileID: 0}

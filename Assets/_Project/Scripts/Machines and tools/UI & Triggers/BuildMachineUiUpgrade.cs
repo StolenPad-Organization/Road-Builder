@@ -27,6 +27,7 @@ public class BuildMachineUiUpgrade : MonoBehaviour
     [SerializeField] private Sprite[] unlockedStepSprites;
     public BuildMachineUpgradeMenu upgradeManager;
     [SerializeField] private Button buyButton;
+    [SerializeField] private GameObject maxButton;
 
     [Header("Upgrade & Cost")]
     [SerializeField] private int cost;
@@ -69,6 +70,7 @@ public class BuildMachineUiUpgrade : MonoBehaviour
         }
 
         upgradeManager.UpgradeMachine();
+        CheckButton();
     }
 
     public void Buy()
@@ -88,19 +90,18 @@ public class BuildMachineUiUpgrade : MonoBehaviour
         }
         else
         {
-            //loops++;
-            //stepIndex = 0;
-            //for (int i = 0; i < steps.Length; i++)
-            //{
-            //    if (i == 0)
-            //        steps[i].sprite = lockedStepSprites[0];
-            //    else if (i == steps.Length - 1)
-            //        steps[i].sprite = lockedStepSprites[2];
-            //    else
-            //        steps[i].sprite = lockedStepSprites[1];
-            //}
-            //steps[0].sprite = unlockedStepSprites[0];
-            //return;
+            loops++;
+            stepIndex = 0;
+            for (int i = 0; i < steps.Length; i++)
+            {
+                if (i == 0)
+                    steps[i].sprite = lockedStepSprites[0];
+                else if (i == steps.Length - 1)
+                    steps[i].sprite = lockedStepSprites[2];
+                else
+                    steps[i].sprite = lockedStepSprites[1];
+            }
+            steps[0].sprite = unlockedStepSprites[0];
         }
         level++;
         levelText.text = "Lvl " + level;
@@ -120,9 +121,10 @@ public class BuildMachineUiUpgrade : MonoBehaviour
             buyButton.interactable = true;
         }
 
-        if (stepIndex >= steps.Length-1)
+        if (level >= 9)
         {
             buyButton.interactable = false;
+            maxButton.SetActive(true);
         }
     }
 
