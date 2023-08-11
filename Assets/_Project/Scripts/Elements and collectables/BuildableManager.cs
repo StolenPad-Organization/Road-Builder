@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BuildableManager : MonoBehaviour
 {
-    [SerializeField] private List<Buildable> buildableParts;
+    public List<Buildable> buildableParts;
     private List<MeshRenderer> renderers = new List<MeshRenderer>();
     [SerializeField] private Transform[] blockHolders;
     [SerializeField] private Material[] mats;

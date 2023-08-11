@@ -50,6 +50,11 @@ public class UIManager : MonoBehaviour
         progressBar.UpdateProgressBar(value);
     }
 
+    public void ChangeProgressBarIcon(int index)
+    {
+        progressBar.ChangeIcon(index);
+    }
+
     public string ReturnNumberText(int num)
     {
         int a, b;

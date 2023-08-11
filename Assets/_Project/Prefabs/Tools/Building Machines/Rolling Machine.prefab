@@ -768,7 +768,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.07, y: 3.68, z: 3.87}
+  m_Size: {x: 2, y: 3.68, z: 3.87}
   m_Center: {x: 0.018180478, y: 0.9328468, z: 6.775438e-17}
 --- !u!1 &746212197
 GameObject:
@@ -4637,6 +4637,27 @@ MonoBehaviour:
   - {fileID: 7678542829002502265}
   upgradeIndex: 0
   hasUpgrade: 1
+  Speed: 5
+  speedUpgrades:
+  - 5
+  - 5
+  - 6
+  - 6
+  - 7
+  - 7
+  - 8
+  - 9
+  - 10
+  CollisionUpgrades:
+  - {x: 0.9, y: 1, z: 1}
+  - {x: 1, y: 1, z: 1}
+  - {x: 1, y: 1, z: 1}
+  - {x: 1.75, y: 1, z: 1}
+  - {x: 1.75, y: 1, z: 1}
+  - {x: 2.5, y: 1, z: 1}
+  - {x: 2.5, y: 1, z: 1}
+  - {x: 3, y: 1, z: 1}
+  - {x: 3, y: 1, z: 1}
 --- !u!54 &1795269720
 Rigidbody:
   m_ObjectHideFlags: 0

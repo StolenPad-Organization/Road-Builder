@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class ProgressUIManager : MonoBehaviour
 {
     [SerializeField] private Image barFillImage;
+    [SerializeField] private Image iconImage;
+    [SerializeField] private Sprite[] icons;
     void Start()
     {
         
@@ -14,6 +16,11 @@ public class ProgressUIManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ChangeIcon(int index)
+    {
+        iconImage.sprite = icons[index];
     }
 
     public void UpdateProgressBar(float value)

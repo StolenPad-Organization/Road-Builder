@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PaintableManager : MonoBehaviour
 {
-    [SerializeField] private List<Paintable> paintableParts;
+    public List<Paintable> paintableParts;
     private List<MeshRenderer> renderers = new List<MeshRenderer>();
     [SerializeField] private Transform[] blockHolders;
     [SerializeField] private Material[] mats;

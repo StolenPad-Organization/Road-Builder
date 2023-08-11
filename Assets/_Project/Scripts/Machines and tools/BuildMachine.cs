@@ -30,6 +30,9 @@ public class BuildMachine : MonoBehaviour
     [SerializeField] private int upgradeIndex;
     [SerializeField] private bool hasUpgrade;
     private Vector3 ammoInitialScale;
+    public float Speed;
+    [SerializeField] private float[] speedUpgrades;
+    [SerializeField] private Vector3[] CollisionUpgrades;
 
     void Start()
     {
@@ -147,7 +150,7 @@ public class BuildMachine : MonoBehaviour
         //});
     }
 
-    public void SetUpgrade(int index)
+    public void SetUpgrade(int index, int level)
     {
         if (!hasUpgrade) return;
         buildMachineUpgrades[upgradeIndex].gameObject.SetActive(false);
@@ -166,5 +169,8 @@ public class BuildMachine : MonoBehaviour
         }
         if (used)
             PlayerController.instance.GetOnAsphaltMachine(playerSeat, this);
+
+        Speed = speedUpgrades[level];
+        partsTrigger.transform.localScale = CollisionUpgrades[level];
     }
 }

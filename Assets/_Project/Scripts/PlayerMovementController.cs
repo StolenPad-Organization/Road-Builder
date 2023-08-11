@@ -33,10 +33,16 @@ public class PlayerMovementController : MonoBehaviour
         float horizontalInput = joystick.HorizontalAxis;
         float verticalInput = joystick.VerticalAxis;
 
-        if(playerController.paintMachine == null)
+        if(playerController.paintMachine == null && playerController.asphaltMachine == null)
             moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized * (moveSpeed * (speedMultiplayer / 100));
         else
-            moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized * (paintMoveSpeed * (speedMultiplayer / 100));
+        {
+            if(playerController.paintMachine != null)
+                moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized * (paintMoveSpeed * (speedMultiplayer / 100));
+            if (playerController.asphaltMachine != null)
+                moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized * (playerController.asphaltMachine.Speed * (speedMultiplayer / 100));
+        }
+            
 
         if (moveDirection != Vector3.zero)
         {

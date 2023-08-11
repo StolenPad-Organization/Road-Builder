@@ -5,7 +5,7 @@ using UnityEditor;
 
 public class PeelableManager : MonoBehaviour
 {
-    [SerializeField] private List<Peelable> peelableParts;
+    public List<Peelable> peelableParts;
     private List<MeshRenderer> renderers = new List<MeshRenderer>();
     [SerializeField] private Transform[] blockHolders;
     [SerializeField] private Material[] mats;

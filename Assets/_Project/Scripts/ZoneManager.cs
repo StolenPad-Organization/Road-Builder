@@ -59,6 +59,13 @@ public class ZoneManager : MonoBehaviour
     //    instance = this;
     //}
 
+    private void Start()
+    {
+        maxBlocks = peelableManager.peelableParts.Count;
+        maxAsphalt = buildableManager.buildableParts.Count;
+        maxPaint = paintableManager.paintableParts.Count;
+    }
+
     public void InitZone(ZoneData _zoneData)
     {
         zoneData = _zoneData;
@@ -101,6 +108,8 @@ public class ZoneManager : MonoBehaviour
     }
     public void StartAsphaltStage()
     {
+        UIManager.instance.ChangeProgressBarIcon(1);
+        UIManager.instance.UpdateProgressBar(0);
         upgrades.SetActive(false);
         if (buildMachine.machineUpgradeType != MachineUpgradeType.none)
             machineUpgradeTrigger.SetActive(true);
@@ -118,6 +127,7 @@ public class ZoneManager : MonoBehaviour
     }
     private void CheckAsphalt()
     {
+        UIManager.instance.UpdateProgressBar((float)currentAsphalt / (float)maxAsphalt);
         if (currentAsphalt == maxAsphalt)
             ShowPaintMachine();
     }
@@ -132,6 +142,7 @@ public class ZoneManager : MonoBehaviour
     }
     public void StartPaintStage()
     {
+        UIManager.instance.ChangeProgressBarIcon(2);
         //PlayerController.instance.GetOffAsphaltMachine();
         machineUpgradeTrigger.SetActive(false);
         asphaltAmmo.gameObject.SetActive(false);
@@ -147,6 +158,7 @@ public class ZoneManager : MonoBehaviour
     }
     private void CheckPaint()
     {
+        UIManager.instance.UpdateProgressBar((float)currentPaint / (float)maxPaint);
         if (currentPaint == maxPaint)
             StartCoroutine(CompleteZone());
     }
@@ -206,6 +218,7 @@ public class ZoneManager : MonoBehaviour
                 }
                 player.LoadCollectables(playerData.playerCollectables);
                 sellManager.LoadMoeny(zoneData.MoneyDatas);
+                UIManager.instance.ChangeProgressBarIcon(0);
                 break;
             case ZoneState.BuildingStage:
                 if (zoneCollider != null)
@@ -219,6 +232,8 @@ public class ZoneManager : MonoBehaviour
                 asphaltBlock.SetActive(true);
                 if (buildMachine.machineUpgradeType != MachineUpgradeType.none)
                     machineUpgradeTrigger.SetActive(true);
+
+                UIManager.instance.ChangeProgressBarIcon(1);
 
                 buildMachine.OnSpawn();
                 break;
@@ -234,6 +249,8 @@ public class ZoneManager : MonoBehaviour
                 asphaltBlock.SetActive(true);
                 paintingMachine.gameObject.SetActive(true);
                 paintBlock.gameObject.SetActive(true);
+
+                UIManager.instance.ChangeProgressBarIcon(2);
 
                 paintingMachine.OnSpawn();
                 break;

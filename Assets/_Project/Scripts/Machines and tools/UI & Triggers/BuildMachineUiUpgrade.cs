@@ -28,6 +28,7 @@ public class BuildMachineUiUpgrade : MonoBehaviour
     public BuildMachineUpgradeMenu upgradeManager;
     [SerializeField] private Button buyButton;
     [SerializeField] private GameObject maxButton;
+    [SerializeField] private TextMeshProUGUI upgradeNameText;
 
     [Header("Upgrade & Cost")]
     [SerializeField] private int cost;
@@ -112,6 +113,11 @@ public class BuildMachineUiUpgrade : MonoBehaviour
 
     public void CheckButton()
     {
+        if (level % 2 == 0)
+            upgradeNameText.text = "Size";
+        else
+            upgradeNameText.text = "Speed";
+
         if (UIManager.instance.money < cost)
         {
             buyButton.interactable = false;
