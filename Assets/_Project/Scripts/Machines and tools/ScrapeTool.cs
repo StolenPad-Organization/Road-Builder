@@ -42,10 +42,10 @@ public class ScrapeTool : MonoBehaviour
     public void ShakeTool()
     {
         if (shakeTween != null || !canShake) return;
-        shakeTween = shovelHead.transform.DOScale(currentScale * 2f, 0.2f).OnComplete(() =>
+        shakeTween = shovelHead.transform.DOScale(currentScale * 2f, 0.1f).OnComplete(() =>
         {
             PlayerController.instance.EmitDust();
-            shakeTween = shovelHead.transform.DOScale(currentScale, 0.2f).OnComplete(() => shakeTween = null);
+            shakeTween = shovelHead.transform.DOScale(currentScale, 0.1f).OnComplete(() => shakeTween = null);
         });
     }
 
