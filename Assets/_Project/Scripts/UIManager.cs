@@ -8,6 +8,8 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
     [SerializeField] private TextMeshProUGUI moneyText;
     public int money;
+    [SerializeField] private TextMeshProUGUI upgradePointsText;
+    public int upgradePoints;
     [SerializeField] private UpgradeManager upgradeManager;
     [SerializeField] private BuildMachineUpgradeMenu buildMachineUpgradeMenu;
     [SerializeField] private TextMeshProUGUI levelText;
@@ -21,6 +23,7 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         UpdateMoney(Database.Instance.GetPlayerData().Money);
+        UpdateUpgradePoints(Database.Instance.GetPlayerData().UpgradePoints);
         levelText.text = "Level " + Database.Instance.GetLevelData().LevelTextValue;
     }
 
@@ -33,6 +36,12 @@ public class UIManager : MonoBehaviour
     {
         money += amount;
         moneyText.text = ReturnNumberText(money);
+    }
+
+    public void UpdateUpgradePoints(int amount)
+    {
+        upgradePoints += amount;
+        upgradePointsText.text = ReturnNumberText(upgradePoints);
     }
 
     public void ShowUpgradeMenu()

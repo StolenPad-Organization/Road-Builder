@@ -13,9 +13,26 @@ public class BuildableManager : MonoBehaviour
     [SerializeField] private float copyCenter = 0.0f;
     [SerializeField] private float copySize = 1.5f;
 
+    [Header("Upgrade Points Reward")]
+    [SerializeField] private bool hasReward;
+    private int rewardRate;
+    private int rewardprogress;
+
     void Start()
     {
+        rewardRate = Mathf.RoundToInt(buildableParts.Count * 0.7f) / 8;
+    }
 
+    public void OnBuild(Vector3 pos)
+    {
+        rewardprogress++;
+        if(rewardprogress >= rewardRate)
+        {
+            rewardprogress = 0;
+
+            UpgradePoint upgradePoint = UpgradePointsPooler.instance.GetUpgradePoint();
+            upgradePoint.Spawn(1, pos + (Vector3.up * 0.5f));
+        }
     }
 
     void Update()

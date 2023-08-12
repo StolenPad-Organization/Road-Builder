@@ -48,6 +48,7 @@ public class Buildable : MonoBehaviour
         transform.DOLocalJump(initialPos, 0.25f, 1, 0.265f).OnComplete(()=>
         {
             GameManager.instance.currentZone.OnRoadBuild();
+            GameManager.instance.currentZone.buildableManager.OnBuild(transform.position);
             //smoke = SmokePooler.instance.GetSmoke();
             //smoke.transform.position = transform.position + Vector3.up * 0.2f;
 

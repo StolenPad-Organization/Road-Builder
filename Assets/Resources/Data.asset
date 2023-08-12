@@ -17,8 +17,9 @@ MonoBehaviour:
     LevelTextValue: 1
   PlayerData:
     Money: 7270635
-    PlayerPosition: {x: -62.738575, y: -0.0014513731, z: -43.734367}
-    PlayerRotation: {x: 0.0034633544, y: 240.18219, z: 359.9719}
+    UpgradePoints: 0
+    PlayerPosition: {x: -50.896587, y: 0, z: -44.235157}
+    PlayerRotation: {x: -0, y: 170.46677, z: 0}
     HasWheelBarrow: 0
     WheelBarrowPosition: {x: 0, y: 0, z: 0}
     WheelBarrowRotation: {x: -0, y: 0, z: 0}
@@ -8573,6 +8574,7 @@ MonoBehaviour:
       - IsPainted: 0
       - IsPainted: 0
       MoneyDatas: []
+      UpgradePointDatas: []
     - ZoneState: 2
       PeelableDatas:
       - IsPeeled: 0
@@ -14198,6 +14200,7 @@ MonoBehaviour:
       - IsPainted: 1
       - IsPainted: 1
       MoneyDatas: []
+      UpgradePointDatas: []
     - ZoneState: 0
       PeelableDatas:
       - IsPeeled: 1
@@ -16956,16 +16959,17 @@ MonoBehaviour:
       - IsPainted: 0
       - IsPainted: 0
       MoneyDatas: []
+      UpgradePointDatas: []
   MachineUpgradeDatas:
   - machineUpgradeType: 0
     Loops: 0
     Level: 1
     Value: 1
     StepIndex: 0
-    Cost: 1000
+    Cost: 1
   - machineUpgradeType: 1
     Loops: 0
     Level: 1
     Value: 1
     StepIndex: 0
-    Cost: 1000
+    Cost: 1

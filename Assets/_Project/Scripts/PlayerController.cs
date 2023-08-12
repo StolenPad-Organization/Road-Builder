@@ -154,10 +154,10 @@ public class PlayerController : MonoBehaviour
         if (asphaltMachine.drivable)
         {
             movementController.ToggleMovementAnimation(false);
-            cementCollider.SetActive(true);
+            buildCollider.SetActive(true);
         }
         else
-            buildCollider.SetActive(true);
+            cementCollider.SetActive(true);
         model.transform.SetParent(playerSeat);
         model.transform.DOLocalJump(Vector3.zero, 2, 1, 0.7f);
         model.transform.DOScale(1, 0.7f);

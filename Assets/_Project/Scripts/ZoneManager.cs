@@ -232,7 +232,7 @@ public class ZoneManager : MonoBehaviour
                 asphaltBlock.SetActive(true);
                 if (buildMachine.machineUpgradeType != MachineUpgradeType.none)
                     machineUpgradeTrigger.SetActive(true);
-
+                LoadUpgradePoints(zoneData.UpgradePointDatas);
                 UIManager.instance.ChangeProgressBarIcon(1);
 
                 buildMachine.OnSpawn();
@@ -287,6 +287,7 @@ public class ZoneManager : MonoBehaviour
         if (zoneState == ZoneState.Complete)
             playerData.HasWheelBarrow = false;
         playerData.Money = UIManager.instance.money;
+        playerData.UpgradePoints = UIManager.instance.upgradePoints;
         //check for stage
         upgradeManager.shovelUpgrade.SaveUpgradeData();
         upgradeManager.loadUpgrade.SaveUpgradeData();
@@ -296,6 +297,16 @@ public class ZoneManager : MonoBehaviour
         Database.Instance.SetPlayerData(playerData);
 
         return zoneData;
+    }
+
+    private void LoadUpgradePoints(List<UpgradePointData> upgradePointDatas)
+    {
+        UpgradePoint upgradePoint;
+        for (int i = 0; i < upgradePointDatas.Count; i++)
+        {
+            upgradePoint = UpgradePointsPooler.instance.GetUpgradePoint();
+            upgradePoint.LoadUpgradePoint(upgradePointDatas[i].Price, upgradePointDatas[i].Pos);
+        }
     }
 
     public void SavePeelable(int index, bool isPeeled, bool isCollected, Vector3 collectablePosition, Vector3 collectableRotation)
@@ -377,5 +388,25 @@ public class ZoneManager : MonoBehaviour
         }
         if (moneyData != null)
             zoneData.MoneyDatas.Remove(moneyData);
+    }
+
+    public void AddUpgradePointData(Vector3 pos, int price)
+    {
+        zoneData.UpgradePointDatas.Add(new UpgradePointData(pos, price));
+    }
+
+    public void RemoveUpgradePointData(Vector3 pos, int price)
+    {
+        UpgradePointData upgradePointData = null;
+        for (int i = 0; i < zoneData.UpgradePointDatas.Count; i++)
+        {
+            if (zoneData.UpgradePointDatas[i].Pos == pos && zoneData.UpgradePointDatas[i].Price == price)
+            {
+                upgradePointData = zoneData.UpgradePointDatas[i];
+                break;
+            }
+        }
+        if (upgradePointData != null)
+            zoneData.UpgradePointDatas.Remove(upgradePointData);
     }
 }

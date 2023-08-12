@@ -31,8 +31,10 @@ public class BuildMachine : MonoBehaviour
     [SerializeField] private bool hasUpgrade;
     private Vector3 ammoInitialScale;
     public float Speed;
+    [Header("Upgrades")]
     [SerializeField] private float[] speedUpgrades;
     [SerializeField] private Vector3[] CollisionUpgrades;
+    [SerializeField] private int[] consumeRateUpgrade;
 
     void Start()
     {
@@ -105,7 +107,7 @@ public class BuildMachine : MonoBehaviour
             }
             return false; 
         }
-        if (consumeRate == consumeValue)
+        if (consumeRate <= consumeValue)
         {
             consumeValue = 0;
             asphaltCount--;
@@ -159,7 +161,6 @@ public class BuildMachine : MonoBehaviour
         upgradeIndex = index;
         buildMachineUpgrades[upgradeIndex].gameObject.SetActive(true);
         playerSeat = buildMachineUpgrades[upgradeIndex].playerSeat;
-        consumeRate = buildMachineUpgrades[upgradeIndex].consumeRate;
         anim.SetLayerWeight(index, 1);
         if (scalingObject != null)
         {
@@ -172,5 +173,6 @@ public class BuildMachine : MonoBehaviour
 
         Speed = speedUpgrades[level];
         partsTrigger.transform.localScale = CollisionUpgrades[level];
+        consumeRate = consumeRateUpgrade[level];
     }
 }

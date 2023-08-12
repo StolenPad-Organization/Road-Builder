@@ -76,7 +76,7 @@ public class BuildMachineUiUpgrade : MonoBehaviour
 
     public void Buy()
     {
-        UIManager.instance.UpdateMoney(-cost);
+        UIManager.instance.UpdateUpgradePoints(-cost);
         cost += (costAddPrecentage * cost) / 100;
         costText.text = UIManager.instance.ReturnNumberText(cost);
         stepIndex++;
@@ -118,7 +118,7 @@ public class BuildMachineUiUpgrade : MonoBehaviour
         else
             upgradeNameText.text = "Speed";
 
-        if (UIManager.instance.money < cost)
+        if (UIManager.instance.upgradePoints < cost)
         {
             buyButton.interactable = false;
         }

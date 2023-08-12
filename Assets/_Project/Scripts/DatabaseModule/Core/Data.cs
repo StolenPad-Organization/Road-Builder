@@ -12,6 +12,7 @@ public class LevelData
 public class PlayerData
 {
     public int Money = 0;
+    public int UpgradePoints = 0;
     public Vector3 PlayerPosition;
     public Vector3 PlayerRotation;
     public bool HasWheelBarrow;
@@ -57,6 +58,7 @@ public class ZoneData
     public List<BuildableData> BuildableDatas;
     public List<PaintableData> PaintableDatas;
     public List<MoneyData> MoneyDatas;
+    public List<UpgradePointData> UpgradePointDatas;
 }
 
 [System.Serializable]
@@ -105,4 +107,17 @@ public class MachineUpgradeData
     public float Value;
     public int StepIndex;
     public int Cost;
+}
+
+[System.Serializable]
+public class UpgradePointData
+{
+    public Vector3 Pos;
+    public int Price;
+
+    public UpgradePointData(Vector3 pos, int price)
+    {
+        Pos = pos;
+        Price = price;
+    }
 }
