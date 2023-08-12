@@ -14,6 +14,7 @@ public class BuildMachine : MonoBehaviour
     public int asphaltCount;
     [SerializeField] private int asphaltCapacity;
     [SerializeField] private GameObject[] asphaltObjects;
+    [SerializeField] private GameObject asphaltScalingObject;
     [SerializeField] private int consumeRate;
     [SerializeField] private int consumeValue;
     [SerializeField] private GameObject fullWarning;
@@ -83,10 +84,17 @@ public class BuildMachine : MonoBehaviour
         }
         if (scalingObject == null)
         {
-            asphaltObjects[asphaltCount].SetActive(true);
-            asphaltObjects[asphaltCount].transform.DOKill();
-            asphaltObjects[asphaltCount].transform.localScale = Vector3.zero;
-            asphaltObjects[asphaltCount].transform.DOScale(ammoInitialScale, 0.5f);
+            if(asphaltScalingObject != null)
+            {
+                asphaltScalingObject.transform.localScale = calculateScale();
+            }
+            else
+            {
+                asphaltObjects[asphaltCount].SetActive(true);
+                asphaltObjects[asphaltCount].transform.DOKill();
+                asphaltObjects[asphaltCount].transform.localScale = Vector3.zero;
+                asphaltObjects[asphaltCount].transform.DOScale(ammoInitialScale, 0.5f);
+            }
         }
         else
             SetObjectScale();
@@ -113,7 +121,10 @@ public class BuildMachine : MonoBehaviour
             asphaltCount--;
             if (scalingObject == null)
             {
-                asphaltObjects[asphaltCount].transform.DOScale(0, 0.5f);
+                if (asphaltScalingObject != null)
+                    asphaltScalingObject.transform.localScale = calculateScale();
+                else
+                    asphaltObjects[asphaltCount].transform.DOScale(0, 0.5f);
             }
             else
                 SetObjectScale();
@@ -127,6 +138,11 @@ public class BuildMachine : MonoBehaviour
             fullWarning.SetActive(false);
         }
         return true;
+    }
+
+    private Vector3 calculateScale()
+    {
+        return Vector3.Lerp(Vector3.zero, Vector3.one * (1.5f + (0.5f * upgradeIndex)), Mathf.InverseLerp(0, asphaltObjects.Length, asphaltCount));
     }
 
     private void SetObjectScale()
