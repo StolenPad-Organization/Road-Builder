@@ -44,6 +44,19 @@ public class PaintableData
 }
 
 [System.Serializable]
+public class ObjectData
+{
+    public bool IsPeeled;
+    public bool IsCollected;
+    public Vector3 CollectablePosition;
+    public Vector3 CollectableRotation;
+
+    public bool IsBuilded;
+
+    public bool IsPainted;
+}
+
+[System.Serializable]
 public class LevelProgressData
 {
     public int ZoneIndex = 0;
@@ -53,12 +66,18 @@ public class LevelProgressData
 [System.Serializable]
 public class ZoneData
 {
+    public int stageIndex;
     public ZoneState ZoneState;
-    public List<PeelableData> PeelableDatas;
-    public List<BuildableData> BuildableDatas;
-    public List<PaintableData> PaintableDatas;
+    public List<StageData> StagesDatas;
+
     public List<MoneyData> MoneyDatas;
     public List<UpgradePointData> UpgradePointDatas;
+}
+
+[System.Serializable]
+public class StageData
+{
+    public List<ObjectData> ObjectDatas;
 }
 
 [System.Serializable]
