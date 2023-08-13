@@ -18,8 +18,8 @@ MonoBehaviour:
   PlayerData:
     Money: 7270635
     UpgradePoints: 0
-    PlayerPosition: {x: -96.21464, y: 0.00000023841858, z: -31.704193}
-    PlayerRotation: {x: 0, y: 275.40695, z: 0}
+    PlayerPosition: {x: -1.2854717, y: -0.017528057, z: -4.766357}
+    PlayerRotation: {x: -0, y: 102.852356, z: 0}
     HasWheelBarrow: 0
     WheelBarrowPosition: {x: 0, y: 0, z: 0}
     WheelBarrowRotation: {x: -0, y: 0, z: 0}
@@ -61,7 +61,7 @@ MonoBehaviour:
   LevelProgressDatas:
   - ZoneIndex: 0
     ZoneDatas:
-    - ZoneState: 3
+    - ZoneState: 2
       PeelableDatas:
       - IsPeeled: 0
         IsCollected: 0
@@ -8488,7 +8488,7 @@ MonoBehaviour:
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 0
+      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0

@@ -17,14 +17,16 @@ public class BuildableManager : MonoBehaviour
     [SerializeField] private bool hasReward;
     private int rewardRate;
     private int rewardprogress;
+    [SerializeField] private int totalRewards;
 
     void Start()
     {
-        rewardRate = Mathf.RoundToInt(buildableParts.Count * 0.7f) / 8;
+        rewardRate = Mathf.RoundToInt(buildableParts.Count * 0.7f) / totalRewards;
     }
 
     public void OnBuild(Vector3 pos)
     {
+        if (!hasReward) return;
         rewardprogress++;
         if(rewardprogress >= rewardRate)
         {
