@@ -20,6 +20,7 @@ public class PaintMachine : MonoBehaviour
     [SerializeField] private GameObject emptyWarning;
     [SerializeField] private Animator anim;
     [SerializeField] private Collider machineCollider;
+    [SerializeField] private GameObject paintScalingObject;
 
     void Start()
     {
@@ -83,6 +84,12 @@ public class PaintMachine : MonoBehaviour
         {
             emptyWarning.SetActive(false);
         }
+        paintScalingObject.transform.localScale = calculateScale();
+    }
+
+    private Vector3 calculateScale()
+    {
+        return Vector3.Lerp(Vector3.zero, Vector3.one * 0.72f, Mathf.InverseLerp(0.0f, paintCapacity, paintValue));
     }
 
     public bool UsePaint()
@@ -102,6 +109,7 @@ public class PaintMachine : MonoBehaviour
         {
             fullWarning.SetActive(false);
         }
+        paintScalingObject.transform.localScale = calculateScale();
         return true;
     }
 
@@ -117,5 +125,15 @@ public class PaintMachine : MonoBehaviour
             PlayerController.instance.arrowController.PointToObject(gameObject);
             //anim.SetBool("Run", false);
         //});
+    }
+
+    public void OnFillStart()
+    {
+        anim.SetBool("Fill", true);
+    }
+
+    public void OnFillEnd()
+    {
+        anim.SetBool("Fill", false);
     }
 }

@@ -39,6 +39,7 @@ public class PaintAmmo : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         filling = true;
+        PlayerController.instance.paintMachine.OnFillStart();
         nextFill = 0;
         disloveTween.Kill();
         effect.Play();
@@ -55,6 +56,7 @@ public class PaintAmmo : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         filling = false;
+        PlayerController.instance.paintMachine.OnFillEnd();
         //var main = effect.main;
         //main.loop = false;
         disloveTween.Kill();
