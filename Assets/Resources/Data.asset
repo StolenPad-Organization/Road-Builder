@@ -59,9 +59,9 @@ MonoBehaviour:
     StepIndex: 0
     Cost: 20
   LevelProgressDatas:
-  - ZoneIndex: 1
+  - ZoneIndex: 0
     ZoneDatas:
-    - ZoneState: 4
+    - ZoneState: 3
       PeelableDatas:
       - IsPeeled: 0
         IsCollected: 0
@@ -8575,7 +8575,7 @@ MonoBehaviour:
       - IsPainted: 0
       MoneyDatas: []
       UpgradePointDatas: []
-    - ZoneState: 2
+    - ZoneState: 0
       PeelableDatas:
       - IsPeeled: 0
         IsCollected: 0
