@@ -14,6 +14,7 @@ public class PaintMachine : MonoBehaviour
     public float paintDuration;
     public float paintDelay;
     [SerializeField] private ParticleSystem paintEffect;
+    [SerializeField] private GameObject paintvfx;
     [SerializeField] private float painteffectDuration;
     [SerializeField] private float painteffectRemainingTime;
     [SerializeField] private GameObject fullWarning;
@@ -31,14 +32,18 @@ public class PaintMachine : MonoBehaviour
     {
         if(painteffectRemainingTime <= 0)
         {
-            if(paintEffect.isPlaying)
-                paintEffect.Stop();
+            //if(paintEffect.isPlaying)
+            //    paintEffect.Stop();
+            if (paintvfx.activeInHierarchy)
+                paintvfx.SetActive(false);
         }
         else
         {
             painteffectRemainingTime -= Time.deltaTime;
-            if (!paintEffect.isPlaying)
-                paintEffect.Play();
+            //if (!paintEffect.isPlaying)
+            //    paintEffect.Play();
+            if (!paintvfx.activeInHierarchy)
+                paintvfx.SetActive(true);
         }
 
         if (used)
