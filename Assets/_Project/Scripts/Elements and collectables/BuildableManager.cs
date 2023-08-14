@@ -21,7 +21,8 @@ public class BuildableManager : MonoBehaviour
 
     void Start()
     {
-        rewardRate = Mathf.RoundToInt(buildableParts.Count * 0.7f) / totalRewards;
+        if(totalRewards > 0)
+            rewardRate = Mathf.RoundToInt(buildableParts.Count * 0.7f) / totalRewards;
     }
 
     public void OnBuild(Vector3 pos)
