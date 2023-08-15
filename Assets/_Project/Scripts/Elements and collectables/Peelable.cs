@@ -14,6 +14,7 @@ public class Peelable : MonoBehaviour
     public bool diffirentCollectable;
     private Vector3 collectablePosition;
     private Vector3 collectableRotation;
+    public int zoneIndex;
 
     void Start()
     {
@@ -27,11 +28,13 @@ public class Peelable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex) return;
         PlayerController.instance.OnPeelableDetection(speedAmount, power);
     }
 
     private void OnTriggerStay(Collider other)
     {
+        if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex) return;
         power -= PlayerController.instance.scrapeTool.power;
         PlayerController.instance.scrapeTool.ShakeTool();
         if(power <= 0)

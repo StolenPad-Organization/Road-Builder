@@ -11,6 +11,7 @@ public class PeelableManager : MonoBehaviour
     [SerializeField] private Material[] mats;
     [SerializeField] private float[] powers;
     [SerializeField] private float[] speeds;
+    [SerializeField] private int zoneIndex;
 
     void Start()
     {
@@ -92,6 +93,20 @@ public class PeelableManager : MonoBehaviour
             foreach (var item in renderers)
             {
                 item.gameObject.GetComponent<Peelable>().SetPowerSpeed(powers[i],speeds[i]);
+            }
+        }
+    }
+
+    [ContextMenu("Set Zone Index")]
+    private void SetZoneIndex()
+    {
+        for (int i = 0; i < blockHolders.Length; i++)
+        {
+            renderers.Clear();
+            renderers = GetRenderers(blockHolders[i], renderers);
+            foreach (var item in renderers)
+            {
+                item.gameObject.GetComponent<Peelable>().zoneIndex = zoneIndex;
             }
         }
     }

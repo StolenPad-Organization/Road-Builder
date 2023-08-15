@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     private LevelData levelData;
-    private LevelProgressData levelProgressData;
+    public LevelProgressData levelProgressData;
     [SerializeField] private ZoneManager[] zones;
     public ZoneManager currentZone;
     private bool gameStarted;
@@ -64,6 +64,17 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Level Complete , YOU WIN!");
         DefaultAnalytics.LevelCompleted();
+        PlayerData playerData = Database.Instance.GetPlayerData();
+        playerData.PlayerPosition = Vector3.zero;
+        playerData.PlayerRotation = Vector3.zero;
+        playerData.HasWheelBarrow = false;
+        playerData.WheelBarrowPosition = Vector3.zero;
+        playerData.WheelBarrowRotation = Vector3.zero;
+        playerData.wheelBarrowCollectables.Clear();
+        playerData.playerCollectables.Clear();
+        Database.Instance.SetPlayerData(playerData);
+        Database.Instance.SaveData();
+        EventManager.TriggerWin.Invoke();
     }
 
     private void OnApplicationQuit()

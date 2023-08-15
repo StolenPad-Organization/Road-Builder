@@ -136,6 +136,8 @@ public class PlayerController : MonoBehaviour
     {
         if(scrapeTool != null)
             Destroy(scrapeTool.gameObject);
+        if (index >= scrapeToolsPrefabs.Length)
+            index = scrapeToolsPrefabs.Length - 1;
         scrapeTool = Instantiate(scrapeToolsPrefabs[index], scrapeToolHolder);
         scrapeTool.ShowTool(false);
     }

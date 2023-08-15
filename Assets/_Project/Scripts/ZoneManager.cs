@@ -33,6 +33,7 @@ public class ZoneManager : MonoBehaviour
     public Transform machinesPosition;
     [SerializeField] private GameObject zoneCollider;
     [SerializeField] private GameObject machineUpgradeTrigger;
+    [SerializeField] private bool hideMachine;
 
     [Header("Blocks Progress")]
     [SerializeField] private int maxBlocks;
@@ -170,6 +171,17 @@ public class ZoneManager : MonoBehaviour
         paintAmmo.gameObject.SetActive(false);
 
         zoneState = ZoneState.Complete;
+
+        if (hideMachine)
+        {
+            paintingMachine.gameObject.SetActive(false);
+            paintAmmo.gameObject.SetActive(false);
+            buildMachine.gameObject.SetActive(false);
+            asphaltAmmo.gameObject.SetActive(false);
+            wheelBarrow.gameObject.SetActive(false);
+            upgrades.SetActive(false);
+        }
+
         GameManager.instance.SaveLevel();
         // Unlock next Zone
         GameManager.instance.UnlockNextZone();
@@ -179,7 +191,16 @@ public class ZoneManager : MonoBehaviour
     {
         zoneData.ZoneState = ZoneState.PeelingStage;
         LoadZone();
-        if(zoneCollider != null)
+        if (hideMachine)
+        {
+            paintingMachine.gameObject.SetActive(true);
+            paintAmmo.gameObject.SetActive(true);
+            buildMachine.gameObject.SetActive(true);
+            asphaltAmmo.gameObject.SetActive(true);
+            wheelBarrow.gameObject.SetActive(true);
+            upgrades.SetActive(true);
+        }
+        if (zoneCollider != null)
         {
             PlayerController.instance.arrowController.PointToObject(zoneCollider);
         }
@@ -263,9 +284,27 @@ public class ZoneManager : MonoBehaviour
                 paintBlock.gameObject.SetActive(true);
                 buildableManager.LoadBuildables(zoneData.BuildableDatas, false);
                 paintableManager.LoadPaintables(zoneData.PaintableDatas, false);
+                if (hideMachine)
+                {
+                    paintingMachine.gameObject.SetActive(false);
+                    paintAmmo.gameObject.SetActive(false);
+                    buildMachine.gameObject.SetActive(false);
+                    asphaltAmmo.gameObject.SetActive(false);
+                    wheelBarrow.gameObject.SetActive(false);
+                    upgrades.SetActive(false);
+                }
                 break;
             case ZoneState.Locked:
                 upgrades.SetActive(false);
+                if (hideMachine)
+                {
+                    paintingMachine.gameObject.SetActive(false);
+                    paintAmmo.gameObject.SetActive(false);
+                    buildMachine.gameObject.SetActive(false);
+                    asphaltAmmo.gameObject.SetActive(false);
+                    wheelBarrow.gameObject.SetActive(false);
+                    upgrades.SetActive(false);
+                }
                 break;
             default:
                 break;
