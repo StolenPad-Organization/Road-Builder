@@ -7,6 +7,7 @@ public class Peelable : MonoBehaviour
 {
     [SerializeField] private int index;
     public float power;
+    private float initialPower;
     [SerializeField] private float speedAmount;
     [SerializeField] private CollectableType collectableType;
     public MeshFilter peelableMeshFilter;
@@ -18,7 +19,7 @@ public class Peelable : MonoBehaviour
 
     void Start()
     {
-        
+        initialPower = power;
     }
 
     void Update()
@@ -36,6 +37,8 @@ public class Peelable : MonoBehaviour
     {
         if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex) return;
         power -= PlayerController.instance.scrapeTool.power;
+        if(peelableRenderer.material.HasFloat("_Power"))
+            peelableRenderer.material.SetFloat("_Power", 1 - (power / initialPower));
         PlayerController.instance.scrapeTool.ShakeTool();
         if(power <= 0)
         {
