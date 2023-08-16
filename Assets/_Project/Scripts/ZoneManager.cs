@@ -34,6 +34,7 @@ public class ZoneManager : MonoBehaviour
     [SerializeField] private GameObject zoneCollider;
     [SerializeField] private GameObject machineUpgradeTrigger;
     [SerializeField] private bool hideMachine;
+    public float groundYRef = -1;
 
     [Header("Blocks Progress")]
     [SerializeField] private int maxBlocks;

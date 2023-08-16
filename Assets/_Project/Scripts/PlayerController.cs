@@ -54,8 +54,10 @@ public class PlayerController : MonoBehaviour
         {
             lastToolUsingTime = toolCoolDown;
             //complete making the tool hides after not using it for a while
-            if(scrapeTool.showing)
+            if (scrapeTool.showing)
+            {
                 scrapeTool.ShowTool(false);
+            }
         }
         else
         {
@@ -78,8 +80,10 @@ public class PlayerController : MonoBehaviour
             amount = 100;
         movementController.SetSpeedMultiplayer(amount);
         lastToolUsingTime = toolCoolDown;
-        if(!scrapeTool.showing)
+        if (!scrapeTool.showing)
+        {
             scrapeTool.ShowTool(true);
+        }
     }
 
     public void EmitDust()

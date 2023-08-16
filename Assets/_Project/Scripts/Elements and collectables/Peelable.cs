@@ -40,6 +40,8 @@ public class Peelable : MonoBehaviour
         if(power <= 0)
         {
             collectablePosition = transform.position + (PlayerController.instance.GetClosestCheckDirection(transform.position));
+            if (GameManager.instance.currentZone.groundYRef > -1)
+                collectablePosition.y = GameManager.instance.currentZone.groundYRef;
             collectablePosition += Vector3.up * Random.Range(0.0f, 0.5f);
             collectableRotation = new Vector3(Random.Range(-25f, 25f), Random.Range(-90f, 90f), Random.Range(-25f, 25f));
             GameManager.instance.currentZone.SavePeelable(index, true, false, collectablePosition, collectableRotation);

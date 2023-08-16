@@ -12,6 +12,8 @@ public class ScrapeTool : MonoBehaviour
     private bool canShake;
     private Vector3 currentScale;
     private Tween shakeTween = null;
+    [SerializeField] private GameObject showCollider;
+    [SerializeField] private GameObject hideCollider;
 
     public void UpdateShovelScale(int scaleMultiplier)
     {
@@ -29,11 +31,15 @@ public class ScrapeTool : MonoBehaviour
         {
             transform.SetParent(PlayerController.instance.showPos);
             PlayerController.instance.movementController.ToggleMovementAnimation(true);
+            showCollider.SetActive(true);
+            hideCollider.SetActive(false);
         }
         else
         {
             transform.SetParent(PlayerController.instance.hidePos);
             PlayerController.instance.movementController.ToggleMovementAnimation(true);
+            showCollider.SetActive(false);
+            hideCollider.SetActive(true);
         }
         transform.DOLocalMove(Vector3.zero, 0.3f);
         transform.DOLocalRotate(Vector3.zero, 0.3f);
