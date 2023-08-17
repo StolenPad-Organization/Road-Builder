@@ -286,6 +286,10 @@ public class PlayerController : MonoBehaviour
             collectable.LoadCollectable(collectables.Count, collectableOffest, collectableParent, collectableDatas[i].Peelable);
             collectables.Add(collectable);
         }
+        if (collectables.Count >= collectablesLimit)
+        {
+            fullWarning.SetActive(true);
+        }
     }
 
     public void ResetForNextZone()
