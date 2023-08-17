@@ -30098,12 +30098,6 @@ MonoBehaviour:
       MoneyDatas: []
       UpgradePointDatas: []
   MachineUpgradeDatas:
-  - machineUpgradeType: 0
-    Loops: 0
-    Level: 1
-    Value: 1
-    StepIndex: 0
-    Cost: 1
   - machineUpgradeType: 1
     Loops: 0
     Level: 1
@@ -30111,6 +30105,12 @@ MonoBehaviour:
     StepIndex: 0
     Cost: 1
   - machineUpgradeType: 2
+    Loops: 0
+    Level: 1
+    Value: 1
+    StepIndex: 0
+    Cost: 1
+  - machineUpgradeType: 3
     Loops: 0
     Level: 1
     Value: 1

@@ -143,7 +143,7 @@ public class BuildMachine : MonoBehaviour
     private Vector3 calculateScale()
     {
         if(hasUpgrade)
-            return Vector3.Lerp(Vector3.zero, Vector3.one * (1.5f + (0.5f * upgradeIndex)), Mathf.InverseLerp(0, asphaltObjects.Length, asphaltCount));
+            return Vector3.Lerp(Vector3.zero, Vector3.one * 1.65f, Mathf.InverseLerp(0, asphaltObjects.Length, asphaltCount));
         else
             return Vector3.Lerp(Vector3.zero, Vector3.one * 0.95f, Mathf.InverseLerp(0.0f, asphaltObjects.Length, asphaltCount));
     }
