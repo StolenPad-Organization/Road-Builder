@@ -14,6 +14,8 @@ public class PeelableManager : MonoBehaviour
     [SerializeField] private int zoneIndex;
     [SerializeField] private CollectableShape[] collectableShapes;
     [SerializeField] private Color[] dustColors;
+    [SerializeField] private int[] blocksNumbers;
+    private int currentBlockNumber = 1;
 
     void Start()
     {
@@ -144,6 +146,20 @@ public class PeelableManager : MonoBehaviour
             }
         }
     }
+
+    [ContextMenu("Set Blocks Numbers")]
+    private void SetBlocksNumbers()
+    {
+        for (int i = 0; i < blockHolders.Length; i++)
+        {
+            renderers.Clear();
+            renderers = GetRenderers(blockHolders[i], renderers);
+            foreach (var item in renderers)
+            {
+                item.gameObject.GetComponent<Peelable>().blockNumber = blocksNumbers[i];
+            }
+        }
+    }
 #endif
 
     public void LoadPeelables(List<PeelableData> PeelableDatas)
@@ -167,6 +183,8 @@ public class PeelableManager : MonoBehaviour
         Peelable target = null; 
         for (int i = 0; i < peelableParts.Count; i++)
         {
+            if (peelableParts[i].blockNumber != currentBlockNumber) 
+                continue;
             if(target == null)
             {
                 if (peelableParts[i].gameObject.activeInHierarchy)
@@ -181,7 +199,15 @@ public class PeelableManager : MonoBehaviour
                     target = peelableParts[i];
                 }
             }
-            
+        }
+
+        if(target == null)
+        {
+            currentBlockNumber++;
+            if (currentBlockNumber > blocksNumbers.Length)
+                return null;
+            else
+                return ReturnNearestPeelable();
         }
 
         return target;

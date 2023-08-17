@@ -18,6 +18,7 @@ public class Peelable : MonoBehaviour
     public int zoneIndex;
     public CollectableShape collectableShape;
     public Color dustColor;
+    public int blockNumber;
 
     void Start()
     {
