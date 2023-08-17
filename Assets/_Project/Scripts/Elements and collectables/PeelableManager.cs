@@ -13,6 +13,7 @@ public class PeelableManager : MonoBehaviour
     [SerializeField] private float[] speeds;
     [SerializeField] private int zoneIndex;
     [SerializeField] private CollectableShape[] collectableShapes;
+    [SerializeField] private Color[] dustColors;
 
     void Start()
     {
@@ -126,6 +127,20 @@ public class PeelableManager : MonoBehaviour
                     item.gameObject.GetComponent<Peelable>().diffirentCollectable = true;
                 else
                     item.gameObject.GetComponent<Peelable>().diffirentCollectable = false;
+            }
+        }
+    }
+
+    [ContextMenu("Set Dust Colors")]
+    private void SetDustColors()
+    {
+        for (int i = 0; i < blockHolders.Length; i++)
+        {
+            renderers.Clear();
+            renderers = GetRenderers(blockHolders[i], renderers);
+            foreach (var item in renderers)
+            {
+                item.gameObject.GetComponent<Peelable>().dustColor = dustColors[i];
             }
         }
     }

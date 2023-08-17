@@ -17,6 +17,7 @@ public class Peelable : MonoBehaviour
     private Vector3 collectableRotation;
     public int zoneIndex;
     public CollectableShape collectableShape;
+    public Color dustColor;
 
     void Start()
     {
@@ -31,7 +32,7 @@ public class Peelable : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex) return;
-        PlayerController.instance.OnPeelableDetection(speedAmount, power);
+        PlayerController.instance.OnPeelableDetection(speedAmount, power, dustColor);
         EventManager.invokeHaptic.Invoke(vibrationTypes.MediumImpact);
     }
 

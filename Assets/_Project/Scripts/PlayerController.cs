@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
     public Transform hidePos;
     public Transform showPos;
     [SerializeField] private ParticleSystem dustVFX;
+    [SerializeField] private ParticleSystem dustTrailVFX;
     [SerializeField] private Transform rightCheck;
     [SerializeField] private Transform leftCheck;
 
@@ -104,7 +105,7 @@ public class PlayerController : MonoBehaviour
             return transform.right * -1;
     }
 
-    public void OnPeelableDetection(float amount, float _power)
+    public void OnPeelableDetection(float amount, float _power,Color _dustColor)
     {
         if (scrapeTool.power > _power)
             amount = 100;
@@ -114,6 +115,12 @@ public class PlayerController : MonoBehaviour
         {
             scrapeTool.ShowTool(true);
         }
+
+        // set dust color
+        var main = dustVFX.main;
+        main.startColor = _dustColor;
+        main = dustTrailVFX.main;
+        main.startColor = _dustColor;
     }
 
     public void EmitDust()
