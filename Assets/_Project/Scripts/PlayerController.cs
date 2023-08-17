@@ -38,6 +38,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject paintCollider;
     [SerializeField] private GameObject cementCollider;
 
+    [Header("Tilt")]
+    [SerializeField] private float lerp;
+    private Vector3 pos;
+    private Quaternion rot;
+
     private void Awake()
     {
         instance = this;
@@ -62,6 +67,31 @@ public class PlayerController : MonoBehaviour
         else
         {
             lastToolUsingTime -= Time.deltaTime;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        TiltCollectables();
+    }
+
+    private void TiltCollectables()
+    {
+        pos = collectableParent.position;
+        rot = collectableParent.rotation;
+        for (int i = 0; i < collectables.Count; i++)
+        {
+            if (collectables[i].readyToTilt)
+            {
+                if (collectables[i].transform.parent == collectableParent)
+                    collectables[i].transform.SetParent(null);
+                pos += Vector3.up * collectableOffest;
+                collectables[i].transform.position = Vector3.Lerp(collectables[i].transform.position, pos, lerp);
+                //colectedMoney[i].transform.Rotate(rotDir * rb.velocity.magnitude);
+                collectables[i].transform.rotation = Quaternion.Lerp(collectables[i].transform.rotation, rot, lerp);
+                pos = collectables[i].transform.position;
+                rot = collectables[i].transform.rotation;
+            }
         }
     }
 

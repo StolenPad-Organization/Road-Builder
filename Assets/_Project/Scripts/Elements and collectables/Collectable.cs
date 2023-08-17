@@ -13,6 +13,7 @@ public class Collectable : MonoBehaviour
     public int price;
     [SerializeField] private GameObject[] collectableShapes;
     [SerializeField] private GameObject originalModel;
+    public bool readyToTilt;
     void Start()
     {
         
@@ -39,7 +40,7 @@ public class Collectable : MonoBehaviour
         collectableCollider.enabled = false;
         transform.SetParent(collectableParent);
         transform.DOLocalRotate(Vector3.zero, 0.4f);
-        transform.DOLocalJump(Vector3.up * index * collectableOffest, 1, 1, 0.4f);
+        transform.DOLocalJump(Vector3.up * index * collectableOffest, 1, 1, 0.4f).OnComplete(() => readyToTilt = true);
         peelable.OnCollect();
     }
 
@@ -50,6 +51,7 @@ public class Collectable : MonoBehaviour
 
     public void Sell(Transform sellPoint)
     {
+        readyToTilt = false;
         transform.SetParent(sellPoint);
         transform.DOLocalJump(Vector3.zero, 3, 1, 0.6f).OnComplete(() => 
         {
@@ -67,6 +69,7 @@ public class Collectable : MonoBehaviour
         transform.localPosition = Vector3.up * index * collectableOffest;
         peelable = _peelable;
         loadCollectableShape();
+        readyToTilt = true;
     }
 
     public void loadCollectableShape()

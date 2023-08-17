@@ -446,13 +446,13 @@ MonoBehaviour:
   toolCoolDown: 1
   hidePos: {fileID: 8359844083169967024}
   showPos: {fileID: 6326071114119945178}
-  hideCheck: {fileID: 0}
   dustVFX: {fileID: 292923692564786065}
   rightCheck: {fileID: 4514757160017440094}
   leftCheck: {fileID: 6448939723224041596}
   buildCollider: {fileID: 3584500780171910882}
   paintCollider: {fileID: 7082850046419132625}
   cementCollider: {fileID: 3888059111121048187}
+  lerp: 0.7
 --- !u!54 &292923692710631060
 Rigidbody:
   m_ObjectHideFlags: 0
