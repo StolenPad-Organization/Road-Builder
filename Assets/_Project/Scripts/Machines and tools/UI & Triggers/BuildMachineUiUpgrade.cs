@@ -8,6 +8,7 @@ public enum MachineUpgradeType
 {
     AsphaltMachineUpgrade,
     RollingMachineUpgrade,
+    GrilliageRollingMachineUpgrade,
     none
 }
 
