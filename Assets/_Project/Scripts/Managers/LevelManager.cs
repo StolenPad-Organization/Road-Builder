@@ -43,15 +43,16 @@ public class LevelManager : MonoBehaviour                                       
 //#if !UNITY_EDITOR
 //            ElephantManager.instance.SendAdjustLevelEvent(data.LevelTextValue);
 //#endif
-        if (data.LevelValue > levelCount)
-        {
-            return;
-            data.LevelValue = 1;
-        }
+
+        //if (data.LevelValue > levelCount)
+        //{
+        //    return;
+        //    data.LevelValue = 1;
+        //}
 
         Database.Instance.SetLevelData(data);
         Database.Instance.SaveData();
-        SceneManager.LoadScene(FindCorrectSceneForAB());
+        SceneManager.LoadScene("Level Select");
     }
 
     void LoadSameLevel ()

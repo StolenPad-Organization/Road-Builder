@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Data
   m_EditorClassIdentifier: 
   LevelData:
-    LevelValue: 1
-    LevelTextValue: 1
+    LevelValue: 2
+    LevelTextValue: 2
   PlayerData:
-    Money: 0
+    Money: 1703
     UpgradePoints: 0
-    PlayerPosition: {x: -103.87179, y: -0.000032305717, z: -6.8054924}
-    PlayerRotation: {x: -0, y: 82.724976, z: 0}
+    PlayerPosition: {x: 0, y: 0, z: 0}
+    PlayerRotation: {x: -0, y: 0, z: 0}
     HasWheelBarrow: 0
-    WheelBarrowPosition: {x: -107.57476, y: 0.08333333, z: -8.015015}
-    WheelBarrowRotation: {x: -0, y: 126.75397, z: -0}
+    WheelBarrowPosition: {x: 0, y: 0, z: 0}
+    WheelBarrowRotation: {x: 0, y: 0, z: 0}
     wheelBarrowCollectables: []
     playerCollectables: []
   UpgradeDatas:
@@ -14181,7 +14181,7 @@ MonoBehaviour:
       - IsPainted: 0
       MoneyDatas: []
       UpgradePointDatas: []
-    - ZoneState: 1
+    - ZoneState: 4
       PeelableDatas:
       - IsPeeled: 1
         IsCollected: 1
@@ -14328,41 +14328,189 @@ MonoBehaviour:
         CollectablePosition: {x: -86.741356, y: 0.22466888, z: 17.405483}
         CollectableRotation: {x: -12.810356, y: -23.577354, z: -24.974232}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -116.51468, y: 0.29914075, z: 20.699465}
         CollectableRotation: {x: -5.7808495, y: -41.438705, z: 12.268656}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -113.744705, y: 0.28831232, z: 20.859953}
         CollectableRotation: {x: 23.498081, y: -35.357704, z: 22.16298}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -110.73141, y: 0.20057984, z: 21.0406}
         CollectableRotation: {x: 13.085632, y: 73.478455, z: -5.596586}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -107.718346, y: 0.08333145, z: 21.03089}
         CollectableRotation: {x: -5.284628, y: 33.654404, z: 6.385957}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -105.33777, y: 0.3553726, z: 21.057535}
         CollectableRotation: {x: 1.1548729, y: 49.423477, z: -1.3798752}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -102.70426, y: 0.34139, z: 21.056635}
         CollectableRotation: {x: 13.783359, y: -85.68947, z: 17.429848}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -100.974464, y: 0.13392328, z: 20.620378}
         CollectableRotation: {x: -9.796449, y: -47.975723, z: -3.05871}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -97.912125, y: 0.23661782, z: 20.988884}
         CollectableRotation: {x: 23.292698, y: 26.152327, z: 19.63042}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -95.135124, y: 0.464391, z: 21.039898}
         CollectableRotation: {x: 16.035038, y: 64.70039, z: 4.832121}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -92.196686, y: 0.47633642, z: 19.06908}
+        CollectableRotation: {x: 16.507645, y: 58.760223, z: 1.133934}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -116.22692, y: 0.17715858, z: 23.535372}
+        CollectableRotation: {x: -12.322624, y: -10.692581, z: 24.22573}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -113.55172, y: 0.3337953, z: 23.572412}
+        CollectableRotation: {x: -7.1574593, y: -59.0069, z: 16.516953}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -110.79161, y: 0.16411053, z: 23.627424}
+        CollectableRotation: {x: -1.5202618, y: 64.87332, z: -18.48833}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -107.9448, y: 0.35869592, z: 23.657581}
+        CollectableRotation: {x: 19.050228, y: 62.342773, z: -23.120518}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -105.21248, y: 0.5115511, z: 23.648378}
+        CollectableRotation: {x: 24.197258, y: -53.11621, z: -1.4880142}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -102.899925, y: 0.13433991, z: 21.669214}
+        CollectableRotation: {x: -2.8698063, y: -55.943954, z: -8.087959}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -99.96898, y: 0.54553217, z: 23.641455}
+        CollectableRotation: {x: -10.645738, y: -29.107042, z: -21.552692}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -97.78744, y: 0.26891673, z: 23.628466}
+        CollectableRotation: {x: 0.95607376, y: 86.51227, z: 5.963007}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -95.1661, y: 0.34737384, z: 23.633484}
+        CollectableRotation: {x: 3.7447014, y: 8.089722, z: -1.3321495}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -92.41193, y: 0.41539448, z: 23.65553}
+        CollectableRotation: {x: 13.729327, y: 26.865301, z: 5.902609}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -108.305305, y: 0.40297353, z: 26.191525}
+        CollectableRotation: {x: 13.642966, y: 27.031796, z: 17.832088}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -105.67008, y: 0.5408684, z: 26.204254}
+        CollectableRotation: {x: 0.85531235, y: -7.761101, z: -21.335487}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -102.51297, y: 0.24315436, z: 26.229605}
+        CollectableRotation: {x: 17.446178, y: 19.092964, z: -16.82005}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -99.19301, y: 0.10857473, z: 24.96052}
+        CollectableRotation: {x: 0.8284664, y: -87.01181, z: -20.18827}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -97.193214, y: 0.35355848, z: 26.192583}
+        CollectableRotation: {x: 21.450035, y: 88.57727, z: -11.510632}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -95.01295, y: 0.15081666, z: 24.259705}
+        CollectableRotation: {x: 12.75975, y: -32.16236, z: 24.32726}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -91.363785, y: 0.2336305, z: 25.079903}
+        CollectableRotation: {x: -5.4830227, y: -3.2738113, z: 3.6845531}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -103.706985, y: 0.083587036, z: 28.140604}
+        CollectableRotation: {x: -4.005871, y: 69.165565, z: 15.890354}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -99.2788, y: 0.50093967, z: 27.362888}
+        CollectableRotation: {x: 0.44349098, y: -37.787445, z: -13.78941}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -96.549034, y: 0.3673789, z: 27.905916}
+        CollectableRotation: {x: -21.140755, y: -67.65451, z: 2.03689}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -94.88279, y: 0.342057, z: 28.855467}
+        CollectableRotation: {x: -4.8633423, y: 17.861702, z: 4.050699}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -91.78176, y: 0.32243907, z: 28.681917}
+        CollectableRotation: {x: 24.514748, y: -89.63814, z: -7.820163}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -14399,162 +14547,14 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
+        CollectablePosition: {x: -98.519264, y: 0.2958756, z: 30.587454}
+        CollectableRotation: {x: -19.084843, y: -46.794266, z: -15.98074}
+      - IsPeeled: 1
         IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+        CollectablePosition: {x: -93.99301, y: 0.45967525, z: 30.052935}
+        CollectableRotation: {x: 1.5690708, y: 28.86241, z: 4.20973}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -14587,14 +14587,10 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -71.22252, y: 0.29571036, z: 18.952744}
+        CollectableRotation: {x: 2.8783054, y: 71.36163, z: -17.907341}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -14605,6 +14601,10 @@ MonoBehaviour:
         CollectableRotation: {x: 0, y: 0, z: 0}
       - IsPeeled: 1
         IsCollected: 0
+        CollectablePosition: {x: -81.38776, y: 0.18519211, z: 24.796211}
+        CollectableRotation: {x: 14.211607, y: -69.05318, z: -21.922035}
+      - IsPeeled: 1
+        IsCollected: 1
         CollectablePosition: {x: -76.8698, y: 0.2221613, z: 11.239104}
         CollectableRotation: {x: 9.295647, y: 6.6047287, z: 18.744278}
       - IsPeeled: 0
@@ -14615,16 +14615,16 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+        CollectablePosition: {x: -64.68841, y: 0.5111621, z: 32.59588}
+        CollectableRotation: {x: 24.231277, y: 34.61545, z: -18.08585}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -75.33123, y: 0.18324924, z: 9.983856}
         CollectableRotation: {x: 2.5637722, y: 73.85286, z: -23.052055}
       - IsPeeled: 0
@@ -14636,29 +14636,29 @@ MonoBehaviour:
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -79.330956, y: 0.13604707, z: 11.485844}
         CollectableRotation: {x: 24.397438, y: 22.071777, z: 24.81776}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+        CollectablePosition: {x: -78.542915, y: 0.1665408, z: 30.337242}
+        CollectableRotation: {x: 4.351982, y: 64.19089, z: 24.97419}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -82.119255, y: 0.50071955, z: 7.4018207}
         CollectableRotation: {x: 0.101587296, y: -80.37422, z: -22.981514}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+        CollectablePosition: {x: -65.52756, y: 0.21976244, z: 8.199092}
+        CollectableRotation: {x: 9.817551, y: -4.052353, z: -4.7134132}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -14691,18 +14691,18 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -67.97052, y: 0.38851926, z: 32.04333}
+        CollectableRotation: {x: -8.5256195, y: 85.06604, z: 1.4211273}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+        CollectablePosition: {x: -78.02407, y: 0.3315355, z: 31.076038}
+        CollectableRotation: {x: -10.073338, y: -7.26725, z: -8.525726}
       - IsPeeled: 1
         IsCollected: 1
         CollectablePosition: {x: -80.640045, y: 0.56931347, z: 14.235385}
@@ -14723,22 +14723,18 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
+        CollectablePosition: {x: -63.830894, y: 0.23609167, z: 30.317236}
+        CollectableRotation: {x: -19.374943, y: 29.239485, z: -6.60207}
+      - IsPeeled: 1
         IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
+        CollectablePosition: {x: -69.00762, y: 0.29404816, z: 28.344107}
+        CollectableRotation: {x: 7.4954023, y: 4.2035446, z: -7.548913}
+      - IsPeeled: 1
         IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+        CollectablePosition: {x: -63.378036, y: 0.60120827, z: 32.92292}
+        CollectableRotation: {x: -10.370793, y: 71.204285, z: 1.1940918}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -14753,16 +14749,20 @@ MonoBehaviour:
         CollectableRotation: {x: 0, y: 0, z: 0}
       - IsPeeled: 1
         IsCollected: 0
+        CollectablePosition: {x: -69.483345, y: 0.41204622, z: 26.53649}
+        CollectableRotation: {x: 24.208492, y: -33.187218, z: -20.15271}
+      - IsPeeled: 1
+        IsCollected: 1
         CollectablePosition: {x: -75.85005, y: 0.22579712, z: 8.332349}
         CollectableRotation: {x: 14.189487, y: 34.449562, z: 2.1174526}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+        CollectablePosition: {x: -70.29203, y: 0.5744699, z: 24.560963}
+        CollectableRotation: {x: 11.666148, y: 66.83769, z: -3.3187294}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -14775,12 +14775,12 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: -67.044815, y: 0.4740587, z: 14.962795}
         CollectableRotation: {x: 10.815727, y: -52.164948, z: -4.9142265}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
+        CollectablePosition: {x: -69.813385, y: 0.39335987, z: 8.271156}
+        CollectableRotation: {x: -16.27916, y: -89.4747, z: -4.2393}
+      - IsPeeled: 1
+        IsCollected: 1
         CollectablePosition: {x: -82.00676, y: 0.29997626, z: 8.314101}
         CollectableRotation: {x: -9.913853, y: -62.971146, z: -10.260425}
       - IsPeeled: 0
@@ -14823,6 +14823,162 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -79.828064, y: 0.62145126, z: 27.689173}
+        CollectableRotation: {x: -14.374859, y: -10.588646, z: 22.339218}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -70.04007, y: 0.5533788, z: 33.906754}
+        CollectableRotation: {x: -5.1162567, y: 65.15195, z: -3.8804436}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -82.17098, y: 0.47627735, z: 29.041933}
+        CollectableRotation: {x: 4.607376, y: -61.77321, z: -24.341774}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -62.55989, y: 0.40031037, z: 8.871293}
+        CollectableRotation: {x: 17.253494, y: 19.889404, z: -5.8054657}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -78.80135, y: 0.20795822, z: 13.530025}
+        CollectableRotation: {x: 3.868679, y: 61.661327, z: -17.67025}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -74.66528, y: 0.4881969, z: 33.168003}
+        CollectableRotation: {x: -16.478401, y: 16.069511, z: -23.78381}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -77.282455, y: 0.549763, z: 10.765033}
+        CollectableRotation: {x: 16.858692, y: 16.47107, z: 7.541209}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -67.951485, y: 0.44547278, z: 33.75996}
+        CollectableRotation: {x: 2.3330898, y: 23.998302, z: -10.430684}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -79.76554, y: 0.4794265, z: 8.557632}
+        CollectableRotation: {x: -11.05592, y: 62.8215, z: -7.4610977}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -77.74944, y: 0.26435623, z: 8.306514}
+        CollectableRotation: {x: 10.071062, y: -68.91269, z: -16.64563}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -73.59725, y: 0.529156, z: 34.55553}
+        CollectableRotation: {x: 11.8677845, y: 78.227554, z: 1.0709667}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -76.12954, y: 0.6053719, z: 10.598943}
+        CollectableRotation: {x: 2.9259892, y: -10.2957, z: -24.751694}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -66.85359, y: 0.41920027, z: 21.591698}
+        CollectableRotation: {x: -7.4154816, y: 25.563488, z: 10.296809}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -69.0055, y: 0.39709058, z: 16.54005}
+        CollectableRotation: {x: -9.826031, y: 52.204113, z: -8.738354}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -75.27369, y: 0.62016255, z: 38.023056}
+        CollectableRotation: {x: 12.074405, y: 38.72732, z: 10.335594}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -67.825, y: 0.4657753, z: 18.098019}
+        CollectableRotation: {x: 9.77925, y: 44.59674, z: -22.948109}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -71.285355, y: 0.4811365, z: 8.5974245}
+        CollectableRotation: {x: -6.4068527, y: -69.25505, z: 11.034565}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -75.09988, y: 0.38578352, z: 30.800184}
+        CollectableRotation: {x: 22.815357, y: -17.63749, z: -7.0399323}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -14849,8 +15005,20 @@ MonoBehaviour:
         CollectableRotation: {x: 0, y: 0, z: 0}
       - IsPeeled: 1
         IsCollected: 1
-        CollectablePosition: {x: -78.80135, y: 0.20795822, z: 13.530025}
-        CollectableRotation: {x: 3.868679, y: 61.661327, z: -17.67025}
+        CollectablePosition: {x: -68.12023, y: 0.26215902, z: 9.44703}
+        CollectableRotation: {x: 11.141687, y: -51.02544, z: -17.265083}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -67.568436, y: 0.58283263, z: 16.243818}
+        CollectableRotation: {x: 22.606785, y: -6.4730835, z: 2.228632}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -79.65586, y: 0.36745837, z: 25.73101}
+        CollectableRotation: {x: 16.188723, y: 86.18808, z: 10.692489}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -14860,191 +15028,23 @@ MonoBehaviour:
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
       - IsPeeled: 1
-        IsCollected: 0
-        CollectablePosition: {x: -77.282455, y: 0.549763, z: 10.765033}
-        CollectableRotation: {x: 16.858692, y: 16.47107, z: 7.541209}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+        IsCollected: 1
+        CollectablePosition: {x: -73.90734, y: 0.35770258, z: 11.947879}
+        CollectableRotation: {x: -22.35706, y: 3.8183823, z: -13.375031}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
       - IsPeeled: 1
         IsCollected: 0
-        CollectablePosition: {x: -79.76554, y: 0.4794265, z: 8.557632}
-        CollectableRotation: {x: -11.05592, y: 62.8215, z: -7.4610977}
-      - IsPeeled: 1
-        IsCollected: 0
-        CollectablePosition: {x: -77.74944, y: 0.26435623, z: 8.306514}
-        CollectableRotation: {x: 10.071062, y: -68.91269, z: -16.64563}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+        CollectablePosition: {x: -80.52775, y: 0.2588884, z: 24.875376}
+        CollectableRotation: {x: 21.48056, y: 85.39078, z: -1.0884857}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
       - IsPeeled: 1
-        IsCollected: 0
-        CollectablePosition: {x: -76.12954, y: 0.6053719, z: 10.598943}
-        CollectableRotation: {x: 2.9259892, y: -10.2957, z: -24.751694}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -72.32547, y: 0.44900268, z: 10.722445}
         CollectableRotation: {x: 6.9138517, y: 63.655045, z: 15.449272}
       - IsPeeled: 0
@@ -15104,7 +15104,7 @@ MonoBehaviour:
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -78.07049, y: 0.20221674, z: 14.268769}
         CollectableRotation: {x: -14.271199, y: -3.8474808, z: -18.421669}
       - IsPeeled: 1
@@ -15119,18 +15119,18 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -66.39283, y: 0.3626916, z: 9.191152}
+        CollectableRotation: {x: -8.107385, y: 65.33745, z: -11.886986}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+        CollectablePosition: {x: -71.835976, y: 0.36089227, z: 37.830116}
+        CollectableRotation: {x: 24.710793, y: -12.200523, z: -5.3268337}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -15163,6 +15163,34 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -67.205124, y: 0.22676086, z: 38.864075}
+        CollectableRotation: {x: -13.661499, y: -16.529411, z: 16.923885}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -73.05015, y: 0.4936, z: 10.035349}
+        CollectableRotation: {x: -5.2499924, y: -28.548004, z: 16.475613}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -80.008736, y: 0.46141988, z: 34.73107}
+        CollectableRotation: {x: 7.881647, y: 85.74777, z: 11.005675}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -72.42587, y: 0.27816507, z: 33.526524}
+        CollectableRotation: {x: 11.630743, y: 4.318428, z: 2.518139}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -69.14939, y: 0.5391842, z: 10.282143}
+        CollectableRotation: {x: -10.021885, y: 76.727936, z: 1.340189}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -81.913025, y: 0.30982444, z: 10.90058}
+        CollectableRotation: {x: 5.4208603, y: -78.6322, z: -0.40874863}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -15171,6 +15199,50 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -68.343124, y: 0.13049644, z: 8.244298}
+        CollectableRotation: {x: -2.8675652, y: -19.623352, z: -2.2676678}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -68.35741, y: 0.30686244, z: 21.389122}
+        CollectableRotation: {x: 22.39999, y: -75.797485, z: -2.7181416}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -79.43317, y: 0.42762145, z: 8.914747}
+        CollectableRotation: {x: -18.869804, y: 69.02527, z: -13.146066}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -66.18205, y: 0.23051256, z: 28.095545}
+        CollectableRotation: {x: 13.3117485, y: 70.4212, z: 17.821426}
+      - IsPeeled: 0
+        IsCollected: 0
+        CollectablePosition: {x: 0, y: 0, z: 0}
+        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -77.88702, y: 0.2046296, z: 29.206032}
+        CollectableRotation: {x: -13.3714075, y: -35.189003, z: -20.181992}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -15189,78 +15261,6 @@ MonoBehaviour:
         CollectableRotation: {x: 0, y: 0, z: 0}
       - IsPeeled: 1
         IsCollected: 1
-        CollectablePosition: {x: -81.913025, y: 0.30982444, z: 10.90058}
-        CollectableRotation: {x: 5.4208603, y: -78.6322, z: -0.40874863}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 1
-        IsCollected: 0
         CollectablePosition: {x: -68.38613, y: 0.31884763, z: 15.102649}
         CollectableRotation: {x: -4.5082664, y: 57.213425, z: 15.058563}
       - IsPeeled: 0
@@ -15295,10 +15295,10 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -75.20602, y: 0.35184082, z: 9.115302}
+        CollectableRotation: {x: 21.22768, y: -55.94017, z: -21.31279}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -15320,7 +15320,7 @@ MonoBehaviour:
         CollectablePosition: {x: -65.11846, y: 0.3587667, z: 14.745848}
         CollectableRotation: {x: -23.74239, y: -89.271515, z: 16.007442}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -74.10067, y: 0.5028151, z: 11.210747}
         CollectableRotation: {x: 12.125473, y: -18.767494, z: -21.430862}
       - IsPeeled: 0
@@ -15347,10 +15347,10 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+        CollectablePosition: {x: -77.79375, y: 0.430478, z: 33.907135}
+        CollectableRotation: {x: 12.440299, y: 26.718319, z: -1.0623417}
       - IsPeeled: 1
         IsCollected: 1
         CollectablePosition: {x: -81.8952, y: 0.5406836, z: 13.254303}
@@ -15364,7 +15364,7 @@ MonoBehaviour:
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -78.35866, y: 0.20534945, z: 7.3277774}
         CollectableRotation: {x: -13.4963875, y: -27.617065, z: 8.777892}
       - IsPeeled: 0
@@ -15372,13 +15372,13 @@ MonoBehaviour:
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
       - IsPeeled: 1
-        IsCollected: 0
+        IsCollected: 1
         CollectablePosition: {x: -65.78853, y: 0.31588957, z: 10.893976}
         CollectableRotation: {x: 2.2134342, y: -18.148521, z: 20.419209}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+        CollectablePosition: {x: -75.83625, y: 0.19539154, z: 35.706123}
+        CollectableRotation: {x: 17.122025, y: 73.02977, z: 4.9774017}
       - IsPeeled: 1
         IsCollected: 1
         CollectablePosition: {x: -67.34596, y: 0.58852893, z: 11.319686}
@@ -15387,6 +15387,10 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -70.995, y: 0.13970894, z: 22.567583}
+        CollectableRotation: {x: -11.468132, y: -63.402832, z: -23.266422}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -15395,14 +15399,10 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -71.076996, y: 0.5617473, z: 10.946428}
+        CollectableRotation: {x: -4.303005, y: -20.31736, z: 5.3200626}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -15435,6 +15435,22 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -65.35279, y: 0.40170076, z: 35.888943}
+        CollectableRotation: {x: -2.8551006, y: 22.459328, z: 4.021307}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -71.0458, y: 0.43077675, z: 16.96521}
+        CollectableRotation: {x: -2.1899662, y: -28.879763, z: -1.9515419}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -69.531166, y: 0.4986313, z: 30.883217}
+        CollectableRotation: {x: -13.54118, y: 2.0343246, z: -18.340527}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -71.792885, y: 0.16581064, z: 15.469925}
+        CollectableRotation: {x: -12.853645, y: 24.040188, z: 0.44607162}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -15483,6 +15499,14 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -64.44195, y: 0.22347766, z: 28.428907}
+        CollectableRotation: {x: -15.858871, y: 85.684326, z: 9.130317}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -72.160805, y: 0.58599836, z: 21.22998}
+        CollectableRotation: {x: 2.7670116, y: 60.66275, z: -9.462002}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -15495,6 +15519,18 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -69.6134, y: 0.5148622, z: 39.276123}
+        CollectableRotation: {x: -19.240578, y: 35.517124, z: -13.386749}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -65.46952, y: 0.25970253, z: 29.667307}
+        CollectableRotation: {x: 24.386703, y: -78.2753, z: -6.708332}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -65.90179, y: 0.38072738, z: 23.747267}
+        CollectableRotation: {x: -6.248131, y: -28.275946, z: 10.97064}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -15503,70 +15539,34 @@ MonoBehaviour:
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -81.43618, y: 0.3084747, z: 31.20882}
+        CollectableRotation: {x: -5.8819923, y: -72.96033, z: -14.088314}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 0
+        CollectablePosition: {x: -71.39273, y: 0.26085886, z: 20.060734}
+        CollectableRotation: {x: -23.342781, y: 50.613476, z: -3.7444916}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
+      - IsPeeled: 1
+        IsCollected: 1
+        CollectablePosition: {x: -64.20428, y: 0.5659194, z: 10.156508}
+        CollectableRotation: {x: 7.572071, y: -2.386856, z: 16.032623}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
         CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        CollectablePosition: {x: 0, y: 0, z: 0}
-        CollectableRotation: {x: 0, y: 0, z: 0}
+        CollectablePosition: {x: -71.25632, y: 0.6150211, z: 8.121531}
+        CollectableRotation: {x: -15.5368805, y: 39.56717, z: -8.640817}
       - IsPeeled: 0
         IsCollected: 0
         CollectablePosition: {x: 0, y: 0, z: 0}
@@ -16776,467 +16776,467 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       PaintableDatas:
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
       MoneyDatas: []
       UpgradePointDatas: []
-  - ZoneIndex: 0
+  - ZoneIndex: 2
     ZoneDatas:
     - ZoneState: 1
       PeelableDatas:
@@ -26501,7 +26501,7 @@ MonoBehaviour:
       - IsPainted: 0
       MoneyDatas: []
       UpgradePointDatas: []
-    - ZoneState: 0
+    - ZoneState: 3
       PeelableDatas:
       - IsPeeled: 0
         IsCollected: 0
