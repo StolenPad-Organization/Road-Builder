@@ -11,6 +11,8 @@ public class Collectable : MonoBehaviour
     [SerializeField] private MeshRenderer collectableRenderer;
     public Peelable peelable;
     public int price;
+    [SerializeField] private GameObject[] collectableShapes;
+    [SerializeField] private GameObject originalModel;
     void Start()
     {
         
@@ -75,6 +77,11 @@ public class Collectable : MonoBehaviour
             collectableRenderer.material = peelable.peelableRenderer.material;
             collectableMeshFilter.gameObject.transform.localScale = Vector3.one * 0.75f;
             collectableMeshFilter.gameObject.transform.localEulerAngles = Vector3.zero;
+        }
+        else
+        {
+            originalModel.SetActive(false);
+            collectableShapes[(int)peelable.collectableShape -1].SetActive(true);
         }
     }
 }

@@ -16,6 +16,7 @@ public class Peelable : MonoBehaviour
     private Vector3 collectablePosition;
     private Vector3 collectableRotation;
     public int zoneIndex;
+    public CollectableShape collectableShape;
 
     void Start()
     {

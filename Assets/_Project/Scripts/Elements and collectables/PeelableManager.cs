@@ -12,6 +12,7 @@ public class PeelableManager : MonoBehaviour
     [SerializeField] private float[] powers;
     [SerializeField] private float[] speeds;
     [SerializeField] private int zoneIndex;
+    [SerializeField] private CollectableShape[] collectableShapes;
 
     void Start()
     {
@@ -107,6 +108,24 @@ public class PeelableManager : MonoBehaviour
             foreach (var item in renderers)
             {
                 item.gameObject.GetComponent<Peelable>().zoneIndex = zoneIndex;
+            }
+        }
+    }
+
+    [ContextMenu("Set Collectable Shape")]
+    private void SetCollectableShape()
+    {
+        for (int i = 0; i < blockHolders.Length; i++)
+        {
+            renderers.Clear();
+            renderers = GetRenderers(blockHolders[i], renderers);
+            foreach (var item in renderers)
+            {
+                item.gameObject.GetComponent<Peelable>().collectableShape = collectableShapes[i];
+                if (collectableShapes[i] != CollectableShape.Original)
+                    item.gameObject.GetComponent<Peelable>().diffirentCollectable = true;
+                else
+                    item.gameObject.GetComponent<Peelable>().diffirentCollectable = false;
             }
         }
     }

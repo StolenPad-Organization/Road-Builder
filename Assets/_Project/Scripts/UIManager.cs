@@ -126,7 +126,7 @@ public class UIManager : MonoBehaviour
                 fpos = ReturnWorldToCanvasPosition(pos + Random.insideUnitSphere);
             }
             GameObject moneyClone = Instantiate(moneyPrefab, fpos, Quaternion.identity, canvasSpace);
-            moneyClone.transform.DOScale(0.4f, VFXDuration);
+            moneyClone.transform.DOScale(0.85f, VFXDuration);
             moneyClone.transform.DOMove(moneyTarget.position, VFXDuration).OnComplete(() =>
             {
                 Destroy(moneyClone);

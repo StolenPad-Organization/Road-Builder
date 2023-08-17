@@ -10,3 +10,10 @@
     Success,
     Warning,
 };
+
+public enum CollectableShape
+{
+    Original,
+    Dirt,
+    Grass,
+};
