@@ -637,10 +637,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partsSpawnPoint: {fileID: 1927439657}
   used: 0
-  paintCapacity: 10
+  paintCapacity: 20
   paintValue: 0
-  paintFillRate: 0.3
-  paintConsumeRate: 0.4
+  paintFillRate: 0.75
+  paintConsumeRate: 0.25
   paintDuration: 0.8
   paintDelay: 0.2
   paintEffect: {fileID: 5960236477200450301}
