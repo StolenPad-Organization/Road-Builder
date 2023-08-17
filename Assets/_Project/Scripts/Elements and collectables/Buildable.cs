@@ -69,7 +69,11 @@ public class Buildable : MonoBehaviour
                     SmokePooler.instance.ReturnSmoke(smoke);
             });
 
-        EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+        if (PlayerController.instance.canDoStrictedHaptic)
+        {
+            EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+            PlayerController.instance.canDoStrictedHaptic = false;
+        }
     }
 
 #if UNITY_EDITOR

@@ -454,6 +454,8 @@ MonoBehaviour:
   paintCollider: {fileID: 7082850046419132625}
   cementCollider: {fileID: 3888059111121048187}
   lerp: 0.7
+  HapticCoolDown: 1
+  canDoStrictedHaptic: 1
 --- !u!54 &292923692710631060
 Rigidbody:
   m_ObjectHideFlags: 0

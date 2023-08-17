@@ -44,6 +44,11 @@ public class PlayerController : MonoBehaviour
     private Vector3 pos;
     private Quaternion rot;
 
+    [Header("Stricted Haptic Control")]
+    [SerializeField] private float HapticCoolDown;
+    float lastHapticTime;
+    public bool canDoStrictedHaptic;
+
     private void Awake()
     {
         instance = this;
@@ -68,6 +73,16 @@ public class PlayerController : MonoBehaviour
         else
         {
             lastToolUsingTime -= Time.deltaTime;
+        }
+
+        if (lastHapticTime <= 0)
+        {
+            lastHapticTime = HapticCoolDown;
+            canDoStrictedHaptic = true;
+        }
+        else
+        {
+            lastHapticTime -= Time.deltaTime;
         }
     }
 

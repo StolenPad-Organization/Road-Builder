@@ -31,6 +31,7 @@ public class Money : MonoBehaviour
 
     private void Collect()
     {
+        EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
         target.used = false;
         EventManager.AddMoney.Invoke(value, transform);
         MoneyPooler.instance.ReturnMoney(this);
