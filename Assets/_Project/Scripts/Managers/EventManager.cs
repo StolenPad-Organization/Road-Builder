@@ -5,6 +5,7 @@ public static class EventManager
 {
     #region Player Events
     public static Action<int, Transform> AddMoney;
+    public static Action<int, Transform> AddUpgradePoint;
     #endregion
 
     #region HapticEvents

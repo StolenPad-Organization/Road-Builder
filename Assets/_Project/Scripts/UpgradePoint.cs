@@ -30,8 +30,9 @@ public class UpgradePoint : MonoBehaviour
 
     private void Collect()
     {
+        EventManager.AddUpgradePoint.Invoke(value, transform);
         UpgradePointsPooler.instance.ReturnUpgradePoint(this);
-        UIManager.instance.UpdateUpgradePoints(value);
+        //UIManager.instance.UpdateUpgradePoints(value);
         GameManager.instance.currentZone.RemoveUpgradePointData(ipos, value);
     }
 

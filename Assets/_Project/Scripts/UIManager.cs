@@ -22,6 +22,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject moneyPrefab;
     [SerializeField] private float VFXDuration;
 
+    [Header("Upgrade Points UI Effect")]
+    [SerializeField] private Transform upgradePointTarget;
+    [SerializeField] private GameObject upgradePointPrefab;
+
     private void Awake()
     {
         instance = this;
@@ -37,11 +41,13 @@ public class UIManager : MonoBehaviour
     private void OnEnable()
     {
         EventManager.AddMoney += AddMoney;
+        EventManager.AddUpgradePoint += AddUpgradePoint;
     }
 
     private void OnDisable()
     {
         EventManager.AddMoney -= AddMoney;
+        EventManager.AddUpgradePoint -= AddUpgradePoint;
     }
 
     void Update()
@@ -130,13 +136,40 @@ public class UIManager : MonoBehaviour
             moneyClone.transform.DOMove(moneyTarget.position, VFXDuration).OnComplete(() =>
             {
                 Destroy(moneyClone);
-                //money += amount / x;
                 UpdateMoney(amount / x);
             });
             yield return new WaitForSeconds(0.12f);
         }
-        //money += amount % x;
         UpdateMoney(amount % x);
+    }
+
+    private void AddUpgradePoint(int amount, Transform target)
+    {
+        StartCoroutine(sendUpgradePoint(amount, target));
+    }
+
+    IEnumerator sendUpgradePoint(int amount, Transform target)
+    {
+        Vector3 pos = target.position;
+        Vector3 fpos = ReturnWorldToCanvasPosition(pos);
+
+        int x = Random.Range(2, 4);
+        for (int i = 0; i < x; i++)
+        {
+            if (i > 0)
+            {
+                fpos = ReturnWorldToCanvasPosition(pos + Random.insideUnitSphere);
+            }
+            GameObject upgradePointClone = Instantiate(upgradePointPrefab, fpos, Quaternion.identity, canvasSpace);
+            upgradePointClone.transform.DOScale(0.85f, VFXDuration);
+            upgradePointClone.transform.DOMove(upgradePointTarget.position, VFXDuration).OnComplete(() =>
+            {
+                Destroy(upgradePointClone);
+                UpdateUpgradePoints(amount / x);
+            });
+            yield return new WaitForSeconds(0.12f);
+        }
+        UpdateUpgradePoints(amount % x);
     }
 
     private Vector3 ReturnWorldToCanvasPosition(Vector3 pos)
