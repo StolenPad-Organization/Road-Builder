@@ -190,8 +190,8 @@ public class BuildMachine : MonoBehaviour
         if (used)
             PlayerController.instance.GetOnAsphaltMachine(playerSeat, this);
 
-        Speed = speedUpgrades[level];
-        partsTrigger.transform.localScale = CollisionUpgrades[level];
-        consumeRate = consumeRateUpgrade[level];
+        Speed = speedUpgrades[level-1];
+        partsTrigger.transform.localScale = CollisionUpgrades[level-1];
+        consumeRate = consumeRateUpgrade[level-1];
     }
 }
