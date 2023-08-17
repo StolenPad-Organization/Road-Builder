@@ -35,6 +35,7 @@ public class ZoneManager : MonoBehaviour
     [SerializeField] private GameObject machineUpgradeTrigger;
     [SerializeField] private bool hideMachine;
     public float groundYRef = -1;
+    [SerializeField] private GameObject completeBlocks;
 
     [Header("Blocks Progress")]
     [SerializeField] private int maxBlocks;
@@ -136,6 +137,9 @@ public class ZoneManager : MonoBehaviour
     }
     private void ShowPaintMachine()
     {
+        asphaltBlock.gameObject.SetActive(false);
+        completeBlocks.SetActive(true);
+
         EventManager.invokeHaptic.Invoke(vibrationTypes.Success);
         zoneState = ZoneState.PaintingStage;
         PlayerController.instance.GetOffAsphaltMachine();
@@ -267,13 +271,14 @@ public class ZoneManager : MonoBehaviour
                     zoneCollider.gameObject.SetActive(false);
                 // load paintable and painting machine and buildables
                 player.RemovePeelingAndCollectingTools();
-                buildableManager.LoadBuildables(zoneData.BuildableDatas, false);
+                //buildableManager.LoadBuildables(zoneData.BuildableDatas, false);
                 paintableManager.LoadPaintables(zoneData.PaintableDatas, true);
                 upgrades.SetActive(false);
                 removableBlock.SetActive(false);
-                asphaltBlock.SetActive(true);
+                //asphaltBlock.SetActive(true);
                 paintingMachine.gameObject.SetActive(true);
                 paintBlock.gameObject.SetActive(true);
+                completeBlocks.SetActive(true);
 
                 UIManager.instance.ChangeProgressBarIcon(2);
 
@@ -284,9 +289,10 @@ public class ZoneManager : MonoBehaviour
                     zoneCollider.gameObject.SetActive(false);
                 upgrades.SetActive(false);
                 removableBlock.SetActive(false);
-                asphaltBlock.SetActive(true);
+                //asphaltBlock.SetActive(true);
                 paintBlock.gameObject.SetActive(true);
-                buildableManager.LoadBuildables(zoneData.BuildableDatas, false);
+                //buildableManager.LoadBuildables(zoneData.BuildableDatas, false);
+                completeBlocks.SetActive(true);
                 paintableManager.LoadPaintables(zoneData.PaintableDatas, false);
                 if (hideMachine)
                 {
