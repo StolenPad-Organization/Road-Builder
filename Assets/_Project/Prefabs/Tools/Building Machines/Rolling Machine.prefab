@@ -4580,7 +4580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c03f61f3f12fbf42bdf993eff4589bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineUpgradeType: 1
+  machineUpgradeType: 2
   playerSeat: {fileID: 1376462084}
   partsSpawnPoint: {fileID: 1665942918}
   playerTrigger: {fileID: 784992096}
@@ -4619,6 +4619,7 @@ MonoBehaviour:
   - {fileID: 2108629958}
   - {fileID: 184594843}
   - {fileID: 1429377871}
+  asphaltScalingObject: {fileID: 0}
   consumeRate: 1
   consumeValue: 0
   fullWarning: {fileID: 4056022045323066898}

@@ -29,7 +29,7 @@ public class BuildMachine : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private BuildMachineUpgrade[] buildMachineUpgrades;
     [SerializeField] private int upgradeIndex;
-    [SerializeField] private bool hasUpgrade;
+    public bool hasUpgrade;
     private Vector3 ammoInitialScale;
     public float Speed;
     [Header("Upgrades")]

@@ -6,10 +6,10 @@ using TMPro;
 
 public enum MachineUpgradeType
 {
+    none,
     AsphaltMachineUpgrade,
     RollingMachineUpgrade,
-    GrilliageRollingMachineUpgrade,
-    none
+    GrilliageRollingMachineUpgrade
 }
 
 public class BuildMachineUiUpgrade : MonoBehaviour

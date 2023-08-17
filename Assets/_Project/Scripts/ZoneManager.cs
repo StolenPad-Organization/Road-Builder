@@ -114,7 +114,7 @@ public class ZoneManager : MonoBehaviour
         UIManager.instance.ChangeProgressBarIcon(1);
         UIManager.instance.UpdateProgressBar(0);
         upgrades.SetActive(false);
-        if (buildMachine.machineUpgradeType != MachineUpgradeType.none)
+        if (buildMachine.hasUpgrade)
             machineUpgradeTrigger.SetActive(true);
         removableBlock.SetActive(false);
         //PlayerController.instance.RemovePeelingAndCollectingTools();
@@ -255,7 +255,7 @@ public class ZoneManager : MonoBehaviour
                 removableBlock.SetActive(false);
                 buildMachine.gameObject.SetActive(true);
                 asphaltBlock.SetActive(true);
-                if (buildMachine.machineUpgradeType != MachineUpgradeType.none)
+                if (buildMachine.hasUpgrade)
                     machineUpgradeTrigger.SetActive(true);
                 LoadUpgradePoints(zoneData.UpgradePointDatas);
                 UIManager.instance.ChangeProgressBarIcon(1);
