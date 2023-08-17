@@ -68,6 +68,8 @@ public class Buildable : MonoBehaviour
                 if (smoke != null)
                     SmokePooler.instance.ReturnSmoke(smoke);
             });
+
+        EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
     }
 
 #if UNITY_EDITOR

@@ -102,6 +102,7 @@ public class ZoneManager : MonoBehaviour
     }
     private void ShowAsphaltMachine()
     {
+        EventManager.invokeHaptic.Invoke(vibrationTypes.Success);
         zoneState = ZoneState.BuildingStage;
         buildMachine.gameObject.SetActive(true);
         player.arrowController.PointToObject(buildMachine.gameObject);
@@ -135,6 +136,7 @@ public class ZoneManager : MonoBehaviour
     }
     private void ShowPaintMachine()
     {
+        EventManager.invokeHaptic.Invoke(vibrationTypes.Success);
         zoneState = ZoneState.PaintingStage;
         PlayerController.instance.GetOffAsphaltMachine();
         paintingMachine.gameObject.SetActive(true);
@@ -166,6 +168,7 @@ public class ZoneManager : MonoBehaviour
     }
     private IEnumerator CompleteZone()
     {
+        EventManager.invokeHaptic.Invoke(vibrationTypes.Success);
         yield return new WaitForSeconds(1.0f);
         paintingMachine.transform.SetParent(null);
         paintingMachine.gameObject.SetActive(false);

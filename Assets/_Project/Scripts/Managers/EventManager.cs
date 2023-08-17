@@ -4,7 +4,11 @@ using UnityEngine;
 public static class EventManager
 {
     #region Player Events
+    public static Action<int, Transform> AddMoney;
+    #endregion
 
+    #region HapticEvents
+    public static Action<vibrationTypes> invokeHaptic;
     #endregion
 
     #region Ending Events

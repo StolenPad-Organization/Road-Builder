@@ -32,8 +32,9 @@ public class Money : MonoBehaviour
     private void Collect()
     {
         target.used = false;
+        EventManager.AddMoney.Invoke(value, transform);
         MoneyPooler.instance.ReturnMoney(this);
-        UIManager.instance.UpdateMoney(value);
+        //UIManager.instance.UpdateMoney(value);
         GameManager.instance.currentZone.RemoveMoneyData(target.index, value);
     }
 

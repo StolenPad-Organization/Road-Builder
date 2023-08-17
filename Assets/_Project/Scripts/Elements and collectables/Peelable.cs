@@ -31,6 +31,7 @@ public class Peelable : MonoBehaviour
     {
         if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex) return;
         PlayerController.instance.OnPeelableDetection(speedAmount, power);
+        EventManager.invokeHaptic.Invoke(vibrationTypes.MediumImpact);
     }
 
     private void OnTriggerStay(Collider other)
@@ -53,6 +54,7 @@ public class Peelable : MonoBehaviour
             collectable.Spawn(collectablePosition, collectableRotation);
             gameObject.SetActive(false);
             GameManager.instance.currentZone.OnBlockRemove();
+            EventManager.invokeHaptic.Invoke(vibrationTypes.MediumImpact);
         }
     }
 #if UNITY_EDITOR

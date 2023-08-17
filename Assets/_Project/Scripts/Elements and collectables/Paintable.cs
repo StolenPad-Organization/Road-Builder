@@ -51,6 +51,8 @@ public class Paintable : MonoBehaviour
         });
         transform.DOLocalRotate(initialRot, 0.1f);
         transform.DOScale(initialscale, 0.1f);
+
+        EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
     }
 
 #if UNITY_EDITOR
