@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ZoneLogError : MonoBehaviour
 {
-    private void OnDisable()
+    private void OnEnable()
     {
         Debug.LogError("Player Reached Level 2 Zone 3");
     }

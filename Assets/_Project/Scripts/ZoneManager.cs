@@ -1,3 +1,4 @@
+using HomaGames.HomaBelly;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -67,6 +68,8 @@ public class ZoneManager : MonoBehaviour
         maxBlocks = peelableManager.peelableParts.Count;
         maxAsphalt = buildableManager.buildableParts.Count;
         maxPaint = paintableManager.paintableParts.Count;
+
+        SendProgressionEvent(ProgressionStatus.Start);
     }
 
     public void InitZone(ZoneData _zoneData)
@@ -90,6 +93,24 @@ public class ZoneManager : MonoBehaviour
         
     }
 
+    private void SendProgressionEvent(ProgressionStatus status)
+    {
+        string message = "";
+        switch (zoneState)
+        {
+            case ZoneState.PeelingStage:
+                message = "Level " + levelData.LevelTextValue + " / " + "Peeling Stage";
+                break;
+            case ZoneState.BuildingStage:
+                message = "Level " + levelData.LevelTextValue + " / " + "Building Stage";
+                break;
+            case ZoneState.PaintingStage:
+                message = "Level " + levelData.LevelTextValue + " / " + "Painting Stage";
+                break;
+        }
+        HomaBelly.Instance.TrackProgressionEvent(status, "Build Stage");
+    }
+
     public void OnBlockRemove()
     {
         currentBlocks++;
@@ -103,6 +124,7 @@ public class ZoneManager : MonoBehaviour
     }
     private void ShowAsphaltMachine()
     {
+        SendProgressionEvent(ProgressionStatus.Complete);
         EventManager.invokeHaptic.Invoke(vibrationTypes.Success);
         zoneState = ZoneState.BuildingStage;
         buildMachine.gameObject.SetActive(true);
@@ -112,6 +134,8 @@ public class ZoneManager : MonoBehaviour
     }
     public void StartAsphaltStage()
     {
+        SendProgressionEvent(ProgressionStatus.Start);
+
         UIManager.instance.ChangeProgressBarIcon(1);
         UIManager.instance.UpdateProgressBar(0);
         upgrades.SetActive(false);
@@ -137,6 +161,7 @@ public class ZoneManager : MonoBehaviour
     }
     private void ShowPaintMachine()
     {
+        SendProgressionEvent(ProgressionStatus.Complete);
         asphaltBlock.gameObject.SetActive(false);
         completeBlocks.SetActive(true);
 
@@ -150,6 +175,7 @@ public class ZoneManager : MonoBehaviour
     }
     public void StartPaintStage()
     {
+        SendProgressionEvent(ProgressionStatus.Start);
         UIManager.instance.ChangeProgressBarIcon(2);
         //PlayerController.instance.GetOffAsphaltMachine();
         machineUpgradeTrigger.SetActive(false);
@@ -172,6 +198,7 @@ public class ZoneManager : MonoBehaviour
     }
     private IEnumerator CompleteZone()
     {
+        SendProgressionEvent(ProgressionStatus.Complete);
         EventManager.invokeHaptic.Invoke(vibrationTypes.Success);
         yield return new WaitForSeconds(1.0f);
         paintingMachine.transform.SetParent(null);

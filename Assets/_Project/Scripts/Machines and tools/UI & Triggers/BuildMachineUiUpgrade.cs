@@ -78,6 +78,8 @@ public class BuildMachineUiUpgrade : MonoBehaviour
     public void Buy()
     {
         EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+        EventManager.PlayUpgradeEffect.Invoke();
+
         UIManager.instance.UpdateUpgradePoints(-cost);
         cost += (costAddPrecentage * cost) / 100;
         costText.text = UIManager.instance.ReturnNumberText(cost);

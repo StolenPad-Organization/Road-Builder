@@ -92,6 +92,7 @@ public class CollectablesPooler : MonoBehaviour
 
     public void ReturnCollectable(Collectable collectable)
     {
+        collectable.ClearCollectable();
         collectable.gameObject.SetActive(false);
         poolDictionary[collectable.collectableType].Enqueue(collectable);
     }

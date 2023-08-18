@@ -63,6 +63,15 @@ public class Collectable : MonoBehaviour
         });
     }
 
+    public void ClearCollectable()
+    {
+        foreach (var item in collectableShapes)
+        {
+            item.SetActive(false);
+        }
+        originalModel.SetActive(true);
+    }
+
     public void LoadCollectable(int index, float collectableOffest, Transform collectableParent, Peelable _peelable)
     {
         collectableCollider.enabled = false;
