@@ -62,17 +62,32 @@ public class GameManager : MonoBehaviour
     }
     public void WinLevel()
     {
-        Debug.Log("Level Complete , YOU WIN!");
         DefaultAnalytics.LevelCompleted();
+
         PlayerData playerData = Database.Instance.GetPlayerData();
-        playerData.PlayerPosition = Vector3.zero;
-        playerData.PlayerRotation = Vector3.zero;
-        playerData.HasWheelBarrow = false;
-        playerData.WheelBarrowPosition = Vector3.zero;
-        playerData.WheelBarrowRotation = Vector3.zero;
-        playerData.wheelBarrowCollectables.Clear();
-        playerData.playerCollectables.Clear();
+        playerData.ResetData();
         Database.Instance.SetPlayerData(playerData);
+
+        MachineUpgradeData machineUpgradeData = Database.Instance.GetMachineUpgradeData(MachineUpgradeType.AsphaltMachineUpgrade);
+        machineUpgradeData.ResetData();
+        Database.Instance.SetMachineUpgradeData(MachineUpgradeType.AsphaltMachineUpgrade, machineUpgradeData);
+
+        machineUpgradeData = Database.Instance.GetMachineUpgradeData(MachineUpgradeType.RollingMachineUpgrade);
+        machineUpgradeData.ResetData();
+        Database.Instance.SetMachineUpgradeData(MachineUpgradeType.RollingMachineUpgrade, machineUpgradeData);
+
+        machineUpgradeData = Database.Instance.GetMachineUpgradeData(MachineUpgradeType.GrilliageRollingMachineUpgrade);
+        machineUpgradeData.ResetData();
+        Database.Instance.SetMachineUpgradeData(MachineUpgradeType.GrilliageRollingMachineUpgrade, machineUpgradeData);
+
+        UpgradeData upgradeData = Database.Instance.GetUpgradeData(UpgradeType.LoadUpgrade);
+        upgradeData.ResetData();
+        Database.Instance.SetUpgradeData(UpgradeType.LoadUpgrade, upgradeData);
+
+        upgradeData = Database.Instance.GetUpgradeData(UpgradeType.ToolUpgrade);
+        upgradeData.ResetData();
+        Database.Instance.SetUpgradeData(UpgradeType.ToolUpgrade, upgradeData);
+
         Database.Instance.SaveData();
         EventManager.TriggerWin.Invoke();
     }

@@ -16,30 +16,68 @@ MonoBehaviour:
     LevelValue: 1
     LevelTextValue: 1
   PlayerData:
-    Money: 0
-    UpgradePoints: 0
-    PlayerPosition: {x: 0, y: 0, z: 0}
-    PlayerRotation: {x: -0, y: 0, z: 0}
+    Money: 90
+    UpgradePoints: 90
+    PlayerPosition: {x: -17.664314, y: -0.00000011920929, z: 4.4267583}
+    PlayerRotation: {x: 0, y: 318.9452, z: 0}
     HasWheelBarrow: 0
-    WheelBarrowPosition: {x: 0, y: 0, z: 0}
-    WheelBarrowRotation: {x: -0, y: 0, z: 0}
-    wheelBarrowCollectables: []
-    playerCollectables: []
+    WheelBarrowPosition: {x: 90, y: 90, z: 90}
+    WheelBarrowRotation: {x: 90, y: 9, z: 9}
+    wheelBarrowCollectables:
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    playerCollectables:
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
+    - CollectableType: 0
+      Peelable: {fileID: 0}
   UpgradeDatas:
   - upgradeType: 0
-    Loops: 0
-    Level: 1
-    Value: 1
-    StepIndex: 0
-    Cost: 20
+    Loops: 9
+    Level: 9
+    Value: 9
+    OriginalValue: 1
+    StepIndex: 9
+    Cost: 999
   - upgradeType: 1
-    Loops: 0
-    Level: 1
-    Value: 10
-    StepIndex: 0
-    Cost: 20
+    Loops: 9
+    Level: 9
+    Value: 99
+    OriginalValue: 10
+    StepIndex: 9
+    Cost: 999
   LevelProgressDatas:
-  - ZoneIndex: 1
+  - ZoneIndex: 2
     ZoneDatas:
     - ZoneState: 4
       PeelableDatas:
@@ -8555,7 +8593,7 @@ MonoBehaviour:
       - IsPainted: 0
       MoneyDatas: []
       UpgradePointDatas: []
-    - ZoneState: 2
+    - ZoneState: 4
       PeelableDatas:
       - IsPeeled: 0
         IsCollected: 0
@@ -14181,7 +14219,7 @@ MonoBehaviour:
       - IsPainted: 0
       MoneyDatas: []
       UpgradePointDatas: []
-    - ZoneState: 0
+    - ZoneState: 3
       PeelableDatas:
       - IsPeeled: 0
         IsCollected: 0
@@ -18245,463 +18283,463 @@ MonoBehaviour:
       - IsBuilded: 0
       PaintableDatas:
       - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
-      - IsPainted: 0
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
+      - IsPainted: 1
       MoneyDatas: []
       UpgradePointDatas: []
   - ZoneIndex: 0
@@ -29778,20 +29816,20 @@ MonoBehaviour:
       UpgradePointDatas: []
   MachineUpgradeDatas:
   - machineUpgradeType: 1
-    Loops: 0
-    Level: 1
-    Value: 1
-    StepIndex: 0
-    Cost: 1
+    Loops: 1
+    Level: 8
+    Value: 8
+    StepIndex: 2
+    Cost: 8
   - machineUpgradeType: 2
-    Loops: 0
-    Level: 1
-    Value: 1
-    StepIndex: 0
-    Cost: 1
+    Loops: 1
+    Level: 8
+    Value: 8
+    StepIndex: 2
+    Cost: 8
   - machineUpgradeType: 3
-    Loops: 0
-    Level: 1
-    Value: 1
-    StepIndex: 0
-    Cost: 1
+    Loops: 1
+    Level: 8
+    Value: 8
+    StepIndex: 2
+    Cost: 8

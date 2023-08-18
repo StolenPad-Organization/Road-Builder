@@ -20,6 +20,19 @@ public class PlayerData
     public Vector3 WheelBarrowRotation;
     public List<CollectableData> wheelBarrowCollectables;
     public List<CollectableData> playerCollectables;
+
+    public void ResetData()
+    {
+        Money = 0;
+        UpgradePoints = 0;
+        PlayerPosition = Vector3.zero;
+        PlayerRotation = Vector3.zero;
+        HasWheelBarrow = false;
+        WheelBarrowPosition = Vector3.zero;
+        WheelBarrowRotation = Vector3.zero;
+        wheelBarrowCollectables.Clear();
+        playerCollectables.Clear();
+    }
 }
 
 [System.Serializable]
@@ -94,8 +107,18 @@ public class UpgradeData
     public int Loops;
     public int Level;
     public float Value;
+    public float OriginalValue;
     public int StepIndex;
     public int Cost;
+
+    public void ResetData()
+    {
+        Loops = 0;
+        Level = 1;
+        Value = OriginalValue;
+        StepIndex = 0;
+        Cost = 20;
+    }
 }
 
 [System.Serializable]
@@ -107,6 +130,15 @@ public class MachineUpgradeData
     public float Value;
     public int StepIndex;
     public int Cost;
+
+    public void ResetData()
+    {
+        Loops = 0;
+        Level = 1;
+        Value = 1;
+        StepIndex = 0;
+        Cost = 1;
+    }
 }
 
 [System.Serializable]
