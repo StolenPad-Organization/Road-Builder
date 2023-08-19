@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class WheelBarrow : MonoBehaviour
 {
-    public List<Collectable> collectables;
+    public List<Peelable> collectables;
     public float collectablesLimit;
     [SerializeField] private float collectableOffest;
     [SerializeField] private Transform collectableParent;
@@ -33,20 +33,20 @@ public class WheelBarrow : MonoBehaviour
         }
     }
 
-    public void OnCollect(Collectable collectable)
+    public void OnCollect(Peelable collectable)
     {
         if (collectables.Count >= collectablesLimit) return;
         collectable.Collect(collectables.Count, collectableOffest, collectableParent);
         collectables.Add(collectable);
-        GameManager.instance.currentZone.AddCollectableData(false, collectable.collectableType, collectable.peelable);
+        //GameManager.instance.currentZone.AddCollectableData(false, collectable.collectableType, collectable.peelable);
     }
     public void SellCollectable(Transform sellPoint)
     {
         if (collectables.Count == 0) return;
-        Collectable collectable = collectables[collectables.Count - 1];
+        Peelable collectable = collectables[collectables.Count - 1];
         collectables.Remove(collectable);
         collectable.Sell(sellPoint);
-        GameManager.instance.currentZone.RemoveCollectableData(false, collectable.collectableType, collectable.peelable);
+        //GameManager.instance.currentZone.RemoveCollectableData(false, collectable.collectableType, collectable.peelable);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -62,11 +62,11 @@ public class WheelBarrow : MonoBehaviour
 
     public void LoadCollectables(List<CollectableData> collectableDatas)
     {
-        Collectable collectable;
+        Peelable collectable;
         for (int i = 0; i < collectableDatas.Count; i++)
         {
-            collectable = CollectablesPooler.Instance.GetCollectable(collectableDatas[i].CollectableType, Vector3.down * 10);
-            collectable.LoadCollectable(collectables.Count, collectableOffest, collectableParent, collectableDatas[i].Peelable);
+            collectable = GameManager.instance.currentZone.peelableManager.ReturnPeelableWithIndex(collectableDatas[i].index);
+            collectable.LoadCollectable(collectables.Count, collectableOffest, collectableParent);
             collectables.Add(collectable);
         }
     }

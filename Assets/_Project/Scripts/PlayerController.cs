@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public static PlayerController instance;
 
     public PlayerMovementController movementController;
-    [SerializeField] private List<Collectable> collectables;
+    [SerializeField] private List<Peelable> collectables;
     [SerializeField] private float collectablesLimit;
     [SerializeField] private float collectableOffest;
     [SerializeField] private Transform collectableParent;
@@ -138,12 +138,20 @@ public class PlayerController : MonoBehaviour
         main.startColor = _dustColor;
     }
 
+    public void SetScrapingMovementSpeed(float amount, float _power)
+    {
+        if (scrapeTool.power > _power)
+            amount = 100;
+        movementController.SetSpeedMultiplayer(amount);
+        lastToolUsingTime = toolCoolDown;
+    }
+
     public void EmitDust()
     {
         dustVFX.Play();
     }
 
-    public void OnCollect(Collectable collectable)
+    public void OnCollect(Peelable collectable)
     {
         lastToolUsingTime = toolCoolDown;
         if (!scrapeTool.showing)
@@ -160,7 +168,7 @@ public class PlayerController : MonoBehaviour
         if (collectables.Count >= collectablesLimit) return;
         collectable.Collect(collectables.Count, collectableOffest, collectableParent);
         collectables.Add(collectable);
-        GameManager.instance.currentZone.AddCollectableData(true, collectable.collectableType, collectable.peelable);
+        GameManager.instance.currentZone.AddCollectableData(true, collectable.index);
         if (collectables.Count >= collectablesLimit)
         {
             fullWarning.SetActive(true);
@@ -180,10 +188,10 @@ public class PlayerController : MonoBehaviour
             }
         }
         if (collectables.Count == 0) return;
-        Collectable collectable = collectables[collectables.Count - 1];
+        Peelable collectable = collectables[collectables.Count - 1];
         collectables.Remove(collectable);
         collectable.Sell(sellPoint);
-        GameManager.instance.currentZone.RemoveCollectableData(true, collectable.collectableType, collectable.peelable);
+        GameManager.instance.currentZone.RemoveCollectableData(true, collectable.index);
         if (fullWarning.activeInHierarchy)
             fullWarning.SetActive(false);
     }
@@ -256,8 +264,7 @@ public class PlayerController : MonoBehaviour
         int x = collectables.Count;
         for (int i = 0; i < x; i++)
         {
-            GameManager.instance.currentZone.RemoveCollectableData(true, collectables[0].collectableType, collectables[0].peelable);
-            CollectablesPooler.Instance.ReturnCollectable(collectables[0]);
+            //GameManager.instance.currentZone.RemoveCollectableData(true, collectables[0].collectableType, collectables[0].peelable);
             collectables.Remove(collectables[0]);
         }
         if (wheelBarrow != null)
@@ -265,8 +272,7 @@ public class PlayerController : MonoBehaviour
             x = wheelBarrow.collectables.Count;
             for (int i = 0; i < x; i++)
             {
-                GameManager.instance.currentZone.RemoveCollectableData(false, wheelBarrow.collectables[0].collectableType, wheelBarrow.collectables[0].peelable);
-                CollectablesPooler.Instance.ReturnCollectable(wheelBarrow.collectables[0]);
+                //GameManager.instance.currentZone.RemoveCollectableData(false, wheelBarrow.collectables[0].collectableType, wheelBarrow.collectables[0].peelable);
                 wheelBarrow.collectables.Remove(wheelBarrow.collectables[0]);
             }
         }
@@ -279,11 +285,11 @@ public class PlayerController : MonoBehaviour
 
     public void LoadCollectables(List<CollectableData> collectableDatas)
     {
-        Collectable collectable;
+        Peelable collectable;
         for (int i = 0; i < collectableDatas.Count; i++)
         {
-            collectable = CollectablesPooler.Instance.GetCollectable(collectableDatas[i].CollectableType, Vector3.down * 10);
-            collectable.LoadCollectable(collectables.Count, collectableOffest, collectableParent, collectableDatas[i].Peelable);
+            collectable = GameManager.instance.currentZone.peelableManager.ReturnPeelableWithIndex(collectableDatas[i].index);
+            collectable.LoadCollectable(collectables.Count, collectableOffest, collectableParent);
             collectables.Add(collectable);
         }
         if (collectables.Count >= collectablesLimit)

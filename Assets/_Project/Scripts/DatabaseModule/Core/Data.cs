@@ -40,8 +40,10 @@ public class PeelableData
 {
     public bool IsPeeled;
     public bool IsCollected;
-    public Vector3 CollectablePosition;
-    public Vector3 CollectableRotation;
+    public bool IsSold;
+    public bool IsMoved;
+    public Vector3 PeelablePosition;
+    public Vector3 PeelableRotation;
 }
 
 [System.Serializable]
@@ -77,13 +79,11 @@ public class ZoneData
 [System.Serializable]
 public class CollectableData
 {
-    public CollectableType CollectableType;
-    public Peelable Peelable;
+    public int index;
 
-    public CollectableData(CollectableType collectableType, Peelable peelable)
+    public CollectableData(int _index)
     {
-        CollectableType = collectableType;
-        Peelable = peelable;
+        index = _index;
     }
 }
 

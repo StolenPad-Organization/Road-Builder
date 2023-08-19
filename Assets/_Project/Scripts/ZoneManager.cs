@@ -263,8 +263,6 @@ public class ZoneManager : MonoBehaviour
                     zoneCollider.gameObject.SetActive(false);
                 // load collectables and peelables
                 upgrades.SetActive(true);
-                CollectablesPooler.Instance.collectableParent = collectableParent;
-                peelableManager.LoadPeelables(zoneData.PeelableDatas);
                 if (playerData.HasWheelBarrow)
                 {
                     wheelBarrow.transform.position = playerData.WheelBarrowPosition;
@@ -273,6 +271,7 @@ public class ZoneManager : MonoBehaviour
                     wheelBarrow.LoadCollectables(playerData.wheelBarrowCollectables);
                 }
                 player.LoadCollectables(playerData.playerCollectables);
+                peelableManager.LoadPeelables(zoneData.PeelableDatas);
                 sellManager.LoadMoeny(zoneData.MoneyDatas);
                 UIManager.instance.ChangeProgressBarIcon(0);
                 break;
@@ -372,6 +371,8 @@ public class ZoneManager : MonoBehaviour
 
         Database.Instance.SetPlayerData(playerData);
 
+        peelableManager.SaveAllPeelabes();
+
         return zoneData;
     }
 
@@ -385,12 +386,14 @@ public class ZoneManager : MonoBehaviour
         }
     }
 
-    public void SavePeelable(int index, bool isPeeled, bool isCollected, Vector3 collectablePosition, Vector3 collectableRotation)
+    public void SavePeelable(int index, bool isPeeled, bool isCollected, bool isSold, bool isMoved, Vector3 collectablePosition, Vector3 collectableRotation)
     {
         zoneData.PeelableDatas[index].IsPeeled = isPeeled;
         zoneData.PeelableDatas[index].IsCollected = isCollected;
-        zoneData.PeelableDatas[index].CollectablePosition = collectablePosition;
-        zoneData.PeelableDatas[index].CollectableRotation = collectableRotation;
+        zoneData.PeelableDatas[index].IsSold = isSold;
+        zoneData.PeelableDatas[index].IsMoved = isMoved;
+        zoneData.PeelableDatas[index].PeelablePosition = collectablePosition;
+        zoneData.PeelableDatas[index].PeelableRotation = collectableRotation;
     }
 
     public void SaveBuildable(int index, bool isBuilded)
@@ -403,26 +406,26 @@ public class ZoneManager : MonoBehaviour
         zoneData.PaintableDatas[index].IsPainted = IsPainted;
     }
 
-    public void AddCollectableData(bool IsPlayer, CollectableType collectableType, Peelable peelable)
+    public void AddCollectableData(bool IsPlayer, int index)
     {
         if (IsPlayer)
         {
-            playerData.playerCollectables.Add(new CollectableData(collectableType, peelable));
+            playerData.playerCollectables.Add(new CollectableData(index));
         }
         else
         {
-            playerData.wheelBarrowCollectables.Add(new CollectableData(collectableType, peelable));
+            playerData.wheelBarrowCollectables.Add(new CollectableData(index));
         }
     }
 
-    public void RemoveCollectableData(bool IsPlayer, CollectableType collectableType, Peelable peelable)
+    public void RemoveCollectableData(bool IsPlayer, int index)
     {
         CollectableData collectableData = null;
         if (IsPlayer)
         {
             for (int i = 0; i < playerData.playerCollectables.Count; i++)
             {
-                if(playerData.playerCollectables[i].CollectableType == collectableType && playerData.playerCollectables[i].Peelable == peelable)
+                if(playerData.playerCollectables[i].index == index)
                 {
                     collectableData = playerData.playerCollectables[i];
                     break;
@@ -435,7 +438,7 @@ public class ZoneManager : MonoBehaviour
         {
             for (int i = 0; i < playerData.wheelBarrowCollectables.Count; i++)
             {
-                if (playerData.wheelBarrowCollectables[i].CollectableType == collectableType && playerData.wheelBarrowCollectables[i].Peelable == peelable)
+                if (playerData.wheelBarrowCollectables[i].index == index)
                 {
                     collectableData = playerData.wheelBarrowCollectables[i];
                     break;

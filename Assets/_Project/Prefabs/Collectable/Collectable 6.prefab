@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4225926424727637278}
   - component: {fileID: 4225926424727637272}
-  - component: {fileID: 4225926424727637273}
-  m_Layer: 7
+  - component: {fileID: 6883917877748446303}
+  m_Layer: 9
   m_Name: Collectable 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,6 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4225926426283150341}
+  - {fileID: 8611386884144438433}
   - {fileID: 3634393156289054934}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -48,28 +49,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectableType: 5
-  collectableCollider: {fileID: 4225926424727637273}
+  collectableCollider: {fileID: 8381203329676254418}
   collectableMeshFilter: {fileID: 4225926426283150343}
   collectableRenderer: {fileID: 4225926426283150340}
+  collectableMeshCollider: {fileID: 8381203329676254418}
+  collectableMeshColliderTrigger: {fileID: 3848623844495999401}
+  rb: {fileID: 6883917877748446303}
   peelable: {fileID: 0}
-  price: 250
+  price: 300
   collectableShapes:
   - {fileID: 5951574284588311172}
   - {fileID: 4423726410512620410}
   originalModel: {fileID: 4225926426283150346}
---- !u!65 &4225926424727637273
-BoxCollider:
+  readyToTilt: 0
+--- !u!54 &6883917877748446303
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4225926424727637279}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 0.25, z: 2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Mass: 1000
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4225926426283150346
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,7 +89,8 @@ GameObject:
   - component: {fileID: 4225926426283150341}
   - component: {fileID: 4225926426283150343}
   - component: {fileID: 4225926426283150340}
-  m_Layer: 0
+  - component: {fileID: 8381203329676254418}
+  m_Layer: 9
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,6 +162,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8381203329676254418
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4225926426283150346}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6202518890732439607, guid: 24ad3a0216569ae428cbd7f5cc89288f, type: 3}
 --- !u!1 &4423726410512620410
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +187,7 @@ GameObject:
   - component: {fileID: 7787072454293903516}
   - component: {fileID: 3084847039813177249}
   - component: {fileID: 4604660037651630256}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3634393156289054934}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Shapes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +290,7 @@ Transform:
   - {fileID: 2500860428445734199}
   - {fileID: 7787072454293903516}
   m_Father: {fileID: 4225926424727637278}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5951574284588311172
 GameObject:
@@ -280,7 +303,7 @@ GameObject:
   - component: {fileID: 2500860428445734199}
   - component: {fileID: 3294283892757093071}
   - component: {fileID: 2709336345422002660}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Dirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,3 +375,80 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &6121418897279662290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8611386884144438433}
+  - component: {fileID: 3848623844495999401}
+  - component: {fileID: 602539596049835940}
+  - component: {fileID: 8300049918021664201}
+  m_Layer: 9
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8611386884144438433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6121418897279662290}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4225926424727637278}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &3848623844495999401
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6121418897279662290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!114 &602539596049835940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6121418897279662290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca76a5e26a69ada4c95c24dfbfd0cf5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectable: {fileID: 4225926424727637272}
+--- !u!54 &8300049918021664201
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6121418897279662290}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

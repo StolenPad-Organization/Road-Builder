@@ -2,23 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using DG.Tweening;
 
 public class Peelable : MonoBehaviour
 {
-    [SerializeField] private int index;
+    public int index;
     public float power;
     private float initialPower;
     [SerializeField] private float speedAmount;
     [SerializeField] private CollectableType collectableType;
     public MeshFilter peelableMeshFilter;
     public MeshRenderer peelableRenderer;
+    public Rigidbody rb;
+    public MeshCollider peelableCollider;
     public bool diffirentCollectable;
-    private Vector3 collectablePosition;
-    private Vector3 collectableRotation;
+    private Vector3 peelablePosition;
+    private Vector3 peelableRotation;
     public int zoneIndex;
     public CollectableShape collectableShape;
     public Color dustColor;
     public int blockNumber;
+
+    public bool peeled;
+    public bool collected;
+    public bool sold;
+    public bool moved;
+
+    [Header("Collectable Properties")]
+    public bool readyToTilt;
+    public int price;
 
     void Start()
     {
@@ -32,34 +44,64 @@ public class Peelable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex) return;
-        PlayerController.instance.OnPeelableDetection(speedAmount, power, dustColor);
+        if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
+        PlayerController.instance.OnPeelableDetection(speedAmount, initialPower, dustColor);
+        if (!peeled)
+        {
+            rb.constraints = RigidbodyConstraints.None;
+            moved = true;
+        }
+        else if(!collected)
+        {
+            PlayerController.instance.OnCollect(this);
+        }
         EventManager.invokeHaptic.Invoke(vibrationTypes.MediumImpact);
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex) return;
+        if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || peeled || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
         power -= PlayerController.instance.scrapeTool.power;
         if(peelableRenderer.material.HasFloat("_Power"))
             peelableRenderer.material.SetFloat("_Power", 1 - (power / initialPower));
-        PlayerController.instance.scrapeTool.ShakeTool();
+        //PlayerController.instance.scrapeTool.ShakeTool();
         if(power <= 0)
         {
-            collectablePosition = transform.position + (PlayerController.instance.GetClosestCheckDirection(transform.position));
-            if (GameManager.instance.currentZone.groundYRef > -1)
-                collectablePosition.y = GameManager.instance.currentZone.groundYRef;
-            collectablePosition += Vector3.up * Random.Range(0.0f, 0.5f);
-            collectableRotation = new Vector3(Random.Range(-25f, 25f), Random.Range(-90f, 90f), Random.Range(-25f, 25f));
-            GameManager.instance.currentZone.SavePeelable(index, true, false, collectablePosition, collectableRotation);
-            Collectable collectable = CollectablesPooler.Instance.GetCollectable(collectableType, transform.position);
-            collectable.peelable = this;
-            collectable.Spawn(collectablePosition, collectableRotation);
-            gameObject.SetActive(false);
+            peeled = true;
             GameManager.instance.currentZone.OnBlockRemove();
-            EventManager.invokeHaptic.Invoke(vibrationTypes.MediumImpact);
+            SavePeelable();
         }
+        PlayerController.instance.SetScrapingMovementSpeed(speedAmount, initialPower);
     }
+    public void Collect(int index, float collectableOffest, Transform collectableParent)
+    {
+        collected = true;
+
+        peelableCollider.enabled = false;
+        rb.isKinematic = true;
+        rb.useGravity = false;
+
+        transform.SetParent(collectableParent);
+        transform.DOLocalRotate(Vector3.zero, 0.4f);
+        transform.DOLocalJump(Vector3.up * index * collectableOffest, 1, 1, 0.4f).OnComplete(() => readyToTilt = true);
+        SavePeelable();
+    }
+    public void Sell(Transform sellPoint)
+    {
+        collected = false;
+        sold = true;
+        readyToTilt = false;
+        transform.SetParent(sellPoint);
+        transform.DOLocalJump(Vector3.zero, 3, 1, 0.6f).OnComplete(() =>
+        {
+            EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+            Money money = MoneyPooler.instance.GetMoney();
+            money.transform.position = GameManager.instance.currentZone.sellManager.transform.position;
+            money.Spawn(price);
+            gameObject.SetActive(false);
+        });
+    }
+
 #if UNITY_EDITOR
     public void SetPeelableEditor(int _index)
     {
@@ -84,19 +126,47 @@ public class Peelable : MonoBehaviour
     }
 #endif
 
-    public void LoadCollectable(PeelableData peelableData)
+    public void SavePeelable()
     {
-        collectablePosition = peelableData.CollectablePosition;
-        collectableRotation = peelableData.CollectableRotation;
-        Collectable collectable = CollectablesPooler.Instance.GetCollectable(collectableType, transform.position);
-        collectable.peelable = this;
-        collectable.transform.position = collectablePosition;
-        collectable.transform.localEulerAngles = collectableRotation;
-        collectable.loadCollectableShape();
+        peelablePosition = transform.position;
+        peelableRotation = transform.eulerAngles;
+        GameManager.instance.currentZone.SavePeelable(index, peeled, collected, sold, moved, peelablePosition, peelableRotation);
     }
 
-    public void OnCollect()
+    public void loadPeelable(PeelableData peelableData)
     {
-        GameManager.instance.currentZone.SavePeelable(index, true, true, collectablePosition, collectableRotation);
+        moved = peelableData.IsMoved;
+        peeled = peelableData.IsPeeled;
+        sold = peelableData.IsSold;
+        if (sold)
+        {
+            gameObject.SetActive(false);
+            return;
+        }
+        peelablePosition = peelableData.PeelablePosition;
+        peelableRotation = peelableData.PeelableRotation;
+        if (moved)
+        {
+            transform.position = peelablePosition;
+            transform.localEulerAngles = peelableRotation;
+            rb.constraints = RigidbodyConstraints.None;
+        }
+        if(peeled)
+            power = 0;
+    }
+    public void LoadCollectable(int index, float collectableOffest, Transform collectableParent)
+    {
+        // set transform and settings for the peelable as it's collected
+        peeled = true;
+        collected = true;
+
+        peelableCollider.enabled = false;
+        rb.isKinematic = true;
+        rb.useGravity = false;
+
+        transform.SetParent(collectableParent);
+        transform.localEulerAngles = Vector3.zero;
+        transform.localPosition = Vector3.up * index * collectableOffest;
+        readyToTilt = true;
     }
 }

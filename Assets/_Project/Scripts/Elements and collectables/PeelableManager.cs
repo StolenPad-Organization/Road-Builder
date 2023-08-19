@@ -15,6 +15,7 @@ public class PeelableManager : MonoBehaviour
     [SerializeField] private CollectableShape[] collectableShapes;
     [SerializeField] private Color[] dustColors;
     [SerializeField] private int[] blocksNumbers;
+    [SerializeField] private int[] prices;
     private int currentBlockNumber = 1;
 
     void Start()
@@ -40,10 +41,18 @@ public class PeelableManager : MonoBehaviour
             {
                 if (!item.GetComponent<Peelable>())
                     item.gameObject.AddComponent<Peelable>();
-                if (!item.GetComponent<BoxCollider>())
-                    item.gameObject.AddComponent<BoxCollider>();
 
-                item.gameObject.GetComponent<BoxCollider>().isTrigger = true;
+                if (!item.GetComponent<MeshCollider>())
+                    item.GetComponent<Peelable>().peelableCollider = item.gameObject.AddComponent<MeshCollider>();
+                else
+                    item.GetComponent<Peelable>().peelableCollider = item.gameObject.GetComponent<MeshCollider>();
+
+                if (!item.GetComponent<Rigidbody>())
+                    item.GetComponent<Peelable>().rb = item.gameObject.AddComponent<Rigidbody>();
+
+                item.gameObject.GetComponent<MeshCollider>().convex = true;
+                item.gameObject.GetComponent<MeshCollider>().isTrigger = false;
+                item.GetComponent<Peelable>().rb.constraints = RigidbodyConstraints.FreezeAll;
                 peelableParts.Add(item.GetComponent<Peelable>());
             }
         }
@@ -160,19 +169,32 @@ public class PeelableManager : MonoBehaviour
             }
         }
     }
+
+    [ContextMenu("Set Prices")]
+    private void SetPrices()
+    {
+        for (int i = 0; i < blockHolders.Length; i++)
+        {
+            renderers.Clear();
+            renderers = GetRenderers(blockHolders[i], renderers);
+            foreach (var item in renderers)
+            {
+                item.gameObject.GetComponent<Peelable>().price = prices[i];
+            }
+        }
+    }
 #endif
 
     public void LoadPeelables(List<PeelableData> PeelableDatas)
     {
         for (int i = 0; i < peelableParts.Count; i++)
         {
+            if (!PeelableDatas[i].IsCollected)
+            {
+                peelableParts[i].loadPeelable(PeelableDatas[i]);
+            }
             if (PeelableDatas[i].IsPeeled)
             {
-                if (!PeelableDatas[i].IsCollected)
-                {
-                    peelableParts[i].LoadCollectable(PeelableDatas[i]);
-                }
-                peelableParts[i].gameObject.SetActive(false);
                 GameManager.instance.currentZone.OnBlockRemove();
             }
         }
@@ -187,12 +209,12 @@ public class PeelableManager : MonoBehaviour
                 continue;
             if(target == null)
             {
-                if (peelableParts[i].gameObject.activeInHierarchy)
+                if (!peelableParts[i].collected && !peelableParts[i].sold)
                     target = peelableParts[i];
             }
             else
             {
-                if (peelableParts[i].gameObject.activeInHierarchy
+                if (!peelableParts[i].collected && !peelableParts[i].sold
                     && Vector3.Distance(peelableParts[i].transform.position,PlayerController.instance.transform.position) 
                     < Vector3.Distance(target.transform.position, PlayerController.instance.transform.position))
                 {
@@ -211,5 +233,24 @@ public class PeelableManager : MonoBehaviour
         }
 
         return target;
+    }
+
+    public Peelable ReturnPeelableWithIndex(int index)
+    {
+        Peelable peelable = null;
+        for (int i = 0; i < peelableParts.Count; i++)
+        {
+            if (peelableParts[i].index == index)
+                peelable = peelableParts[i];
+        }
+        return peelable;
+    }
+
+    public void SaveAllPeelabes()
+    {
+        for (int i = 0; i < peelableParts.Count; i++)
+        {
+            peelableParts[i].SavePeelable();
+        }
     }
 }
