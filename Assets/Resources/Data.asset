@@ -16,33 +16,23 @@ MonoBehaviour:
     LevelValue: 1
     LevelTextValue: 1
   PlayerData:
-    Money: 506
+    Money: 9999999
     UpgradePoints: 0
     PlayerPosition: {x: 0, y: 0, z: 0}
     PlayerRotation: {x: -0, y: 0, z: 0}
     HasWheelBarrow: 0
-    WheelBarrowPosition: {x: 0, y: 0, z: 0}
-    WheelBarrowRotation: {x: -0, y: 0, z: -0}
+    WheelBarrowPosition: {x: -10.877863, y: 0.08333333, z: 4.6231823}
+    WheelBarrowRotation: {x: -0, y: 55.713264, z: 0}
     wheelBarrowCollectables: []
-    playerCollectables:
-    - index: 667
-    - index: 1168
-    - index: 695
-    - index: 350
-    - index: 98
-    - index: 727
-    - index: 211
-    - index: 381
-    - index: 657
-    - index: 980
+    playerCollectables: []
   UpgradeDatas:
   - upgradeType: 0
     Loops: 0
     Level: 1
     Value: 1
     OriginalValue: 1
-    StepIndex: 9
-    Cost: 140
+    StepIndex: 0
+    Cost: 20
   - upgradeType: 1
     Loops: 0
     Level: 1

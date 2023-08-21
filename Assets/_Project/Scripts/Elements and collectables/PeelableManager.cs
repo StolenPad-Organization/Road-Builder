@@ -16,6 +16,7 @@ public class PeelableManager : MonoBehaviour
     [SerializeField] private Color[] dustColors;
     [SerializeField] private int[] blocksNumbers;
     [SerializeField] private int[] prices;
+    [SerializeField] private Color movedPieceColor;
     private int currentBlockNumber = 1;
 
     void Start()
@@ -180,6 +181,20 @@ public class PeelableManager : MonoBehaviour
             foreach (var item in renderers)
             {
                 item.gameObject.GetComponent<Peelable>().price = prices[i];
+            }
+        }
+    }
+
+    [ContextMenu("Set Moved Color")]
+    private void SetMovedColor()
+    {
+        for (int i = 0; i < blockHolders.Length; i++)
+        {
+            renderers.Clear();
+            renderers = GetRenderers(blockHolders[i], renderers);
+            foreach (var item in renderers)
+            {
+                item.gameObject.GetComponent<Peelable>().movedPieceColor = movedPieceColor;
             }
         }
     }

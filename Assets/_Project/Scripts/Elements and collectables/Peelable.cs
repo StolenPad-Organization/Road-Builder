@@ -22,6 +22,7 @@ public class Peelable : MonoBehaviour
     public CollectableShape collectableShape;
     public Color dustColor;
     public int blockNumber;
+    public Color movedPieceColor;
 
     public bool peeled;
     public bool collected;
@@ -50,6 +51,8 @@ public class Peelable : MonoBehaviour
         {
             rb.constraints = RigidbodyConstraints.None;
             moved = true;
+            peelableRenderer.material.color = movedPieceColor;
+            rb.AddForce(Vector3.up * 4, ForceMode.Impulse);
         }
         else if(!collected)
         {
@@ -60,18 +63,25 @@ public class Peelable : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || peeled || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
-        power -= PlayerController.instance.scrapeTool.power;
-        if(peelableRenderer.material.HasFloat("_Power"))
-            peelableRenderer.material.SetFloat("_Power", 1 - (power / initialPower));
-        //PlayerController.instance.scrapeTool.ShakeTool();
-        if(power <= 0)
+        if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
+        if (!peeled)
         {
-            peeled = true;
-            GameManager.instance.currentZone.OnBlockRemove();
-            SavePeelable();
+            power -= PlayerController.instance.scrapeTool.power;
+            if (peelableRenderer.material.HasFloat("_Power"))
+                peelableRenderer.material.SetFloat("_Power", 1 - (power / initialPower));
+            //PlayerController.instance.scrapeTool.ShakeTool();
+            if (power <= 0)
+            {
+                peeled = true;
+                GameManager.instance.currentZone.OnBlockRemove();
+                SavePeelable();
+            }
+            PlayerController.instance.SetScrapingMovementSpeed(speedAmount, initialPower);
         }
-        PlayerController.instance.SetScrapingMovementSpeed(speedAmount, initialPower);
+        else
+        {
+            PlayerController.instance.OnPeelableDetection(speedAmount, initialPower, dustColor);
+        }
     }
     public void Collect(int index, float collectableOffest, Transform collectableParent)
     {
@@ -83,7 +93,7 @@ public class Peelable : MonoBehaviour
 
         transform.SetParent(collectableParent);
         transform.DOLocalRotate(Vector3.zero, 0.4f);
-        transform.DOLocalJump(Vector3.up * index * collectableOffest, 1, 1, 0.4f).OnComplete(() => readyToTilt = true);
+        transform.DOLocalJump(Vector3.up * index * collectableOffest, 1f + (index * 0.1f), 1, 0.4f).OnComplete(() => readyToTilt = true);
         SavePeelable();
     }
     public void Sell(Transform sellPoint)
@@ -150,6 +160,7 @@ public class Peelable : MonoBehaviour
             transform.position = peelablePosition;
             transform.localEulerAngles = peelableRotation;
             rb.constraints = RigidbodyConstraints.None;
+            peelableRenderer.material.color = movedPieceColor;
         }
         if(peeled)
             power = 0;
@@ -168,5 +179,6 @@ public class Peelable : MonoBehaviour
         transform.localEulerAngles = Vector3.zero;
         transform.localPosition = Vector3.up * index * collectableOffest;
         readyToTilt = true;
+        peelableRenderer.material.color = movedPieceColor;
     }
 }
