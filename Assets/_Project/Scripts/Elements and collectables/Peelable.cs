@@ -49,6 +49,8 @@ public class Peelable : MonoBehaviour
         PlayerController.instance.OnPeelableDetection(speedAmount, initialPower, dustColor);
         if (!peeled)
         {
+            if(!moved)
+                StartCoroutine(PlayEffect());
             rb.constraints = RigidbodyConstraints.None;
             moved = true;
             peelableRenderer.material.color = movedPieceColor;
@@ -83,6 +85,17 @@ public class Peelable : MonoBehaviour
             PlayerController.instance.OnPeelableDetection(speedAmount, initialPower, dustColor);
         }
     }
+
+    private IEnumerator PlayEffect()
+    {
+        ParticleSystem effect = ScrapingEffectPooler.instance.GetEffect();
+        effect.transform.position = transform.position;
+        effect.GetComponent<ParticleSystemRenderer>().material.color = dustColor;
+        effect.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        ScrapingEffectPooler.instance.ReturnEffect(effect);
+    }
+
     public void Collect(int index, float collectableOffest, Transform collectableParent)
     {
         collected = true;
