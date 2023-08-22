@@ -8,17 +8,19 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float paintMoveSpeed = 5f;
     [SerializeField] private Animator anim;
-    private Vector3 moveDirection;
+    private Vector3 moveDirection = Vector3.zero;
     public bool canMove = false;
     [SerializeField] private float speedMultiplayer = 100;
     private PlayerController playerController;
     [SerializeField] private bool drive;
     private bool move;
     [SerializeField] private Rigidbody rb;
+    private RBManager rbManager;
 
     void Start()
     {
         playerController = PlayerController.instance;
+        rbManager = RBManager.Instance;
     }
 
     public void SetSpeedMultiplayer(float amount)
@@ -28,19 +30,37 @@ public class PlayerMovementController : MonoBehaviour
 
     void FixedUpdate()
     {
-        
         if (!canMove) return;
+
+        if (speedMultiplayer != 100)
+        {
+            speedMultiplayer += 30 * Time.deltaTime;
+            if (speedMultiplayer > 100)
+                speedMultiplayer = 100;
+        }
+
         float horizontalInput = joystick.HorizontalAxis;
         float verticalInput = joystick.VerticalAxis;
+        moveDirection.x = horizontalInput;
+        moveDirection.z = verticalInput;
+        moveDirection.Normalize();
+
+        SetPushSpeed();
+        if (drive && !anim.GetBool("Drive") || !drive && anim.GetBool("Drive"))
+        {
+            anim.SetBool("Drive", drive);
+        }
+
+        //if (moveDirection.magnitude <= 0.3f) return;
 
         if(playerController.paintMachine == null && playerController.asphaltMachine == null)
-            moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized * (moveSpeed * (speedMultiplayer / 100));
+            moveDirection *= (moveSpeed * (speedMultiplayer / 100));
         else
         {
             if(playerController.paintMachine != null)
-                moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized * (paintMoveSpeed * (speedMultiplayer / 100));
+                moveDirection *= (paintMoveSpeed * (speedMultiplayer / 100));
             if (playerController.asphaltMachine != null)
-                moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized * (playerController.asphaltMachine.Speed * (speedMultiplayer / 100));
+                moveDirection *= (playerController.asphaltMachine.Speed * (speedMultiplayer / 100));
         }
             
 
@@ -59,18 +79,7 @@ public class PlayerMovementController : MonoBehaviour
 
         //transform.Translate(moveDirection * Time.deltaTime, Space.World);
         rb.MovePosition(transform.position + moveDirection * Time.deltaTime);
-
-        if (speedMultiplayer != 100)
-        {
-            speedMultiplayer += 30 * Time.deltaTime;
-            if (speedMultiplayer > 100)
-                speedMultiplayer = 100;
-        }
-        SetPushSpeed();
-        if(drive && !anim.GetBool("Drive") || !drive && anim.GetBool("Drive"))
-        {
-            anim.SetBool("Drive", drive);
-        }
+        rbManager.JobUpdater();
     }
 
     public void ToggleMovementAnimation(bool activate)

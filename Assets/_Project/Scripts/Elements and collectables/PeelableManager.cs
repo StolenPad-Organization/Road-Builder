@@ -8,16 +8,17 @@ public class PeelableManager : MonoBehaviour
     public List<Peelable> peelableParts;
     private List<MeshRenderer> renderers = new List<MeshRenderer>();
     [SerializeField] private Transform[] blockHolders;
+    public List<PeelableBlockHolder> peelableBlockHolders;
     [SerializeField] private Material[] mats;
     [SerializeField] private float[] powers;
     [SerializeField] private float[] speeds;
     [SerializeField] private int zoneIndex;
     [SerializeField] private CollectableShape[] collectableShapes;
     [SerializeField] private Color[] dustColors;
+    public int currentBlockNumber = 1;
     [SerializeField] private int[] blocksNumbers;
     [SerializeField] private int[] prices;
     [SerializeField] private Color movedPieceColor;
-    private int currentBlockNumber = 1;
 
     void Start()
     {
@@ -33,9 +34,15 @@ public class PeelableManager : MonoBehaviour
     [ContextMenu("Set Peelable Parts")]
     private void SetPeelableParts()
     {
+        peelableBlockHolders.Clear();
+        PeelableBlockHolder peelableBlockHolder;
         peelableParts.Clear();
         for (int i = 0; i < blockHolders.Length; i++)
         {
+            if (blockHolders[i].gameObject.GetComponent<PeelableBlockHolder>())
+                DestroyImmediate(blockHolders[i].gameObject.GetComponent<PeelableBlockHolder>());
+            peelableBlockHolder = blockHolders[i].gameObject.AddComponent<PeelableBlockHolder>();
+            peelableBlockHolders.Add(peelableBlockHolder);
             renderers.Clear();
             renderers = GetRenderers(blockHolders[i], renderers);
             foreach (var item in renderers)
@@ -54,7 +61,9 @@ public class PeelableManager : MonoBehaviour
                 item.gameObject.GetComponent<MeshCollider>().convex = true;
                 item.gameObject.GetComponent<MeshCollider>().isTrigger = false;
                 item.GetComponent<Peelable>().rb.constraints = RigidbodyConstraints.FreezeAll;
+
                 peelableParts.Add(item.GetComponent<Peelable>());
+                peelableBlockHolder.AddPeelablePart(item.GetComponent<Peelable>());
             }
         }
 
@@ -64,6 +73,24 @@ public class PeelableManager : MonoBehaviour
         for (int i = 0; i < peelableParts.Count; i++)
         {
             peelableParts[i].SetPeelableEditor(i);
+        }
+
+        SetPeelableMaterials();
+        SetPowerSpeed();
+        SetZoneIndex();
+        SetCollectableShape();
+        SetDustColors();
+        SetBlocksNumbers();
+        SetPrices();
+        SetMovedColor();
+    }
+
+    [ContextMenu("Set Blocks RBHandlers")]
+    private void SetBlocksRBHandlers()
+    {
+        foreach (var item in peelableBlockHolders)
+        {
+            item.AddRBHandlers();
         }
     }
 
@@ -83,7 +110,6 @@ public class PeelableManager : MonoBehaviour
         return renderers;
     }
 
-    [ContextMenu("Set Peelable Materials")]
     private void SetPeelableMaterials()
     {
         for (int i = 0; i < blockHolders.Length; i++)
@@ -97,7 +123,6 @@ public class PeelableManager : MonoBehaviour
         }
     }
 
-    [ContextMenu("Set Power and Speed")]
     private void SetPowerSpeed()
     {
         for (int i = 0; i < blockHolders.Length; i++)
@@ -111,7 +136,6 @@ public class PeelableManager : MonoBehaviour
         }
     }
 
-    [ContextMenu("Set Zone Index")]
     private void SetZoneIndex()
     {
         for (int i = 0; i < blockHolders.Length; i++)
@@ -125,7 +149,6 @@ public class PeelableManager : MonoBehaviour
         }
     }
 
-    [ContextMenu("Set Collectable Shape")]
     private void SetCollectableShape()
     {
         for (int i = 0; i < blockHolders.Length; i++)
@@ -143,7 +166,6 @@ public class PeelableManager : MonoBehaviour
         }
     }
 
-    [ContextMenu("Set Dust Colors")]
     private void SetDustColors()
     {
         for (int i = 0; i < blockHolders.Length; i++)
@@ -157,7 +179,6 @@ public class PeelableManager : MonoBehaviour
         }
     }
 
-    [ContextMenu("Set Blocks Numbers")]
     private void SetBlocksNumbers()
     {
         for (int i = 0; i < blockHolders.Length; i++)
@@ -171,7 +192,6 @@ public class PeelableManager : MonoBehaviour
         }
     }
 
-    [ContextMenu("Set Prices")]
     private void SetPrices()
     {
         for (int i = 0; i < blockHolders.Length; i++)
@@ -185,7 +205,6 @@ public class PeelableManager : MonoBehaviour
         }
     }
 
-    [ContextMenu("Set Moved Color")]
     private void SetMovedColor()
     {
         for (int i = 0; i < blockHolders.Length; i++)
@@ -211,6 +230,26 @@ public class PeelableManager : MonoBehaviour
             if (PeelableDatas[i].IsPeeled)
             {
                 GameManager.instance.currentZone.OnBlockRemove();
+            }
+        }
+        SetBlockHoldersStates();
+    }
+
+    public void SetBlockHoldersStates()
+    {
+        for (int i = 0; i < peelableBlockHolders.Count; i++)
+        {
+            if (i + 1 < currentBlockNumber)
+            {
+                peelableBlockHolders[i].SetRBHandlersState(false, true);
+            }
+            else if (i + 1 > currentBlockNumber)
+            {
+                peelableBlockHolders[i].SetRBHandlersState(false);
+            }
+            else
+            {
+                peelableBlockHolders[i].SetRBHandlersState(true);
             }
         }
     }

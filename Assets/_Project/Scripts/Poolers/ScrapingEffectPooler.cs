@@ -42,6 +42,13 @@ public class ScrapingEffectPooler : MonoBehaviour
 
     public void ReturnEffect(ParticleSystem effect)
     {
+        StartCoroutine(EffectReturnCounter(effect));
+    }
+
+    private IEnumerator EffectReturnCounter(ParticleSystem effect)
+    {
+        yield return new WaitForSeconds(1.5f);
+
         effect.transform.position = transform.position;
         effect.transform.rotation = transform.rotation;
 

@@ -23,6 +23,7 @@ public class Peelable : MonoBehaviour
     public Color dustColor;
     public int blockNumber;
     public Color movedPieceColor;
+    public RBHandler rbHandler;
 
     public bool peeled;
     public bool collected;
@@ -50,7 +51,7 @@ public class Peelable : MonoBehaviour
         if (!peeled)
         {
             if(!moved)
-                StartCoroutine(PlayEffect());
+                PlayEffect();
             rb.constraints = RigidbodyConstraints.None;
             moved = true;
             peelableRenderer.material.color = movedPieceColor;
@@ -58,6 +59,7 @@ public class Peelable : MonoBehaviour
         }
         else if(!collected)
         {
+            RBManager.Instance.RemoveAgent(rbHandler);
             PlayerController.instance.OnCollect(this);
         }
         EventManager.invokeHaptic.Invoke(vibrationTypes.MediumImpact);
@@ -86,13 +88,12 @@ public class Peelable : MonoBehaviour
         }
     }
 
-    private IEnumerator PlayEffect()
+    private void PlayEffect()
     {
         ParticleSystem effect = ScrapingEffectPooler.instance.GetEffect();
         effect.transform.position = transform.position;
         effect.GetComponent<ParticleSystemRenderer>().material.color = dustColor;
         effect.gameObject.SetActive(true);
-        yield return new WaitForSeconds(1.5f);
         ScrapingEffectPooler.instance.ReturnEffect(effect);
     }
 
@@ -123,6 +124,15 @@ public class Peelable : MonoBehaviour
             money.Spawn(price);
             gameObject.SetActive(false);
         });
+    }
+
+    public void SetRBHandler(RBHandler _rbHandler)
+    {
+        rbHandler = _rbHandler;
+#if UNITY_EDITOR
+
+        UnityEditor.EditorUtility.SetDirty(this);
+#endif
     }
 
 #if UNITY_EDITOR
