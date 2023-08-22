@@ -114,6 +114,7 @@ public class ZoneManager : MonoBehaviour
     public void OnBlockRemove()
     {
         currentBlocks++;
+        peelableManager.CheckBlock();
         CheckBlocks();
     }
     private void CheckBlocks()

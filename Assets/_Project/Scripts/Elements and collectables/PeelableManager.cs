@@ -247,10 +247,21 @@ public class PeelableManager : MonoBehaviour
             {
                 peelableBlockHolders[i].SetRBHandlersState(false);
             }
-            else
+            else if (i + 1 == currentBlockNumber)
             {
                 peelableBlockHolders[i].SetRBHandlersState(true);
             }
+        }
+    }
+
+    public void CheckBlock()
+    {
+        if(peelableBlockHolders[currentBlockNumber - 1].CheckCount())
+        {
+            currentBlockNumber++;
+            if (currentBlockNumber > blocksNumbers.Length)
+                return;
+            SetBlockHoldersStates();
         }
     }
 
@@ -276,16 +287,6 @@ public class PeelableManager : MonoBehaviour
                 }
             }
         }
-
-        if(target == null)
-        {
-            currentBlockNumber++;
-            if (currentBlockNumber > blocksNumbers.Length)
-                return null;
-            else
-                return ReturnNearestPeelable();
-        }
-
         return target;
     }
 

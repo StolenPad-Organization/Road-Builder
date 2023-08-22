@@ -6,9 +6,10 @@ public class PeelableBlockHolder : MonoBehaviour
 {
     [SerializeField] private List<Peelable> peelableParts = new List<Peelable>();
     [SerializeField] private List<RBHandler> rbHandlers = new List<RBHandler>();
+    private int partsCount;
     void Start()
     {
-        
+        partsCount = peelableParts.Count;
     }
 
     public void AddPeelablePart(Peelable peelable)
@@ -36,16 +37,27 @@ public class PeelableBlockHolder : MonoBehaviour
 
     public void SetRBHandlersState(bool state, bool hide = false)
     {
-        foreach (var item in rbHandlers)
+        for (int i = 0; i < rbHandlers.Count; i++)
         {
-            item.CheckSwitch(state);
+            if (peelableParts[i].collected)
+            {
+                rbHandlers[i].CheckSwitch(!state);
+                return;
+            }
+            rbHandlers[i].CheckSwitch(state);
             if (state)
-                RBManager.Instance.AddAgent(item);
+                RBManager.Instance.AddAgent(rbHandlers[i]);
             else if (hide)
             {
-                item.CheckSwitch(!state);
-                item.gameObject.SetActive(false);
+                rbHandlers[i].CheckSwitch(!state);
+                rbHandlers[i].gameObject.SetActive(false);
             }
         }
+    }
+
+    public bool CheckCount()
+    {
+        partsCount--;
+        return partsCount <= 0;
     }
 }
