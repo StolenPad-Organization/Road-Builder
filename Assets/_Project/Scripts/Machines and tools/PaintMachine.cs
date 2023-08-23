@@ -69,9 +69,9 @@ public class PaintMachine : MonoBehaviour
     {
         effectActivated = show;
         if (show)
-            paintvfx.transform.DOScale(0.8f, 0.25f);
+            paintvfx.transform.DOScale(0.8f, 0.15f);
         else
-            paintvfx.transform.DOScale(0, 0.25f);
+            paintvfx.transform.DOScale(0, 0.15f);
     }
 
     private void OnTriggerEnter(Collider other)

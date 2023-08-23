@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     public WheelBarrow wheelBarrow;
     public Transform wheelBarrowFollowTransform;
     public ArrowController arrowController;
+    [SerializeField] private ParticleSystem paintFootprintsEffect;
+    [SerializeField] private float footPrintsDuration;
 
     [Header("Scrape Tools")]
     public ScrapeTool scrapeTool;
@@ -337,5 +339,24 @@ public class PlayerController : MonoBehaviour
             powerWarning.SetActive(true);
         else
             powerWarning.SetActive(false);
+    }
+
+    public void ActivateFootPrints(bool activate)
+    {
+        if (activate)
+        {
+            paintFootprintsEffect.Play();
+            CancelInvoke(nameof(DisableFootPrints));
+            Invoke(nameof(DisableFootPrints), footPrintsDuration);
+        }
+        else
+        {
+            paintFootprintsEffect.Stop();
+        }
+    }
+
+    private void DisableFootPrints()
+    {
+        ActivateFootPrints(false);
     }
 }
