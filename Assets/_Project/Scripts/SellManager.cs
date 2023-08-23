@@ -7,6 +7,8 @@ public class SellManager : MonoBehaviour
     [SerializeField] private Transform sellPoint;
     [SerializeField] private bool selling;
     [SerializeField] private float sellRate;
+    private float currentSellRate;
+    private int sellCount;
     [SerializeField] private float nextSell;
     [SerializeField] MoneySpot[] moneySpots;
 
@@ -25,7 +27,9 @@ public class SellManager : MonoBehaviour
             if(nextSell <= 0)
             {
                 PlayerController.instance.SellCollectable(sellPoint);
-                nextSell = sellRate;
+                sellCount++;
+                nextSell = currentSellRate - (sellCount * 0.005f);
+                if (nextSell < 0.01f) nextSell = 0.01f;
             }
             else
             {
@@ -36,6 +40,7 @@ public class SellManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        currentSellRate = sellRate;
         selling = true;
         nextSell = 0;
     }

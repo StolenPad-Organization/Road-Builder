@@ -5,7 +5,6 @@ using UnityEngine;
 public class PeelableBlockHolder : MonoBehaviour
 {
     [SerializeField] private List<Peelable> peelableParts = new List<Peelable>();
-    [SerializeField] private List<RBHandler> rbHandlers = new List<RBHandler>();
     private int partsCount;
     void Start()
     {
@@ -22,36 +21,43 @@ public class PeelableBlockHolder : MonoBehaviour
 #endif
     }
 
-    public void AddRBHandlers()
-    {
-        foreach (var item in peelableParts)
-        {
-            rbHandlers.Add(item.GetComponent<RBHandler>());
-        }
-
-#if UNITY_EDITOR
-        UnityEditor.EditorUtility.SetDirty(this);
-        UnityEditor.EditorUtility.SetDirty(gameObject);
-#endif
-    }
-
     public void SetRBHandlersState(bool state, bool hide = false)
     {
-        for (int i = 0; i < rbHandlers.Count; i++)
+        for (int i = 0; i < peelableParts.Count; i++)
         {
+            if (hide)
+            {
+                peelableParts[i].rbHandler.CheckSwitch(true);
+                peelableParts[i].rbHandler.gameObject.SetActive(false);
+                continue;
+            }
             if (peelableParts[i].collected)
             {
-                rbHandlers[i].CheckSwitch(!state);
-                return;
+                peelableParts[i].rbHandler.CheckSwitch(true);
+                continue;
             }
-            rbHandlers[i].CheckSwitch(state);
-            if (state)
-                RBManager.Instance.AddAgent(rbHandlers[i]);
-            else if (hide || peelableParts[i].sold)
+            if (peelableParts[i].sold)
             {
-                rbHandlers[i].CheckSwitch(!state);
-                rbHandlers[i].gameObject.SetActive(false);
+                peelableParts[i].rbHandler.CheckSwitch(true);
+                peelableParts[i].rbHandler.gameObject.SetActive(false);
             }
+            else
+            {
+                peelableParts[i].rbHandler.CheckSwitch(state);
+                if (state)
+                {
+                    RBManager.Instance.AddAgent(peelableParts[i].rbHandler);
+                }
+            }
+        }
+    }
+
+    public void CheckCountLoad()
+    {
+        for (int i = 0; i < peelableParts.Count; i++)
+        {
+            if (peelableParts[i].peeled || peelableParts[i].collected || peelableParts[i].sold)
+                partsCount--;
         }
     }
 

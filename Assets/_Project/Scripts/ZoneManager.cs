@@ -111,10 +111,11 @@ public class ZoneManager : MonoBehaviour
         HomaBelly.Instance.TrackProgressionEvent(status, "Build Stage");
     }
 
-    public void OnBlockRemove()
+    public void OnBlockRemove(bool load = false)
     {
         currentBlocks++;
-        peelableManager.CheckBlock();
+        if(!load)
+            peelableManager.CheckBlock();
         CheckBlocks();
     }
     private void CheckBlocks()
@@ -226,6 +227,7 @@ public class ZoneManager : MonoBehaviour
     public void UnlockZone()
     {
         zoneData.ZoneState = ZoneState.PeelingStage;
+        zoneData.currentPeelableBlock = 1;
         LoadZone();
         if (hideMachine)
         {
@@ -342,6 +344,7 @@ public class ZoneManager : MonoBehaviour
                     wheelBarrow.gameObject.SetActive(false);
                     upgrades.SetActive(false);
                 }
+                peelableManager.SetBlockHoldersStates();
                 break;
             default:
                 break;

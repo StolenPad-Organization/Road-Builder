@@ -85,15 +85,6 @@ public class PeelableManager : MonoBehaviour
         SetMovedColor();
     }
 
-    [ContextMenu("Set Blocks RBHandlers")]
-    private void SetBlocksRBHandlers()
-    {
-        foreach (var item in peelableBlockHolders)
-        {
-            item.AddRBHandlers();
-        }
-    }
-
     private List<MeshRenderer> GetRenderers(Transform t,List<MeshRenderer> renderers)
     {
         foreach (Transform item in t)
@@ -229,7 +220,7 @@ public class PeelableManager : MonoBehaviour
             }
             if (PeelableDatas[i].IsPeeled)
             {
-                GameManager.instance.currentZone.OnBlockRemove();
+                GameManager.instance.currentZone.OnBlockRemove(true);
             }
         }
         currentBlockNumber = currentPeelableBlock;
@@ -252,6 +243,7 @@ public class PeelableManager : MonoBehaviour
             {
                 peelableBlockHolders[i].SetRBHandlersState(true);
             }
+            peelableBlockHolders[i].CheckCountLoad();
         }
     }
 

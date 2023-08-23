@@ -80,6 +80,7 @@ public class ArrowController : MonoBehaviour
 
     public void PointToObject(GameObject _target)
     {
+        if (_target == null) return;
         target = _target;
         model.SetActive(true);
     }

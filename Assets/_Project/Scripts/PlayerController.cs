@@ -49,6 +49,10 @@ public class PlayerController : MonoBehaviour
     float lastHapticTime;
     public bool canDoStrictedHaptic;
 
+    [Header("Block Warning")]
+    [SerializeField] private GameObject powerWarning;
+    private bool isToolBlocked;
+
     private void Awake()
     {
         instance = this;
@@ -61,18 +65,21 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if(lastToolUsingTime <= 0)
+        if (!isToolBlocked)
         {
-            lastToolUsingTime = toolCoolDown;
-            //complete making the tool hides after not using it for a while
-            if (scrapeTool.showing)
+            if (lastToolUsingTime <= 0)
             {
-                scrapeTool.ShowTool(false);
+                lastToolUsingTime = toolCoolDown;
+                //complete making the tool hides after not using it for a while
+                if (scrapeTool.showing)
+                {
+                    scrapeTool.ShowTool(false);
+                }
             }
-        }
-        else
-        {
-            lastToolUsingTime -= Time.deltaTime;
+            else
+            {
+                lastToolUsingTime -= Time.deltaTime;
+            }
         }
 
         if (lastHapticTime <= 0)
@@ -136,6 +143,11 @@ public class PlayerController : MonoBehaviour
         main.startColor = _dustColor;
         main = dustTrailVFX.main;
         main.startColor = _dustColor;
+    }
+
+    public void OnBlockWallDetection(bool entered)
+    {
+        isToolBlocked = entered;
     }
 
     public void SetScrapingMovementSpeed(float amount, float _power)
@@ -317,5 +329,13 @@ public class PlayerController : MonoBehaviour
     public bool MovementCheck()
     {
         return movementController.MovementCheck();
+    }
+
+    public void ShowWarning(bool show)
+    {
+        if (show)
+            powerWarning.SetActive(true);
+        else
+            powerWarning.SetActive(false);
     }
 }

@@ -34,8 +34,8 @@ public class RBHandler : MonoBehaviour
     }   
     private void Switch(bool state)//00 01 10 11
     {
-        if (gameObject.activeSelf && state) return;
-        if (!gameObject.activeSelf && !state) return;
+        if (gameObject.activeSelf && !OtherVersion.gameObject.activeSelf && state) return;
+        if (!gameObject.activeSelf && OtherVersion.gameObject.activeSelf && !state) return;
         
         if (state)
         {

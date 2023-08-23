@@ -38,7 +38,7 @@ public class WheelBarrow : MonoBehaviour
         if (collectables.Count >= collectablesLimit) return;
         collectable.Collect(collectables.Count, collectableOffest, collectableParent);
         collectables.Add(collectable);
-        //GameManager.instance.currentZone.AddCollectableData(false, collectable.collectableType, collectable.peelable);
+        GameManager.instance.currentZone.AddCollectableData(false, collectable.index);
     }
     public void SellCollectable(Transform sellPoint)
     {
@@ -46,7 +46,7 @@ public class WheelBarrow : MonoBehaviour
         Peelable collectable = collectables[collectables.Count - 1];
         collectables.Remove(collectable);
         collectable.Sell(sellPoint);
-        //GameManager.instance.currentZone.RemoveCollectableData(false, collectable.collectableType, collectable.peelable);
+        GameManager.instance.currentZone.RemoveCollectableData(false, collectable.index);
     }
 
     private void OnTriggerEnter(Collider other)
