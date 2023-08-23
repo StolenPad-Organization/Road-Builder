@@ -69,6 +69,7 @@ public class LevelProgressData
 public class ZoneData
 {
     public ZoneState ZoneState;
+    public int currentPeelableBlock;
     public List<PeelableData> PeelableDatas;
     public List<BuildableData> BuildableDatas;
     public List<PaintableData> PaintableDatas;

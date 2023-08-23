@@ -272,7 +272,7 @@ public class ZoneManager : MonoBehaviour
                     wheelBarrow.LoadCollectables(playerData.wheelBarrowCollectables);
                 }
                 player.LoadCollectables(playerData.playerCollectables);
-                peelableManager.LoadPeelables(zoneData.PeelableDatas);
+                peelableManager.LoadPeelables(zoneData.PeelableDatas, zoneData.currentPeelableBlock);
                 sellManager.LoadMoeny(zoneData.MoneyDatas);
                 UIManager.instance.ChangeProgressBarIcon(0);
                 break;
@@ -352,6 +352,7 @@ public class ZoneManager : MonoBehaviour
     {
         // save all levelprogress data and player data
         zoneData.ZoneState = zoneState;
+        zoneData.currentPeelableBlock = peelableManager.currentBlockNumber;
         playerData.PlayerPosition = player.transform.position;
         playerData.PlayerRotation = player.transform.eulerAngles;
         if(player.wheelBarrow != null)

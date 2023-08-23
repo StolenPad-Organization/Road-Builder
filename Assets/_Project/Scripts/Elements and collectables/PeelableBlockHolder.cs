@@ -47,7 +47,7 @@ public class PeelableBlockHolder : MonoBehaviour
             rbHandlers[i].CheckSwitch(state);
             if (state)
                 RBManager.Instance.AddAgent(rbHandlers[i]);
-            else if (hide)
+            else if (hide || peelableParts[i].sold)
             {
                 rbHandlers[i].CheckSwitch(!state);
                 rbHandlers[i].gameObject.SetActive(false);

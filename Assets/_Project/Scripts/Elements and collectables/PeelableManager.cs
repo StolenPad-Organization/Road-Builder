@@ -219,7 +219,7 @@ public class PeelableManager : MonoBehaviour
     }
 #endif
 
-    public void LoadPeelables(List<PeelableData> PeelableDatas)
+    public void LoadPeelables(List<PeelableData> PeelableDatas, int currentPeelableBlock)
     {
         for (int i = 0; i < peelableParts.Count; i++)
         {
@@ -232,6 +232,7 @@ public class PeelableManager : MonoBehaviour
                 GameManager.instance.currentZone.OnBlockRemove();
             }
         }
+        currentBlockNumber = currentPeelableBlock;
         SetBlockHoldersStates();
     }
 
