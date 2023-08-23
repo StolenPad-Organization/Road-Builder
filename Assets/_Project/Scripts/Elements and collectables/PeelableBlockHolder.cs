@@ -6,6 +6,8 @@ public class PeelableBlockHolder : MonoBehaviour
 {
     [SerializeField] private List<Peelable> peelableParts = new List<Peelable>();
     private int partsCount;
+    [SerializeField] private GameObject blockCollider;
+    [SerializeField] private GameObject blockTrigger;
     void Start()
     {
         partsCount = peelableParts.Count;
@@ -19,6 +21,24 @@ public class PeelableBlockHolder : MonoBehaviour
         UnityEditor.EditorUtility.SetDirty(this);
         UnityEditor.EditorUtility.SetDirty(gameObject);
 #endif
+    }
+
+    private void ActivateBlock(bool activate)
+    {
+        if (activate)
+        {
+            if(blockCollider !=null)
+                blockCollider.SetActive(true);
+            if (blockTrigger != null)
+                blockTrigger.SetActive(true);
+        }
+        else
+        {
+            if (blockCollider != null)
+                blockCollider.SetActive(false);
+            if (blockTrigger != null)
+                blockTrigger.SetActive(false);
+        }
     }
 
     public void SetRBHandlersState(bool state, bool hide = false)
@@ -50,6 +70,10 @@ public class PeelableBlockHolder : MonoBehaviour
                 }
             }
         }
+        if(!hide)
+            ActivateBlock(!state);
+        else
+            ActivateBlock(false);
     }
 
     public void CheckCountLoad()

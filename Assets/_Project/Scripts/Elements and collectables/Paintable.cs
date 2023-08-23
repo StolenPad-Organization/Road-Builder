@@ -45,9 +45,9 @@ public class Paintable : MonoBehaviour
             GameManager.instance.currentZone.OnRoadPaint();
 
             Material mat = paintableRenderer.material;
-            float t = 1.0f;
-            DOTween.To(() => t, x => t = x, 0.0f, PlayerController.instance.paintMachine.paintDuration)
-               .OnUpdate(() => mat.SetFloat("_Animation", t)).SetDelay(PlayerController.instance.paintMachine.paintDelay);
+            //float t = 1.0f;
+            //DOTween.To(() => t, x => t = x, 0.0f, PlayerController.instance.paintMachine.paintDuration)
+            //   .OnUpdate(() => mat.SetFloat("_Animation", t)).SetDelay(PlayerController.instance.paintMachine.paintDelay);
         });
         transform.DOLocalRotate(initialRot, 0.1f);
         transform.DOScale(initialscale, 0.1f);
