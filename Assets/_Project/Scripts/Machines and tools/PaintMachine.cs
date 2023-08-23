@@ -21,7 +21,10 @@ public class PaintMachine : MonoBehaviour
     [SerializeField] private GameObject emptyWarning;
     [SerializeField] private Animator anim;
     [SerializeField] private Collider machineCollider;
+    [SerializeField] private GameObject playerTrigger;
+    [SerializeField] private GameObject partsTrigger;
     [SerializeField] private GameObject paintScalingObject;
+    private bool effectActivated;
 
     void Start()
     {
@@ -34,16 +37,18 @@ public class PaintMachine : MonoBehaviour
         {
             //if(paintEffect.isPlaying)
             //    paintEffect.Stop();
-            if (paintvfx.activeInHierarchy)
-                paintvfx.SetActive(false);
+            if (effectActivated)
+                ShowEffect(false);
+                //paintvfx.SetActive(false);
         }
         else
         {
             painteffectRemainingTime -= Time.deltaTime;
             //if (!paintEffect.isPlaying)
             //    paintEffect.Play();
-            if (!paintvfx.activeInHierarchy)
-                paintvfx.SetActive(true);
+            if (!effectActivated)
+                ShowEffect(true);
+            //paintvfx.SetActive(true);
         }
 
         if (used)
@@ -60,6 +65,15 @@ public class PaintMachine : MonoBehaviour
         }
     }
 
+    private void ShowEffect(bool show)
+    {
+        effectActivated = show;
+        if (show)
+            paintvfx.transform.DOScale(0.8f, 0.25f);
+        else
+            paintvfx.transform.DOScale(0, 0.25f);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (!used && other.CompareTag("Player"))
@@ -71,6 +85,8 @@ public class PaintMachine : MonoBehaviour
             transform.DOLocalRotate(Vector3.zero, 0.5f);
             GameManager.instance.currentZone.StartPaintStage();
             PlayerController.instance.TogglePaintCollider(true);
+            playerTrigger.SetActive(false);
+            partsTrigger.SetActive(true);
         }
     }
 
@@ -120,13 +136,14 @@ public class PaintMachine : MonoBehaviour
 
     public void OnSpawn()
     {
-        machineCollider.enabled = true;
+        //machineCollider.enabled = true;
+        playerTrigger.SetActive(true);
 
         //used = true;
         //anim.SetBool("Run", true);
         //transform.DOMove(GameManager.instance.currentZone.machinesPosition.position + Vector3.right * 1.75f, 2.0f).OnComplete(()=>
         //{
-            used = false;
+        used = false;
             PlayerController.instance.arrowController.PointToObject(gameObject);
             //anim.SetBool("Run", false);
         //});
