@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
 
@@ -93,26 +95,20 @@ public class PaintableManager : MonoBehaviour
 
     public Paintable ReturnNearestPaintable()
     {
+        var parts = paintableParts.Where(t => !t.paintableRenderer.enabled).ToList();
         Paintable target = null;
-        for (int i = 0; i < paintableParts.Count; i++)
+        float3 playerPos = PlayerController.instance.transform.position;
+        target = parts[0];
+        float closestDistance = math.distance(target.transform.position, playerPos);
+        for (int i = 1; i < parts.Count(); i++)
         {
-            if (target == null)
+            var tmpDistance = math.distance(parts[i].transform.position, playerPos);
+            if (tmpDistance < closestDistance)
             {
-                if (!paintableParts[i].paintableRenderer.enabled)
-                    target = paintableParts[i];
+                target = parts[i];
+                closestDistance = tmpDistance;
             }
-            else
-            {
-                if (!paintableParts[i].paintableRenderer.enabled
-                    && Vector3.Distance(paintableParts[i].transform.position, PlayerController.instance.transform.position)
-                    < Vector3.Distance(target.transform.position, PlayerController.instance.transform.position))
-                {
-                    target = paintableParts[i];
-                }
-            }
-
         }
-
         return target;
     }
 }

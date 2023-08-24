@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using Unity.Mathematics;
+using System.Linq;
 
 public class PeelableManager : MonoBehaviour
 {
@@ -290,24 +292,18 @@ public class PeelableManager : MonoBehaviour
 
     public Peelable ReturnNearestPeelable()
     {
-        Peelable target = null; 
-        for (int i = 0; i < peelableParts.Count; i++)
+        var parts = peelableParts.Where(t => !t.sold && !t.collected && t.blockNumber == currentBlockNumber).ToList();
+        float3 playerPos = PlayerController.instance.transform.position;
+        Peelable target = null;
+        target = parts[0];
+        float closestDistance = math.distance(target.transform.position, playerPos);
+        for (int i = 1; i < parts.Count(); i++)
         {
-            if (peelableParts[i].blockNumber != currentBlockNumber) 
-                continue;
-            if(target == null)
+            var tmpDistance = math.distance(parts[i].transform.position, playerPos);
+            if (tmpDistance < closestDistance)
             {
-                if (!peelableParts[i].collected && !peelableParts[i].sold)
-                    target = peelableParts[i];
-            }
-            else
-            {
-                if (!peelableParts[i].collected && !peelableParts[i].sold
-                    && Vector3.Distance(peelableParts[i].transform.position,PlayerController.instance.transform.position) 
-                    < Vector3.Distance(target.transform.position, PlayerController.instance.transform.position))
-                {
-                    target = peelableParts[i];
-                }
+                target = parts[i];
+                closestDistance = tmpDistance;
             }
         }
         return target;

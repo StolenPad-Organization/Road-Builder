@@ -63,6 +63,7 @@ public class PeelableBlockHolder : MonoBehaviour
             }
             else
             {
+                if (peelableParts[i].collected) continue;
                 peelableParts[i].rbHandler.CheckSwitch(state);
                 if (state)
                 {
