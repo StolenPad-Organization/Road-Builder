@@ -13,14 +13,12 @@ public class PaintMachine : MonoBehaviour
     [SerializeField] private float paintConsumeRate;
     public float paintDuration;
     public float paintDelay;
-    [SerializeField] private ParticleSystem paintEffect;
     [SerializeField] private GameObject paintvfx;
     [SerializeField] private float painteffectDuration;
     [SerializeField] private float painteffectRemainingTime;
     [SerializeField] private GameObject fullWarning;
     [SerializeField] private GameObject emptyWarning;
     [SerializeField] private Animator anim;
-    [SerializeField] private Collider machineCollider;
     [SerializeField] private GameObject playerTrigger;
     [SerializeField] private GameObject partsTrigger;
     [SerializeField] private GameObject paintScalingObject;

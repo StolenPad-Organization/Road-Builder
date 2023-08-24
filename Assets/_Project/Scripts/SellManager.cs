@@ -58,7 +58,7 @@ public class SellManager : MonoBehaviour
                 return moneySpots[i];
             }
         }
-        return null;
+        return moneySpots[0];
     }
 
     public void LoadMoeny(List<MoneyData> moneyDatas)

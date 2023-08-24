@@ -24,6 +24,7 @@ public class Peelable : MonoBehaviour
     public int blockNumber;
     public Color movedPieceColor;
     public RBHandler rbHandler;
+    public PeelableCopy peelableCopy;
 
     public bool peeled;
     public bool collected;
@@ -99,31 +100,37 @@ public class Peelable : MonoBehaviour
 
     public void Collect(int index, float collectableOffest, Transform collectableParent)
     {
-        collected = true;
+        //collected = true;
 
-        peelableCollider.enabled = false;
-        rb.isKinematic = true;
-        rb.useGravity = false;
+        //peelableCollider.enabled = false;
+        //rb.isKinematic = true;
+        //rb.useGravity = false;
 
-        transform.SetParent(collectableParent);
-        transform.DOLocalRotate(Vector3.zero, 0.4f);
-        transform.DOLocalJump(Vector3.up * index * collectableOffest, 1f + (index * 0.1f), 1, 0.4f).OnComplete(() => readyToTilt = true);
-        SavePeelable();
+        //transform.SetParent(collectableParent);
+        //transform.DOLocalRotate(Vector3.zero, 0.4f);
+        //transform.DOLocalJump(Vector3.up * index * collectableOffest, 1f + (index * 0.1f), 1, 0.4f).OnComplete(() => readyToTilt = true);
+        //SavePeelable();
+
+        peelableCopy.Collect(index, collectableOffest, collectableParent);
+        rbHandler.CheckSwitch(false);
     }
+
     public void Sell(Transform sellPoint)
     {
-        collected = false;
-        sold = true;
-        readyToTilt = false;
-        transform.SetParent(sellPoint);
-        transform.DOLocalJump(Vector3.zero, 3, 1, 0.6f).OnComplete(() =>
-        {
-            EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
-            Money money = MoneyPooler.instance.GetMoney();
-            money.transform.position = GameManager.instance.currentZone.sellManager.transform.position;
-            money.Spawn(price);
-            gameObject.SetActive(false);
-        });
+        //collected = false;
+        //sold = true;
+        //readyToTilt = false;
+        //transform.SetParent(sellPoint);
+        //transform.DOLocalJump(Vector3.zero, 3, 1, 0.6f).OnComplete(() =>
+        //{
+        //    EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+        //    Money money = MoneyPooler.instance.GetMoney();
+        //    money.transform.position = GameManager.instance.currentZone.sellManager.transform.position;
+        //    money.Spawn(price);
+        //    gameObject.SetActive(false);
+        //});
+
+        peelableCopy.Sell(sellPoint);
     }
 
     public void SetRBHandler(RBHandler _rbHandler)
@@ -190,18 +197,21 @@ public class Peelable : MonoBehaviour
     }
     public void LoadCollectable(int index, float collectableOffest, Transform collectableParent)
     {
-        // set transform and settings for the peelable as it's collected
-        peeled = true;
-        collected = true;
+        //peeled = true;
+        //collected = true;
 
-        peelableCollider.enabled = false;
-        rb.isKinematic = true;
-        rb.useGravity = false;
+        //peelableCollider.enabled = false;
+        //rb.isKinematic = true;
+        //rb.useGravity = false;
 
-        transform.SetParent(collectableParent);
-        transform.localEulerAngles = Vector3.zero;
-        transform.localPosition = Vector3.up * index * collectableOffest;
-        readyToTilt = true;
-        peelableRenderer.material.color = movedPieceColor;
+        //transform.SetParent(collectableParent);
+        //transform.localEulerAngles = Vector3.zero;
+        //transform.localPosition = Vector3.up * index * collectableOffest;
+        //readyToTilt = true;
+        //peelableRenderer.material.color = movedPieceColor;
+
+        rbHandler.CheckSwitch(false);
+        peelableCopy.LoadCollectable(index, collectableOffest, collectableParent);
+        
     }
 }

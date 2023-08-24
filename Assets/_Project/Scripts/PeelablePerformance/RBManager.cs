@@ -33,6 +33,11 @@ public class RBManager : SingletonMB<RBManager>
         }
     }
 
+    public void Clear()
+    {
+        handlers.Clear();
+    }
+
     private void Start()
     {
         JobUpdater();

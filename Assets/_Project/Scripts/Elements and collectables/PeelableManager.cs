@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using Unity.Mathematics;
+using System.Linq;
 
 public class PeelableManager : MonoBehaviour
 {
     public List<Peelable> peelableParts;
     private List<MeshRenderer> renderers = new List<MeshRenderer>();
     [SerializeField] private Transform[] blockHolders;
+    [SerializeField] private Transform[] copyBlockHolders;
     public List<PeelableBlockHolder> peelableBlockHolders;
     [SerializeField] private Material[] mats;
     [SerializeField] private float[] powers;
@@ -83,6 +86,7 @@ public class PeelableManager : MonoBehaviour
         SetBlocksNumbers();
         SetPrices();
         SetMovedColor();
+        SetPeelableCopy();
     }
 
     private List<MeshRenderer> GetRenderers(Transform t,List<MeshRenderer> renderers)
@@ -208,6 +212,25 @@ public class PeelableManager : MonoBehaviour
             }
         }
     }
+
+    [ContextMenu("Set Peelable Copies")]
+    private void SetPeelableCopy()
+    {
+        for (int i = 0; i < copyBlockHolders.Length; i++)
+        {
+            renderers.Clear();
+            renderers = GetRenderers(copyBlockHolders[i], renderers);
+            for (int j = 0; j < renderers.Count; j++)
+            {
+                if (renderers[j].gameObject.GetComponent<MeshCollider>())
+                    DestroyImmediate(renderers[j].gameObject.GetComponent<MeshCollider>());
+                if (renderers[j].gameObject.GetComponent<PeelableCopy>())
+                    DestroyImmediate(renderers[j].gameObject.GetComponent<PeelableCopy>());
+
+                renderers[j].gameObject.AddComponent<PeelableCopy>().SetPeelableCopy(peelableBlockHolders[i].peelableParts[j]);
+            }
+        }
+    }
 #endif
 
     public void LoadPeelables(List<PeelableData> PeelableDatas, int currentPeelableBlock)
@@ -229,6 +252,7 @@ public class PeelableManager : MonoBehaviour
 
     public void SetBlockHoldersStates()
     {
+        RBManager.Instance.Clear();
         for (int i = 0; i < peelableBlockHolders.Count; i++)
         {
             if (i + 1 < currentBlockNumber)
@@ -247,6 +271,14 @@ public class PeelableManager : MonoBehaviour
         }
     }
 
+    public void ShowCopyOnly()
+    {
+        for (int i = 0; i < peelableBlockHolders.Count; i++)
+        {
+            peelableBlockHolders[i].SetRBHandlersState(false);
+        }
+    }
+
     public void CheckBlock()
     {
         if(peelableBlockHolders[currentBlockNumber - 1].CheckCount())
@@ -260,24 +292,18 @@ public class PeelableManager : MonoBehaviour
 
     public Peelable ReturnNearestPeelable()
     {
-        Peelable target = null; 
-        for (int i = 0; i < peelableParts.Count; i++)
+        var parts = peelableParts.Where(t => !t.sold && !t.collected && t.blockNumber == currentBlockNumber).ToList();
+        float3 playerPos = PlayerController.instance.transform.position;
+        Peelable target = null;
+        target = parts[0];
+        float closestDistance = math.distance(target.transform.position, playerPos);
+        for (int i = 1; i < parts.Count(); i++)
         {
-            if (peelableParts[i].blockNumber != currentBlockNumber) 
-                continue;
-            if(target == null)
+            var tmpDistance = math.distance(parts[i].transform.position, playerPos);
+            if (tmpDistance < closestDistance)
             {
-                if (!peelableParts[i].collected && !peelableParts[i].sold)
-                    target = peelableParts[i];
-            }
-            else
-            {
-                if (!peelableParts[i].collected && !peelableParts[i].sold
-                    && Vector3.Distance(peelableParts[i].transform.position,PlayerController.instance.transform.position) 
-                    < Vector3.Distance(target.transform.position, PlayerController.instance.transform.position))
-                {
-                    target = peelableParts[i];
-                }
+                target = parts[i];
+                closestDistance = tmpDistance;
             }
         }
         return target;

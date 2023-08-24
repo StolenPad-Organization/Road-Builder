@@ -344,7 +344,7 @@ public class ZoneManager : MonoBehaviour
                     wheelBarrow.gameObject.SetActive(false);
                     upgrades.SetActive(false);
                 }
-                peelableManager.SetBlockHoldersStates();
+                peelableManager.ShowCopyOnly();
                 break;
             default:
                 break;

@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PeelableBlockHolder : MonoBehaviour
 {
-    [SerializeField] private List<Peelable> peelableParts = new List<Peelable>();
+    public List<Peelable> peelableParts = new List<Peelable>();
     private int partsCount;
     [SerializeField] private GameObject blockCollider;
     [SerializeField] private GameObject blockTrigger;
@@ -47,15 +48,14 @@ public class PeelableBlockHolder : MonoBehaviour
         {
             if (hide)
             {
-                peelableParts[i].rbHandler.CheckSwitch(true);
-                peelableParts[i].rbHandler.gameObject.SetActive(false);
-                continue;
+                peelableParts[i].rbHandler.CheckSwitch(false);
+                if (!peelableParts[i].sold && !peelableParts[i].collected)
+                {
+                    peelableParts[i].peelableCopy.ActivateCollision();
+                    continue;
+                }
             }
-            if (peelableParts[i].collected)
-            {
-                peelableParts[i].rbHandler.CheckSwitch(true);
-                continue;
-            }
+            
             if (peelableParts[i].sold)
             {
                 peelableParts[i].rbHandler.CheckSwitch(true);
@@ -63,6 +63,7 @@ public class PeelableBlockHolder : MonoBehaviour
             }
             else
             {
+                if (peelableParts[i].collected) continue;
                 peelableParts[i].rbHandler.CheckSwitch(state);
                 if (state)
                 {
@@ -70,10 +71,18 @@ public class PeelableBlockHolder : MonoBehaviour
                 }
             }
         }
-        if(!hide)
+        if (!hide)
             ActivateBlock(!state);
         else
             ActivateBlock(false);
+    }
+
+    private void GetPeelableRest()
+    {
+        RBManager.Instance.Clear();
+        var parts = peelableParts.Where(t => !t.sold && !t.collected);
+        parts.Select(t => t.rbHandler).ToList().ForEach(t => t.CheckSwitch(false));
+        parts.Select(t => t.peelableCopy).ToList().ForEach(t => t.ActivateCollision());
     }
 
     public void CheckCountLoad()

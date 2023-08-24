@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
 
@@ -151,26 +153,20 @@ public class BuildableManager : MonoBehaviour
 
     public Buildable ReturnNearestBuildable()
     {
+        var parts = buildableParts.Where(t => !t.buildableRenderer.enabled).ToList();
         Buildable target = null;
-        for (int i = 0; i < buildableParts.Count; i++)
+        float3 playerPos = PlayerController.instance.transform.position;
+        target = parts[0];
+        float closestDistance = math.distance(target.transform.position, playerPos);
+        for (int i = 1; i < parts.Count(); i++)
         {
-            if (target == null)
+            var tmpDistance = math.distance(parts[i].transform.position, playerPos);
+            if (tmpDistance < closestDistance)
             {
-                if (!buildableParts[i].buildableRenderer.enabled)
-                    target = buildableParts[i];
+                target = parts[i];
+                closestDistance = tmpDistance;
             }
-            else
-            {
-                if (!buildableParts[i].buildableRenderer.enabled
-                    && Vector3.Distance(buildableParts[i].transform.position, PlayerController.instance.transform.position)
-                    < Vector3.Distance(target.transform.position, PlayerController.instance.transform.position))
-                {
-                    target = buildableParts[i];
-                }
-            }
-
         }
-
         return target;
     }
 }
