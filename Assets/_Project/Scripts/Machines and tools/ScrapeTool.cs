@@ -14,6 +14,9 @@ public class ScrapeTool : MonoBehaviour
     private Tween shakeTween = null;
     [SerializeField] private GameObject showCollider;
     [SerializeField] private GameObject hideCollider;
+    [SerializeField] private Material originalMaterial;
+    [SerializeField] private Material redMaterial;
+    [SerializeField] private Renderer[] renderers;
 
     public void UpdateShovelScale(int scaleMultiplier)
     {
@@ -65,5 +68,23 @@ public class ScrapeTool : MonoBehaviour
     {
         transform.DOKill();
         shovelHead.transform.DOKill();
+    }
+
+    public void ChangeToolMaterial(bool turnRed)
+    {
+        if (turnRed)
+        {
+            foreach (var item in renderers)
+            {
+                item.material = redMaterial;
+            }
+        }
+        else
+        {
+            foreach (var item in renderers)
+            {
+                item.material = originalMaterial;
+            }
+        }
     }
 }

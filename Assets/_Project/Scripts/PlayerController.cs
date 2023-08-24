@@ -108,14 +108,14 @@ public class PlayerController : MonoBehaviour
         {
             if (collectables[i].readyToTilt)
             {
-                if (collectables[i].transform.parent == collectableParent)
-                    collectables[i].transform.SetParent(null);
+                if (collectables[i].peelableCopy.transform.parent == collectableParent)
+                    collectables[i].peelableCopy.transform.SetParent(null);
                 pos += Vector3.up * collectableOffest;
-                collectables[i].transform.position = Vector3.Lerp(collectables[i].transform.position, pos, lerp);
+                collectables[i].peelableCopy.transform.position = Vector3.Lerp(collectables[i].peelableCopy.transform.position, pos, lerp);
                 //colectedMoney[i].transform.Rotate(rotDir * rb.velocity.magnitude);
-                collectables[i].transform.rotation = Quaternion.Lerp(collectables[i].transform.rotation, rot, lerp);
-                pos = collectables[i].transform.position;
-                rot = collectables[i].transform.rotation;
+                collectables[i].peelableCopy.transform.rotation = Quaternion.Lerp(collectables[i].peelableCopy.transform.rotation, rot, lerp);
+                pos = collectables[i].peelableCopy.transform.position;
+                rot = collectables[i].peelableCopy.transform.rotation;
             }
         }
     }
@@ -131,7 +131,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnPeelableDetection(float amount, float _power,Color _dustColor)
     {
-        if (scrapeTool.power > _power)
+        if (scrapeTool.power >= _power)
             amount = 100;
         movementController.SetSpeedMultiplayer(amount);
         lastToolUsingTime = toolCoolDown;
@@ -154,7 +154,7 @@ public class PlayerController : MonoBehaviour
 
     public void SetScrapingMovementSpeed(float amount, float _power)
     {
-        if (scrapeTool.power > _power)
+        if (scrapeTool.power >= _power)
             amount = 100;
         movementController.SetSpeedMultiplayer(amount);
         lastToolUsingTime = toolCoolDown;

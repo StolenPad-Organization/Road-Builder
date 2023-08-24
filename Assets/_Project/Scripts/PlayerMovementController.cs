@@ -43,8 +43,8 @@ public class PlayerMovementController : MonoBehaviour
         float verticalInput = joystick.VerticalAxis;
         moveDirection.x = horizontalInput;
         moveDirection.z = verticalInput;
-        moveDirection.Normalize();
-
+        //moveDirection.Normalize();
+        SetWalkSpeed(moveDirection.magnitude);
         SetPushSpeed();
         if (drive && !anim.GetBool("Drive") || !drive && anim.GetBool("Drive"))
         {
@@ -150,6 +150,11 @@ public class PlayerMovementController : MonoBehaviour
     private void SetPushSpeed()
     {
         anim.SetFloat("PushSpeed", speedMultiplayer / 100);
+    }
+
+    private void SetWalkSpeed(float t)
+    {
+        anim.SetFloat("WalkSpeed", t);
     }
 
     public bool MovementCheck()
