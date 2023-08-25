@@ -60,6 +60,7 @@ public class PeelableCopy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (peelable.zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
         PlayerController.instance.OnCollect(peelable);
         peelable.rbHandler.CheckSwitch(false);
     }
