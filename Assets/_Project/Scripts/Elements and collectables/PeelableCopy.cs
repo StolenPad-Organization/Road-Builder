@@ -26,6 +26,30 @@ public class PeelableCopy : MonoBehaviour
 
         UnityEditor.EditorUtility.SetDirty(this);
         UnityEditor.EditorUtility.SetDirty(gameObject);
+        UnityEditor.EditorUtility.SetDirty(peelable);
+    }
+
+    public void SetPeelableCopy(Peelable _peelable, Material mat)
+    {
+        peelable = _peelable;
+        peelable.peelableCopy = this;
+        if (copyCollider == null)
+        {
+            if (gameObject.GetComponent<BoxCollider>())
+                copyCollider = gameObject.GetComponent<BoxCollider>();
+            else
+                copyCollider = gameObject.AddComponent<BoxCollider>();
+
+            copyCollider.enabled = false;
+            copyCollider.isTrigger = true;
+        }
+
+        var rd = GetComponent<Renderer>().sharedMaterial = mat;
+
+        UnityEditor.EditorUtility.SetDirty(this);
+        UnityEditor.EditorUtility.SetDirty(rd);
+        UnityEditor.EditorUtility.SetDirty(gameObject);
+        UnityEditor.EditorUtility.SetDirty(peelable);
     }
 #endif
 

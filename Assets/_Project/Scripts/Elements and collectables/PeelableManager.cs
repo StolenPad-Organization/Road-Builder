@@ -327,4 +327,16 @@ public class PeelableManager : MonoBehaviour
             peelableParts[i].SavePeelable();
         }
     }
+
+#if UNITY_EDITOR
+    [ContextMenu("Set Blocks")]
+    private void SetBlocks()
+    {
+        peelableParts.Clear();
+        foreach (var item in peelableBlockHolders)
+        {
+            peelableParts.AddRange(item.peelableParts);
+        }
+    }
+#endif
 }
