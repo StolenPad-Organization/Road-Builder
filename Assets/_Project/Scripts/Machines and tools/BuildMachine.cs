@@ -37,6 +37,9 @@ public class BuildMachine : MonoBehaviour
     [SerializeField] private Vector3[] CollisionUpgrades;
     [SerializeField] private int[] consumeRateUpgrade;
 
+    [Header("Machine Icon")]
+    [SerializeField] private GameObject machineIcon;
+
     void Start()
     {
         asphaltCapacity = asphaltObjects.Length;
@@ -69,6 +72,7 @@ public class BuildMachine : MonoBehaviour
             used = true;
             playerTrigger.SetActive(false);
             partsTrigger.SetActive(true);
+            machineIcon.SetActive(false);
         }
     }
 

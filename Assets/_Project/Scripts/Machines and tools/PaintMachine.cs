@@ -24,6 +24,9 @@ public class PaintMachine : MonoBehaviour
     [SerializeField] private GameObject paintScalingObject;
     private bool effectActivated;
 
+    [Header("Machine Icon")]
+    [SerializeField] private GameObject machineIcon;
+
     void Start()
     {
         //OnSpawn();
@@ -85,6 +88,7 @@ public class PaintMachine : MonoBehaviour
             PlayerController.instance.TogglePaintCollider(true);
             playerTrigger.SetActive(false);
             partsTrigger.SetActive(true);
+            machineIcon.SetActive(false);
         }
     }
 
