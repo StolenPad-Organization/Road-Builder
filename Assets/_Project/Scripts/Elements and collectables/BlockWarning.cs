@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class BlockWarning : MonoBehaviour
 {
+    private bool colliding;
     private void OnTriggerEnter(Collider other)
     {
+        colliding = true;
         PlayerController.instance.ShowWarning(true);
         PlayerController.instance.scrapeTool.ShowTool(true);
         PlayerController.instance.OnBlockWallDetection(true);
@@ -14,8 +16,15 @@ public class BlockWarning : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        colliding = false;
         PlayerController.instance.ShowWarning(false);
         PlayerController.instance.OnBlockWallDetection(false);
         PlayerController.instance.scrapeTool.ChangeToolMaterial(false);
+    }
+
+    private void OnDisable()
+    {
+        if (colliding)
+            PlayerController.instance.ShowWarning(false);
     }
 }

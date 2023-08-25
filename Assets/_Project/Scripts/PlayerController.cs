@@ -109,7 +109,7 @@ public class PlayerController : MonoBehaviour
             if (collectables[i].readyToTilt)
             {
                 if (collectables[i].peelableCopy.transform.parent == collectableParent)
-                    collectables[i].peelableCopy.transform.SetParent(null);
+                    collectables[i].peelableCopy.transform.SetParent(GameManager.instance.currentZone.collectableParent);
                 pos += Vector3.up * collectableOffest;
                 collectables[i].peelableCopy.transform.position = Vector3.Lerp(collectables[i].peelableCopy.transform.position, pos, lerp);
                 //colectedMoney[i].transform.Rotate(rotDir * rb.velocity.magnitude);
@@ -276,10 +276,14 @@ public class PlayerController : MonoBehaviour
     public void RemovePeelingAndCollectingTools()
     {
         int x = collectables.Count;
+        Peelable c;
         for (int i = 0; i < x; i++)
         {
             //GameManager.instance.currentZone.RemoveCollectableData(true, collectables[0].collectableType, collectables[0].peelable);
-            collectables.Remove(collectables[0]);
+            c = collectables[0];
+            collectables.Remove(c);
+            c.gameObject.SetActive(false);
+            c.peelableCopy.gameObject.SetActive(false);
         }
         if (wheelBarrow != null)
         {
@@ -335,10 +339,7 @@ public class PlayerController : MonoBehaviour
 
     public void ShowWarning(bool show)
     {
-        if (show)
-            powerWarning.SetActive(true);
-        else
-            powerWarning.SetActive(false);
+        powerWarning.SetActive(show);
     }
 
     public void ActivateFootPrints(bool activate)

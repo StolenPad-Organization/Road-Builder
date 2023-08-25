@@ -58,7 +58,7 @@ public class SellManager : MonoBehaviour
                 return moneySpots[i];
             }
         }
-        return moneySpots[0];
+        return moneySpots[Random.Range(0,moneySpots.Length)];
     }
 
     public void LoadMoeny(List<MoneyData> moneyDatas)

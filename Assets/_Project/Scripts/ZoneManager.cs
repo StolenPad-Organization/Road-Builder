@@ -30,7 +30,7 @@ public class ZoneManager : MonoBehaviour
     public SellManager sellManager;
     [SerializeField] private UpgradeManager upgradeManager;
     public BuildMachineUpgradeMenu buildMachineUpgradeMenu;
-    [SerializeField] private Transform collectableParent;
+    public Transform collectableParent;
     public Transform machinesPosition;
     [SerializeField] private GameObject zoneCollider;
     [SerializeField] private GameObject machineUpgradeTrigger;
