@@ -315,8 +315,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 912
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281102539194}
   peelableRenderer: {fileID: 4058767281102539195}
@@ -335,7 +335,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281108196135
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,8 +481,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1072
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281108196124}
   peelableRenderer: {fileID: 4058767281108196125}
@@ -501,7 +501,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281109860764
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,8 +647,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1067
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281109860757}
   peelableRenderer: {fileID: 4058767281109860754}
@@ -667,7 +667,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281109972564
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,8 +925,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1128
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281110154285}
   peelableRenderer: {fileID: 4058767281110154282}
@@ -945,7 +945,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281111234219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,8 +1315,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1173
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281115343841}
   peelableRenderer: {fileID: 4058767281115343854}
@@ -1335,7 +1335,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281119175259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1593,8 +1593,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 996
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281129951493}
   peelableRenderer: {fileID: 4058767281129951490}
@@ -1613,7 +1613,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281131658538
 GameObject:
   m_ObjectHideFlags: 0
@@ -2207,8 +2207,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1091
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281151361719}
   peelableRenderer: {fileID: 4058767281151361716}
@@ -2227,7 +2227,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281151883793
 GameObject:
   m_ObjectHideFlags: 0
@@ -3157,8 +3157,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 903
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281177917826}
   peelableRenderer: {fileID: 4058767281177917827}
@@ -3177,7 +3177,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281184835176
 GameObject:
   m_ObjectHideFlags: 0
@@ -3435,8 +3435,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 922
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281185303869}
   peelableRenderer: {fileID: 4058767281185303866}
@@ -3455,7 +3455,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281188210756
 GameObject:
   m_ObjectHideFlags: 0
@@ -3601,8 +3601,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1106
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281188210749}
   peelableRenderer: {fileID: 4058767281188210746}
@@ -3621,7 +3621,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281190584957
 GameObject:
   m_ObjectHideFlags: 0
@@ -3879,8 +3879,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1109
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281191776792}
   peelableRenderer: {fileID: 4058767281191776793}
@@ -3899,7 +3899,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281198887694
 GameObject:
   m_ObjectHideFlags: 0
@@ -4829,8 +4829,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1050
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281227884808}
   peelableRenderer: {fileID: 4058767281227884809}
@@ -4849,7 +4849,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281231265881
 GameObject:
   m_ObjectHideFlags: 0
@@ -4995,8 +4995,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 983
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281231265886}
   peelableRenderer: {fileID: 4058767281231265887}
@@ -5015,7 +5015,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281233935524
 GameObject:
   m_ObjectHideFlags: 0
@@ -5497,8 +5497,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 931
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281240519308}
   peelableRenderer: {fileID: 4058767281240519309}
@@ -5517,7 +5517,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281249733131
 GameObject:
   m_ObjectHideFlags: 0
@@ -5887,8 +5887,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 914
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281252584891}
   peelableRenderer: {fileID: 4058767281252584888}
@@ -5907,7 +5907,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281260702075
 GameObject:
   m_ObjectHideFlags: 0
@@ -6053,8 +6053,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 929
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281260702064}
   peelableRenderer: {fileID: 4058767281260702065}
@@ -6073,7 +6073,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281264328565
 GameObject:
   m_ObjectHideFlags: 0
@@ -6219,8 +6219,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1126
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281264328554}
   peelableRenderer: {fileID: 4058767281264328555}
@@ -6239,7 +6239,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281267722411
 GameObject:
   m_ObjectHideFlags: 0
@@ -6385,8 +6385,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 980
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281267722400}
   peelableRenderer: {fileID: 4058767281267722401}
@@ -6405,7 +6405,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281268299465
 GameObject:
   m_ObjectHideFlags: 0
@@ -6551,8 +6551,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1036
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281268299470}
   peelableRenderer: {fileID: 4058767281268299471}
@@ -6571,7 +6571,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281277206759
 GameObject:
   m_ObjectHideFlags: 0
@@ -7165,8 +7165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1015
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281284731002}
   peelableRenderer: {fileID: 4058767281284731003}
@@ -7185,7 +7185,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281285873375
 GameObject:
   m_ObjectHideFlags: 0
@@ -7331,8 +7331,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1097
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281285873364}
   peelableRenderer: {fileID: 4058767281285873365}
@@ -7351,7 +7351,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281289757234
 GameObject:
   m_ObjectHideFlags: 0
@@ -7833,8 +7833,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 959
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281299685488}
   peelableRenderer: {fileID: 4058767281299685489}
@@ -7853,7 +7853,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281302590789
 GameObject:
   m_ObjectHideFlags: 0
@@ -8223,8 +8223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1127
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281306167470}
   peelableRenderer: {fileID: 4058767281306167471}
@@ -8243,7 +8243,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281306903707
 GameObject:
   m_ObjectHideFlags: 0
@@ -8501,8 +8501,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1180
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281306911554}
   peelableRenderer: {fileID: 4058767281306911555}
@@ -8521,7 +8521,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281308759016
 GameObject:
   m_ObjectHideFlags: 0
@@ -8779,8 +8779,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 908
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281310834519}
   peelableRenderer: {fileID: 4058767281310834516}
@@ -8799,7 +8799,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281316867433
 GameObject:
   m_ObjectHideFlags: 0
@@ -8945,8 +8945,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1131
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281316867438}
   peelableRenderer: {fileID: 4058767281316867439}
@@ -8965,7 +8965,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281319685436
 GameObject:
   m_ObjectHideFlags: 0
@@ -9111,8 +9111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 988
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281319685429}
   peelableRenderer: {fileID: 4058767281319685426}
@@ -9131,7 +9131,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281332082669
 GameObject:
   m_ObjectHideFlags: 0
@@ -9277,8 +9277,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 961
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281332082658}
   peelableRenderer: {fileID: 4058767281332082659}
@@ -9297,7 +9297,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281337722005
 GameObject:
   m_ObjectHideFlags: 0
@@ -9443,8 +9443,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1000
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281337721994}
   peelableRenderer: {fileID: 4058767281337721995}
@@ -9463,7 +9463,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281341413894
 GameObject:
   m_ObjectHideFlags: 0
@@ -9609,8 +9609,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 966
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281341414143}
   peelableRenderer: {fileID: 4058767281341414140}
@@ -9629,7 +9629,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281343387899
 GameObject:
   m_ObjectHideFlags: 0
@@ -9887,8 +9887,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 945
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281344415271}
   peelableRenderer: {fileID: 4058767281344415268}
@@ -9907,7 +9907,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281344514401
 GameObject:
   m_ObjectHideFlags: 0
@@ -10165,8 +10165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 991
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281348757498}
   peelableRenderer: {fileID: 4058767281348757499}
@@ -10185,7 +10185,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281353199222
 GameObject:
   m_ObjectHideFlags: 0
@@ -10331,8 +10331,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1148
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281353199215}
   peelableRenderer: {fileID: 4058767281353199212}
@@ -10351,7 +10351,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281354210677
 GameObject:
   m_ObjectHideFlags: 0
@@ -10497,8 +10497,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 900
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281354210666}
   peelableRenderer: {fileID: 4058767281354210667}
@@ -10517,7 +10517,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281357808767
 GameObject:
   m_ObjectHideFlags: 0
@@ -11111,8 +11111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 951
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281378031708}
   peelableRenderer: {fileID: 4058767281378031709}
@@ -11131,7 +11131,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281378511328
 GameObject:
   m_ObjectHideFlags: 0
@@ -11613,8 +11613,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1111
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281393070101}
   peelableRenderer: {fileID: 4058767281393070098}
@@ -11633,7 +11633,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281393760848
 GameObject:
   m_ObjectHideFlags: 0
@@ -11779,8 +11779,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 916
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281393760841}
   peelableRenderer: {fileID: 4058767281393760854}
@@ -11799,7 +11799,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281399097357
 GameObject:
   m_ObjectHideFlags: 0
@@ -12057,8 +12057,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 924
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281399611715}
   peelableRenderer: {fileID: 4058767281399611712}
@@ -12077,7 +12077,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281400109666
 GameObject:
   m_ObjectHideFlags: 0
@@ -12335,8 +12335,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1107
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281402754719}
   peelableRenderer: {fileID: 4058767281402754716}
@@ -12355,7 +12355,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281408329131
 GameObject:
   m_ObjectHideFlags: 0
@@ -13285,8 +13285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1163
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281417982237}
   peelableRenderer: {fileID: 4058767281417982234}
@@ -13305,7 +13305,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281418423644
 GameObject:
   m_ObjectHideFlags: 0
@@ -13899,8 +13899,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 938
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281423033786}
   peelableRenderer: {fileID: 4058767281423033787}
@@ -13919,7 +13919,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281424705045
 GameObject:
   m_ObjectHideFlags: 0
@@ -14177,8 +14177,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1135
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281428643169}
   peelableRenderer: {fileID: 4058767281428643182}
@@ -14197,7 +14197,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281435679892
 GameObject:
   m_ObjectHideFlags: 0
@@ -14567,8 +14567,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1039
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281436577132}
   peelableRenderer: {fileID: 4058767281436577133}
@@ -14587,7 +14587,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281437621929
 GameObject:
   m_ObjectHideFlags: 0
@@ -15069,8 +15069,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1141
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281447908078}
   peelableRenderer: {fileID: 4058767281447908079}
@@ -15089,7 +15089,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281455484775
 GameObject:
   m_ObjectHideFlags: 0
@@ -15235,8 +15235,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1020
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281455484764}
   peelableRenderer: {fileID: 4058767281455484765}
@@ -15255,7 +15255,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281460067790
 GameObject:
   m_ObjectHideFlags: 0
@@ -15513,8 +15513,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1071
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281461635114}
   peelableRenderer: {fileID: 4058767281461635115}
@@ -15533,7 +15533,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281462123025
 GameObject:
   m_ObjectHideFlags: 0
@@ -15791,8 +15791,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1017
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281465765765}
   peelableRenderer: {fileID: 4058767281465765762}
@@ -15811,7 +15811,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281468484968
 GameObject:
   m_ObjectHideFlags: 0
@@ -15957,8 +15957,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 948
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281468484961}
   peelableRenderer: {fileID: 4058767281468484974}
@@ -15977,7 +15977,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281469467736
 GameObject:
   m_ObjectHideFlags: 0
@@ -16571,8 +16571,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 969
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281487991993}
   peelableRenderer: {fileID: 4058767281487992006}
@@ -16591,7 +16591,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281490170163
 GameObject:
   m_ObjectHideFlags: 0
@@ -16737,8 +16737,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 920
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281490170152}
   peelableRenderer: {fileID: 4058767281490170153}
@@ -16757,7 +16757,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281494387153
 GameObject:
   m_ObjectHideFlags: 0
@@ -16903,8 +16903,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1144
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281494387158}
   peelableRenderer: {fileID: 4058767281494387159}
@@ -16923,7 +16923,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281499586860
 GameObject:
   m_ObjectHideFlags: 0
@@ -17181,8 +17181,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1008
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281501043526}
   peelableRenderer: {fileID: 4058767281501043527}
@@ -17201,7 +17201,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281501261218
 GameObject:
   m_ObjectHideFlags: 0
@@ -17571,8 +17571,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1070
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281512737038}
   peelableRenderer: {fileID: 4058767281512737039}
@@ -17591,7 +17591,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281518339329
 GameObject:
   m_ObjectHideFlags: 0
@@ -17737,8 +17737,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 975
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281518339334}
   peelableRenderer: {fileID: 4058767281518339335}
@@ -17757,7 +17757,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281524094252
 GameObject:
   m_ObjectHideFlags: 0
@@ -17903,8 +17903,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 907
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281524094245}
   peelableRenderer: {fileID: 4058767281524094242}
@@ -17923,7 +17923,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281524557186
 GameObject:
   m_ObjectHideFlags: 0
@@ -18069,8 +18069,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 949
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281524556923}
   peelableRenderer: {fileID: 4058767281524556920}
@@ -18089,7 +18089,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281528012870
 GameObject:
   m_ObjectHideFlags: 0
@@ -18235,8 +18235,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 921
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281528012863}
   peelableRenderer: {fileID: 4058767281528012860}
@@ -18255,7 +18255,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281528161130
 GameObject:
   m_ObjectHideFlags: 0
@@ -18737,8 +18737,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 962
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281540901543}
   peelableRenderer: {fileID: 4058767281540901540}
@@ -18757,7 +18757,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281541326516
 GameObject:
   m_ObjectHideFlags: 0
@@ -19351,8 +19351,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1049
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281564620163}
   peelableRenderer: {fileID: 4058767281564620160}
@@ -19371,7 +19371,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281565325120
 GameObject:
   m_ObjectHideFlags: 0
@@ -19517,8 +19517,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1155
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281565325113}
   peelableRenderer: {fileID: 4058767281565325126}
@@ -19537,7 +19537,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281568434014
 GameObject:
   m_ObjectHideFlags: 0
@@ -19683,8 +19683,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 940
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281568434007}
   peelableRenderer: {fileID: 4058767281568434004}
@@ -19703,7 +19703,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281570703696
 GameObject:
   m_ObjectHideFlags: 0
@@ -19849,8 +19849,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1149
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281570703689}
   peelableRenderer: {fileID: 4058767281570703702}
@@ -19869,7 +19869,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281571534840
 GameObject:
   m_ObjectHideFlags: 0
@@ -20015,8 +20015,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 946
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281571534833}
   peelableRenderer: {fileID: 4058767281571534846}
@@ -20035,7 +20035,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281572887344
 GameObject:
   m_ObjectHideFlags: 0
@@ -20181,8 +20181,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1060
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281572887337}
   peelableRenderer: {fileID: 4058767281572887350}
@@ -20201,7 +20201,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281575891941
 GameObject:
   m_ObjectHideFlags: 0
@@ -20347,8 +20347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1184
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281575891930}
   peelableRenderer: {fileID: 4058767281575891931}
@@ -20367,7 +20367,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281579650858
 GameObject:
   m_ObjectHideFlags: 0
@@ -20625,8 +20625,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1069
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281581009667}
   peelableRenderer: {fileID: 4058767281581009664}
@@ -20645,7 +20645,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281582761561
 GameObject:
   m_ObjectHideFlags: 0
@@ -20791,8 +20791,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1157
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281582761566}
   peelableRenderer: {fileID: 4058767281582761567}
@@ -20811,7 +20811,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281586717282
 GameObject:
   m_ObjectHideFlags: 0
@@ -20957,8 +20957,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1018
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281586717275}
   peelableRenderer: {fileID: 4058767281586717272}
@@ -20977,7 +20977,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281586921446
 GameObject:
   m_ObjectHideFlags: 0
@@ -21235,8 +21235,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1181
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281588105003}
   peelableRenderer: {fileID: 4058767281588105000}
@@ -21255,7 +21255,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281596965479
 GameObject:
   m_ObjectHideFlags: 0
@@ -21401,8 +21401,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 997
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281596965468}
   peelableRenderer: {fileID: 4058767281596965469}
@@ -21421,7 +21421,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281598326813
 GameObject:
   m_ObjectHideFlags: 0
@@ -21567,8 +21567,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1068
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281598326802}
   peelableRenderer: {fileID: 4058767281598326803}
@@ -21587,7 +21587,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281603123682
 GameObject:
   m_ObjectHideFlags: 0
@@ -21733,8 +21733,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1053
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281603123675}
   peelableRenderer: {fileID: 4058767281603123672}
@@ -21753,7 +21753,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281603390153
 GameObject:
   m_ObjectHideFlags: 0
@@ -22235,8 +22235,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1062
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281615888041}
   peelableRenderer: {fileID: 4058767281615888054}
@@ -22255,7 +22255,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281619440788
 GameObject:
   m_ObjectHideFlags: 0
@@ -22401,8 +22401,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 967
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281619440781}
   peelableRenderer: {fileID: 4058767281619440778}
@@ -22421,7 +22421,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281621694847
 GameObject:
   m_ObjectHideFlags: 0
@@ -22791,8 +22791,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1061
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281627263580}
   peelableRenderer: {fileID: 4058767281627263581}
@@ -22811,7 +22811,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281627911856
 GameObject:
   m_ObjectHideFlags: 0
@@ -23069,8 +23069,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 964
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281629087974}
   peelableRenderer: {fileID: 4058767281629087975}
@@ -23089,7 +23089,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281641261426
 GameObject:
   m_ObjectHideFlags: 0
@@ -23459,8 +23459,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1052
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281651543406}
   peelableRenderer: {fileID: 4058767281651543407}
@@ -23479,7 +23479,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281654449688
 GameObject:
   m_ObjectHideFlags: 0
@@ -23737,8 +23737,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1101
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281654692660}
   peelableRenderer: {fileID: 4058767281654692661}
@@ -23757,7 +23757,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281658437572
 GameObject:
   m_ObjectHideFlags: 0
@@ -24015,8 +24015,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1006
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281658651999}
   peelableRenderer: {fileID: 4058767281658651996}
@@ -24035,7 +24035,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281674361800
 GameObject:
   m_ObjectHideFlags: 0
@@ -24181,8 +24181,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 934
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281674361793}
   peelableRenderer: {fileID: 4058767281674361806}
@@ -24201,7 +24201,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281676117141
 GameObject:
   m_ObjectHideFlags: 0
@@ -24347,8 +24347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1152
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281676117130}
   peelableRenderer: {fileID: 4058767281676117131}
@@ -24367,7 +24367,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281683383677
 GameObject:
   m_ObjectHideFlags: 0
@@ -24513,8 +24513,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1082
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281683383666}
   peelableRenderer: {fileID: 4058767281683383667}
@@ -24533,7 +24533,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281685132363
 GameObject:
   m_ObjectHideFlags: 0
@@ -24679,8 +24679,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1151
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281685132352}
   peelableRenderer: {fileID: 4058767281685132353}
@@ -24699,7 +24699,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281685386058
 GameObject:
   m_ObjectHideFlags: 0
@@ -24845,8 +24845,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 995
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281685386051}
   peelableRenderer: {fileID: 4058767281685386048}
@@ -24865,7 +24865,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281686756162
 GameObject:
   m_ObjectHideFlags: 0
@@ -25347,8 +25347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 918
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281697392131}
   peelableRenderer: {fileID: 4058767281697392128}
@@ -25367,7 +25367,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281703757236
 GameObject:
   m_ObjectHideFlags: 0
@@ -25513,8 +25513,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1094
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281703757229}
   peelableRenderer: {fileID: 4058767281703757226}
@@ -25533,7 +25533,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281708435006
 GameObject:
   m_ObjectHideFlags: 0
@@ -25791,8 +25791,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1162
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281708852919}
   peelableRenderer: {fileID: 4058767281708852916}
@@ -25811,7 +25811,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281718847208
 GameObject:
   m_ObjectHideFlags: 0
@@ -25957,8 +25957,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1100
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281718847201}
   peelableRenderer: {fileID: 4058767281718847214}
@@ -25977,7 +25977,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281720348911
 GameObject:
   m_ObjectHideFlags: 0
@@ -26123,8 +26123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1090
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281720348900}
   peelableRenderer: {fileID: 4058767281720348901}
@@ -26143,7 +26143,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281720769007
 GameObject:
   m_ObjectHideFlags: 0
@@ -26289,8 +26289,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1010
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281720768996}
   peelableRenderer: {fileID: 4058767281720768997}
@@ -26309,7 +26309,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281721568506
 GameObject:
   m_ObjectHideFlags: 0
@@ -26455,8 +26455,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1197
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281721568499}
   peelableRenderer: {fileID: 4058767281721568496}
@@ -26475,7 +26475,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281724132204
 GameObject:
   m_ObjectHideFlags: 0
@@ -26957,8 +26957,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1145
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281725238708}
   peelableRenderer: {fileID: 4058767281725238709}
@@ -26977,7 +26977,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281732667721
 GameObject:
   m_ObjectHideFlags: 0
@@ -27123,8 +27123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1011
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281732667726}
   peelableRenderer: {fileID: 4058767281732667727}
@@ -27143,7 +27143,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281743021213
 GameObject:
   m_ObjectHideFlags: 0
@@ -27289,8 +27289,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1051
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281743021202}
   peelableRenderer: {fileID: 4058767281743021203}
@@ -27309,7 +27309,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281747951748
 GameObject:
   m_ObjectHideFlags: 0
@@ -27903,8 +27903,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1089
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281766007403}
   peelableRenderer: {fileID: 4058767281766007400}
@@ -27923,7 +27923,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281768358264
 GameObject:
   m_ObjectHideFlags: 0
@@ -28736,8 +28736,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1080
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281778066046}
   peelableRenderer: {fileID: 4058767281778066047}
@@ -28756,7 +28756,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281779276204
 GameObject:
   m_ObjectHideFlags: 0
@@ -29014,8 +29014,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1088
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281796294957}
   peelableRenderer: {fileID: 4058767281796294954}
@@ -29034,7 +29034,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281796712264
 GameObject:
   m_ObjectHideFlags: 0
@@ -29180,8 +29180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 998
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281796712257}
   peelableRenderer: {fileID: 4058767281796712270}
@@ -29200,7 +29200,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281797373973
 GameObject:
   m_ObjectHideFlags: 0
@@ -29570,8 +29570,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1079
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281814710256}
   peelableRenderer: {fileID: 4058767281814710257}
@@ -29590,7 +29590,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281815293088
 GameObject:
   m_ObjectHideFlags: 0
@@ -29848,8 +29848,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 986
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281816598636}
   peelableRenderer: {fileID: 4058767281816598637}
@@ -29868,7 +29868,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281821675421
 GameObject:
   m_ObjectHideFlags: 0
@@ -30126,8 +30126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1176
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281823700424}
   peelableRenderer: {fileID: 4058767281823700425}
@@ -30146,7 +30146,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281823736350
 GameObject:
   m_ObjectHideFlags: 0
@@ -30292,8 +30292,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1132
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281823736343}
   peelableRenderer: {fileID: 4058767281823736340}
@@ -30312,7 +30312,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281825400194
 GameObject:
   m_ObjectHideFlags: 0
@@ -30570,8 +30570,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1042
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281826683791}
   peelableRenderer: {fileID: 4058767281826683788}
@@ -30590,7 +30590,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281829931452
 GameObject:
   m_ObjectHideFlags: 0
@@ -31072,8 +31072,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1022
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281845405914}
   peelableRenderer: {fileID: 4058767281845405915}
@@ -31092,7 +31092,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281851117148
 GameObject:
   m_ObjectHideFlags: 0
@@ -31238,8 +31238,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1085
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281851117141}
   peelableRenderer: {fileID: 4058767281851117138}
@@ -31258,7 +31258,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281851568772
 GameObject:
   m_ObjectHideFlags: 0
@@ -31516,8 +31516,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 958
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281857819629}
   peelableRenderer: {fileID: 4058767281857819626}
@@ -31536,7 +31536,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281858143884
 GameObject:
   m_ObjectHideFlags: 0
@@ -31682,8 +31682,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 974
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281858143877}
   peelableRenderer: {fileID: 4058767281858143874}
@@ -31702,7 +31702,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281861059795
 GameObject:
   m_ObjectHideFlags: 0
@@ -32072,8 +32072,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 904
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281866435769}
   peelableRenderer: {fileID: 4058767281866435782}
@@ -32092,7 +32092,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281870712711
 GameObject:
   m_ObjectHideFlags: 0
@@ -32350,8 +32350,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1092
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281872360852}
   peelableRenderer: {fileID: 4058767281872360853}
@@ -32370,7 +32370,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281878634162
 GameObject:
   m_ObjectHideFlags: 0
@@ -32628,8 +32628,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 981
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281884966901}
   peelableRenderer: {fileID: 4058767281884966898}
@@ -32648,7 +32648,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281890595468
 GameObject:
   m_ObjectHideFlags: 0
@@ -32794,8 +32794,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1191
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281890595461}
   peelableRenderer: {fileID: 4058767281890595458}
@@ -32814,7 +32814,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281891642143
 GameObject:
   m_ObjectHideFlags: 0
@@ -33072,8 +33072,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1057
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281892029919}
   peelableRenderer: {fileID: 4058767281892029916}
@@ -33092,7 +33092,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281899579267
 GameObject:
   m_ObjectHideFlags: 0
@@ -33350,8 +33350,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 944
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281900994032}
   peelableRenderer: {fileID: 4058767281900994033}
@@ -33370,7 +33370,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281906860694
 GameObject:
   m_ObjectHideFlags: 0
@@ -33628,8 +33628,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1166
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281925021462}
   peelableRenderer: {fileID: 4058767281925021463}
@@ -33648,7 +33648,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281925552761
 GameObject:
   m_ObjectHideFlags: 0
@@ -33906,8 +33906,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 960
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281936232301}
   peelableRenderer: {fileID: 4058767281936232298}
@@ -33926,7 +33926,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281937405945
 GameObject:
   m_ObjectHideFlags: 0
@@ -34072,8 +34072,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1154
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281937405950}
   peelableRenderer: {fileID: 4058767281937405951}
@@ -34092,7 +34092,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281940622245
 GameObject:
   m_ObjectHideFlags: 0
@@ -34350,8 +34350,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 928
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281941361090}
   peelableRenderer: {fileID: 4058767281941361091}
@@ -34370,7 +34370,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281942082379
 GameObject:
   m_ObjectHideFlags: 0
@@ -34852,8 +34852,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1058
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281956102157}
   peelableRenderer: {fileID: 4058767281956102154}
@@ -34872,7 +34872,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281957433846
 GameObject:
   m_ObjectHideFlags: 0
@@ -35242,8 +35242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1130
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281960281738}
   peelableRenderer: {fileID: 4058767281960281739}
@@ -35262,7 +35262,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281964216585
 GameObject:
   m_ObjectHideFlags: 0
@@ -35520,8 +35520,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 930
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281966538631}
   peelableRenderer: {fileID: 4058767281966538628}
@@ -35540,7 +35540,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281968252695
 GameObject:
   m_ObjectHideFlags: 0
@@ -35686,8 +35686,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1159
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281968252684}
   peelableRenderer: {fileID: 4058767281968252685}
@@ -35706,7 +35706,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281970129677
 GameObject:
   m_ObjectHideFlags: 0
@@ -35964,8 +35964,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1027
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281973720234}
   peelableRenderer: {fileID: 4058767281973720235}
@@ -35984,7 +35984,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281975423749
 GameObject:
   m_ObjectHideFlags: 0
@@ -36130,8 +36130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1146
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767281975423994}
   peelableRenderer: {fileID: 4058767281975423995}
@@ -36150,7 +36150,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767281992047906
 GameObject:
   m_ObjectHideFlags: 0
@@ -36632,8 +36632,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1065
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282010610435}
   peelableRenderer: {fileID: 4058767282010610432}
@@ -36652,7 +36652,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282012337411
 GameObject:
   m_ObjectHideFlags: 0
@@ -36910,8 +36910,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 971
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282016111689}
   peelableRenderer: {fileID: 4058767282016111702}
@@ -36930,7 +36930,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282016895532
 GameObject:
   m_ObjectHideFlags: 0
@@ -37300,8 +37300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1066
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282022885274}
   peelableRenderer: {fileID: 4058767282022885275}
@@ -37320,7 +37320,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282023482137
 GameObject:
   m_ObjectHideFlags: 0
@@ -37578,8 +37578,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 915
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282023986295}
   peelableRenderer: {fileID: 4058767282023986292}
@@ -37598,7 +37598,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282025295349
 GameObject:
   m_ObjectHideFlags: 0
@@ -37744,8 +37744,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1116
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282025295338}
   peelableRenderer: {fileID: 4058767282025295339}
@@ -37764,7 +37764,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282026904606
 GameObject:
   m_ObjectHideFlags: 0
@@ -38022,8 +38022,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1102
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282042414486}
   peelableRenderer: {fileID: 4058767282042414487}
@@ -38042,7 +38042,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282044771816
 GameObject:
   m_ObjectHideFlags: 0
@@ -38300,8 +38300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 902
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282047637805}
   peelableRenderer: {fileID: 4058767282047637802}
@@ -38320,7 +38320,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282048598397
 GameObject:
   m_ObjectHideFlags: 0
@@ -38578,8 +38578,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 977
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282049326794}
   peelableRenderer: {fileID: 4058767282049326795}
@@ -38598,7 +38598,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282054815067
 GameObject:
   m_ObjectHideFlags: 0
@@ -38856,8 +38856,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1019
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282070337812}
   peelableRenderer: {fileID: 4058767282070337813}
@@ -38876,7 +38876,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282076453765
 GameObject:
   m_ObjectHideFlags: 0
@@ -39022,8 +39022,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1024
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282076453498}
   peelableRenderer: {fileID: 4058767282076453499}
@@ -39042,7 +39042,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282077283446
 GameObject:
   m_ObjectHideFlags: 0
@@ -39188,8 +39188,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 926
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282077283439}
   peelableRenderer: {fileID: 4058767282077283436}
@@ -39208,7 +39208,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282079221423
 GameObject:
   m_ObjectHideFlags: 0
@@ -39354,8 +39354,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 978
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282079221412}
   peelableRenderer: {fileID: 4058767282079221413}
@@ -39374,7 +39374,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282080837397
 GameObject:
   m_ObjectHideFlags: 0
@@ -39632,8 +39632,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 994
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282082481812}
   peelableRenderer: {fileID: 4058767282082481813}
@@ -39652,7 +39652,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282082968595
 GameObject:
   m_ObjectHideFlags: 0
@@ -39910,8 +39910,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1105
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282090466848}
   peelableRenderer: {fileID: 4058767282090466849}
@@ -39930,7 +39930,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282092783918
 GameObject:
   m_ObjectHideFlags: 0
@@ -40076,8 +40076,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1134
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282092783911}
   peelableRenderer: {fileID: 4058767282092783908}
@@ -40096,7 +40096,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282093414395
 GameObject:
   m_ObjectHideFlags: 0
@@ -40242,8 +40242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1188
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282093414384}
   peelableRenderer: {fileID: 4058767282093414385}
@@ -40262,7 +40262,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282106395527
 GameObject:
   m_ObjectHideFlags: 0
@@ -40408,8 +40408,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 909
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282106395260}
   peelableRenderer: {fileID: 4058767282106395261}
@@ -40428,7 +40428,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282106568291
 GameObject:
   m_ObjectHideFlags: 0
@@ -40574,8 +40574,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1133
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282106568280}
   peelableRenderer: {fileID: 4058767282106568281}
@@ -40594,7 +40594,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282107070182
 GameObject:
   m_ObjectHideFlags: 0
@@ -40852,8 +40852,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 941
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282110996799}
   peelableRenderer: {fileID: 4058767282110996796}
@@ -40872,7 +40872,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282112042815
 GameObject:
   m_ObjectHideFlags: 0
@@ -41018,8 +41018,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1114
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282112042804}
   peelableRenderer: {fileID: 4058767282112042805}
@@ -41038,7 +41038,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282115776785
 GameObject:
   m_ObjectHideFlags: 0
@@ -41296,8 +41296,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1150
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282118418284}
   peelableRenderer: {fileID: 4058767282118418285}
@@ -41316,7 +41316,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282121034405
 GameObject:
   m_ObjectHideFlags: 0
@@ -41574,8 +41574,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1041
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282121908717}
   peelableRenderer: {fileID: 4058767282121908714}
@@ -41594,7 +41594,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282122218538
 GameObject:
   m_ObjectHideFlags: 0
@@ -41740,8 +41740,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1047
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282122218531}
   peelableRenderer: {fileID: 4058767282122218528}
@@ -41760,7 +41760,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282128424555
 GameObject:
   m_ObjectHideFlags: 0
@@ -42242,8 +42242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1158
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282136698318}
   peelableRenderer: {fileID: 4058767282136698319}
@@ -42262,7 +42262,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282141441580
 GameObject:
   m_ObjectHideFlags: 0
@@ -42856,8 +42856,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1108
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282153004277}
   peelableRenderer: {fileID: 4058767282153004274}
@@ -42876,7 +42876,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282157784538
 GameObject:
   m_ObjectHideFlags: 0
@@ -43134,8 +43134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1045
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282158674216}
   peelableRenderer: {fileID: 4058767282158674217}
@@ -43154,7 +43154,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282160461292
 GameObject:
   m_ObjectHideFlags: 0
@@ -43300,8 +43300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 968
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282160461285}
   peelableRenderer: {fileID: 4058767282160461282}
@@ -43320,7 +43320,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282163923199
 GameObject:
   m_ObjectHideFlags: 0
@@ -43578,8 +43578,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1199
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282164741783}
   peelableRenderer: {fileID: 4058767282164741780}
@@ -43598,7 +43598,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282178566134
 GameObject:
   m_ObjectHideFlags: 0
@@ -43744,8 +43744,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 905
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282178566127}
   peelableRenderer: {fileID: 4058767282178566124}
@@ -43764,7 +43764,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282185143734
 GameObject:
   m_ObjectHideFlags: 0
@@ -43910,8 +43910,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 985
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282185143727}
   peelableRenderer: {fileID: 4058767282185143724}
@@ -43930,7 +43930,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282186179471
 GameObject:
   m_ObjectHideFlags: 0
@@ -44076,8 +44076,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1063
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282186179460}
   peelableRenderer: {fileID: 4058767282186179461}
@@ -44096,7 +44096,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282187866413
 GameObject:
   m_ObjectHideFlags: 0
@@ -44242,8 +44242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1192
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282187866402}
   peelableRenderer: {fileID: 4058767282187866403}
@@ -44262,7 +44262,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282188182277
 GameObject:
   m_ObjectHideFlags: 0
@@ -44520,8 +44520,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1014
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282197144032}
   peelableRenderer: {fileID: 4058767282197144033}
@@ -44540,7 +44540,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282200305295
 GameObject:
   m_ObjectHideFlags: 0
@@ -44798,8 +44798,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1044
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282206116658}
   peelableRenderer: {fileID: 4058767282206116659}
@@ -44818,7 +44818,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282208308882
 GameObject:
   m_ObjectHideFlags: 0
@@ -45076,8 +45076,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1195
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282208970327}
   peelableRenderer: {fileID: 4058767282208970324}
@@ -45096,7 +45096,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282211138578
 GameObject:
   m_ObjectHideFlags: 0
@@ -45242,8 +45242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 927
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282211138571}
   peelableRenderer: {fileID: 4058767282211138568}
@@ -45262,7 +45262,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282212862206
 GameObject:
   m_ObjectHideFlags: 0
@@ -45408,8 +45408,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 976
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282212862199}
   peelableRenderer: {fileID: 4058767282212862196}
@@ -45428,7 +45428,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282218017540
 GameObject:
   m_ObjectHideFlags: 0
@@ -45798,8 +45798,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1033
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282222021694}
   peelableRenderer: {fileID: 4058767282222021695}
@@ -45818,7 +45818,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282225561663
 GameObject:
   m_ObjectHideFlags: 0
@@ -46300,8 +46300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1170
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282242492494}
   peelableRenderer: {fileID: 4058767282242492495}
@@ -46320,7 +46320,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282249838494
 GameObject:
   m_ObjectHideFlags: 0
@@ -46690,8 +46690,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1038
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282254572803}
   peelableRenderer: {fileID: 4058767282254572800}
@@ -46710,7 +46710,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282256969261
 GameObject:
   m_ObjectHideFlags: 0
@@ -46968,8 +46968,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1034
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282257793922}
   peelableRenderer: {fileID: 4058767282257793923}
@@ -46988,7 +46988,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282259407568
 GameObject:
   m_ObjectHideFlags: 0
@@ -47246,8 +47246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1048
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282263412139}
   peelableRenderer: {fileID: 4058767282263412136}
@@ -47266,7 +47266,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282266240392
 GameObject:
   m_ObjectHideFlags: 0
@@ -47524,8 +47524,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1189
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282285097586}
   peelableRenderer: {fileID: 4058767282285097587}
@@ -47544,7 +47544,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282286953924
 GameObject:
   m_ObjectHideFlags: 0
@@ -47802,8 +47802,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1030
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282290728882}
   peelableRenderer: {fileID: 4058767282290728883}
@@ -47822,7 +47822,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282297649555
 GameObject:
   m_ObjectHideFlags: 0
@@ -47968,8 +47968,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1178
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282297649544}
   peelableRenderer: {fileID: 4058767282297649545}
@@ -47988,7 +47988,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282298021853
 GameObject:
   m_ObjectHideFlags: 0
@@ -48134,8 +48134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 923
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282298021842}
   peelableRenderer: {fileID: 4058767282298021843}
@@ -48154,7 +48154,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282302304535
 GameObject:
   m_ObjectHideFlags: 0
@@ -48524,8 +48524,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1078
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282308138867}
   peelableRenderer: {fileID: 4058767282308138864}
@@ -48544,7 +48544,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282311118405
 GameObject:
   m_ObjectHideFlags: 0
@@ -48802,8 +48802,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1190
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282312432644}
   peelableRenderer: {fileID: 4058767282312432645}
@@ -48822,7 +48822,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282315258030
 GameObject:
   m_ObjectHideFlags: 0
@@ -48968,8 +48968,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 963
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282315258023}
   peelableRenderer: {fileID: 4058767282315258020}
@@ -48988,7 +48988,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282315428893
 GameObject:
   m_ObjectHideFlags: 0
@@ -49246,8 +49246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1123
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282318813656}
   peelableRenderer: {fileID: 4058767282318813657}
@@ -49266,7 +49266,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282320493361
 GameObject:
   m_ObjectHideFlags: 0
@@ -49412,8 +49412,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1112
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282320493366}
   peelableRenderer: {fileID: 4058767282320493367}
@@ -49432,7 +49432,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282321466440
 GameObject:
   m_ObjectHideFlags: 0
@@ -50026,8 +50026,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 990
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282329438645}
   peelableRenderer: {fileID: 4058767282329438642}
@@ -50046,7 +50046,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282333853395
 GameObject:
   m_ObjectHideFlags: 0
@@ -50192,8 +50192,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1046
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282333853384}
   peelableRenderer: {fileID: 4058767282333853385}
@@ -50212,7 +50212,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282336065011
 GameObject:
   m_ObjectHideFlags: 0
@@ -50470,8 +50470,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1113
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282338804785}
   peelableRenderer: {fileID: 4058767282338804798}
@@ -50490,7 +50490,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282339467580
 GameObject:
   m_ObjectHideFlags: 0
@@ -50636,8 +50636,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1196
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282339467573}
   peelableRenderer: {fileID: 4058767282339467570}
@@ -50656,7 +50656,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282343730144
 GameObject:
   m_ObjectHideFlags: 0
@@ -50914,8 +50914,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1182
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282343877278}
   peelableRenderer: {fileID: 4058767282343877279}
@@ -50934,7 +50934,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282350285502
 GameObject:
   m_ObjectHideFlags: 0
@@ -51304,8 +51304,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1138
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282365712970}
   peelableRenderer: {fileID: 4058767282365712971}
@@ -51324,7 +51324,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282365890034
 GameObject:
   m_ObjectHideFlags: 0
@@ -51470,8 +51470,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1075
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282365890027}
   peelableRenderer: {fileID: 4058767282365890024}
@@ -51490,7 +51490,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282367731808
 GameObject:
   m_ObjectHideFlags: 0
@@ -52731,8 +52731,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1175
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282398205517}
   peelableRenderer: {fileID: 4058767282398205514}
@@ -52751,7 +52751,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282398653277
 GameObject:
   m_ObjectHideFlags: 0
@@ -52897,8 +52897,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1076
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282398653266}
   peelableRenderer: {fileID: 4058767282398653267}
@@ -52917,7 +52917,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282401161031
 GameObject:
   m_ObjectHideFlags: 0
@@ -53063,8 +53063,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1156
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282401161020}
   peelableRenderer: {fileID: 4058767282401161021}
@@ -53083,7 +53083,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282407305274
 GameObject:
   m_ObjectHideFlags: 0
@@ -53341,8 +53341,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 932
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282416913125}
   peelableRenderer: {fileID: 4058767282416913122}
@@ -53361,7 +53361,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282418105134
 GameObject:
   m_ObjectHideFlags: 0
@@ -53619,8 +53619,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1081
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282419109694}
   peelableRenderer: {fileID: 4058767282419109695}
@@ -53639,7 +53639,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282421932097
 GameObject:
   m_ObjectHideFlags: 0
@@ -53785,8 +53785,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1025
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282421932102}
   peelableRenderer: {fileID: 4058767282421932103}
@@ -53805,7 +53805,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282430305348
 GameObject:
   m_ObjectHideFlags: 0
@@ -54063,8 +54063,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1056
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282437945230}
   peelableRenderer: {fileID: 4058767282437945231}
@@ -54083,7 +54083,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282444716723
 GameObject:
   m_ObjectHideFlags: 0
@@ -54229,8 +54229,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1194
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282444716712}
   peelableRenderer: {fileID: 4058767282444716713}
@@ -54249,7 +54249,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282446571887
 GameObject:
   m_ObjectHideFlags: 0
@@ -54731,8 +54731,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1171
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282456827138}
   peelableRenderer: {fileID: 4058767282456827139}
@@ -54751,7 +54751,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282457565542
 GameObject:
   m_ObjectHideFlags: 0
@@ -55009,8 +55009,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1023
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282457883809}
   peelableRenderer: {fileID: 4058767282457883822}
@@ -55029,7 +55029,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282462942984
 GameObject:
   m_ObjectHideFlags: 0
@@ -55287,8 +55287,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1143
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282463351888}
   peelableRenderer: {fileID: 4058767282463351889}
@@ -55307,7 +55307,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282464904361
 GameObject:
   m_ObjectHideFlags: 0
@@ -55453,8 +55453,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 935
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282464904366}
   peelableRenderer: {fileID: 4058767282464904367}
@@ -55473,7 +55473,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282480272097
 GameObject:
   m_ObjectHideFlags: 0
@@ -55731,8 +55731,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 943
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282482642956}
   peelableRenderer: {fileID: 4058767282482642957}
@@ -55751,7 +55751,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282485431329
 GameObject:
   m_ObjectHideFlags: 0
@@ -56121,8 +56121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1059
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282498921481}
   peelableRenderer: {fileID: 4058767282498921494}
@@ -56141,7 +56141,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282502622217
 GameObject:
   m_ObjectHideFlags: 0
@@ -56287,8 +56287,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 910
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282502622222}
   peelableRenderer: {fileID: 4058767282502622223}
@@ -56307,7 +56307,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282503590987
 GameObject:
   m_ObjectHideFlags: 0
@@ -56565,8 +56565,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1122
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282506396872}
   peelableRenderer: {fileID: 4058767282506396873}
@@ -56585,7 +56585,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282509928191
 GameObject:
   m_ObjectHideFlags: 0
@@ -56731,8 +56731,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1026
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282509928180}
   peelableRenderer: {fileID: 4058767282509928181}
@@ -56751,7 +56751,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282510820569
 GameObject:
   m_ObjectHideFlags: 0
@@ -56897,8 +56897,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1179
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282510820574}
   peelableRenderer: {fileID: 4058767282510820575}
@@ -56917,7 +56917,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282510989656
 GameObject:
   m_ObjectHideFlags: 0
@@ -57063,8 +57063,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 901
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282510989649}
   peelableRenderer: {fileID: 4058767282510989662}
@@ -57083,7 +57083,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282511278210
 GameObject:
   m_ObjectHideFlags: 0
@@ -57229,8 +57229,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1013
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282511278971}
   peelableRenderer: {fileID: 4058767282511278968}
@@ -57249,7 +57249,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282513006841
 GameObject:
   m_ObjectHideFlags: 0
@@ -57395,8 +57395,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 950
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282513006846}
   peelableRenderer: {fileID: 4058767282513006847}
@@ -57415,7 +57415,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282514237711
 GameObject:
   m_ObjectHideFlags: 0
@@ -57561,8 +57561,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1167
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282514237700}
   peelableRenderer: {fileID: 4058767282514237701}
@@ -57581,7 +57581,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282518459747
 GameObject:
   m_ObjectHideFlags: 0
@@ -57727,8 +57727,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 953
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282518459736}
   peelableRenderer: {fileID: 4058767282518459737}
@@ -57747,7 +57747,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282519452658
 GameObject:
   m_ObjectHideFlags: 0
@@ -57893,8 +57893,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1098
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282519452651}
   peelableRenderer: {fileID: 4058767282519452648}
@@ -57913,7 +57913,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282519548652
 GameObject:
   m_ObjectHideFlags: 0
@@ -58059,8 +58059,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1103
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282519548645}
   peelableRenderer: {fileID: 4058767282519548642}
@@ -58079,7 +58079,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282520943111
 GameObject:
   m_ObjectHideFlags: 0
@@ -58449,8 +58449,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1087
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282536766991}
   peelableRenderer: {fileID: 4058767282536766988}
@@ -58469,7 +58469,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282548941891
 GameObject:
   m_ObjectHideFlags: 0
@@ -58727,8 +58727,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 955
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282551753584}
   peelableRenderer: {fileID: 4058767282551753585}
@@ -58747,7 +58747,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282553353784
 GameObject:
   m_ObjectHideFlags: 0
@@ -59005,8 +59005,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1031
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282562519713}
   peelableRenderer: {fileID: 4058767282562519726}
@@ -59025,7 +59025,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282563486832
 GameObject:
   m_ObjectHideFlags: 0
@@ -59171,8 +59171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1147
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282563486825}
   peelableRenderer: {fileID: 4058767282563486838}
@@ -59191,7 +59191,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282565005124
 GameObject:
   m_ObjectHideFlags: 0
@@ -59673,8 +59673,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 993
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282575334443}
   peelableRenderer: {fileID: 4058767282575334440}
@@ -59693,7 +59693,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282577638341
 GameObject:
   m_ObjectHideFlags: 0
@@ -60175,8 +60175,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 973
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282580185152}
   peelableRenderer: {fileID: 4058767282580185153}
@@ -60195,7 +60195,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282585759860
 GameObject:
   m_ObjectHideFlags: 0
@@ -60453,8 +60453,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1037
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282586088796}
   peelableRenderer: {fileID: 4058767282586088797}
@@ -60473,7 +60473,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282605179879
 GameObject:
   m_ObjectHideFlags: 0
@@ -60731,8 +60731,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1104
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282607039341}
   peelableRenderer: {fileID: 4058767282607039338}
@@ -60751,7 +60751,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282610855927
 GameObject:
   m_ObjectHideFlags: 0
@@ -61121,8 +61121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1164
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282633398809}
   peelableRenderer: {fileID: 4058767282633398822}
@@ -61141,7 +61141,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282634239420
 GameObject:
   m_ObjectHideFlags: 0
@@ -61511,8 +61511,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1074
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282639501416}
   peelableRenderer: {fileID: 4058767282639501417}
@@ -61531,7 +61531,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282640091096
 GameObject:
   m_ObjectHideFlags: 0
@@ -61789,8 +61789,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1137
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282640639139}
   peelableRenderer: {fileID: 4058767282640639136}
@@ -61809,7 +61809,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282646562360
 GameObject:
   m_ObjectHideFlags: 0
@@ -61955,8 +61955,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 972
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282646562353}
   peelableRenderer: {fileID: 4058767282646562366}
@@ -61975,7 +61975,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282650123347
 GameObject:
   m_ObjectHideFlags: 0
@@ -62121,8 +62121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1121
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282650123336}
   peelableRenderer: {fileID: 4058767282650123337}
@@ -62141,7 +62141,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282655685367
 GameObject:
   m_ObjectHideFlags: 0
@@ -62287,8 +62287,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 987
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282655685356}
   peelableRenderer: {fileID: 4058767282655685357}
@@ -62307,7 +62307,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282663498976
 GameObject:
   m_ObjectHideFlags: 0
@@ -62565,8 +62565,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1003
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282663980901}
   peelableRenderer: {fileID: 4058767282663980898}
@@ -62585,7 +62585,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282676332936
 GameObject:
   m_ObjectHideFlags: 0
@@ -63067,8 +63067,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1174
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282692158149}
   peelableRenderer: {fileID: 4058767282692158146}
@@ -63087,7 +63087,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282692861938
 GameObject:
   m_ObjectHideFlags: 0
@@ -63345,8 +63345,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1086
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282694636632}
   peelableRenderer: {fileID: 4058767282694636633}
@@ -63365,7 +63365,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282701839091
 GameObject:
   m_ObjectHideFlags: 0
@@ -63511,8 +63511,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 942
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282701839080}
   peelableRenderer: {fileID: 4058767282701839081}
@@ -63531,7 +63531,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282701996932
 GameObject:
   m_ObjectHideFlags: 0
@@ -63677,8 +63677,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 979
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282701996669}
   peelableRenderer: {fileID: 4058767282701996666}
@@ -63697,7 +63697,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282708663689
 GameObject:
   m_ObjectHideFlags: 0
@@ -63955,8 +63955,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1004
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282711248793}
   peelableRenderer: {fileID: 4058767282711248806}
@@ -63975,7 +63975,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282716179560
 GameObject:
   m_ObjectHideFlags: 0
@@ -64457,8 +64457,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1029
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282727355554}
   peelableRenderer: {fileID: 4058767282727355555}
@@ -64477,7 +64477,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282728466838
 GameObject:
   m_ObjectHideFlags: 0
@@ -64735,8 +64735,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 989
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282730424410}
   peelableRenderer: {fileID: 4058767282730424411}
@@ -64755,7 +64755,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282733596220
 GameObject:
   m_ObjectHideFlags: 0
@@ -64901,8 +64901,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 911
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282733596213}
   peelableRenderer: {fileID: 4058767282733596210}
@@ -64921,7 +64921,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282734217582
 GameObject:
   m_ObjectHideFlags: 0
@@ -65291,8 +65291,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 906
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282739154319}
   peelableRenderer: {fileID: 4058767282739154316}
@@ -65311,7 +65311,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282740960651
 GameObject:
   m_ObjectHideFlags: 0
@@ -65457,8 +65457,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 970
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282740960640}
   peelableRenderer: {fileID: 4058767282740960641}
@@ -65477,7 +65477,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282741861751
 GameObject:
   m_ObjectHideFlags: 0
@@ -65623,8 +65623,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1084
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282741861740}
   peelableRenderer: {fileID: 4058767282741861741}
@@ -65643,7 +65643,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282752871540
 GameObject:
   m_ObjectHideFlags: 0
@@ -65789,8 +65789,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1035
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282752871533}
   peelableRenderer: {fileID: 4058767282752871530}
@@ -65809,7 +65809,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282753510616
 GameObject:
   m_ObjectHideFlags: 0
@@ -65955,8 +65955,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 965
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282753510609}
   peelableRenderer: {fileID: 4058767282753510622}
@@ -65975,7 +65975,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282758508211
 GameObject:
   m_ObjectHideFlags: 0
@@ -66345,8 +66345,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 957
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282764346618}
   peelableRenderer: {fileID: 4058767282764346619}
@@ -66365,7 +66365,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282767322330
 GameObject:
   m_ObjectHideFlags: 0
@@ -66959,8 +66959,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1118
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282777145131}
   peelableRenderer: {fileID: 4058767282777145128}
@@ -66979,7 +66979,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282779318964
 GameObject:
   m_ObjectHideFlags: 0
@@ -67125,8 +67125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1177
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282779318957}
   peelableRenderer: {fileID: 4058767282779318954}
@@ -67145,7 +67145,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282779717551
 GameObject:
   m_ObjectHideFlags: 0
@@ -67403,8 +67403,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 939
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282786526083}
   peelableRenderer: {fileID: 4058767282786526080}
@@ -67423,7 +67423,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282788215078
 GameObject:
   m_ObjectHideFlags: 0
@@ -68017,8 +68017,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1002
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282821292915}
   peelableRenderer: {fileID: 4058767282821292912}
@@ -68037,7 +68037,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282825884998
 GameObject:
   m_ObjectHideFlags: 0
@@ -68183,8 +68183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1136
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282825884991}
   peelableRenderer: {fileID: 4058767282825884988}
@@ -68203,7 +68203,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282826673458
 GameObject:
   m_ObjectHideFlags: 0
@@ -68461,8 +68461,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 982
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282834169999}
   peelableRenderer: {fileID: 4058767282834169996}
@@ -68481,7 +68481,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282834197952
 GameObject:
   m_ObjectHideFlags: 0
@@ -68739,8 +68739,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1095
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282836837768}
   peelableRenderer: {fileID: 4058767282836837769}
@@ -68759,7 +68759,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282837827253
 GameObject:
   m_ObjectHideFlags: 0
@@ -68905,8 +68905,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1153
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282837827242}
   peelableRenderer: {fileID: 4058767282837827243}
@@ -68925,7 +68925,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282839621430
 GameObject:
   m_ObjectHideFlags: 0
@@ -69071,8 +69071,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1083
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282839621423}
   peelableRenderer: {fileID: 4058767282839621420}
@@ -69091,7 +69091,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282840310259
 GameObject:
   m_ObjectHideFlags: 0
@@ -69909,8 +69909,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 999
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282865175706}
   peelableRenderer: {fileID: 4058767282865175707}
@@ -69929,7 +69929,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282867471635
 GameObject:
   m_ObjectHideFlags: 0
@@ -70075,8 +70075,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 954
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282867471624}
   peelableRenderer: {fileID: 4058767282867471625}
@@ -70095,7 +70095,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282870842209
 GameObject:
   m_ObjectHideFlags: 0
@@ -70241,8 +70241,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1187
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282870842214}
   peelableRenderer: {fileID: 4058767282870842215}
@@ -70261,7 +70261,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282878868196
 GameObject:
   m_ObjectHideFlags: 0
@@ -70519,8 +70519,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 919
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282881904636}
   peelableRenderer: {fileID: 4058767282881904637}
@@ -70539,7 +70539,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282885286229
 GameObject:
   m_ObjectHideFlags: 0
@@ -70685,8 +70685,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1120
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282885286218}
   peelableRenderer: {fileID: 4058767282885286219}
@@ -70705,7 +70705,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282885437852
 GameObject:
   m_ObjectHideFlags: 0
@@ -71171,13 +71171,13 @@ MonoBehaviour:
   blockHolder: {fileID: 4058767282393735949}
   peelableBlockHolder: {fileID: 4058767282393735948}
   mat: {fileID: 2100000, guid: fc10e977d8fc80b409457d59dc44b24a, type: 2}
-  power: 30
-  speed: 30
+  power: 40
+  speed: 10
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.32941177, g: 0.2627451, b: 0.19607843, a: 1}
   blocksNumber: 4
-  price: 150
+  price: 50
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   copyBlockHolder: {fileID: 4058767281768358267}
 --- !u!1 &4058767282892254770
@@ -71325,8 +71325,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1124
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282892254763}
   peelableRenderer: {fileID: 4058767282892254760}
@@ -71345,7 +71345,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282896578083
 GameObject:
   m_ObjectHideFlags: 0
@@ -71491,8 +71491,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1142
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282896578072}
   peelableRenderer: {fileID: 4058767282896578073}
@@ -71511,7 +71511,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282898225210
 GameObject:
   m_ObjectHideFlags: 0
@@ -71657,8 +71657,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 925
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282898225203}
   peelableRenderer: {fileID: 4058767282898225200}
@@ -71677,7 +71677,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282900144269
 GameObject:
   m_ObjectHideFlags: 0
@@ -71823,8 +71823,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 917
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282900144258}
   peelableRenderer: {fileID: 4058767282900144259}
@@ -71843,7 +71843,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282903004188
 GameObject:
   m_ObjectHideFlags: 0
@@ -72213,8 +72213,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1161
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282913350752}
   peelableRenderer: {fileID: 4058767282913350753}
@@ -72233,7 +72233,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282914349530
 GameObject:
   m_ObjectHideFlags: 0
@@ -72379,8 +72379,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 956
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282914349523}
   peelableRenderer: {fileID: 4058767282914349520}
@@ -72399,7 +72399,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282915630484
 GameObject:
   m_ObjectHideFlags: 0
@@ -72545,8 +72545,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1185
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282915630477}
   peelableRenderer: {fileID: 4058767282915630474}
@@ -72565,7 +72565,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282919386711
 GameObject:
   m_ObjectHideFlags: 0
@@ -72823,8 +72823,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1169
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282923940800}
   peelableRenderer: {fileID: 4058767282923940801}
@@ -72843,7 +72843,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282929507287
 GameObject:
   m_ObjectHideFlags: 0
@@ -72989,8 +72989,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1139
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282929507276}
   peelableRenderer: {fileID: 4058767282929507277}
@@ -73009,7 +73009,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282941681255
 GameObject:
   m_ObjectHideFlags: 0
@@ -73267,8 +73267,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1165
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282941855747}
   peelableRenderer: {fileID: 4058767282941855744}
@@ -73287,7 +73287,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282942160411
 GameObject:
   m_ObjectHideFlags: 0
@@ -73545,8 +73545,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1140
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282944653381}
   peelableRenderer: {fileID: 4058767282944653378}
@@ -73565,7 +73565,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282946992588
 GameObject:
   m_ObjectHideFlags: 0
@@ -73711,8 +73711,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1119
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282946992581}
   peelableRenderer: {fileID: 4058767282946992578}
@@ -73731,7 +73731,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282948384533
 GameObject:
   m_ObjectHideFlags: 0
@@ -74101,8 +74101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1193
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282958152303}
   peelableRenderer: {fileID: 4058767282958152300}
@@ -74121,7 +74121,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282961249023
 GameObject:
   m_ObjectHideFlags: 0
@@ -74379,8 +74379,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 947
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282969312107}
   peelableRenderer: {fileID: 4058767282969312104}
@@ -74399,7 +74399,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282972160211
 GameObject:
   m_ObjectHideFlags: 0
@@ -74545,8 +74545,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1115
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282972160200}
   peelableRenderer: {fileID: 4058767282972160201}
@@ -74565,7 +74565,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282977380982
 GameObject:
   m_ObjectHideFlags: 0
@@ -74823,8 +74823,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1054
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282980294598}
   peelableRenderer: {fileID: 4058767282980294599}
@@ -74843,7 +74843,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282985249214
 GameObject:
   m_ObjectHideFlags: 0
@@ -75213,8 +75213,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1077
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282990855411}
   peelableRenderer: {fileID: 4058767282990855408}
@@ -75233,7 +75233,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282992631888
 GameObject:
   m_ObjectHideFlags: 0
@@ -75379,8 +75379,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1093
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767282992631881}
   peelableRenderer: {fileID: 4058767282992631894}
@@ -75399,7 +75399,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767282992632394
 GameObject:
   m_ObjectHideFlags: 0
@@ -75881,8 +75881,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1021
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283016814204}
   peelableRenderer: {fileID: 4058767283016814205}
@@ -75901,7 +75901,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283022194635
 GameObject:
   m_ObjectHideFlags: 0
@@ -76159,8 +76159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1032
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283024294253}
   peelableRenderer: {fileID: 4058767283024294250}
@@ -76179,7 +76179,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283028026656
 GameObject:
   m_ObjectHideFlags: 0
@@ -76325,8 +76325,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1043
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283028026649}
   peelableRenderer: {fileID: 4058767283028026662}
@@ -76345,7 +76345,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283029294475
 GameObject:
   m_ObjectHideFlags: 0
@@ -76491,8 +76491,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1055
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283029294464}
   peelableRenderer: {fileID: 4058767283029294465}
@@ -76511,7 +76511,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283029803566
 GameObject:
   m_ObjectHideFlags: 0
@@ -76769,8 +76769,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1073
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283031396752}
   peelableRenderer: {fileID: 4058767283031396753}
@@ -76789,7 +76789,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283031618450
 GameObject:
   m_ObjectHideFlags: 0
@@ -77159,8 +77159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1198
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283033638824}
   peelableRenderer: {fileID: 4058767283033638825}
@@ -77179,7 +77179,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283037450155
 GameObject:
   m_ObjectHideFlags: 0
@@ -77437,8 +77437,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1183
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283043687023}
   peelableRenderer: {fileID: 4058767283043687020}
@@ -77457,7 +77457,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283045199982
 GameObject:
   m_ObjectHideFlags: 0
@@ -77827,8 +77827,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1040
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283048810294}
   peelableRenderer: {fileID: 4058767283048810295}
@@ -77847,7 +77847,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283049880088
 GameObject:
   m_ObjectHideFlags: 0
@@ -78329,8 +78329,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1099
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283056799189}
   peelableRenderer: {fileID: 4058767283056799186}
@@ -78349,7 +78349,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283060324906
 GameObject:
   m_ObjectHideFlags: 0
@@ -78607,8 +78607,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1064
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283064958025}
   peelableRenderer: {fileID: 4058767283064958038}
@@ -78627,7 +78627,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283068400852
 GameObject:
   m_ObjectHideFlags: 0
@@ -78773,8 +78773,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 984
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283068400845}
   peelableRenderer: {fileID: 4058767283068400842}
@@ -78793,7 +78793,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283071250344
 GameObject:
   m_ObjectHideFlags: 0
@@ -79387,8 +79387,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 992
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283114070312}
   peelableRenderer: {fileID: 4058767283114070313}
@@ -79407,7 +79407,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283115004852
 GameObject:
   m_ObjectHideFlags: 0
@@ -79553,8 +79553,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1012
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283115004845}
   peelableRenderer: {fileID: 4058767283115004842}
@@ -79573,7 +79573,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283121763553
 GameObject:
   m_ObjectHideFlags: 0
@@ -79719,8 +79719,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1110
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283121763558}
   peelableRenderer: {fileID: 4058767283121763559}
@@ -79739,7 +79739,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283123783583
 GameObject:
   m_ObjectHideFlags: 0
@@ -79997,8 +79997,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1160
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283124408726}
   peelableRenderer: {fileID: 4058767283124408727}
@@ -80017,7 +80017,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283127793046
 GameObject:
   m_ObjectHideFlags: 0
@@ -80163,8 +80163,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1028
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283127793039}
   peelableRenderer: {fileID: 4058767283127793036}
@@ -80183,7 +80183,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283132645920
 GameObject:
   m_ObjectHideFlags: 0
@@ -80665,8 +80665,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1168
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283137762888}
   peelableRenderer: {fileID: 4058767283137762889}
@@ -80685,7 +80685,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283141095025
 GameObject:
   m_ObjectHideFlags: 0
@@ -80831,8 +80831,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1096
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283141095030}
   peelableRenderer: {fileID: 4058767283141095031}
@@ -80851,7 +80851,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283143095975
 GameObject:
   m_ObjectHideFlags: 0
@@ -81109,8 +81109,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1129
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283147715068}
   peelableRenderer: {fileID: 4058767283147715069}
@@ -81129,7 +81129,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283151358965
 GameObject:
   m_ObjectHideFlags: 0
@@ -81275,8 +81275,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1186
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283151358954}
   peelableRenderer: {fileID: 4058767283151358955}
@@ -81295,7 +81295,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283153179992
 GameObject:
   m_ObjectHideFlags: 0
@@ -81441,8 +81441,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1005
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283153179985}
   peelableRenderer: {fileID: 4058767283153179998}
@@ -81461,7 +81461,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283153784466
 GameObject:
   m_ObjectHideFlags: 0
@@ -81831,8 +81831,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1009
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283158946312}
   peelableRenderer: {fileID: 4058767283158946313}
@@ -81851,7 +81851,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283163933189
 GameObject:
   m_ObjectHideFlags: 0
@@ -81997,8 +81997,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 933
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283163933434}
   peelableRenderer: {fileID: 4058767283163933435}
@@ -82017,7 +82017,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283165067350
 GameObject:
   m_ObjectHideFlags: 0
@@ -82499,8 +82499,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1016
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283173213344}
   peelableRenderer: {fileID: 4058767283173213345}
@@ -82519,7 +82519,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283173842026
 GameObject:
   m_ObjectHideFlags: 0
@@ -82777,8 +82777,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 913
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283177970063}
   peelableRenderer: {fileID: 4058767283177970060}
@@ -82797,7 +82797,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283179892994
 GameObject:
   m_ObjectHideFlags: 0
@@ -83055,8 +83055,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 937
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283179937005}
   peelableRenderer: {fileID: 4058767283179937002}
@@ -83075,7 +83075,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283181897293
 GameObject:
   m_ObjectHideFlags: 0
@@ -83333,8 +83333,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1172
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283182602466}
   peelableRenderer: {fileID: 4058767283182602467}
@@ -83353,7 +83353,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283192910924
 GameObject:
   m_ObjectHideFlags: 0
@@ -83499,8 +83499,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1125
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283192910917}
   peelableRenderer: {fileID: 4058767283192910914}
@@ -83519,7 +83519,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283196116039
 GameObject:
   m_ObjectHideFlags: 0
@@ -83777,8 +83777,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1001
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283204888223}
   peelableRenderer: {fileID: 4058767283204888220}
@@ -83797,7 +83797,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283211817458
 GameObject:
   m_ObjectHideFlags: 0
@@ -83943,8 +83943,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1007
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283211817451}
   peelableRenderer: {fileID: 4058767283211817448}
@@ -83963,7 +83963,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283226857393
 GameObject:
   m_ObjectHideFlags: 0
@@ -84221,8 +84221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1117
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283228493569}
   peelableRenderer: {fileID: 4058767283228493582}
@@ -84241,7 +84241,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283234558217
 GameObject:
   m_ObjectHideFlags: 0
@@ -84499,8 +84499,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 936
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283240556377}
   peelableRenderer: {fileID: 4058767283240556390}
@@ -84519,7 +84519,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283244286647
 GameObject:
   m_ObjectHideFlags: 0
@@ -84665,8 +84665,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 952
-  power: 30
-  speedAmount: 30
+  power: 40
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4058767283244286636}
   peelableRenderer: {fileID: 4058767283244286637}
@@ -84685,7 +84685,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 150
+  price: 50
 --- !u!1 &4058767283244856683
 GameObject:
   m_ObjectHideFlags: 0

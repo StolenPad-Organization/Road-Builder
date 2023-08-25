@@ -369,6 +369,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1980631460545302305, guid: ef8dcc896440f364dbd9896e151cbcae, type: 3}
+      propertyPath: costAddPrecentage
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2047016007761547782, guid: ef8dcc896440f364dbd9896e151cbcae, type: 3}
       propertyPath: m_Name
       value: Scrape Upgrade
@@ -769,6 +773,10 @@ PrefabInstance:
     - target: {fileID: 1980631460545302305, guid: ef8dcc896440f364dbd9896e151cbcae, type: 3}
       propertyPath: upgradeType
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980631460545302305, guid: ef8dcc896440f364dbd9896e151cbcae, type: 3}
+      propertyPath: costAddPrecentage
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2047016007761547782, guid: ef8dcc896440f364dbd9896e151cbcae, type: 3}
       propertyPath: m_Name
