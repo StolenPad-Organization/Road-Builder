@@ -11,6 +11,7 @@ public static class EventManager
 
     #region HapticEvents
     public static Action<vibrationTypes> invokeHaptic;
+    public static Action<bool> SwitchHaptic;
     #endregion
 
     #region Ending Events

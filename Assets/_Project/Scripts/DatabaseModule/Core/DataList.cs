@@ -8,4 +8,5 @@ public class DataList : ScriptableObject
     public List<UpgradeData> UpgradeDatas;
     public List<LevelProgressData> LevelProgressDatas;
     public List<MachineUpgradeData> MachineUpgradeDatas;
+    public bool useHaptic;
 }
