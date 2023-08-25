@@ -26,6 +26,12 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Transform upgradePointTarget;
     [SerializeField] private GameObject upgradePointPrefab;
 
+    [Header("State UI")]
+    [SerializeField] private TextMeshProUGUI StepText;
+    [SerializeField] private string peeling;
+    [SerializeField] private string building;
+    [SerializeField] private string painting;
+
     private void Awake()
     {
         instance = this;
@@ -177,5 +183,23 @@ public class UIManager : MonoBehaviour
         pos = Camera.main.WorldToScreenPoint(pos);
         pos.z = 0;
         return pos;
+    }
+
+    public void UpdateStepText()
+    {
+        switch (GameManager.instance.currentZone.zoneState)
+        {
+            case ZoneState.PeelingStage:
+                StepText.text = peeling;
+                break;
+            case ZoneState.BuildingStage:
+                StepText.text = building;
+                break;
+            case ZoneState.PaintingStage:
+                StepText.text = painting;
+                break;
+            default:
+                break;
+        }
     }
 }

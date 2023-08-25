@@ -279,18 +279,18 @@ public class PlayerController : MonoBehaviour
         Peelable c;
         for (int i = 0; i < x; i++)
         {
-            //GameManager.instance.currentZone.RemoveCollectableData(true, collectables[0].collectableType, collectables[0].peelable);
             c = collectables[0];
             collectables.Remove(c);
             c.gameObject.SetActive(false);
             c.peelableCopy.gameObject.SetActive(false);
+            GameManager.instance.currentZone.RemoveCollectableData(true, c.index);
         }
         if (wheelBarrow != null)
         {
             x = wheelBarrow.collectables.Count;
             for (int i = 0; i < x; i++)
             {
-                //GameManager.instance.currentZone.RemoveCollectableData(false, wheelBarrow.collectables[0].collectableType, wheelBarrow.collectables[0].peelable);
+                GameManager.instance.currentZone.RemoveCollectableData(false, wheelBarrow.collectables[0].index);
                 wheelBarrow.collectables.Remove(wheelBarrow.collectables[0]);
             }
         }
