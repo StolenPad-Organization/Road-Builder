@@ -16,7 +16,7 @@ MonoBehaviour:
     LevelValue: 1
     LevelTextValue: 1
   PlayerData:
-    Money: 0
+    Money: 999999999
     UpgradePoints: 0
     PlayerPosition: {x: 0, y: 0, z: 0}
     PlayerRotation: {x: -0, y: 0, z: 0}
@@ -36,8 +36,8 @@ MonoBehaviour:
   - upgradeType: 1
     Loops: 0
     Level: 1
-    Value: 30
-    OriginalValue: 30
+    Value: 1000
+    OriginalValue: 1000
     StepIndex: 0
     Cost: 20
   LevelProgressDatas:
