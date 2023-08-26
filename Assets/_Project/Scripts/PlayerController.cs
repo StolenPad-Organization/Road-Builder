@@ -232,6 +232,13 @@ public class PlayerController : MonoBehaviour
         RemovePeelingAndCollectingTools();
         asphaltMachine = _asphaltMachine;
         movementController.canMove = false;
+
+        StartCoroutine(AshphaltMachinePick(playerSeat, _asphaltMachine));
+    }
+
+    private IEnumerator AshphaltMachinePick(Transform playerSeat, BuildMachine _asphaltMachine)
+    {
+        yield return new WaitForSeconds(0.75f);
         if (asphaltMachine.drivable)
         {
             movementController.ToggleMovementAnimation(false);
