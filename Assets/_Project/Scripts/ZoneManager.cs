@@ -207,7 +207,6 @@ public class ZoneManager : MonoBehaviour
     {
         playerData.playerCollectables.Clear();
         playerData.wheelBarrowCollectables.Clear();
-        Database.Instance.SetPlayerData(playerData);
 
         SendProgressionEvent(ProgressionStatus.Complete);
         EventManager.invokeHaptic.Invoke(vibrationTypes.Success);

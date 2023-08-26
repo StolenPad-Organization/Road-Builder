@@ -40,6 +40,7 @@ public class VibrationManager : SingletonMB<VibrationManager>
         {
             Database.Instance.SetVibrationData(true);
         }
+        EventManager.SwitchHaptic.Invoke(Database.Instance.GetVibrationData());
         SetVibrationImage();
     }
 
