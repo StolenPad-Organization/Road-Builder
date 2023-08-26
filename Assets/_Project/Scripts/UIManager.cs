@@ -107,9 +107,9 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            if(b/100 != 0)
-                b /= 100;
-            return a + "." + b +" k";
+            if (b / 10 != 0)
+                b /= 10;
+            return a + "." + b.ToString("00") + " k";
         }
     }
 
