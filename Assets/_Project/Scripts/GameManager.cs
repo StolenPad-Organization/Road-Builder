@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Start()
     {
+        UIManager.instance.transitionAnim.gameObject.SetActive(true);
         DefaultAnalytics.GameplayStarted();
         Application.targetFrameRate = 60;
         yield return new WaitForSeconds(0.1f);
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
         LoadLevel();
         yield return new WaitForSeconds(0.1f);
         gameStarted = true;
+        UIManager.instance.transitionAnim.enabled = true;
     }
 
     void Update()

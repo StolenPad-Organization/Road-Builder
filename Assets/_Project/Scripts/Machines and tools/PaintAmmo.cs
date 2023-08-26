@@ -38,6 +38,7 @@ public class PaintAmmo : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (PlayerController.instance.paintMachine == null) return;
         filling = true;
         PlayerController.instance.paintMachine.OnFillStart();
         nextFill = 0;

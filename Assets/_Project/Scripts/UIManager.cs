@@ -15,6 +15,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private BuildMachineUpgradeMenu buildMachineUpgradeMenu;
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private ProgressUIManager progressBar;
+    public Animator transitionAnim;
 
     [Header("Money UI Effect")]
     [SerializeField] private Transform moneyTarget;
