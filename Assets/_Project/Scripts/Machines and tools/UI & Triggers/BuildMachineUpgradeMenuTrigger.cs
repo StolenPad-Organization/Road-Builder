@@ -23,11 +23,13 @@ public class BuildMachineUpgradeMenuTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         uIManager.ShowMachineUpgradeMenu();
+        PlayerController.instance.ActivateUpgradeCamera(true);
     }
 
     private void OnTriggerExit(Collider other)
     {
         uIManager.HideMachineUpgradeMenu();
+        PlayerController.instance.ActivateUpgradeCamera(false);
     }
 
     private void PlayUpgradeEffect()

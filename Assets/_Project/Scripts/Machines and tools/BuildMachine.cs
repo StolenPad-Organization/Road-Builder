@@ -38,7 +38,7 @@ public class BuildMachine : MonoBehaviour
     [SerializeField] private int[] consumeRateUpgrade;
 
     [Header("Machine Icon")]
-    [SerializeField] private GameObject machineIcon;
+    [SerializeField] private MachineIconController machineIcon;
 
     void Start()
     {
@@ -72,7 +72,7 @@ public class BuildMachine : MonoBehaviour
             used = true;
             playerTrigger.SetActive(false);
             partsTrigger.SetActive(true);
-            machineIcon.SetActive(false);
+            machineIcon.Fade();
         }
     }
 
@@ -173,6 +173,7 @@ public class BuildMachine : MonoBehaviour
             PlayerController.instance.arrowController.PointToObject(gameObject);
         //    anim.SetBool("Run", false);
         //});
+        machineIcon.OnSpawn();
     }
 
     public void SetUpgrade(int index, int level)

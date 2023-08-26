@@ -845,7 +845,7 @@ MonoBehaviour:
   playerTrigger: {fileID: 1562158668936251817}
   partsTrigger: {fileID: 3340467434870581069}
   paintScalingObject: {fileID: 3648756838586692150}
-  machineIcon: {fileID: 8242651122135550343}
+  machineIcon: {fileID: 3212281542474263378}
 --- !u!95 &3949997452899001599
 Animator:
   serializedVersion: 4
@@ -5805,14 +5805,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7278e15d5b8a4e14eb7285394a5ab19c, type: 3}
+--- !u!114 &3212281542474263378 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5426563393829046079, guid: 7278e15d5b8a4e14eb7285394a5ab19c, type: 3}
+  m_PrefabInstance: {fileID: 7483671606110809197}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725dcc4407c5afe4f918167f07eb8f6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8242651122135550336 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1565159384327398893, guid: 7278e15d5b8a4e14eb7285394a5ab19c, type: 3}
-  m_PrefabInstance: {fileID: 7483671606110809197}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8242651122135550343 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1565159384327398890, guid: 7278e15d5b8a4e14eb7285394a5ab19c, type: 3}
   m_PrefabInstance: {fileID: 7483671606110809197}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7836709333719223007

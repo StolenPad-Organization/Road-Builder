@@ -25,7 +25,7 @@ public class PaintMachine : MonoBehaviour
     private bool effectActivated;
 
     [Header("Machine Icon")]
-    [SerializeField] private GameObject machineIcon;
+    [SerializeField] private MachineIconController machineIcon;
 
     void Start()
     {
@@ -88,7 +88,7 @@ public class PaintMachine : MonoBehaviour
             PlayerController.instance.TogglePaintCollider(true);
             playerTrigger.SetActive(false);
             partsTrigger.SetActive(true);
-            machineIcon.SetActive(false);
+            machineIcon.Fade();
         }
     }
 
@@ -147,8 +147,9 @@ public class PaintMachine : MonoBehaviour
         //{
         used = false;
             PlayerController.instance.arrowController.PointToObject(gameObject);
-            //anim.SetBool("Run", false);
+        //anim.SetBool("Run", false);
         //});
+        machineIcon.OnSpawn();
     }
 
     public void OnFillStart()
