@@ -40,6 +40,7 @@ public class Paintable : MonoBehaviour
 
     private void PaintPiece()
     {
+        PlayerController.instance.movementController.SetSpeedMultiplayer(50);
         GameManager.instance.currentZone.SavePaintable(index, true);
         //paintableCollider.enabled = false;
         paintableRenderer.enabled = true;
