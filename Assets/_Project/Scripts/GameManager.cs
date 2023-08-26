@@ -20,9 +20,9 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Start()
     {
+        Application.targetFrameRate = 30;
         UIManager.instance.transitionAnim.gameObject.SetActive(true);
         DefaultAnalytics.GameplayStarted();
-        Application.targetFrameRate = 60;
         yield return new WaitForSeconds(0.1f);
         DefaultAnalytics.LevelStarted(1);
         levelData = Database.Instance.GetLevelData();
