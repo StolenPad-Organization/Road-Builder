@@ -156,6 +156,7 @@ public class BuildableManager : MonoBehaviour
         var parts = buildableParts.Where(t => !t.buildableRenderer.enabled).ToList();
         Buildable target = null;
         float3 playerPos = PlayerController.instance.transform.position;
+        if (parts.Count < 0) return null;
         target = parts[0];
         float closestDistance = math.distance(target.transform.position, playerPos);
         for (int i = 1; i < parts.Count(); i++)

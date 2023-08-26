@@ -5,18 +5,27 @@ using MoreMountains.NiceVibrations;
 
 public class HapticManager : MonoBehaviour
 {
+    [SerializeField] private bool useHaptic;
     private void OnEnable()
     {
         EventManager.invokeHaptic += VibrateDevice;
+        EventManager.SwitchHaptic += SwitchHaptic;
     }
 
     private void OnDisable()
     {
         EventManager.invokeHaptic -= VibrateDevice;
+        EventManager.SwitchHaptic -= SwitchHaptic;
+    }
+
+    private void SwitchHaptic(bool activate)
+    {
+        useHaptic = activate;
     }
 
     private void VibrateDevice(vibrationTypes hapticTypes)
     {
+        if (!useHaptic) return;
         switch (hapticTypes)
         {
             case vibrationTypes.Failure:

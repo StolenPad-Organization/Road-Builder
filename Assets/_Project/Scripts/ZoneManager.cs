@@ -30,7 +30,7 @@ public class ZoneManager : MonoBehaviour
     public SellManager sellManager;
     [SerializeField] private UpgradeManager upgradeManager;
     public BuildMachineUpgradeMenu buildMachineUpgradeMenu;
-    [SerializeField] private Transform collectableParent;
+    public Transform collectableParent;
     public Transform machinesPosition;
     [SerializeField] private GameObject zoneCollider;
     [SerializeField] private GameObject machineUpgradeTrigger;
@@ -129,6 +129,7 @@ public class ZoneManager : MonoBehaviour
         SendProgressionEvent(ProgressionStatus.Complete);
         EventManager.invokeHaptic.Invoke(vibrationTypes.Success);
         zoneState = ZoneState.BuildingStage;
+        UIManager.instance.UpdateStepText();
         buildMachine.gameObject.SetActive(true);
         player.arrowController.PointToObject(buildMachine.gameObject);
 
@@ -136,6 +137,7 @@ public class ZoneManager : MonoBehaviour
     }
     public void StartAsphaltStage()
     {
+        UIManager.instance.UpdateStepText();
         SendProgressionEvent(ProgressionStatus.Start);
 
         UIManager.instance.ChangeProgressBarIcon(1);
@@ -169,6 +171,7 @@ public class ZoneManager : MonoBehaviour
 
         EventManager.invokeHaptic.Invoke(vibrationTypes.Success);
         zoneState = ZoneState.PaintingStage;
+        UIManager.instance.UpdateStepText();
         PlayerController.instance.GetOffAsphaltMachine();
         paintingMachine.gameObject.SetActive(true);
         player.arrowController.PointToObject(paintingMachine.gameObject);
@@ -179,6 +182,8 @@ public class ZoneManager : MonoBehaviour
     {
         SendProgressionEvent(ProgressionStatus.Start);
         UIManager.instance.ChangeProgressBarIcon(2);
+        UIManager.instance.UpdateProgressBar(0);
+        UIManager.instance.UpdateStepText();
         //PlayerController.instance.GetOffAsphaltMachine();
         machineUpgradeTrigger.SetActive(false);
         asphaltAmmo.gameObject.SetActive(false);
@@ -200,6 +205,10 @@ public class ZoneManager : MonoBehaviour
     }
     private IEnumerator CompleteZone()
     {
+        playerData.playerCollectables.Clear();
+        playerData.wheelBarrowCollectables.Clear();
+        Database.Instance.SetPlayerData(playerData);
+
         SendProgressionEvent(ProgressionStatus.Complete);
         EventManager.invokeHaptic.Invoke(vibrationTypes.Success);
         yield return new WaitForSeconds(1.0f);
@@ -218,7 +227,6 @@ public class ZoneManager : MonoBehaviour
             wheelBarrow.gameObject.SetActive(false);
             upgrades.SetActive(false);
         }
-
         GameManager.instance.SaveLevel();
         // Unlock next Zone
         GameManager.instance.UnlockNextZone();
@@ -228,6 +236,7 @@ public class ZoneManager : MonoBehaviour
     {
         zoneData.ZoneState = ZoneState.PeelingStage;
         zoneData.currentPeelableBlock = 1;
+        UIManager.instance.UpdateStepText();
         LoadZone();
         if (hideMachine)
         {
@@ -246,18 +255,20 @@ public class ZoneManager : MonoBehaviour
 
     private void LoadZone()
     {
+        //load level State
+        zoneState = zoneData.ZoneState;
+
         if (GameManager.instance.currentZone == this && buildMachine.machineUpgradeType != MachineUpgradeType.none)
         {
+            UIManager.instance.UpdateStepText();
             buildMachineUpgradeMenu.buildMachineUpgrade.LoadUpgrade(buildMachine.machineUpgradeType);
             buildMachineUpgradeMenu.UpgradeMachine();
             buildMachineUpgradeMenu.CheckButtons();
-        }
-        // Load player position and rotation
-        player.transform.position = playerData.PlayerPosition;
-        player.transform.eulerAngles = playerData.PlayerRotation;
 
-        //load level State
-        zoneState = zoneData.ZoneState;
+            // Load player position and rotation
+            player.transform.position = playerData.PlayerPosition;
+            player.transform.eulerAngles = playerData.PlayerRotation;
+        }
 
         switch (zoneState)
         {

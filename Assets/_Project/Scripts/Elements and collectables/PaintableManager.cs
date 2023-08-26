@@ -98,6 +98,7 @@ public class PaintableManager : MonoBehaviour
         var parts = paintableParts.Where(t => !t.paintableRenderer.enabled).ToList();
         Paintable target = null;
         float3 playerPos = PlayerController.instance.transform.position;
+        if (parts.Count < 0) return null;
         target = parts[0];
         float closestDistance = math.distance(target.transform.position, playerPos);
         for (int i = 1; i < parts.Count(); i++)

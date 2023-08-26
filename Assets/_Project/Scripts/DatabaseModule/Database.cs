@@ -181,4 +181,14 @@ public class Database : MonoBehaviour
                 data.MachineUpgradeDatas[i] = value;
         }
     }
+
+    public bool GetVibrationData()
+    {
+        return data.useHaptic;
+    }
+
+    public void SetVibrationData(bool _useHaptic)
+    {
+        data.useHaptic = _useHaptic;
+    }
 }

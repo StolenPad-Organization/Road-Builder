@@ -34,6 +34,10 @@ public class RBHandler : MonoBehaviour
     }   
     private void Switch(bool state)//00 01 10 11
     {
+        //if (rb.velocity.magnitude > 0.2f || rb.angularVelocity.magnitude > 0.2f)
+        //{
+        //    state = true;
+        //}
         if (gameObject.activeSelf && !OtherVersion.gameObject.activeSelf && state) return;
         if (!gameObject.activeSelf && OtherVersion.gameObject.activeSelf && !state) return;
         
@@ -44,8 +48,6 @@ public class RBHandler : MonoBehaviour
         }
         else
         {
-            //if (rb.velocity.magnitude < 0.25f || rb.angularVelocity.magnitude < 0.25f) return;
-
             OtherVersion.transform.SetPositionAndRotation(transform.position, transform.rotation);
             gameObject.SetActive(false);
             OtherVersion.gameObject.SetActive(true);
