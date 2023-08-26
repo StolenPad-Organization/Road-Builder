@@ -15,6 +15,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private BuildMachineUpgradeMenu buildMachineUpgradeMenu;
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private ProgressUIManager progressBar;
+    public Animator transitionAnim;
 
     [Header("Money UI Effect")]
     [SerializeField] private Transform moneyTarget;
@@ -31,6 +32,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private string peeling;
     [SerializeField] private string building;
     [SerializeField] private string painting;
+    float initialypos;
 
     private void Awake()
     {
@@ -42,6 +44,7 @@ public class UIManager : MonoBehaviour
         UpdateMoney(Database.Instance.GetPlayerData().Money);
         UpdateUpgradePoints(Database.Instance.GetPlayerData().UpgradePoints);
         levelText.text = "Level " + Database.Instance.GetLevelData().LevelTextValue;
+        initialypos = StepText.rectTransform.position.y;
     }
 
     private void OnEnable()
@@ -187,19 +190,30 @@ public class UIManager : MonoBehaviour
 
     public void UpdateStepText()
     {
-        switch (GameManager.instance.currentZone.zoneState)
+        StepText.rectTransform.DOMoveY(initialypos + 500f, 0.45f).OnComplete(() =>
         {
-            case ZoneState.PeelingStage:
-                StepText.text = peeling;
-                break;
-            case ZoneState.BuildingStage:
-                StepText.text = building;
-                break;
-            case ZoneState.PaintingStage:
-                StepText.text = painting;
-                break;
-            default:
-                break;
-        }
+            switch (GameManager.instance.currentZone.zoneState)
+            {
+                case ZoneState.PeelingStage:
+                    StepText.text = peeling;
+                    break;
+                case ZoneState.BuildingStage:
+                    StepText.text = building;
+                    break;
+                case ZoneState.PaintingStage:
+                    StepText.text = painting;
+                    break;
+                default:
+                    break;
+            }
+            StepText.rectTransform.DOMoveY(initialypos, 0.45f).OnComplete(() =>
+            {
+                StepText.transform.DOScale(2.0f, 0.25f).OnComplete(() =>
+                {
+                    StepText.transform.DOScale(1.0f, 0.25f);
+                });
+            });
+            
+        });
     }
 }

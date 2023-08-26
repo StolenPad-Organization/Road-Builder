@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private ParticleSystem dustTrailVFX;
     [SerializeField] private Transform rightCheck;
     [SerializeField] private Transform leftCheck;
+    [SerializeField] private GameObject UpgradeCamera;
 
     [Header("Machines Colliders")]
     [SerializeField] private GameObject buildCollider;
@@ -359,5 +360,10 @@ public class PlayerController : MonoBehaviour
     private void DisableFootPrints()
     {
         ActivateFootPrints(false);
+    }
+
+    public void ActivateUpgradeCamera(bool activate)
+    {
+        UpgradeCamera.SetActive(activate);
     }
 }

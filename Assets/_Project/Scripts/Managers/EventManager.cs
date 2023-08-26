@@ -15,7 +15,7 @@ public static class EventManager
     #endregion
 
     #region Ending Events
-
+    public static Action StartEndTransition;
     #endregion
 
     #region Level Events

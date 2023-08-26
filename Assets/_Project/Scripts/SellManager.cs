@@ -43,10 +43,12 @@ public class SellManager : MonoBehaviour
         currentSellRate = sellRate;
         selling = true;
         nextSell = 0;
+        PlayerController.instance.ActivateUpgradeCamera(true);
     }
     private void OnTriggerExit(Collider other)
     {
         selling = false;
+        PlayerController.instance.ActivateUpgradeCamera(false);
     }
 
     public MoneySpot GetMoneySpot()

@@ -76,8 +76,8 @@ public class ZoneManager : MonoBehaviour
     {
         zoneData = _zoneData;
         player = PlayerController.instance;
-        levelData = Database.Instance.GetLevelData();
         playerData = Database.Instance.GetPlayerData();
+        levelData = Database.Instance.GetLevelData();
         //yield return new WaitForEndOfFrame();
         LoadZone();
         upgradeManager.playerController = player;
@@ -264,11 +264,10 @@ public class ZoneManager : MonoBehaviour
             buildMachineUpgradeMenu.buildMachineUpgrade.LoadUpgrade(buildMachine.machineUpgradeType);
             buildMachineUpgradeMenu.UpgradeMachine();
             buildMachineUpgradeMenu.CheckButtons();
-
-            // Load player position and rotation
-            player.transform.position = playerData.PlayerPosition;
-            player.transform.eulerAngles = playerData.PlayerRotation;
         }
+        // Load player position and rotation
+        player.transform.position = playerData.PlayerPosition;
+        player.transform.eulerAngles = playerData.PlayerRotation;
 
         switch (zoneState)
         {
