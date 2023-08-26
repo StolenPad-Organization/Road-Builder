@@ -63,7 +63,11 @@ public class Peelable : MonoBehaviour
             RBManager.Instance.RemoveAgent(rbHandler);
             PlayerController.instance.OnCollect(this);
         }
-        EventManager.invokeHaptic.Invoke(vibrationTypes.MediumImpact);
+        if (PlayerController.instance.canDoStrictedHaptic)
+        {
+            EventManager.invokeHaptic.Invoke(vibrationTypes.MediumImpact);
+            PlayerController.instance.canDoStrictedHaptic = false;
+        }
     }
 
     private void OnTriggerStay(Collider other)

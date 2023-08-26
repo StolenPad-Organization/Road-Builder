@@ -80,7 +80,11 @@ public class Upgrade : MonoBehaviour
 
     public void Buy()
     {
-        EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+        if (PlayerController.instance.canDoStrictedHaptic)
+        {
+            EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+            PlayerController.instance.canDoStrictedHaptic = false;
+        }
         UIManager.instance.UpdateMoney(-cost);
         cost += (costAddPrecentage * cost)/100;
         costText.text = UIManager.instance.ReturnNumberText(cost);
