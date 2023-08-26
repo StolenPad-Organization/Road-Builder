@@ -91,7 +91,11 @@ public class PeelableCopy : MonoBehaviour
         transform.SetParent(sellPoint);
         transform.DOLocalJump(Vector3.zero, 3, 1, 0.6f).OnComplete(() =>
         {
-            EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+            if (PlayerController.instance.canDoStrictedHaptic)
+            {
+                EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+                PlayerController.instance.canDoStrictedHaptic = false;
+            }
             Money money = MoneyPooler.instance.GetMoney();
             money.transform.position = GameManager.instance.currentZone.sellManager.transform.position;
             money.Spawn(peelable.price);

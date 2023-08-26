@@ -81,15 +81,25 @@ public class PaintMachine : MonoBehaviour
         {
             PlayerController.instance.paintMachine = this;
             used = true;
-            transform.SetParent(PlayerController.instance.transform);
-            transform.DOLocalJump(Vector3.zero, 1.5f, 1, 0.5f);
-            transform.DOLocalRotate(Vector3.zero, 0.5f);
-            GameManager.instance.currentZone.StartPaintStage();
-            PlayerController.instance.TogglePaintCollider(true);
-            playerTrigger.SetActive(false);
-            partsTrigger.SetActive(true);
+            
             machineIcon.Fade();
+            PlayerController.instance.movementController.canMove = false;
+
+            StartCoroutine(PaintMachineEquipe());
         }
+    }
+
+    IEnumerator PaintMachineEquipe()
+    {
+        yield return new WaitForSeconds(0.75f);
+        transform.SetParent(PlayerController.instance.transform);
+        transform.DOLocalJump(Vector3.zero, 1.5f, 1, 0.5f);
+        transform.DOLocalRotate(Vector3.zero, 0.5f);
+        GameManager.instance.currentZone.StartPaintStage();
+        PlayerController.instance.TogglePaintCollider(true);
+        playerTrigger.SetActive(false);
+        partsTrigger.SetActive(true);
+        PlayerController.instance.movementController.canMove = true;
     }
 
     public void FillPaint()

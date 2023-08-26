@@ -16,11 +16,13 @@ public class PlayerMovementController : MonoBehaviour
     private bool move;
     [SerializeField] private Rigidbody rb;
     private RBManager rbManager;
+    private GameManager gameManager;
 
     void Start()
     {
         playerController = PlayerController.instance;
         rbManager = RBManager.Instance;
+        gameManager = GameManager.instance;
     }
 
     public void SetSpeedMultiplayer(float amount)
@@ -79,7 +81,11 @@ public class PlayerMovementController : MonoBehaviour
 
         //transform.Translate(moveDirection * Time.deltaTime, Space.World);
         rb.MovePosition(transform.position + moveDirection * Time.deltaTime);
-        rbManager.JobUpdater();
+        if(gameManager.currentZone != null)
+        {
+            if (gameManager.currentZone.zoneState == ZoneState.PeelingStage)
+                rbManager.JobUpdater();
+        }
     }
 
     public void ToggleMovementAnimation(bool activate)

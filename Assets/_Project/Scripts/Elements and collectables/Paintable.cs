@@ -40,6 +40,7 @@ public class Paintable : MonoBehaviour
 
     private void PaintPiece()
     {
+        PlayerController.instance.movementController.SetSpeedMultiplayer(50);
         GameManager.instance.currentZone.SavePaintable(index, true);
         //paintableCollider.enabled = false;
         paintableRenderer.enabled = true;
@@ -58,7 +59,11 @@ public class Paintable : MonoBehaviour
         transform.DOLocalRotate(initialRot, 0.1f);
         transform.DOScale(initialscale, 0.1f);
 
-        EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+        if (PlayerController.instance.canDoStrictedHaptic)
+        {
+            EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+            PlayerController.instance.canDoStrictedHaptic = false;
+        }
     }
 
 #if UNITY_EDITOR

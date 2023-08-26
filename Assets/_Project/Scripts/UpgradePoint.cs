@@ -30,7 +30,11 @@ public class UpgradePoint : MonoBehaviour
 
     private void Collect()
     {
-        EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+        if (PlayerController.instance.canDoStrictedHaptic)
+        {
+            EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+            PlayerController.instance.canDoStrictedHaptic = false;
+        }
         EventManager.AddUpgradePoint.Invoke(value, transform);
         UpgradePointsPooler.instance.ReturnUpgradePoint(this);
         //UIManager.instance.UpdateUpgradePoints(value);

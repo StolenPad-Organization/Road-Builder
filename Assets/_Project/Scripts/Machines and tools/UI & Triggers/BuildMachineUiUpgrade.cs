@@ -77,7 +77,11 @@ public class BuildMachineUiUpgrade : MonoBehaviour
 
     public void Buy()
     {
-        EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+        if (PlayerController.instance.canDoStrictedHaptic)
+        {
+            EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+            PlayerController.instance.canDoStrictedHaptic = false;
+        }
         EventManager.PlayUpgradeEffect.Invoke();
 
         UIManager.instance.UpdateUpgradePoints(-cost);
