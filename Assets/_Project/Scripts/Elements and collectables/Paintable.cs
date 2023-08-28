@@ -40,6 +40,7 @@ public class Paintable : MonoBehaviour
 
     private void PaintPiece()
     {
+        fullyPainted = true;
         PlayerController.instance.movementController.SetSpeedMultiplayer(50);
         GameManager.instance.currentZone.SavePaintable(index, true);
         //paintableCollider.enabled = false;
@@ -54,7 +55,6 @@ public class Paintable : MonoBehaviour
             //float t = 1.0f;
             //DOTween.To(() => t, x => t = x, 0.0f, PlayerController.instance.paintMachine.paintDuration)
             //   .OnUpdate(() => mat.SetFloat("_Animation", t)).SetDelay(PlayerController.instance.paintMachine.paintDelay);
-            fullyPainted = true;
         });
         transform.DOLocalRotate(initialRot, 0.1f);
         transform.DOScale(initialscale, 0.1f);
