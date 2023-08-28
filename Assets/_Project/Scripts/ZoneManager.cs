@@ -69,7 +69,7 @@ public class ZoneManager : MonoBehaviour
         maxAsphalt = buildableManager.buildableParts.Count;
         maxPaint = paintableManager.paintableParts.Count;
 
-        SendProgressionEvent(ProgressionStatus.Start);
+        //SendProgressionEvent(ProgressionStatus.Start);
     }
 
     public void InitZone(ZoneData _zoneData)
@@ -99,16 +99,16 @@ public class ZoneManager : MonoBehaviour
         switch (zoneState)
         {
             case ZoneState.PeelingStage:
-                message = "Level " + levelData.LevelTextValue + " / " + "Peeling Stage";
+                message = "Level " + levelData.LevelTextValue + " / Zone :" + GameManager.instance.levelProgressData.ZoneIndex + " / " + "Peeling Stage";
                 break;
             case ZoneState.BuildingStage:
-                message = "Level " + levelData.LevelTextValue + " / " + "Building Stage";
+                message = "Level " + levelData.LevelTextValue + " / Zone :" + GameManager.instance.levelProgressData.ZoneIndex + " / " + "Building Stage";
                 break;
             case ZoneState.PaintingStage:
-                message = "Level " + levelData.LevelTextValue + " / " + "Painting Stage";
+                message = "Level " + levelData.LevelTextValue + " / Zone :" + GameManager.instance.levelProgressData.ZoneIndex + " / " + "Painting Stage";
                 break;
         }
-        HomaBelly.Instance.TrackProgressionEvent(status, "Build Stage");
+        HomaBelly.Instance.TrackProgressionEvent(status, message);
     }
 
     public void OnBlockRemove(bool load = false)
@@ -358,6 +358,7 @@ public class ZoneManager : MonoBehaviour
             default:
                 break;
         }
+        SendProgressionEvent(ProgressionStatus.Start);
     }
 
     public ZoneData SaveZone()
