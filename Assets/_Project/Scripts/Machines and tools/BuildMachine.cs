@@ -173,7 +173,8 @@ public class BuildMachine : MonoBehaviour
             PlayerController.instance.arrowController.PointToObject(gameObject);
         //    anim.SetBool("Run", false);
         //});
-        machineIcon.OnSpawn();
+        if(machineIcon != null)
+            machineIcon.OnSpawn();
     }
 
     public void SetUpgrade(int index, int level)

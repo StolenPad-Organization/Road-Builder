@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LoadFirstScene : MonoBehaviour
 {
@@ -11,6 +12,6 @@ public class LoadFirstScene : MonoBehaviour
     private IEnumerator LoadFirstSceneDelay()
     {
         yield return new WaitForSeconds(0.5f);
-        EventManager.loadOpeningScene?.Invoke();
+        SceneManager.LoadScene("Level Select");
     }
 }
