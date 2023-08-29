@@ -25,6 +25,12 @@ public class BlockWarning : MonoBehaviour
     private void OnDisable()
     {
         if (colliding)
+        {
+            colliding = false;
             PlayerController.instance.ShowWarning(false);
+            PlayerController.instance.OnBlockWallDetection(false);
+            if(PlayerController.instance.scrapeTool != null)
+                PlayerController.instance.scrapeTool.ChangeToolMaterial(false);
+        }
     }
 }
