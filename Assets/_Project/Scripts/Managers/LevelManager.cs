@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelManager : MonoBehaviour                                       //Yükleme işlemlerinin çalışması için Level'ların isimlerinin şu şekilde olması gerek; "Level 1"
+public class LevelManager : MonoBehaviour
 {
     #region Variables
     [SerializeField] private int levelCount;

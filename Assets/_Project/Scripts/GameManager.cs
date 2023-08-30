@@ -24,9 +24,9 @@ public class GameManager : MonoBehaviour
         UIManager.instance.transitionAnim.gameObject.SetActive(true);
         DefaultAnalytics.GameplayStarted();
         yield return new WaitForSeconds(0.1f);
-        DefaultAnalytics.LevelStarted(1);
         levelData = Database.Instance.GetLevelData();
-        levelProgressData = Database.Instance.GetLevelProgressData(levelData.LevelValue - 1);
+        DefaultAnalytics.LevelStarted(levelData.LevelTextValue);
+        levelProgressData = Database.Instance.GetLevelProgressData(levelData.LevelTextValue - 1);
         currentZone = zones[levelProgressData.ZoneIndex];
         LoadLevel();
         yield return new WaitForSeconds(0.1f);
