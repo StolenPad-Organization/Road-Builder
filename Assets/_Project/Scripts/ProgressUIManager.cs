@@ -44,12 +44,12 @@ public class ProgressUIManager : MonoBehaviour
         {
             starImage[0].sprite = fullstar;
         }
-        else if (value >= 0.655f && value < 0.95f)
+        else if (value >= 0.655f && value < 0.9999f)
         {
             starImage[0].sprite = fullstar;
             starImage[1].sprite = fullstar;
         }
-        else if (value >= 0.95f)
+        else if (value >= 0.9999f)
         {
             starImage[0].sprite = fullstar;
             starImage[1].sprite = fullstar;

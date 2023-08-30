@@ -116,7 +116,21 @@ public class UpgradeData
     {
         Loops = 0;
         Level = 1;
-        Value = OriginalValue;
+        switch (upgradeType)
+        {
+            case UpgradeType.ToolUpgrade:
+                Value = OriginalValue;
+                break;
+            case UpgradeType.LoadUpgrade:
+                if(Database.Instance.GetLevelData().LevelTextValue % 2 == 0)
+                    Value = OriginalValue/2;
+                else
+                    Value = OriginalValue;
+                break;
+            default:
+                break;
+        }
+        
         StepIndex = 0;
         Cost = 20;
     }

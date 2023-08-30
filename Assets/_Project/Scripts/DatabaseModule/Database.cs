@@ -30,6 +30,7 @@ public class Database : MonoBehaviour
     private static Database instance = null;
     [SerializeField] private DataList updaterData;
     private DataList data;
+    private DataList dataBackup;
 
     public bool EditorMode = false;
     public bool ABMode = false;
@@ -43,6 +44,7 @@ public class Database : MonoBehaviour
         {
             instance = this;
             data = LoadData();
+            dataBackup = LoadDataBackup();
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -77,6 +79,14 @@ public class Database : MonoBehaviour
         {
             data = Resources.Load<DataList>("Data");
         }
+
+        return data;
+    }
+
+    private DataList LoadDataBackup()
+    {
+        DataList data = null;
+        data = Resources.Load<DataList>("Data Backup");
 
         return data;
     }
@@ -190,5 +200,15 @@ public class Database : MonoBehaviour
     public void SetVibrationData(bool _useHaptic)
     {
         data.useHaptic = _useHaptic;
+    }
+
+    public void ResetAllData()
+    {
+        data.LevelData = dataBackup.LevelData;
+        data.PlayerData = dataBackup.PlayerData;
+        data.UpgradeDatas = dataBackup.UpgradeDatas;
+        data.LevelProgressDatas = dataBackup.LevelProgressDatas;
+        data.MachineUpgradeDatas = dataBackup.MachineUpgradeDatas;
+        data.useHaptic = dataBackup.useHaptic;
     }
 }

@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         levelData = Database.Instance.GetLevelData();
         DefaultAnalytics.LevelStarted(levelData.LevelTextValue);
-        levelProgressData = Database.Instance.GetLevelProgressData(levelData.LevelTextValue - 1);
+        levelProgressData = Database.Instance.GetLevelProgressData(levelData.LevelValue - 1);
         currentZone = zones[levelProgressData.ZoneIndex];
         LoadLevel();
         yield return new WaitForSeconds(0.1f);

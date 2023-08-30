@@ -40,15 +40,15 @@ public class LevelManager : MonoBehaviour
         data.LevelValue++;
         data.LevelTextValue++;
 
-//#if !UNITY_EDITOR
-//            ElephantManager.instance.SendAdjustLevelEvent(data.LevelTextValue);
-//#endif
+        //#if !UNITY_EDITOR
+        //            ElephantManager.instance.SendAdjustLevelEvent(data.LevelTextValue);
+        //#endif
 
-        //if (data.LevelValue > levelCount)
-        //{
-        //    return;
-        //    data.LevelValue = 1;
-        //}
+        if (data.LevelValue > levelCount)
+        {
+            data.LevelValue = 1;
+            Database.Instance.ResetAllData();
+        }
 
         Database.Instance.SetLevelData(data);
         Database.Instance.SaveData();

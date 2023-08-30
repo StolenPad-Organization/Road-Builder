@@ -17,7 +17,7 @@ public class LevelSelectController : MonoBehaviour
 
     IEnumerator Start()
     {
-        level = Database.Instance.GetLevelData().LevelTextValue;
+        level = Database.Instance.GetLevelData().LevelValue;
         UpdateMoney(Database.Instance.GetPlayerData().Money);
         UpdateUpgradePoints(Database.Instance.GetPlayerData().UpgradePoints);
         if (level <= maxLevels)
