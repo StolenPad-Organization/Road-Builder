@@ -33,7 +33,7 @@ public class MachineIconController : MonoBehaviour
         {
             //Increase fade value over time.
             fadeValue -= Time.deltaTime;
-            if (fadeValue < 0)
+            if (fadeValue <= 0)
             {
                 fadeValue = 0;
                 gameObject.SetActive(false);
@@ -47,6 +47,7 @@ public class MachineIconController : MonoBehaviour
 
     public void Fade()
     {
+        if (canFade) return;
         canFade = true;
         xSign.SetActive(false);
         cursorSign.SetActive(false);
