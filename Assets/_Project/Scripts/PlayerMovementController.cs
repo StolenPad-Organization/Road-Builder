@@ -10,6 +10,7 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private Animator anim;
     private Vector3 moveDirection = Vector3.zero;
     public bool canMove = false;
+    public bool canRotate;
     [SerializeField] private float speedMultiplayer = 100;
     private PlayerController playerController;
     [SerializeField] private bool drive;
@@ -69,7 +70,8 @@ public class PlayerMovementController : MonoBehaviour
         if (moveDirection != Vector3.zero)
         {
             //transform.rotation = Quaternion.LookRotation(moveDirection);
-            rb.MoveRotation(Quaternion.LookRotation(moveDirection));
+            if(canRotate)
+                rb.MoveRotation(Quaternion.LookRotation(moveDirection));
             ToggleMoveAnimation(true);
         }
         else

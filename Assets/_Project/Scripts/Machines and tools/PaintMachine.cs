@@ -23,6 +23,7 @@ public class PaintMachine : MonoBehaviour
     [SerializeField] private GameObject partsTrigger;
     [SerializeField] private GameObject paintScalingObject;
     private bool effectActivated;
+    public PaintToolController paintToolController;
 
     [Header("Machine Icon")]
     [SerializeField] private MachineIconController machineIcon;
@@ -82,7 +83,8 @@ public class PaintMachine : MonoBehaviour
             PlayerController.instance.paintMachine = this;
             used = true;
             
-            machineIcon.Fade();
+            if(machineIcon != null)
+                machineIcon.Fade();
             PlayerController.instance.movementController.canMove = false;
 
             StartCoroutine(PaintMachineEquipe());
@@ -96,7 +98,8 @@ public class PaintMachine : MonoBehaviour
         transform.DOLocalJump(Vector3.zero, 1.5f, 1, 0.5f);
         transform.DOLocalRotate(Vector3.zero, 0.5f);
         GameManager.instance.currentZone.StartPaintStage();
-        PlayerController.instance.TogglePaintCollider(true);
+        if(paintToolController == null)
+            PlayerController.instance.TogglePaintCollider(true);
         playerTrigger.SetActive(false);
         partsTrigger.SetActive(true);
         PlayerController.instance.movementController.canMove = true;
@@ -159,7 +162,8 @@ public class PaintMachine : MonoBehaviour
             PlayerController.instance.arrowController.PointToObject(gameObject);
         //anim.SetBool("Run", false);
         //});
-        machineIcon.OnSpawn();
+        if (machineIcon != null)
+            machineIcon.OnSpawn();
     }
 
     public void OnFillStart()

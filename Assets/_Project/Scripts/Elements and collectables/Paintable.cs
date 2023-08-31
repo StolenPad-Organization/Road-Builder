@@ -29,6 +29,7 @@ public class Paintable : MonoBehaviour
     {
         if (PlayerController.instance.paintMachine != null && !fullyPainted)
         {
+            if (other.CompareTag("FootTrigger")) return;
             if (PlayerController.instance.paintMachine.UsePaint())
                 PaintPiece();
         }
