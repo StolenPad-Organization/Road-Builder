@@ -15,6 +15,9 @@ public class PaintToolController : MonoBehaviour
     [SerializeField] private Transform distanceTarget;
     [SerializeField] private float maxDistance;
     [SerializeField] private Transform headPoint;
+    [SerializeField] private Transform paintPosition;
+    [SerializeField] private Transform HoldingPosition;
+    [SerializeField] private Vector3 HoldingRotation;
     void Start()
     {
         
@@ -39,20 +42,6 @@ public class PaintToolController : MonoBehaviour
 
     private void RotatePaintingTool()
     {
-        //moveDirection.Normalize();
-        //if (moveDirection.z != 0)
-        //{
-        //rolot.transform.localEulerAngles = Vector3.zero;
-        //rotate modelHolder and adjust the z position of the player
-        //angle += rotationSpeed * -moveDirection.z * Time.deltaTime;
-        //angle = Mathf.Clamp(angle, rotationLimit.x, rotationLimit.y);
-
-        //float distance = distanceTarget.position.z - transform.position.z;
-        //Debug.Log(distance);
-        //float t = Mathf.InverseLerp(0.0f, maxDistance, distance);
-        //angle = Mathf.Lerp(rotationLimit.x, rotationLimit.y, t);
-        //modelHolder.transform.localRotation = Quaternion.Euler(angle, 0.0f, 0.0f);
-
         angle = rotationLimit.y;
         modelHolder.transform.rotation = Quaternion.Euler(angle, 0.0f, 0.0f);
         bool result = false;
@@ -75,21 +64,11 @@ public class PaintToolController : MonoBehaviour
                 break;
             }
         }
-        //}
-    }
-
-    private void Strafe()
-    {
-        moveDirection.Normalize();
-        if (moveDirection.x != 0)
-        {
-            //move the player on it's x axis (pos + transform.right)
-            //rolot.transform.localEulerAngles = Vector3.up * 90;
-        }
     }
 
     public void SetDistanceTarget(Transform target)
     {
+        modelHolder.transform.position = paintPosition.position;
         StartCoroutine(SetTargetRoutine(target));
     }
 
@@ -102,6 +81,7 @@ public class PaintToolController : MonoBehaviour
     public void ResetTool()
     {
         distanceTarget = null;
-        modelHolder.transform.localRotation = Quaternion.Euler(rotationLimit.y, 0.0f, 0.0f);
+        modelHolder.transform.position = HoldingPosition.position;
+        modelHolder.transform.localRotation = Quaternion.Euler(HoldingRotation);
     }
 }
