@@ -89,5 +89,6 @@ public class ToolAngleController : MonoBehaviour
         distanceTarget = null;
         modelHolder.transform.position = HoldingPosition.position;
         modelHolder.transform.localRotation = Quaternion.Euler(HoldingRotation);
+        toolHead.transform.eulerAngles = Vector3.zero;
     }
 }
