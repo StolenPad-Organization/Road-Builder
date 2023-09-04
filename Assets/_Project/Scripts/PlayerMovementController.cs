@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovementController : MonoBehaviour
 {
-    [SerializeField] private UltimateJoystick joystick;
+    public UltimateJoystick joystick;
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float paintMoveSpeed = 5f;
     [SerializeField] private Animator anim;

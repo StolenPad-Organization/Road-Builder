@@ -17,6 +17,8 @@ public class ScrapeTool : MonoBehaviour
     [SerializeField] private Material originalMaterial;
     [SerializeField] private Material redMaterial;
     [SerializeField] private Renderer[] renderers;
+    public ToolAngleController toolAngleController;
+    public WaterEffectFillController WaterEffectFillController;
 
     public void UpdateShovelScale(int scaleMultiplier)
     {

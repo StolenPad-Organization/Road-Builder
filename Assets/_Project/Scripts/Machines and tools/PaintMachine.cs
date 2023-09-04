@@ -23,7 +23,7 @@ public class PaintMachine : MonoBehaviour
     [SerializeField] private GameObject partsTrigger;
     [SerializeField] private GameObject paintScalingObject;
     private bool effectActivated;
-    public PaintToolController paintToolController;
+    public ToolAngleController paintToolController;
 
     [Header("Machine Icon")]
     [SerializeField] private MachineIconController machineIcon;
