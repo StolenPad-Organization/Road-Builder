@@ -6,6 +6,7 @@ using UnityEngine;
 public class WaterEffectFillController : MonoBehaviour
 {
     private Tween disloveTween;
+    [SerializeField] GameObject splashObject;
     void Start()
     {
         
@@ -13,7 +14,8 @@ public class WaterEffectFillController : MonoBehaviour
 
     void Update()
     {
-        
+        if (splashObject != null)
+            splashObject.transform.eulerAngles = Vector3.right * -90f;
     }
 
     public void Fill()
@@ -22,8 +24,12 @@ public class WaterEffectFillController : MonoBehaviour
         Material mat = render.material;
         mat.SetFloat("Disolve", 0.0f);
         float t = 0.0f;
-        disloveTween = DOTween.To(() => t, x => t = x, 0.5f, 1.0f)
-           .OnUpdate(() => mat.SetFloat("ReverseDisolve", t));
+        disloveTween = DOTween.To(() => t, x => t = x, 0.5f, 0.5f)
+           .OnUpdate(() => mat.SetFloat("ReverseDisolve", t)).OnComplete(()=>
+           {
+               if(splashObject != null)
+                    splashObject.SetActive(true);
+           });
     } 
 
     public void Empty()
@@ -34,5 +40,8 @@ public class WaterEffectFillController : MonoBehaviour
         float t = 0.5f;
         disloveTween = DOTween.To(() => t, x => t = x, 0.0f, 1.0f)
            .OnUpdate(() => mat.SetFloat("ReverseDisolve", t));
+
+        if (splashObject != null)
+            splashObject.SetActive(false);
     }
 }

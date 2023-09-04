@@ -16,6 +16,7 @@ public class PeelableWallTrigger : MonoBehaviour
         if (playerController.scrapeTool.gameObject.activeInHierarchy)
         {
             playerController.movementController.canRotate = false;
+            playerController.movementController.SetAnimation();
             playerController.transform.localEulerAngles = Vector3.zero;
             playerController.scrapeTool.toolAngleController.SetDistanceTarget(distanceTarget);
             playerController.scrapeTool.toolAngleController.enabled = true;
@@ -29,6 +30,7 @@ public class PeelableWallTrigger : MonoBehaviour
         if (playerController.scrapeTool.gameObject.activeInHierarchy)
         {
             playerController.movementController.canRotate = true;
+            playerController.movementController.SetAnimation();
             playerController.scrapeTool.toolAngleController.ResetTool();
             playerController.scrapeTool.toolAngleController.enabled = false;
 

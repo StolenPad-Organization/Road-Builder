@@ -16,6 +16,7 @@ public class PaintableWallTrigger : MonoBehaviour
         if(playerController.paintMachine != null)
         {
             playerController.movementController.canRotate = false;
+            playerController.movementController.SetAnimation();
             playerController.transform.localEulerAngles = Vector3.zero;
             playerController.paintMachine.paintToolController.SetDistanceTarget(distanceTarget);
             playerController.paintMachine.paintToolController.enabled = true;
@@ -27,6 +28,7 @@ public class PaintableWallTrigger : MonoBehaviour
         if (playerController.paintMachine != null)
         {
             playerController.movementController.canRotate = true;
+            playerController.movementController.SetAnimation();
             playerController.paintMachine.paintToolController.ResetTool();
             playerController.paintMachine.paintToolController.enabled = false;
         }
