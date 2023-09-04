@@ -113,6 +113,7 @@ public class PlayerMovementController : MonoBehaviour
             {
                 anim.SetBool("Push", false);
                 anim.SetBool("Walk", false);
+                anim.SetBool("Strafe", false);
             }
             else
             {
@@ -128,6 +129,14 @@ public class PlayerMovementController : MonoBehaviour
                         {
                             anim.SetBool("Push", move);
                             anim.SetBool("Walk", !move);
+                            if (!canRotate)
+                            {
+                                anim.SetBool("Strafe", true);
+                            }
+                            else
+                            {
+                                anim.SetBool("Strafe", false);
+                            }
                         }
                         else
                         {
@@ -139,6 +148,14 @@ public class PlayerMovementController : MonoBehaviour
                     {
                         anim.SetBool("Push", move);
                         anim.SetBool("Walk", !move);
+                        if (!canRotate)
+                        {
+                            anim.SetBool("Strafe", true);
+                        }
+                        else
+                        {
+                            anim.SetBool("Strafe", false);
+                        }
                     }
                 }
                 else
@@ -152,6 +169,7 @@ public class PlayerMovementController : MonoBehaviour
         {
             anim.SetBool("Push", false);
             anim.SetBool("Walk", false);
+            anim.SetBool("Strafe", false);
         }
     }
 

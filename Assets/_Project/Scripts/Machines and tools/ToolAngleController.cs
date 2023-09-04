@@ -33,10 +33,10 @@ public class ToolAngleController : MonoBehaviour
         moveDirection.y = verticalInput;
         moveDirection.Normalize();
 
-        if (Mathf.Abs(verticalInput) > Mathf.Abs(horizontalInput))
-            toolHead.transform.localEulerAngles = Vector3.zero;
-        else if (Mathf.Abs(verticalInput) < Mathf.Abs(horizontalInput))
-            toolHead.transform.localEulerAngles = new Vector3(0, 90, 45);
+        //if (Mathf.Abs(verticalInput) > Mathf.Abs(horizontalInput))
+        //    toolHead.transform.localEulerAngles = Vector3.zero;
+        //else if (Mathf.Abs(verticalInput) < Mathf.Abs(horizontalInput))
+        //    toolHead.transform.localEulerAngles = new Vector3(0, 90, 45);
 
         RotatePaintingTool();
 
