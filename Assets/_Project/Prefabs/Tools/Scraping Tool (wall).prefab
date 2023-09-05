@@ -123,11 +123,13 @@ MonoBehaviour:
   headPos: {fileID: 939310184414068050}
   toolHandle: {fileID: 3751066067324639810}
   toolLength: 0.5
+  toolWidth: 0
   index: 0
   lengthLimits: {x: 0.5, y: 1.5}
-  lengthIncrease: 0.02
-  widthLimits: {x: 0.32, y: 1}
-  widthIncrease: 0.02
+  lengthIncrease: 0.035
+  widthLimits: {x: 0.32, y: 3}
+  widthIncrease: 0.05
+  otherWidthObject: {fileID: 4534300336719978459}
 --- !u!1 &965130916183331421
 GameObject:
   m_ObjectHideFlags: 0

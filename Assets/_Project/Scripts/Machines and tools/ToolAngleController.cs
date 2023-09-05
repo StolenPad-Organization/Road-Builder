@@ -35,6 +35,7 @@ public class ToolAngleController : MonoBehaviour
     [SerializeField] private float lengthIncrease;
     [SerializeField] private Vector2 widthLimits;
     [SerializeField] private float widthIncrease;
+    [SerializeField] private Transform otherWidthObject;
 
     void Start()
     {
@@ -135,6 +136,12 @@ public class ToolAngleController : MonoBehaviour
         Vector3 toolScale = toolHead.localScale;
         toolScale.x = toolWidth;
         toolHead.localScale = toolScale;
+        if(otherWidthObject != null)
+        {
+            toolScale = otherWidthObject.localScale;
+            toolScale.x = toolWidth * 2;
+            otherWidthObject.localScale = toolScale;
+        }
     }
 
     public void OnPick()

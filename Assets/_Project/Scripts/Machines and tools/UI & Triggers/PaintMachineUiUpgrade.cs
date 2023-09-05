@@ -120,10 +120,10 @@ public class PaintMachineUiUpgrade : MonoBehaviour
 
     public void CheckButton()
     {
-        if (level % 2 == 0)
-            upgradeNameText.text = "Size";
-        else
-            upgradeNameText.text = "Speed";
+        //if (level % 2 == 0)
+        //    upgradeNameText.text = "Size";
+        //else
+        //    upgradeNameText.text = "Speed";
 
         if (UIManager.instance.upgradePoints < cost)
         {

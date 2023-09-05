@@ -78,7 +78,10 @@ public class PeelableCopy : MonoBehaviour
         //rb.useGravity = false;
 
         transform.SetParent(collectableParent);
-        transform.DOLocalRotate(Vector3.zero, 0.4f);
+        if(PlayerController.instance.scrapeTool.toolAngleController!=null)
+            transform.DOLocalRotate(Vector3.right * 90, 0.4f);
+        else
+            transform.DOLocalRotate(Vector3.zero, 0.4f);
         transform.DOLocalJump(Vector3.up * index * collectableOffest, 1f + (index * 0.1f), 1, 0.4f).OnComplete(() => peelable.readyToTilt = true);
         peelable.SavePeelable();
     }

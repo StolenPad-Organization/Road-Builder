@@ -16,21 +16,16 @@ MonoBehaviour:
     LevelValue: 3
     LevelTextValue: 3
   PlayerData:
-    Money: 9999434
-    UpgradePoints: 975
-    PlayerPosition: {x: -0.6780839, y: -0.000022768974, z: 17.303108}
-    PlayerRotation: {x: -0, y: 198.16347, z: 0}
+    Money: 472104
+    UpgradePoints: 938
+    PlayerPosition: {x: -4.129419, y: -0.00014007092, z: 27.650864}
+    PlayerRotation: {x: -0, y: 0.5296737, z: 0}
     HasWheelBarrow: 0
     WheelBarrowPosition: {x: 0, y: 0, z: 0}
     WheelBarrowRotation: {x: 0, y: 0, z: 0}
     wheelBarrowCollectables: []
     playerCollectables:
-    - index: 259
     - index: 37
-    - index: 149
-    - index: 179
-    - index: 279
-    - index: 155
   UpgradeDatas:
   - upgradeType: 0
     Loops: 0
@@ -41,25 +36,25 @@ MonoBehaviour:
     Cost: 100
   - upgradeType: 1
     Loops: 0
-    Level: 6
-    Value: 6
+    Level: 1
+    Value: 15
     OriginalValue: 30
-    StepIndex: 5
-    Cost: 46
+    StepIndex: 0
+    Cost: 20
   - upgradeType: 2
     Loops: 0
-    Level: 6
-    Value: 6
+    Level: 1
+    Value: 1
     OriginalValue: 1
-    StepIndex: 5
-    Cost: 123
+    StepIndex: 0
+    Cost: 50
   - upgradeType: 3
     Loops: 0
-    Level: 2
-    Value: 2
+    Level: 1
+    Value: 1
     OriginalValue: 1
-    StepIndex: 1
-    Cost: 60
+    StepIndex: 0
+    Cost: 50
   LevelProgressDatas:
   - ZoneIndex: 0
     ZoneDatas:
@@ -95288,37 +95283,37 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 6.224087, y: 6.4695582, z: 33.733257}
-        PeelableRotation: {x: 0.00000009338148, y: 0.00000084043336, z: 5.211027e-10}
+        PeelableRotation: {x: 0.00000009338148, y: 0.00000044022698, z: 4.689922e-10}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -3.955011, y: 5.8210077, z: 33.733257}
-        PeelableRotation: {x: -0.0000012806601, y: -0.000014941037, z: 0.0000024279188}
-      - IsPeeled: 1
+        PeelableRotation: {x: -0.0000012806601, y: -0.000013446934, z: 0.00000250796}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 0.4704882, y: 0.05089283, z: 31.02903}
-        PeelableRotation: {x: 270.9164, y: 284.1124, z: 37.154556}
+        IsMoved: 0
+        PeelablePosition: {x: -0.36327708, y: 2.7263608, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.8081743, y: 4.578286, z: 33.733257}
-        PeelableRotation: {x: 2.18391e-17, y: 0.00000066701074, z: -0.000000003751935}
+        PeelableRotation: {x: -0.000000013340215, y: 0.0000004468972, z: -0.0000000025012903}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -4.0075226, y: 5.0743012, z: 33.733257}
-        PeelableRotation: {x: -0.0000009604953, y: -0.00000018676296, z: -0.000000036685584}
-      - IsPeeled: 1
+        PeelableRotation: {x: -0.0000006403302, y: 0.00000018676296, z: -0.000000023345372}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 1.338622, y: 0.1712265, z: 30.799553}
-        PeelableRotation: {x: 294.41965, y: 143.99374, z: 181.91422}
+        IsMoved: 0
+        PeelablePosition: {x: 1.5980009, y: 3.6335359, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95336,19 +95331,19 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.2713472, y: 3.8124614, z: 33.733257}
-        PeelableRotation: {x: 0.0000030361489, y: -0.000013107592, z: 0.0000025541942}
-      - IsPeeled: 1
+        PeelableRotation: {x: 0.00000060697977, y: -0.000005522014, z: 0.0000017035607}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 6.944254, y: 0.053304672, z: 28.675667}
-        PeelableRotation: {x: 270, y: 21.287107, z: 0}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 6.079691, y: 3.6693149, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 7.56201, y: 0.053343773, z: 30.09561}
-        PeelableRotation: {x: 90, y: 118.00854, z: 0}
+        IsMoved: 0
+        PeelablePosition: {x: 6.429455, y: 4.192786, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95360,85 +95355,85 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -7.720361, y: 5.503819, z: 33.730206}
-        PeelableRotation: {x: 0.0000000050025797, y: -0.000000053360846, z: 1.823857e-10}
+        PeelableRotation: {x: 0.0000000025012898, y: -0.000000026680423, z: 1.042204e-10}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -2.9183621, y: 3.5657701, z: 33.733257}
-        PeelableRotation: {x: -0.0000024946194, y: -0.00000084043427, z: 0.000042695763}
+        PeelableRotation: {x: -0.000001133918, y: -0.00000017342315, z: 0.000039276503}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -5.0396814, y: 6.044279, z: 33.733257}
         PeelableRotation: {x: 0.00000038019604, y: -0.000000080041275, z: -7.816533e-10}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 7.351309, y: 0.053032875, z: 30.913958}
-        PeelableRotation: {x: 89.745895, y: 131.81052, z: 98.29608}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 6.4527893, y: 2.5766325, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 5.7038245, y: 0.049557686, z: 29.503557}
-        PeelableRotation: {x: 272.21716, y: 198.43391, z: 153.29507}
+        IsMoved: 0
+        PeelablePosition: {x: 5.597437, y: 4.8293614, z: 33.733257}
+        PeelableRotation: {x: -0.0000044489607, y: 0.0000024946196, z: 0.0000016735712}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 3.946856, y: 5.704438, z: 33.733257}
-        PeelableRotation: {x: 0.000000004168816, y: -5.21102e-10, z: -0.00000016008252}
+        PeelableRotation: {x: 0.0000000025012894, y: -4.1688156e-10, z: -0.000000106721686}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -3.146709, y: 7.0497074, z: 33.733257}
-        PeelableRotation: {x: 0.00000023345292, y: -0.0000022586646, z: -0.000040548202}
+        PeelableRotation: {x: 0.000000236788, y: -0.000002151943, z: -0.000040548617}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.814448, y: 2.5230985, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 1.4402064, y: 0.124936104, z: 30.215034}
-        PeelableRotation: {x: 303.02643, y: 283.5201, z: 31.244589}
+        IsMoved: 0
+        PeelablePosition: {x: 2.1175241, y: 3.5734916, z: 33.733257}
+        PeelableRotation: {x: 0.0000005336085, y: -0.00000026680425, z: -0.0000000133402125}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -5.700282, y: 2.499539, z: 33.733257}
-        PeelableRotation: {x: 0.0000058363426, y: 0.0000032149908, z: -0.000005120557}
+        PeelableRotation: {x: 0.0000058296723, y: 0.0000032416713, z: -0.0000034130096}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 5.22828, y: 5.501172, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 1.4954075, y: 0.14709187, z: 31.770226}
-        PeelableRotation: {x: 289.83875, y: 329.00415, z: 123.315636}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 2.4419508, y: 4.361039, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 3.9710112, y: 0.0980854, z: 29.57312}
-        PeelableRotation: {x: 280.92804, y: 246.76791, z: 171.65663}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 4.2353315, y: 4.446278, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 6.6510496, y: 0.07922268, z: 29.291637}
-        PeelableRotation: {x: 67.94348, y: 63.200233, z: 252.41283}
+        IsMoved: 0
+        PeelablePosition: {x: 6.043896, y: 4.3172665, z: 33.733257}
+        PeelableRotation: {x: 0.00000010672167, y: -0.00000094715506, z: -0.000003435313}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95456,25 +95451,25 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 1.9806556, y: 6.0496764, z: 33.733257}
-        PeelableRotation: {x: -0.0000028281222, y: 0.000010005158, z: -0.000027386617}
+        PeelableRotation: {x: 0.0000003735265, y: 0.0000024279182, z: -0.000027324086}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -7.8269534, y: 2.6325054, z: 33.7323}
         PeelableRotation: {x: 0.00000029348467, y: 0.000000016675287, z: 0.000008541488}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: -0.40208483, y: 0.058750153, z: 30.555897}
-        PeelableRotation: {x: 78.770454, y: 53.331207, z: 273.3511}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: -0.44236076, y: 3.9364405, z: 33.733257}
+        PeelableRotation: {x: -0.0000011739385, y: 0.0000001800928, z: 0.0000035901842}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 0.90597117, y: 0.11385536, z: 31.514446}
-        PeelableRotation: {x: 76.30096, y: 213.74332, z: 87.51873}
+        IsMoved: 0
+        PeelablePosition: {x: 0.29123688, y: 4.471551, z: 33.733257}
+        PeelableRotation: {x: -0.0000034284353, y: -1.5964897e-15, z: 0.00000005336086}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95499,24 +95494,24 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -8.1666565, y: 6.846669, z: 33.69926}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 1
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 0.81932056, y: 3.724512, z: 32.684475}
-        PeelableRotation: {x: 359.93643, y: 0.3089806, z: 0.019442057}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 0.8183831, y: 3.7249775, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 1.3439978, y: 0.0532732, z: 29.519905}
-        PeelableRotation: {x: 90, y: 20.549656, z: 0}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 1.4166831, y: 4.68164, z: 33.733257}
+        PeelableRotation: {x: -0.000000013340212, y: -0.000000013340211, z: -0.0000042690763}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 2.436911, y: 0.08632755, z: 29.934246}
-        PeelableRotation: {x: 53.55182, y: 323.96777, z: 38.074142}
+        IsMoved: 0
+        PeelablePosition: {x: 1.9136394, y: 3.278956, z: 33.733257}
+        PeelableRotation: {x: -1.2320764e-14, y: 0.000000820423, z: 0.0000017208873}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95529,42 +95524,42 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -5.9567404, y: 5.353669, z: 33.733257}
         PeelableRotation: {x: -0.00000004669074, y: 0.000000016675266, z: 7.81653e-11}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 3.1740828, y: 0.13655186, z: 29.12696}
-        PeelableRotation: {x: 272.87598, y: 136.07347, z: 272.06952}
+        IsMoved: 0
+        PeelablePosition: {x: 3.6349578, y: 5.0272713, z: 33.733257}
+        PeelableRotation: {x: -0.000000080041296, y: -0.0000006136498, z: -0.0000034175955}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -5.657796, y: 7.1829348, z: 33.733257}
-        PeelableRotation: {x: -0.0000012272993, y: -0.0000011205776, z: -0.00000005669588}
-      - IsPeeled: 1
+        PeelableRotation: {x: -0.0000012806602, y: -0.0000015474643, z: -0.00000006336598}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 3.8903975, y: 0.11595535, z: 30.031593}
-        PeelableRotation: {x: 279.81503, y: 345.5639, z: 1.9330213}
+        IsMoved: 0
+        PeelablePosition: {x: 3.7833505, y: 2.5982103, z: 33.733257}
+        PeelableRotation: {x: -0.00000028848225, y: 0.00000062699, z: 0.000020488746}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -3.6309943, y: 3.5025811, z: 33.733257}
-        PeelableRotation: {x: 0.0000016541862, y: -0.00000037352606, z: -0.000010223605}
-      - IsPeeled: 1
+        PeelableRotation: {x: 0.0000014274026, y: -0.000000373526, z: -0.0000068085105}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 0.5378727, y: 0.096811295, z: 28.761517}
-        PeelableRotation: {x: 278.94104, y: 113.30394, z: 354.03134}
+        IsMoved: 0
+        PeelablePosition: {x: 0.20236325, y: 4.83196, z: 33.733257}
+        PeelableRotation: {x: -0.00000002668043, y: 0.00000042688688, z: -0.0000000066701076}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -3.3539095, y: 5.907446, z: 33.733257}
-        PeelableRotation: {x: 0.00000024012382, y: 0.0000012806604, z: -0.000000014590854}
+        PeelableRotation: {x: -0.00000004669074, y: 0.0000005336085, z: -0.0000000050025797}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95588,19 +95583,19 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -6.39664, y: 2.4303508, z: 33.733257}
-        PeelableRotation: {x: 0.0000019805955, y: -0.000009032784, z: -0.000117478645}
+        PeelableRotation: {x: 0.0000013673717, y: 0.0000003022388, z: -0.000031051844}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -6.8562617, y: 4.1345387, z: 33.733257}
-        PeelableRotation: {x: -1.4657763e-13, y: 0.000001637511, z: 0.000010257372}
-      - IsPeeled: 1
+        PeelableRotation: {x: -0.000000053360928, y: 0.0000014040572, z: 0.0000068410272}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 7.1247787, y: 0.05361271, z: 31.62893}
-        PeelableRotation: {x: 89.37693, y: 247.45572, z: 138.83777}
+        IsMoved: 0
+        PeelablePosition: {x: 6.2026243, y: 2.802991, z: 33.733257}
+        PeelableRotation: {x: -5.1960687e-14, y: 0.00000020510575, z: 0.000029030178}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95611,32 +95606,32 @@ MonoBehaviour:
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: -1.0942116, y: 5.054069, z: 33.733257}
-        PeelableRotation: {x: 0.000009921784, y: -0.00002216476, z: 0.0000026030068}
-      - IsPeeled: 1
-        IsCollected: 0
-        IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 1.9257997, y: 0.2644825, z: 31.024778}
-        PeelableRotation: {x: 272.96246, y: 41.609814, z: 71.519585}
+        PeelablePosition: {x: -1.0939991, y: 5.054069, z: 33.733257}
+        PeelableRotation: {x: 0.000009795051, y: -0.000022378204, z: 0.0000017517348}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: 2.0402484, y: 7.016381, z: 33.733257}
-        PeelableRotation: {x: -0.0000022945142, y: -0.000008537736, z: 0.000027428307}
+        PeelablePosition: {x: 2.7764564, y: 3.2654958, z: 33.733257}
+        PeelableRotation: {x: 0.000001908484, y: -0.00000037352595, z: -0.0000034134002}
+      - IsPeeled: 0
+        IsCollected: 0
+        IsSold: 0
+        IsMoved: 0
+        PeelablePosition: {x: 2.0402484, y: 7.0164385, z: 33.733257}
+        PeelableRotation: {x: -0.0000027480828, y: -0.000008697817, z: 0.000006938577}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 2.7358751, y: 6.7421927, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 4.573637, y: 0.09925556, z: 29.206997}
-        PeelableRotation: {x: 281.21362, y: 183.42801, z: 160.30644}
+        IsMoved: 0
+        PeelablePosition: {x: 4.530456, y: 2.8023596, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95654,7 +95649,7 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -5.6939263, y: 6.928524, z: 33.728302}
-        PeelableRotation: {x: -0.0000009871756, y: 0.00000073037654, z: -0.0000000062336887}
+        PeelableRotation: {x: -0.0000005602888, y: 0.000000043772566, z: -0.000000004546615}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95667,24 +95662,24 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -1.5855511, y: 3.193819, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 2.9105797, y: 0.049333572, z: 29.438473}
-        PeelableRotation: {x: 88.94205, y: 5.553182, z: 76.56214}
+        IsMoved: 0
+        PeelablePosition: {x: 3.5026288, y: 2.7861524, z: 33.733257}
+        PeelableRotation: {x: 0.000000083793225, y: 0.0000000033350538, z: 4.1627108e-11}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -6.115893, y: 4.7716794, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 6.8016653, y: 0.052667618, z: 31.154362}
-        PeelableRotation: {x: 270.40057, y: 43.95282, z: 159.55553}
+        IsMoved: 0
+        PeelablePosition: {x: 6.0983644, y: 2.4122963, z: 33.733257}
+        PeelableRotation: {x: -0.000000020010317, y: -0.000000013340211, z: -0.0000034155112}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95702,7 +95697,7 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 0.6699656, y: 6.0535374, z: 33.733257}
-        PeelableRotation: {x: -0.0000033617325, y: -0.0000118994685, z: 0.0000068956388}
+        PeelableRotation: {x: -0.0000006670104, y: -0.0000025479806, z: 0.0000068447794}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95720,49 +95715,49 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -5.773171, y: 3.2066803, z: 33.733257}
-        PeelableRotation: {x: 0.0000004669074, y: 0.000003962043, z: -0.0000000075038535}
+        PeelableRotation: {x: 0.00000048024765, y: 0.000003855321, z: -0.0000000070869715}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -0.10468912, y: 6.425596, z: 33.733257}
-        PeelableRotation: {x: 0.0000012685692, y: -0.00006217247, z: -0.0000025084812}
-      - IsPeeled: 1
+        PeelableRotation: {x: -0.0000000020844093, y: -0.0000149948655, z: -0.0000000114902985}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 1.6237344, y: 0.14308071, z: 30.607204}
-        PeelableRotation: {x: 66.18294, y: 290.7595, z: 184.24706}
+        IsMoved: 0
+        PeelablePosition: {x: 1.5780214, y: 4.218599, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 5.697105, y: 5.3997602, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: -0.44049585, y: 0.117316246, z: 30.316456}
-        PeelableRotation: {x: 69.79168, y: 344.24008, z: 268.44058}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: -0.60095036, y: 3.5097346, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 1.640364, y: 0.053281784, z: 28.789246}
-        PeelableRotation: {x: 90, y: 186.5044, z: 0}
+        IsMoved: 0
+        PeelablePosition: {x: 0.66810167, y: 4.876259, z: 33.733257}
+        PeelableRotation: {x: 0.0000032283315, y: -0.0000022945162, z: 0.0000068566605}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -7.8780017, y: 6.1759424, z: 33.72845}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 2.0090375, y: 0.052843094, z: 31.105536}
-        PeelableRotation: {x: 270.7636, y: 217.82425, z: 67.58737}
+        IsMoved: 0
+        PeelablePosition: {x: 1.3210872, y: 2.82686, z: 33.733257}
+        PeelableRotation: {x: 0.0000034417747, y: -0.000000053360846, z: -0.000000036685588}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95780,7 +95775,7 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 3.6316571, y: 7.156768, z: 33.733257}
-        PeelableRotation: {x: -0.000000016675266, y: 0.000000020010317, z: 0.0000012806604}
+        PeelableRotation: {x: -0.000000013340211, y: 0.000000013340211, z: 0.00000085377354}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95792,19 +95787,19 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 1.5964264, y: 5.079206, z: 33.733257}
-        PeelableRotation: {x: -0.0000013406914, y: 0.0000005777984, z: -0.00003074263}
-      - IsPeeled: 1
+        PeelableRotation: {x: -0.000000050025623, y: 0.000000701195, z: -0.000029883437}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 4.6403584, y: 0.08070755, z: 30.177158}
-        PeelableRotation: {x: 75.83161, y: 270.72064, z: 357.8253}
+        IsMoved: 0
+        PeelablePosition: {x: 4.2695575, y: 2.3269067, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -2.710988, y: 6.244865, z: 33.733257}
-        PeelableRotation: {x: -0.000008012882, y: 0.0000000024932605, z: 0.000114824834}
+        PeelableRotation: {x: -0.000003952455, y: 0.000000095045046, z: 0.00011482886}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95821,20 +95816,20 @@ MonoBehaviour:
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: 1.2838224, y: 6.5613184, z: 33.733257}
+        PeelablePosition: {x: 1.2842473, y: 6.5604687, z: 33.733257}
         PeelableRotation: {x: -0.000005549528, y: 0.0000006403305, z: -0.0000064033015}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -5.4629736, y: 5.980804, z: 33.733257}
-        PeelableRotation: {x: 0.000000020010319, y: -0.0000006436652, z: 0.0000000058363425}
-      - IsPeeled: 1
+        PeelableRotation: {x: -0.000000020010317, y: -0.00000042688677, z: 0.000000003335053}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 4.4300885, y: 0.050883293, z: 29.613516}
-        PeelableRotation: {x: 88.2555, y: 15.742667, z: 35.76116}
+        IsMoved: 0
+        PeelablePosition: {x: 4.563825, y: 3.811943, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95847,48 +95842,48 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -6.9903064, y: 5.5556827, z: 33.733257}
         PeelableRotation: {x: -0.00000016008252, y: -0.000000106721735, z: 0.000023905659}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -4.7894125, y: 3.1308346, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: -5.247868, y: 0.05000782, z: 31.048525}
+        PeelableRotation: {x: 270.78284, y: 311.6275, z: 348.0141}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -2.149043, y: 4.251718, z: 33.733257}
-        PeelableRotation: {x: 0.000000020010319, y: 0.000000016675266, z: 0.0000025613208}
-      - IsPeeled: 1
-        IsCollected: 0
-        IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: -0.09328234, y: 0.039011, z: 30.54179}
-        PeelableRotation: {x: 69.85323, y: 83.27757, z: 269.95984}
-      - IsPeeled: 1
-        IsCollected: 0
-        IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 0.021660686, y: 0.07720089, z: 29.05492}
-        PeelableRotation: {x: 288.9425, y: 84.94957, z: 225.5823}
-      - IsPeeled: 1
-        IsCollected: 0
-        IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 3.4074192, y: 0.11109924, z: 29.90111}
-        PeelableRotation: {x: 69.366425, y: 212.05226, z: 177.65779}
+        PeelableRotation: {x: 0.000000013340212, y: 0.000000013340211, z: 0.0000017075471}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: -6.9692216, y: 2.607739, z: 33.733257}
+        PeelablePosition: {x: -0.37416244, y: 3.8133268, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 1.1755236, y: 0.17205048, z: 31.022049}
-        PeelableRotation: {x: 289.10757, y: 158.31314, z: 272.92838}
+        IsMoved: 0
+        PeelablePosition: {x: -0.4258312, y: 4.362245, z: 33.733257}
+        PeelableRotation: {x: 0.000009244769, y: -0.0000013807122, z: 0.00000019009794}
+      - IsPeeled: 0
+        IsCollected: 0
+        IsSold: 0
+        IsMoved: 0
+        PeelablePosition: {x: 3.7329617, y: 4.5572467, z: 33.733257}
+        PeelableRotation: {x: -0.00000005336086, y: 0.0000000033350538, z: -3.1266129e-10}
+      - IsPeeled: 0
+        IsCollected: 0
+        IsSold: 0
+        IsMoved: 0
+        PeelablePosition: {x: -6.9692216, y: 2.6073651, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        IsSold: 0
+        IsMoved: 0
+        PeelablePosition: {x: 1.5234746, y: 3.0251498, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95901,24 +95896,24 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -0.2474742, y: 5.796736, z: 33.733257}
         PeelableRotation: {x: 0.000000073371154, y: 0.0000001400722, z: 1.8238577e-10}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 6.5225897, y: 0.054281235, z: 30.762964}
-        PeelableRotation: {x: 89.06875, y: 94.98805, z: 171.05519}
+        IsMoved: 0
+        PeelablePosition: {x: 5.834238, y: 4.5178785, z: 33.733257}
+        PeelableRotation: {x: 0.0000009604954, y: 0.0000004802475, z: -0.000015382931}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 1.6252755, y: 6.473819, z: 33.733257}
-        PeelableRotation: {x: -8.0135034e-16, y: -0.0000022945164, z: -0.000000040020634}
-      - IsPeeled: 0
+        PeelableRotation: {x: -0.0000001067217, y: -0.000002774764, z: -0.000000046690737}
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -4.8482327, y: 3.6906385, z: 33.733257}
-        PeelableRotation: {x: 0.000000011672685, y: -0.00000000500258, z: -0.0000025613208}
+        IsMoved: 1
+        PeelablePosition: {x: -5.2397637, y: 0.1324606, z: 30.51429}
+        PeelableRotation: {x: 73.600426, y: 323.2012, z: 359.82358}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95942,13 +95937,13 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -7.0351553, y: 6.1564045, z: 33.733257}
-        PeelableRotation: {x: -0.0000060564557, y: -0.00000089379216, z: -0.000037503916}
-      - IsPeeled: 1
+        PeelableRotation: {x: -0.0000013873818, y: 0.00000081375305, z: -0.000020475973}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 1.6902341, y: 0.047836304, z: 29.9292}
-        PeelableRotation: {x: 85.89235, y: 45.381428, z: 270.59808}
+        IsMoved: 0
+        PeelablePosition: {x: 2.656887, y: 3.760157, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95966,67 +95961,67 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.8551313, y: 5.658459, z: 33.733257}
-        PeelableRotation: {x: 0.000000008337652, y: 0.00000044522957, z: -0.0000051230318}
-      - IsPeeled: 1
+        PeelableRotation: {x: 0.0000000016675463, y: 0.0000004443958, z: -0.0000051230254}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 5.573444, y: 0.16767502, z: 30.70536}
-        PeelableRotation: {x: 41.820236, y: 204.50186, z: 132.02728}
+        IsMoved: 0
+        PeelablePosition: {x: 5.513405, y: 5.168638, z: 33.733257}
+        PeelableRotation: {x: 0.000007443836, y: -0.000012719894, z: -0.000019685986}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -0.7810925, y: 6.743805, z: 33.733257}
-        PeelableRotation: {x: -2.8827608e-17, y: -0.00000066034045, z: -0.0000000050025792}
+        PeelableRotation: {x: -0.000000026680423, y: -0.0000004468971, z: -0.0000000041688164}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -6.133917, y: 6.7127557, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 4.641954, y: 0.20233822, z: 29.952593}
-        PeelableRotation: {x: 79.21482, y: 50.336334, z: 2.4030852}
+        IsMoved: 0
+        PeelablePosition: {x: 4.6655183, y: 4.400136, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.877544, y: 5.1723795, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 1.5465525, y: 0.0041685104, z: 31.51497}
-        PeelableRotation: {x: 29.651583, y: 181.38988, z: 209.5371}
+        IsMoved: 0
+        PeelablePosition: {x: 1.983126, y: 3.4285154, z: 33.73282}
+        PeelableRotation: {x: 0.0000275342, y: -0.000006403288, z: 0.00005688266}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -3.8402972, y: 5.624412, z: 33.733257}
-        PeelableRotation: {x: 0.00000074705196, y: -0.000001013856, z: 0.000010211933}
-      - IsPeeled: 1
+        PeelableRotation: {x: 0.00000058696935, y: -0.00000005336081, z: 0.0000068301883}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 2.0856104, y: 0.049990654, z: 31.64801}
-        PeelableRotation: {x: 89.35745, y: 324.10342, z: 283.46448}
+        IsMoved: 0
+        PeelablePosition: {x: 1.951743, y: 2.4521341, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.2174479, y: 2.7930808, z: 33.733257}
         PeelableRotation: {x: 0.000002202803, y: -0.0000000066701067, z: -0.0000000019801882}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 5.044633, y: 0.09114933, z: 29.918856}
-        PeelableRotation: {x: 58.995953, y: 33.83318, z: 320.01135}
+        IsMoved: 0
+        PeelablePosition: {x: 5.2507973, y: 2.7889233, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96050,13 +96045,13 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -6.4606013, y: 5.1080894, z: 33.733257}
-        PeelableRotation: {x: -0.0000019647728, y: -0.00014684173, z: -0.0000074541535}
+        PeelableRotation: {x: 0.00000009671613, y: -0.00006040437, z: -0.0000007762336}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -4.5471897, y: 6.9793496, z: 33.733257}
-        PeelableRotation: {x: -0.0000023537136, y: -0.00000037352592, z: 0.0000000043251545}
+        PeelableRotation: {x: -0.0000023362047, y: -0.00000042688677, z: 0.000000003725888}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96068,55 +96063,55 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -7.1707225, y: 6.580284, z: 33.733257}
-        PeelableRotation: {x: 0.00000004002064, y: -0.000000006670105, z: 0.0000059768327}
-      - IsPeeled: 1
-        IsCollected: 0
-        IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: -0.26545084, y: 0.10163498, z: 31.998598}
-        PeelableRotation: {x: 289.14337, y: 158.46121, z: 113.9082}
+        PeelableRotation: {x: 0.00000002001032, y: -0.000000026680423, z: 0.0000034155112}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: -2.0755568, y: 7.1339025, z: 33.733257}
+        PeelablePosition: {x: -0.03124547, y: 3.400453, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        IsSold: 0
+        IsMoved: 0
+        PeelablePosition: {x: -2.075962, y: 7.1339025, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.8562146, y: 3.035005, z: 33.733257}
-        PeelableRotation: {x: 0.0000018409493, y: 0.0000005669591, z: 0.000006836077}
+        PeelableRotation: {x: 0.0000014407428, y: 0.00000042021674, z: 0.0000068348263}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -7.5788016, y: 4.8730335, z: 33.733257}
-        PeelableRotation: {x: 0.000004468972, y: 0.000013260171, z: -0.0000068370664}
-      - IsPeeled: 1
-        IsCollected: 0
-        IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 2.6931643, y: 0.24007607, z: 30.65981}
-        PeelableRotation: {x: 288.81213, y: 109.537346, z: 6.0686626}
+        PeelableRotation: {x: 0.00000009338163, y: 0.0000048825177, z: -0.0000034048805}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: 0.7892364, y: 6.2977962, z: 33.733257}
-        PeelableRotation: {x: 0.00000007503869, y: 0.000000018342785, z: -0.000010245393}
-      - IsPeeled: 1
+        PeelablePosition: {x: 2.8156643, y: 5.194852, z: 33.733257}
+        PeelableRotation: {x: -0.000000016675305, y: -0.00000045023216, z: -0.00001024497}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 6.0872974, y: 0.053196907, z: 30.419985}
-        PeelableRotation: {x: 89.37349, y: 202.19904, z: 135.8912}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 0.7892364, y: 6.298648, z: 33.733257}
+        PeelableRotation: {x: -0.000000003335049, y: 0.000000070036116, z: -0.000006830247}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 4.796246, y: 0.17979622, z: 30.995459}
-        PeelableRotation: {x: 78.42112, y: 165.06476, z: 51.211983}
+        IsMoved: 0
+        PeelablePosition: {x: 6.255146, y: 4.885249, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        IsSold: 0
+        IsMoved: 0
+        PeelablePosition: {x: 3.3951893, y: 4.073002, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96146,73 +96141,73 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -5.2407804, y: 2.525527, z: 33.733257}
-        PeelableRotation: {x: -0.000000026680421, y: 0.0000025746608, z: -0.000000040020634}
-      - IsPeeled: 1
+        PeelableRotation: {x: 0.000000080041275, y: 0.00000085377354, z: -0.00000001334021}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 0.29455543, y: 0.14006424, z: 30.873919}
-        PeelableRotation: {x: 274.8586, y: 243.94054, z: 165.8212}
+        IsMoved: 0
+        PeelablePosition: {x: 0.4897331, y: 2.5154238, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.7105681, y: 3.840845, z: 33.733257}
-        PeelableRotation: {x: -0.000038987186, y: 3.1558186e-15, z: -0.000000009275617}
+        PeelableRotation: {x: -0.00003054867, y: -0.000000003335051, z: -0.000000007295428}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: 2.947483, y: 7.004677, z: 33.733257}
-        PeelableRotation: {x: 0.00000009338149, y: -0.00000005336084, z: 0.000010248617}
+        PeelablePosition: {x: 2.947484, y: 7.004677, z: 33.733257}
+        PeelableRotation: {x: 0.00000006670107, y: -0.000000106721686, z: 0.0000068335235}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -4.337232, y: 5.118305, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
-        IsCollected: 1
+      - IsPeeled: 0
+        IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 1.0238622, y: 4.0763073, z: 32.33458}
-        PeelableRotation: {x: 359.9925, y: 1.0472769, z: 359.7399}
+        IsMoved: 0
+        PeelablePosition: {x: 1.021232, y: 4.0735784, z: 33.733257}
+        PeelableRotation: {x: -0.00000044522966, y: 0.000000010005182, z: -0.000005121965}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.369979, y: 4.5457273, z: 33.733257}
-        PeelableRotation: {x: -0.00000013340212, y: 0.0000012839953, z: 0.0000000020844066}
-      - IsPeeled: 1
+        PeelableRotation: {x: -0.000000080041275, y: 0.0000008571086, z: 0.0000000012506443}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 1.3753465, y: 0.049995422, z: 31.15651}
-        PeelableRotation: {x: 271.29074, y: 239.68008, z: 136.64926}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 1.2494029, y: 2.5252423, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 4.775187, y: 0.12155342, z: 31.6074}
-        PeelableRotation: {x: 282.4225, y: 328.53107, z: 98.87186}
+        IsMoved: 0
+        PeelablePosition: {x: 4.0453687, y: 4.0436554, z: 33.733257}
+        PeelableRotation: {x: -0.00000046628205, y: -0.00000036862764, z: 0.00001600944}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -7.43728, y: 5.8791747, z: 33.733257}
-        PeelableRotation: {x: -0.00000819089, y: 0.0000033884148, z: -0.000013692894}
+        PeelableRotation: {x: -0.00000002668043, y: -0.000000053360843, z: -0.000013662878}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -2.244063, y: 3.7719374, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
-        IsCollected: 1
+      - IsPeeled: 0
+        IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 0.7998332, y: 2.7774844, z: 31.214388}
-        PeelableRotation: {x: 71.83649, y: 351.17978, z: 359.45187}
+        IsMoved: 0
+        PeelablePosition: {x: 0.64757, y: 3.119751, z: 33.733257}
+        PeelableRotation: {x: 0.0000000033350525, y: -0.000000083376314, z: 5.2110195e-11}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96229,14 +96224,14 @@ MonoBehaviour:
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: -7.2892585, y: 2.5927777, z: 33.733257}
+        PeelablePosition: {x: -7.2892585, y: 2.5924096, z: 33.733257}
         PeelableRotation: {x: -5.97082e-16, y: 0.000000020010317, z: 0.000003419263}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.1360542, y: 6.825856, z: 33.733257}
-        PeelableRotation: {x: -5.566903e-15, y: 0.00000009338148, z: 0.0000068313348}
+        PeelableRotation: {x: -5.5668183e-15, y: 0.00000009338148, z: 0.0000068312306}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96249,18 +96244,18 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 4.8515434, y: 6.7042623, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: -1.1636125, y: 0.05329418, z: 29.366186}
-        PeelableRotation: {x: 270.01978, y: 2.5789547, z: 0}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 0.17042708, y: 4.273328, z: 33.733257}
+        PeelableRotation: {x: 0.00000021344339, y: -0.00000085377354, z: -0.000000026680425}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: -0.7693733, y: 0.0533247, z: 30.535637}
-        PeelableRotation: {x: 270.07913, y: 132.99258, z: 0}
+        IsMoved: 0
+        PeelablePosition: {x: -1.0907073, y: 4.6440525, z: 33.733257}
+        PeelableRotation: {x: 0.000002321197, y: 0.0000009238109, z: 0.000048658432}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96284,31 +96279,31 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -7.0875673, y: 4.184039, z: 33.733257}
-        PeelableRotation: {x: 0.0000010672204, y: -0.00002834795, z: 0.000013900501}
+        PeelableRotation: {x: 0.000001494107, y: -0.000026667083, z: 0.0000139271815}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -2.3273716, y: 2.7868438, z: 33.733257}
-        PeelableRotation: {x: -0.000000033350528, y: 0.0000000029181693, z: 0.000005122693}
-      - IsPeeled: 1
+        PeelableRotation: {x: -0.000000020010315, y: 0.000000002084407, z: 0.000003415146}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 6.221333, y: 0.039476395, z: 30.994743}
-        PeelableRotation: {x: 53.01136, y: 130.43951, z: 187.804}
+        IsMoved: 0
+        PeelablePosition: {x: 6.288526, y: 3.3408184, z: 33.733257}
+        PeelableRotation: {x: 0.0000068341487, y: -0.00000072037165, z: -0.0000037069115}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -7.935037, y: 7.051111, z: 33.727676}
         PeelableRotation: {x: 0.0000015341246, y: -0.000000013340213, z: 0.000000008754516}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 6.2104106, y: 0.15342712, z: 30.4092}
-        PeelableRotation: {x: 271.37814, y: 73.93385, z: 288.75732}
+        IsMoved: 0
+        PeelablePosition: {x: 6.1450496, y: 3.079567, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96321,66 +96316,66 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 4.2644877, y: 5.310831, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: -0.29156172, y: 0.058857918, z: 29.103176}
-        PeelableRotation: {x: 81.5436, y: 276.5863, z: 251.20915}
+        IsMoved: 0
+        PeelablePosition: {x: -0.22143114, y: 3.928092, z: 33.730286}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -3.5583267, y: 5.229559, z: 33.733257}
         PeelableRotation: {x: 0.000000053360846, y: 0.0000020277123, z: -0.00000001334021}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 2.5554438, y: 0.21024227, z: 31.59209}
-        PeelableRotation: {x: 283.10495, y: 48.892853, z: 246.15538}
+        IsMoved: 0
+        PeelablePosition: {x: 2.466611, y: 3.713214, z: 33.733257}
+        PeelableRotation: {x: 0.000006590064, y: -0.000001200619, z: -0.000000020427265}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 4.3704123, y: 7.051421, z: 33.733257}
         PeelableRotation: {x: 0.0000009071345, y: -0.00000010672168, z: 0.0000034017544}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 2.6633945, y: 0.11739826, z: 31.394022}
-        PeelableRotation: {x: 77.27167, y: 240.5084, z: 347.95764}
-      - IsPeeled: 1
-        IsCollected: 1
+        IsMoved: 0
+        PeelablePosition: {x: 3.2491336, y: 3.5509248, z: 33.733257}
+        PeelableRotation: {x: -0.00000041354647, y: -0.00000070703123, z: 0.000013658397}
+      - IsPeeled: 0
+        IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 0.15970218, y: 3.7183008, z: 31.880486}
-        PeelableRotation: {x: 24.146685, y: 351.09216, z: 5.123458}
+        IsMoved: 0
+        PeelablePosition: {x: 0.21336746, y: 3.925128, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -2.3108644, y: 4.8678656, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 5.200137, y: 0.0554657, z: 30.266668}
-        PeelableRotation: {x: 87.05982, y: 139.58691, z: 259.69623}
+        IsMoved: 0
+        PeelablePosition: {x: 4.9498367, y: 4.631278, z: 33.733257}
+        PeelableRotation: {x: 0.0000000016675265, y: -0.000000053360846, z: 2.084408e-10}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -2.9725475, y: 3.2382011, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -3.7564096, y: 3.1313953, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: -4.038647, y: 0.1619854, z: 30.383059}
+        PeelableRotation: {x: 82.109695, y: 55.533577, z: 343.76657}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96416,31 +96411,31 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -5.8179936, y: 3.6649332, z: 33.733257}
-        PeelableRotation: {x: 0.0000010421853, y: 0.000033341566, z: 0.00006450451}
+        PeelableRotation: {x: -0.000000019593386, y: -0.00000038436485, z: 0.000015260786}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -0.9877306, y: 5.5896463, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 3.0710564, y: 0.122896194, z: 29.776648}
-        PeelableRotation: {x: 294.14993, y: 37.839027, z: 334.3868}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 4.2720304, y: 2.5674696, z: 33.733257}
+        PeelableRotation: {x: 0.00000014007223, y: -0.000000013340225, z: -0.000010255288}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 2.0574002, y: 0.053076744, z: 30.290943}
-        PeelableRotation: {x: 271.50897, y: 92.00736, z: 291.9178}
+        IsMoved: 0
+        PeelablePosition: {x: 1.7809247, y: 4.1836567, z: 33.733257}
+        PeelableRotation: {x: -0.0000009338144, y: -0.0000018943103, z: 0.00002391212}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 0.82855403, y: 7.1662464, z: 33.733257}
-        PeelableRotation: {x: 0.000004542342, y: 0.0000004935891, z: 0.00003032105}
+        PeelableRotation: {x: 0.0000047666244, y: 0.00000030682617, z: 0.000030324594}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96453,30 +96448,30 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 6.289153, y: 5.695875, z: 33.733257}
         PeelableRotation: {x: -0.000000045440096, y: -6.134554e-21, z: 1.5470217e-11}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 0.36094105, y: 0.05173111, z: 29.621769}
-        PeelableRotation: {x: 84.09027, y: 62.979076, z: 42.173527}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: -0.27972162, y: 4.456827, z: 33.733257}
+        PeelableRotation: {x: 6.0415784e-14, y: 0.0000010138563, z: -0.0000068285217}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 3.9609995, y: 0.047471046, z: 28.793526}
-        PeelableRotation: {x: 76.17486, y: 87.979485, z: 269.79395}
+        IsMoved: 0
+        PeelablePosition: {x: 4.087727, y: 4.913666, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -7.113527, y: 7.006525, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 0.8990387, y: 0.03195572, z: 29.854122}
-        PeelableRotation: {x: 79.69543, y: 167.7195, z: 299.2054}
+        IsMoved: 0
+        PeelablePosition: {x: 2.1984167, y: 3.7821226, z: 33.733257}
+        PeelableRotation: {x: -0.0000004268856, y: -0.000015421283, z: 0.000008357642}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96495,18 +96490,18 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -5.744472, y: 2.3212523, z: 33.733257}
         PeelableRotation: {x: -0.00000016008252, y: 0.0000024545986, z: -0.000000113391785}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 1.171089, y: 0.12567806, z: 31.209848}
-        PeelableRotation: {x: 279.76263, y: 190.54106, z: 48.3476}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 0.4679078, y: 3.4494166, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 4.3255215, y: 0.045375824, z: 30.343124}
-        PeelableRotation: {x: 272.32523, y: 310.5913, z: 16.744442}
+        IsMoved: 0
+        PeelablePosition: {x: 4.5452743, y: 3.3672543, z: 33.733257}
+        PeelableRotation: {x: 0.0000036051922, y: -0.0000016541862, z: 0.000000006565833}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96543,12 +96538,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 4.6209707, y: 7.0792475, z: 33.733257}
         PeelableRotation: {x: 0.000000026680427, y: -0.000000013340212, z: 0.0000068303975}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 5.10876, y: 0.118364334, z: 29.016056}
-        PeelableRotation: {x: 73.3203, y: 59.815594, z: 173.07016}
+        IsMoved: 0
+        PeelablePosition: {x: 4.8314204, y: 5.1184807, z: 33.733257}
+        PeelableRotation: {x: 0.00000081375305, y: 0.00000018676279, z: -0.000027324926}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96572,85 +96567,85 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -2.82763, y: 4.76914, z: 33.733257}
-        PeelableRotation: {x: 0.0000002401229, y: -0.00000440227, z: -0.000023938384}
+        PeelableRotation: {x: 0.00000034684498, y: -0.000002469607, z: -0.000023935258}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: -8.063524, y: 4.662422, z: 33.73069}
-        PeelableRotation: {x: 0.000000033350506, y: -0.0000017100482, z: -0.0000012819108}
+        PeelablePosition: {x: -8.063524, y: 4.662422, z: 33.728725}
+        PeelableRotation: {x: -6.3789768e-15, y: -0.000001709006, z: -0.0000004277205}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.1259154, y: 6.3228884, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: -1.165917, y: 0.053289413, z: 29.789488}
-        PeelableRotation: {x: 270, y: 142.34659, z: 0}
+        IsMoved: 0
+        PeelablePosition: {x: -0.72404575, y: 3.3151774, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.3775805, y: 6.1376195, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: -0.3616625, y: 0.05124855, z: 29.410622}
-        PeelableRotation: {x: 271.74396, y: 291.81934, z: 263.91785}
+        IsMoved: 0
+        PeelablePosition: {x: -0.23103142, y: 3.5555925, z: 33.731865}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -3.2835193, y: 4.5197234, z: 33.733257}
-        PeelableRotation: {x: -0.00000042688677, y: -0.0000008304282, z: 0.000000028347953}
-      - IsPeeled: 1
+        PeelableRotation: {x: -0.00000026680425, y: -0.00000084043336, z: 0.000000018342794}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 5.2222695, y: 0.09824276, z: 29.475357}
-        PeelableRotation: {x: 76.649445, y: 43.612587, z: 305.61224}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 5.541593, y: 2.688105, z: 33.733257}
+        PeelableRotation: {x: 0.00000013340227, y: 0.000004737443, z: -0.0000034025877}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: -3.068399, y: 0.05679226, z: 29.079422}
-        PeelableRotation: {x: 80.20561, y: 71.966675, z: 269.58597}
+        IsMoved: 0
+        PeelablePosition: {x: -0.92907405, y: 4.3338895, z: 33.733257}
+        PeelableRotation: {x: 0.000000026680063, y: -0.000001334021, z: -0.00003073668}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 4.235995, y: 6.684349, z: 33.733257}
         PeelableRotation: {x: 0.000000040020648, y: 0.00000016008256, z: -0.0000068293557}
-      - IsPeeled: 1
-        IsCollected: 0
-        IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 7.076087, y: 0.05324459, z: 29.587458}
-        PeelableRotation: {x: 270.16785, y: 79.627, z: 288.45026}
-      - IsPeeled: 1
-        IsCollected: 0
-        IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 1.9411019, y: 0.15425396, z: 31.465858}
-        PeelableRotation: {x: 270.86456, y: 21.981508, z: 21.00577}
-      - IsPeeled: 1
-        IsCollected: 0
-        IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 4.9450235, y: 0.081747055, z: 31.02182}
-        PeelableRotation: {x: 80.28748, y: 157.22113, z: 71.59848}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: 6.2765384, y: 7.1603284, z: 33.733257}
-        PeelableRotation: {x: -0.00000032026938, y: 0.0000000016675269, z: 3.647715e-10}
+        PeelablePosition: {x: 6.330715, y: 3.8837276, z: 33.733257}
+        PeelableRotation: {x: -7.351672e-24, y: 0.00000012006191, z: -7.702624e-33}
+      - IsPeeled: 0
+        IsCollected: 0
+        IsSold: 0
+        IsMoved: 0
+        PeelablePosition: {x: 2.1361713, y: 2.9730387, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        IsSold: 0
+        IsMoved: 0
+        PeelablePosition: {x: 5.570324, y: 3.3625164, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        IsSold: 0
+        IsMoved: 0
+        PeelablePosition: {x: 6.2765384, y: 7.1599045, z: 33.733257}
+        PeelableRotation: {x: -0.00000021344344, y: -0.0000000033350538, z: 2.0844083e-10}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96669,24 +96664,24 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -3.7928143, y: 4.4807973, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
-        IsCollected: 0
-        IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 4.396985, y: 0.18403625, z: 30.503439}
-        PeelableRotation: {x: 75.27982, y: 233.89401, z: 323.0251}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: -5.091241, y: 7.135234, z: 33.733257}
+        PeelablePosition: {x: 4.5365005, y: 4.881036, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        IsSold: 0
+        IsMoved: 0
+        PeelablePosition: {x: -5.091241, y: 7.1359787, z: 33.733257}
         PeelableRotation: {x: -0.0000010738871, y: 0.00000003335053, z: 0.000000014173975}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -6.3658843, y: 4.358889, z: 33.733257}
-        PeelableRotation: {x: 0.00000016008258, y: 0.0000016074958, z: 0.0000000012506474}
+        PeelableRotation: {x: -2.7772987e-23, y: 0.0000004535673, z: -1.0992886e-31}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96699,12 +96694,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 2.353252, y: 6.4026628, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 5.3378477, y: 0.032829285, z: 29.002132}
-        PeelableRotation: {x: 78.62246, y: 315.69485, z: 91.781364}
+        IsMoved: 0
+        PeelablePosition: {x: 5.3360834, y: 4.653894, z: 33.733257}
+        PeelableRotation: {x: -0.0000012272471, y: -0.00008913929, z: 0.00006744144}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96717,36 +96712,36 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 4.869203, y: 5.894376, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -4.749445, y: 2.53119, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: -4.6909432, y: 0.3088951, z: 30.483955}
+        PeelableRotation: {x: 358.43744, y: 124.679886, z: 179.32193}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 1.4891318, y: 6.0595236, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 6.164934, y: 0.05325985, z: 31.927954}
-        PeelableRotation: {x: 90, y: 13.061196, z: 0}
+        IsMoved: 0
+        PeelablePosition: {x: 5.9655843, y: 3.3335686, z: 33.733257}
+        PeelableRotation: {x: 0.0000027747644, y: 0.0000028548056, z: 0.000003628538}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -7.500932, y: 4.562638, z: 33.733257}
-        PeelableRotation: {x: 0.0000009604952, y: 0.00000073204416, z: 0.000008525854}
+        PeelableRotation: {x: 0.00000009338146, y: 0.00000064700026, z: 0.000003414469}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -2.9173107, y: 2.585123, z: 33.733257}
-        PeelableRotation: {x: 0.000001193949, y: -0.000000010005106, z: 0.000005120036}
+        PeelableRotation: {x: 0.00000006336601, y: 0.00000006670106, z: 0.0000017072344}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96764,13 +96759,13 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -2.079722, y: 6.910822, z: 33.733257}
-        PeelableRotation: {x: 0.00000016341758, y: 0.0000000033350531, z: 2.6055103e-10}
-      - IsPeeled: 1
+        PeelableRotation: {x: 0.000000110056746, y: -0.000000006670106, z: 1.563306e-10}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 2.9230847, y: 0.027352333, z: 28.343925}
-        PeelableRotation: {x: 79.51341, y: 124.22426, z: 269.99573}
+        IsMoved: 0
+        PeelablePosition: {x: 3.709043, y: 3.975966, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96781,128 +96776,128 @@ MonoBehaviour:
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: 5.661373, y: 5.879722, z: 33.733257}
-        PeelableRotation: {x: -0.0000030115527, y: 0.000026738784, z: 0.000002159029}
-      - IsPeeled: 1
+        PeelablePosition: {x: 5.661373, y: 5.8801527, z: 33.733257}
+        PeelableRotation: {x: -0.0000030148879, y: 0.000026845506, z: 0.0000021581952}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 2.6129136, y: 0.067334175, z: 30.585484}
-        PeelableRotation: {x: 71.50505, y: 48.63283, z: 294.51288}
+        IsMoved: 0
+        PeelablePosition: {x: 3.1095881, y: 4.120345, z: 33.733257}
+        PeelableRotation: {x: -3.2030996e-18, y: 0.00000044022698, z: 8.337632e-10}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 0.7506765, y: 5.543899, z: 33.733257}
-        PeelableRotation: {x: -4.1688072e-10, y: -0.00000015883191, z: 0.0000006406428}
-      - IsPeeled: 1
+        PeelableRotation: {x: -4.1688122e-10, y: -0.00000010588793, z: 0.00000042709522}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 4.8044033, y: 0.062550545, z: 31.364977}
-        PeelableRotation: {x: 80.66241, y: 137.75653, z: 273.23572}
+        IsMoved: 0
+        PeelablePosition: {x: 4.9980097, y: 2.4275541, z: 33.733257}
+        PeelableRotation: {x: 0.00000006670106, y: -0.0000004285543, z: -2.6055127e-10}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.9220349, y: 6.7559505, z: 33.733257}
         PeelableRotation: {x: -2.5236435e-18, y: 0.00000017342275, z: 0.0000000016675265}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: -1.8577837, y: 0.052052498, z: 28.965042}
-        PeelableRotation: {x: 89.0633, y: 142.89441, z: 290.48767}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: -0.7800447, y: 3.9220533, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 0.33346188, y: 0.05338955, z: 28.909454}
-        PeelableRotation: {x: 270.23822, y: 163.75809, z: 143.45503}
+        IsMoved: 0
+        PeelablePosition: {x: -0.24900472, y: 4.1621213, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 1.2011961, y: 6.8057566, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 6.1658616, y: 0.10984802, z: 29.296413}
-        PeelableRotation: {x: 287.4851, y: 114.68348, z: 90.62106}
-      - IsPeeled: 1
-        IsCollected: 1
+        IsMoved: 0
+        PeelablePosition: {x: 5.7953424, y: 3.8566809, z: 33.733257}
+        PeelableRotation: {x: 0.00000044022698, y: 0.000000026680423, z: 0.0000000029181715}
+      - IsPeeled: 0
+        IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -0.24548781, y: 5.0853395, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
+        IsCollected: 0
+        IsSold: 0
+        IsMoved: 0
+        PeelablePosition: {x: 6.334396, y: 3.4820595, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
         IsMoved: 1
-        PeelablePosition: {x: 6.6237726, y: 0.05360222, z: 29.96723}
-        PeelableRotation: {x: 270.44235, y: 163.77798, z: 246.47025}
+        PeelablePosition: {x: -4.039026, y: 0.053282738, z: 31.257427}
+        PeelableRotation: {x: 270.49927, y: 352.1987, z: 27.352375}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: -4.045596, y: 2.5653982, z: 33.733257}
-        PeelableRotation: {x: -0.000000106721735, y: -0.0000002134434, z: -0.00001366017}
-      - IsPeeled: 1
-        IsCollected: 0
-        IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 5.334236, y: 0.13226604, z: 30.465704}
-        PeelableRotation: {x: 80.4594, y: 160.06537, z: 28.681198}
+        PeelablePosition: {x: 5.261595, y: 3.9142609, z: 33.733257}
+        PeelableRotation: {x: -0.00000020010326, y: -0.0000003260013, z: -0.00004140765}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 5.023849, y: 6.18933, z: 33.733257}
         PeelableRotation: {x: -0.000000053360846, y: 0.000000026680423, z: 0.0000000016675265}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 6.3594627, y: 0.0518713, z: 29.69032}
-        PeelableRotation: {x: 86.53525, y: 174.54893, z: 92.910645}
+        IsMoved: 0
+        PeelablePosition: {x: 6.4125814, y: 4.6238213, z: 33.733257}
+        PeelableRotation: {x: -0.0000003201651, y: 0.000000080041275, z: -0.000000016675266}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -5.6809673, y: 6.506631, z: 33.733257}
         PeelableRotation: {x: 0.0000000016675269, y: 0.0000000066701076, z: 2.6055108e-11}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 3.80927, y: 0.13367462, z: 29.175999}
-        PeelableRotation: {x: 77.214645, y: 58.723763, z: 13.132464}
+        IsMoved: 0
+        PeelablePosition: {x: 4.003645, y: 3.3225079, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 0.16752434, y: 5.735936, z: 33.733257}
-        PeelableRotation: {x: -0.00000005336086, y: 0.0000013106761, z: 0.0000000016675261}
+        PeelableRotation: {x: -0.00000010672172, y: 0.00000088378926, z: 0.0000000025012894}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: -7.1641784, y: 3.464172, z: 33.733257}
+        PeelablePosition: {x: -7.1641784, y: 3.4638062, z: 33.733257}
         PeelableRotation: {x: -0.000000013340211, y: -0.0000005336085, z: -3.1266115e-10}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -6.201269, y: 4.044973, z: 33.733257}
-        PeelableRotation: {x: -0.000000080041275, y: -0.00000003335053, z: -4.1688158e-10}
+        PeelableRotation: {x: -0.000000053360846, y: -0.000000040020637, z: -2.60551e-10}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.3282124, y: 2.3851442, z: 33.733257}
-        PeelableRotation: {x: 0.000004042084, y: 0.0000062298786, z: 0.0000008621114}
+        PeelableRotation: {x: 0.0000039487027, y: 0.0000063499406, z: 0.0000008646127}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96921,18 +96916,18 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -6.2353363, y: 7.0747724, z: 33.733257}
         PeelableRotation: {x: 0.000000013340213, y: 0.00000076503, z: 0.0000000011366541}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 2.6431832, y: 0.05042076, z: 31.008865}
-        PeelableRotation: {x: 271.1484, y: 347.5054, z: 57.12471}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 2.723483, y: 2.8750443, z: 33.733257}
+        PeelableRotation: {x: -0.0000026346916, y: -0.000000021677842, z: -0.000000012089564}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 2.0901694, y: 0.15591621, z: 30.429585}
-        PeelableRotation: {x: 86.25843, y: 322.41034, z: 119.65823}
+        IsMoved: 0
+        PeelablePosition: {x: 2.804727, y: 2.5410967, z: 33.733257}
+        PeelableRotation: {x: -0.00000002584664, y: 0.00000008421009, z: -0.000026466954}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96951,12 +96946,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 2.516139, y: 7.0053463, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
-        IsCollected: 1
+      - IsPeeled: 0
+        IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 0.49768174, y: 3.6881733, z: 31.906906}
-        PeelableRotation: {x: 31.654915, y: 336.349, z: 335.1725}
+        IsMoved: 0
+        PeelablePosition: {x: 0.5031675, y: 4.229788, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96968,25 +96963,25 @@ MonoBehaviour:
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.0442446, y: 3.2344084, z: 33.733257}
-        PeelableRotation: {x: 0.0000026680423, y: -0.000003525151, z: 0.00000005961399}
+        PeelableRotation: {x: 0.000001067217, y: -0.00000376861, z: 0.000000017508993}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -7.325868, y: 2.9839544, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 4.225946, y: 0.052872658, z: 31.17897}
-        PeelableRotation: {x: 89.75056, y: 295.66193, z: 47.840256}
+        IsMoved: 0
+        PeelablePosition: {x: 5.120504, y: 3.1249466, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -8.024935, y: 3.4606247, z: 33.727676}
-        PeelableRotation: {x: -0.00000053361043, y: -0.000021571122, z: -0.000010296975}
+        PeelableRotation: {x: -0.00000053361043, y: -0.000021557782, z: -0.000010295308}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96999,48 +96994,48 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -2.893611, y: 5.3408613, z: 33.733257}
         PeelableRotation: {x: 0.000000080041254, y: -0.00000010005161, z: -0.000023906232}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -3.8677683, y: 2.6350965, z: 33.733257}
-        PeelableRotation: {x: -0.0000016008254, y: -0.0000012539799, z: 0.000003403213}
+        IsMoved: 1
+        PeelablePosition: {x: -3.8428621, y: 0.102983475, z: 31.123032}
+        PeelableRotation: {x: 73.51261, y: 339.08698, z: 61.026978}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -4.338874, y: 5.4365187, z: 33.733257}
         PeelableRotation: {x: -1.6151257e-16, y: 0.000001387382, z: 0.000000013340212}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 4.697579, y: 0.15152645, z: 30.623722}
-        PeelableRotation: {x: 4.9809, y: 59.75116, z: 0.49388757}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 5.454274, y: 2.3681393, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 1.9309705, y: 0.12870884, z: 29.802673}
-        PeelableRotation: {x: 284.9444, y: 79.769104, z: 261.1211}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 2.1416483, y: 4.713247, z: 33.733257}
+        PeelableRotation: {x: 0.0000010138561, y: -0.000000306825, z: -0.000013649955}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 3.6683145, y: 0.053498268, z: 31.407978}
-        PeelableRotation: {x: 270.18872, y: 290.74957, z: 142.20323}
+        IsMoved: 0
+        PeelablePosition: {x: 3.1166234, y: 4.4735537, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -1.7551886, y: 6.0110364, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -4.0790563, y: 3.6109838, z: 33.733257}
-        PeelableRotation: {x: 0.000000013340212, y: -0.0000003201651, z: -0.0000000014590856}
+        IsMoved: 1
+        PeelablePosition: {x: -3.929266, y: 0.06299877, z: 30.259323}
+        PeelableRotation: {x: 82.51638, y: 50.272846, z: 66.84176}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -97053,18 +97048,18 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 4.776752, y: 5.5251465, z: 33.733257}
         PeelableRotation: {x: -0.000000040020645, y: -0.000000040020645, z: -0.000004270536}
-      - IsPeeled: 1
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 5.8620086, y: 0.05414486, z: 29.923817}
-        PeelableRotation: {x: 89.43664, y: 182.77243, z: 150.13625}
-      - IsPeeled: 1
+        IsMoved: 0
+        PeelablePosition: {x: 5.6985707, y: 4.2261305, z: 33.733257}
+        PeelableRotation: {x: -0, y: 0, z: 0}
+      - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 1
-        PeelablePosition: {x: 4.2461066, y: 0.13259697, z: 30.40715}
-        PeelableRotation: {x: 276.62555, y: 353.6807, z: 16.782751}
+        IsMoved: 0
+        PeelablePosition: {x: 4.662862, y: 2.4066, z: 33.733257}
+        PeelableRotation: {x: 0.0000014941037, y: 0.00000042688677, z: -0.00000010672169}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -97079,417 +97074,150 @@ MonoBehaviour:
         PeelableRotation: {x: -0.000000053360846, y: 0.00000021344337, z: 0.00000085377354}
       BuildableDatas: []
       PaintableDatas:
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
@@ -97497,591 +97225,858 @@ MonoBehaviour:
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
-      - IsPainted: 1
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
       - IsPainted: 0
-      - IsPainted: 1
-      - IsPainted: 1
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
+      - IsPainted: 0
       MoneyDatas: []
       UpgradePointDatas: []
   BuildMachineUpgradeDatas:
@@ -98106,9 +98101,9 @@ MonoBehaviour:
   PaintMachineUpgradeDatas:
   - machineUpgradeType: 1
     Loops: 0
-    Level: 2
-    Value: 2
-    StepIndex: 1
+    Level: 1
+    Value: 100
+    StepIndex: 0
     Cost: 1
   - machineUpgradeType: 2
     Loops: 0
@@ -98117,9 +98112,9 @@ MonoBehaviour:
     StepIndex: 2
     Cost: 1
   - machineUpgradeType: 3
-    Loops: 1
-    Level: 6
-    Value: 6
+    Loops: 2
+    Level: 9
+    Value: 9
     StepIndex: 2
     Cost: 1
   useHaptic: 1

@@ -105,6 +105,8 @@ public class PlayerController : MonoBehaviour
     {
         pos = collectableParent.position;
         rot = collectableParent.rotation;
+        if (scrapeTool.toolAngleController != null)
+            rot = Quaternion.Euler(Vector3.right * 90);
         for (int i = 0; i < collectables.Count; i++)
         {
             if (collectables[i].readyToTilt)
