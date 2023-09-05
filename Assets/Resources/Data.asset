@@ -16,15 +16,16 @@ MonoBehaviour:
     LevelValue: 3
     LevelTextValue: 3
   PlayerData:
-    Money: 0
+    Money: 998679
     UpgradePoints: 0
-    PlayerPosition: {x: 0.83819926, y: -0.000006854534, z: 17.90937}
-    PlayerRotation: {x: -0, y: 302.94922, z: 0}
+    PlayerPosition: {x: 7.8714995, y: -0.000020682812, z: -5.6372514}
+    PlayerRotation: {x: -0, y: 213.31062, z: 0}
     HasWheelBarrow: 0
     WheelBarrowPosition: {x: 0, y: 0, z: 0}
     WheelBarrowRotation: {x: 0, y: 0, z: 0}
     wheelBarrowCollectables: []
-    playerCollectables: []
+    playerCollectables:
+    - index: 259
   UpgradeDatas:
   - upgradeType: 0
     Loops: 0
@@ -40,6 +41,20 @@ MonoBehaviour:
     OriginalValue: 30
     StepIndex: 0
     Cost: 20
+  - upgradeType: 2
+    Loops: 0
+    Level: 1
+    Value: 1
+    OriginalValue: 1
+    StepIndex: 0
+    Cost: 50
+  - upgradeType: 3
+    Loops: 0
+    Level: 1
+    Value: 1
+    OriginalValue: 1
+    StepIndex: 0
+    Cost: 50
   LevelProgressDatas:
   - ZoneIndex: 0
     ZoneDatas:
@@ -95275,18 +95290,18 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -3.955011, y: 5.8210077, z: 33.733257}
         PeelableRotation: {x: 0.0000011739388, y: -0.0000036285376, z: 0.00000314829}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.36327708, y: 2.7263608, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+        IsMoved: 1
+        PeelablePosition: {x: 0.2965994, y: 0.15523815, z: 31.375507}
+        PeelableRotation: {x: 281.18073, y: 15.519462, z: 251.91592}
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.8081743, y: 4.578286, z: 33.733257}
-        PeelableRotation: {x: 2.4750888e-18, y: 0.00000022678365, z: -0.0000000012506451}
+        IsMoved: 1
+        PeelablePosition: {x: -1.8310934, y: 0.09208584, z: 31.133099}
+        PeelableRotation: {x: 80.68202, y: 121.377, z: 49.562576}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95311,12 +95326,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 2.2915764, y: 5.685684, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.2713472, y: 3.8124614, z: 33.733257}
-        PeelableRotation: {x: 0.00000004168816, y: -0.00000007920751, z: 0.00000085377354}
+        IsMoved: 1
+        PeelablePosition: {x: -1.0760864, y: 0.15657425, z: 30.171122}
+        PeelableRotation: {x: 274.5806, y: 162.90828, z: 229.02605}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95377,12 +95392,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -3.146709, y: 7.0497074, z: 33.733257}
         PeelableRotation: {x: -0.00000001000516, y: -0.000000111724276, z: -0.0000012802435}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.814448, y: 2.5230985, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: -2.827592, y: 0.22679615, z: 30.306377}
+        PeelableRotation: {x: 356.78226, y: 31.93092, z: 164.00928}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95443,18 +95458,18 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -7.8269534, y: 2.6325054, z: 33.7323}
         PeelableRotation: {x: 0.000000026680423, y: 0.000000007920752, z: 0.0000025650725}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.44236076, y: 3.9364405, z: 33.733257}
-        PeelableRotation: {x: -0.00000053360844, y: 0.0000000767062, z: 0.0000017842532}
-      - IsPeeled: 0
+        IsMoved: 1
+        PeelablePosition: {x: -0.5201024, y: 0.0926981, z: 30.171852}
+        PeelableRotation: {x: 2.972754, y: 346.3371, z: 93.196304}
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.29123688, y: 4.471551, z: 33.733257}
-        PeelableRotation: {x: -0.0000017142177, y: -3.9912243e-16, z: 0.00000002668043}
+        IsMoved: 1
+        PeelablePosition: {x: 0.27624118, y: 0.07765007, z: 29.82766}
+        PeelableRotation: {x: 21.618132, y: 10.148452, z: 1.9562614}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95479,12 +95494,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -8.1666565, y: 6.846669, z: 33.69926}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.8183831, y: 3.7249775, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: 0.7419332, y: 0.31860065, z: 29.990578}
+        PeelableRotation: {x: 336.79193, y: 92.8674, z: 357.8836}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95533,12 +95548,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -3.6309943, y: 3.5025811, z: 33.733257}
         PeelableRotation: {x: 0.0000004669074, y: -0.00000010672171, z: -0.0000034100917}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.20236325, y: 4.83196, z: 33.733257}
-        PeelableRotation: {x: -0.000000013340215, y: 0.00000021344344, z: -0.0000000033350538}
+        IsMoved: 1
+        PeelablePosition: {x: 0.33723843, y: 0.053282738, z: 27.282356}
+        PeelableRotation: {x: 270, y: 245.34018, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95587,12 +95602,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -3.2952604, y: 6.157543, z: 33.733257}
         PeelableRotation: {x: -0.00000026680425, y: 0.000000053360846, z: 0.0000000033350527}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.0939336, y: 5.054069, z: 33.733257}
-        PeelableRotation: {x: -0.00000001667526, y: -0.0000006336601, z: 0.0000008579424}
+        IsMoved: 1
+        PeelablePosition: {x: -1.0694563, y: 0.049243927, z: 29.944088}
+        PeelableRotation: {x: 272.5002, y: 230.88284, z: 165.95058}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95617,12 +95632,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 4.530456, y: 2.8023596, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 1.1916255, y: 6.3468432, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: 0.031277776, y: 0.05272293, z: 28.54382}
+        PeelableRotation: {x: 270.3214, y: 303.89035, z: 112.140526}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95641,12 +95656,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -3.9605718, y: 7.0228286, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.5855511, y: 3.193819, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: -1.7322589, y: 0.21815872, z: 30.289383}
+        PeelableRotation: {x: 305.12946, y: 336.01108, z: 103.73096}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95677,12 +95692,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -7.6093745, y: 4.092446, z: 33.733257}
         PeelableRotation: {x: -0.0000003201651, y: 0.00000003335053, z: 0.0000000025012898}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.6699656, y: 6.0535374, z: 33.733257}
-        PeelableRotation: {x: -0.000000053360807, y: -0.00000066701057, z: 0.000006835191}
+        IsMoved: 1
+        PeelablePosition: {x: 0.7925767, y: 0.06568813, z: 28.380634}
+        PeelableRotation: {x: 79.919754, y: 161.13028, z: 224.22424}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95701,12 +95716,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -5.773171, y: 3.2066803, z: 33.733257}
         PeelableRotation: {x: 0.0000004535672, y: 0.0000007003611, z: 0.0000000029181741}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.10468912, y: 6.425596, z: 33.733257}
-        PeelableRotation: {x: -0.0000000016675262, y: -0.00000032016504, z: -2.344959e-10}
+        IsMoved: 1
+        PeelablePosition: {x: -1.0492041, y: 0.25445652, z: 30.206175}
+        PeelableRotation: {x: 273.63043, y: 161.42044, z: 122.74222}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95719,18 +95734,18 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 5.697105, y: 5.3997602, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.60091746, y: 3.5098662, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+        IsMoved: 1
+        PeelablePosition: {x: -0.44535768, y: 0.050551414, z: 29.700237}
+        PeelableRotation: {x: 89.191574, y: 262.28357, z: 241.54457}
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.66810167, y: 4.876259, z: 33.733257}
-        PeelableRotation: {x: 0.00000032016513, y: -0.00000033350526, z: 0.000006833315}
+        IsMoved: 1
+        PeelablePosition: {x: 0.29692292, y: 0.32432842, z: 29.80516}
+        PeelableRotation: {x: 303.19458, y: 229.72844, z: 165.64973}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95740,9 +95755,9 @@ MonoBehaviour:
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 1.3210872, y: 2.82686, z: 33.733257}
-        PeelableRotation: {x: 0.0000015207842, y: 0.00000016008255, z: -0.000000017509027}
+        IsMoved: 1
+        PeelablePosition: {x: 1.6976589, y: 0.051743507, z: 30.65251}
+        PeelableRotation: {x: 271.51257, y: 121.075325, z: 226.33955}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95764,9 +95779,9 @@ MonoBehaviour:
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 1.7527689, y: 6.876727, z: 33.733257}
-        PeelableRotation: {x: -3.414203e-21, y: 0.000000030015478, z: 1.302755e-11}
+        IsMoved: 1
+        PeelablePosition: {x: 1.9639906, y: 0.053287506, z: 28.297634}
+        PeelableRotation: {x: 90, y: 295.6942, z: 0}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95791,18 +95806,18 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -3.0613618, y: 4.353547, z: 33.733257}
         PeelableRotation: {x: 0.00000042688677, y: 0.00000021344337, z: 0.000000020010319}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.41065633, y: 6.7052794, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+        IsMoved: 1
+        PeelablePosition: {x: 0.045112967, y: 0.052493095, z: 29.13977}
+        PeelableRotation: {x: 270.36478, y: 83.422615, z: 297.54895}
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 1.284376, y: 6.560211, z: 33.733257}
-        PeelableRotation: {x: -0.000003841981, y: -0.00000042688677, z: 0.00000032016513}
+        IsMoved: 1
+        PeelablePosition: {x: 1.1717452, y: 0.0034723282, z: 28.317387}
+        PeelableRotation: {x: 310.28375, y: 322.92334, z: 143.88492}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95839,18 +95854,18 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -2.149043, y: 4.251718, z: 33.733257}
         PeelableRotation: {x: 0.000000006670106, y: 0.000000006670106, z: 0.00000085377354}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.37416244, y: 3.8133268, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+        IsMoved: 1
+        PeelablePosition: {x: -0.24853313, y: 0.04844284, z: 30.10557}
+        PeelableRotation: {x: 30.084047, y: 150.41747, z: 211.88496}
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.4258312, y: 4.362245, z: 33.733257}
-        PeelableRotation: {x: 0.00000066701074, y: -0.000000373526, z: 0.000000016675267}
+        IsMoved: 1
+        PeelablePosition: {x: -0.3388871, y: 0.37436485, z: 29.814703}
+        PeelableRotation: {x: 1.4124819, y: 139.8444, z: 38.985985}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95875,12 +95890,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -8.046284, y: 6.540675, z: 33.727676}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.2474742, y: 5.796736, z: 33.733257}
-        PeelableRotation: {x: 0.000000006670105, y: 0.00000009004642, z: 2.6055103e-11}
+        IsMoved: 1
+        PeelablePosition: {x: -0.32883155, y: 0.053542137, z: 30.574774}
+        PeelableRotation: {x: 270.35718, y: 269.31512, z: 219.29503}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95911,12 +95926,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -5.283827, y: 5.373473, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 1.1912583, y: 5.884804, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: 0.17447007, y: 0.10777092, z: 28.627407}
+        PeelableRotation: {x: 74.55683, y: 272.42313, z: 65.85854}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95929,36 +95944,36 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 2.656887, y: 3.760157, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -2.1004882, y: 5.9774575, z: 33.733257}
-        PeelableRotation: {x: -0.000000110056746, y: 3.2798463e-15, z: -0.00000341499}
+        IsMoved: 1
+        PeelablePosition: {x: -1.7321922, y: 0.079190254, z: 29.32794}
+        PeelableRotation: {x: 273.752, y: 191.8794, z: 211.36955}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -6.4195614, y: 5.6644564, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.8551313, y: 5.658459, z: 33.733257}
-        PeelableRotation: {x: -0.0000000033350518, y: 0.000000029181713, z: -0.000005122674}
+        IsMoved: 1
+        PeelablePosition: {x: -1.8398601, y: 0.041186333, z: 29.809803}
+        PeelableRotation: {x: 85.69089, y: 198.12439, z: 173.90648}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 5.513405, y: 5.168638, z: 33.733257}
         PeelableRotation: {x: -0.000000040020634, y: 0.000000033350535, z: -0.0000051243087}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.7810925, y: 6.743805, z: 33.733257}
-        PeelableRotation: {x: -0.000000026680423, y: -0.00000022011349, z: -0.0000000016675262}
+        IsMoved: 1
+        PeelablePosition: {x: -2.022843, y: 0.12526989, z: 29.083263}
+        PeelableRotation: {x: 67.48226, y: 73.77044, z: 243.80554}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95971,12 +95986,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 4.6655183, y: 4.400136, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.877544, y: 5.1723795, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: -1.7225696, y: 0.20762634, z: 29.61692}
+        PeelableRotation: {x: 276.81287, y: 243.13727, z: 9.679231}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -95995,12 +96010,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 1.951743, y: 2.4521341, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.2174479, y: 2.7930808, z: 33.733257}
-        PeelableRotation: {x: 0.00000042938817, y: 0.0000000066701076, z: -4.1688167e-10}
+        IsMoved: 1
+        PeelablePosition: {x: -1.4607831, y: 0.08207226, z: 30.408518}
+        PeelableRotation: {x: 83.87523, y: 345.39398, z: 233.63052}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96013,12 +96028,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -3.2876253, y: 5.453919, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.001034379, y: 6.7139573, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: -0.33951557, y: 0.090530396, z: 28.840229}
+        PeelableRotation: {x: 279.0936, y: 256.2585, z: 255.92746}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96049,24 +96064,24 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -7.1707225, y: 6.580284, z: 33.733257}
         PeelableRotation: {x: 0.000000013340212, y: 0.000000013340211, z: 0.0000017075471}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.03124547, y: 3.400453, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+        IsMoved: 1
+        PeelablePosition: {x: -0.17902076, y: 0.11642361, z: 30.957026}
+        PeelableRotation: {x: 81.25859, y: 210.02518, z: 179.49133}
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -2.0760913, y: 7.1339025, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+        IsMoved: 1
+        PeelablePosition: {x: -2.4358177, y: 0.09108162, z: 29.4364}
+        PeelableRotation: {x: 58.29423, y: 79.98782, z: 355.1418}
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.8562146, y: 3.035005, z: 33.733257}
-        PeelableRotation: {x: 0.00000021344339, y: -0.000000020010306, z: 0.0000068310223}
+        IsMoved: 1
+        PeelablePosition: {x: -2.5884275, y: 0.05290699, z: 28.944328}
+        PeelableRotation: {x: 270.2374, y: 199.83054, z: 202.67674}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96079,12 +96094,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 2.8156643, y: 5.194852, z: 33.733257}
         PeelableRotation: {x: -0.000000010005182, y: -0.0000003902012, z: -0.000006829876}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.7892364, y: 6.298906, z: 33.733257}
-        PeelableRotation: {x: -0.000000006670105, y: 0.000000040020634, z: -0.0000034151203}
+        IsMoved: 1
+        PeelablePosition: {x: 1.2085346, y: 0.052340508, z: 29.027473}
+        PeelableRotation: {x: 89.401276, y: 343.75726, z: 329.41333}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96097,12 +96112,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 3.3951893, y: 4.073002, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.041190267, y: 7.1059265, z: 33.733257}
-        PeelableRotation: {x: -0.000000080041275, y: 0.0000000041688164, z: 6.2532246e-10}
+        IsMoved: 1
+        PeelablePosition: {x: -0.4397608, y: 0.052885056, z: 27.117971}
+        PeelableRotation: {x: 89.6678, y: 130.5501, z: 105.13515}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96127,18 +96142,18 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -5.2407804, y: 2.525527, z: 33.733257}
         PeelableRotation: {x: 0.000000080041275, y: 0.00000085377354, z: -0.00000001334021}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.4897331, y: 2.5154238, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+        IsMoved: 1
+        PeelablePosition: {x: 0.42301428, y: 0.18744564, z: 30.790243}
+        PeelableRotation: {x: 78.1163, y: 214.125, z: 193.89153}
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.7105681, y: 3.840845, z: 33.733257}
-        PeelableRotation: {x: -0.0000006409555, y: 8.744182e-19, z: -1.563306e-10}
+        IsMoved: 1
+        PeelablePosition: {x: -2.3797965, y: 0.23126888, z: 29.4244}
+        PeelableRotation: {x: 61.29181, y: 85.67622, z: 230.87764}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96154,21 +96169,21 @@ MonoBehaviour:
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 1.021232, y: 4.0735784, z: 33.733257}
-        PeelableRotation: {x: -0.00000015007741, y: 0.000000043355705, z: -0.0000051223296}
+        IsMoved: 1
+        PeelablePosition: {x: 1.2686356, y: 0.18029213, z: 30.094296}
+        PeelableRotation: {x: 60.015022, y: 314.27493, z: 38.66511}
+      - IsPeeled: 1
+        IsCollected: 0
+        IsSold: 0
+        IsMoved: 1
+        PeelablePosition: {x: -1.7690731, y: 0.18226814, z: 30.597265}
+        PeelableRotation: {x: 64.54581, y: 129.35275, z: 55.054832}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.369979, y: 4.5457273, z: 33.733257}
-        PeelableRotation: {x: -0.000000026680423, y: 0.00000043022183, z: 4.1688153e-10}
-      - IsPeeled: 0
-        IsCollected: 0
-        IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 1.2494029, y: 2.5252423, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: 1.9734586, y: 0.11225319, z: 31.087944}
+        PeelableRotation: {x: 289.73947, y: 51.09719, z: 270.675}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96190,9 +96205,9 @@ MonoBehaviour:
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.64757, y: 3.119751, z: 33.733257}
-        PeelableRotation: {x: 0.0000000033350525, y: -0.000000083376314, z: 5.2110195e-11}
+        IsMoved: 1
+        PeelablePosition: {x: 0.9653715, y: 0.26077366, z: 30.742163}
+        PeelableRotation: {x: 289.95273, y: 48.203293, z: 314.5476}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96211,12 +96226,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -7.2892585, y: 2.5922775, z: 33.733257}
         PeelableRotation: {x: -5.97082e-16, y: 0.000000020010317, z: 0.000003419263}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.1360542, y: 6.825856, z: 33.733257}
-        PeelableRotation: {x: -3.0813498e-15, y: 0.00000010338664, z: 0.0000034153027}
+        IsMoved: 1
+        PeelablePosition: {x: -1.3574964, y: 0.049640656, z: 30.81246}
+        PeelableRotation: {x: 270.54105, y: 153.29205, z: 99.87256}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96229,18 +96244,18 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 4.8515434, y: 6.7042623, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.17042708, y: 4.273328, z: 33.733257}
-        PeelableRotation: {x: 0.00000021344339, y: -0.00000085377354, z: -0.000000026680425}
-      - IsPeeled: 0
+        IsMoved: 1
+        PeelablePosition: {x: 0.23439562, y: 0.054883957, z: 30.564535}
+        PeelableRotation: {x: 273.62238, y: 62.313072, z: 295.3761}
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.0907073, y: 4.6440525, z: 33.733257}
-        PeelableRotation: {x: 0.00000011339181, y: 0.00000017342279, z: 0.000005123476}
+        IsMoved: 1
+        PeelablePosition: {x: 0.029399157, y: 0.10427189, z: 29.734085}
+        PeelableRotation: {x: 73.67781, y: 54.99876, z: 267.98132}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96253,12 +96268,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -4.832933, y: 5.4781876, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.95390165, y: 6.8844447, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: 0.38065803, y: 0.053477287, z: 29.854216}
+        PeelableRotation: {x: 89.65114, y: 223.68925, z: 136.88861}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96304,9 +96319,9 @@ MonoBehaviour:
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.22143114, y: 3.928092, z: 33.730286}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: 0.30673492, y: 0.120285034, z: 29.228321}
+        PeelableRotation: {x: 51.09809, y: 298.04868, z: 115.05458}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96331,12 +96346,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 3.2490044, y: 3.5509248, z: 33.733257}
         PeelableRotation: {x: -0.00000013340212, y: -0.000000006670114, z: 0.00000682998}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.21336746, y: 3.925128, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: 0.154055, y: 0.16370583, z: 30.248825}
+        PeelableRotation: {x: 27.912495, y: 170.23888, z: 208.08582}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96373,12 +96388,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -4.042958, y: 6.33022, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.97299576, y: 2.5067844, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: -0.27142203, y: 0.11858559, z: 31.185465}
+        PeelableRotation: {x: 76.98854, y: 217.13542, z: 350.91122}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96397,12 +96412,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -5.8179936, y: 3.6649332, z: 33.733257}
         PeelableRotation: {x: -0.0000000025012896, y: -0.0000000012506449, z: 0.0000003201651}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.9877306, y: 5.5896463, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: -0.97632897, y: 0.1226511, z: 31.109898}
+        PeelableRotation: {x: 277.71008, y: 49.982548, z: 320.64615}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96415,12 +96430,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 1.7809247, y: 4.1836567, z: 33.733257}
         PeelableRotation: {x: -0.00000005336079, y: -0.00000026680425, z: 0.000023909412}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.8285512, y: 7.16628, z: 33.733257}
-        PeelableRotation: {x: -0.000000004168817, y: 0.000000006670106, z: 0.0000034157194}
+        IsMoved: 1
+        PeelablePosition: {x: 1.6354331, y: 0.05710697, z: 29.02747}
+        PeelableRotation: {x: 358.9708, y: 18.997072, z: 341.91208}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96433,12 +96448,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 6.289153, y: 5.695875, z: 33.733257}
         PeelableRotation: {x: -0.000000020427198, y: -8.337632e-10, z: 5.6995532e-12}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.27972162, y: 4.456827, z: 33.733257}
-        PeelableRotation: {x: 0.00000002668048, y: 0.0000009871757, z: -0.000006828521}
+        IsMoved: 1
+        PeelablePosition: {x: 0.51660526, y: 0.052894592, z: 31.20828}
+        PeelableRotation: {x: 270.88205, y: 202.31396, z: 229.93352}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96475,12 +96490,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -5.744472, y: 2.3212523, z: 33.733257}
         PeelableRotation: {x: -0.00000004002063, y: 0.0000006403301, z: -0.00000002668042}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.4679078, y: 3.4494166, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: 1.007655, y: 0.1284113, z: 30.620804}
+        PeelableRotation: {x: 67.10482, y: 247.07733, z: 355.4308}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96493,12 +96508,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -3.6764922, y: 5.797917, z: 33.733257}
         PeelableRotation: {x: 0.00000010005159, y: -0.00000016008258, z: -0.000010244867}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.5475067, y: 6.914094, z: 33.733257}
-        PeelableRotation: {x: -0.000000013340211, y: -0.000000006670106, z: -0.0000017075471}
+        IsMoved: 1
+        PeelablePosition: {x: 0.40180457, y: 0.05173397, z: 27.70875}
+        PeelableRotation: {x: 86.85889, y: 10.670457, z: 89.72624}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96559,30 +96574,30 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -8.063524, y: 4.662422, z: 33.727684}
         PeelableRotation: {x: 0.000000006670105, y: -0.0000017079637, z: 8.3376306e-10}
+      - IsPeeled: 1
+        IsCollected: 0
+        IsSold: 0
+        IsMoved: 1
+        PeelablePosition: {x: -0.77912533, y: 0.17808914, z: 29.293316}
+        PeelableRotation: {x: 279.63556, y: 213.47928, z: 193.39801}
+      - IsPeeled: 1
+        IsCollected: 0
+        IsSold: 0
+        IsMoved: 1
+        PeelablePosition: {x: -0.35934985, y: 0.16819572, z: 30.605602}
+        PeelableRotation: {x: 83.276375, y: 13.181189, z: 11.721158}
+      - IsPeeled: 1
+        IsCollected: 0
+        IsSold: 0
+        IsMoved: 1
+        PeelablePosition: {x: -2.5264053, y: 0.042793274, z: 29.265312}
+        PeelableRotation: {x: 87.18938, y: 130.8622, z: 216.06833}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.1259154, y: 6.3228884, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.72404575, y: 3.3151774, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.3775805, y: 6.1376195, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
-        IsCollected: 0
-        IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.23103142, y: 3.5555925, z: 33.731865}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: -0.55885756, y: 0.10557175, z: 30.002052}
+        PeelableRotation: {x: 37.707825, y: 161.22485, z: 68.46343}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96595,12 +96610,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 5.541593, y: 2.6879778, z: 33.733257}
         PeelableRotation: {x: 0.00000010672172, y: 0.0000012823278, z: -0.0000017062964}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.92904127, y: 4.3338895, z: 33.733257}
-        PeelableRotation: {x: -0.000000026680478, y: -0.0000009871756, z: -0.0000068268528}
+        IsMoved: 1
+        PeelablePosition: {x: -0.9653549, y: 0.06501007, z: 29.323257}
+        PeelableRotation: {x: 77.21516, y: 41.25298, z: 275.3961}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96688,9 +96703,9 @@ MonoBehaviour:
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -2.0995736, y: 3.6344414, z: 33.733257}
-        PeelableRotation: {x: 1.2716004e-14, y: 0.00000042688677, z: -0.0000034134266}
+        IsMoved: 1
+        PeelablePosition: {x: -2.5142064, y: 0.18804264, z: 29.655361}
+        PeelableRotation: {x: 60.331142, y: 88.21763, z: 289.2389}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96742,9 +96757,9 @@ MonoBehaviour:
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -2.079722, y: 6.910822, z: 33.733257}
-        PeelableRotation: {x: 0.000000053360846, y: 0.0000000100051585, z: 1.0422041e-10}
+        IsMoved: 1
+        PeelablePosition: {x: -3.085857, y: 0.1400137, z: 29.548586}
+        PeelableRotation: {x: 80.22208, y: 242.57336, z: 155.77873}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96769,50 +96784,50 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 3.1095881, y: 4.120345, z: 33.733257}
         PeelableRotation: {x: -1.3069639e-23, y: 0.00000021344337, z: -2.4344094e-32}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.7506765, y: 5.543899, z: 33.733257}
-        PeelableRotation: {x: 9.8663946e-17, y: -0.000000052943964, z: 0.00000021354761}
+        IsMoved: 1
+        PeelablePosition: {x: 0.9207438, y: 0.071513176, z: 29.4772}
+        PeelableRotation: {x: 273.91272, y: 117.391, z: 207.01318}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 4.9980097, y: 2.4274263, z: 33.733257}
         PeelableRotation: {x: 0.000000053360846, y: -0.00000021260962, z: -9.900406e-17}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.9220349, y: 6.7559505, z: 33.733257}
-        PeelableRotation: {x: -2.5236435e-18, y: 0.00000017342275, z: 0.0000000016675265}
-      - IsPeeled: 0
+        IsMoved: 1
+        PeelablePosition: {x: -2.5859962, y: 0.26261234, z: 29.907732}
+        PeelableRotation: {x: 300.82654, y: 267.8639, z: 260.57648}
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.7800447, y: 3.9220533, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+        IsMoved: 1
+        PeelablePosition: {x: -1.2352272, y: 0.26343346, z: 29.656965}
+        PeelableRotation: {x: 68.749954, y: 325.0362, z: 118.22741}
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -0.24900472, y: 4.1621213, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+        IsMoved: 1
+        PeelablePosition: {x: -0.20372045, y: 0.18220234, z: 29.869644}
+        PeelableRotation: {x: 16.126955, y: 117.167336, z: 232.12521}
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 1.2011961, y: 6.8057566, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: 0.7481102, y: 0.13032913, z: 30.312742}
+        PeelableRotation: {x: 60.68406, y: 222.07397, z: 322.11932}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 5.7953424, y: 3.8566809, z: 33.733257}
         PeelableRotation: {x: 0.00000033350528, y: 0.000000013340211, z: 0.0000000020844082}
-      - IsPeeled: 0
-        IsCollected: 0
+      - IsPeeled: 1
+        IsCollected: 1
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: -0.24548781, y: 5.0853395, z: 33.733257}
@@ -96859,12 +96874,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 4.003645, y: 3.3225079, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.16752434, y: 5.735936, z: 33.733257}
-        PeelableRotation: {x: -0.00000013340215, y: 0.0000004535673, z: 0.0000000033350531}
+        IsMoved: 1
+        PeelablePosition: {x: -0.6530981, y: 0.0803957, z: 29.4721}
+        PeelableRotation: {x: 80.6757, y: 52.95973, z: 103.86401}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96877,12 +96892,12 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: -6.201269, y: 4.044973, z: 33.733257}
         PeelableRotation: {x: -0.000000026680423, y: -0.000000050025793, z: -1.5633059e-10}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.3282124, y: 2.3851442, z: 33.733257}
-        PeelableRotation: {x: 0.00000013340212, y: 0.00000052026826, z: 0.0000008571086}
+        IsMoved: 1
+        PeelablePosition: {x: -2.2392735, y: 0.1244688, z: 30.805601}
+        PeelableRotation: {x: 60.33496, y: 85.565994, z: 352.30014}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -96931,24 +96946,24 @@ MonoBehaviour:
         IsMoved: 0
         PeelablePosition: {x: 2.516139, y: 7.0053463, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: 0.5031675, y: 4.229788, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: 0.5414301, y: 0.20424175, z: 30.174774}
+        PeelableRotation: {x: 50.9627, y: 225.59677, z: 218.15327}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
         PeelablePosition: {x: 3.4976683, y: 6.7360125, z: 33.733257}
         PeelableRotation: {x: -0, y: 0, z: 0}
-      - IsPeeled: 0
+      - IsPeeled: 1
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.0442446, y: 3.2344084, z: 33.733257}
-        PeelableRotation: {x: 0.00000042688677, y: -0.0000012456424, z: 0.000000007503864}
+        IsMoved: 1
+        PeelablePosition: {x: -0.5910212, y: 0.18236351, z: 29.899282}
+        PeelableRotation: {x: 287.84158, y: 12.121433, z: 330.5741}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
@@ -97012,9 +97027,9 @@ MonoBehaviour:
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0
-        IsMoved: 0
-        PeelablePosition: {x: -1.7551886, y: 6.0110364, z: 33.733257}
-        PeelableRotation: {x: -0, y: 0, z: 0}
+        IsMoved: 1
+        PeelablePosition: {x: -3.3270721, y: 0.052993774, z: 29.516825}
+        PeelableRotation: {x: 89.48986, y: 81.41201, z: 278.7551}
       - IsPeeled: 0
         IsCollected: 0
         IsSold: 0

@@ -7,7 +7,9 @@ using TMPro;
 public enum UpgradeType
 {
     ToolUpgrade,
-    LoadUpgrade
+    LoadUpgrade,
+    ToolLengthUpgrade,
+    ToolWidthUpgrade
 }
 public class Upgrade : MonoBehaviour
 {
@@ -72,6 +74,12 @@ public class Upgrade : MonoBehaviour
                 break;
             case UpgradeType.LoadUpgrade:
                 upgradeManager.OnLoadUpgrade();
+                break;
+            case UpgradeType.ToolLengthUpgrade:
+                upgradeManager.OnToolLengthUpgrade();
+                break;
+            case UpgradeType.ToolWidthUpgrade:
+                upgradeManager.OnToolWidthUpgrade();
                 break;
             default:
                 break;

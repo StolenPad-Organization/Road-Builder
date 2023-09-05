@@ -2,12 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class ToolAngleUpgrade
-{
-    public float toolLength;
-}
-
 public class ToolAngleController : MonoBehaviour
 {
     [SerializeField] private UltimateJoystick joystick;
@@ -35,20 +29,23 @@ public class ToolAngleController : MonoBehaviour
     [SerializeField] private Transform headPos;
     [SerializeField] private Transform toolHandle;
     [SerializeField] private float toolLength;
-    [SerializeField] private ToolAngleUpgrade[] upgrades;
     [SerializeField] private int index;
+    [SerializeField] private Vector2 lengthLimits;
+    [SerializeField] private float lengthIncrease;
+    [SerializeField] private Vector2 widthLimits;
+    [SerializeField] private float widthIncrease;
 
     void Start()
     {
         joystick = PlayerController.instance.movementController.joystick;
-        CalculateScale(index);
+        //CalculateScale(index);
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
-            CalculateScale(index + 1 < upgrades.Length ? index + 1 : upgrades.Length - 1);
+            CalculateLength(index + 1);
         }
 
         if (distanceTarget == null) return;
@@ -123,16 +120,20 @@ public class ToolAngleController : MonoBehaviour
         realModel.SetActive(false);
     }
 
-    public void CalculateScale(int _index)
+    public void CalculateLength(int _index)
     {
         index = _index;
-        toolLength = upgrades[index].toolLength;
+        toolLength = lengthLimits.x + (lengthIncrease * index);
+        toolLength = Mathf.Clamp(toolLength, lengthLimits.x, lengthLimits.y);
         Vector3 toolScale = toolHandle.localScale;
         toolScale.y = toolLength;
         toolHandle.localScale = toolScale;
         toolHead.transform.position = headPos.position;
+    }
 
-        //set new angle
+    public void CalculateWidth(int _index)
+    {
+        //controls the width of the tool head
     }
 
     public void OnPick()

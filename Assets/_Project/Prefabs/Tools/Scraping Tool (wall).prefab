@@ -79,6 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e633e2ebf0c4cf4585512fa882ee642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scrapeToolType: 1
   power: 2
   shovelHead: {fileID: 1448131902979146880}
   scaleFactor: 0.5
@@ -122,17 +123,11 @@ MonoBehaviour:
   headPos: {fileID: 939310184414068050}
   toolHandle: {fileID: 3751066067324639810}
   toolLength: 0.5
-  upgrades:
-  - toolLength: 0.5
-  - toolLength: 0.6
-  - toolLength: 0.7
-  - toolLength: 0.8
-  - toolLength: 0.9
-  - toolLength: 1
-  - toolLength: 1.1
-  - toolLength: 1.2
-  - toolLength: 1.25
   index: 0
+  lengthLimits: {x: 0.5, y: 1.5}
+  lengthIncrease: 0.02
+  widthLimits: {x: 0.32, y: 1}
+  widthIncrease: 0.02
 --- !u!1 &965130916183331421
 GameObject:
   m_ObjectHideFlags: 0

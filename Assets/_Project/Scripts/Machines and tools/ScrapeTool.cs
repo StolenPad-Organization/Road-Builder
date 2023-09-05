@@ -3,8 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
+public enum ScrapeToolType
+{
+    Normal,
+    Angle
+}
+
 public class ScrapeTool : MonoBehaviour
 {
+    public ScrapeToolType scrapeToolType;
     public float power;
     [SerializeField] private GameObject shovelHead;
     [SerializeField] private float scaleFactor;

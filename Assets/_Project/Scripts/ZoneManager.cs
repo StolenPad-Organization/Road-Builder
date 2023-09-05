@@ -85,6 +85,10 @@ public class ZoneManager : MonoBehaviour
         upgradeManager.shovelUpgrade.LoadUpgrade();
         upgradeManager.loadUpgrade.upgradeManager = upgradeManager;
         upgradeManager.loadUpgrade.LoadUpgrade();
+        upgradeManager.lengthUpgrade.upgradeManager = upgradeManager;
+        upgradeManager.lengthUpgrade.LoadUpgrade();
+        upgradeManager.widthUpgrade.upgradeManager = upgradeManager;
+        upgradeManager.widthUpgrade.LoadUpgrade();
         upgradeManager.CheckButtons();
     }
 
@@ -381,6 +385,8 @@ public class ZoneManager : MonoBehaviour
         //check for stage
         upgradeManager.shovelUpgrade.SaveUpgradeData();
         upgradeManager.loadUpgrade.SaveUpgradeData();
+        upgradeManager.lengthUpgrade.SaveUpgradeData();
+        upgradeManager.widthUpgrade.SaveUpgradeData();
 
         buildMachineUpgradeMenu.buildMachineUpgrade.SaveUpgradeData();
 
