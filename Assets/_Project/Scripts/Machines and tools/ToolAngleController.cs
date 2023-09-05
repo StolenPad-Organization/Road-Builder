@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class ToolAngleUpgrade
+{
+    public float toolLength;
+}
+
 public class ToolAngleController : MonoBehaviour
 {
     [SerializeField] private UltimateJoystick joystick;
@@ -19,13 +25,32 @@ public class ToolAngleController : MonoBehaviour
     [SerializeField] private Transform HoldingPosition;
     [SerializeField] private Vector3 HoldingRotation;
     [SerializeField] private bool canRotate;
+
+    [Header("Showing Fake & Real Models")]
+    [SerializeField] private GameObject fakeModel;
+    [SerializeField] private Transform fakeModelPos;
+    [SerializeField] private GameObject realModel;
+
+    [Header("Scale and Upgrade")]
+    [SerializeField] private Transform headPos;
+    [SerializeField] private Transform toolHandle;
+    [SerializeField] private float toolLength;
+    [SerializeField] private ToolAngleUpgrade[] upgrades;
+    [SerializeField] private int index;
+
     void Start()
     {
         joystick = PlayerController.instance.movementController.joystick;
+        CalculateScale(index);
     }
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            CalculateScale(index + 1 < upgrades.Length ? index + 1 : upgrades.Length - 1);
+        }
+
         if (distanceTarget == null) return;
         float horizontalInput = joystick.HorizontalAxis;
         float verticalInput = joystick.VerticalAxis;
@@ -76,6 +101,9 @@ public class ToolAngleController : MonoBehaviour
     {
         modelHolder.transform.position = usePosition.position;
         StartCoroutine(SetTargetRoutine(target));
+
+        fakeModel.SetActive(false);
+        realModel.SetActive(true);
     }
 
     IEnumerator SetTargetRoutine(Transform target)
@@ -90,5 +118,28 @@ public class ToolAngleController : MonoBehaviour
         modelHolder.transform.position = HoldingPosition.position;
         modelHolder.transform.localRotation = Quaternion.Euler(HoldingRotation);
         toolHead.transform.eulerAngles = Vector3.zero;
+
+        fakeModel.SetActive(true);
+        realModel.SetActive(false);
+    }
+
+    public void CalculateScale(int _index)
+    {
+        index = _index;
+        toolLength = upgrades[index].toolLength;
+        Vector3 toolScale = toolHandle.localScale;
+        toolScale.y = toolLength;
+        toolHandle.localScale = toolScale;
+        toolHead.transform.position = headPos.position;
+
+        //set new angle
+    }
+
+    public void OnPick()
+    {
+        fakeModel.transform.SetParent(fakeModelPos);
+        fakeModel.transform.localPosition = Vector3.zero;
+        fakeModel.transform.localEulerAngles = Vector3.zero;
+        fakeModel.transform.localScale = Vector3.one;
     }
 }

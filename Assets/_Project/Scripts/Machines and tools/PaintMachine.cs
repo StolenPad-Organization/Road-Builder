@@ -98,8 +98,10 @@ public class PaintMachine : MonoBehaviour
         transform.DOLocalJump(Vector3.zero, 1.5f, 1, 0.5f);
         transform.DOLocalRotate(Vector3.zero, 0.5f);
         GameManager.instance.currentZone.StartPaintStage();
-        if(paintToolController == null)
+        if (paintToolController == null)
             PlayerController.instance.TogglePaintCollider(true);
+        else
+            paintToolController.OnPick();
         playerTrigger.SetActive(false);
         partsTrigger.SetActive(true);
         PlayerController.instance.movementController.canMove = true;

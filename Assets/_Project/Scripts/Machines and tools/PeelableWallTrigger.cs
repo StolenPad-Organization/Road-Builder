@@ -19,7 +19,6 @@ public class PeelableWallTrigger : MonoBehaviour
             playerController.movementController.SetAnimation();
             playerController.transform.localEulerAngles = Vector3.zero;
             playerController.scrapeTool.toolAngleController.SetDistanceTarget(distanceTarget);
-            playerController.scrapeTool.toolAngleController.enabled = true;
 
             playerController.scrapeTool.WaterEffectFillController.Fill();
         }
@@ -32,7 +31,6 @@ public class PeelableWallTrigger : MonoBehaviour
             playerController.movementController.canRotate = true;
             playerController.movementController.SetAnimation();
             playerController.scrapeTool.toolAngleController.ResetTool();
-            playerController.scrapeTool.toolAngleController.enabled = false;
 
             playerController.scrapeTool.WaterEffectFillController.Empty();
         }

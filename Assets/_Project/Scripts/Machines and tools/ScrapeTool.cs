@@ -45,6 +45,8 @@ public class ScrapeTool : MonoBehaviour
             PlayerController.instance.movementController.ToggleMovementAnimation(true);
             showCollider.SetActive(false);
             hideCollider.SetActive(true);
+            if (toolAngleController != null)
+                toolAngleController.OnPick();
         }
         transform.DOLocalMove(Vector3.zero, 0.3f);
         transform.DOLocalRotate(Vector3.zero, 0.3f);

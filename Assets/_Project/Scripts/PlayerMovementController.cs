@@ -142,6 +142,15 @@ public class PlayerMovementController : MonoBehaviour
                         anim.SetBool("Walk", !move);
                     }
 
+                    if(playerController.paintMachine != null)
+                    {
+                        if(playerController.paintMachine.paintToolController != null)
+                        {
+                            anim.SetBool("Push", !move);
+                            anim.SetBool("Walk", move);
+                        }
+                    }
+
                     if (!canRotate)
                     {
                         anim.SetBool("Strafe", true);
