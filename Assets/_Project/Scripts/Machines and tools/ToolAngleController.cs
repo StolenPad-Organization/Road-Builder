@@ -29,6 +29,7 @@ public class ToolAngleController : MonoBehaviour
     [SerializeField] private Transform headPos;
     [SerializeField] private Transform toolHandle;
     [SerializeField] private float toolLength;
+    [SerializeField] private float toolWidth;
     [SerializeField] private int index;
     [SerializeField] private Vector2 lengthLimits;
     [SerializeField] private float lengthIncrease;
@@ -43,11 +44,6 @@ public class ToolAngleController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            CalculateLength(index + 1);
-        }
-
         if (distanceTarget == null) return;
         float horizontalInput = joystick.HorizontalAxis;
         float verticalInput = joystick.VerticalAxis;
@@ -128,12 +124,17 @@ public class ToolAngleController : MonoBehaviour
         Vector3 toolScale = toolHandle.localScale;
         toolScale.y = toolLength;
         toolHandle.localScale = toolScale;
-        toolHead.transform.position = headPos.position;
+        toolHead.position = headPos.position;
     }
 
     public void CalculateWidth(int _index)
     {
-        //controls the width of the tool head
+        index = _index;
+        toolWidth = widthLimits.x + (widthIncrease * index);
+        toolWidth = Mathf.Clamp(toolWidth, widthLimits.x, widthLimits.y);
+        Vector3 toolScale = toolHead.localScale;
+        toolScale.x = toolWidth;
+        toolHead.localScale = toolScale;
     }
 
     public void OnPick()
