@@ -8,6 +8,7 @@ public class BuildMachine : MonoBehaviour
     public BuildMachineUpgradeType machineUpgradeType;
     [SerializeField] private Transform playerSeat;
     public Transform partsSpawnPoint;
+    public Transform[] partsSpawnPoints;
     [SerializeField] private GameObject playerTrigger;
     [SerializeField] private GameObject partsTrigger;
     [SerializeField] private bool used;
@@ -72,7 +73,8 @@ public class BuildMachine : MonoBehaviour
             used = true;
             playerTrigger.SetActive(false);
             partsTrigger.SetActive(true);
-            machineIcon.Fade();
+            if (machineIcon != null)
+                machineIcon.Fade();
         }
     }
 

@@ -48,7 +48,6 @@ public class Peelable : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
-        PlayerController.instance.OnPeelableDetection(speedAmount, initialPower, dustColor);
         if (!peeled)
         {
             if(!moved)
@@ -57,6 +56,7 @@ public class Peelable : MonoBehaviour
             moved = true;
             peelableRenderer.material.color = movedPieceColor;
             rb.AddForce(Vector3.up * 4, ForceMode.Impulse);
+            PlayerController.instance.OnPeelableDetection(speedAmount, initialPower, dustColor);
         }
         else if(!collected)
         {
@@ -87,10 +87,10 @@ public class Peelable : MonoBehaviour
             }
             PlayerController.instance.SetScrapingMovementSpeed(speedAmount, initialPower);
         }
-        else
-        {
-            PlayerController.instance.OnPeelableDetection(speedAmount, initialPower, dustColor);
-        }
+        //else
+        //{
+        //    PlayerController.instance.OnPeelableDetection(speedAmount, initialPower, dustColor);
+        //}
     }
 
     private void PlayEffect()

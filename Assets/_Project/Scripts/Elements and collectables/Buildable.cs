@@ -43,9 +43,21 @@ public class Buildable : MonoBehaviour
         GameManager.instance.currentZone.SaveBuildable(index, true);
         buildableCollider.enabled = false;
         buildableRenderer.enabled = true;
-        transform.position = PlayerController.instance.asphaltMachine.partsSpawnPoint.position + PlayerController.instance.asphaltMachine.partsSpawnPoint.right * Random.Range(-1.5f, 1.5f);
-        transform.localScale = Vector3.zero;
-        transform.DOLocalJump(initialPos, 0.25f, 1, 0.265f).OnComplete(()=>
+        float duration = 0.265f;
+        if (PlayerController.instance.asphaltMachine.partsSpawnPoints.Length > 0)
+        {
+            int index = Random.Range(0, PlayerController.instance.asphaltMachine.partsSpawnPoints.Length);
+            transform.position = PlayerController.instance.asphaltMachine.partsSpawnPoints[index].position;
+            transform.localScale = Vector3.one * 0.5f;
+            duration = 0.4f;
+        }
+        else
+        {
+            transform.position = PlayerController.instance.asphaltMachine.partsSpawnPoint.position + PlayerController.instance.asphaltMachine.partsSpawnPoint.right * Random.Range(-1.5f, 1.5f);
+            transform.localScale = Vector3.zero;
+        }
+        
+        transform.DOLocalJump(initialPos, 0.25f, 1, duration).OnComplete(()=>
         {
             GameManager.instance.currentZone.OnRoadBuild();
             GameManager.instance.currentZone.buildableManager.OnBuild(transform.position);
@@ -55,8 +67,8 @@ public class Buildable : MonoBehaviour
             if (copy != null)
                 copy.SetActive(true);
         });
-        transform.DOLocalRotate(initialRot, 0.25f);
-        transform.DOScale(initialscale, 0.25f);
+        transform.DOLocalRotate(initialRot, duration);
+        transform.DOScale(initialscale, duration);
         Material material = buildableRenderer.material;
         Color initialEmissionColor = material.GetColor("_EmissionColor");
         Color targetEmissionColor = Color.black;
