@@ -4,20 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public enum MachineUpgradeType
+public enum BuildMachineUpgradeType
 {
     none,
     AsphaltMachineUpgrade,
     RollingMachineUpgrade,
-    GrilliageRollingMachineUpgrade,
-    PaintToolUpgrade
+    GrilliageRollingMachineUpgrade
 }
 
 public class BuildMachineUiUpgrade : MonoBehaviour
 {
     [Header("Properties")]
-    [SerializeField] private MachineUpgradeType upgradeType;
-    private MachineUpgradeData upgradeData;
+    [SerializeField] private BuildMachineUpgradeType upgradeType;
+    private BuildMachineUpgradeData upgradeData;
     public int loops;
     public int level;
     [SerializeField] private TextMeshProUGUI levelText;
@@ -47,10 +46,10 @@ public class BuildMachineUiUpgrade : MonoBehaviour
 
     }
 
-    public void LoadUpgrade(MachineUpgradeType _upgradeType)
+    public void LoadUpgrade(BuildMachineUpgradeType _upgradeType)
     {
         upgradeType = _upgradeType; 
-        upgradeData = Database.Instance.GetMachineUpgradeData(upgradeType);
+        upgradeData = Database.Instance.GetBuildMachineUpgradeData(upgradeType);
         if (upgradeData != null)
         {
             loops = upgradeData.Loops;
@@ -153,7 +152,7 @@ public class BuildMachineUiUpgrade : MonoBehaviour
             upgradeData.Value = value;
             upgradeData.StepIndex = stepIndex;
 
-            Database.Instance.SetMachineUpgradeData(upgradeType, upgradeData);
+            Database.Instance.SetBuildMachineUpgradeData(upgradeType, upgradeData);
         }
     }
 }

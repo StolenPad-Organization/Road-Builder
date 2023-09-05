@@ -70,17 +70,29 @@ public class GameManager : MonoBehaviour
         playerData.ResetData();
         Database.Instance.SetPlayerData(playerData);
 
-        MachineUpgradeData machineUpgradeData = Database.Instance.GetMachineUpgradeData(MachineUpgradeType.AsphaltMachineUpgrade);
-        machineUpgradeData.ResetData();
-        Database.Instance.SetMachineUpgradeData(MachineUpgradeType.AsphaltMachineUpgrade, machineUpgradeData);
+        PaintMachineUpgradeData paintMachineUpgradeData = Database.Instance.GetPaintMachineUpgradeData(PaintMachineUpgradeType.CapacityUpgrade);
+        paintMachineUpgradeData.ResetData();
+        Database.Instance.SetPaintMachineUpgradeData(PaintMachineUpgradeType.CapacityUpgrade, paintMachineUpgradeData);
 
-        machineUpgradeData = Database.Instance.GetMachineUpgradeData(MachineUpgradeType.RollingMachineUpgrade);
-        machineUpgradeData.ResetData();
-        Database.Instance.SetMachineUpgradeData(MachineUpgradeType.RollingMachineUpgrade, machineUpgradeData);
+        paintMachineUpgradeData = Database.Instance.GetPaintMachineUpgradeData(PaintMachineUpgradeType.LengthUpgrade);
+        paintMachineUpgradeData.ResetData();
+        Database.Instance.SetPaintMachineUpgradeData(PaintMachineUpgradeType.LengthUpgrade, paintMachineUpgradeData);
 
-        machineUpgradeData = Database.Instance.GetMachineUpgradeData(MachineUpgradeType.GrilliageRollingMachineUpgrade);
+        paintMachineUpgradeData = Database.Instance.GetPaintMachineUpgradeData(PaintMachineUpgradeType.WidthUpgrade);
+        paintMachineUpgradeData.ResetData();
+        Database.Instance.SetPaintMachineUpgradeData(PaintMachineUpgradeType.WidthUpgrade, paintMachineUpgradeData);
+
+        BuildMachineUpgradeData machineUpgradeData = Database.Instance.GetBuildMachineUpgradeData(BuildMachineUpgradeType.AsphaltMachineUpgrade);
         machineUpgradeData.ResetData();
-        Database.Instance.SetMachineUpgradeData(MachineUpgradeType.GrilliageRollingMachineUpgrade, machineUpgradeData);
+        Database.Instance.SetBuildMachineUpgradeData(BuildMachineUpgradeType.AsphaltMachineUpgrade, machineUpgradeData);
+
+        machineUpgradeData = Database.Instance.GetBuildMachineUpgradeData(BuildMachineUpgradeType.RollingMachineUpgrade);
+        machineUpgradeData.ResetData();
+        Database.Instance.SetBuildMachineUpgradeData(BuildMachineUpgradeType.RollingMachineUpgrade, machineUpgradeData);
+
+        machineUpgradeData = Database.Instance.GetBuildMachineUpgradeData(BuildMachineUpgradeType.GrilliageRollingMachineUpgrade);
+        machineUpgradeData.ResetData();
+        Database.Instance.SetBuildMachineUpgradeData(BuildMachineUpgradeType.GrilliageRollingMachineUpgrade, machineUpgradeData);
 
         UpgradeData upgradeData = Database.Instance.GetUpgradeData(UpgradeType.LoadUpgrade);
         upgradeData.ResetData();
@@ -89,6 +101,14 @@ public class GameManager : MonoBehaviour
         upgradeData = Database.Instance.GetUpgradeData(UpgradeType.ToolUpgrade);
         upgradeData.ResetData();
         Database.Instance.SetUpgradeData(UpgradeType.ToolUpgrade, upgradeData);
+
+        upgradeData = Database.Instance.GetUpgradeData(UpgradeType.ToolLengthUpgrade);
+        upgradeData.ResetData();
+        Database.Instance.SetUpgradeData(UpgradeType.ToolLengthUpgrade, upgradeData);
+
+        upgradeData = Database.Instance.GetUpgradeData(UpgradeType.ToolWidthUpgrade);
+        upgradeData.ResetData();
+        Database.Instance.SetUpgradeData(UpgradeType.ToolWidthUpgrade, upgradeData);
 
         Database.Instance.SaveData();
         EventManager.TriggerWin.Invoke();

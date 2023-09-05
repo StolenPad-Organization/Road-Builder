@@ -532,6 +532,7 @@ MonoBehaviour:
   partsTrigger: {fileID: 3039273748069511548}
   paintScalingObject: {fileID: 2205022256567746120}
   paintToolController: {fileID: 8304082130906266717}
+  hasUpgrade: 0
   machineIcon: {fileID: 0}
 --- !u!114 &8304082130906266717
 MonoBehaviour:
@@ -564,17 +565,11 @@ MonoBehaviour:
   headPos: {fileID: 485653261129812630}
   toolHandle: {fileID: 1331960652527900085}
   toolLength: 0.5
-  upgrades:
-  - toolLength: 0.5
-  - toolLength: 0.6
-  - toolLength: 0.7
-  - toolLength: 0.8
-  - toolLength: 0.9
-  - toolLength: 1
-  - toolLength: 1.1
-  - toolLength: 1.2
-  - toolLength: 1.25
   index: 0
+  lengthLimits: {x: 0.5, y: 1.5}
+  lengthIncrease: 0.05
+  widthLimits: {x: 0.32, y: 1}
+  widthIncrease: 0.05
 --- !u!1 &3039273748069511548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,7 +1185,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -2.9615002, z: -0.119999886}
   m_LocalScale: {x: 0.32, y: 0.32, z: 0.32}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3880950582909709645}
   - {fileID: 3833134106280976811}

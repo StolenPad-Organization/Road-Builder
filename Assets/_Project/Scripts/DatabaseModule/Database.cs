@@ -172,23 +172,43 @@ public class Database : MonoBehaviour
         }
     }
 
-    public MachineUpgradeData GetMachineUpgradeData(MachineUpgradeType upgradeType)
+    public BuildMachineUpgradeData GetBuildMachineUpgradeData(BuildMachineUpgradeType upgradeType)
     {
-        for (int i = 0; i < data.MachineUpgradeDatas.Count; i++)
+        for (int i = 0; i < data.BuildMachineUpgradeDatas.Count; i++)
         {
-            if (data.MachineUpgradeDatas[i].machineUpgradeType == upgradeType)
-                return data.MachineUpgradeDatas[i];
+            if (data.BuildMachineUpgradeDatas[i].machineUpgradeType == upgradeType)
+                return data.BuildMachineUpgradeDatas[i];
         }
 
         return null;
     }
 
-    public void SetMachineUpgradeData(MachineUpgradeType upgradeType, MachineUpgradeData value)
+    public void SetBuildMachineUpgradeData(BuildMachineUpgradeType upgradeType, BuildMachineUpgradeData value)
     {
-        for (int i = 0; i < data.MachineUpgradeDatas.Count; i++)
+        for (int i = 0; i < data.BuildMachineUpgradeDatas.Count; i++)
         {
-            if (data.MachineUpgradeDatas[i].machineUpgradeType == upgradeType)
-                data.MachineUpgradeDatas[i] = value;
+            if (data.BuildMachineUpgradeDatas[i].machineUpgradeType == upgradeType)
+                data.BuildMachineUpgradeDatas[i] = value;
+        }
+    }
+
+    public PaintMachineUpgradeData GetPaintMachineUpgradeData(PaintMachineUpgradeType upgradeType)
+    {
+        for (int i = 0; i < data.PaintMachineUpgradeDatas.Count; i++)
+        {
+            if (data.PaintMachineUpgradeDatas[i].machineUpgradeType == upgradeType)
+                return data.PaintMachineUpgradeDatas[i];
+        }
+
+        return null;
+    }
+
+    public void SetPaintMachineUpgradeData(PaintMachineUpgradeType upgradeType, PaintMachineUpgradeData value)
+    {
+        for (int i = 0; i < data.PaintMachineUpgradeDatas.Count; i++)
+        {
+            if (data.PaintMachineUpgradeDatas[i].machineUpgradeType == upgradeType)
+                data.PaintMachineUpgradeDatas[i] = value;
         }
     }
 
@@ -208,7 +228,8 @@ public class Database : MonoBehaviour
         data.PlayerData = dataBackup.PlayerData;
         data.UpgradeDatas = dataBackup.UpgradeDatas;
         data.LevelProgressDatas = dataBackup.LevelProgressDatas;
-        data.MachineUpgradeDatas = dataBackup.MachineUpgradeDatas;
+        data.BuildMachineUpgradeDatas = dataBackup.BuildMachineUpgradeDatas;
+        data.PaintMachineUpgradeDatas = dataBackup.PaintMachineUpgradeDatas;
         data.useHaptic = dataBackup.useHaptic;
     }
 }

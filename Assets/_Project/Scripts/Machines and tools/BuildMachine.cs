@@ -5,7 +5,7 @@ using DG.Tweening;
 
 public class BuildMachine : MonoBehaviour
 {
-    public MachineUpgradeType machineUpgradeType;
+    public BuildMachineUpgradeType machineUpgradeType;
     [SerializeField] private Transform playerSeat;
     public Transform partsSpawnPoint;
     [SerializeField] private GameObject playerTrigger;

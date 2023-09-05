@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour
     public int upgradePoints;
     [SerializeField] private UpgradeManager upgradeManager;
     [SerializeField] private BuildMachineUpgradeMenu buildMachineUpgradeMenu;
+    [SerializeField] private PaintMachineUpgradeMenu paintMachineUpgradeMenu;
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private ProgressUIManager progressBar;
     public Animator transitionAnim;
@@ -121,6 +122,16 @@ public class UIManager : MonoBehaviour
     public void HideMachineUpgradeMenu()
     {
         buildMachineUpgradeMenu.gameObject.SetActive(false);
+    }
+
+    public void ShowPaintMachineUpgradeMenu()
+    {
+        paintMachineUpgradeMenu.gameObject.SetActive(true);
+    }
+
+    public void HidePaintMachineUpgradeMenu()
+    {
+        paintMachineUpgradeMenu.gameObject.SetActive(false);
     }
 
     private void AddMoney(int amount, Transform target)

@@ -137,9 +137,29 @@ public class UpgradeData
 }
 
 [System.Serializable]
-public class MachineUpgradeData
+public class BuildMachineUpgradeData
 {
-    public MachineUpgradeType machineUpgradeType;
+    public BuildMachineUpgradeType machineUpgradeType;
+    public int Loops;
+    public int Level;
+    public float Value;
+    public int StepIndex;
+    public int Cost;
+
+    public void ResetData()
+    {
+        Loops = 0;
+        Level = 1;
+        Value = 1;
+        StepIndex = 0;
+        Cost = 1;
+    }
+}
+
+[System.Serializable]
+public class PaintMachineUpgradeData
+{
+    public PaintMachineUpgradeType machineUpgradeType;
     public int Loops;
     public int Level;
     public float Value;

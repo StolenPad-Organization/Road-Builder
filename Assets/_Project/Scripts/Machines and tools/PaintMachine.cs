@@ -24,6 +24,7 @@ public class PaintMachine : MonoBehaviour
     [SerializeField] private GameObject paintScalingObject;
     private bool effectActivated;
     public ToolAngleController paintToolController;
+    public bool hasUpgrade;
 
     [Header("Machine Icon")]
     [SerializeField] private MachineIconController machineIcon;
@@ -176,5 +177,10 @@ public class PaintMachine : MonoBehaviour
     public void OnFillEnd()
     {
         anim.SetBool("Fill", false);
+    }
+
+    public void SetPaintCapacity(float value)
+    {
+        paintCapacity = value;
     }
 }

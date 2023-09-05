@@ -7,6 +7,7 @@ public class DataList : ScriptableObject
     public PlayerData PlayerData;
     public List<UpgradeData> UpgradeDatas;
     public List<LevelProgressData> LevelProgressDatas;
-    public List<MachineUpgradeData> MachineUpgradeDatas;
+    public List<BuildMachineUpgradeData> BuildMachineUpgradeDatas;
+    public List<PaintMachineUpgradeData> PaintMachineUpgradeDatas;
     public bool useHaptic;
 }

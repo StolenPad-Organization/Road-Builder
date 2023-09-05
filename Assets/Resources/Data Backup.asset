@@ -40,6 +40,20 @@ MonoBehaviour:
     OriginalValue: 30
     StepIndex: 0
     Cost: 20
+  - upgradeType: 2
+    Loops: 0
+    Level: 1
+    Value: 1
+    OriginalValue: 1
+    StepIndex: 0
+    Cost: 50
+  - upgradeType: 3
+    Loops: 0
+    Level: 1
+    Value: 1
+    OriginalValue: 1
+    StepIndex: 0
+    Cost: 50
   LevelProgressDatas:
   - ZoneIndex: 0
     ZoneDatas:
@@ -95252,7 +95266,26 @@ MonoBehaviour:
       - IsPainted: 0
       MoneyDatas: []
       UpgradePointDatas: []
-  MachineUpgradeDatas:
+  BuildMachineUpgradeDatas:
+  - machineUpgradeType: 1
+    Loops: 0
+    Level: 1
+    Value: 1
+    StepIndex: 0
+    Cost: 1
+  - machineUpgradeType: 2
+    Loops: 0
+    Level: 1
+    Value: 1
+    StepIndex: 0
+    Cost: 1
+  - machineUpgradeType: 3
+    Loops: 0
+    Level: 1
+    Value: 1
+    StepIndex: 0
+    Cost: 1
+  PaintMachineUpgradeDatas:
   - machineUpgradeType: 1
     Loops: 0
     Level: 1
