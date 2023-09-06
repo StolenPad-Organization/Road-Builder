@@ -1106,7 +1106,7 @@ ParticleSystem:
   m_GameObject: {fileID: 4675801999485350961}
   serializedVersion: 8
   lengthInSec: 1
-  simulationSpeed: 1
+  simulationSpeed: 1.5
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -1404,7 +1404,7 @@ ParticleSystem:
     startSizeY:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 2.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1670,7 +1670,7 @@ ParticleSystem:
     gravitySource: 0
     maxNumParticles: 1000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
-    size3D: 0
+    size3D: 1
     rotation3D: 0
     gravityModifier:
       serializedVersion: 2
@@ -7043,7 +7043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fillPoint: {fileID: 3130414771187698353}
   filling: 0
-  fillRate: 0.1
+  fillRate: 0.06
   nextFill: 0
   effect: {fileID: 7281547485426262903}
 --- !u!135 &8924701828272207183

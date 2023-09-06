@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Unity.Mathematics;
 
 public class BuildMachine : MonoBehaviour
 {
@@ -31,7 +32,7 @@ public class BuildMachine : MonoBehaviour
     [SerializeField] private BuildMachineUpgrade[] buildMachineUpgrades;
     [SerializeField] private int upgradeIndex;
     public bool hasUpgrade;
-    private Vector3 ammoInitialScale;
+    private Vector3[] ammoInitialScales;
     public float Speed;
     [Header("Upgrades")]
     [SerializeField] private float[] speedUpgrades;
@@ -46,7 +47,11 @@ public class BuildMachine : MonoBehaviour
         asphaltCapacity = asphaltObjects.Length;
         //SetUpgrade(upgradeIndex);
         //OnSpawn();
-        ammoInitialScale = asphaltObjects[0].transform.localScale;
+        ammoInitialScales = new Vector3[asphaltObjects.Length];
+        for (int i = 0; i < asphaltObjects.Length; i++)
+        {
+            ammoInitialScales[i] = asphaltObjects[i].transform.localScale;
+        }
     }
 
     void Update()
@@ -99,7 +104,7 @@ public class BuildMachine : MonoBehaviour
                 asphaltObjects[asphaltCount].SetActive(true);
                 asphaltObjects[asphaltCount].transform.DOKill();
                 asphaltObjects[asphaltCount].transform.localScale = Vector3.zero;
-                asphaltObjects[asphaltCount].transform.DOScale(ammoInitialScale, 0.5f);
+                asphaltObjects[asphaltCount].transform.DOScale(ammoInitialScales[asphaltCount], 0.15f);
             }
         }
         else
@@ -195,11 +200,33 @@ public class BuildMachine : MonoBehaviour
             scalingObjectHolder = buildMachineUpgrades[upgradeIndex].scalingObjectHolder;
             SetObjectScale();
         }
+        else
+        {
+            // set next upgrade asphalt objects
+        }
         if (used)
             PlayerController.instance.GetOnAsphaltMachine(playerSeat, this);
 
         Speed = speedUpgrades[level-1];
         partsTrigger.transform.localScale = CollisionUpgrades[level-1];
         consumeRate = consumeRateUpgrade[level-1];
+    }
+
+    public Transform GetNearestSpawnPoint(Vector3 pos)
+    {
+        Transform target = null;
+        if (partsSpawnPoints.Length < 0) return null;
+        target = partsSpawnPoints[0];
+        float closestDistance = math.distance(target.transform.position, pos);
+        for (int i = 1; i < partsSpawnPoints.Length; i++)
+        {
+            var tmpDistance = math.distance(partsSpawnPoints[i].position, pos);
+            if (tmpDistance < closestDistance)
+            {
+                target = partsSpawnPoints[i];
+                closestDistance = tmpDistance;
+            }
+        }
+        return target;
     }
 }

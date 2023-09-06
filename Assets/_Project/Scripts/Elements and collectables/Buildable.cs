@@ -46,9 +46,8 @@ public class Buildable : MonoBehaviour
         float duration = 0.265f;
         if (PlayerController.instance.asphaltMachine.partsSpawnPoints.Length > 0)
         {
-            int index = Random.Range(0, PlayerController.instance.asphaltMachine.partsSpawnPoints.Length);
-            transform.position = PlayerController.instance.asphaltMachine.partsSpawnPoints[index].position;
-            transform.localScale = Vector3.one * 0.5f;
+            transform.position = PlayerController.instance.asphaltMachine.GetNearestSpawnPoint(transform.position).position;
+            transform.localScale = Vector3.one;
             duration = 0.4f;
         }
         else
