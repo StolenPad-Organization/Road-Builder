@@ -118,7 +118,10 @@ public class PeelableCopy : MonoBehaviour
         //rb.useGravity = false;
 
         transform.SetParent(collectableParent);
-        transform.localEulerAngles = Vector3.zero;
+        Vector3 rot = Vector3.zero;
+        if (PlayerController.instance.scrapeTool.toolAngleController != null)
+            rot = Vector3.right * 90;
+        transform.localEulerAngles = rot;
         transform.localPosition = Vector3.up * index * collectableOffest;
         peelable.readyToTilt = true;
         peelable.peelableRenderer.material.color = peelable.movedPieceColor;

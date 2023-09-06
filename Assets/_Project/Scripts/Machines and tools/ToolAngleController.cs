@@ -6,7 +6,7 @@ public class ToolAngleController : MonoBehaviour
 {
     [SerializeField] private UltimateJoystick joystick;
     [SerializeField] private Transform modelHolder;
-    [SerializeField] private Transform toolHead;
+    public Transform toolHead;
     private Vector3 moveDirection = Vector3.zero;
     [SerializeField] private float rotationSpeed;
     [SerializeField] private Vector2 rotationLimit;
@@ -62,6 +62,10 @@ public class ToolAngleController : MonoBehaviour
         if (canRotate)
         {
             toolHead.transform.rotation = Quaternion.LookRotation(moveDirection, Vector3.forward);
+        }
+        else
+        {
+            toolHead.transform.localEulerAngles = Vector3.zero;
         }
     }
 

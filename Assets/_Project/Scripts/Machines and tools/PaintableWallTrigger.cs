@@ -19,6 +19,7 @@ public class PaintableWallTrigger : MonoBehaviour
             playerController.movementController.SetAnimation();
             playerController.transform.localEulerAngles = Vector3.zero;
             playerController.paintMachine.paintToolController.SetDistanceTarget(distanceTarget);
+            playerController.movementController.insideAngleTrigger = true;
         }
     }
 
@@ -29,6 +30,14 @@ public class PaintableWallTrigger : MonoBehaviour
             playerController.movementController.canRotate = true;
             playerController.movementController.SetAnimation();
             playerController.paintMachine.paintToolController.ResetTool();
+            playerController.movementController.insideAngleTrigger = false;
         }
+    }
+
+    private void OnDisable()
+    {
+        playerController.movementController.canRotate = true;
+        playerController.movementController.SetAnimation();
+        playerController.movementController.insideAngleTrigger = false;
     }
 }

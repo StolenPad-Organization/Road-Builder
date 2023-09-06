@@ -11,12 +11,13 @@ public class RBManager : SingletonMB<RBManager>
 {
     [SerializeField] private List<RBHandler> handlers = new List<RBHandler>();
 
-
+    [SerializeField] private Transform target;
     [SerializeField] private float Raduis;
     private JobHandle jobHandle;
     private AgentJob agentJob;
     private NativeArray<float3> rbPositions;    
     private NativeArray<bool> agentStates;
+
 
     public void AddAgent(RBHandler agent)
     {
@@ -31,6 +32,11 @@ public class RBManager : SingletonMB<RBManager>
         {
             handlers.Remove(agent);
         }
+    }
+
+    public void SetTarget(Transform _target)
+    {
+        target = _target;
     }
 
     public void Clear()
@@ -66,7 +72,7 @@ public class RBManager : SingletonMB<RBManager>
         {
             rbPositions = rbPositions,
             agentStates = agentStates,
-            PlayerPosition = transform.position,
+            PlayerPosition = target.position,
             Raduis= Raduis
         };
         jobHandle = agentJob.Schedule(handlers.Count, 100);

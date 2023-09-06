@@ -16,11 +16,13 @@ public class PeelableWallTrigger : MonoBehaviour
         if (playerController.scrapeTool.gameObject.activeInHierarchy)
         {
             playerController.movementController.canRotate = false;
+            playerController.scrapeTool.ShowTool(true);
             playerController.movementController.SetAnimation();
             playerController.transform.localEulerAngles = Vector3.zero;
             playerController.scrapeTool.toolAngleController.SetDistanceTarget(distanceTarget);
 
             playerController.scrapeTool.WaterEffectFillController.Fill();
+            playerController.movementController.insideAngleTrigger = true;
         }
     }
 
@@ -33,6 +35,14 @@ public class PeelableWallTrigger : MonoBehaviour
             playerController.scrapeTool.toolAngleController.ResetTool();
 
             playerController.scrapeTool.WaterEffectFillController.Empty();
+            playerController.movementController.insideAngleTrigger = false;
         }
+    }
+
+    private void OnDisable()
+    {
+        playerController.movementController.canRotate = true;
+        playerController.movementController.SetAnimation();
+        playerController.movementController.insideAngleTrigger = false;
     }
 }

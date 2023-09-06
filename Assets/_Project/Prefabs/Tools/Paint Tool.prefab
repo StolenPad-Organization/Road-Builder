@@ -259,7 +259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2337235961797493139
 Transform:
   m_ObjectHideFlags: 0
@@ -532,7 +532,7 @@ MonoBehaviour:
   partsTrigger: {fileID: 3039273748069511548}
   paintScalingObject: {fileID: 2205022256567746120}
   paintToolController: {fileID: 8304082130906266717}
-  hasUpgrade: 0
+  hasUpgrade: 1
   machineIcon: {fileID: 0}
 --- !u!114 &8304082130906266717
 MonoBehaviour:
@@ -565,11 +565,13 @@ MonoBehaviour:
   headPos: {fileID: 485653261129812630}
   toolHandle: {fileID: 1331960652527900085}
   toolLength: 0.5
+  toolWidth: 0
   index: 0
   lengthLimits: {x: 0.5, y: 1.5}
   lengthIncrease: 0.05
   widthLimits: {x: 0.32, y: 1}
   widthIncrease: 0.05
+  otherWidthObject: {fileID: 0}
 --- !u!1 &3039273748069511548
 GameObject:
   m_ObjectHideFlags: 0

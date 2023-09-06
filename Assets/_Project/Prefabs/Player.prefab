@@ -412,12 +412,14 @@ MonoBehaviour:
   joystick: {fileID: 0}
   moveSpeed: 7
   paintMoveSpeed: 5
+  angleSpeed: 4
   anim: {fileID: 4416723215016361983}
   canMove: 1
   canRotate: 1
   speedMultiplayer: 100
   drive: 0
   rb: {fileID: 292923692710631060}
+  insideAngleTrigger: 0
 --- !u!114 &292923692710631061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,6 +436,7 @@ MonoBehaviour:
   collectables: []
   collectablesLimit: 10
   collectableOffest: 0.25
+  angleCollectableOffest: 0.05
   collectableParent: {fileID: 292923691918724916}
   model: {fileID: 292923692308197820}
   fullWarning: {fileID: 7674725713470288964}
@@ -451,6 +454,18 @@ MonoBehaviour:
   - {fileID: 1388916831762253005, guid: 9d99ffbe5a94e3a4aaa2d10894f290eb, type: 3}
   - {fileID: 1388916831762253005, guid: fa083924d98966a428f140ded2fec74d, type: 3}
   - {fileID: 1388916831762253005, guid: 81be2824ceb551b4ea93a1254083dadf, type: 3}
+  normalScrapeToolsPrefabs:
+  - {fileID: 1388916831762253005, guid: 518b85797c9f16949b276ec6d2ca23ad, type: 3}
+  - {fileID: 1388916831762253005, guid: 213a7668060dc764d84580ce29b6933d, type: 3}
+  - {fileID: 1388916831762253005, guid: 9d99ffbe5a94e3a4aaa2d10894f290eb, type: 3}
+  - {fileID: 1388916831762253005, guid: fa083924d98966a428f140ded2fec74d, type: 3}
+  - {fileID: 1388916831762253005, guid: 81be2824ceb551b4ea93a1254083dadf, type: 3}
+  angleScrapeToolsPrefabs:
+  - {fileID: 3576922029063758313, guid: efcbdadedd2cc574ba3368efada8708a, type: 3}
+  - {fileID: 3576922029063758313, guid: efcbdadedd2cc574ba3368efada8708a, type: 3}
+  - {fileID: 3576922029063758313, guid: efcbdadedd2cc574ba3368efada8708a, type: 3}
+  - {fileID: 3576922029063758313, guid: efcbdadedd2cc574ba3368efada8708a, type: 3}
+  - {fileID: 3576922029063758313, guid: efcbdadedd2cc574ba3368efada8708a, type: 3}
   scrapeToolIndex: 0
   scrapeToolHolder: {fileID: 438134064}
   toolCoolDown: 1
@@ -493,7 +508,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 84
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!136 &292923692710631059
 CapsuleCollider:
@@ -781,6 +796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DontDestroy: 0
   handlers: []
+  target: {fileID: 292923692710631057}
   Raduis: 3.5
 --- !u!1 &2898392556216582344
 GameObject:

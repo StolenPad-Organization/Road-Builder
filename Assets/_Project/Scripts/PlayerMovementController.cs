@@ -7,6 +7,7 @@ public class PlayerMovementController : MonoBehaviour
     public UltimateJoystick joystick;
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float paintMoveSpeed = 5f;
+    [SerializeField] private float angleSpeed = 2f;
     [SerializeField] private Animator anim;
     private Vector3 moveDirection = Vector3.zero;
     public bool canMove = false;
@@ -18,6 +19,7 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private Rigidbody rb;
     private RBManager rbManager;
     private GameManager gameManager;
+    public bool insideAngleTrigger;
 
     void Start()
     {
@@ -55,17 +57,22 @@ public class PlayerMovementController : MonoBehaviour
         }
 
         //if (moveDirection.magnitude <= 0.3f) return;
-
-        if(playerController.paintMachine == null && playerController.asphaltMachine == null)
-            moveDirection *= (moveSpeed * (speedMultiplayer / 100));
+        if (insideAngleTrigger)
+        {
+            moveDirection *= (angleSpeed * (speedMultiplayer / 100));
+        }
         else
         {
-            if(playerController.paintMachine != null)
-                moveDirection *= (paintMoveSpeed * (speedMultiplayer / 100));
-            if (playerController.asphaltMachine != null)
-                moveDirection *= (playerController.asphaltMachine.Speed * (speedMultiplayer / 100));
+            if (playerController.paintMachine == null && playerController.asphaltMachine == null)
+                moveDirection *= (moveSpeed * (speedMultiplayer / 100));
+            else
+            {
+                if (playerController.paintMachine != null)
+                    moveDirection *= (paintMoveSpeed * (speedMultiplayer / 100));
+                if (playerController.asphaltMachine != null)
+                    moveDirection *= (playerController.asphaltMachine.Speed * (speedMultiplayer / 100));
+            }
         }
-            
 
         if (moveDirection != Vector3.zero)
         {

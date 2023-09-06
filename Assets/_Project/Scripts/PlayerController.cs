@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private List<Peelable> collectables;
     [SerializeField] private float collectablesLimit;
     [SerializeField] private float collectableOffest;
+    [SerializeField] private float angleCollectableOffest;
     [SerializeField] private Transform collectableParent;
     [SerializeField] private GameObject model;
     public GameObject fullWarning;
@@ -25,6 +26,8 @@ public class PlayerController : MonoBehaviour
     [Header("Scrape Tools")]
     public ScrapeTool scrapeTool;
     [SerializeField] private ScrapeTool[] scrapeToolsPrefabs;
+    [SerializeField] private ScrapeTool[] normalScrapeToolsPrefabs;
+    [SerializeField] private ScrapeTool[] angleScrapeToolsPrefabs;
     public int scrapeToolIndex;
     public Transform scrapeToolHolder;
     float lastToolUsingTime;
@@ -70,6 +73,11 @@ public class PlayerController : MonoBehaviour
     {
         if (!isToolBlocked)
         {
+            if (!movementController.canRotate)
+            {
+                lastToolUsingTime = toolCoolDown;
+            }
+                
             if (lastToolUsingTime <= 0)
             {
                 lastToolUsingTime = toolCoolDown;
@@ -98,6 +106,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (scrapeTool.toolAngleController != null) return;
         TiltCollectables();
     }
 
@@ -113,7 +122,10 @@ public class PlayerController : MonoBehaviour
             {
                 if (collectables[i].peelableCopy.transform.parent == collectableParent)
                     collectables[i].peelableCopy.transform.SetParent(GameManager.instance.currentZone.collectableParent);
-                pos += Vector3.up * collectableOffest;
+                if(scrapeTool.toolAngleController != null)
+                    pos += Vector3.up * angleCollectableOffest;
+                else
+                    pos += Vector3.up * collectableOffest;
                 collectables[i].peelableCopy.transform.position = Vector3.Lerp(collectables[i].peelableCopy.transform.position, pos, lerp);
                 //colectedMoney[i].transform.Rotate(rotDir * rb.velocity.magnitude);
                 collectables[i].peelableCopy.transform.rotation = Quaternion.Lerp(collectables[i].peelableCopy.transform.rotation, rot, lerp);
@@ -183,7 +195,10 @@ public class PlayerController : MonoBehaviour
             }
         }
         if (collectables.Count >= collectablesLimit) return;
-        collectable.Collect(collectables.Count, collectableOffest, collectableParent);
+        if(scrapeTool.toolAngleController != null)
+            collectable.Collect(collectables.Count, angleCollectableOffest, collectableParent);
+        else
+            collectable.Collect(collectables.Count, collectableOffest, collectableParent);
         collectables.Add(collectable);
         GameManager.instance.currentZone.AddCollectableData(true, collectable.index);
         if (collectables.Count >= collectablesLimit)
@@ -215,17 +230,31 @@ public class PlayerController : MonoBehaviour
 
     public void ChangeScrapeTool(int index)
     {
-        if(scrapeTool != null)
+        RBManager rbManager = RBManager.Instance;
+        rbManager.SetTarget(transform);
+
+        if (scrapeTool != null)
             Destroy(scrapeTool.gameObject);
         if (index >= scrapeToolsPrefabs.Length)
             index = scrapeToolsPrefabs.Length - 1;
         scrapeTool = Instantiate(scrapeToolsPrefabs[index], scrapeToolHolder);
         scrapeTool.ShowTool(false);
+
+        if(scrapeTool.toolAngleController != null)
+        {
+            rbManager.SetTarget(scrapeTool.toolAngleController.toolHead);
+        }
     }
 
     public void UpgradeCollectablesLimit(float value)
     {
         collectablesLimit = value;
+    }
+
+    public void ReadyForPaint()
+    {
+        fullWarning.SetActive(false);
+        RemovePeelingAndCollectingTools();
     }
 
     public void GetOnAsphaltMachine(Transform playerSeat, BuildMachine _asphaltMachine)
@@ -285,6 +314,7 @@ public class PlayerController : MonoBehaviour
 
     public void RemovePeelingAndCollectingTools()
     {
+        RBManager.Instance.SetTarget(transform);
         int x = collectables.Count;
         Peelable c;
         for (int i = 0; i < x; i++)
@@ -317,7 +347,10 @@ public class PlayerController : MonoBehaviour
         for (int i = 0; i < collectableDatas.Count; i++)
         {
             collectable = GameManager.instance.currentZone.peelableManager.ReturnPeelableWithIndex(collectableDatas[i].index);
-            collectable.LoadCollectable(collectables.Count, collectableOffest, collectableParent);
+            if (scrapeTool.toolAngleController != null)
+                collectable.LoadCollectable(collectables.Count, angleCollectableOffest, collectableParent);
+            else
+                collectable.LoadCollectable(collectables.Count, collectableOffest, collectableParent);
             collectables.Add(collectable);
         }
         if (collectables.Count >= collectablesLimit)
@@ -374,5 +407,14 @@ public class PlayerController : MonoBehaviour
     public void ActivateUpgradeCamera(bool activate)
     {
         UpgradeCamera.SetActive(activate);
+    }
+
+    public void SwitchTools(bool toAngle)
+    {
+        if (toAngle)
+            scrapeToolsPrefabs = angleScrapeToolsPrefabs;
+        else
+            scrapeToolsPrefabs = normalScrapeToolsPrefabs;
+        ChangeScrapeTool(scrapeToolIndex);
     }
 }

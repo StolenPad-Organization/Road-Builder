@@ -8,6 +8,7 @@ public class WheelBarrow : MonoBehaviour
     public List<Peelable> collectables;
     public float collectablesLimit;
     [SerializeField] private float collectableOffest;
+    [SerializeField] private float angleCollectableOffest;
     [SerializeField] private Transform collectableParent;
     [SerializeField] private bool used;
     [SerializeField] private NavMeshAgent agent;
@@ -36,7 +37,10 @@ public class WheelBarrow : MonoBehaviour
     public void OnCollect(Peelable collectable)
     {
         if (collectables.Count >= collectablesLimit) return;
-        collectable.Collect(collectables.Count, collectableOffest, collectableParent);
+        if(PlayerController.instance.scrapeTool.toolAngleController != null)
+            collectable.Collect(collectables.Count, angleCollectableOffest, collectableParent);
+        else
+            collectable.Collect(collectables.Count, collectableOffest, collectableParent);
         collectables.Add(collectable);
         GameManager.instance.currentZone.AddCollectableData(false, collectable.index);
     }
@@ -66,7 +70,10 @@ public class WheelBarrow : MonoBehaviour
         for (int i = 0; i < collectableDatas.Count; i++)
         {
             collectable = GameManager.instance.currentZone.peelableManager.ReturnPeelableWithIndex(collectableDatas[i].index);
-            collectable.LoadCollectable(collectables.Count, collectableOffest, collectableParent);
+            if (PlayerController.instance.scrapeTool.toolAngleController != null)
+                collectable.LoadCollectable(collectables.Count, angleCollectableOffest, collectableParent);
+            else
+                collectable.LoadCollectable(collectables.Count, collectableOffest, collectableParent);
             collectables.Add(collectable);
         }
     }
