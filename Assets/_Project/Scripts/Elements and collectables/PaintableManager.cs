@@ -28,9 +28,9 @@ public class PaintableManager : MonoBehaviour
         EventManager.OnToolLengthUpgrade -= updateTriggerSize;
     }
 
-    private void updateTriggerSize(float t)
+    private void updateTriggerSize(float t, ZoneState zoneState)
     {
-        if (angleTrigger == null) return;
+        if (angleTrigger == null || zoneState != ZoneState.PaintingStage) return;
         Vector3 scale = angleTrigger.localScale;
         scale.z = Mathf.Lerp(0.55f, 0.8f, t);
         angleTrigger.localScale = scale;

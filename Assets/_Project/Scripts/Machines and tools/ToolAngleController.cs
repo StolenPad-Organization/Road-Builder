@@ -19,6 +19,7 @@ public class ToolAngleController : MonoBehaviour
     [SerializeField] private Transform HoldingPosition;
     [SerializeField] private Vector3 HoldingRotation;
     [SerializeField] private bool canRotate;
+    [SerializeField] private ZoneState zoneState;
 
     [Header("Showing Fake & Real Models")]
     [SerializeField] private GameObject fakeModel;
@@ -137,7 +138,7 @@ public class ToolAngleController : MonoBehaviour
         toolHandle.localScale = toolScale;
         toolHead.position = headPos.position;
 
-        EventManager.OnToolLengthUpgrade.Invoke(Mathf.InverseLerp(lengthLimits.x, lengthLimits.y, toolLength));
+        EventManager.OnToolLengthUpgrade.Invoke(Mathf.InverseLerp(lengthLimits.x, lengthLimits.y, toolLength), zoneState);
     }
 
     public void CalculateWidth(int _index)

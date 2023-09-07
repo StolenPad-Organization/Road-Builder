@@ -112,6 +112,7 @@ MonoBehaviour:
   target: {fileID: 0}
   model: {fileID: 1911457110}
   checkDistance: 4
+  checkOrigin: {fileID: 0}
   checkTargetCooldown: 3
 --- !u!1 &1911457110
 GameObject:
@@ -412,7 +413,7 @@ MonoBehaviour:
   joystick: {fileID: 0}
   moveSpeed: 7
   paintMoveSpeed: 5
-  angleSpeed: 4
+  angleSpeed: 2
   anim: {fileID: 4416723215016361983}
   canMove: 1
   canRotate: 1

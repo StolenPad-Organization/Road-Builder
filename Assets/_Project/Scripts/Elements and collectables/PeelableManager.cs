@@ -23,6 +23,7 @@ public class PeelableManager : MonoBehaviour
     [SerializeField] private int[] blocksNumbers;
     [SerializeField] private int[] prices;
     [SerializeField] private Color movedPieceColor;
+    public float percentageToComplete = 100;
 
     void Start()
     {
@@ -39,9 +40,9 @@ public class PeelableManager : MonoBehaviour
         EventManager.OnToolLengthUpgrade -= updateTriggerSize;
     }
 
-    private void updateTriggerSize(float t)
+    private void updateTriggerSize(float t, ZoneState zoneState)
     {
-        if (angleTrigger == null) return;
+        if (angleTrigger == null || zoneState != ZoneState.PeelingStage) return;
         Vector3 scale = angleTrigger.localScale;
         scale.z = Mathf.Lerp(0.55f, 0.8f, t);
         angleTrigger.localScale = scale;
