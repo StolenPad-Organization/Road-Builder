@@ -561,13 +561,14 @@ MonoBehaviour:
   canRotate: 1
   fakeModel: {fileID: 5073285666785471434}
   fakeModelPos: {fileID: 7237895603022095975}
-  realModel: {fileID: 5701424518533838497}
+  realModels:
+  - {fileID: 5701424518533838497}
   headPos: {fileID: 485653261129812630}
   toolHandle: {fileID: 1331960652527900085}
   toolLength: 0.5
   toolWidth: 0
   index: 0
-  lengthLimits: {x: 0.5, y: 1.5}
+  lengthLimits: {x: 0.5, y: 1}
   lengthIncrease: 0.05
   widthLimits: {x: 0.32, y: 1}
   widthIncrease: 0.05

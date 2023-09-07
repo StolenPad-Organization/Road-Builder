@@ -113,6 +113,7 @@ public class PlayerMovementController : MonoBehaviour
 
     public void SetAnimation()
     {
+        if (anim == null) return;
         anim.SetBool("Drive", drive);
         if (!drive)
         {
@@ -156,6 +157,12 @@ public class PlayerMovementController : MonoBehaviour
                             anim.SetBool("Push", !move);
                             anim.SetBool("Walk", move);
                         }
+                    }
+
+                    if (playerController.scrapeToolHolder.gameObject.activeInHierarchy)
+                    {
+                        if (playerController.scrapeTool.toolAngleController != null)
+                            anim.SetBool("Push", false);
                     }
 
                     if (!canRotate)

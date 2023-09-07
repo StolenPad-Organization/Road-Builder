@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class PaintableManager : MonoBehaviour
 {
+    public Transform angleTrigger;
     public List<Paintable> paintableParts;
     private List<MeshRenderer> renderers = new List<MeshRenderer>();
     [SerializeField] private Transform[] blockHolders;
@@ -15,6 +16,24 @@ public class PaintableManager : MonoBehaviour
     void Start()
     {
 
+    }
+
+    private void OnEnable()
+    {
+        EventManager.OnToolLengthUpgrade += updateTriggerSize;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnToolLengthUpgrade -= updateTriggerSize;
+    }
+
+    private void updateTriggerSize(float t)
+    {
+        if (angleTrigger == null) return;
+        Vector3 scale = angleTrigger.localScale;
+        scale.z = Mathf.Lerp(0.55f, 0.8f, t);
+        angleTrigger.localScale = scale;
     }
 
     void Update()

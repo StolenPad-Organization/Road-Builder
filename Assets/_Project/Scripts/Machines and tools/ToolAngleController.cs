@@ -23,7 +23,7 @@ public class ToolAngleController : MonoBehaviour
     [Header("Showing Fake & Real Models")]
     [SerializeField] private GameObject fakeModel;
     [SerializeField] private Transform fakeModelPos;
-    [SerializeField] private GameObject realModel;
+    [SerializeField] private GameObject[] realModels;
 
     [Header("Scale and Upgrade")]
     [SerializeField] private Transform headPos;
@@ -101,7 +101,10 @@ public class ToolAngleController : MonoBehaviour
         StartCoroutine(SetTargetRoutine(target));
 
         fakeModel.SetActive(false);
-        realModel.SetActive(true);
+        foreach (var realModel in realModels)
+        {
+            realModel.SetActive(true);
+        }
     }
 
     IEnumerator SetTargetRoutine(Transform target)
@@ -118,7 +121,10 @@ public class ToolAngleController : MonoBehaviour
         toolHead.transform.eulerAngles = Vector3.zero;
 
         fakeModel.SetActive(true);
-        realModel.SetActive(false);
+        foreach (var realModel in realModels)
+        {
+            realModel.SetActive(false);
+        }
     }
 
     public void CalculateLength(int _index)
@@ -130,6 +136,8 @@ public class ToolAngleController : MonoBehaviour
         toolScale.y = toolLength;
         toolHandle.localScale = toolScale;
         toolHead.position = headPos.position;
+
+        EventManager.OnToolLengthUpgrade.Invoke(Mathf.InverseLerp(lengthLimits.x, lengthLimits.y, toolLength));
     }
 
     public void CalculateWidth(int _index)

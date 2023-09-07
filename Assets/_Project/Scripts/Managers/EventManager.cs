@@ -7,6 +7,7 @@ public static class EventManager
     public static Action<int, Transform> AddMoney;
     public static Action<int, Transform> AddUpgradePoint;
     public static Action PlayUpgradeEffect;
+    public static Action<float> OnToolLengthUpgrade;
     #endregion
 
     #region HapticEvents

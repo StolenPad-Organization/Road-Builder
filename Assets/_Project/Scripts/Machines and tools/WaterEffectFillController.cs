@@ -20,6 +20,8 @@ public class WaterEffectFillController : MonoBehaviour
 
     public void Fill()
     {
+        if (disloveTween != null)
+            disloveTween.Kill();
         var render = GetComponent<ParticleSystemRenderer>();
         Material mat = render.material;
         mat.SetFloat("Disolve", 0.0f);
@@ -34,6 +36,8 @@ public class WaterEffectFillController : MonoBehaviour
 
     public void Empty()
     {
+        if (disloveTween != null)
+            disloveTween.Kill();
         var render = GetComponent<ParticleSystemRenderer>();
         Material mat = render.material;
         mat.SetFloat("Disolve", 0.5f);

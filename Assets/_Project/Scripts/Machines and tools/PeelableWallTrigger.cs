@@ -31,6 +31,7 @@ public class PeelableWallTrigger : MonoBehaviour
         if (playerController.scrapeTool.gameObject.activeInHierarchy)
         {
             playerController.movementController.canRotate = true;
+            playerController.scrapeTool.ShowTool(false);
             playerController.movementController.SetAnimation();
             playerController.scrapeTool.toolAngleController.ResetTool();
 

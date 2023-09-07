@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float collectableOffest;
     [SerializeField] private float angleCollectableOffest;
     [SerializeField] private Transform collectableParent;
+    [SerializeField] private Vector3 collectableParentPos;
+    [SerializeField] private Vector3 collectableParentAnglePos;
     [SerializeField] private GameObject model;
     public GameObject fullWarning;
     public BuildMachine asphaltMachine;
@@ -244,6 +246,11 @@ public class PlayerController : MonoBehaviour
         {
             rbManager.SetTarget(scrapeTool.toolAngleController.toolHead);
         }
+
+        if (scrapeTool.toolAngleController != null)
+            collectableParent.localPosition = collectableParentAnglePos;
+        else
+            collectableParent.localPosition = collectableParentPos;
     }
 
     public void UpgradeCollectablesLimit(float value)

@@ -7,6 +7,7 @@ using System.Linq;
 
 public class PeelableManager : MonoBehaviour
 {
+    public Transform angleTrigger;
     public List<Peelable> peelableParts;
     private List<MeshRenderer> renderers = new List<MeshRenderer>();
     [SerializeField] private Transform[] blockHolders;
@@ -26,6 +27,24 @@ public class PeelableManager : MonoBehaviour
     void Start()
     {
         
+    }
+
+    private void OnEnable()
+    {
+        EventManager.OnToolLengthUpgrade += updateTriggerSize;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnToolLengthUpgrade -= updateTriggerSize;
+    }
+
+    private void updateTriggerSize(float t)
+    {
+        if (angleTrigger == null) return;
+        Vector3 scale = angleTrigger.localScale;
+        scale.z = Mathf.Lerp(0.55f, 0.8f, t);
+        angleTrigger.localScale = scale;
     }
 
     void Update()
