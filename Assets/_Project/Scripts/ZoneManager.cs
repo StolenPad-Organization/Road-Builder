@@ -37,6 +37,7 @@ public class ZoneManager : MonoBehaviour
     [SerializeField] private GameObject buildMachineUpgradeTrigger;
     [SerializeField] private GameObject paintMachineUpgradeTrigger;
     [SerializeField] private bool hideMachine;
+    [SerializeField] private bool hideMachineOnComplete;
     public float groundYRef = -1;
     [SerializeField] private GameObject completeBlocks;
     [SerializeField] private bool angleScrape;
@@ -384,11 +385,12 @@ public class ZoneManager : MonoBehaviour
                 if (buildMachine != null)
                     completeBlocks.SetActive(true);
                 paintableManager.LoadPaintables(zoneData.PaintableDatas, false);
-                if (hideMachine)
+                if (hideMachine || hideMachineOnComplete)
                 {
                     paintingMachine.gameObject.SetActive(false);
                     paintAmmo.gameObject.SetActive(false);
-                    buildMachine.gameObject.SetActive(false);
+                    if(buildMachine != null)
+                        buildMachine.gameObject.SetActive(false);
                     asphaltAmmo.gameObject.SetActive(false);
                     wheelBarrow.gameObject.SetActive(false);
                     upgrades.SetActive(false);

@@ -9,7 +9,8 @@ public enum BuildMachineUpgradeType
     none,
     AsphaltMachineUpgrade,
     RollingMachineUpgrade,
-    GrilliageRollingMachineUpgrade
+    GrilliageRollingMachineUpgrade,
+    PatternMachineUpgrade
 }
 
 public class BuildMachineUiUpgrade : MonoBehaviour

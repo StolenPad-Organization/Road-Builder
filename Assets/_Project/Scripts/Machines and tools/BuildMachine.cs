@@ -44,9 +44,23 @@ public class BuildMachine : MonoBehaviour
 
     void Start()
     {
-        asphaltCapacity = asphaltObjects.Length;
         //SetUpgrade(upgradeIndex);
         //OnSpawn();
+
+        initAmmo();
+    }
+
+    private void initAmmo()
+    {
+        if(asphaltObjects.Length != 0)
+        {
+            for (int i = 0; i < asphaltObjects.Length; i++)
+            {
+                if (asphaltObjects[i].transform.localScale == Vector3.zero) return;
+            }
+        }
+
+        asphaltCapacity = asphaltObjects.Length;
         ammoInitialScales = new Vector3[asphaltObjects.Length];
         for (int i = 0; i < asphaltObjects.Length; i++)
         {
@@ -203,7 +217,24 @@ public class BuildMachine : MonoBehaviour
         else
         {
             // set next upgrade asphalt objects
+            if (buildMachineUpgrades[upgradeIndex].asphaltObjects.Length > 0)
+            {
+                asphaltObjects = buildMachineUpgrades[upgradeIndex].asphaltObjects;
+                initAmmo();
+                if (asphaltCount > asphaltObjects.Length)
+                    asphaltCount = asphaltObjects.Length;
+                for (int i = 0; i < asphaltCount; i++)
+                {
+                    asphaltObjects[i].SetActive(true);
+                    asphaltObjects[i].transform.DOKill();
+                    asphaltObjects[i].transform.localScale = ammoInitialScales[i];
+                }
+            }
         }
+
+        if(buildMachineUpgrades[upgradeIndex].partsSpawnPoints.Length > 0)
+            partsSpawnPoints = buildMachineUpgrades[upgradeIndex].partsSpawnPoints;
+
         if (used)
             PlayerController.instance.GetOnAsphaltMachine(playerSeat, this);
 

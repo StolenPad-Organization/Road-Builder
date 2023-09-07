@@ -18,8 +18,8 @@ MonoBehaviour:
   PlayerData:
     Money: 125320
     UpgradePoints: 0
-    PlayerPosition: {x: -108.55707, y: -0.0003736019, z: 3.1614802}
-    PlayerRotation: {x: -0, y: 0, z: 0}
+    PlayerPosition: {x: -93.78952, y: 0, z: -1.0150461}
+    PlayerRotation: {x: 0, y: 298.7571, z: 0}
     HasWheelBarrow: 0
     WheelBarrowPosition: {x: -58.261963, y: 0.083333336, z: 2.5365772}
     WheelBarrowRotation: {x: -0, y: 345.57312, z: 0}
@@ -54157,7 +54157,7 @@ MonoBehaviour:
       - IsPainted: 1
       MoneyDatas: []
       UpgradePointDatas: []
-    - ZoneState: 1
+    - ZoneState: 2
       currentPeelableBlock: 1
       PeelableDatas:
       - IsPeeled: 0
@@ -62126,7 +62126,7 @@ MonoBehaviour:
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: -68.0905, y: 0.07832812, z: 29.803225}
+        PeelablePosition: {x: -68.0905, y: 0.07832812, z: 29.803226}
         PeelableRotation: {x: -0, y: 90, z: -0}
       - IsPeeled: 0
         IsCollected: 0
@@ -62246,7 +62246,7 @@ MonoBehaviour:
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: -67.50594, y: 0.07832811, z: 29.803225}
+        PeelablePosition: {x: -67.50594, y: 0.07832811, z: 29.803226}
         PeelableRotation: {x: -0, y: 90, z: -0}
       - IsPeeled: 0
         IsCollected: 0
@@ -65330,7 +65330,7 @@ MonoBehaviour:
         IsCollected: 0
         IsSold: 0
         IsMoved: 0
-        PeelablePosition: {x: -71.76189, y: 0.07832811, z: 31.627728}
+        PeelablePosition: {x: -71.76189, y: 0.07832811, z: 31.627726}
         PeelableRotation: {x: -0, y: 90, z: -0}
       - IsPeeled: 0
         IsCollected: 0
@@ -71804,7 +71804,9 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -71813,12 +71815,14 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -71880,20 +71884,25 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -71912,56 +71921,206 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -72002,15 +72161,23 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -72025,11 +72192,15 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -72070,6 +72241,46 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -72110,11 +72321,24 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -72127,9 +72351,16 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -72170,6 +72401,16 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -72178,10 +72419,28 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -72232,6 +72491,7 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -72301,6 +72561,46 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -72341,16 +72641,23 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -72365,7 +72672,10 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -72574,17 +72884,20 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -72601,321 +72914,8 @@ MonoBehaviour:
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
-      - IsBuilded: 0
+      - IsBuilded: 1
+      - IsBuilded: 1
       - IsBuilded: 0
       - IsBuilded: 0
       - IsBuilded: 0
@@ -103276,7 +103276,7 @@ MonoBehaviour:
     Value: 1
     StepIndex: 0
     Cost: 1
-  - machineUpgradeType: 0
+  - machineUpgradeType: 2
     Loops: 0
     Level: 1
     Value: 1
@@ -103287,6 +103287,12 @@ MonoBehaviour:
     Level: 1
     Value: 1
     StepIndex: 0
+    Cost: 1
+  - machineUpgradeType: 4
+    Loops: 0
+    Level: 2
+    Value: 2
+    StepIndex: 1
     Cost: 1
   PaintMachineUpgradeDatas:
   - machineUpgradeType: 0

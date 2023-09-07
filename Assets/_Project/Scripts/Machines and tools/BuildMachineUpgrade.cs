@@ -8,4 +8,6 @@ public class BuildMachineUpgrade : MonoBehaviour
     public int consumeRate;
     public Transform scalingObjectHolder;
     public Transform scalingObject;
+    public Transform[] partsSpawnPoints;
+    public GameObject[] asphaltObjects;
 }
