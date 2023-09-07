@@ -23,7 +23,7 @@ public class PaintMachine : MonoBehaviour
     [SerializeField] private GameObject partsTrigger;
     [SerializeField] private GameObject paintScalingObject;
     private bool effectActivated;
-    public ToolAngleController paintToolController;
+    public ToolAngleController toolAngleController;
     public bool hasUpgrade;
 
     [Header("Machine Icon")]
@@ -99,10 +99,10 @@ public class PaintMachine : MonoBehaviour
         transform.DOLocalJump(Vector3.zero, 1.5f, 1, 0.5f);
         transform.DOLocalRotate(Vector3.zero, 0.5f);
         GameManager.instance.currentZone.StartPaintStage();
-        if (paintToolController == null)
+        if (toolAngleController == null)
             PlayerController.instance.TogglePaintCollider(true);
         else
-            paintToolController.OnPick();
+            toolAngleController.OnPick();
         playerTrigger.SetActive(false);
         partsTrigger.SetActive(true);
         PlayerController.instance.movementController.canMove = true;

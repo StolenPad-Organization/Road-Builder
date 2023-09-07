@@ -152,7 +152,7 @@ public class PlayerMovementController : MonoBehaviour
 
                     if(playerController.paintMachine != null)
                     {
-                        if(playerController.paintMachine.paintToolController != null)
+                        if(playerController.paintMachine.toolAngleController != null)
                         {
                             anim.SetBool("Push", !move);
                             anim.SetBool("Walk", move);

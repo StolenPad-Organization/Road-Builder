@@ -24,8 +24,8 @@ public class PaintMachineUpgradeMenu : MonoBehaviour
     public void UpgradeMachine()
     {
         GameManager.instance.currentZone.paintingMachine.SetPaintCapacity(capacityUpgrade.value);
-        GameManager.instance.currentZone.paintingMachine.paintToolController.CalculateLength(lengthUpgrade.level);
-        GameManager.instance.currentZone.paintingMachine.paintToolController.CalculateWidth(widthUpgrade.level);
+        GameManager.instance.currentZone.paintingMachine.toolAngleController.CalculateLength(lengthUpgrade.level);
+        GameManager.instance.currentZone.paintingMachine.toolAngleController.CalculateWidth(widthUpgrade.level);
     }
 
     public void CheckButtons()

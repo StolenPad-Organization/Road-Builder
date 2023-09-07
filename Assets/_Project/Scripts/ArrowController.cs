@@ -7,6 +7,7 @@ public class ArrowController : MonoBehaviour
     [SerializeField] private GameObject target;
     [SerializeField] private GameObject model;
     [SerializeField] private float checkDistance;
+    [SerializeField] private Transform checkOrigin;
     private Vector3 lookpos;
 
     [SerializeField] private float checkTargetCooldown;
@@ -15,6 +16,7 @@ public class ArrowController : MonoBehaviour
 
     void Start()
     {
+        checkOrigin = transform;
         nextTargetCheck = checkTargetCooldown;
         gameManager = GameManager.instance;
     }
@@ -43,7 +45,13 @@ public class ArrowController : MonoBehaviour
                 if(PlayerController.instance.fullWarning.activeInHierarchy)
                     PointToObject(gameManager.currentZone.sellManager.gameObject);
                 else
-                    PointToObject(gameManager.currentZone.peelableManager.ReturnNearestPeelable().gameObject);
+                {
+                    if (PlayerController.instance.scrapeTool.toolAngleController != null)
+                        checkOrigin = PlayerController.instance.scrapeTool.toolAngleController.toolHead;
+                    else
+                        checkOrigin = transform;
+                    PointToObject(gameManager.currentZone.peelableManager.ReturnNearestPeelable().gameObject, false);
+                }
                 break;
             case ZoneState.BuildingStage:
                 if(gameManager.currentZone.buildMachine.asphaltCount <= 0)
@@ -55,7 +63,13 @@ public class ArrowController : MonoBehaviour
                 if(gameManager.currentZone.paintingMachine.paintValue <= 0)
                     PointToObject(gameManager.currentZone.paintAmmo.gameObject);
                 else
-                    PointToObject(gameManager.currentZone.paintableManager.ReturnNearestPaintable().gameObject);
+                {
+                    if (PlayerController.instance.paintMachine.toolAngleController != null)
+                        checkOrigin = PlayerController.instance.paintMachine.toolAngleController.toolHead;
+                    else
+                        checkOrigin = transform;
+                    PointToObject(gameManager.currentZone.paintableManager.ReturnNearestPaintable().gameObject, false);
+                }
                 break;
             default:
                 break;
@@ -70,7 +84,7 @@ public class ArrowController : MonoBehaviour
             lookpos.y = 0;
             transform.LookAt(lookpos);
 
-            if(Vector3.Distance(transform.position, target.transform.position) <= checkDistance)
+            if(Vector3.Distance(checkOrigin.position, target.transform.position) <= checkDistance)
             {
                 model.SetActive(false);
                 target = null;
@@ -78,9 +92,11 @@ public class ArrowController : MonoBehaviour
         }
     }
 
-    public void PointToObject(GameObject _target)
+    public void PointToObject(GameObject _target, bool resetOrigin = true)
     {
         if (_target == null) return;
+        if (resetOrigin)
+            checkOrigin = transform;
         target = _target;
         model.SetActive(true);
     }
