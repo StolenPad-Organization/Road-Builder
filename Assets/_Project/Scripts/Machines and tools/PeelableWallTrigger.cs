@@ -23,6 +23,8 @@ public class PeelableWallTrigger : MonoBehaviour
 
             playerController.scrapeTool.WaterEffectFillController.Fill();
             playerController.movementController.insideAngleTrigger = true;
+
+            playerController.ActivateWaterPodsEffect(true);
         }
     }
 
@@ -37,13 +39,18 @@ public class PeelableWallTrigger : MonoBehaviour
 
             playerController.scrapeTool.WaterEffectFillController.Empty();
             playerController.movementController.insideAngleTrigger = false;
+
+            playerController.ActivateWaterPodsEffect(false);
         }
     }
 
     private void OnDisable()
     {
-        playerController.movementController.canRotate = true;
-        playerController.movementController.SetAnimation();
-        playerController.movementController.insideAngleTrigger = false;
+        if (playerController != null)
+        {
+            playerController.movementController.canRotate = true;
+            playerController.movementController.SetAnimation();
+            playerController.movementController.insideAngleTrigger = false;
+        }
     }
 }

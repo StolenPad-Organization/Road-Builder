@@ -396,6 +396,7 @@ Transform:
   - {fileID: 4271882347986710090}
   - {fileID: 6639852692682272809}
   - {fileID: 120143993310443260}
+  - {fileID: 4650334333466729148}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &292923692710631058
@@ -450,6 +451,7 @@ MonoBehaviour:
   arrowController: {fileID: 3646649862102544831}
   paintFootprintsEffect: {fileID: 4271882347986710091}
   footPrintsDuration: 0.5
+  waterPodsEffect: {fileID: 7691686993521419249}
   scrapeTool: {fileID: 0}
   scrapeToolsPrefabs:
   - {fileID: 1388916831762253005, guid: 518b85797c9f16949b276ec6d2ca23ad, type: 3}
@@ -1771,6 +1773,77 @@ ParticleSystem:
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 7546536233098209078, guid: 9ca4b0245a809a245b09d26fa880e2f4, type: 3}
   m_PrefabInstance: {fileID: 292923692549253999}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1206222276041351653
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 292923692710631057}
+    m_Modifications:
+    - target: {fileID: 5779264790330211161, guid: 1fe591da6ee2129499b441be1eada973, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779264790330211161, guid: 1fe591da6ee2129499b441be1eada973, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779264790330211161, guid: 1fe591da6ee2129499b441be1eada973, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779264790330211161, guid: 1fe591da6ee2129499b441be1eada973, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779264790330211161, guid: 1fe591da6ee2129499b441be1eada973, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779264790330211161, guid: 1fe591da6ee2129499b441be1eada973, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779264790330211161, guid: 1fe591da6ee2129499b441be1eada973, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779264790330211161, guid: 1fe591da6ee2129499b441be1eada973, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779264790330211161, guid: 1fe591da6ee2129499b441be1eada973, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779264790330211161, guid: 1fe591da6ee2129499b441be1eada973, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9088213710942684735, guid: 1fe591da6ee2129499b441be1eada973, type: 3}
+      propertyPath: m_Name
+      value: WaterPodTrailEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 9088213710942684735, guid: 1fe591da6ee2129499b441be1eada973, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1fe591da6ee2129499b441be1eada973, type: 3}
+--- !u!4 &4650334333466729148 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5779264790330211161, guid: 1fe591da6ee2129499b441be1eada973, type: 3}
+  m_PrefabInstance: {fileID: 1206222276041351653}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7691686993521419249 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8791871265176388116, guid: 1fe591da6ee2129499b441be1eada973, type: 3}
+  m_PrefabInstance: {fileID: 1206222276041351653}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3180268012446769516
 PrefabInstance:
