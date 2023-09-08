@@ -194,12 +194,18 @@ public class ZoneManager : MonoBehaviour
             upgrades.SetActive(false);
             PlayerController.instance.ReadyForPaint();
         }
-        
-        zoneState = ZoneState.PaintingStage;
-        UIManager.instance.UpdateStepText();
 
         if (buildMachine != null)
             PlayerController.instance.GetOffAsphaltMachine();
+
+        if (paintingMachine == null)
+        {
+            StartCoroutine(CompleteZone());
+            return;
+        }
+
+        zoneState = ZoneState.PaintingStage;
+        UIManager.instance.UpdateStepText();
 
         paintingMachine.gameObject.SetActive(true);
         player.arrowController.PointToObject(paintingMachine.gameObject);
@@ -243,18 +249,28 @@ public class ZoneManager : MonoBehaviour
         SendProgressionEvent(ProgressionStatus.Complete);
         EventManager.invokeHaptic.Invoke(vibrationTypes.Success);
         yield return new WaitForSeconds(1.0f);
-        paintingMachine.transform.SetParent(null);
-        paintingMachine.gameObject.SetActive(false);
-        paintAmmo.gameObject.SetActive(false);
+
+        if (paintingMachine != null)
+        {
+            paintingMachine.transform.SetParent(null);
+            paintingMachine.gameObject.SetActive(false);
+            paintAmmo.gameObject.SetActive(false);
+        }
 
         zoneState = ZoneState.Complete;
 
         if (hideMachine)
         {
-            paintingMachine.gameObject.SetActive(false);
-            paintAmmo.gameObject.SetActive(false);
-            buildMachine.gameObject.SetActive(false);
-            asphaltAmmo.gameObject.SetActive(false);
+            if (paintingMachine != null)
+            {
+                paintingMachine.gameObject.SetActive(false);
+                paintAmmo.gameObject.SetActive(false);
+            }
+            if(buildMachine != null)
+            {
+                buildMachine.gameObject.SetActive(false);
+                asphaltAmmo.gameObject.SetActive(false);
+            }
             wheelBarrow.gameObject.SetActive(false);
             upgrades.SetActive(false);
         }
@@ -275,10 +291,16 @@ public class ZoneManager : MonoBehaviour
         LoadZone();
         if (hideMachine)
         {
-            paintingMachine.gameObject.SetActive(true);
-            paintAmmo.gameObject.SetActive(true);
-            buildMachine.gameObject.SetActive(true);
-            asphaltAmmo.gameObject.SetActive(true);
+            if(paintingMachine != null)
+            {
+                paintingMachine.gameObject.SetActive(true);
+                paintAmmo.gameObject.SetActive(true);
+            }
+            if(buildMachine != null)
+            {
+                buildMachine.gameObject.SetActive(true);
+                asphaltAmmo.gameObject.SetActive(true);
+            }
             wheelBarrow.gameObject.SetActive(true);
             upgrades.SetActive(true);
         }
@@ -305,15 +327,17 @@ public class ZoneManager : MonoBehaviour
                     buildMachineUpgradeMenu.CheckButtons();
                 }
             }
-
-            if (paintingMachine.hasUpgrade)
+            if(paintingMachine != null)
             {
-                UIManager.instance.UpdateStepText();
-                paintMachineUpgradeMenu.capacityUpgrade.LoadUpgrade();
-                paintMachineUpgradeMenu.lengthUpgrade.LoadUpgrade();
-                paintMachineUpgradeMenu.widthUpgrade.LoadUpgrade();
-                paintMachineUpgradeMenu.UpgradeMachine();
-                paintMachineUpgradeMenu.CheckButtons();
+                if (paintingMachine.hasUpgrade)
+                {
+                    UIManager.instance.UpdateStepText();
+                    paintMachineUpgradeMenu.capacityUpgrade.LoadUpgrade();
+                    paintMachineUpgradeMenu.lengthUpgrade.LoadUpgrade();
+                    paintMachineUpgradeMenu.widthUpgrade.LoadUpgrade();
+                    paintMachineUpgradeMenu.UpgradeMachine();
+                    paintMachineUpgradeMenu.CheckButtons();
+                }
             }
 
             PlayerController.instance.SwitchTools(angleScrape);
@@ -385,15 +409,20 @@ public class ZoneManager : MonoBehaviour
                 upgrades.SetActive(false);
                 removableBlock.SetActive(false);
                 //asphaltBlock.SetActive(true);
-                paintBlock.gameObject.SetActive(true);
+                if(paintingMachine != null)
+                    paintBlock.gameObject.SetActive(true);
                 //buildableManager.LoadBuildables(zoneData.BuildableDatas, false);
                 if (buildMachine != null)
                     completeBlocks.SetActive(true);
-                paintableManager.LoadPaintables(zoneData.PaintableDatas, false);
+                if (paintingMachine != null)
+                    paintableManager.LoadPaintables(zoneData.PaintableDatas, false);
                 if (hideMachine || hideMachineOnComplete)
                 {
-                    paintingMachine.gameObject.SetActive(false);
-                    paintAmmo.gameObject.SetActive(false);
+                    if (paintingMachine != null)
+                    {
+                        paintingMachine.gameObject.SetActive(false);
+                        paintAmmo.gameObject.SetActive(false);
+                    }
                     if(buildMachine != null)
                         buildMachine.gameObject.SetActive(false);
                     asphaltAmmo.gameObject.SetActive(false);
@@ -409,10 +438,16 @@ public class ZoneManager : MonoBehaviour
                 upgrades.SetActive(false);
                 if (hideMachine)
                 {
-                    paintingMachine.gameObject.SetActive(false);
-                    paintAmmo.gameObject.SetActive(false);
-                    buildMachine.gameObject.SetActive(false);
-                    asphaltAmmo.gameObject.SetActive(false);
+                    if (paintingMachine != null)
+                    {
+                        paintingMachine.gameObject.SetActive(false);
+                        paintAmmo.gameObject.SetActive(false);
+                    }
+                    if(buildMachine != null)
+                    {
+                        buildMachine.gameObject.SetActive(false);
+                        asphaltAmmo.gameObject.SetActive(false);
+                    }
                     wheelBarrow.gameObject.SetActive(false);
                     upgrades.SetActive(false);
                 }
