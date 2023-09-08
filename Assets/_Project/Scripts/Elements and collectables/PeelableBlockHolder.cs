@@ -11,7 +11,7 @@ public class PeelableBlockHolder : MonoBehaviour
     [SerializeField] private GameObject blockTrigger;
     void Start()
     {
-        partsCount = peelableParts.Count;
+        //partsCount = peelableParts.Count;
     }
 
     public void AddPeelablePart(Peelable peelable)
@@ -98,5 +98,10 @@ public class PeelableBlockHolder : MonoBehaviour
     {
         partsCount--;
         return partsCount <= 0;
+    }
+
+    public void SetPartsCount(float percentage)
+    {
+        partsCount = Mathf.RoundToInt(peelableParts.Count * (percentage / 100));
     }
 }

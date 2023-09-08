@@ -41,6 +41,7 @@ public class ZoneManager : MonoBehaviour
     public float groundYRef = -1;
     [SerializeField] private GameObject completeBlocks;
     [SerializeField] private bool angleScrape;
+    [SerializeField] private GameObject[] hideOnComplete;
 
     [Header("Blocks Progress")]
     [SerializeField] private int maxBlocks;
@@ -69,7 +70,7 @@ public class ZoneManager : MonoBehaviour
 
     private void Start()
     {
-        maxBlocks = peelableManager.peelableParts.Count;
+        maxBlocks = Mathf.RoundToInt(peelableManager.peelableParts.Count * (peelableManager.percentageToComplete / 100));
         maxAsphalt = buildableManager.buildableParts.Count;
         maxPaint = paintableManager.paintableParts.Count;
 
@@ -257,6 +258,10 @@ public class ZoneManager : MonoBehaviour
             wheelBarrow.gameObject.SetActive(false);
             upgrades.SetActive(false);
         }
+        foreach (var item in hideOnComplete)
+        {
+            item.SetActive(false);
+        }
         GameManager.instance.SaveLevel();
         // Unlock next Zone
         GameManager.instance.UnlockNextZone();
@@ -369,7 +374,7 @@ public class ZoneManager : MonoBehaviour
                     completeBlocks.SetActive(true);
                 if (paintingMachine.hasUpgrade)
                     paintMachineUpgradeTrigger.SetActive(true);
-
+                LoadUpgradePoints(zoneData.UpgradePointDatas);
                 UIManager.instance.ChangeProgressBarIcon(2);
 
                 paintingMachine.OnSpawn();
@@ -394,6 +399,10 @@ public class ZoneManager : MonoBehaviour
                     asphaltAmmo.gameObject.SetActive(false);
                     wheelBarrow.gameObject.SetActive(false);
                     upgrades.SetActive(false);
+                }
+                foreach (var item in hideOnComplete)
+                {
+                    item.SetActive(false);
                 }
                 break;
             case ZoneState.Locked:

@@ -21,6 +21,7 @@ public class Peelable : MonoBehaviour
     public int zoneIndex;
     public CollectableShape collectableShape;
     public Color dustColor;
+    public Material effectMat;
     public int blockNumber;
     public Color movedPieceColor;
     public RBHandler rbHandler;
@@ -97,7 +98,10 @@ public class Peelable : MonoBehaviour
     {
         ParticleSystem effect = ScrapingEffectPooler.instance.GetEffect();
         effect.transform.position = transform.position;
-        effect.GetComponent<ParticleSystemRenderer>().material.color = dustColor;
+        if(effectMat != null)
+            effect.GetComponent<ParticleSystemRenderer>().material = effectMat;
+        else
+            effect.GetComponent<ParticleSystemRenderer>().material.color = dustColor;
         effect.gameObject.SetActive(true);
         ScrapingEffectPooler.instance.ReturnEffect(effect);
     }

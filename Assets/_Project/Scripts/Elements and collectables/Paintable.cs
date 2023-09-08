@@ -56,6 +56,7 @@ public class Paintable : MonoBehaviour
             //float t = 1.0f;
             //DOTween.To(() => t, x => t = x, 0.0f, PlayerController.instance.paintMachine.paintDuration)
             //   .OnUpdate(() => mat.SetFloat("_Animation", t)).SetDelay(PlayerController.instance.paintMachine.paintDelay);
+            GameManager.instance.currentZone.paintableManager.OnPaint(transform.position);
         });
         transform.DOLocalRotate(initialRot, 0.1f);
         transform.DOScale(initialscale, 0.1f);

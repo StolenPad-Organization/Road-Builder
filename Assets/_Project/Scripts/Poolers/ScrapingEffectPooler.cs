@@ -8,6 +8,8 @@ public class ScrapingEffectPooler : MonoBehaviour
 
     [SerializeField] private ParticleSystem scrapingEffectPrefab;
     [SerializeField] private int poolSize = 10;
+    [SerializeField] private Material originalMat;
+    ParticleSystemRenderer particleSystemRenderer;
 
     private Queue<ParticleSystem> effectsPool = new Queue<ParticleSystem>();
 
@@ -51,7 +53,8 @@ public class ScrapingEffectPooler : MonoBehaviour
 
         effect.transform.position = transform.position;
         effect.transform.rotation = transform.rotation;
-
+        particleSystemRenderer = effect.GetComponent<ParticleSystemRenderer>();
+        particleSystemRenderer.material = originalMat;
         effect.gameObject.SetActive(false);
         effectsPool.Enqueue(effect);
     }

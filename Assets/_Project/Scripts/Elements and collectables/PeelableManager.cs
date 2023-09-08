@@ -27,7 +27,10 @@ public class PeelableManager : MonoBehaviour
 
     void Start()
     {
-        
+        for (int i = 0; i < peelableBlockHolders.Count; i++)
+        {
+            peelableBlockHolders[i].SetPartsCount(percentageToComplete);
+        }
     }
 
     private void OnEnable()

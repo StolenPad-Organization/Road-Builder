@@ -20,6 +20,7 @@ public class PeelableBlockSetter : MonoBehaviour
     [SerializeField] private int price;
     [SerializeField] private Color movedPieceColor;
     [SerializeField] private Transform copyBlockHolder;
+    [SerializeField] private Material effectMat;
 
     void Start()
     {
@@ -52,6 +53,7 @@ public class PeelableBlockSetter : MonoBehaviour
         SetPrices();
         SetMovedColor();
         SetPeelableCopy();
+        SetEffectMaterial();
     }
 
     private List<MeshRenderer> GetRenderers(Transform t, List<MeshRenderer> renderers)
@@ -135,6 +137,15 @@ public class PeelableBlockSetter : MonoBehaviour
         foreach (var item in peelableParts)
         {
             item.movedPieceColor = movedPieceColor;
+        }
+    }
+
+    private void SetEffectMaterial()
+    {
+        if (effectMat == null) return;
+        foreach (var item in peelableParts)
+        {
+            item.effectMat = effectMat;
         }
     }
 

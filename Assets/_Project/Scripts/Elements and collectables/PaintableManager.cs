@@ -13,9 +13,16 @@ public class PaintableManager : MonoBehaviour
     [SerializeField] private Transform[] blockHolders;
     [SerializeField] private Material[] mats;
 
+    [Header("Upgrade Points Reward")]
+    [SerializeField] private bool hasReward;
+    private int rewardRate;
+    private int rewardprogress;
+    [SerializeField] private int totalRewards;
+
     void Start()
     {
-
+        if (totalRewards > 0)
+            rewardRate = Mathf.RoundToInt(paintableParts.Count * 0.7f) / totalRewards;
     }
 
     private void OnEnable()
@@ -130,5 +137,19 @@ public class PaintableManager : MonoBehaviour
             }
         }
         return target;
+    }
+
+    public void OnPaint(Vector3 pos)
+    {
+        if (!hasReward) return;
+        rewardprogress++;
+        if (rewardprogress >= rewardRate)
+        {
+            rewardprogress = 0;
+            pos.y = 0;
+            pos.z -= 2.5f;
+            UpgradePoint upgradePoint = UpgradePointsPooler.instance.GetUpgradePoint();
+            upgradePoint.Spawn(1, pos + (Vector3.up * 0.5f));
+        }
     }
 }
