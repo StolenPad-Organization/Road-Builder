@@ -38,7 +38,7 @@ public class PeelableBlockSetter : MonoBehaviour
     {
         EditorUtility.SetDirty(this);
         EditorUtility.SetDirty(gameObject);
-
+        peelableParts = peelableBlockHolder.peelableParts;
         for (int i = 0; i < peelableParts.Count; i++)
         {
             peelableParts[i].SetPeelableEditor(i + startingIndex);
