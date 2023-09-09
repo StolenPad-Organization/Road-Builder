@@ -7,6 +7,7 @@ public class RBHandler : MonoBehaviour
     [SerializeField] private MeshRenderer OtherVersion;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private MeshRenderer meshRenderer;
+    public RBTile RBTile;
     public void SetVersion(MeshRenderer version)
     {
         meshRenderer = GetComponent<MeshRenderer>();
@@ -53,5 +54,10 @@ public class RBHandler : MonoBehaviour
             OtherVersion.gameObject.SetActive(true);
             OtherVersion.material.color = meshRenderer.material.color;
         }
+    }
+
+    public void RemoveFromTile()
+    {
+        RBTile.rbPositions.Remove(this);
     }
 }

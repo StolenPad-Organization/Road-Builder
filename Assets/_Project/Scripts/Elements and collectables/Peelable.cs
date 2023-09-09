@@ -61,7 +61,6 @@ public class Peelable : MonoBehaviour
         }
         else if(!collected)
         {
-            RBManager.Instance.RemoveAgent(rbHandler);
             PlayerController.instance.OnCollect(this);
         }
         if (PlayerController.instance.canDoStrictedHaptic)
@@ -120,6 +119,7 @@ public class Peelable : MonoBehaviour
         //SavePeelable();
 
         peelableCopy.Collect(index, collectableOffest, collectableParent);
+        rbHandler.RemoveFromTile();
         rbHandler.CheckSwitch(false);
     }
 
@@ -219,7 +219,7 @@ public class Peelable : MonoBehaviour
         //peelableRenderer.material.color = movedPieceColor;
 
         rbHandler.CheckSwitch(false);
+        rbHandler.RemoveFromTile();
         peelableCopy.LoadCollectable(index, collectableOffest, collectableParent);
-        
     }
 }

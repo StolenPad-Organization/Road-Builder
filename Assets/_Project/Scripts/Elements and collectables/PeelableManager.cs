@@ -275,23 +275,23 @@ public class PeelableManager : MonoBehaviour
 
     public void SetBlockHoldersStates()
     {
-        RBManager.Instance.Clear();
-        for (int i = 0; i < peelableBlockHolders.Count; i++)
-        {
-            if (i + 1 < currentBlockNumber)
-            {
-                peelableBlockHolders[i].SetRBHandlersState(false, true);
-            }
-            else if (i + 1 > currentBlockNumber)
-            {
-                peelableBlockHolders[i].SetRBHandlersState(false);
-            }
-            else if (i + 1 == currentBlockNumber)
-            {
-                peelableBlockHolders[i].SetRBHandlersState(true);
-            }
-            peelableBlockHolders[i].CheckCountLoad();
-        }
+        //RBManager.Instance.Clear();
+        //for (int i = 0; i < peelableBlockHolders.Count; i++)
+        //{
+        //    if (i + 1 < currentBlockNumber)
+        //    {
+        //        peelableBlockHolders[i].SetRBHandlersState(false, true);
+        //    }
+        //    else if (i + 1 > currentBlockNumber)
+        //    {
+        //        peelableBlockHolders[i].SetRBHandlersState(false);
+        //    }
+        //    else if (i + 1 == currentBlockNumber)
+        //    {
+        //        peelableBlockHolders[i].SetRBHandlersState(true);
+        //    }
+        //    peelableBlockHolders[i].CheckCountLoad();
+        //}
     }
 
     public void ShowCopyOnly()

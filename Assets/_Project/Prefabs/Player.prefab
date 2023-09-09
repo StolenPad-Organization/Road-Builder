@@ -764,7 +764,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4278160227770750853}
-  - component: {fileID: 8637789127552193403}
+  - component: {fileID: 6896134872389470566}
   m_Layer: 6
   m_Name: RBDetector
   m_TagString: Untagged
@@ -787,7 +787,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 292923692710631057}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8637789127552193403
+--- !u!114 &6896134872389470566
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -796,13 +796,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1937156527890831418}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43a059b2e0b81c443aecdac298066e47, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c68ff2b664aef744829f46c7425fb89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DontDestroy: 0
+  rbTiles: []
+  radius: 3
   handlers: []
-  target: {fileID: 292923692710631057}
-  Raduis: 3.5
 --- !u!1 &2898392556216582344
 GameObject:
   m_ObjectHideFlags: 0

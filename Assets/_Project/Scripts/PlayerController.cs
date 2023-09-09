@@ -233,7 +233,7 @@ public class PlayerController : MonoBehaviour
 
     public void ChangeScrapeTool(int index)
     {
-        RBManager rbManager = RBManager.Instance;
+        RBManagerJobs rbManager = RBManagerJobs.Instance;
         rbManager.SetTarget(transform);
 
         if (scrapeTool != null)

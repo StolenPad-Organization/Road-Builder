@@ -90,11 +90,11 @@ public class PlayerMovementController : MonoBehaviour
 
         //transform.Translate(moveDirection * Time.deltaTime, Space.World);
         rb.MovePosition(transform.position + moveDirection * Time.deltaTime);
-        if(gameManager.currentZone != null)
-        {
-            if (gameManager.currentZone.zoneState == ZoneState.PeelingStage)
-                rbManager.JobUpdater();
-        }
+        //if(gameManager.currentZone != null)
+        //{
+        //    if (gameManager.currentZone.zoneState == ZoneState.PeelingStage)
+        //        rbManager.JobUpdater();
+        //}
     }
 
     public void ToggleMovementAnimation(bool activate)
