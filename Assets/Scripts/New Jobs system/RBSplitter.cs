@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Mathematics;
 using System;
-using static UnityEditor.Progress;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -10,25 +9,25 @@ using UnityEditor;
 [RequireComponent(typeof(BoxCollider))]
 public class RBSplitter : MonoBehaviour
 {
-    public Transform RBHolder;
+    public Transform[] RBHolder;
     [SerializeField] private List<RBHandler> rbhandlerObjects = new List<RBHandler>();
 
-    [Range(1, 10)]
+    [Range(1, 20)]
     public int Row;
-    [Range(1, 10)]
+    [Range(1, 20)]
     public int Column;
 
     [SerializeField] private List<RBTile> RbTileList = new List<RBTile>();
     public Grid<RBTile> Grid;
+
+#if UNITY_EDITOR
     public void SplitBoxCollider()
     {
         GetObjectsFromRbHolder();
         Clear();
         Grid = new Grid<RBTile>(Row, Column);
 
-#if UNITY_EDITOR
         Undo.RecordObject(this, "Split Box Collider");
-#endif
 
         BoxCollider originalCollider = GetComponent<BoxCollider>();
         Vector3 originalSize = originalCollider.size;
@@ -85,11 +84,7 @@ public class RBSplitter : MonoBehaviour
                 id++;
                 RbTileList.Add(rbtile);
                 Grid.Add(i, j, rbtile);
-#if UNITY_EDITOR
                 Undo.RegisterCreatedObjectUndo(newColliderGO, "Created new Box Collider");
-#endif
-
-              
             }
         }
 
@@ -103,18 +98,12 @@ public class RBSplitter : MonoBehaviour
     public void Clear()
     {
         Grid = new Grid<RBTile>(0, 0);
-#if UNITY_EDITOR
         Undo.RecordObject(this, "Clear Box Colliders");
-#endif
 
         foreach (var item in RbTileList)
         {
-#if UNITY_EDITOR
             if (item != null)
                 Undo.DestroyObjectImmediate(item.gameObject);
-#else
-            DestroyImmediate(item.gameObject);
-#endif
         }
         RbTileList.Clear();
         //rbhandlerObjects.Clear();
@@ -127,16 +116,17 @@ public class RBSplitter : MonoBehaviour
         rbhandlerObjects.Clear();
         foreach (Transform item in RBHolder)
         {
-            var rb = item.GetComponent<RBHandler>();
-            rbhandlerObjects.Add(rb);
-            //foreach (Transform item2 in item)
-            //{
-                
-            //}
+            foreach (Transform item2 in item)
+            {
+                var rb = item2.GetComponent<RBHandler>();
+                rbhandlerObjects.Add(rb);
+            }
         }
     }
+
     private void SetRbHandlers()
     {
+
         foreach (var item in rbhandlerObjects)
         {
             float closestDistance = Mathf.Infinity;
@@ -154,9 +144,9 @@ public class RBSplitter : MonoBehaviour
             item.RBTile = RbTileList[closestIndex];
 
             
-#if UNITY_EDITOR
+
             UnityEditor.EditorUtility.SetDirty(item);
-#endif
+
         }
 
         foreach (var item in RbTileList)
@@ -166,9 +156,8 @@ public class RBSplitter : MonoBehaviour
             t.Add(item);
             item.adjustantTiles = t;
 
-#if UNITY_EDITOR
             UnityEditor.EditorUtility.SetDirty(item);
-#endif
         }
     }
+#endif
 }

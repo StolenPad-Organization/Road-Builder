@@ -17,14 +17,14 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private bool drive;
     private bool move;
     [SerializeField] private Rigidbody rb;
-    private RBManager rbManager;
+    private RBManagerJobs rbManager;
     private GameManager gameManager;
     public bool insideAngleTrigger;
 
     void Start()
     {
         playerController = PlayerController.instance;
-        rbManager = RBManager.Instance;
+        rbManager = RBManagerJobs.Instance;
         gameManager = GameManager.instance;
     }
 
@@ -90,10 +90,10 @@ public class PlayerMovementController : MonoBehaviour
 
         //transform.Translate(moveDirection * Time.deltaTime, Space.World);
         rb.MovePosition(transform.position + moveDirection * Time.deltaTime);
-        //if(gameManager.currentZone != null)
+        //if (gameManager.currentZone != null)
         //{
         //    if (gameManager.currentZone.zoneState == ZoneState.PeelingStage)
-        //        rbManager.JobUpdater();
+        //        rbManager.UpdateJobs();
         //}
     }
 

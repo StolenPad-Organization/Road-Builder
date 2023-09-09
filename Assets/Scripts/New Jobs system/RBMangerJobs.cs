@@ -25,7 +25,7 @@ public class RBManagerJobs : SingletonMB<RBManagerJobs>
         Initialize();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         UpdateJobs();
     }
@@ -48,7 +48,7 @@ public class RBManagerJobs : SingletonMB<RBManagerJobs>
         InitializeNativeArrays();
     }
 
-    private void UpdateJobs()
+    public void UpdateJobs()
     {
         jobHandle.Complete();
         UpdateHandlers();
@@ -94,7 +94,7 @@ public class RBManagerJobs : SingletonMB<RBManagerJobs>
 
     private void ScheduleJob()
     {
-        jobHandle = agentJob.Schedule(handlers.Count, 64);
+        jobHandle = agentJob.Schedule(handlers.Count, 100);
     }
 
     private void UpdateHandlers()

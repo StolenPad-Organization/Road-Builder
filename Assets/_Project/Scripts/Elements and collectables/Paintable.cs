@@ -20,11 +20,6 @@ public class Paintable : MonoBehaviour
         initialscale = transform.localScale;
     }
 
-    void Update()
-    {
-
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (PlayerController.instance.paintMachine != null && !fullyPainted)

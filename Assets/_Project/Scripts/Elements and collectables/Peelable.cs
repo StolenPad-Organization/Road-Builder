@@ -41,11 +41,6 @@ public class Peelable : MonoBehaviour
         initialPower = power;
     }
 
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
@@ -188,6 +183,8 @@ public class Peelable : MonoBehaviour
         sold = peelableData.IsSold;
         if (sold)
         {
+            rbHandler.RemoveFromTile();
+            peelableCopy.gameObject.SetActive(false);
             gameObject.SetActive(false);
             return;
         }
@@ -202,6 +199,8 @@ public class Peelable : MonoBehaviour
         }
         if(peeled)
             power = 0;
+
+        peelableCopy.LoadCopy();
     }
     public void LoadCollectable(int index, float collectableOffest, Transform collectableParent)
     {
@@ -218,9 +217,8 @@ public class Peelable : MonoBehaviour
         //readyToTilt = true;
         //peelableRenderer.material.color = movedPieceColor;
 
-        
-        peelableCopy.LoadCollectable(index, collectableOffest, collectableParent);
-        rbHandler.CheckSwitch(false);
         rbHandler.RemoveFromTile();
+        rbHandler.CheckSwitch(false);
+        peelableCopy.LoadCollectable(index, collectableOffest, collectableParent);
     }
 }
