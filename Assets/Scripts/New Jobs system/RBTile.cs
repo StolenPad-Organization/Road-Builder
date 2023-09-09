@@ -23,6 +23,12 @@ public class RBTile : GridElement
         {
             RBManagerJobs.Instance.SubscribeNewTile(adjustantTiles);
         }
+        if (other.CompareTag("parts"))
+        {
+            var rbh = other.GetComponent<Peelable>();
+            if(!rbh.collected && !rbh.sold)
+                rbh.rbHandler.SwitchTile(this);
+        }
 
     }
 #if UNITY_EDITOR

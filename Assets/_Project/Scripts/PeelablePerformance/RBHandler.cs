@@ -60,4 +60,11 @@ public class RBHandler : MonoBehaviour
     {
         RBTile.rbPositions.Remove(this);
     }
+
+    public void SwitchTile(RBTile newTile)
+    {
+        RemoveFromTile();
+        newTile.rbPositions.Add(this);
+        RBTile = newTile;
+    }
 }

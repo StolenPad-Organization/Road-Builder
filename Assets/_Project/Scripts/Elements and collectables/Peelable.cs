@@ -218,8 +218,9 @@ public class Peelable : MonoBehaviour
         //readyToTilt = true;
         //peelableRenderer.material.color = movedPieceColor;
 
+        
+        peelableCopy.LoadCollectable(index, collectableOffest, collectableParent);
         rbHandler.CheckSwitch(false);
         rbHandler.RemoveFromTile();
-        peelableCopy.LoadCollectable(index, collectableOffest, collectableParent);
     }
 }
