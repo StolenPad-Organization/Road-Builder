@@ -123,8 +123,8 @@ public class ZoneManager : MonoBehaviour
     public void OnBlockRemove(bool load = false)
     {
         currentBlocks++;
-        if(!load)
-            peelableManager.CheckBlock();
+        //if(!load)
+        //    peelableManager.CheckBlock();
         CheckBlocks();
     }
     private void CheckBlocks()

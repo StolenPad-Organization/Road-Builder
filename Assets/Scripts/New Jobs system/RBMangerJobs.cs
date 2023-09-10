@@ -14,11 +14,14 @@ public class RBManagerJobs : SingletonMB<RBManagerJobs>
 
     [SerializeField] private List<RBHandler> handlers = new List<RBHandler>();
     private Dictionary<byte, List<RBHandler>> subscribedNewHandlers = new Dictionary<byte, List<RBHandler>>();
+    [SerializeField] private List<byte> currentTilesID = new List<byte>();
 
     private JobHandle jobHandle;
     private AgentJob agentJob;
     private NativeArray<float3> rbPositions;
     private NativeArray<bool> agentStates;
+
+    private bool canJob;
 
     private void Start()
     {
@@ -27,12 +30,21 @@ public class RBManagerJobs : SingletonMB<RBManagerJobs>
 
     private void FixedUpdate()
     {
-        UpdateJobs();
+        //if(canJob)
+            UpdateJobs();
     }
 
     public void SetTarget(Transform _target)
     {
         target = _target;
+    }
+
+    public void SwitchJob(bool _canJob)
+    {
+        canJob = _canJob;
+        if(!canJob)
+            handlers.Clear();
+
     }
 
     private void OnDrawGizmos()
@@ -65,17 +77,19 @@ public class RBManagerJobs : SingletonMB<RBManagerJobs>
             item.CheckSwitch(false);
         }
         handlers.Clear();
+        currentTilesID.Clear();
         foreach (var pair in subscribedNewHandlers)
         {
             handlers.AddRange(pair.Value);
+            currentTilesID.Add(pair.Key);
         }
         subscribedNewHandlers.Clear();
     }
 
     private void InitializeNativeArrays()
     {
-        rbPositions = new NativeArray<float3>(handlers.Count, Allocator.TempJob);
-        agentStates = new NativeArray<bool>(handlers.Count, Allocator.TempJob);
+        rbPositions = new NativeArray<float3>(handlers.Count, Allocator.Persistent);
+        agentStates = new NativeArray<bool>(handlers.Count, Allocator.Persistent);
 
         for (int i = 0; i < handlers.Count; i++)
         {

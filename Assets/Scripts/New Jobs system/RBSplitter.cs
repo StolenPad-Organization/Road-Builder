@@ -12,13 +12,14 @@ public class RBSplitter : MonoBehaviour
     public Transform[] RBHolder;
     [SerializeField] private List<RBHandler> rbhandlerObjects = new List<RBHandler>();
 
-    [Range(1, 20)]
+    [Range(1, 100)]
     public int Row;
-    [Range(1, 20)]
+    [Range(1, 100)]
     public int Column;
 
     [SerializeField] private List<RBTile> RbTileList = new List<RBTile>();
     public Grid<RBTile> Grid;
+    [SerializeField] private bool getAdjustanTiles;
 
 #if UNITY_EDITOR
     public void SplitBoxCollider()
@@ -67,7 +68,7 @@ public class RBSplitter : MonoBehaviour
                 newColliderGO.transform.localScale = Vector3.one;
 
                 // Set layer and tag from original GameObject
-                newColliderGO.layer = originalLayer;
+                newColliderGO.layer = 19;
                 newColliderGO.tag = originalTag;
 
                 // Create the new box collider with calculated size and position
@@ -151,7 +152,9 @@ public class RBSplitter : MonoBehaviour
 
         foreach (var item in RbTileList)
         {
-            var t = Grid.GetAdjustantTiles(item.Index);
+            List<RBTile> t = new List<RBTile>();
+            if(getAdjustanTiles)
+                t = Grid.GetAdjustantTiles(item.Index);
             Debug.Log(t);
             t.Add(item);
             item.adjustantTiles = t;

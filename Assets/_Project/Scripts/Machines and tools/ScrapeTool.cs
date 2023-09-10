@@ -45,6 +45,8 @@ public class ScrapeTool : MonoBehaviour
             PlayerController.instance.movementController.ToggleMovementAnimation(true);
             showCollider.SetActive(true);
             hideCollider.SetActive(false);
+
+            RBManagerJobs.Instance.SwitchJob(true);
         }
         else
         {
@@ -54,6 +56,8 @@ public class ScrapeTool : MonoBehaviour
             hideCollider.SetActive(true);
             if (toolAngleController != null)
                 toolAngleController.OnPick();
+
+            RBManagerJobs.Instance.SwitchJob(false);
         }
         transform.DOLocalMove(Vector3.zero, 0.3f);
         transform.DOLocalRotate(Vector3.zero, 0.3f);
