@@ -64,7 +64,6 @@ public class PeelableCopy : MonoBehaviour
         if (other.CompareTag("Collector"))
         {
             PlayerController.instance.OnCollect(peelable);
-            peelable.rbHandler.CheckSwitch(false);
         }
     }
 
@@ -76,13 +75,12 @@ public class PeelableCopy : MonoBehaviour
         //peelableCollider.enabled = false;
         //rb.isKinematic = true;
         //rb.useGravity = false;
-
         transform.SetParent(collectableParent);
         if(PlayerController.instance.scrapeTool.toolAngleController!=null)
-            transform.DOLocalRotate(Vector3.right * 90, 0.4f).SetSpeedBased(true);
+            transform.DOLocalRotate(Vector3.right * 90, 0.4f);
         else
-            transform.DOLocalRotate(Vector3.zero, 0.4f).SetSpeedBased(true);
-        transform.DOLocalJump(Vector3.up * index * collectableOffest, 1f + (index * 0.1f), 1, 0.4f).SetSpeedBased(true).OnComplete(() => peelable.readyToTilt = true);
+            transform.DOLocalRotate(Vector3.zero, 0.4f);
+        transform.DOLocalJump(Vector3.up * index * collectableOffest, 1f + (index * 0.1f), 1, 0.4f).OnComplete(() => peelable.readyToTilt = true);
         peelable.SavePeelable();
     }
 
@@ -125,10 +123,13 @@ public class PeelableCopy : MonoBehaviour
         transform.localPosition = Vector3.up * index * collectableOffest;
         peelable.readyToTilt = true;
         peelable.peelableRenderer.material.color = peelable.movedPieceColor;
+        GetComponent<Renderer>().material.color = peelable.movedPieceColor;
     }
 
     public void LoadCopy()
     {
+        if (peelable.peeled && !peelable.collected && !peelable.sold)
+            ActivateCollision();
         if (peelable.moved)
         {
             transform.position = peelable.transform.position;

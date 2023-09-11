@@ -44,6 +44,7 @@ public class Peelable : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
+        if (other.CompareTag("Collector")) return;
         if (!peeled)
         {
             if(!moved)
@@ -68,6 +69,7 @@ public class Peelable : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
+        if (other.CompareTag("Collector")) return;
         if (!peeled)
         {
             power -= PlayerController.instance.scrapeTool.power;
@@ -77,6 +79,7 @@ public class Peelable : MonoBehaviour
             if (power <= 0)
             {
                 peeled = true;
+                peelableCopy.ActivateCollision();
                 GameManager.instance.currentZone.OnBlockRemove();
                 SavePeelable();
             }
@@ -112,10 +115,10 @@ public class Peelable : MonoBehaviour
         //transform.DOLocalRotate(Vector3.zero, 0.4f);
         //transform.DOLocalJump(Vector3.up * index * collectableOffest, 1f + (index * 0.1f), 1, 0.4f).OnComplete(() => readyToTilt = true);
         //SavePeelable();
-
-        peelableCopy.Collect(index, collectableOffest, collectableParent);
+        RBManagerJobs.Instance.RemoveAgent(rbHandler);
         rbHandler.RemoveFromTile();
         rbHandler.CheckSwitch(false);
+        peelableCopy.Collect(index, collectableOffest, collectableParent);
     }
 
     public void Sell(Transform sellPoint)

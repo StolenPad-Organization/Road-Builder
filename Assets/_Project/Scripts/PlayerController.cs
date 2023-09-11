@@ -198,7 +198,7 @@ public class PlayerController : MonoBehaviour
             }
         }
         if (collectables.Count >= collectablesLimit) return;
-        if(scrapeTool.toolAngleController != null)
+        if (scrapeTool.toolAngleController != null)
             collectable.Collect(collectables.Count, angleCollectableOffest, collectableParent);
         else
             collectable.Collect(collectables.Count, collectableOffest, collectableParent);
@@ -322,7 +322,7 @@ public class PlayerController : MonoBehaviour
 
     public void RemovePeelingAndCollectingTools()
     {
-        RBManager.Instance.SetTarget(transform);
+        RBManagerJobs.Instance.SetTarget(transform);
         int x = collectables.Count;
         Peelable c;
         for (int i = 0; i < x; i++)

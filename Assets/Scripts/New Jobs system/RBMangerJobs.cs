@@ -50,7 +50,8 @@ public class RBManagerJobs : SingletonMB<RBManagerJobs>
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, radius);
+        if (target == null) return;
+        Gizmos.DrawWireSphere(target.position, radius);
     }
 
     protected void InitializeIt()

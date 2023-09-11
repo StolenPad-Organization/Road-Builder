@@ -414,7 +414,7 @@ MonoBehaviour:
   joystick: {fileID: 0}
   moveSpeed: 7
   paintMoveSpeed: 5
-  angleSpeed: 2
+  angleSpeed: 3
   anim: {fileID: 4416723215016361983}
   canMove: 1
   canRotate: 1
@@ -802,7 +802,9 @@ MonoBehaviour:
   DontDestroy: 0
   rbTiles: []
   radius: 3
+  target: {fileID: 0}
   handlers: []
+  currentTilesID: 
 --- !u!1 &2898392556216582344
 GameObject:
   m_ObjectHideFlags: 0
