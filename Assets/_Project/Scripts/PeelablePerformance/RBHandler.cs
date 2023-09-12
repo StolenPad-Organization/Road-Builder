@@ -52,7 +52,7 @@ public class RBHandler : MonoBehaviour
             OtherVersion.transform.SetPositionAndRotation(transform.position, transform.rotation);
             gameObject.SetActive(false);
             OtherVersion.gameObject.SetActive(true);
-            OtherVersion.material.color = meshRenderer.material.color;
+            //OtherVersion.material.color = meshRenderer.material.color;
         }
     }
 

@@ -122,8 +122,8 @@ public class PeelableCopy : MonoBehaviour
         transform.localEulerAngles = rot;
         transform.localPosition = Vector3.up * index * collectableOffest;
         peelable.readyToTilt = true;
-        peelable.peelableRenderer.material.color = peelable.movedPieceColor;
-        GetComponent<Renderer>().material.color = peelable.movedPieceColor;
+        //peelable.peelableRenderer.material.color = peelable.movedPieceColor;
+        //GetComponent<Renderer>().material.color = peelable.movedPieceColor;
     }
 
     public void LoadCopy()
@@ -134,7 +134,7 @@ public class PeelableCopy : MonoBehaviour
         {
             transform.position = peelable.transform.position;
             transform.localEulerAngles = peelable.transform.eulerAngles;
-            GetComponent<Renderer>().material.color = peelable.movedPieceColor;
+            //GetComponent<Renderer>().material.color = peelable.movedPieceColor;
         }
     }
 }

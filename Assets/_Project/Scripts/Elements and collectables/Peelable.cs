@@ -51,7 +51,7 @@ public class Peelable : MonoBehaviour
                 PlayEffect();
             rb.constraints = RigidbodyConstraints.None;
             moved = true;
-            peelableRenderer.material.color = movedPieceColor;
+            //peelableRenderer.material.color = movedPieceColor;
             rb.AddForce(Vector3.up * 4, ForceMode.Impulse);
             PlayerController.instance.OnPeelableDetection(speedAmount, initialPower, dustColor);
         }
@@ -73,8 +73,6 @@ public class Peelable : MonoBehaviour
         if (!peeled)
         {
             power -= PlayerController.instance.scrapeTool.power;
-            if (peelableRenderer.material.HasFloat("_Power"))
-                peelableRenderer.material.SetFloat("_Power", 1 - (power / initialPower));
             //PlayerController.instance.scrapeTool.ShakeTool();
             if (power <= 0)
             {
@@ -198,7 +196,7 @@ public class Peelable : MonoBehaviour
             transform.position = peelablePosition;
             transform.localEulerAngles = peelableRotation;
             rb.constraints = RigidbodyConstraints.None;
-            peelableRenderer.material.color = movedPieceColor;
+            //peelableRenderer.material.color = movedPieceColor;
         }
         if(peeled)
             power = 0;

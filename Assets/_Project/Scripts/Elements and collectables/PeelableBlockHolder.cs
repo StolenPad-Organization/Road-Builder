@@ -26,20 +26,20 @@ public class PeelableBlockHolder : MonoBehaviour
 
     private void ActivateBlock(bool activate)
     {
-        if (activate)
-        {
-            if(blockCollider !=null)
-                blockCollider.SetActive(true);
-            if (blockTrigger != null)
-                blockTrigger.SetActive(true);
-        }
-        else
-        {
-            if (blockCollider != null)
-                blockCollider.SetActive(false);
-            if (blockTrigger != null)
-                blockTrigger.SetActive(false);
-        }
+        //if (activate)
+        //{
+        //    if(blockCollider !=null)
+        //        blockCollider.SetActive(true);
+        //    if (blockTrigger != null)
+        //        blockTrigger.SetActive(true);
+        //}
+        //else
+        //{
+        //    if (blockCollider != null)
+        //        blockCollider.SetActive(false);
+        //    if (blockTrigger != null)
+        //        blockTrigger.SetActive(false);
+        //}
     }
 
     public void SetRBHandlersState(bool state, bool hide = false)
