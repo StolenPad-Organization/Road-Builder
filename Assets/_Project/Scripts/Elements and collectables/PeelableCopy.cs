@@ -44,7 +44,13 @@ public class PeelableCopy : MonoBehaviour
             copyCollider.isTrigger = true;
         }
 
-        var rd = GetComponent<Renderer>().sharedMaterial = mat;
+        var rd = GetComponent<Renderer>();
+        rd.sharedMaterial = mat;
+
+        rd.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+        rd.lightProbeUsage = UnityEngine.Rendering.LightProbeUsage.Off;
+        rd.motionVectorGenerationMode = MotionVectorGenerationMode.ForceNoMotion;
+        rd.allowOcclusionWhenDynamic = false;
 
         UnityEditor.EditorUtility.SetDirty(this);
         UnityEditor.EditorUtility.SetDirty(rd);

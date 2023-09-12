@@ -159,6 +159,10 @@ public class Peelable : MonoBehaviour
     public void SetMaterialEditor(Material mat)
     {
         peelableRenderer.material = mat;
+        peelableRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+        peelableRenderer.lightProbeUsage = UnityEngine.Rendering.LightProbeUsage.Off;
+        peelableRenderer.motionVectorGenerationMode = MotionVectorGenerationMode.ForceNoMotion;
+        peelableRenderer.allowOcclusionWhenDynamic = false;
         EditorUtility.SetDirty(peelableRenderer);
         EditorUtility.SetDirty(gameObject);
     }
