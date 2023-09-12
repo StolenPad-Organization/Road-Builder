@@ -39,6 +39,11 @@ public class RBManagerJobs : SingletonMB<RBManagerJobs>
         target = _target;
     }
 
+    public void SetRadius(float _radius)
+    {
+        radius = _radius;
+    }
+
     public void SwitchJob(bool _canJob)
     {
         canJob = _canJob;

@@ -123,7 +123,7 @@ public class ZoneManager : MonoBehaviour
     public void OnBlockRemove(int _blockNumber, bool load = false)
     {
         currentBlocks++;
-        if (!load)
+        //if (!load)
             peelableManager.CheckBlock(_blockNumber);
         CheckBlocks();
     }
@@ -133,7 +133,7 @@ public class ZoneManager : MonoBehaviour
         if (currentBlocks == maxBlocks)
             ShowAsphaltMachine();
     }
-    private void ShowAsphaltMachine()
+    public void ShowAsphaltMachine()
     {
         SendProgressionEvent(ProgressionStatus.Complete);
         EventManager.invokeHaptic.Invoke(vibrationTypes.Success);
@@ -179,7 +179,7 @@ public class ZoneManager : MonoBehaviour
         if (currentAsphalt == maxAsphalt)
             ShowPaintMachine();
     }
-    private void ShowPaintMachine()
+    public void ShowPaintMachine()
     {
         if (buildMachine != null) 
         {
@@ -239,7 +239,7 @@ public class ZoneManager : MonoBehaviour
         if (currentPaint == maxPaint)
             StartCoroutine(CompleteZone());
     }
-    private IEnumerator CompleteZone()
+    public IEnumerator CompleteZone()
     {
         paintMachineUpgradeTrigger.SetActive(false);
 
@@ -310,7 +310,7 @@ public class ZoneManager : MonoBehaviour
         }
     }
 
-    private void LoadZone()
+    public void LoadZone()
     {
         //load level State
         zoneState = zoneData.ZoneState;

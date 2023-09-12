@@ -253,6 +253,8 @@ public class PlayerController : MonoBehaviour
             collectableParent.localPosition = collectableParentAnglePos;
         else
             collectableParent.localPosition = collectableParentPos;
+
+        rbManager.SetRadius(scrapeTool.rbRadius);
     }
 
     public void UpgradeCollectablesLimit(float value)

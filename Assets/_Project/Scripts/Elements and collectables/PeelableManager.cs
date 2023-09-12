@@ -269,7 +269,9 @@ public class PeelableManager : MonoBehaviour
                 GameManager.instance.currentZone.OnBlockRemove(peelableParts[i].blockNumber, true);
             }
         }
-        currentBlockNumber = currentPeelableBlock;
+        //currentBlockNumber = currentPeelableBlock;
+        CheckCurrentBlock();
+
         SetBlockHoldersStates();
     }
 
@@ -305,21 +307,35 @@ public class PeelableManager : MonoBehaviour
     public void CheckBlock(int _blockNumber)
     {
         peelableBlockHolders[_blockNumber - 1].RemovePart();
-        if (peelableBlockHolders[currentBlockNumber - 1].CheckCount())
+        //CheckCurrentBlock();
+    }
+
+    public void CheckCurrentBlock()
+    {
+        for (int i = 0; i < peelableBlockHolders.Count; i++)
         {
-            currentBlockNumber++;
-            if (currentBlockNumber > blocksNumbers.Length)
-                return;
-            //SetBlockHoldersStates();
+            if (!peelableBlockHolders[i].CheckCount())
+            {
+                currentBlockNumber = i + 1;
+                break;
+            }
         }
+        //if (peelableBlockHolders[currentBlockNumber - 1].CheckCount())
+        //{
+        //    currentBlockNumber++;
+        //    if (currentBlockNumber > blocksNumbers.Length)
+        //        return;
+        //    //SetBlockHoldersStates();
+        //}
     }
 
     public Peelable ReturnNearestPeelable()
     {
-        var parts = peelableParts.Where(t => !t.sold && !t.collected && t.blockNumber == currentBlockNumber).ToList();
+        CheckCurrentBlock();
+        var parts = peelableParts.Where(t =>!t.peeled && !t.sold && !t.collected && t.blockNumber == currentBlockNumber).ToList();
         float3 playerPos = PlayerController.instance.transform.position;
         Peelable target = null;
-        if (parts.Count < 0) return null;
+        if (parts.Count <= 0) return null;
         target = parts[0];
         float closestDistance = math.distance(target.transform.position, playerPos);
         for (int i = 1; i < parts.Count(); i++)

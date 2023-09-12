@@ -26,6 +26,7 @@ public class ScrapeTool : MonoBehaviour
     [SerializeField] private Renderer[] renderers;
     public ToolAngleController toolAngleController;
     public WaterEffectFillController WaterEffectFillController;
+    public float rbRadius;
 
     public void UpdateShovelScale(int scaleMultiplier)
     {
