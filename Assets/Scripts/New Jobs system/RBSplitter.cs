@@ -155,7 +155,6 @@ public class RBSplitter : MonoBehaviour
             List<RBTile> t = new List<RBTile>();
             if(getAdjustanTiles)
                 t = Grid.GetAdjustantTiles(item.Index);
-            Debug.Log(t);
             t.Add(item);
             item.adjustantTiles = t;
 

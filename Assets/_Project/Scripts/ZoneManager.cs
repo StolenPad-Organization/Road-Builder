@@ -120,11 +120,11 @@ public class ZoneManager : MonoBehaviour
         HomaBelly.Instance.TrackProgressionEvent(status, message);
     }
 
-    public void OnBlockRemove(bool load = false)
+    public void OnBlockRemove(int _blockNumber, bool load = false)
     {
         currentBlocks++;
-        //if(!load)
-        //    peelableManager.CheckBlock();
+        if (!load)
+            peelableManager.CheckBlock(_blockNumber);
         CheckBlocks();
     }
     private void CheckBlocks()

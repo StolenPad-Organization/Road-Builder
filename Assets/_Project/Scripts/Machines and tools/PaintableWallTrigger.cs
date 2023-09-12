@@ -20,6 +20,7 @@ public class PaintableWallTrigger : MonoBehaviour
             playerController.transform.localEulerAngles = Vector3.zero;
             playerController.paintMachine.toolAngleController.SetDistanceTarget(distanceTarget);
             playerController.movementController.insideAngleTrigger = true;
+            playerController.ActivatePaintPodsEffect(true);
         }
     }
 
@@ -31,6 +32,7 @@ public class PaintableWallTrigger : MonoBehaviour
             playerController.movementController.SetAnimation();
             playerController.paintMachine.toolAngleController.ResetTool();
             playerController.movementController.insideAngleTrigger = false;
+            playerController.ActivatePaintPodsEffect(false);
         }
     }
 
@@ -41,6 +43,7 @@ public class PaintableWallTrigger : MonoBehaviour
             playerController.movementController.canRotate = true;
             playerController.movementController.SetAnimation();
             playerController.movementController.insideAngleTrigger = false;
+            playerController.ActivatePaintPodsEffect(false);
         }
     }
 }

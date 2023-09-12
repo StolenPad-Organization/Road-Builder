@@ -80,7 +80,7 @@ public class Peelable : MonoBehaviour
             {
                 peeled = true;
                 peelableCopy.ActivateCollision();
-                GameManager.instance.currentZone.OnBlockRemove();
+                GameManager.instance.currentZone.OnBlockRemove(blockNumber);
                 SavePeelable();
             }
             PlayerController.instance.SetScrapingMovementSpeed(speedAmount, initialPower);

@@ -94,9 +94,13 @@ public class PeelableBlockHolder : MonoBehaviour
         }
     }
 
-    public bool CheckCount()
+    public void RemovePart()
     {
         partsCount--;
+    }
+
+    public bool CheckCount()
+    {
         return partsCount <= 0;
     }
 

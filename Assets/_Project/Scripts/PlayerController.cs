@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private ParticleSystem paintFootprintsEffect;
     [SerializeField] private float footPrintsDuration;
     [SerializeField] private ParticleSystem waterPodsEffect;
+    [SerializeField] private ParticleSystem paintPodsEffect;
 
     [Header("Scrape Tools")]
     public ScrapeTool scrapeTool;
@@ -429,5 +430,10 @@ public class PlayerController : MonoBehaviour
     public void ActivateWaterPodsEffect(bool activate)
     {
         waterPodsEffect.gameObject.SetActive(activate);
+    }
+
+    public void ActivatePaintPodsEffect(bool activate)
+    {
+        paintPodsEffect.gameObject.SetActive(activate);
     }
 }

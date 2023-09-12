@@ -397,6 +397,7 @@ Transform:
   - {fileID: 6639852692682272809}
   - {fileID: 120143993310443260}
   - {fileID: 4650334333466729148}
+  - {fileID: 1664084684392314587}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &292923692710631058
@@ -452,6 +453,7 @@ MonoBehaviour:
   paintFootprintsEffect: {fileID: 4271882347986710091}
   footPrintsDuration: 0.5
   waterPodsEffect: {fileID: 7691686993521419249}
+  paintPodsEffect: {fileID: 1975017111750916073}
   scrapeTool: {fileID: 0}
   scrapeToolsPrefabs:
   - {fileID: 1388916831762253005, guid: 518b85797c9f16949b276ec6d2ca23ad, type: 3}
@@ -2292,6 +2294,77 @@ Animator:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: efad12dccd411e54086707c1dbcb0652, type: 3}
   m_PrefabInstance: {fileID: 7791737481594258030}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8455146610910754712
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 292923692710631057}
+    m_Modifications:
+    - target: {fileID: 7083796350058479939, guid: 1e9f3f5cd71b159468825d20dbf8ae4d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083796350058479939, guid: 1e9f3f5cd71b159468825d20dbf8ae4d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083796350058479939, guid: 1e9f3f5cd71b159468825d20dbf8ae4d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083796350058479939, guid: 1e9f3f5cd71b159468825d20dbf8ae4d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083796350058479939, guid: 1e9f3f5cd71b159468825d20dbf8ae4d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083796350058479939, guid: 1e9f3f5cd71b159468825d20dbf8ae4d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083796350058479939, guid: 1e9f3f5cd71b159468825d20dbf8ae4d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083796350058479939, guid: 1e9f3f5cd71b159468825d20dbf8ae4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083796350058479939, guid: 1e9f3f5cd71b159468825d20dbf8ae4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083796350058479939, guid: 1e9f3f5cd71b159468825d20dbf8ae4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616899872410752112, guid: 1e9f3f5cd71b159468825d20dbf8ae4d, type: 3}
+      propertyPath: m_Name
+      value: PaintPodTrailEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616899872410752112, guid: 1e9f3f5cd71b159468825d20dbf8ae4d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1e9f3f5cd71b159468825d20dbf8ae4d, type: 3}
+--- !u!4 &1664084684392314587 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7083796350058479939, guid: 1e9f3f5cd71b159468825d20dbf8ae4d, type: 3}
+  m_PrefabInstance: {fileID: 8455146610910754712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1975017111750916073 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7943818209341587569, guid: 1e9f3f5cd71b159468825d20dbf8ae4d, type: 3}
+  m_PrefabInstance: {fileID: 8455146610910754712}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8879564622286086544
 PrefabInstance:

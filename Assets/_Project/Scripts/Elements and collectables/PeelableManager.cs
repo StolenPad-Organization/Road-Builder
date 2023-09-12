@@ -266,7 +266,7 @@ public class PeelableManager : MonoBehaviour
             }
             if (PeelableDatas[i].IsPeeled)
             {
-                GameManager.instance.currentZone.OnBlockRemove(true);
+                GameManager.instance.currentZone.OnBlockRemove(peelableParts[i].blockNumber, true);
             }
         }
         currentBlockNumber = currentPeelableBlock;
@@ -302,20 +302,21 @@ public class PeelableManager : MonoBehaviour
         }
     }
 
-    public void CheckBlock()
+    public void CheckBlock(int _blockNumber)
     {
-        //if(peelableBlockHolders[currentBlockNumber - 1].CheckCount())
-        //{
-        //    currentBlockNumber++;
-        //    if (currentBlockNumber > blocksNumbers.Length)
-        //        return;
-        //    SetBlockHoldersStates();
-        //}
+        peelableBlockHolders[_blockNumber - 1].RemovePart();
+        if (peelableBlockHolders[currentBlockNumber - 1].CheckCount())
+        {
+            currentBlockNumber++;
+            if (currentBlockNumber > blocksNumbers.Length)
+                return;
+            //SetBlockHoldersStates();
+        }
     }
 
     public Peelable ReturnNearestPeelable()
     {
-        var parts = peelableParts.Where(t => !t.sold && !t.collected /*&& t.blockNumber == currentBlockNumber*/).ToList();
+        var parts = peelableParts.Where(t => !t.sold && !t.collected && t.blockNumber == currentBlockNumber).ToList();
         float3 playerPos = PlayerController.instance.transform.position;
         Peelable target = null;
         if (parts.Count < 0) return null;

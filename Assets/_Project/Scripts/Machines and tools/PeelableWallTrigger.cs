@@ -51,6 +51,7 @@ public class PeelableWallTrigger : MonoBehaviour
             playerController.movementController.canRotate = true;
             playerController.movementController.SetAnimation();
             playerController.movementController.insideAngleTrigger = false;
+            playerController.ActivateWaterPodsEffect(false);
         }
     }
 }
