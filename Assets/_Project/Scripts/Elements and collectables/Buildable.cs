@@ -88,7 +88,12 @@ public class Buildable : MonoBehaviour
         index = _index;
         buildableCollider = GetComponent<Collider>();
         buildableRenderer = GetComponent<Renderer>();
+        buildableRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+        buildableRenderer.lightProbeUsage = UnityEngine.Rendering.LightProbeUsage.Off;
+        buildableRenderer.motionVectorGenerationMode = MotionVectorGenerationMode.ForceNoMotion;
+        buildableRenderer.allowOcclusionWhenDynamic = false;
         EditorUtility.SetDirty(this);
+        EditorUtility.SetDirty(buildableRenderer);
         EditorUtility.SetDirty(gameObject);
     }
     public void SetMaterialEditor(Material mat)

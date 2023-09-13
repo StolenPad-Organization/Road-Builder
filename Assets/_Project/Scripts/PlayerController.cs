@@ -150,8 +150,12 @@ public class PlayerController : MonoBehaviour
 
     public void OnPeelableDetection(float amount, float _power,Color _dustColor)
     {
-        if (scrapeTool.power >= _power)
-            amount = 100;
+        if (!movementController.insideAngleTrigger)
+        {
+            if (scrapeTool.power >= _power)
+                amount = 100;
+        }
+
         movementController.SetSpeedMultiplayer(amount);
         lastToolUsingTime = toolCoolDown;
         if (!scrapeTool.showing)
@@ -173,8 +177,12 @@ public class PlayerController : MonoBehaviour
 
     public void SetScrapingMovementSpeed(float amount, float _power)
     {
-        if (scrapeTool.power >= _power)
-            amount = 100;
+        if (!movementController.insideAngleTrigger)
+        {
+            if (scrapeTool.power >= _power)
+                amount = 100;
+        }
+            
         movementController.SetSpeedMultiplayer(amount);
         lastToolUsingTime = toolCoolDown;
     }

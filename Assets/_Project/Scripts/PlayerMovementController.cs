@@ -56,7 +56,8 @@ public class PlayerMovementController : MonoBehaviour
             anim.SetBool("Drive", drive);
         }
 
-        //if (moveDirection.magnitude <= 0.3f) return;
+       // if (moveDirection.magnitude <= 0.3f) return;
+
         if (insideAngleTrigger)
         {
             moveDirection *= (angleSpeed * (speedMultiplayer / 100));

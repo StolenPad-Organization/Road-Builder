@@ -69,7 +69,12 @@ public class Paintable : MonoBehaviour
         index = _index;
         paintableCollider = GetComponent<Collider>();
         paintableRenderer = GetComponent<Renderer>();
+        paintableRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+        paintableRenderer.lightProbeUsage = UnityEngine.Rendering.LightProbeUsage.Off;
+        paintableRenderer.motionVectorGenerationMode = MotionVectorGenerationMode.ForceNoMotion;
+        paintableRenderer.allowOcclusionWhenDynamic = false;
         EditorUtility.SetDirty(this);
+        EditorUtility.SetDirty(paintableRenderer);
         EditorUtility.SetDirty(gameObject);
     }
 

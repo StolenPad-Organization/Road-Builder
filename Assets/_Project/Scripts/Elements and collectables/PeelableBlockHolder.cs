@@ -7,8 +7,7 @@ public class PeelableBlockHolder : MonoBehaviour
 {
     public List<Peelable> peelableParts = new List<Peelable>();
     private int partsCount;
-    [SerializeField] private GameObject blockCollider;
-    [SerializeField] private GameObject blockTrigger;
+
     void Start()
     {
         //partsCount = peelableParts.Count;

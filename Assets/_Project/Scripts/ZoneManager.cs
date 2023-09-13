@@ -40,6 +40,7 @@ public class ZoneManager : MonoBehaviour
     [SerializeField] private bool hideMachineOnComplete;
     public float groundYRef = -1;
     [SerializeField] private GameObject completeBlocks;
+    [SerializeField] private GameObject lockedBlocks;
     [SerializeField] private bool angleScrape;
     [SerializeField] private GameObject[] hideOnComplete;
 
@@ -352,6 +353,11 @@ public class ZoneManager : MonoBehaviour
                 if (zoneCollider != null)
                     zoneCollider.gameObject.SetActive(false);
                 // load collectables and peelables
+                if (lockedBlocks != null)
+                {
+                    removableBlock.SetActive(true);
+                    lockedBlocks.SetActive(false);
+                }
                 upgrades.SetActive(true);
                 if (playerData.HasWheelBarrow)
                 {
@@ -452,6 +458,11 @@ public class ZoneManager : MonoBehaviour
                     upgrades.SetActive(false);
                 }
                 peelableManager.ShowCopyOnly();
+                if(lockedBlocks != null)
+                {
+                    removableBlock.SetActive(false);
+                    lockedBlocks.SetActive(true);
+                }
                 break;
             default:
                 break;

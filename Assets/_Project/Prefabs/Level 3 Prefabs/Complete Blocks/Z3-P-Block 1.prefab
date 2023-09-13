@@ -351,6 +351,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 7318248745042425658}
@@ -425,6 +426,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 6747844085442768101}
   rb: {fileID: 5528560367965545387}
   meshRenderer: {fileID: 6343097136119575611}
+  RBTile: {fileID: 0}
 --- !u!1 &45973385040410234
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +538,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 2592535595679441752}
@@ -610,6 +613,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4954646513880300002}
   rb: {fileID: 3366663819398274376}
   meshRenderer: {fileID: 4710885665301815612}
+  RBTile: {fileID: 0}
 --- !u!1 &64433710757829336
 GameObject:
   m_ObjectHideFlags: 0
@@ -961,6 +965,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 813550792547642437}
@@ -1035,6 +1040,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3866910335860288317}
   rb: {fileID: 5550592537878621574}
   meshRenderer: {fileID: 3461046254748840931}
+  RBTile: {fileID: 0}
 --- !u!1 &130071304415675228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,6 +1152,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6879920193389111228}
@@ -1220,6 +1227,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 39107215884947496}
   rb: {fileID: 5742631953962532885}
   meshRenderer: {fileID: 371813615730624758}
+  RBTile: {fileID: 0}
 --- !u!1 &175476688785352763
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,6 +1459,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 8986268196142083606}
@@ -1525,6 +1534,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 6032517547194556180}
   rb: {fileID: 7566976023216852351}
   meshRenderer: {fileID: 6203097098568239050}
+  RBTile: {fileID: 0}
 --- !u!1 &230019770722411696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,6 +1646,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 8686095778858647796}
@@ -1710,6 +1721,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 7492383016546991953}
   rb: {fileID: 411775569157892416}
   meshRenderer: {fileID: 7086510656753428367}
+  RBTile: {fileID: 0}
 --- !u!1 &241351283219867313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,6 +1833,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4839439540258955425}
@@ -1895,6 +1908,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 7950304043810059560}
   rb: {fileID: 6422339418555551419}
   meshRenderer: {fileID: 7779750835602025974}
+  RBTile: {fileID: 0}
 --- !u!1 &280226482826455407
 GameObject:
   m_ObjectHideFlags: 0
@@ -2006,6 +2020,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 565666530193173921}
@@ -2080,6 +2095,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 322706902456723152}
   rb: {fileID: 1871063073164144780}
   meshRenderer: {fileID: 132963367932591630}
+  RBTile: {fileID: 0}
 --- !u!1 &292573816484734119
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,6 +2207,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 1291839059803233394}
@@ -2265,6 +2282,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3507144274568548073}
   rb: {fileID: 3221239063471150766}
   meshRenderer: {fileID: 3821863314938992183}
+  RBTile: {fileID: 0}
 --- !u!1 &316751706202715574
 GameObject:
   m_ObjectHideFlags: 0
@@ -2736,6 +2754,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 294742724495192698}
@@ -2810,6 +2829,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5240415101832428227}
   rb: {fileID: 3701999047873215581}
   meshRenderer: {fileID: 5556224267201110557}
+  RBTile: {fileID: 0}
 --- !u!1 &404513710762913807
 GameObject:
   m_ObjectHideFlags: 0
@@ -2921,6 +2941,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5396123856111922708}
@@ -2995,6 +3016,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5332410660323123030}
   rb: {fileID: 6335251639972846089}
   meshRenderer: {fileID: 5738318693997070216}
+  RBTile: {fileID: 0}
 --- !u!1 &421639114473496307
 GameObject:
   m_ObjectHideFlags: 0
@@ -3226,6 +3248,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 1324555351737631614}
@@ -3300,6 +3323,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 416659376886804630}
   rb: {fileID: 5684293797321920329}
   meshRenderer: {fileID: 29933326300178504}
+  RBTile: {fileID: 0}
 --- !u!1 &450797349778370993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3891,6 +3915,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4666103652104787016}
@@ -3965,6 +3990,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 807962794743671456}
   rb: {fileID: 7374163153145455839}
   meshRenderer: {fileID: 1050579704430506622}
+  RBTile: {fileID: 0}
 --- !u!1 &586247212847724534
 GameObject:
   m_ObjectHideFlags: 0
@@ -4196,6 +4222,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 9113711915593352521}
@@ -4270,6 +4297,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 7137353395656317762}
   rb: {fileID: 2526242257016162238}
   meshRenderer: {fileID: 7399102288825467804}
+  RBTile: {fileID: 0}
 --- !u!1 &613349494230037761
 GameObject:
   m_ObjectHideFlags: 0
@@ -4381,6 +4409,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6307417224250704556}
@@ -4455,6 +4484,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 7043730063738929294}
   rb: {fileID: 2463681086952458311}
   meshRenderer: {fileID: 7233421334747486288}
+  RBTile: {fileID: 0}
 --- !u!1 &717266737216727536
 GameObject:
   m_ObjectHideFlags: 0
@@ -4566,6 +4596,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5357916390030901482}
@@ -4640,6 +4671,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 1749780023580733658}
   rb: {fileID: 3053749353077876448}
   meshRenderer: {fileID: 2155652900782057476}
+  RBTile: {fileID: 0}
 --- !u!1 &725726526086717648
 GameObject:
   m_ObjectHideFlags: 0
@@ -4991,6 +5023,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4797159649690953694}
@@ -5065,6 +5098,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 8755722516674817035}
   rb: {fileID: 8405208429548249462}
   meshRenderer: {fileID: 8944305473540568277}
+  RBTile: {fileID: 0}
 --- !u!1 &787361320802270823
 GameObject:
   m_ObjectHideFlags: 0
@@ -5656,6 +5690,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 7630374625994205146}
@@ -5730,6 +5765,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3129334472645301495}
   rb: {fileID: 6267516484808439524}
   meshRenderer: {fileID: 3373121707368074281}
+  RBTile: {fileID: 0}
 --- !u!1 &1004745325577898570
 GameObject:
   m_ObjectHideFlags: 0
@@ -5961,6 +5997,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4596095384942455381}
@@ -6035,6 +6072,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 1135656426179163758}
   rb: {fileID: 8886947291701366257}
   meshRenderer: {fileID: 747796334663265968}
+  RBTile: {fileID: 0}
 --- !u!1 &1090284760854647858
 GameObject:
   m_ObjectHideFlags: 0
@@ -6146,6 +6184,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5722454645466537458}
@@ -6220,6 +6259,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3322563167683845144}
   rb: {fileID: 1107281474895506472}
   meshRenderer: {fileID: 3151957706972759238}
+  RBTile: {fileID: 0}
 --- !u!1 &1100133263148040441
 GameObject:
   m_ObjectHideFlags: 0
@@ -6451,6 +6491,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 8951794136894000280}
@@ -6525,6 +6566,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3041961822109119995}
   rb: {fileID: 6496704000753265069}
   meshRenderer: {fileID: 3428687803907583269}
+  RBTile: {fileID: 0}
 --- !u!1 &1130492719010363406
 GameObject:
   m_ObjectHideFlags: 0
@@ -6636,6 +6678,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 2397469807793627481}
@@ -6710,6 +6753,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 8491702776370886833}
   rb: {fileID: 6553939451497708878}
   meshRenderer: {fileID: 8104944283887722607}
+  RBTile: {fileID: 0}
 --- !u!1 &1214352051886663881
 GameObject:
   m_ObjectHideFlags: 0
@@ -6941,6 +6985,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 2160750192201195448}
@@ -7015,6 +7060,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5135228841955697130}
   rb: {fileID: 9052771972571514348}
   meshRenderer: {fileID: 4819381711175498036}
+  RBTile: {fileID: 0}
 --- !u!1 &1298633536898745617
 GameObject:
   m_ObjectHideFlags: 0
@@ -7135,59 +7181,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.7323148, y: 1.8295708, z: 0.5443048}
   m_Center: {x: 0.0000038146973, y: 1.5777218e-30, z: 0.0000004768371}
---- !u!1 &1298729286296313514
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4730492867536569651}
-  - component: {fileID: 303544022348614220}
-  m_Layer: 18
-  m_Name: Block Collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4730492867536569651
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298729286296313514}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19, y: 0, z: -2.57}
-  m_LocalScale: {x: 43, y: 10, z: 25.7}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4280563358355143159}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &303544022348614220
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298729286296313514}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.95, y: 1, z: 0.95}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1360480780323995744
 GameObject:
   m_ObjectHideFlags: 0
@@ -7299,6 +7292,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5369998239696513949}
@@ -7373,6 +7367,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 8154820068177879169}
   rb: {fileID: 2206306824205401271}
   meshRenderer: {fileID: 8397419898976155743}
+  RBTile: {fileID: 0}
 --- !u!1 &1422840106630770051
 GameObject:
   m_ObjectHideFlags: 0
@@ -7484,6 +7479,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5111006873821153963}
@@ -7558,6 +7554,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 2746159733763578020}
   rb: {fileID: 178406784130087138}
   meshRenderer: {fileID: 2575580661277032570}
+  RBTile: {fileID: 0}
 --- !u!1 &1499080309385787357
 GameObject:
   m_ObjectHideFlags: 0
@@ -7789,6 +7786,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4045503301323465630}
@@ -7863,6 +7861,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 1939470742732330517}
   rb: {fileID: 4884831496402875681}
   meshRenderer: {fileID: 2254191320839999179}
+  RBTile: {fileID: 0}
 --- !u!1 &1593408697178715485
 GameObject:
   m_ObjectHideFlags: 0
@@ -8214,6 +8213,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6595775727868863881}
@@ -8288,6 +8288,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 2409162819307261893}
   rb: {fileID: 3534963109679818988}
   meshRenderer: {fileID: 2651790722014795547}
+  RBTile: {fileID: 0}
 --- !u!1 &1730348325413408050
 GameObject:
   m_ObjectHideFlags: 0
@@ -8399,6 +8400,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 7397683068168783904}
@@ -8473,6 +8475,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 1743534351671395761}
   rb: {fileID: 7686978632508878108}
   meshRenderer: {fileID: 2130301631662497135}
+  RBTile: {fileID: 0}
 --- !u!1 &1776427778672207641
 GameObject:
   m_ObjectHideFlags: 0
@@ -8584,6 +8587,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 3063836115755820703}
@@ -8658,6 +8662,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 939943293195973744}
   rb: {fileID: 4499730837234449824}
   meshRenderer: {fileID: 624105050897771694}
+  RBTile: {fileID: 0}
 --- !u!1 &1808212297564104963
 GameObject:
   m_ObjectHideFlags: 0
@@ -8769,6 +8774,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 1197871234625270135}
@@ -8843,6 +8849,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5700408438200450097}
   rb: {fileID: 2143804360398553527}
   meshRenderer: {fileID: 5384605345986290927}
+  RBTile: {fileID: 0}
 --- !u!1 &1815729168985339594
 GameObject:
   m_ObjectHideFlags: 0
@@ -9074,6 +9081,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 407913013634572578}
@@ -9148,6 +9156,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 1493361426099451897}
   rb: {fileID: 3317708235310498419}
   meshRenderer: {fileID: 1232685589825892135}
+  RBTile: {fileID: 0}
 --- !u!1 &1918253794766108027
 GameObject:
   m_ObjectHideFlags: 0
@@ -9259,6 +9268,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 8333517672649716371}
@@ -9333,6 +9343,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3784095274966379739}
   rb: {fileID: 8047561613493263751}
   meshRenderer: {fileID: 3540343705718748165}
+  RBTile: {fileID: 0}
 --- !u!1 &1926502253439728214
 GameObject:
   m_ObjectHideFlags: 0
@@ -9564,6 +9575,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 3601930676345313117}
@@ -9638,6 +9650,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 6368246113223571716}
   rb: {fileID: 3247626788543457075}
   meshRenderer: {fileID: 6756124380973949402}
+  RBTile: {fileID: 0}
 --- !u!1 &2069987647663649245
 GameObject:
   m_ObjectHideFlags: 0
@@ -10229,6 +10242,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 7196623624662084434}
@@ -10303,6 +10317,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4259674188093718970}
   rb: {fileID: 5054416453477365475}
   meshRenderer: {fileID: 4521467068180535652}
+  RBTile: {fileID: 0}
 --- !u!1 &2250987158572182949
 GameObject:
   m_ObjectHideFlags: 0
@@ -10534,6 +10549,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4363160328058771375}
@@ -10608,6 +10624,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 1625285055055665757}
   rb: {fileID: 8043102657013518285}
   meshRenderer: {fileID: 1381533509447123587}
+  RBTile: {fileID: 0}
 --- !u!1 &2346981507185054413
 GameObject:
   m_ObjectHideFlags: 0
@@ -10719,6 +10736,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4857891381437064218}
@@ -10793,6 +10811,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5708455474256949508}
   rb: {fileID: 8996899016591449873}
   meshRenderer: {fileID: 5375784267165280730}
+  RBTile: {fileID: 0}
 --- !u!1 &2417492249971800624
 GameObject:
   m_ObjectHideFlags: 0
@@ -11144,6 +11163,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 7983306897692264377}
@@ -11218,6 +11238,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 6000607935203463791}
   rb: {fileID: 441755777097904063}
   meshRenderer: {fileID: 6261248483954281137}
+  RBTile: {fileID: 0}
 --- !u!1 &2518369534753019037
 GameObject:
   m_ObjectHideFlags: 0
@@ -11449,6 +11470,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 8374447353101667313}
@@ -11523,6 +11545,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4541574018483346551}
   rb: {fileID: 1973464759484343204}
   meshRenderer: {fileID: 4225771510249997481}
+  RBTile: {fileID: 0}
 --- !u!1 &2679706046843324947
 GameObject:
   m_ObjectHideFlags: 0
@@ -11874,6 +11897,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 7271567379378826254}
@@ -11948,6 +11972,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 1692019049676952705}
   rb: {fileID: 6228079384578657846}
   meshRenderer: {fileID: 1358221290045787231}
+  RBTile: {fileID: 0}
 --- !u!1 &2829799120873148449
 GameObject:
   m_ObjectHideFlags: 0
@@ -12179,6 +12204,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 1981391578582786119}
@@ -12253,6 +12279,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 6920796091125406114}
   rb: {fileID: 2914855805491017197}
   meshRenderer: {fileID: 7325533797679366524}
+  RBTile: {fileID: 0}
 --- !u!1 &2974668249342225814
 GameObject:
   m_ObjectHideFlags: 0
@@ -12364,6 +12391,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 3216653793442132248}
@@ -12438,6 +12466,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4323226218747998884}
   rb: {fileID: 310086880741684663}
   meshRenderer: {fileID: 4493803092224780922}
+  RBTile: {fileID: 0}
 --- !u!1 &3037068820650785298
 GameObject:
   m_ObjectHideFlags: 0
@@ -12669,6 +12698,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 1797031436529312434}
@@ -12743,6 +12773,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 1510203353198521542}
   rb: {fileID: 2905440149678092484}
   meshRenderer: {fileID: 1249551807000966168}
+  RBTile: {fileID: 0}
 --- !u!1 &3110131483156341547
 GameObject:
   m_ObjectHideFlags: 0
@@ -12854,6 +12885,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 1751697096710081924}
@@ -12928,6 +12960,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3462013220139752829}
   rb: {fileID: 4130505769758482155}
   meshRenderer: {fileID: 3866788756902102435}
+  RBTile: {fileID: 0}
 --- !u!1 &3162862380747965183
 GameObject:
   m_ObjectHideFlags: 0
@@ -13039,6 +13072,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 3185577026492900921}
@@ -13113,6 +13147,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 7092706368183085327}
   rb: {fileID: 4069495341196522545}
   meshRenderer: {fileID: 7479431772288659921}
+  RBTile: {fileID: 0}
 --- !u!1 &3236461191489402184
 GameObject:
   m_ObjectHideFlags: 0
@@ -13584,6 +13619,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 2609538646430923928}
@@ -13658,6 +13694,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 2543833315406810432}
   rb: {fileID: 7145238626334703745}
   meshRenderer: {fileID: 2805636608493983134}
+  RBTile: {fileID: 0}
 --- !u!1 &3450959152590860931
 GameObject:
   m_ObjectHideFlags: 0
@@ -14129,6 +14166,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5768767286380766234}
@@ -14203,6 +14241,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 7474723382330765182}
   rb: {fileID: 1868892730211401913}
   meshRenderer: {fileID: 7068839546386692000}
+  RBTile: {fileID: 0}
 --- !u!1 &3599163261361572526
 GameObject:
   m_ObjectHideFlags: 0
@@ -14554,6 +14593,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6775291953500501643}
@@ -14628,6 +14668,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3982755048225594047}
   rb: {fileID: 1961125445234497178}
   meshRenderer: {fileID: 3668054147562488417}
+  RBTile: {fileID: 0}
 --- !u!1 &3699786535802532281
 GameObject:
   m_ObjectHideFlags: 0
@@ -14859,6 +14900,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 7596575557750761963}
@@ -14933,6 +14975,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 6157906567174724950}
   rb: {fileID: 2120136587687327174}
   meshRenderer: {fileID: 5825223774609573256}
+  RBTile: {fileID: 0}
 --- !u!1 &3796878403501718680
 GameObject:
   m_ObjectHideFlags: 0
@@ -15044,6 +15087,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6394613556958576247}
@@ -15118,6 +15162,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4168406814685556540}
   rb: {fileID: 1628492547312398922}
   meshRenderer: {fileID: 4358141544387803106}
+  RBTile: {fileID: 0}
 --- !u!1 &3815711569421942204
 GameObject:
   m_ObjectHideFlags: 0
@@ -15349,6 +15394,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 2088807050638482400}
@@ -15423,6 +15469,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 2982368544939889260}
   rb: {fileID: 4028769841392413237}
   meshRenderer: {fileID: 3225031631900101298}
+  RBTile: {fileID: 0}
 --- !u!1 &3961572339869903207
 GameObject:
   m_ObjectHideFlags: 0
@@ -15534,6 +15581,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 7608288792423257634}
@@ -15608,6 +15656,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5527361991936813453}
   rb: {fileID: 183269132365160649}
   meshRenderer: {fileID: 5266747829264494931}
+  RBTile: {fileID: 0}
 --- !u!1 &3965886079687232433
 GameObject:
   m_ObjectHideFlags: 0
@@ -15719,6 +15768,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 8355252759135821486}
@@ -15793,6 +15843,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4864674941274278432}
   rb: {fileID: 281199864429445904}
   meshRenderer: {fileID: 5053268961971983102}
+  RBTile: {fileID: 0}
 --- !u!1 &3984668072299854345
 GameObject:
   m_ObjectHideFlags: 0
@@ -16144,6 +16195,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4559964165030500562}
@@ -16218,6 +16270,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5572932889182015335}
   rb: {fileID: 611282872464809262}
   meshRenderer: {fileID: 5257131929420175289}
+  RBTile: {fileID: 0}
 --- !u!1 &4145574646446063355
 GameObject:
   m_ObjectHideFlags: 0
@@ -16929,6 +16982,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 2938191579817267960}
@@ -17003,6 +17057,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4218852487373663514}
   rb: {fileID: 2947061236629546995}
   meshRenderer: {fileID: 4552649602822780356}
+  RBTile: {fileID: 0}
 --- !u!1 &4339060594965890153
 GameObject:
   m_ObjectHideFlags: 0
@@ -17114,6 +17169,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 7290954669667554374}
@@ -17188,6 +17244,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 9152787304079301994}
   rb: {fileID: 3717242949447352340}
   meshRenderer: {fileID: 8838075410465359284}
+  RBTile: {fileID: 0}
 --- !u!1 &4343874685651157418
 GameObject:
   m_ObjectHideFlags: 0
@@ -17299,6 +17356,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4006613109777696202}
@@ -17373,6 +17431,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5982630308208461771}
   rb: {fileID: 2989174009681232766}
   meshRenderer: {fileID: 6243273159068180245}
+  RBTile: {fileID: 0}
 --- !u!1 &4400898394419108151
 GameObject:
   m_ObjectHideFlags: 0
@@ -17484,6 +17543,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6517811544753089464}
@@ -17558,6 +17618,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 92161893291121996}
   rb: {fileID: 7219291305513783735}
   meshRenderer: {fileID: 352812999071548818}
+  RBTile: {fileID: 0}
 --- !u!1 &4421198764765022223
 GameObject:
   m_ObjectHideFlags: 0
@@ -17789,6 +17850,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 9193831459424838434}
@@ -17863,6 +17925,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 2640141272234842091}
   rb: {fileID: 1076248037872488633}
   meshRenderer: {fileID: 2378383505867067189}
+  RBTile: {fileID: 0}
 --- !u!1 &4532181955311349209
 GameObject:
   m_ObjectHideFlags: 0
@@ -17895,8 +17958,6 @@ Transform:
   m_Children:
   - {fileID: 7248502901609592876}
   - {fileID: 7004724360035361010}
-  - {fileID: 4730492867536569651}
-  - {fileID: 3737490807697934859}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9179278754044942644
@@ -18052,6 +18113,7 @@ MonoBehaviour:
   price: 5
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   copyBlockHolder: {fileID: 7004724360035361010}
+  effectMat: {fileID: 0}
 --- !u!1 &4611214459692286762
 GameObject:
   m_ObjectHideFlags: 0
@@ -18163,6 +18225,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 2182414640897605725}
@@ -18237,6 +18300,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 6724461410362605136}
   rb: {fileID: 8708748488850685016}
   meshRenderer: {fileID: 6408634687048197774}
+  RBTile: {fileID: 0}
 --- !u!1 &4652072483680044549
 GameObject:
   m_ObjectHideFlags: 0
@@ -18348,6 +18412,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5038804672066943473}
@@ -18422,6 +18487,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3085231194770709266}
   rb: {fileID: 4659747496329519205}
   meshRenderer: {fileID: 3419054696306705356}
+  RBTile: {fileID: 0}
 --- !u!1 &4653645099487335174
 GameObject:
   m_ObjectHideFlags: 0
@@ -18773,6 +18839,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 450686687009882170}
@@ -18847,6 +18914,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 7196856111026405148}
   rb: {fileID: 4395818310582017498}
   meshRenderer: {fileID: 7368526491768776642}
+  RBTile: {fileID: 0}
 --- !u!1 &4854060619862183773
 GameObject:
   m_ObjectHideFlags: 0
@@ -18958,6 +19026,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4332206328981247497}
@@ -19032,6 +19101,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 6916371320928956664}
   rb: {fileID: 2296573822315713567}
   meshRenderer: {fileID: 6510514420854450214}
+  RBTile: {fileID: 0}
 --- !u!1 &4881074490409196622
 GameObject:
   m_ObjectHideFlags: 0
@@ -19263,6 +19333,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 7302125988105485081}
@@ -19337,6 +19408,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4329086840393648504}
   rb: {fileID: 2939926389371865667}
   meshRenderer: {fileID: 4158542943688741286}
+  RBTile: {fileID: 0}
 --- !u!1 &4984752564120805083
 GameObject:
   m_ObjectHideFlags: 0
@@ -19568,6 +19640,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 3068958010109626388}
@@ -19642,6 +19715,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 2694510564857089189}
   rb: {fileID: 5808169876273421917}
   meshRenderer: {fileID: 2361801933622416507}
+  RBTile: {fileID: 0}
 --- !u!1 &5052777296074802320
 GameObject:
   m_ObjectHideFlags: 0
@@ -19753,6 +19827,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 7179845224511812195}
@@ -19827,6 +19902,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 6650220284023142435}
   rb: {fileID: 5754224686140764454}
   meshRenderer: {fileID: 6478508673763565821}
+  RBTile: {fileID: 0}
 --- !u!1 &5075793548283322443
 GameObject:
   m_ObjectHideFlags: 0
@@ -20298,6 +20374,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5701968200011407090}
@@ -20372,6 +20449,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 74053099355440888}
   rb: {fileID: 4959707721612375232}
   meshRenderer: {fileID: 334686578777792038}
+  RBTile: {fileID: 0}
 --- !u!1 &5204286436041206761
 GameObject:
   m_ObjectHideFlags: 0
@@ -20483,6 +20561,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 9167160116711507138}
@@ -20557,6 +20636,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4088969772550603143}
   rb: {fileID: 8842507621205486529}
   meshRenderer: {fileID: 4403655211194603865}
+  RBTile: {fileID: 0}
 --- !u!1 &5224659559507768968
 GameObject:
   m_ObjectHideFlags: 0
@@ -20668,6 +20748,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6328709076732771514}
@@ -20742,6 +20823,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3935892004798511995}
   rb: {fileID: 6236345218227033936}
   meshRenderer: {fileID: 3692113461026595749}
+  RBTile: {fileID: 0}
 --- !u!1 &5255554094833360327
 GameObject:
   m_ObjectHideFlags: 0
@@ -21213,6 +21295,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 2245949587753322385}
@@ -21287,6 +21370,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3647146801256299195}
   rb: {fileID: 7383164230883738713}
   meshRenderer: {fileID: 3980999536534905445}
+  RBTile: {fileID: 0}
 --- !u!1 &5324655135683409693
 GameObject:
   m_ObjectHideFlags: 0
@@ -21398,6 +21482,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6795942669612921046}
@@ -21472,6 +21557,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 9145517203714608166}
   rb: {fileID: 8633682262072205463}
   meshRenderer: {fileID: 8883766139425854712}
+  RBTile: {fileID: 0}
 --- !u!1 &5336058077278932638
 GameObject:
   m_ObjectHideFlags: 0
@@ -21583,6 +21669,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 8236387170049396247}
@@ -21657,6 +21744,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4878975561912318168}
   rb: {fileID: 3062918284837656846}
   meshRenderer: {fileID: 5050654083814612998}
+  RBTile: {fileID: 0}
 --- !u!1 &5397404518229915050
 GameObject:
   m_ObjectHideFlags: 0
@@ -21888,6 +21976,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 468249775175774409}
@@ -21962,6 +22051,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 9222149611538408702}
   rb: {fileID: 6454784680687388818}
   meshRenderer: {fileID: 8816277275440708640}
+  RBTile: {fileID: 0}
 --- !u!1 &5451621342455704294
 GameObject:
   m_ObjectHideFlags: 0
@@ -22313,6 +22403,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 729835933324803307}
@@ -22387,6 +22478,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 8718624861429420422}
   rb: {fileID: 1034682226463235363}
   meshRenderer: {fileID: 9033335002713999704}
+  RBTile: {fileID: 0}
 --- !u!1 &5545973703393729733
 GameObject:
   m_ObjectHideFlags: 0
@@ -22738,6 +22830,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 3861361970043982562}
@@ -22812,6 +22905,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 909350816841078531}
   rb: {fileID: 4666961373841958708}
   meshRenderer: {fileID: 665605799518343133}
+  RBTile: {fileID: 0}
 --- !u!1 &5574626471525490540
 GameObject:
   m_ObjectHideFlags: 0
@@ -22923,6 +23017,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 574765021501571097}
@@ -22997,6 +23092,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 1491022294052925409}
   rb: {fileID: 972754892019568028}
   meshRenderer: {fileID: 1230381743031940927}
+  RBTile: {fileID: 0}
 --- !u!1 &5592146641443599159
 GameObject:
   m_ObjectHideFlags: 0
@@ -23228,6 +23324,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6879746476784881258}
@@ -23302,6 +23399,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 6808307763436652121}
   rb: {fileID: 1675823925824365812}
   meshRenderer: {fileID: 6618579081112854151}
+  RBTile: {fileID: 0}
 --- !u!1 &5712098821821148532
 GameObject:
   m_ObjectHideFlags: 0
@@ -23413,6 +23511,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 3071537942742940565}
@@ -23487,6 +23586,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 1065652935802243193}
   rb: {fileID: 89655134141192395}
   meshRenderer: {fileID: 823007541840924839}
+  RBTile: {fileID: 0}
 --- !u!1 &5715244386678536339
 GameObject:
   m_ObjectHideFlags: 0
@@ -23838,6 +23938,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6966731627059813125}
@@ -23912,6 +24013,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3991191263327231750}
   rb: {fileID: 9208654544422392240}
   meshRenderer: {fileID: 3657364916399900632}
+  RBTile: {fileID: 0}
 --- !u!1 &5859191281142688696
 GameObject:
   m_ObjectHideFlags: 0
@@ -24023,6 +24125,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5203905915286611535}
@@ -24097,6 +24200,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 7107126144962325419}
   rb: {fileID: 1326934850269226048}
   meshRenderer: {fileID: 7422927104794424181}
+  RBTile: {fileID: 0}
 --- !u!1 &5879982201382468647
 GameObject:
   m_ObjectHideFlags: 0
@@ -24328,6 +24432,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5922630543813889146}
@@ -24402,6 +24507,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 6979773712404485533}
   rb: {fileID: 5770232614698970202}
   meshRenderer: {fileID: 7313633018995248451}
+  RBTile: {fileID: 0}
 --- !u!1 &6010450700810601740
 GameObject:
   m_ObjectHideFlags: 0
@@ -24513,6 +24619,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 7908471403637439676}
@@ -24587,6 +24694,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5233919175639708182}
   rb: {fileID: 6541664470505383503}
   meshRenderer: {fileID: 5548576093555993288}
+  RBTile: {fileID: 0}
 --- !u!1 &6020017566838981245
 GameObject:
   m_ObjectHideFlags: 0
@@ -24818,6 +24926,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 3802835378252197518}
@@ -24892,6 +25001,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4048000790461071466}
   rb: {fileID: 3158695527070893807}
   meshRenderer: {fileID: 4435902734219335860}
+  RBTile: {fileID: 0}
 --- !u!1 &6104955007554694714
 GameObject:
   m_ObjectHideFlags: 0
@@ -25243,6 +25353,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 1360704767631505765}
@@ -25317,6 +25428,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4864790493288020681}
   rb: {fileID: 5205966565809565930}
   meshRenderer: {fileID: 5053364652044198423}
+  RBTile: {fileID: 0}
 --- !u!1 &6254220446412922322
 GameObject:
   m_ObjectHideFlags: 0
@@ -25668,6 +25780,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5106855741736350575}
@@ -25742,6 +25855,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 6625734318519839936}
   rb: {fileID: 8535143659514508342}
   meshRenderer: {fileID: 6796295841712731166}
+  RBTile: {fileID: 0}
 --- !u!1 &6354532112861717841
 GameObject:
   m_ObjectHideFlags: 0
@@ -25853,6 +25967,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 1326074195394752060}
@@ -25927,6 +26042,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 7106099022470514384}
   rb: {fileID: 8647799621711368885}
   meshRenderer: {fileID: 7439931345933311502}
+  RBTile: {fileID: 0}
 --- !u!1 &6423039801532808631
 GameObject:
   m_ObjectHideFlags: 0
@@ -26038,6 +26154,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6944747427649232178}
@@ -26112,6 +26229,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5134218124628015453}
   rb: {fileID: 3403984428842142156}
   meshRenderer: {fileID: 4819543622983491971}
+  RBTile: {fileID: 0}
 --- !u!1 &6517797680640868365
 GameObject:
   m_ObjectHideFlags: 0
@@ -26343,6 +26461,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6149937359404069932}
@@ -26417,6 +26536,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4183883209981727495}
   rb: {fileID: 1398385938650993768}
   meshRenderer: {fileID: 4589800039862471641}
+  RBTile: {fileID: 0}
 --- !u!1 &6574378683936800928
 GameObject:
   m_ObjectHideFlags: 0
@@ -26888,6 +27008,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 2782910174072915760}
@@ -26962,6 +27083,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 7911667883716856948}
   rb: {fileID: 4791253115610520926}
   meshRenderer: {fileID: 7523818744350659754}
+  RBTile: {fileID: 0}
 --- !u!1 &6613962393705095027
 GameObject:
   m_ObjectHideFlags: 0
@@ -27073,6 +27195,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 589265503918069433}
@@ -27147,6 +27270,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4336551541123042177}
   rb: {fileID: 6392829240969978955}
   meshRenderer: {fileID: 4146860793883972447}
+  RBTile: {fileID: 0}
 --- !u!1 &6665650595173754217
 GameObject:
   m_ObjectHideFlags: 0
@@ -27858,6 +27982,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6815586603826802617}
@@ -27932,6 +28057,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5468811768228355299}
   rb: {fileID: 3485865807673181488}
   meshRenderer: {fileID: 5640479365810029629}
+  RBTile: {fileID: 0}
 --- !u!1 &6832763318030141430
 GameObject:
   m_ObjectHideFlags: 0
@@ -28043,6 +28169,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 7132640132470460951}
@@ -28117,6 +28244,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 2456199202892473955}
   rb: {fileID: 2916691055273778955}
   meshRenderer: {fileID: 2860965969335811773}
+  RBTile: {fileID: 0}
 --- !u!1 &6843415636187353566
 GameObject:
   m_ObjectHideFlags: 0
@@ -28228,6 +28356,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5887824920386236770}
@@ -28302,6 +28431,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4577487520699408287}
   rb: {fileID: 7342287851472472909}
   meshRenderer: {fileID: 4189647175362234177}
+  RBTile: {fileID: 0}
 --- !u!1 &6860524427460373973
 GameObject:
   m_ObjectHideFlags: 0
@@ -28533,6 +28663,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4149068737806695120}
@@ -28607,6 +28738,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5762682662308192366}
   rb: {fileID: 8424901206963343662}
   meshRenderer: {fileID: 5357933443106977968}
+  RBTile: {fileID: 0}
 --- !u!1 &6928887015884727530
 GameObject:
   m_ObjectHideFlags: 0
@@ -28838,6 +28970,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 1049562466443049695}
@@ -28912,6 +29045,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5787986382110140845}
   rb: {fileID: 3241649836276167674}
   meshRenderer: {fileID: 6192752675965383027}
+  RBTile: {fileID: 0}
 --- !u!1 &6944779131535378028
 GameObject:
   m_ObjectHideFlags: 0
@@ -29023,6 +29157,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6962383038885023071}
@@ -29097,6 +29232,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3440702024107990221}
   rb: {fileID: 5170802102761966100}
   meshRenderer: {fileID: 3034802792902525971}
+  RBTile: {fileID: 0}
 --- !u!1 &6952472484635467955
 GameObject:
   m_ObjectHideFlags: 0
@@ -29328,6 +29464,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 8609222029471485499}
@@ -29402,6 +29539,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5302486129174860536}
   rb: {fileID: 8801567227178418723}
   meshRenderer: {fileID: 5491060330863413798}
+  RBTile: {fileID: 0}
 --- !u!1 &6997325908515778978
 GameObject:
   m_ObjectHideFlags: 0
@@ -29513,6 +29651,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 2069708192629043757}
@@ -29587,6 +29726,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 8489573967267433902}
   rb: {fileID: 360051856521579949}
   meshRenderer: {fileID: 8102850693462496624}
+  RBTile: {fileID: 0}
 --- !u!1 &7009250316497881757
 GameObject:
   m_ObjectHideFlags: 0
@@ -29698,6 +29838,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6054688867750201285}
@@ -29772,6 +29913,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 616657180686993530}
   rb: {fileID: 3575672911453798419}
   meshRenderer: {fileID: 949365880644948132}
+  RBTile: {fileID: 0}
 --- !u!1 &7013527162173866864
 GameObject:
   m_ObjectHideFlags: 0
@@ -30003,6 +30145,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5157310634309928637}
@@ -30077,6 +30220,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 7070406137978342752}
   rb: {fileID: 8288831590309068109}
   meshRenderer: {fileID: 7475198742787642814}
+  RBTile: {fileID: 0}
 --- !u!1 &7086990599984095802
 GameObject:
   m_ObjectHideFlags: 0
@@ -30308,6 +30452,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 8268913153026160319}
@@ -30382,6 +30527,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 2910661656860820868}
   rb: {fileID: 4080788486304353164}
   meshRenderer: {fileID: 3298501993545801050}
+  RBTile: {fileID: 0}
 --- !u!1 &7131469074085650856
 GameObject:
   m_ObjectHideFlags: 0
@@ -30493,6 +30639,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 7243230012116239202}
@@ -30567,6 +30714,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4095351524337204666}
   rb: {fileID: 2602248543091814408}
   meshRenderer: {fileID: 4429151480855143780}
+  RBTile: {fileID: 0}
 --- !u!1 &7153123798537553263
 GameObject:
   m_ObjectHideFlags: 0
@@ -30798,6 +30946,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4782573835001150030}
@@ -30872,6 +31021,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 2416538496908593552}
   rb: {fileID: 2573912683926206461}
   meshRenderer: {fileID: 2606275459947041102}
+  RBTile: {fileID: 0}
 --- !u!1 &7178702069634150689
 GameObject:
   m_ObjectHideFlags: 0
@@ -30983,6 +31133,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5429205071080073363}
@@ -31057,6 +31208,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 6140236680155038799}
   rb: {fileID: 278502025778347359}
   meshRenderer: {fileID: 5806439504504560785}
+  RBTile: {fileID: 0}
 --- !u!1 &7195342948994501030
 GameObject:
   m_ObjectHideFlags: 0
@@ -31168,6 +31320,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4491378602023042232}
@@ -31242,6 +31395,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5334889736095133483}
   rb: {fileID: 7450370126510305274}
   meshRenderer: {fileID: 5740762132328151029}
+  RBTile: {fileID: 0}
 --- !u!1 &7257941789238454652
 GameObject:
   m_ObjectHideFlags: 0
@@ -31593,6 +31747,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 8993900908339321917}
@@ -31667,6 +31822,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 958795667785439070}
   rb: {fileID: 8706294221524101958}
   meshRenderer: {fileID: 642975541530840960}
+  RBTile: {fileID: 0}
 --- !u!1 &7295156987818122418
 GameObject:
   m_ObjectHideFlags: 0
@@ -31898,6 +32054,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4806302088867265238}
@@ -31972,6 +32129,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 8182968581303687905}
   rb: {fileID: 7262536857505004459}
   meshRenderer: {fileID: 8371527450029769279}
+  RBTile: {fileID: 0}
 --- !u!1 &7320652219166840804
 GameObject:
   m_ObjectHideFlags: 0
@@ -32323,6 +32481,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 1491253801798950113}
@@ -32397,6 +32556,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4835401418100945561}
   rb: {fileID: 4748715224470798893}
   meshRenderer: {fileID: 5096059054584670791}
+  RBTile: {fileID: 0}
 --- !u!1 &7367258086498281983
 GameObject:
   m_ObjectHideFlags: 0
@@ -32748,6 +32908,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 1137929007525948468}
@@ -32822,6 +32983,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 6387527538766448143}
   rb: {fileID: 8115175124350684839}
   meshRenderer: {fileID: 6703347707837030097}
+  RBTile: {fileID: 0}
 --- !u!1 &7417015838923678728
 GameObject:
   m_ObjectHideFlags: 0
@@ -33413,6 +33575,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6311662474638380162}
@@ -33487,72 +33650,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5723867939426038466}
   rb: {fileID: 4741767719409333403}
   meshRenderer: {fileID: 5390068635534453276}
---- !u!1 &7507167188506259491
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3737490807697934859}
-  - component: {fileID: 8514546922506119838}
-  - component: {fileID: 1943610331425165637}
-  m_Layer: 7
-  m_Name: Block Trigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3737490807697934859
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7507167188506259491}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.18999863, y: 0, z: -2.5699997}
-  m_LocalScale: {x: 43, y: 10, z: 25.7}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4280563358355143159}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8514546922506119838
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7507167188506259491}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1943610331425165637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7507167188506259491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d9b43e14001b2d4fa047b47c03a06fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  RBTile: {fileID: 0}
 --- !u!1 &7652530602885812801
 GameObject:
   m_ObjectHideFlags: 0
@@ -34062,6 +34160,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 8899905785245002640}
@@ -34136,6 +34235,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 2211697296498946624}
   rb: {fileID: 901761537726523354}
   meshRenderer: {fileID: 1951074262492113566}
+  RBTile: {fileID: 0}
 --- !u!1 &8039309359146961567
 GameObject:
   m_ObjectHideFlags: 0
@@ -34247,6 +34347,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6638230833910784740}
@@ -34321,6 +34422,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 8080880258939828167}
   rb: {fileID: 2313995662354319542}
   meshRenderer: {fileID: 8468755812342181657}
+  RBTile: {fileID: 0}
 --- !u!1 &8060328773970797206
 GameObject:
   m_ObjectHideFlags: 0
@@ -34620,8 +34722,6 @@ MonoBehaviour:
   - {fileID: 2258378643744324417}
   - {fileID: 4809512166448957833}
   - {fileID: 8274427764660589412}
-  blockCollider: {fileID: 1298729286296313514}
-  blockTrigger: {fileID: 7507167188506259491}
 --- !u!1 &8083384074262890975
 GameObject:
   m_ObjectHideFlags: 0
@@ -34973,6 +35073,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 8983193056707123571}
@@ -35047,6 +35148,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 5941259185305049519}
   rb: {fileID: 8247565668898484}
   meshRenderer: {fileID: 6327991291709702513}
+  RBTile: {fileID: 0}
 --- !u!1 &8193760059446069151
 GameObject:
   m_ObjectHideFlags: 0
@@ -35398,6 +35500,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5997066570319107824}
@@ -35472,6 +35575,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3613957904382081364}
   rb: {fileID: 9083342956395360288}
   meshRenderer: {fileID: 4000681755858542986}
+  RBTile: {fileID: 0}
 --- !u!1 &8254201125023434292
 GameObject:
   m_ObjectHideFlags: 0
@@ -35703,6 +35807,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 3320004414353276841}
@@ -35777,6 +35882,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 230166265795365646}
   rb: {fileID: 1549034004963711071}
   meshRenderer: {fileID: 473911169325716432}
+  RBTile: {fileID: 0}
 --- !u!1 &8323504494089162290
 GameObject:
   m_ObjectHideFlags: 0
@@ -36008,6 +36114,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 948907881578494993}
@@ -36082,6 +36189,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 1131609454347193909}
   rb: {fileID: 5769814534927611056}
   meshRenderer: {fileID: 726862401742018283}
+  RBTile: {fileID: 0}
 --- !u!1 &8338597777974660235
 GameObject:
   m_ObjectHideFlags: 0
@@ -36313,6 +36421,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 8404283095982246121}
@@ -36387,6 +36496,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 7112936014010793643}
   rb: {fileID: 4863466842064187980}
   meshRenderer: {fileID: 7427602174895400565}
+  RBTile: {fileID: 0}
 --- !u!1 &8383431019223498653
 GameObject:
   m_ObjectHideFlags: 0
@@ -36498,6 +36608,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 7984389257786812718}
@@ -36572,6 +36683,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 6090667895520392398}
   rb: {fileID: 3199950410153926413}
   meshRenderer: {fileID: 5846933881967832080}
+  RBTile: {fileID: 0}
 --- !u!1 &8402485630632141662
 GameObject:
   m_ObjectHideFlags: 0
@@ -36683,6 +36795,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5971771197281433285}
@@ -36757,6 +36870,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 4931044044756916997}
   rb: {fileID: 2805746562553726716}
   meshRenderer: {fileID: 4741317492657849307}
+  RBTile: {fileID: 0}
 --- !u!1 &8424528828272354592
 GameObject:
   m_ObjectHideFlags: 0
@@ -36988,6 +37102,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 3389196795974768257}
@@ -37062,6 +37177,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 7677874060920293537}
   rb: {fileID: 8662883921032760873}
   meshRenderer: {fileID: 8011715214769262719}
+  RBTile: {fileID: 0}
 --- !u!1 &8503199377916385266
 GameObject:
   m_ObjectHideFlags: 0
@@ -37293,6 +37409,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 2627354513606304767}
@@ -37367,6 +37484,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 1628069278015306432}
   rb: {fileID: 1497869959533836914}
   meshRenderer: {fileID: 1385434320942473758}
+  RBTile: {fileID: 0}
 --- !u!1 &8512113845860325100
 GameObject:
   m_ObjectHideFlags: 0
@@ -37478,6 +37596,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 6606078360039461685}
@@ -37552,6 +37671,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 8278517289705625937}
   rb: {fileID: 1179021786654362888}
   meshRenderer: {fileID: 8593201036119261583}
+  RBTile: {fileID: 0}
 --- !u!1 &8586319195531680222
 GameObject:
   m_ObjectHideFlags: 0
@@ -37783,6 +37903,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4081379411320694838}
@@ -37857,6 +37978,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 2553970275107403040}
   rb: {fileID: 23662389041505988}
   meshRenderer: {fileID: 2797750364933451262}
+  RBTile: {fileID: 0}
 --- !u!1 &8600551524299151257
 GameObject:
   m_ObjectHideFlags: 0
@@ -38568,6 +38690,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 342950242636194875}
@@ -38642,6 +38765,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3440694004345052}
   rb: {fileID: 7594208541229514172}
   meshRenderer: {fileID: 409304231730081794}
+  RBTile: {fileID: 0}
 --- !u!1 &9005056242312641249
 GameObject:
   m_ObjectHideFlags: 0
@@ -38873,6 +38997,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 4678548115259635206}
@@ -38947,6 +39072,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 8949939040745077796}
   rb: {fileID: 2426736958280592775}
   meshRenderer: {fileID: 8761347830989169914}
+  RBTile: {fileID: 0}
 --- !u!1 &9025940237351308503
 GameObject:
   m_ObjectHideFlags: 0
@@ -39058,6 +39184,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 5405299220947186909}
@@ -39132,6 +39259,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 3316493109619222489}
   rb: {fileID: 3733697076350550960}
   meshRenderer: {fileID: 3144798573982351111}
+  RBTile: {fileID: 0}
 --- !u!1 &9048935694267699684
 GameObject:
   m_ObjectHideFlags: 0
@@ -39243,6 +39371,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 2292367758562948637}
@@ -39317,6 +39446,7 @@ MonoBehaviour:
   OtherVersion: {fileID: 387071891917219127}
   rb: {fileID: 7807338754301761400}
   meshRenderer: {fileID: 71277597828234729}
+  RBTile: {fileID: 0}
 --- !u!1 &9066639594975436456
 GameObject:
   m_ObjectHideFlags: 0
@@ -39428,6 +39558,7 @@ MonoBehaviour:
   zoneIndex: 2
   collectableShape: 0
   dustColor: {r: 0.49803922, g: 0.49019608, b: 0.4509804, a: 1}
+  effectMat: {fileID: 0}
   blockNumber: 1
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   rbHandler: {fileID: 229560380448782792}
@@ -39502,3 +39633,4 @@ MonoBehaviour:
   OtherVersion: {fileID: 4602344085054325109}
   rb: {fileID: 3382484665728886127}
   meshRenderer: {fileID: 4214475085827119531}
+  RBTile: {fileID: 0}
