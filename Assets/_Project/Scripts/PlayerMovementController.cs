@@ -39,7 +39,7 @@ public class PlayerMovementController : MonoBehaviour
 
         if (speedMultiplayer != 100)
         {
-            speedMultiplayer += 30 * Time.deltaTime;
+            speedMultiplayer += 60 * Time.deltaTime;
             if (speedMultiplayer > 100)
                 speedMultiplayer = 100;
         }

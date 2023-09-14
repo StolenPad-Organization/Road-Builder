@@ -25,5 +25,6 @@ public static class EventManager
     public static Action loadNextScene;
     public static Action loadSameScene;
     public static Action loadOpeningScene;
+    public static Func<string> GetCurrentLevel;
     #endregion
 }

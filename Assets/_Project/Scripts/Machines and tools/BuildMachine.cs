@@ -137,6 +137,7 @@ public class BuildMachine : MonoBehaviour
             if (!emptyWarning.activeInHierarchy)
             {
                 emptyWarning.SetActive(true);
+                PlayerController.instance.arrowController.GetNewTarget();
             }
             return false; 
         }

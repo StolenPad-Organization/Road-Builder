@@ -195,7 +195,7 @@ public class PlayerController : MonoBehaviour
     public void OnCollect(Peelable collectable)
     {
         lastToolUsingTime = toolCoolDown;
-        if (!scrapeTool.showing)
+        if (!scrapeTool.showing && !fullWarning.activeInHierarchy)
             scrapeTool.ShowTool(true);
 
         if (wheelBarrow != null)
@@ -216,6 +216,7 @@ public class PlayerController : MonoBehaviour
         if (collectables.Count >= collectablesLimit)
         {
             fullWarning.SetActive(true);
+            arrowController.GetNewTarget();
         }
     }
 
@@ -375,6 +376,7 @@ public class PlayerController : MonoBehaviour
         if (collectables.Count >= collectablesLimit)
         {
             fullWarning.SetActive(true);
+            arrowController.GetNewTarget();
         }
     }
 

@@ -78,6 +78,16 @@ public class ZoneManager : MonoBehaviour
         //SendProgressionEvent(ProgressionStatus.Start);
     }
 
+    [ContextMenu("SetFakeBlocks")]
+    private void SetFakeBlocks()
+    {
+        if (lockedBlocks != null)
+        {
+            removableBlock.SetActive(false);
+            lockedBlocks.SetActive(true);
+        }
+    }
+
     public void InitZone(ZoneData _zoneData)
     {
         zoneData = _zoneData;

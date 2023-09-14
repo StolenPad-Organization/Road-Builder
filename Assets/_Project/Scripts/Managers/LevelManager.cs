@@ -12,6 +12,7 @@ public class LevelManager : MonoBehaviour
         EventManager.loadOpeningScene += LoadOpeningLevel;
         EventManager.loadNextScene += LoadNextLevel;
         EventManager.loadSameScene += LoadSameLevel;
+        EventManager.GetCurrentLevel += FindCorrectSceneForAB;
     }
 
     private void OnDisable ()
@@ -19,6 +20,7 @@ public class LevelManager : MonoBehaviour
         EventManager.loadOpeningScene -= LoadOpeningLevel;
         EventManager.loadNextScene -= LoadNextLevel;
         EventManager.loadSameScene -= LoadSameLevel;
+        EventManager.GetCurrentLevel -= FindCorrectSceneForAB;
     }
 
     void LoadOpeningLevel ()

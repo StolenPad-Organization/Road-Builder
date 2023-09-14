@@ -37,7 +37,7 @@ public class ArrowController : MonoBehaviour
         }
     }
 
-    private void GetNewTarget()
+    public void GetNewTarget()
     {
         switch (gameManager.currentZone.zoneState)
         {
