@@ -34,6 +34,8 @@ public class BuildMachine : MonoBehaviour
     public bool hasUpgrade;
     private Vector3[] ammoInitialScales;
     public float Speed;
+    public float rotationSpeed;
+
     [Header("Upgrades")]
     [SerializeField] private float[] speedUpgrades;
     [SerializeField] private Vector3[] CollisionUpgrades;

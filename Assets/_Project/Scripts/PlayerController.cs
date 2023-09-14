@@ -306,6 +306,7 @@ public class PlayerController : MonoBehaviour
         {
             _asphaltMachine.transform.SetParent(transform);
             movementController.canMove = true;
+            movementController.SetRotationSpeed(_asphaltMachine.rotationSpeed);
             GameManager.instance.currentZone.StartAsphaltStage();
             GetComponent<Rigidbody>().velocity = Vector3.zero;
             GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
@@ -325,6 +326,7 @@ public class PlayerController : MonoBehaviour
         cementCollider.SetActive(false);
         buildCollider.SetActive(false);
         movementController.ToggleMovementAnimation(true);
+        movementController.SetRotationSpeed();
     }
 
     public void ActivateWheelBarrow(WheelBarrow _wheelBarrow)
@@ -389,11 +391,14 @@ public class PlayerController : MonoBehaviour
         paintMachine = null;
         TogglePaintCollider(false);
         movementController.ToggleMovementAnimation(true);
+        movementController.SetRotationSpeed();
     }
 
     public void TogglePaintCollider(bool activate)
     {
         paintCollider.SetActive(activate);
+        if(activate)
+            movementController.SetRotationSpeed(paintMachine.rotationSpeed);
     }
 
     public bool MovementCheck()

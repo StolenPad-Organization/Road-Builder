@@ -8,6 +8,8 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float paintMoveSpeed = 5f;
     [SerializeField] private float angleSpeed = 2f;
+    [SerializeField] private float rotationSpeed = 5.0f;
+    [SerializeField] private float originalRotationSpeed = 5.0f;
     [SerializeField] private Animator anim;
     private Vector3 moveDirection = Vector3.zero;
     public bool canMove = false;
@@ -20,6 +22,9 @@ public class PlayerMovementController : MonoBehaviour
     private RBManagerJobs rbManager;
     private GameManager gameManager;
     public bool insideAngleTrigger;
+
+    private float horizontalInput;
+    private float verticalInput;
 
     void Start()
     {
@@ -44,8 +49,8 @@ public class PlayerMovementController : MonoBehaviour
                 speedMultiplayer = 100;
         }
 
-        float horizontalInput = joystick.HorizontalAxis;
-        float verticalInput = joystick.VerticalAxis;
+        horizontalInput = joystick.HorizontalAxis;
+        verticalInput = joystick.VerticalAxis;
         moveDirection.x = horizontalInput;
         moveDirection.z = verticalInput;
         moveDirection.Normalize();
@@ -78,8 +83,8 @@ public class PlayerMovementController : MonoBehaviour
         if (moveDirection != Vector3.zero)
         {
             //transform.rotation = Quaternion.LookRotation(moveDirection);
-            if(canRotate)
-                rb.MoveRotation(Quaternion.LookRotation(moveDirection));
+            if (canRotate)
+                Rotate();
             ToggleMoveAnimation(true);
         }
         else
@@ -96,6 +101,25 @@ public class PlayerMovementController : MonoBehaviour
         //    if (gameManager.currentZone.zoneState == ZoneState.PeelingStage)
         //        rbManager.UpdateJobs();
         //}
+    }
+
+    private void Rotate()
+    {
+        //rb.MoveRotation(Quaternion.LookRotation(moveDirection));
+
+        float targetAngleRadians = Mathf.Atan2(horizontalInput, verticalInput);
+        float targetAngleDegrees = targetAngleRadians * Mathf.Rad2Deg;
+        Quaternion targetRotation = Quaternion.Euler(0, targetAngleDegrees, 0);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+    }
+
+    public void SetRotationSpeed()
+    {
+        rotationSpeed = originalRotationSpeed;
+    }
+    public void SetRotationSpeed(float _rotationSpeed)
+    {
+        rotationSpeed = _rotationSpeed;
     }
 
     public void ToggleMovementAnimation(bool activate)

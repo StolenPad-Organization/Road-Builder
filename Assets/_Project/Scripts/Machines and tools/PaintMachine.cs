@@ -25,6 +25,7 @@ public class PaintMachine : MonoBehaviour
     private bool effectActivated;
     public ToolAngleController toolAngleController;
     public bool hasUpgrade;
+    public float rotationSpeed;
 
     [Header("Machine Icon")]
     [SerializeField] private MachineIconController machineIcon;
