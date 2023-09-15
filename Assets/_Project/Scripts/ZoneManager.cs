@@ -72,8 +72,8 @@ public class ZoneManager : MonoBehaviour
     private void Start()
     {
         maxBlocks = Mathf.RoundToInt(peelableManager.peelableParts.Count * (peelableManager.percentageToComplete / 100));
-        maxAsphalt = buildableManager.buildableParts.Count;
-        maxPaint = paintableManager.paintableParts.Count;
+        maxAsphalt = Mathf.RoundToInt(buildableManager.buildableParts.Count * (buildableManager.percentageToComplete / 100));
+        maxPaint = Mathf.RoundToInt(paintableManager.paintableParts.Count * (paintableManager.percentageToComplete / 100));
 
         //SendProgressionEvent(ProgressionStatus.Start);
     }

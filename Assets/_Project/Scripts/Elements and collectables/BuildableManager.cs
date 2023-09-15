@@ -21,6 +21,8 @@ public class BuildableManager : MonoBehaviour
     private int rewardprogress;
     [SerializeField] private int totalRewards;
 
+    public float percentageToComplete = 100;
+
     void Start()
     {
         if(totalRewards > 0)
