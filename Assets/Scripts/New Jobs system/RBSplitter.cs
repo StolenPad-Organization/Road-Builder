@@ -20,6 +20,8 @@ public class RBSplitter : MonoBehaviour
     [SerializeField] private List<RBTile> RbTileList = new List<RBTile>();
     public Grid<RBTile> Grid;
     [SerializeField] private bool getAdjustanTiles;
+    [SerializeField] private int averageCountPerTile; 
+    [SerializeField] private int averageCountPerAdjustantTiles;
 
 #if UNITY_EDITOR
     public void SplitBoxCollider()
@@ -150,6 +152,9 @@ public class RBSplitter : MonoBehaviour
 
         }
 
+        averageCountPerTile = rbhandlerObjects.Count / RbTileList.Count;
+
+        int currentAverageAdjustant = 0;
         foreach (var item in RbTileList)
         {
             List<RBTile> t = new List<RBTile>();
@@ -157,9 +162,16 @@ public class RBSplitter : MonoBehaviour
                 t = Grid.GetAdjustantTiles(item.Index);
             t.Add(item);
             item.adjustantTiles = t;
+            foreach (var tile in t)
+            {
+                currentAverageAdjustant += tile.rbPositions.Count;
+            }
+           
 
             UnityEditor.EditorUtility.SetDirty(item);
         }
+
+        averageCountPerAdjustantTiles = currentAverageAdjustant / RbTileList.Count;
     }
 #endif
 }
