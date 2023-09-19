@@ -5,12 +5,16 @@ using UnityEditor;
 
 public class CalculationTool : EditorWindow
 {
-    private float startingPower = 0;
-    private float peelableNumber = 0;
-    private float peelableCost = 0;
-    private float totalCost = 0;
-    private float endPower = 0;
-    private float endMoney = 0;
+    private int powerPurchasePercentage = 80;
+    private int initialPowerCost = 100;
+    private int powerCostAddPercentage = 20;
+    private int startingPower = 0;
+    private int startingMoney = 0;
+    private int peelableNumber = 0;
+    private int peelableCost = 0;
+    private int totalCost = 0;
+    private int endPower = 0;
+    private int endMoney = 0;
 
     [MenuItem("My Tools/Calculator")]
     public static void ShowWindow()
@@ -22,14 +26,39 @@ public class CalculationTool : EditorWindow
     {
         GUILayout.Label("Enter Block Info:", EditorStyles.boldLabel);
 
-        peelableNumber = EditorGUILayout.FloatField("Peelable Number:", peelableNumber);
-        peelableCost = EditorGUILayout.FloatField("Peelable Cost:", peelableCost);
+        powerPurchasePercentage = EditorGUILayout.IntField("Power Purchase Percentage:", powerPurchasePercentage);
+        startingPower = EditorGUILayout.IntField("Starting Power:", startingPower);
+        startingMoney = EditorGUILayout.IntField("Starting Money:", startingMoney);
+        peelableNumber = EditorGUILayout.IntField("Peelable Number:", peelableNumber);
+        peelableCost = EditorGUILayout.IntField("Peelable Cost:", peelableCost);
 
         if (GUILayout.Button("Calculate"))
         {
             totalCost = peelableNumber * peelableCost;
+            endMoney = startingMoney + totalCost;
+            CalculatePower();
         }
 
         EditorGUILayout.LabelField("Total Cost:", totalCost.ToString());
+        EditorGUILayout.LabelField("End Money:", endMoney.ToString());
+        EditorGUILayout.LabelField("End Power:", endPower.ToString());
+    }
+
+    private void CalculatePower()
+    {
+        endPower = startingPower;
+        int powerCost = initialPowerCost;
+        for (int i = 1; i < endPower; i++)
+        {
+            powerCost += Mathf.RoundToInt(powerCost*(powerCostAddPercentage /100f));
+        }
+        int additionalPower = 0;
+        while (endMoney >= powerCost)
+        {
+            endMoney -= powerCost;
+            powerCost += Mathf.RoundToInt(powerCost * (powerCostAddPercentage / 100f));
+            additionalPower++;
+        }
+        endPower += Mathf.RoundToInt(additionalPower * (powerPurchasePercentage / 100f));
     }
 }

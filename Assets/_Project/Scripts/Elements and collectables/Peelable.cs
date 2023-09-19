@@ -83,10 +83,10 @@ public class Peelable : MonoBehaviour
             }
             PlayerController.instance.SetScrapingMovementSpeed(speedAmount, initialPower);
         }
-        //else
-        //{
-        //    PlayerController.instance.OnPeelableDetection(speedAmount, initialPower, dustColor);
-        //}
+        else
+        {
+            PlayerController.instance.SetScrapingMovementSpeed(speedAmount, initialPower);
+        }
     }
 
     private void PlayEffect()

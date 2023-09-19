@@ -220,8 +220,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 500
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1320258537288638850}
   peelableRenderer: {fileID: 4403136339735890443}
@@ -241,7 +241,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6340938412014195461
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -407,8 +407,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 392
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4926442596922767669}
   peelableRenderer: {fileID: 5504845752315872518}
@@ -428,7 +428,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5775729118355558207
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -594,8 +594,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 451
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3143694758636272197}
   peelableRenderer: {fileID: 9138847522166184948}
@@ -615,7 +615,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3257236189865101927
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -901,8 +901,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 599
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8053481654511253299}
   peelableRenderer: {fileID: 8654258753879149517}
@@ -922,7 +922,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4229174955337871054
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1448,8 +1448,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 430
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2375114422355733812}
   peelableRenderer: {fileID: 2549240911610591273}
@@ -1469,7 +1469,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1854387567148062916
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1875,8 +1875,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 397
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4133887701532471077}
   peelableRenderer: {fileID: 2772289583897240710}
@@ -1896,7 +1896,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6100637482731282096
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2062,8 +2062,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 435
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2862687116054262701}
   peelableRenderer: {fileID: 6026151860838714891}
@@ -2083,7 +2083,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6936601468487590365
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2609,8 +2609,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 351
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8358541173607080263}
   peelableRenderer: {fileID: 467627539096351880}
@@ -2630,7 +2630,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6923729986304592963
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2796,8 +2796,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 505
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 686297010615207654}
   peelableRenderer: {fileID: 3458969068188142989}
@@ -2817,7 +2817,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4407664892324236944
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3583,8 +3583,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 538
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2179348018249851627}
   peelableRenderer: {fileID: 194033192040673145}
@@ -3604,7 +3604,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1655613424044166626
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3890,8 +3890,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 466
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3259994861947031741}
   peelableRenderer: {fileID: 118944651833138323}
@@ -3911,7 +3911,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3587946289504368205
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4317,8 +4317,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 418
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1787601420165398254}
   peelableRenderer: {fileID: 2064953179415861608}
@@ -4338,7 +4338,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1887188599491035199
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4624,8 +4624,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 441
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2917691226515178849}
   peelableRenderer: {fileID: 5947668507779985276}
@@ -4645,7 +4645,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6772584746366628413
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4811,8 +4811,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 659
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2996248191540465301}
   peelableRenderer: {fileID: 3868494259142293447}
@@ -4832,7 +4832,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &549603863701660849
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4998,8 +4998,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 448
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1952488528405124605}
   peelableRenderer: {fileID: 2450837740167818052}
@@ -5019,7 +5019,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4738882795035996028
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5185,8 +5185,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 686
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6812713173604683353}
   peelableRenderer: {fileID: 1936164053326628963}
@@ -5206,7 +5206,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4002699483727289979
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5372,8 +5372,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 584
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1662355288441554906}
   peelableRenderer: {fileID: 4163510465760311276}
@@ -5393,7 +5393,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2771191721173614533
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5559,8 +5559,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 689
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1711174193879782644}
   peelableRenderer: {fileID: 3334863493043144052}
@@ -5580,7 +5580,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4017859670343931772
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6346,8 +6346,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 325
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8005392986189888198}
   peelableRenderer: {fileID: 7953216572450170053}
@@ -6367,7 +6367,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4257862561188888219
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6653,8 +6653,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 674
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6551695559850366196}
   peelableRenderer: {fileID: 1740516495254505751}
@@ -6674,7 +6674,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5796897340087553666
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6840,8 +6840,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 372
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4028841198703042574}
   peelableRenderer: {fileID: 2880172842672681294}
@@ -6861,7 +6861,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1167787202471879183
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7027,8 +7027,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 327
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7821987433483541618}
   peelableRenderer: {fileID: 8485710711320957960}
@@ -7048,7 +7048,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4334827864757556832
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7574,8 +7574,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 569
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 102010203733737199}
   peelableRenderer: {fileID: 960403720902713751}
@@ -7595,7 +7595,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &436537359734452005
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7881,8 +7881,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 440
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6612931715310070610}
   peelableRenderer: {fileID: 1736577801095193081}
@@ -7902,7 +7902,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &9036285699095078859
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8188,8 +8188,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 365
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7205637650598803480}
   peelableRenderer: {fileID: 6895516372299981579}
@@ -8209,7 +8209,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6774729457608720572
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8735,8 +8735,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 350
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6769382538034441844}
   peelableRenderer: {fileID: 656262680416381470}
@@ -8756,7 +8756,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &573709964497678422
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9042,8 +9042,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 481
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4678393513598506928}
   peelableRenderer: {fileID: 2797929481081718355}
@@ -9063,7 +9063,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7921033973019308830
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9349,8 +9349,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 501
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6645080780100840931}
   peelableRenderer: {fileID: 5313607699478240966}
@@ -9370,7 +9370,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2871379544927404584
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9536,8 +9536,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 682
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5513272081509566456}
   peelableRenderer: {fileID: 1990688180614907087}
@@ -9557,7 +9557,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7179444124087753315
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9963,8 +9963,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 314
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7901392922719297595}
   peelableRenderer: {fileID: 6466701653120279701}
@@ -9984,7 +9984,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &9197389467282369872
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10150,8 +10150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 457
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7590429703178029931}
   peelableRenderer: {fileID: 5593226244319188527}
@@ -10171,7 +10171,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2190260958604037041
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10577,8 +10577,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 386
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 285901406471600579}
   peelableRenderer: {fileID: 6017444990716539553}
@@ -10598,7 +10598,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7264018598626559407
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10884,8 +10884,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 476
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5191442957930108583}
   peelableRenderer: {fileID: 4848288751484335837}
@@ -10905,7 +10905,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6166596357244795590
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11071,8 +11071,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 477
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 407769799699588312}
   peelableRenderer: {fileID: 1805742529953946842}
@@ -11092,7 +11092,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &308563422475316755
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11258,8 +11258,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 563
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5417145435775725815}
   peelableRenderer: {fileID: 5737949459046135211}
@@ -11279,7 +11279,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7561441790670026788
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11565,8 +11565,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 543
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4052237436828963346}
   peelableRenderer: {fileID: 7436228541800609495}
@@ -11586,7 +11586,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7316691012847192605
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11752,8 +11752,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 479
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5935525855325044630}
   peelableRenderer: {fileID: 9049807462310915887}
@@ -11773,7 +11773,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &329336069964304131
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12059,8 +12059,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 369
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6589413530780010758}
   peelableRenderer: {fileID: 1686144962190722074}
@@ -12080,7 +12080,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5350685253621903141
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12366,8 +12366,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 527
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5909279688450142809}
   peelableRenderer: {fileID: 820000079768239163}
@@ -12387,7 +12387,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7364495116849453267
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12553,8 +12553,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 459
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4153535835754335418}
   peelableRenderer: {fileID: 7004126411670413010}
@@ -12574,7 +12574,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3254706448694848636
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12860,8 +12860,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 617
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7955859845415991831}
   peelableRenderer: {fileID: 7267339154326650089}
@@ -12881,7 +12881,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5473989779972797200
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13287,8 +13287,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 580
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8089753931679674680}
   peelableRenderer: {fileID: 7477681050724173303}
@@ -13308,7 +13308,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5514925569085210062
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13474,8 +13474,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 450
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4706464814206394657}
   peelableRenderer: {fileID: 6129727626296966267}
@@ -13495,7 +13495,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1484651889657895435
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14021,8 +14021,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 446
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6844926343023318839}
   peelableRenderer: {fileID: 6345757733499705759}
@@ -14042,7 +14042,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4306846916583830645
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14448,8 +14448,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 555
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 681482744100255558}
   peelableRenderer: {fileID: 1094063989256839117}
@@ -14469,7 +14469,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4731541610036146889
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15115,8 +15115,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 359
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3149412592356704270}
   peelableRenderer: {fileID: 8874955343477993522}
@@ -15136,7 +15136,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2525308648420618981
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15542,8 +15542,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 456
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 486118119206909803}
   peelableRenderer: {fileID: 2736848066598456534}
@@ -15563,7 +15563,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5948690996975906314
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15969,8 +15969,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 393
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 30907770178890106}
   peelableRenderer: {fileID: 2721424452110963939}
@@ -15990,7 +15990,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5072533045880360973
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16276,8 +16276,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 419
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6638045970786553984}
   peelableRenderer: {fileID: 1048627072095123004}
@@ -16297,7 +16297,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &901567825463812883
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16583,8 +16583,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 407
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5423849723699260080}
   peelableRenderer: {fileID: 5404335216366671007}
@@ -16604,7 +16604,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1624481568694001795
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16770,8 +16770,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 669
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2668829057426198608}
   peelableRenderer: {fileID: 303044256216478081}
@@ -16791,7 +16791,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5028229616112382065
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16957,8 +16957,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 528
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2408213053721578159}
   peelableRenderer: {fileID: 2081590009387200706}
@@ -16978,7 +16978,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5865824901254292197
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17144,8 +17144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 598
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1505333914015948990}
   peelableRenderer: {fileID: 3777495280865227631}
@@ -17165,7 +17165,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8991605723761048057
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17451,8 +17451,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 541
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8458552578959215120}
   peelableRenderer: {fileID: 1124547016570916905}
@@ -17472,7 +17472,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7807877593761340663
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17878,8 +17878,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 572
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5783736418896869253}
   peelableRenderer: {fileID: 1226628848878373530}
@@ -17899,7 +17899,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &695745786379346479
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18065,8 +18065,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 384
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3130676886485310880}
   peelableRenderer: {fileID: 1084499825789561443}
@@ -18086,7 +18086,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8838279965999916552
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18492,8 +18492,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 524
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6715653971940605997}
   peelableRenderer: {fileID: 6574658013931007262}
@@ -18513,7 +18513,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2931892003755250859
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19399,8 +19399,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 411
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5224895875600393604}
   peelableRenderer: {fileID: 2921383165262072171}
@@ -19420,7 +19420,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2351658613423414178
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19586,8 +19586,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 462
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 980907213151975699}
   peelableRenderer: {fileID: 4133176846744622190}
@@ -19607,7 +19607,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &322167913814839431
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20013,8 +20013,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 510
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7871706997869593750}
   peelableRenderer: {fileID: 4692078564004979139}
@@ -20034,7 +20034,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3704376425513863916
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20320,8 +20320,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 671
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2062086364863001770}
   peelableRenderer: {fileID: 139585837988535908}
@@ -20341,7 +20341,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2602549548392673183
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20507,8 +20507,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 354
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1735289292269232932}
   peelableRenderer: {fileID: 3496802703489974470}
@@ -20528,7 +20528,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4105249900707349409
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20694,8 +20694,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 422
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4353938339462150786}
   peelableRenderer: {fileID: 308216064102927752}
@@ -20715,7 +20715,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3923277724231140294
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21601,8 +21601,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 651
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8985764525540159484}
   peelableRenderer: {fileID: 4051169846836878036}
@@ -21622,7 +21622,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6044817929509723059
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21788,8 +21788,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 591
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6521245746594485298}
   peelableRenderer: {fileID: 1865853746400825089}
@@ -21809,7 +21809,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1628648887566659549
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22335,8 +22335,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 388
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3000698187680238714}
   peelableRenderer: {fileID: 650957313781010292}
@@ -22356,7 +22356,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6839144785277982452
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22522,8 +22522,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 578
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8436859047961902298}
   peelableRenderer: {fileID: 3983735051877346770}
@@ -22543,7 +22543,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1564445460585409730
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24114,8 +24114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 646
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 214665012651241007}
   peelableRenderer: {fileID: 7930799056021068472}
@@ -24135,7 +24135,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8178916418202168308
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24301,8 +24301,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 681
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7598046758105474096}
   peelableRenderer: {fileID: 4745671486523864180}
@@ -24322,7 +24322,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5456344206866534130
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24848,8 +24848,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 339
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1971058002174850862}
   peelableRenderer: {fileID: 354918494005108462}
@@ -24869,7 +24869,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &965674102271651670
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25035,8 +25035,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 443
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8148479223516961379}
   peelableRenderer: {fileID: 1998978762724480483}
@@ -25056,7 +25056,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3871404099096405981
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25582,8 +25582,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 467
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8097390543307705060}
   peelableRenderer: {fileID: 4687840787829629970}
@@ -25603,7 +25603,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7715135914884079352
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25769,8 +25769,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 594
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4298100287956158882}
   peelableRenderer: {fileID: 5837428353743224657}
@@ -25790,7 +25790,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3953551857027020042
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25956,8 +25956,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 507
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3769097791501918851}
   peelableRenderer: {fileID: 8325788650484740716}
@@ -25977,7 +25977,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4081819436447387660
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26383,8 +26383,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 577
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6727110751723491806}
   peelableRenderer: {fileID: 1887343391960837005}
@@ -26404,7 +26404,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8070191341122918389
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26570,8 +26570,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 463
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2164868770849045448}
   peelableRenderer: {fileID: 2978678058561373062}
@@ -26591,7 +26591,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5731977592335624196
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26757,8 +26757,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 410
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8370951574147775957}
   peelableRenderer: {fileID: 1182437335881561495}
@@ -26778,7 +26778,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1772805292973626892
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26944,8 +26944,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 531
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 267535447046059581}
   peelableRenderer: {fileID: 7093266725438013393}
@@ -26965,7 +26965,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5169001785037090477
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27251,8 +27251,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 415
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2918252643374751860}
   peelableRenderer: {fileID: 8096691892006126233}
@@ -27272,7 +27272,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4334489370010494282
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27438,8 +27438,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 549
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1615311690864652422}
   peelableRenderer: {fileID: 7491000566937946481}
@@ -27459,7 +27459,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1397964911922368306
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27745,8 +27745,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 480
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2867948708889982253}
   peelableRenderer: {fileID: 479687828646438759}
@@ -27766,7 +27766,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6744383465693638220
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28343,8 +28343,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 618
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 9166781522492484986}
   peelableRenderer: {fileID: 1514153269402287588}
@@ -28364,7 +28364,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3425593444709623838
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28530,8 +28530,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 561
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 661160912529358986}
   peelableRenderer: {fileID: 5522726731554729750}
@@ -28551,7 +28551,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &635643360797387607
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28957,8 +28957,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 634
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8695226412293796549}
   peelableRenderer: {fileID: 4274564608022444286}
@@ -28978,7 +28978,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3271666996941927190
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29144,8 +29144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 670
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1784398765041055754}
   peelableRenderer: {fileID: 3512423614599585519}
@@ -29165,7 +29165,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1649391226249307393
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29331,8 +29331,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 517
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6191338173434357672}
   peelableRenderer: {fileID: 5635579498907139187}
@@ -29352,7 +29352,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5230747857503228659
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29518,8 +29518,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 586
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6401744065227104650}
   peelableRenderer: {fileID: 3552565177202708412}
@@ -29539,7 +29539,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4845512796260578563
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29705,8 +29705,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 342
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2674329845932563984}
   peelableRenderer: {fileID: 6421663231064632352}
@@ -29726,7 +29726,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1901135742809794018
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30012,8 +30012,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 364
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1108207536151175217}
   peelableRenderer: {fileID: 7239582395120256795}
@@ -30033,7 +30033,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1755805597059967916
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30319,8 +30319,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 425
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6541366505002307718}
   peelableRenderer: {fileID: 6900392807359458109}
@@ -30340,7 +30340,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4057353287204688550
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30506,8 +30506,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 497
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1047446864538129933}
   peelableRenderer: {fileID: 3643270402443215655}
@@ -30527,7 +30527,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5207819344751631758
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30813,8 +30813,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 331
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3944018774325677363}
   peelableRenderer: {fileID: 1398882963116614023}
@@ -30834,7 +30834,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8345205734304944834
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31120,8 +31120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 494
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8506720613232849432}
   peelableRenderer: {fileID: 5150884832148173819}
@@ -31141,7 +31141,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &9197540412290429474
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31547,8 +31547,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 603
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8473774354365303385}
   peelableRenderer: {fileID: 4587691909791523872}
@@ -31568,7 +31568,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7913778342211872071
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31734,8 +31734,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 609
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 821320364638824545}
   peelableRenderer: {fileID: 52741007621216662}
@@ -31755,7 +31755,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2312700284181263963
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32401,8 +32401,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 394
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 9053339324109926576}
   peelableRenderer: {fileID: 1489427994521409210}
@@ -32422,7 +32422,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2894766946187102666
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32708,8 +32708,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 616
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2761375424031405087}
   peelableRenderer: {fileID: 2159956483292702125}
@@ -32729,7 +32729,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7787331674474816260
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32895,8 +32895,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 637
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5661717010184855536}
   peelableRenderer: {fileID: 9068467885005701275}
@@ -32916,7 +32916,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1136468764762446954
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33922,8 +33922,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 444
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3843960545580884872}
   peelableRenderer: {fileID: 4131776557789076184}
@@ -33943,7 +33943,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3292111753851730501
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34709,8 +34709,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 679
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1462448741557705651}
   peelableRenderer: {fileID: 7720000327023281757}
@@ -34730,7 +34730,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4710631108963605969
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34896,8 +34896,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 613
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4258167207610740829}
   peelableRenderer: {fileID: 4514031871360032373}
@@ -34917,7 +34917,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1491918622497505152
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35203,8 +35203,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 542
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5047056714143482252}
   peelableRenderer: {fileID: 3429297498775657575}
@@ -35224,7 +35224,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &909320076241036186
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35510,8 +35510,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 516
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7885307728117712803}
   peelableRenderer: {fileID: 7131885833808510751}
@@ -35531,7 +35531,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7039380312559378231
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35697,8 +35697,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 379
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5059740165763329816}
   peelableRenderer: {fileID: 2196366061855444074}
@@ -35718,7 +35718,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1211176922757875153
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35884,8 +35884,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 375
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3708526356043072163}
   peelableRenderer: {fileID: 3008051627122595917}
@@ -35905,7 +35905,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3273928621576736428
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36311,8 +36311,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 316
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3366178253468478947}
   peelableRenderer: {fileID: 2117210623902789789}
@@ -36332,7 +36332,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3187389303999320301
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36618,8 +36618,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 329
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3969625580462239115}
   peelableRenderer: {fileID: 4979246952356856138}
@@ -36639,7 +36639,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2506106519974467737
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36805,8 +36805,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 602
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4974714311378707301}
   peelableRenderer: {fileID: 6361444380714178023}
@@ -36826,7 +36826,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &616257407340490371
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37112,8 +37112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 632
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 9073732015950696567}
   peelableRenderer: {fileID: 7447526375724510273}
@@ -37133,7 +37133,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2740759001275390510
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37299,8 +37299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 396
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4389470235291851022}
   peelableRenderer: {fileID: 8333267102147239921}
@@ -37320,7 +37320,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &9043637871747705900
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37606,8 +37606,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 587
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4953444298308238467}
   peelableRenderer: {fileID: 190124809990292586}
@@ -37627,7 +37627,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5479945111508252276
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37913,8 +37913,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 536
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3564952678298766735}
   peelableRenderer: {fileID: 8407309791269076787}
@@ -37934,7 +37934,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4982835577877041470
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -38340,8 +38340,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 312
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6887462434863650437}
   peelableRenderer: {fileID: 8295034847417817707}
@@ -38361,7 +38361,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4356201518786495444
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -38527,8 +38527,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 322
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 79465040649837228}
   peelableRenderer: {fileID: 3667265929822073575}
@@ -38548,7 +38548,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6807242098322737021
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -39194,8 +39194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 631
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5130731524872442499}
   peelableRenderer: {fileID: 3582845348202719014}
@@ -39215,7 +39215,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2130588867213732426
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -39381,8 +39381,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 551
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3016756898788500643}
   peelableRenderer: {fileID: 7073193389245927377}
@@ -39402,7 +39402,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7620005637619839904
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -39928,8 +39928,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 485
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1353818596214244210}
   peelableRenderer: {fileID: 6035308392340776610}
@@ -39949,7 +39949,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6898806488940397648
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40115,8 +40115,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 405
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6560455317003489953}
   peelableRenderer: {fileID: 273099481009487882}
@@ -40136,7 +40136,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4290312200440114460
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40302,8 +40302,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 518
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3247470414518434407}
   peelableRenderer: {fileID: 6460214053823331975}
@@ -40323,7 +40323,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7307088429118464027
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40489,8 +40489,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 475
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5116124745813639435}
   peelableRenderer: {fileID: 5889040143897406507}
@@ -40510,7 +40510,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1209433417485178639
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40676,8 +40676,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 567
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4188471140086200088}
   peelableRenderer: {fileID: 8426255146517048276}
@@ -40697,7 +40697,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7956087182068555569
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40983,8 +40983,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 638
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8289583483382847094}
   peelableRenderer: {fileID: 3748420160816541400}
@@ -41004,7 +41004,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6477537624579306732
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -41530,8 +41530,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 409
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7024069381243701337}
   peelableRenderer: {fileID: 7188261935469285340}
@@ -41551,7 +41551,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2769725458663298204
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -41837,8 +41837,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 332
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 251312388549326216}
   peelableRenderer: {fileID: 7997144150465952478}
@@ -41858,7 +41858,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1427415759505305855
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42024,8 +42024,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 362
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7297525546286808276}
   peelableRenderer: {fileID: 2134350851052083566}
@@ -42045,7 +42045,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5484696194592679589
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42331,8 +42331,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 571
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 9109806798458403699}
   peelableRenderer: {fileID: 6118152234725855653}
@@ -42352,7 +42352,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6723690572933279494
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42518,8 +42518,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 678
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8538010542226399981}
   peelableRenderer: {fileID: 7735918484944612492}
@@ -42539,7 +42539,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3290618971716799920
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42705,8 +42705,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 432
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8337368370115050594}
   peelableRenderer: {fileID: 2878246680907648520}
@@ -42726,7 +42726,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &877567323772580759
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -43372,8 +43372,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 400
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5187978252704132101}
   peelableRenderer: {fileID: 9008043706417679312}
@@ -43393,7 +43393,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4103436005098303243
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -43559,8 +43559,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 402
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3820209036931100689}
   peelableRenderer: {fileID: 6509858689995720518}
@@ -43580,7 +43580,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8715639737256788230
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -43746,8 +43746,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 408
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 976674730996922111}
   peelableRenderer: {fileID: 2057877204158927096}
@@ -43767,7 +43767,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2008631760748828645
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -43933,8 +43933,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 630
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6300331326391112129}
   peelableRenderer: {fileID: 2757463106120579963}
@@ -43954,7 +43954,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8300559440999082987
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -44120,8 +44120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 368
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2682389467028832089}
   peelableRenderer: {fileID: 145893815381024306}
@@ -44141,7 +44141,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &944438534198970760
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -44427,8 +44427,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 550
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 890803869852122073}
   peelableRenderer: {fileID: 8830279609448717557}
@@ -44448,7 +44448,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1552351290139745910
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -44734,8 +44734,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 553
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1224959345447068705}
   peelableRenderer: {fileID: 3226016129037257697}
@@ -44755,7 +44755,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2860525751739833175
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -44921,8 +44921,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 344
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3231700284627226209}
   peelableRenderer: {fileID: 5293759515285964343}
@@ -44942,7 +44942,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7061525718068638028
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45108,8 +45108,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 317
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5217343221105999922}
   peelableRenderer: {fileID: 2560695002052036759}
@@ -45129,7 +45129,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5268034387555275353
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45295,8 +45295,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 453
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5783971922039189422}
   peelableRenderer: {fileID: 7499708650201302054}
@@ -45316,7 +45316,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3187942277660845129
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45602,8 +45602,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 604
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7512201260825636721}
   peelableRenderer: {fileID: 7530447285320917285}
@@ -45623,7 +45623,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3407422427581863648
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45789,8 +45789,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 352
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6207364077375174911}
   peelableRenderer: {fileID: 8086511738507231090}
@@ -45810,7 +45810,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1042628088975721067
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45976,8 +45976,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 345
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6786092708659439549}
   peelableRenderer: {fileID: 8999799666664588794}
@@ -45997,7 +45997,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2242411008682014178
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -46163,8 +46163,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 663
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1257244020439072223}
   peelableRenderer: {fileID: 5053266390755774713}
@@ -46184,7 +46184,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2244765145131853252
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -46350,8 +46350,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 523
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6620748078082103235}
   peelableRenderer: {fileID: 4574834852398331409}
@@ -46371,7 +46371,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5680715746805736682
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -46777,8 +46777,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 472
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 9406180644557270}
   peelableRenderer: {fileID: 5324372759634708278}
@@ -46798,7 +46798,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8091145591734590852
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -47564,8 +47564,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 635
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 187472724427308153}
   peelableRenderer: {fileID: 4715683252841303017}
@@ -47585,7 +47585,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &417261982306330844
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -47991,8 +47991,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 357
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1735889873775940996}
   peelableRenderer: {fileID: 2771595103196294927}
@@ -48012,7 +48012,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1850128917091646495
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -48658,8 +48658,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 513
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3049099212437893148}
   peelableRenderer: {fileID: 4155970956965908181}
@@ -48679,7 +48679,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7901674919168533951
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -48845,8 +48845,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 412
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6566964854496864735}
   peelableRenderer: {fileID: 4518832554849860348}
@@ -48866,7 +48866,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8630118518207602447
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -49032,8 +49032,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 355
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7959743754491784374}
   peelableRenderer: {fileID: 6825900602705870904}
@@ -49053,7 +49053,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5480087669272223306
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -49339,8 +49339,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 489
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 314096292118443147}
   peelableRenderer: {fileID: 7691202617612134173}
@@ -49360,7 +49360,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &217889405213932976
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -49526,8 +49526,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 406
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2807836902026569623}
   peelableRenderer: {fileID: 913252168321140821}
@@ -49547,7 +49547,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4979478054381838782
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -49833,8 +49833,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 495
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5695741859731461889}
   peelableRenderer: {fileID: 8274412404182858971}
@@ -49854,7 +49854,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &590147708621177999
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -50020,8 +50020,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 437
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1774569839438846871}
   peelableRenderer: {fileID: 6241934395891425654}
@@ -50041,7 +50041,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3188678987539943242
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -50327,8 +50327,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 564
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4204535712380745084}
   peelableRenderer: {fileID: 709510945553409500}
@@ -50348,7 +50348,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1843429403495723821
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -50514,8 +50514,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 452
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6695108720839718183}
   peelableRenderer: {fileID: 5203592580001825370}
@@ -50535,7 +50535,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4572486341442319743
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -50701,8 +50701,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 458
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 9067349775226693974}
   peelableRenderer: {fileID: 6839286671207015050}
@@ -50722,7 +50722,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2736012052368784816
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -50888,8 +50888,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 498
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1051425525698672142}
   peelableRenderer: {fileID: 4883032377383017966}
@@ -50909,7 +50909,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4068434822895082279
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51075,8 +51075,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 652
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1406476615211618341}
   peelableRenderer: {fileID: 681634676442762503}
@@ -51096,7 +51096,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5796776310792547307
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51262,8 +51262,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 482
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6521018131823340593}
   peelableRenderer: {fileID: 7920342982647135785}
@@ -51283,7 +51283,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6604175789069521480
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51809,8 +51809,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 526
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3796377772727156316}
   peelableRenderer: {fileID: 3507787949866607140}
@@ -51830,7 +51830,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8961445184375721863
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -52236,8 +52236,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 470
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2396748871696743553}
   peelableRenderer: {fileID: 8398888704181493735}
@@ -52257,7 +52257,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6841259011754118285
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -52874,13 +52874,13 @@ MonoBehaviour:
   blockHolder: {fileID: 5136845348249703491}
   peelableBlockHolder: {fileID: 3905558983212044424}
   mat: {fileID: 2100000, guid: 5834e8d118d6cc64aaefbbdad8daddf9, type: 2}
-  power: 3
-  speed: 40
+  power: 47
+  speed: 10
   zoneIndex: 10
   collectableShape: 0
   dustColor: {r: 0.5921569, g: 0.39607844, b: 0.32156864, a: 1}
   blocksNumber: 2
-  price: 1
+  price: 2500
   movedPieceColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   copyBlockHolder: {fileID: 4547686638886208096}
   effectMat: {fileID: 0}
@@ -52984,8 +52984,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 478
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3024832089027643136}
   peelableRenderer: {fileID: 2005866506369103310}
@@ -53005,7 +53005,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4315917827143761746
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -53171,8 +53171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 380
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1682243028543712570}
   peelableRenderer: {fileID: 5883499255566470230}
@@ -53192,7 +53192,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &9097088446603024403
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -53358,8 +53358,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 622
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8412399356978980431}
   peelableRenderer: {fileID: 8962384881881205052}
@@ -53379,7 +53379,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1326145375188833512
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -53545,8 +53545,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 424
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 9111980365543655667}
   peelableRenderer: {fileID: 1036177072844181413}
@@ -53566,7 +53566,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7946915579262341846
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -53852,8 +53852,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 533
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 160762917438303967}
   peelableRenderer: {fileID: 60414667787311980}
@@ -53873,7 +53873,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2386944591616322246
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54159,8 +54159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 539
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4872427856179756277}
   peelableRenderer: {fileID: 4157323714614140957}
@@ -54180,7 +54180,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5291826089433916465
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54586,8 +54586,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 554
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8645268902702079322}
   peelableRenderer: {fileID: 5057695081745285385}
@@ -54607,7 +54607,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5674769732359829145
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54773,8 +54773,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 491
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8665922276411380826}
   peelableRenderer: {fileID: 1649595959484310716}
@@ -54794,7 +54794,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &385180483364730120
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -55200,8 +55200,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 545
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5653462220960701904}
   peelableRenderer: {fileID: 7151879124337465078}
@@ -55221,7 +55221,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4417055146020680761
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -55387,8 +55387,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 605
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1062070596915391003}
   peelableRenderer: {fileID: 5362087976583740851}
@@ -55408,7 +55408,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2069358348097005428
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -55574,8 +55574,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 519
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8814482955243518193}
   peelableRenderer: {fileID: 4673595655216049429}
@@ -55595,7 +55595,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3044079589086568597
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -55761,8 +55761,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 614
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8886806711639221981}
   peelableRenderer: {fileID: 3868333844134106560}
@@ -55782,7 +55782,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7715790001210750103
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -55948,8 +55948,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 506
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2964589421849207697}
   peelableRenderer: {fileID: 1901653738637572398}
@@ -55969,7 +55969,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1533446753585933949
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -56135,8 +56135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 532
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3522272646048432327}
   peelableRenderer: {fileID: 3441275654901166369}
@@ -56156,7 +56156,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4581094365138264999
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -56322,8 +56322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 662
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6769835225657596117}
   peelableRenderer: {fileID: 1557416773993468972}
@@ -56343,7 +56343,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2952054879352951683
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -56509,8 +56509,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 439
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7895768377725851575}
   peelableRenderer: {fileID: 8281376808942224514}
@@ -56530,7 +56530,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5306486802615024835
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -56696,8 +56696,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 653
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7662287091887398310}
   peelableRenderer: {fileID: 5266772573073521789}
@@ -56717,7 +56717,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8740840064765676090
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -56883,8 +56883,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 371
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8343487080870853011}
   peelableRenderer: {fileID: 3266599210374159371}
@@ -56904,7 +56904,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4292206780601852974
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -57190,8 +57190,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 442
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4901089206935658151}
   peelableRenderer: {fileID: 5125740634866954964}
@@ -57211,7 +57211,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1948797872990258672
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -57377,8 +57377,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 434
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8834216900647411899}
   peelableRenderer: {fileID: 5036750709173717971}
@@ -57398,7 +57398,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5985499647983184917
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -57684,8 +57684,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 373
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 97487315639385431}
   peelableRenderer: {fileID: 3528537841195889665}
@@ -57705,7 +57705,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4802410827031511642
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -57991,8 +57991,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 675
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 333854463744458296}
   peelableRenderer: {fileID: 3294968974917560487}
@@ -58012,7 +58012,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3289086804423887814
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -58658,8 +58658,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 429
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 946632968886806130}
   peelableRenderer: {fileID: 200421412009982614}
@@ -58679,7 +58679,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2812624349362230412
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -59085,8 +59085,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 363
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6697343390804280649}
   peelableRenderer: {fileID: 2051136388611927020}
@@ -59106,7 +59106,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &840315720805852192
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -59272,8 +59272,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 615
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8686114164522717664}
   peelableRenderer: {fileID: 8055412513716515188}
@@ -59293,7 +59293,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4918418709066544812
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -59579,8 +59579,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 664
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1231020607492898130}
   peelableRenderer: {fileID: 1184672443676222291}
@@ -59600,7 +59600,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4121430740973958754
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -59766,8 +59766,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 667
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7663732857401370968}
   peelableRenderer: {fileID: 2306860515707874253}
@@ -59787,7 +59787,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7674301552104369159
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -60313,8 +60313,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 642
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6363188802000099170}
   peelableRenderer: {fileID: 5704070471229066162}
@@ -60334,7 +60334,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4497036461122214001
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -60980,8 +60980,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 324
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3997656301445665286}
   peelableRenderer: {fileID: 8779568915798293526}
@@ -61001,7 +61001,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7233415417360930601
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -61167,8 +61167,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 428
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 9046523713930034085}
   peelableRenderer: {fileID: 8985613363785886467}
@@ -61188,7 +61188,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7801772145899123990
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -61354,8 +61354,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 685
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 850066385584282131}
   peelableRenderer: {fileID: 4013589771784160353}
@@ -61375,7 +61375,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2200493821276574660
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -61541,8 +61541,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 684
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7604762142383772901}
   peelableRenderer: {fileID: 490005117510641586}
@@ -61562,7 +61562,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3238535680702283984
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -61968,8 +61968,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 426
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5989096359151358144}
   peelableRenderer: {fileID: 2818234753100556488}
@@ -61989,7 +61989,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3278705553588051524
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -62155,8 +62155,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 606
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3649517450397604392}
   peelableRenderer: {fileID: 345090566335675512}
@@ -62176,7 +62176,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2909943118132379089
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -62342,8 +62342,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 341
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 184185350753462432}
   peelableRenderer: {fileID: 5296877771505834886}
@@ -62363,7 +62363,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7492979466845898482
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -62889,8 +62889,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 486
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2961060151193349507}
   peelableRenderer: {fileID: 7156278023053424091}
@@ -62910,7 +62910,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6345524032714704075
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -63556,8 +63556,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 496
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 304225014936858594}
   peelableRenderer: {fileID: 458412506085048057}
@@ -63577,7 +63577,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4137802097793179831
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -63743,8 +63743,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 328
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7058433939913355888}
   peelableRenderer: {fileID: 586805653047961120}
@@ -63764,7 +63764,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2541360569620232151
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -63930,8 +63930,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 621
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4250689079510715098}
   peelableRenderer: {fileID: 1963030520942381496}
@@ -63951,7 +63951,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2786543667701944151
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -64117,8 +64117,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 547
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8350611120587977184}
   peelableRenderer: {fileID: 8914107824525444667}
@@ -64138,7 +64138,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6029856415111672166
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -64424,8 +64424,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 521
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1508638002632872707}
   peelableRenderer: {fileID: 6778502875139921197}
@@ -64445,7 +64445,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5388741608916064056
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -64731,8 +64731,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 427
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3118484000228842649}
   peelableRenderer: {fileID: 1387875422924631719}
@@ -64752,7 +64752,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7343055423792518093
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -64918,8 +64918,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 454
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2630246334149609094}
   peelableRenderer: {fileID: 8626245668999220193}
@@ -64939,7 +64939,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7640864824302386416
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -65105,8 +65105,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 573
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 613863985672024681}
   peelableRenderer: {fileID: 5467173122498657534}
@@ -65126,7 +65126,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8874925184864386424
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -65412,8 +65412,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 390
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8308550940467293624}
   peelableRenderer: {fileID: 4836076496561691430}
@@ -65433,7 +65433,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6720792910907971822
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -65719,8 +65719,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 433
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6849184428054754891}
   peelableRenderer: {fileID: 2697571878869097605}
@@ -65740,7 +65740,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7511172261249582486
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -65906,8 +65906,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 530
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 420850742050260778}
   peelableRenderer: {fileID: 5912160917508644857}
@@ -65927,7 +65927,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &793562742578067602
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -66093,8 +66093,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 661
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6647239123543978843}
   peelableRenderer: {fileID: 873464824849188916}
@@ -66114,7 +66114,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4944985019150255076
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -66880,8 +66880,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 484
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8607259079155596683}
   peelableRenderer: {fileID: 8811232146594904747}
@@ -66901,7 +66901,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6795925052066271060
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -67067,8 +67067,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 391
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7145874544191610787}
   peelableRenderer: {fileID: 3986994983056518025}
@@ -67088,7 +67088,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8559414825399311964
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -67374,8 +67374,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 414
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1893455384381403301}
   peelableRenderer: {fileID: 934248781789194114}
@@ -67395,7 +67395,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2211258471625809277
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -67561,8 +67561,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 624
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4167339447367250186}
   peelableRenderer: {fileID: 1414731361908873430}
@@ -67582,7 +67582,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4416708044621269895
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -67748,8 +67748,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 629
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2457464673835807163}
   peelableRenderer: {fileID: 6815407486130499501}
@@ -67769,7 +67769,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7612192077115363074
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -68055,8 +68055,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 417
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1425216481147550195}
   peelableRenderer: {fileID: 2842103209648071810}
@@ -68076,7 +68076,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2684149703318504945
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -68362,8 +68362,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 336
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8033658338719439384}
   peelableRenderer: {fileID: 8085372912245628635}
@@ -68383,7 +68383,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4462261444678824900
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -68789,8 +68789,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 544
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3345522086664959899}
   peelableRenderer: {fileID: 1240673281715315577}
@@ -68810,7 +68810,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &195556284400620579
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -68976,8 +68976,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 654
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 103009541949558445}
   peelableRenderer: {fileID: 237132984256111518}
@@ -68997,7 +68997,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1828583746493988443
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -69163,8 +69163,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 657
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5244467156249903247}
   peelableRenderer: {fileID: 570218133524465571}
@@ -69184,7 +69184,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &345167182339900380
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -70070,8 +70070,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 666
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4239215318098874986}
   peelableRenderer: {fileID: 6989736117147680707}
@@ -70091,7 +70091,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3398788987036073618
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -70497,8 +70497,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 334
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6359442535689656780}
   peelableRenderer: {fileID: 7574385100037053499}
@@ -70518,7 +70518,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4718881754012192868
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -70684,8 +70684,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 320
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5061538773912476285}
   peelableRenderer: {fileID: 418925935306985304}
@@ -70705,7 +70705,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6381069041731651898
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -71111,8 +71111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 361
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4238531647296327474}
   peelableRenderer: {fileID: 857903756719021200}
@@ -71132,7 +71132,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2208779999321143212
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -71298,8 +71298,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 688
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7502583819932712793}
   peelableRenderer: {fileID: 8811977138275871306}
@@ -71319,7 +71319,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7737954933635519391
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -71485,8 +71485,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 502
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7572631348098218750}
   peelableRenderer: {fileID: 795161737280616364}
@@ -71506,7 +71506,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7257769614169634478
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -71672,8 +71672,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 593
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5732486023313638144}
   peelableRenderer: {fileID: 8002893773091946915}
@@ -71693,7 +71693,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8147516067273921770
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -71859,8 +71859,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 455
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4211224065766000335}
   peelableRenderer: {fileID: 1417425632953426300}
@@ -71880,7 +71880,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4041852093773921903
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -72406,8 +72406,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 597
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5018576525862418526}
   peelableRenderer: {fileID: 4768682406780392320}
@@ -72427,7 +72427,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8674263642988978316
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -72833,8 +72833,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 473
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7927746880031104514}
   peelableRenderer: {fileID: 2519950010407574028}
@@ -72854,7 +72854,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3633403248404142331
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -73020,8 +73020,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 469
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1245882868616678767}
   peelableRenderer: {fileID: 5149098105306700939}
@@ -73041,7 +73041,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2526461864985513536
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -73207,8 +73207,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 321
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5236534287332583694}
   peelableRenderer: {fileID: 6263375172533868150}
@@ -73228,7 +73228,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &340531418444131074
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -73394,8 +73394,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 483
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2829859114539626967}
   peelableRenderer: {fileID: 2679815315871491780}
@@ -73415,7 +73415,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3075366832869288832
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -73581,8 +73581,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 568
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1625775485241756963}
   peelableRenderer: {fileID: 5611282784935850410}
@@ -73602,7 +73602,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &206508901240839120
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -73768,8 +73768,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 389
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5782651853763454897}
   peelableRenderer: {fileID: 3411632619766137936}
@@ -73789,7 +73789,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4939229709309943493
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -73955,8 +73955,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 447
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 39375920531695128}
   peelableRenderer: {fileID: 6690823047937950997}
@@ -73976,7 +73976,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1766454385230669007
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -74262,8 +74262,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 649
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5317761781102048006}
   peelableRenderer: {fileID: 7416533215265566774}
@@ -74283,7 +74283,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3684407899914467492
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -74449,8 +74449,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 582
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5165580956977414406}
   peelableRenderer: {fileID: 2260314548290517225}
@@ -74470,7 +74470,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3667519501244978315
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -74636,8 +74636,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 395
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2255738267690688287}
   peelableRenderer: {fileID: 2093385999029913049}
@@ -74657,7 +74657,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8663763015211058908
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -74823,8 +74823,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 626
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6454580665428243545}
   peelableRenderer: {fileID: 1171186000182342706}
@@ -74844,7 +74844,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7872612325912390733
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -75250,8 +75250,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 353
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5963523680894386002}
   peelableRenderer: {fileID: 6446749636667392134}
@@ -75271,7 +75271,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7117472549999562557
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -75437,8 +75437,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 335
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6254074874189225647}
   peelableRenderer: {fileID: 640435979288726777}
@@ -75458,7 +75458,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5457231896896009077
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -75864,8 +75864,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 374
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2764389085733650663}
   peelableRenderer: {fileID: 1452606363060395164}
@@ -75885,7 +75885,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4550498860944850654
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -76051,8 +76051,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 330
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1934453250689806796}
   peelableRenderer: {fileID: 3876893198076806634}
@@ -76072,7 +76072,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8055276299927490395
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -76358,8 +76358,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 628
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5910640981549112266}
   peelableRenderer: {fileID: 476993180168762919}
@@ -76379,7 +76379,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6120021835149489371
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -76665,8 +76665,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 683
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5257721827432030451}
   peelableRenderer: {fileID: 4342287240519994470}
@@ -76686,7 +76686,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8728015784359052194
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -77092,8 +77092,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 581
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6047216711384519278}
   peelableRenderer: {fileID: 4260703830847976006}
@@ -77113,7 +77113,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7573412111250071959
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -77279,8 +77279,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 381
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7680966154224771205}
   peelableRenderer: {fileID: 6716368283607494617}
@@ -77300,7 +77300,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6724369040534572887
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -77586,8 +77586,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 421
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6850026270476854662}
   peelableRenderer: {fileID: 2978102652917882471}
@@ -77607,7 +77607,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2951906715975734875
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -77893,8 +77893,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 423
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 861659969548776636}
   peelableRenderer: {fileID: 6552507524869551275}
@@ -77914,7 +77914,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6559835856434911506
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -78080,8 +78080,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 370
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8768767072045844273}
   peelableRenderer: {fileID: 8282676966739327067}
@@ -78101,7 +78101,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4702028513978257942
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -78267,8 +78267,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 623
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2179005614516809454}
   peelableRenderer: {fileID: 8193285222017013670}
@@ -78288,7 +78288,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6911002251427088018
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -78454,8 +78454,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 404
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7793263111374308214}
   peelableRenderer: {fileID: 2199194969076013264}
@@ -78475,7 +78475,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5942765636212961243
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -78641,8 +78641,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 311
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1338838407145983839}
   peelableRenderer: {fileID: 3842347687382197179}
@@ -78662,7 +78662,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &101965414608585452
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -79188,8 +79188,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 660
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2199057239923084348}
   peelableRenderer: {fileID: 3659467474550610350}
@@ -79209,7 +79209,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3733294433090674303
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -79735,8 +79735,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 559
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7436999304715884989}
   peelableRenderer: {fileID: 4158214829944659540}
@@ -79756,7 +79756,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3848433610603263869
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -79922,8 +79922,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 562
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3324800062788653269}
   peelableRenderer: {fileID: 6211978501258530853}
@@ -79943,7 +79943,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3002633437350978523
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -80109,8 +80109,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 601
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2224452651629099049}
   peelableRenderer: {fileID: 3693065440336907785}
@@ -80130,7 +80130,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5663338132616907290
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -80296,8 +80296,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 319
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3335279035656399231}
   peelableRenderer: {fileID: 8038513933304321756}
@@ -80317,7 +80317,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1957743542183817198
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -80963,8 +80963,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 552
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3135053722825272991}
   peelableRenderer: {fileID: 4128331867448659152}
@@ -80984,7 +80984,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3217621551394735560
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -81150,8 +81150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 403
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 806246860191116901}
   peelableRenderer: {fileID: 6224700829463680691}
@@ -81171,7 +81171,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4164654900368161941
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -81457,8 +81457,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 548
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 91322604604772498}
   peelableRenderer: {fileID: 1028211166698199367}
@@ -81478,7 +81478,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8642911626872151309
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -81644,8 +81644,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 333
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2661083861287503397}
   peelableRenderer: {fileID: 1262901950305853698}
@@ -81665,7 +81665,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3708033290686188348
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -81951,8 +81951,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 525
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 684737580466134233}
   peelableRenderer: {fileID: 8978458617258870379}
@@ -81972,7 +81972,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2091410014895047238
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -82378,8 +82378,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 387
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6825026473559096017}
   peelableRenderer: {fileID: 6028019127640208251}
@@ -82399,7 +82399,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3681189663583179148
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -82565,8 +82565,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 347
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5224176388202201603}
   peelableRenderer: {fileID: 4318031705312058870}
@@ -82586,7 +82586,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7436511625711889041
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -82752,8 +82752,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 315
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7052419652231413792}
   peelableRenderer: {fileID: 7076020043986369794}
@@ -82773,7 +82773,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3402770850047220487
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -83179,8 +83179,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 385
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3877185972022290329}
   peelableRenderer: {fileID: 3310335904041037270}
@@ -83200,7 +83200,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1806358063454969663
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -83486,8 +83486,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 356
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7200153980723073279}
   peelableRenderer: {fileID: 5708918380124327056}
@@ -83507,7 +83507,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5409183297733850290
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -83673,8 +83673,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 377
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8753505084395204213}
   peelableRenderer: {fileID: 5761347579087854152}
@@ -83694,7 +83694,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8937577308460394022
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -84100,8 +84100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 583
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3347254022281945388}
   peelableRenderer: {fileID: 8610705590597444775}
@@ -84121,7 +84121,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6370671943528335639
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -84287,8 +84287,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 460
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2302042891499939010}
   peelableRenderer: {fileID: 452250186162076607}
@@ -84308,7 +84308,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8943132528034642201
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -84594,8 +84594,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 492
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 181309910036616231}
   peelableRenderer: {fileID: 8652270963216734906}
@@ -84615,7 +84615,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5542530329321617109
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -84901,8 +84901,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 557
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6848917180823751845}
   peelableRenderer: {fileID: 5997184575092651419}
@@ -84922,7 +84922,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &68317014442536414
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -85088,8 +85088,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 656
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8688157031637931416}
   peelableRenderer: {fileID: 2936459301158228337}
@@ -85109,7 +85109,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &926014333395510226
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -85275,8 +85275,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 546
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6445974892210890850}
   peelableRenderer: {fileID: 2428836271290506028}
@@ -85296,7 +85296,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &961443446644343429
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -85462,8 +85462,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 540
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8796067837090240081}
   peelableRenderer: {fileID: 3366943798932752791}
@@ -85483,7 +85483,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7618663828779256114
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -86129,8 +86129,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 313
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1106377917167214213}
   peelableRenderer: {fileID: 7809534173089861154}
@@ -86150,7 +86150,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3919632456607327875
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -86436,8 +86436,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 512
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3966269172770082910}
   peelableRenderer: {fileID: 9159960001986827343}
@@ -86457,7 +86457,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4642958196801075663
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -87463,8 +87463,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 509
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 9045851831419681032}
   peelableRenderer: {fileID: 1696744300261046195}
@@ -87484,7 +87484,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3752580013573810557
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -87650,8 +87650,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 338
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1815911158430248926}
   peelableRenderer: {fileID: 2527614818787802710}
@@ -87671,7 +87671,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8672089025806130390
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -88077,8 +88077,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 474
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6895020795668345168}
   peelableRenderer: {fileID: 9192408790716237427}
@@ -88098,7 +88098,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8825243938264523768
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -88864,8 +88864,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 511
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3174369245710199046}
   peelableRenderer: {fileID: 7823866877674315424}
@@ -88885,7 +88885,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4249521592084713854
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -89171,8 +89171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 376
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1977176072087849162}
   peelableRenderer: {fileID: 2928845896176432300}
@@ -89192,7 +89192,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6725136514437161621
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -89478,8 +89478,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 650
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 38500836611386199}
   peelableRenderer: {fileID: 7217574876459455025}
@@ -89499,7 +89499,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5783215000589724805
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -89665,8 +89665,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 490
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4025919316471254836}
   peelableRenderer: {fileID: 424699604767242001}
@@ -89686,7 +89686,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5596607915123281252
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -89852,8 +89852,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 641
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2521703160661683832}
   peelableRenderer: {fileID: 3279102609796633393}
@@ -89873,7 +89873,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &743908736038935277
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -90039,8 +90039,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 399
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1444335559036696827}
   peelableRenderer: {fileID: 4748933795150196120}
@@ -90060,7 +90060,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1815103686420504380
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -90346,8 +90346,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 508
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7117079138470176844}
   peelableRenderer: {fileID: 2985928514244535917}
@@ -90367,7 +90367,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7952675023633048164
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -90653,8 +90653,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 596
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 752397069279108721}
   peelableRenderer: {fileID: 6474737461052564249}
@@ -90674,7 +90674,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &233243636836558223
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -90840,8 +90840,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 636
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2750889247750711975}
   peelableRenderer: {fileID: 3267781873911545616}
@@ -90861,7 +90861,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8808859859045770934
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -91027,8 +91027,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 468
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5669001481062342474}
   peelableRenderer: {fileID: 6456003928478008032}
@@ -91048,7 +91048,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &672691550693933294
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -91334,8 +91334,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 367
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1277017165737143039}
   peelableRenderer: {fileID: 9028243918409733844}
@@ -91355,7 +91355,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8744426186101918336
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -91761,8 +91761,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 537
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5626466765949786243}
   peelableRenderer: {fileID: 2033696772160445303}
@@ -91782,7 +91782,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &719394234468437909
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -92308,8 +92308,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 676
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 413987187819560570}
   peelableRenderer: {fileID: 2872613443177010167}
@@ -92329,7 +92329,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5700816884740268223
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -92975,8 +92975,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 461
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 9063001446742581408}
   peelableRenderer: {fileID: 6031544697065469852}
@@ -92996,7 +92996,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8843994468771328064
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -93162,8 +93162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 558
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7571449894695210780}
   peelableRenderer: {fileID: 3427264203366896025}
@@ -93183,7 +93183,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2445716475052373971
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -93349,8 +93349,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 625
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6789266821563369556}
   peelableRenderer: {fileID: 815575668637009959}
@@ -93370,7 +93370,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8145007144104267873
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -93656,8 +93656,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 588
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6476263359715755761}
   peelableRenderer: {fileID: 5070382410097777103}
@@ -93677,7 +93677,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1005668590361341969
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -93963,8 +93963,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 534
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3667724707483715662}
   peelableRenderer: {fileID: 3549305505300475954}
@@ -93984,7 +93984,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6934132431096370400
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -94150,8 +94150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 343
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8152006233575177569}
   peelableRenderer: {fileID: 7363423059001667764}
@@ -94171,7 +94171,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &249955304369714829
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -94457,8 +94457,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 340
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3343441184792678589}
   peelableRenderer: {fileID: 5705974506959318020}
@@ -94478,7 +94478,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5241109782482870795
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -94884,8 +94884,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 398
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 471955950719525768}
   peelableRenderer: {fileID: 6230009171902588357}
@@ -94905,7 +94905,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &555249998836464144
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -95191,8 +95191,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 575
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5622390192583963701}
   peelableRenderer: {fileID: 6735627517292880831}
@@ -95212,7 +95212,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1834459834113105077
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -95498,8 +95498,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 378
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6023999297682353396}
   peelableRenderer: {fileID: 6188340961734308384}
@@ -95519,7 +95519,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2647200928228521149
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -95685,8 +95685,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 560
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5190153438353362040}
   peelableRenderer: {fileID: 2420081779115262799}
@@ -95706,7 +95706,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &263834655559723769
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -95872,8 +95872,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 556
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 397523205586585526}
   peelableRenderer: {fileID: 5303669315022822685}
@@ -95893,7 +95893,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &255881278467218483
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -96059,8 +96059,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 310
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2586088285366205375}
   peelableRenderer: {fileID: 4396032549397017522}
@@ -96080,7 +96080,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2072465017786351485
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -96246,8 +96246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 326
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7960494825545712537}
   peelableRenderer: {fileID: 151610069962211834}
@@ -96267,7 +96267,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3583862606213251153
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -96433,8 +96433,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 438
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7444222334935773464}
   peelableRenderer: {fileID: 7761326289336452259}
@@ -96454,7 +96454,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7572181731925029751
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -96740,8 +96740,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 503
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3097036983382788214}
   peelableRenderer: {fileID: 5989485108553003004}
@@ -96761,7 +96761,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6627270501241695012
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -96927,8 +96927,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 514
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7707017384988834063}
   peelableRenderer: {fileID: 340969743458380680}
@@ -96948,7 +96948,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &451605587587937736
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -97354,8 +97354,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 337
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2455969704868643594}
   peelableRenderer: {fileID: 2849689927774563312}
@@ -97375,7 +97375,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8245256998212215131
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -97541,8 +97541,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 566
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2294880408610473574}
   peelableRenderer: {fileID: 1300279039279860545}
@@ -97562,7 +97562,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4745675100224155301
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -97728,8 +97728,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 445
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4162101022270184270}
   peelableRenderer: {fileID: 3711675544691508284}
@@ -97749,7 +97749,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5155366364346257613
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -97915,8 +97915,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 499
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6269815372234554052}
   peelableRenderer: {fileID: 682622879039533165}
@@ -97936,7 +97936,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8032517084848572897
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -98102,8 +98102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 680
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5929661763599898990}
   peelableRenderer: {fileID: 7063340296448041988}
@@ -98123,7 +98123,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7471581870704750614
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -98409,8 +98409,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 633
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4896322691117380116}
   peelableRenderer: {fileID: 4402082759777103019}
@@ -98430,7 +98430,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7767159535960621140
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -98596,8 +98596,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 612
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 53520769726637348}
   peelableRenderer: {fileID: 8663423837124013123}
@@ -98617,7 +98617,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7695362893849021801
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -98903,8 +98903,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 366
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1999410069304550162}
   peelableRenderer: {fileID: 5499256089887305800}
@@ -98924,7 +98924,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1806848316569466146
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -99090,8 +99090,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 493
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 9171223931142587871}
   peelableRenderer: {fileID: 1789731944210196346}
@@ -99111,7 +99111,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1568035130003065041
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -99277,8 +99277,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 383
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1238687587254053366}
   peelableRenderer: {fileID: 8846380306999124052}
@@ -99298,7 +99298,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2730726154909109008
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -99824,8 +99824,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 487
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4680804359378524240}
   peelableRenderer: {fileID: 5254721864114832600}
@@ -99845,7 +99845,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &974190501696171445
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -100011,8 +100011,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 488
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5676035471285600750}
   peelableRenderer: {fileID: 7532256549998211386}
@@ -100032,7 +100032,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6350712177436745804
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -100198,8 +100198,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 401
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7287462712069721274}
   peelableRenderer: {fileID: 8759205252462672979}
@@ -100219,7 +100219,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6980233289332525597
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -100385,8 +100385,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 449
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1311179909804581710}
   peelableRenderer: {fileID: 9022161692115577343}
@@ -100406,7 +100406,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6682890258281910129
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -100572,8 +100572,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 672
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8872518335056731554}
   peelableRenderer: {fileID: 1868996517495409795}
@@ -100593,7 +100593,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1426328704023618824
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -100759,8 +100759,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 600
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7644670961813403104}
   peelableRenderer: {fileID: 8176508809582996741}
@@ -100780,7 +100780,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2290371180777946445
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -100946,8 +100946,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 360
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5578593692654706995}
   peelableRenderer: {fileID: 23497415318149627}
@@ -100967,7 +100967,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2844073631064230579
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -101493,8 +101493,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 522
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2745922045684710293}
   peelableRenderer: {fileID: 8102582450978765870}
@@ -101514,7 +101514,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &541845948442827926
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -101920,8 +101920,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 413
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8475381496258205650}
   peelableRenderer: {fileID: 2971427019617111443}
@@ -101941,7 +101941,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2434642872618433908
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -102107,8 +102107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 610
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5686871654846206641}
   peelableRenderer: {fileID: 5194856788193892078}
@@ -102128,7 +102128,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5453601010246442756
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -102534,8 +102534,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 644
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3566410201372351516}
   peelableRenderer: {fileID: 7785508047730780410}
@@ -102555,7 +102555,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2378914137365922543
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -102721,8 +102721,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 673
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8455452276470848709}
   peelableRenderer: {fileID: 8773939260013664234}
@@ -102742,7 +102742,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &839078859719233503
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -103028,8 +103028,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 643
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4520060377486033770}
   peelableRenderer: {fileID: 6384244027448936974}
@@ -103049,7 +103049,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3321902864349571705
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -103215,8 +103215,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 677
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8235178119520080619}
   peelableRenderer: {fileID: 5247940840514788773}
@@ -103236,7 +103236,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4604677337498120392
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -103402,8 +103402,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 620
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2953063408042572778}
   peelableRenderer: {fileID: 1131601989895988196}
@@ -103423,7 +103423,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6384567057514393117
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -103589,8 +103589,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 592
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5569943050964658854}
   peelableRenderer: {fileID: 2088824584812234335}
@@ -103610,7 +103610,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5344603117666229203
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -103776,8 +103776,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 639
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 101201726568815106}
   peelableRenderer: {fileID: 5590553521302381795}
@@ -103797,7 +103797,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1335733756930423496
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -103963,8 +103963,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 346
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3657224634255575522}
   peelableRenderer: {fileID: 7194704216629035892}
@@ -103984,7 +103984,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4959299939594318984
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -104150,8 +104150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 420
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 281809070136957088}
   peelableRenderer: {fileID: 6794817795221305142}
@@ -104171,7 +104171,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7403679644248030734
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -104337,8 +104337,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 570
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 141410096018803505}
   peelableRenderer: {fileID: 4416950280580455522}
@@ -104358,7 +104358,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4933968917941899831
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -104644,8 +104644,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 382
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8839842704055289782}
   peelableRenderer: {fileID: 8432560081892118400}
@@ -104665,7 +104665,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2045099835685865204
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -104951,8 +104951,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 431
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6452490627553090077}
   peelableRenderer: {fileID: 6367689957759271307}
@@ -104972,7 +104972,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1357813296953945143
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -105138,8 +105138,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 608
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6843721390109600111}
   peelableRenderer: {fileID: 5563929036599465262}
@@ -105159,7 +105159,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4776263181905074188
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -105685,8 +105685,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 658
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3619671386088607601}
   peelableRenderer: {fileID: 3166254709738669119}
@@ -105706,7 +105706,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4831599449783103035
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -105872,8 +105872,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 640
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3577374418586701637}
   peelableRenderer: {fileID: 6582135541216058035}
@@ -105893,7 +105893,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2871275210165205597
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -106299,8 +106299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 504
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 860019918652545164}
   peelableRenderer: {fileID: 3589537104477481964}
@@ -106320,7 +106320,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6544658521684309373
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -106606,8 +106606,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 520
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8724335664596902047}
   peelableRenderer: {fileID: 3887638588160102964}
@@ -106627,7 +106627,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4445412589036785986
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -106793,8 +106793,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 576
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6723240243357484290}
   peelableRenderer: {fileID: 5978720718729539122}
@@ -106814,7 +106814,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4055516747578845755
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -107100,8 +107100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 607
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8159198597527951111}
   peelableRenderer: {fileID: 8531268356213797425}
@@ -107121,7 +107121,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8384364146050333828
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -107287,8 +107287,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 349
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6899218684500863696}
   peelableRenderer: {fileID: 8780559934501793777}
@@ -107308,7 +107308,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8647034692991854315
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -107714,8 +107714,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 585
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6209755446857150135}
   peelableRenderer: {fileID: 7459571836772104046}
@@ -107735,7 +107735,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8513268279757474184
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -107901,8 +107901,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 665
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1776664358001026695}
   peelableRenderer: {fileID: 1633871272273096396}
@@ -107922,7 +107922,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6205911653585906693
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -108448,8 +108448,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 574
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2850236035092723092}
   peelableRenderer: {fileID: 347881673626123454}
@@ -108469,7 +108469,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7850726880610307116
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -108635,8 +108635,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 687
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7642139189307148966}
   peelableRenderer: {fileID: 9188902818921772796}
@@ -108656,7 +108656,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2637065476477248109
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -108822,8 +108822,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 465
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2905040312745451371}
   peelableRenderer: {fileID: 1172076444508487773}
@@ -108843,7 +108843,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3968009367431104296
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -109009,8 +109009,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 471
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8814744675883547212}
   peelableRenderer: {fileID: 4806848968451483178}
@@ -109030,7 +109030,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &2118862870158811837
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -109436,8 +109436,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 590
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2824162344716025040}
   peelableRenderer: {fileID: 2278545761027957635}
@@ -109457,7 +109457,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4637363964592229703
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -109743,8 +109743,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 595
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4682056985609748320}
   peelableRenderer: {fileID: 7506327551822200511}
@@ -109764,7 +109764,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5831119617332257729
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -110290,8 +110290,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 529
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6852118397634732336}
   peelableRenderer: {fileID: 5732015997130868794}
@@ -110311,7 +110311,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5776717863658902061
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -110597,8 +110597,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 648
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6199906493097763930}
   peelableRenderer: {fileID: 104800846571585359}
@@ -110618,7 +110618,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6740401030119505
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -110784,8 +110784,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 619
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1330615203414758499}
   peelableRenderer: {fileID: 130208174043717250}
@@ -110805,7 +110805,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5417994839869656115
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -111331,8 +111331,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 358
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 7551607047721214263}
   peelableRenderer: {fileID: 8224608496788102224}
@@ -111352,7 +111352,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6959130863853033656
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -111878,8 +111878,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 655
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6267736740604867407}
   peelableRenderer: {fileID: 4236337217406325094}
@@ -111899,7 +111899,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &3647615123615008757
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -112065,8 +112065,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 645
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 9212587691143987721}
   peelableRenderer: {fileID: 5483818015398498907}
@@ -112086,7 +112086,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8169926022792780243
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -112252,8 +112252,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 318
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5810430085213522372}
   peelableRenderer: {fileID: 4320998927208091827}
@@ -112273,7 +112273,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4131956793940948958
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -112799,8 +112799,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 436
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 2614144917591003913}
   peelableRenderer: {fileID: 8089498602482813369}
@@ -112820,7 +112820,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &9216165339527653320
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -113226,8 +113226,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 323
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 3043513134439419052}
   peelableRenderer: {fileID: 8752691266246144060}
@@ -113247,7 +113247,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4919464765935434119
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -114013,8 +114013,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 611
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8151601569013334140}
   peelableRenderer: {fileID: 3071673088967999975}
@@ -114034,7 +114034,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5974470668284340584
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -114320,8 +114320,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 515
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4867851943721385746}
   peelableRenderer: {fileID: 2511466749819665334}
@@ -114341,7 +114341,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5225563046418060874
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -114507,8 +114507,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 647
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8167090702942631100}
   peelableRenderer: {fileID: 4348043743145521359}
@@ -114528,7 +114528,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6998674415333660591
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -114934,8 +114934,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 348
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1897528134967702206}
   peelableRenderer: {fileID: 4832819001411228064}
@@ -114955,7 +114955,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4649797344104672621
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -115121,8 +115121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 565
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1458590961433336370}
   peelableRenderer: {fileID: 6529716018091840770}
@@ -115142,7 +115142,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &5487784125895174356
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -115428,8 +115428,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 535
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 770148452046813489}
   peelableRenderer: {fileID: 4641530630913251039}
@@ -115449,7 +115449,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &730557722222875349
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -115735,8 +115735,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 589
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 8026497388709298614}
   peelableRenderer: {fileID: 4109511386860483640}
@@ -115756,7 +115756,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &509801913469798093
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -116042,8 +116042,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 668
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 1333006100867852933}
   peelableRenderer: {fileID: 1772101570484658769}
@@ -116063,7 +116063,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &4081413135270235696
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -116469,8 +116469,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 627
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 4392435144668196001}
   peelableRenderer: {fileID: 3413429798140933771}
@@ -116490,7 +116490,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &6260414129273379074
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -117136,8 +117136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 579
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 5554074652464193327}
   peelableRenderer: {fileID: 7446455838952681976}
@@ -117157,7 +117157,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &7727681187198953014
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -117563,8 +117563,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 416
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 6638367225252378171}
   peelableRenderer: {fileID: 1913421526564847754}
@@ -117584,7 +117584,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &8340720023873896905
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -118110,8 +118110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 464
-  power: 3
-  speedAmount: 40
+  power: 47
+  speedAmount: 10
   collectableType: 0
   peelableMeshFilter: {fileID: 905069485601466158}
   peelableRenderer: {fileID: 2302215752886758169}
@@ -118131,7 +118131,7 @@ MonoBehaviour:
   sold: 0
   moved: 0
   readyToTilt: 0
-  price: 1
+  price: 2500
 --- !u!64 &1188078285797838994
 MeshCollider:
   m_ObjectHideFlags: 0

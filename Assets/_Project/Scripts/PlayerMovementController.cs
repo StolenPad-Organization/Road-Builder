@@ -15,6 +15,7 @@ public class PlayerMovementController : MonoBehaviour
     public bool canMove = false;
     public bool canRotate;
     [SerializeField] private float speedMultiplayer = 100;
+    public bool canRecoverSpeed;
     private PlayerController playerController;
     [SerializeField] private bool drive;
     private bool move;
@@ -42,7 +43,7 @@ public class PlayerMovementController : MonoBehaviour
     {
         if (!canMove) return;
 
-        if (speedMultiplayer != 100)
+        if (speedMultiplayer != 100 && canRecoverSpeed)
         {
             speedMultiplayer += 60 * Time.deltaTime;
             if (speedMultiplayer > 100)
