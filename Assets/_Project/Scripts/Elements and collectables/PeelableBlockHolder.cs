@@ -7,6 +7,7 @@ public class PeelableBlockHolder : MonoBehaviour
 {
     public List<Peelable> peelableParts = new List<Peelable>();
     private int partsCount;
+    [SerializeField] private GameObject blockTrigger;
 
     void Start()
     {
@@ -25,20 +26,16 @@ public class PeelableBlockHolder : MonoBehaviour
 
     private void ActivateBlock(bool activate)
     {
-        //if (activate)
-        //{
-        //    if(blockCollider !=null)
-        //        blockCollider.SetActive(true);
-        //    if (blockTrigger != null)
-        //        blockTrigger.SetActive(true);
-        //}
-        //else
-        //{
-        //    if (blockCollider != null)
-        //        blockCollider.SetActive(false);
-        //    if (blockTrigger != null)
-        //        blockTrigger.SetActive(false);
-        //}
+        if (activate)
+        {
+            if (blockTrigger != null)
+                blockTrigger.SetActive(true);
+        }
+        else
+        {
+            if (blockTrigger != null)
+                blockTrigger.SetActive(false);
+        }
     }
 
     public void SetRBHandlersState(bool state, bool hide = false)
@@ -70,10 +67,10 @@ public class PeelableBlockHolder : MonoBehaviour
                 }
             }
         }
-        if (!hide)
-            ActivateBlock(!state);
-        else
-            ActivateBlock(false);
+        //if (!hide)
+        //    ActivateBlock(!state);
+        //else
+        //    ActivateBlock(false);
     }
 
     private void GetPeelableRest()
@@ -96,6 +93,8 @@ public class PeelableBlockHolder : MonoBehaviour
     public void RemovePart()
     {
         partsCount--;
+        if (CheckCount())
+            ActivateBlock(false);
     }
 
     public bool CheckCount()

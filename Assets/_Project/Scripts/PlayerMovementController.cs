@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,7 @@ public class PlayerMovementController : MonoBehaviour
     public bool canMove = false;
     public bool canRotate;
     [SerializeField] private float speedMultiplayer = 100;
+    [SerializeField] private float speedMultiplayerMax = 100;
     public bool canRecoverSpeed;
     private PlayerController playerController;
     [SerializeField] private bool drive;
@@ -26,6 +28,8 @@ public class PlayerMovementController : MonoBehaviour
 
     private float horizontalInput;
     private float verticalInput;
+
+    private float walkType;
 
     void Start()
     {
@@ -43,11 +47,11 @@ public class PlayerMovementController : MonoBehaviour
     {
         if (!canMove) return;
 
-        if (speedMultiplayer != 100 && canRecoverSpeed)
+        if (speedMultiplayer != speedMultiplayerMax && canRecoverSpeed)
         {
             speedMultiplayer += 60 * Time.deltaTime;
-            if (speedMultiplayer > 100)
-                speedMultiplayer = 100;
+            if (speedMultiplayer > speedMultiplayerMax)
+                speedMultiplayer = speedMultiplayerMax;
         }
 
         horizontalInput = joystick.HorizontalAxis;
@@ -228,5 +232,23 @@ public class PlayerMovementController : MonoBehaviour
     public bool MovementCheck()
     {
         return moveDirection != Vector3.zero;
+    }
+
+    public void SetWalkType(float _walkType, int _maxspeed)
+    {
+        DOTween.To(() => walkType, x => walkType = x, _walkType, 0.5f)
+            .OnUpdate(() => anim.SetFloat("WalkType", walkType))
+            .OnComplete(() => 
+            { 
+                if(_walkType != 0)
+                {
+                    speedMultiplayerMax = _maxspeed;
+                }
+                else
+                {
+                    speedMultiplayerMax = 100;
+                }
+                speedMultiplayer = speedMultiplayerMax;
+            });
     }
 }

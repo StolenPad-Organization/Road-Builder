@@ -63,6 +63,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject powerWarning;
     private bool isToolBlocked;
 
+    [Header("Mount")]
+    [SerializeField] private int walkType;
+    [SerializeField] private Mount mount;
+    [SerializeField] private Vector3 mountingPos;
+
     private void Awake()
     {
         instance = this;
@@ -71,6 +76,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         ChangeScrapeTool(scrapeToolIndex);
+        if (mount != null)
+            SetWalkType(mount.WalkType);
     }
 
     void Update()
@@ -106,12 +113,35 @@ public class PlayerController : MonoBehaviour
         {
             lastHapticTime -= Time.deltaTime;
         }
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            
+        }
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            
+        }
     }
 
     private void FixedUpdate()
     {
         if (scrapeTool.toolAngleController != null) return;
         TiltCollectables();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer != 21) return;
+        if (mount != null)
+            SetWalkType(0);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.layer != 21) return;
+        if (mount != null)
+            SetWalkType(mount.WalkType);
     }
 
     private void TiltCollectables()
@@ -452,5 +482,22 @@ public class PlayerController : MonoBehaviour
     public void ActivatePaintPodsEffect(bool activate)
     {
         paintPodsEffect.gameObject.SetActive(activate);
+    }
+
+    public void SetWalkType(int _walkType)
+    {
+        walkType = _walkType;
+        if(walkType != 0)
+        {
+            model.transform.DOLocalMove(mountingPos, 0.5f);
+            mount.gameObject.SetActive(true);
+            mount.transform.DOScale(Vector3.one, 0.5f);
+        }
+        else
+        {
+            model.transform.DOLocalMove(Vector3.zero, 0.5f);
+            mount.transform.DOScale(Vector3.zero, 0.5f).OnComplete(() => mount.gameObject.SetActive(false));
+        }
+        movementController.SetWalkType(walkType, mount.speedMultiplier);
     }
 }
