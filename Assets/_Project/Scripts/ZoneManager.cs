@@ -164,6 +164,8 @@ public class ZoneManager : MonoBehaviour
     }
     public void StartAsphaltStage()
     {
+        PlayerController.instance.SetWalkType(0);
+        lockedBlocks.SetActive(false);
         UIManager.instance.UpdateStepText();
         SendProgressionEvent(ProgressionStatus.Start);
 
@@ -225,6 +227,8 @@ public class ZoneManager : MonoBehaviour
     }
     public void StartPaintStage()
     {
+        PlayerController.instance.SetWalkType(0);
+        lockedBlocks.SetActive(false);
         SendProgressionEvent(ProgressionStatus.Start);
         UIManager.instance.ChangeProgressBarIcon(2);
         UIManager.instance.UpdateProgressBar(0);
@@ -382,6 +386,7 @@ public class ZoneManager : MonoBehaviour
                 UIManager.instance.ChangeProgressBarIcon(0);
                 break;
             case ZoneState.BuildingStage:
+                lockedBlocks.SetActive(false);
                 if (zoneCollider != null)
                     zoneCollider.gameObject.SetActive(false);
                 // load buildable and building machine
@@ -399,6 +404,7 @@ public class ZoneManager : MonoBehaviour
                 buildMachine.OnSpawn();
                 break;
             case ZoneState.PaintingStage:
+                lockedBlocks.SetActive(false);
                 if (zoneCollider != null)
                     zoneCollider.gameObject.SetActive(false);
                 // load paintable and painting machine and buildables

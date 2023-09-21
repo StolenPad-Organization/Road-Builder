@@ -68,6 +68,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Mount mount;
     [SerializeField] private Vector3 mountingPos;
 
+    private int walkTriggersCount = 0;
+
     private void Awake()
     {
         instance = this;
@@ -133,6 +135,7 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer != 21) return;
+        walkTriggersCount++;
         if (mount != null)
             SetWalkType(0);
     }
@@ -140,7 +143,8 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.layer != 21) return;
-        if (mount != null)
+        walkTriggersCount--;
+        if (mount != null && walkTriggersCount == 0)
             SetWalkType(mount.WalkType);
     }
 
@@ -499,5 +503,10 @@ public class PlayerController : MonoBehaviour
             mount.transform.DOScale(Vector3.zero, 0.5f).OnComplete(() => mount.gameObject.SetActive(false));
         }
         movementController.SetWalkType(walkType, mount.speedMultiplier);
+    }
+
+    public void SetWalkType()
+    {
+        SetWalkType(mount.WalkType);
     }
 }

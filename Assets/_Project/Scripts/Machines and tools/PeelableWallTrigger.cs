@@ -25,6 +25,7 @@ public class PeelableWallTrigger : MonoBehaviour
             playerController.movementController.insideAngleTrigger = true;
 
             playerController.ActivateWaterPodsEffect(true);
+            playerController.SetWalkType(0);
         }
     }
 
@@ -41,6 +42,7 @@ public class PeelableWallTrigger : MonoBehaviour
             playerController.movementController.insideAngleTrigger = false;
 
             playerController.ActivateWaterPodsEffect(false);
+            playerController.SetWalkType();
         }
     }
 
@@ -52,6 +54,7 @@ public class PeelableWallTrigger : MonoBehaviour
             playerController.movementController.SetAnimation();
             playerController.movementController.insideAngleTrigger = false;
             playerController.ActivateWaterPodsEffect(false);
+            playerController.SetWalkType();
         }
     }
 }

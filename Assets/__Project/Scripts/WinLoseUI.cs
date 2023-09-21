@@ -13,6 +13,7 @@ public class WinLoseUI : MonoBehaviour
     [SerializeField] private Transform losePanel;
     [SerializeField] private Button winButton;
     [SerializeField] private Button loseButton;
+    [SerializeField] private RewardManager rewardManager;
 
     private void OnEnable ()
     {
@@ -34,12 +35,17 @@ public class WinLoseUI : MonoBehaviour
 
     public void WinUI ()
     {
-        ShowPanel(winGroup, winPanel);
+        rewardManager.ShowPanel(this);
     }
 
     public void LoseUI ()
     {
         ShowPanel(loseGroup, losePanel);
+    }
+
+    public void ShowWinPanel()
+    {
+        ShowPanel(winGroup, winPanel);
     }
 
     private void ShowPanel (CanvasGroup group, Transform panel)

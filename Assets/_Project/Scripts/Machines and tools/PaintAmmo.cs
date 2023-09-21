@@ -56,6 +56,7 @@ public class PaintAmmo : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
+        if (PlayerController.instance.paintMachine == null) return;
         filling = false;
         PlayerController.instance.paintMachine.OnFillEnd();
         //var main = effect.main;
