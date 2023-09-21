@@ -164,7 +164,6 @@ public class ZoneManager : MonoBehaviour
     }
     public void StartAsphaltStage()
     {
-        PlayerController.instance.SetWalkType(0);
         lockedBlocks.SetActive(false);
         UIManager.instance.UpdateStepText();
         SendProgressionEvent(ProgressionStatus.Start);
@@ -227,7 +226,6 @@ public class ZoneManager : MonoBehaviour
     }
     public void StartPaintStage()
     {
-        PlayerController.instance.SetWalkType(0);
         lockedBlocks.SetActive(false);
         SendProgressionEvent(ProgressionStatus.Start);
         UIManager.instance.ChangeProgressBarIcon(2);
@@ -271,6 +269,8 @@ public class ZoneManager : MonoBehaviour
             paintingMachine.gameObject.SetActive(false);
             paintAmmo.gameObject.SetActive(false);
         }
+
+        player.SetWalkType();
 
         zoneState = ZoneState.Complete;
 
@@ -321,7 +321,7 @@ public class ZoneManager : MonoBehaviour
         }
         if (zoneCollider != null)
         {
-            PlayerController.instance.arrowController.PointToObject(zoneCollider);
+            player.arrowController.PointToObject(zoneCollider);
         }
     }
 
@@ -355,7 +355,7 @@ public class ZoneManager : MonoBehaviour
                 }
             }
 
-            PlayerController.instance.SwitchTools(angleScrape);
+            player.SwitchTools(angleScrape);
         }
         // Load player position and rotation
         player.transform.position = playerData.PlayerPosition;

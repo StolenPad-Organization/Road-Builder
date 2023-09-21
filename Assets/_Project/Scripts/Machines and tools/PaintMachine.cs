@@ -88,6 +88,7 @@ public class PaintMachine : MonoBehaviour
             if(machineIcon != null)
                 machineIcon.Fade();
             PlayerController.instance.movementController.canMove = false;
+            PlayerController.instance.SetWalkType(0);
 
             StartCoroutine(PaintMachineEquipe());
         }

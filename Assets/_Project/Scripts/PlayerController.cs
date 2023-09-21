@@ -317,7 +317,7 @@ public class PlayerController : MonoBehaviour
         RemovePeelingAndCollectingTools();
         asphaltMachine = _asphaltMachine;
         movementController.canMove = false;
-
+        SetWalkType(0);
         StartCoroutine(AshphaltMachinePick(playerSeat, _asphaltMachine));
     }
 
@@ -353,7 +353,7 @@ public class PlayerController : MonoBehaviour
         asphaltMachine.gameObject.SetActive(false);
         asphaltMachine.transform.SetParent(null);
         model.transform.SetParent(transform);
-        model.transform.DOLocalJump(Vector3.zero, 2, 1, 0.7f);
+        model.transform.DOLocalJump(Vector3.zero, 2, 1, 0.7f).OnComplete(() => SetWalkType());
         model.transform.DOScale(1, 0.7f);
         model.transform.DOLocalRotate(Vector3.zero, 0.7f);
         asphaltMachine = null;
