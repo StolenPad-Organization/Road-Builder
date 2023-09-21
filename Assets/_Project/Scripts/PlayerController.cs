@@ -490,6 +490,8 @@ public class PlayerController : MonoBehaviour
 
     public void SetWalkType(int _walkType)
     {
+        model.transform.DOKill();
+        mount.transform.DOKill();
         walkType = _walkType;
         if(walkType != 0)
         {
