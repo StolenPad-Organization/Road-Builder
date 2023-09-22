@@ -53,12 +53,25 @@ namespace HomaGames.HomaBelly
         public static string HomaGamesId { get; private set; }
 
 
-        private static void SetHomaGamesId()
+        public static void SetHomaGamesId(string customId = null)
         {
-            HomaGamesId = PlayerPrefs.GetString(HOMA_ID_KEY, null);
-            if (string.IsNullOrWhiteSpace(HomaGamesId))
+            var existingId = PlayerPrefs.GetString(HOMA_ID_KEY, null);
+            
+            // Allow to set a new id if a customId
+            bool hasToSetCustomId = !string.IsNullOrWhiteSpace(customId) && customId != existingId;
+            bool hasToSetHomaId = string.IsNullOrWhiteSpace(existingId) || hasToSetCustomId;
+            
+            if (hasToSetHomaId)
             {
-                HomaGamesId = Guid.NewGuid().ToString();
+                if (!hasToSetCustomId)
+                {
+                    // Generate default id, it will change in each installation
+                    HomaGamesId = Guid.NewGuid().ToString();
+                }
+                else
+                {
+                    HomaGamesId = customId;
+                }
                 PlayerPrefs.SetString(HOMA_ID_KEY,HomaGamesId);
                 PlayerPrefs.Save();
             }

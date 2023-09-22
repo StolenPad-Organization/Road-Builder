@@ -71,7 +71,7 @@ namespace HomaGames.HomaBelly
         private string CurrentBannerPlacementId { get; set; } = null;
         private Color CurrentBannerBackgroundColor { get; set; } = Color.white;
         private BannerPosition CurrentBannerPosition { get; set; } = BannerPosition.BOTTOM;
-        private BannerSize CurrentBannerSize { get; set; }
+        private BannerSize CurrentBannerSize { get; set; } = BannerSize.BANNER;
 
         private bool _reportAdRevenue = false;
 
@@ -114,7 +114,8 @@ namespace HomaGames.HomaBelly
                 // Preload interstitial and rewarded video ads to be cached
                 LoadInterstitial(GetAdIdOrDefault(AdType.Interstitial));
                 LoadRewardedVideoAd(GetAdIdOrDefault(AdType.RewardedVideo));
-                LoadBanner(BannerSize.BANNER, BannerPosition.BOTTOM, GetAdIdOrDefault(AdType.Banner), Color.white);
+                LoadBanner(CurrentBannerSize, CurrentBannerPosition, GetAdIdOrDefault(AdType.Banner),
+                    CurrentBannerBackgroundColor);
                 onInitialized?.Invoke();
                 HomaGamesLog.Debug($"[{MediatorPackageName} Mediator]  Initialized successfully");
             };
@@ -625,7 +626,7 @@ namespace HomaGames.HomaBelly
             }
 
             AddTypesToString.TryGetValue(adType, out data.AdType);
-            HomaBelly.Instance.TrackAdRevenue(data);
+            AnalyticsEventTracker.TrackAdRevenue(data);
         }
 
         #region Protected Interface

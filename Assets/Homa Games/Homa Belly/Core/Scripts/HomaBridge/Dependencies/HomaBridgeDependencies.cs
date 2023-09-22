@@ -15,7 +15,7 @@ namespace HomaGames.HomaBelly
         // WARNING: If you rename this field you have to change HomaBridgeDependenciesCodeGenerator
         private static readonly List<IAttribution> attributions = new List<IAttribution>();
         // WARNING: If you rename this field you have to change HomaBridgeDependenciesCodeGenerator
-        private static readonly List<IAnalytics> analytics = new List<IAnalytics>();
+        private static readonly List<AnalyticsBase> analytics = new List<AnalyticsBase>();
         // WARNING: If you rename this field you have to change HomaBridgeDependenciesCodeGenerator
         private static CustomerSupportImplementation customerSupport = null;
         
@@ -45,6 +45,12 @@ namespace HomaGames.HomaBelly
         
         // WARNING: If you rename this method you have to change HomaBridgeDependenciesCodeGenerator
         /// <summary>
+        /// Body auto generated in another file based on present old Analytics in the project
+        /// </summary>
+        static partial void PartialInstantiateOldAnalytics();
+        
+        // WARNING: If you rename this method you have to change HomaBridgeDependenciesCodeGenerator
+        /// <summary>
         /// Body auto generated in another file based on present Customer Support in the project
         /// </summary>
         static partial void PartialInstantiateCustomerSupport();
@@ -60,6 +66,7 @@ namespace HomaGames.HomaBelly
             PartialInstantiateOldMediators();
             PartialInstantiateAttributions();
             PartialInstantiateAnalytics();
+            PartialInstantiateOldAnalytics();
             PartialInstantiateCustomerSupport();
 
             return mediators.Count + attributions.Count + analytics.Count + (customerSupport!=null?1:0);
@@ -82,7 +89,7 @@ namespace HomaGames.HomaBelly
             attributions = HomaBridgeDependencies.attributions;
             return attributions != null && attributions.Count > 0;
         }
-        public static bool GetAnalytics(out List<IAnalytics> analytics)
+        public static bool GetAnalytics(out List<AnalyticsBase> analytics)
         {
             analytics = HomaBridgeDependencies.analytics;
             return analytics != null && analytics.Count > 0;

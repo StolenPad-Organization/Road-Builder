@@ -7,7 +7,7 @@ using UnityEditor;
 #endif
 using UnityEngine;
 
-namespace HomaGames.HomaBelly
+namespace HomaGames.HomaBelly.Internal.Analytics
 {
     /// <summary>
     /// Internal class to automatically track Analytics (and some Attribution) events
@@ -70,6 +70,8 @@ namespace HomaGames.HomaBelly
 
         public void Start()
         {
+            _currentApplicationResumeTimestamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
             if (!HomaBelly.Instance.IsInitialized)
             {
                 Events.onInitialized += OnHomaBellyInitialized;
@@ -90,11 +92,12 @@ namespace HomaGames.HomaBelly
         /// </summary>
         private void OnHomaBellyInitialized()
         {
-#if HOMA_BELLY_DEFAULT_ANALYTICS_ENABLED
+            TrackSessionStarted();
+            
             // Track Homa Belly initialization time
             long elapsedSecondsSinceBeforeSceneLoad = DateTimeOffset.UtcNow.ToUnixTimeSeconds() - beforeSceneLoadTimestampInSeconds;
-            HomaBelly.Instance.TrackDesignEvent("HomaBelly_Initialized", Mathf.Max(0, elapsedSecondsSinceBeforeSceneLoad));
-
+            new HomaBellyInitialized(elapsedSecondsSinceBeforeSceneLoad).TrackEvent();
+            
             // Listen network reachability events
             networkHelper.OnInitialNetworkReachabilityFetched += OnInitialNetworkReachabilityFetched;
             networkHelper.OnNetworkReachabilityChange += OnNetworkReachabilityChanged;
@@ -104,7 +107,6 @@ namespace HomaGames.HomaBelly
             TrackMuteStatus();
             AudioSettings.Mobile.OnMuteStateChanged += OnMuteStateChanged;
 #endif
-#endif
         }
 
         /// <summary>
@@ -113,11 +115,11 @@ namespace HomaGames.HomaBelly
         /// </summary>
         private void TrackSessionStarted()
         {
-#if HOMA_BELLY_DEFAULT_ANALYTICS_ENABLED
+#if !HOMA_DISABLE_AUTO_ANALYTICS
             // Track first time game launch
             if (PlayerPrefs.GetInt(FIRST_TIME_GAME_LAUNCH_KEY, 0) == 0)
             {
-                HomaBelly.Instance.TrackDesignEvent("GameLaunched");
+                new GameLaunched().TrackEvent();
                 PlayerPrefs.SetInt(FIRST_TIME_GAME_LAUNCH_KEY, 1);
                 PlayerPrefs.Save();
             }
@@ -145,7 +147,7 @@ namespace HomaGames.HomaBelly
                 PlayerPrefs.Save();
                 if (sessionNumber < MAX_SESSION_COUNT)
                 {
-                    HomaBelly.Instance.TrackDesignEvent("Session:" + sessionNumber + ":Started", offlineTimeInMinutes);
+                    new SessionStarted(sessionNumber, offlineTimeInMinutes).TrackEvent();
                 }
             }
 #endif
@@ -157,7 +159,7 @@ namespace HomaGames.HomaBelly
         /// </summary>
         private void TrackSessionEnded()
         {
-#if HOMA_BELLY_DEFAULT_ANALYTICS_ENABLED
+#if !HOMA_DISABLE_AUTO_ANALYTICS
             // Gather last timestamps
             long utcNowInSeconds = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
             long lastApplicationResumeTimestamp = long.Parse(PlayerPrefs.GetString(LAST_APPLICATION_RESUME_TIMESTAMP_KEY, utcNowInSeconds.ToString()));
@@ -170,7 +172,7 @@ namespace HomaGames.HomaBelly
             int sessionNumber = PlayerPrefs.GetInt(SESSION_NUMBER_KEY, 0);
             if (sessionNumber < MAX_SESSION_COUNT)
             {
-                HomaBelly.Instance.TrackDesignEvent("Session:" + sessionNumber + ":Played", sessionLengthInSeconds);
+                new SessionPlayed(sessionNumber, sessionLengthInSeconds).TrackEvent();
             }
 #endif
         }
@@ -181,9 +183,9 @@ namespace HomaGames.HomaBelly
         /// <param name="pause"></param>
         public void OnApplicationPause(bool pause)
         {
-#if HOMA_BELLY_DEFAULT_ANALYTICS_ENABLED
-            // Call DefaultAnalytics to keep track of gameplay times
-            DefaultAnalytics.OnApplicationPause(pause);
+#if !HOMA_DISABLE_AUTO_ANALYTICS
+            // Call Analytics to keep track of gameplay times
+            HomaGames.HomaBelly.Analytics.OnApplicationPause(pause);
 
             // Game is paused
             if (pause)
@@ -216,7 +218,7 @@ namespace HomaGames.HomaBelly
         public void OnRewardedVideoAdWatched(string placementId = null)
         {
             HomaBelly.Instance.TrackAttributionEvent("count_rv-is_watched");
-            HomaBelly.Instance.TrackDesignEvent("count_rv-is_watched");
+            HomaGames.HomaBelly.Analytics.DesignEvent("count_rv-is_watched");
 
             // Increase RV lifetime watched count
             int lifetimeRvWatched = PlayerPrefs.GetInt(LIFETIME_REWARDED_VIDEO_ADS_WATCHED_KEY, 0);
@@ -228,7 +230,7 @@ namespace HomaGames.HomaBelly
             if (lifetimeRvWatched > 0 && lifetimeRvWatched % 2 == 0)
             {
                 HomaBelly.Instance.TrackAttributionEvent("count_2rv_watched");
-                HomaBelly.Instance.TrackDesignEvent("count_2rv_watched");
+                HomaGames.HomaBelly.Analytics.DesignEvent("count_2rv_watched");
             }
         }
 
@@ -239,7 +241,7 @@ namespace HomaGames.HomaBelly
         public void OnInterstitialAdWatched(string placementId = null)
         {
             HomaBelly.Instance.TrackAttributionEvent("count_rv-is_watched");
-            HomaBelly.Instance.TrackDesignEvent("count_rv-is_watched");
+            HomaGames.HomaBelly.Analytics.DesignEvent("count_rv-is_watched");
 
             // Increase IS lifetime watched count
             int lifetimeIsWatched = PlayerPrefs.GetInt(LIFETIME_INTERSTITIAL_ADS_WATCHED_KEY, 0);
@@ -251,7 +253,7 @@ namespace HomaGames.HomaBelly
             if (lifetimeIsWatched > 0 && lifetimeIsWatched % 2 == 0)
             {
                 HomaBelly.Instance.TrackAttributionEvent("count_2is_watched");
-                HomaBelly.Instance.TrackDesignEvent("count_2is_watched");
+                HomaGames.HomaBelly.Analytics.DesignEvent("count_2is_watched");
             }
         }
 
@@ -259,7 +261,7 @@ namespace HomaGames.HomaBelly
 
         #region Network Detection
 
-        private void OnInitialNetworkReachabilityFetched(NetworkReachability reachability)
+        private void OnInitialNetworkReachabilityFetched(UnityEngine.NetworkReachability reachability)
         {
             if (Application.isPlaying)
             {
@@ -271,7 +273,7 @@ namespace HomaGames.HomaBelly
         /// Callback invoked when a network reachability change is detected
         /// </summary>
         /// <param name="reachability"></param>
-        private void OnNetworkReachabilityChanged(NetworkReachability reachability)
+        private void OnNetworkReachabilityChanged(UnityEngine.NetworkReachability reachability)
         {
             if (Application.isPlaying)
             {
@@ -283,23 +285,10 @@ namespace HomaGames.HomaBelly
         /// Tracks network reachability (only once state per session)
         /// </summary>
         /// <param name="reachability"></param>
-        private void TrackNetworkReachability(NetworkReachability reachability)
+        private void TrackNetworkReachability(UnityEngine.NetworkReachability reachability)
         {
-#if HOMA_BELLY_DEFAULT_ANALYTICS_ENABLED
-            switch (reachability)
-            {
-                case NetworkReachability.NotReachable:
-                    // Internet not reachable
-                    HomaBelly.Instance.TrackDesignEvent("NetworkReachability:NotReachable");
-
-                    break;
-                case NetworkReachability.ReachableViaCarrierDataNetwork:
-                case NetworkReachability.ReachableViaLocalAreaNetwork:
-                    // Internet reachable
-                    HomaBelly.Instance.TrackDesignEvent("NetworkReachability:Reachable");
-
-                    break;
-            }
+#if !HOMA_DISABLE_AUTO_ANALYTICS
+            new NetworkReachability(reachability != UnityEngine.NetworkReachability.NotReachable).TrackEvent();
 #endif
         }
 
@@ -321,8 +310,8 @@ namespace HomaGames.HomaBelly
         /// </summary>
         private void TrackMuteStatus()
         {
-#if HOMA_BELLY_DEFAULT_ANALYTICS_ENABLED
-            HomaBelly.Instance.TrackDesignEvent("Audio:" + (AudioSettings.Mobile.muteState ? "Muted" : "Unmuted"));
+#if !HOMA_DISABLE_AUTO_ANALYTICS
+            new AudioMuteStatus(AudioSettings.Mobile.muteState).TrackEvent();
 #endif
         }
 

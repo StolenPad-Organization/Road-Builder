@@ -34,7 +34,7 @@ namespace HomaGames.HomaBelly.DataPrivacy
             }
             else
             {
-                HomaBelly.Instance.TrackDesignEvent(eventString);
+                Analytics.DesignEvent(eventString);
             }
         }
 
@@ -75,19 +75,19 @@ namespace HomaGames.HomaBelly.DataPrivacy
                 switch (AppTrackingTransparency.TrackingAuthorizationStatus)
                 {
                     case AppTrackingTransparency.AuthorizationStatus.NOT_DETERMINED:
-                        HomaBelly.Instance.TrackDesignEvent("app_start_tracking_not_determined");
+                        Analytics.DesignEvent("app_start_tracking_not_determined");
                         HomaBelly.Instance.TrackAttributionEvent("app_start_tracking_not_determined");
                         break;
                     case AppTrackingTransparency.AuthorizationStatus.AUTHORIZED:
-                        HomaBelly.Instance.TrackDesignEvent("app_start_tracking_allowed");
+                        Analytics.DesignEvent("app_start_tracking_allowed");
                         HomaBelly.Instance.TrackAttributionEvent("app_start_tracking_allowed");
                         break;
                     case AppTrackingTransparency.AuthorizationStatus.DENIED:
-                        HomaBelly.Instance.TrackDesignEvent("app_start_tracking_denied");
+                        Analytics.DesignEvent("app_start_tracking_denied");
                         HomaBelly.Instance.TrackAttributionEvent("app_start_tracking_denied");
                         break;
                     case AppTrackingTransparency.AuthorizationStatus.RESTRICTED:
-                        HomaBelly.Instance.TrackDesignEvent("app_start_tracking_restricted");
+                        Analytics.DesignEvent("app_start_tracking_restricted");
                         HomaBelly.Instance.TrackAttributionEvent("app_start_tracking_restricted");
                         break;
                 }
@@ -115,7 +115,7 @@ namespace HomaGames.HomaBelly.DataPrivacy
 #endif
 
             // Track 'gdpr_first_accept' as the very first event after initialization
-            HomaBelly.Instance.TrackDesignEvent("gdpr_first_accept");
+            Analytics.DesignEvent("gdpr_first_accept");
             HomaBelly.Instance.TrackAttributionEvent("gdpr_first_accept");
 
             if (Manager.Instance.IsiOS14_5OrHigher)
@@ -142,7 +142,7 @@ namespace HomaGames.HomaBelly.DataPrivacy
             while (analyticsDesignEventsToTrack.Count > 0)
             {
                 string eventString = analyticsDesignEventsToTrack.Dequeue();
-                HomaBelly.Instance.TrackDesignEvent(eventString);
+                Analytics.DesignEvent(eventString);
             }
         }
 

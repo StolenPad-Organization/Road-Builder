@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEditor;
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
@@ -44,7 +45,12 @@ namespace HomaGames.HomaBelly
             AutoGenerateInitializationFile("HomaBridgeDependenciesAnalytics",
                 "PartialInstantiateAnalytics",
                 "analytics",
-                typeof(IAnalytics),force);
+                typeof(AnalyticsBase),force);
+            
+            AutoGenerateInitializationFile("HomaBridgeDependenciesOldAnalytics",
+                "PartialInstantiateOldAnalytics",
+                "analytics",
+                typeof(IAnalytics),force, false, nameof(AnalyticsInterfaceForwarder));
             
             AutoGenerateInitializationFile("HomaBridgeDependenciesCustomerSupport",
                 "PartialInstantiateCustomerSupport",
@@ -57,7 +63,8 @@ namespace HomaGames.HomaBelly
             string servicesListName,
             Type serviceType,
             bool force,
-            bool singleton = false)
+            bool singleton = false,
+            string forwarderName = null)
         {
             var completeFilePath = $"{AUTO_GENERATED_SCRIPTS_PARENT_FOLDER}{fileName}.cs";
             var availableServices = Reflection.GetHomaBellyAvailableClasses(serviceType);
@@ -84,15 +91,14 @@ namespace HomaGames.HomaBelly
                 bool servicesHashMatch = false;
                
                 var editorPrefsServiceKey = $"Key{serviceType.Name}{Application.productName}";
-                if (EditorPrefs.HasKey(editorPrefsServiceKey))
+                if (ProjectPrefs.TryGet<string>(editorPrefsServiceKey, out var savedHash))
                 {
-                    var savedHash = EditorPrefs.GetString(editorPrefsServiceKey, "None");
                     servicesHashMatch = savedHash == servicesHash;
                 }
             
                 if (!servicesHashMatch)
                 {
-                    EditorPrefs.SetString(editorPrefsServiceKey,servicesHash);
+                    ProjectPrefs.Set(editorPrefsServiceKey, servicesHash);
                 }
 
                 bool hasToGenerate = !fileExist || !servicesHashMatch;
@@ -128,9 +134,16 @@ namespace HomaGames.HomaBelly
                         streamWriter.WriteLine($"\t\t\t {servicesListName} = new {availableServices[0].Name}();");
                     }
                     else
-                        foreach (var type in availableServices)
+                        foreach (var type in availableServices.Where(t => t.GetConstructor(Type.EmptyTypes) != null))
                         {
-                            streamWriter.WriteLine($"\t\t\t {servicesListName}.Add(new {type.Name}());");
+                            if (!string.IsNullOrEmpty(forwarderName))
+                            {
+                                streamWriter.WriteLine($"\t\t\t {servicesListName}.Add(new {forwarderName}(new {type.Name}()));");
+                            }
+                            else
+                            {
+                                streamWriter.WriteLine($"\t\t\t {servicesListName}.Add(new {type.Name}());");
+                            }
                         }
                 }
 

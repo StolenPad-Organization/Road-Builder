@@ -19,12 +19,12 @@ namespace HomaGames.HomaBelly
             }
             
             editorPrefKey = editorPrefKey ?? $"homagames.{symbol.ToLower()}_on_first_install";
-            var enabledOnce = EditorPrefs.GetInt(editorPrefKey, 0) == 1;
+            var enabledOnce = ProjectPrefs.IsToggleSet(editorPrefKey);
             
             if (!enabledOnce)
             {
                 SetDefineSymbolValue(symbol, value);
-                EditorPrefs.SetInt(editorPrefKey, 1);
+                ProjectPrefs.SetToggle(editorPrefKey);
             }
         }
 

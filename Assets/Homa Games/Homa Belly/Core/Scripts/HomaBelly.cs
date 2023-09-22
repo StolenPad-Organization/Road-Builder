@@ -1,7 +1,9 @@
 ﻿ using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using UnityEngine;
+ using System.Dynamic;
+ using System.Threading.Tasks;
+ using JetBrains.Annotations;
+ using UnityEngine;
 using UnityEngine.Scripting;
 
 namespace HomaGames.HomaBelly
@@ -173,6 +175,17 @@ namespace HomaGames.HomaBelly
                     });
             }
         }
+        
+                
+        [NotNull, ItemNotNull, Pure]
+        private static List<IAttribution> GetAllAttributionDependencies()
+        {
+#if UNITY_EDITOR
+            return new List<IAttribution>();
+#else
+            return HomaBridgeDependencies.GetAttributions(out var attributions) ? attributions : new List<IAttribution>();
+#endif
+        }
 
         #region IHomaBellyBridge
 
@@ -184,12 +197,12 @@ namespace HomaGames.HomaBelly
         // Rewarded Video Ads
         public void LoadExtraRewardedVideoAd(string placementId)
         {
-            homaBridge.LoadExtraRewardedVideoAd(placementId);
+            AfterInitialization(() => homaBridge.LoadExtraRewardedVideoAd(placementId));
         }
 
         public void LoadHighValueRewardedVideoAd()
         {
-            homaBridge.LoadHighValueRewardedVideoAd();
+            AfterInitialization(homaBridge.LoadHighValueRewardedVideoAd);
         }
 
         public void ShowRewardedVideoAd(string placementName, string placementId = null)
@@ -270,12 +283,12 @@ namespace HomaGames.HomaBelly
 
         public void LoadExtraInterstitial(string placementId)
         {
-            homaBridge.LoadExtraInterstitial(placementId);
+            AfterInitialization(() => homaBridge.LoadExtraInterstitial(placementId));
         }
 
         public void LoadHighValueInterstitial()
         {
-            homaBridge.LoadHighValueInterstitial();
+            AfterInitialization(homaBridge.LoadHighValueInterstitial);
         }
 
         public void ShowInterstitial(string placementName, string placementId = null)
@@ -323,35 +336,92 @@ namespace HomaGames.HomaBelly
         }
 
 #if UNITY_PURCHASING
+        [Obsolete("Use HomaGames.HomaBelly.Analytics.TrackInAppPurchaseEvent instead")]
         public void TrackInAppPurchaseEvent(UnityEngine.Purchasing.Product product, bool isRestored = false)
         {
-            homaBridge.TrackInAppPurchaseEvent(product);
+            AnalyticsEventTracker.TrackInAppPurchaseEvent(product, isRestored);
         }
 #endif
 
         public void TrackInAppPurchaseEvent(string productId, string currencyCode, double unitPrice, string transactionId = null, string payload = null, bool isRestored = false)
         {
-            homaBridge.TrackInAppPurchaseEvent(productId, currencyCode, unitPrice, transactionId, payload);
+            ProductCategory productCategory = ProductCategory.Other;
+            CurrencyType currencyType = CurrencyType.Other;
+            int amount = 0;
+            #if HOMA_STORE
+            //TODO get productCategory, currencyType and amount from Catalog
+            #endif
+            AnalyticsEventTracker.TrackInAppPurchaseEvent(productCategory, productId, currencyCode, unitPrice, currencyType, amount, transactionId, payload, isRestored);
         }
 
+        [Obsolete("Use HomaGames.HomaBelly.Analytics.ResourceFlowEvent or HomaGames.HomaBelly.Analytics.ItemObtained instead")]
         public void TrackResourceEvent(ResourceFlowType flowType, string currency, float amount, string itemType, string itemId)
         {
-            homaBridge.TrackResourceEvent(flowType, currency, amount, itemType, itemId);
+            HomaGamesLog.Warning($"[Analytics] Obsolete TrackResourceEvent method. Please use HomaGames.HomaBelly.Analytics.ResourceFlowEvent or HomaGames.HomaBelly.Analytics.ItemObtained instead");
+            Analytics.ResourceFlowEvent(flowType, currency, amount, 0, ResourceFlowReason.Obsolete);
+
+            // In order to still support legacy invocations to this method, if there is an informed `itemId`
+            // we send an `ItemObtained` or `ItemConsumed` event depending on the `ResourceFlowType`
+            if (!string.IsNullOrEmpty(itemId))
+            {
+                switch (flowType)
+                {
+                    case ResourceFlowType.Undefined:
+                        break;
+                    case ResourceFlowType.Source:
+                        Analytics.ItemObtained(itemId, 0, ItemFlowReason.Obsolete);
+                        break;
+                    case ResourceFlowType.Sink:
+                        Analytics.ItemConsumed(itemId, 0, ItemFlowReason.Obsolete);
+                        break;
+                    default:
+                        // NO-OP
+                        break;
+                }   
+            }
         }
 
+        [Obsolete("Use the new HomaGames.HomaBelly.Analytics.Level* or HomaGames.HomaBelly.Analytics.Checkpoint methods instead")]
         public void TrackProgressionEvent(ProgressionStatus progressionStatus, string progression01, int score = 0)
         {
-            homaBridge.TrackProgressionEvent(progressionStatus, progression01, score);
+            HomaGamesLog.Warning($"[Analytics] Obsolete TrackProgressionEvent method. Please use the new HomaGames.HomaBelly.Analytics.Level* or HomaGames.HomaBelly.Analytics.Checkpoint methods instead");
+
+            if (int.TryParse(progression01, out int level))
+            {
+                switch (progressionStatus)
+                {
+                    case ProgressionStatus.Undefined:
+                        Analytics.DesignEvent("progression_event", new DesignDimensions(key1:progressionStatus.ToString(), key2:progression01, score:score));
+                        break;
+                    case ProgressionStatus.Start:
+                        Analytics.LevelStarted(level);
+                        break;
+                    case ProgressionStatus.Complete:
+                        Analytics.LevelCompleted();
+                        break;
+                    case ProgressionStatus.Fail:
+                        Analytics.LevelFailed();
+                        break;
+                }
+            }
+            else
+            {
+                Analytics.DesignEvent("progression_event", new DesignDimensions(key1:progressionStatus.ToString(), key2:progression01, score:score));
+            }
         }
 
+        [Obsolete("Use the new HomaGames.HomaBelly.Analytics.Level* or HomaGames.HomaBelly.Analytics.Checkpoint methods instead")]
         public void TrackProgressionEvent(ProgressionStatus progressionStatus, string progression01, string progression02, int score = 0)
         {
-            homaBridge.TrackProgressionEvent(progressionStatus, progression01, progression02, score);
+            HomaGamesLog.Warning($"[Analytics] Obsolete TrackProgressionEvent method. Please use the new HomaGames.HomaBelly.Analytics.Level* or HomaGames.HomaBelly.Analytics.Checkpoint methods instead");
+            Analytics.DesignEvent("progression_event", new DesignDimensions(key1:progressionStatus.ToString(), key2:progression01, key3:progression02, score:score));
         }
 
+        [Obsolete("Use the new HomaGames.HomaBelly.Analytics.Level* or HomaGames.HomaBelly.Analytics.Checkpoint methods instead")]
         public void TrackProgressionEvent(ProgressionStatus progressionStatus, string progression01, string progression02, string progression03, int score = 0)
         {
-            homaBridge.TrackProgressionEvent(progressionStatus, progression01, progression02, progression03, score);
+            HomaGamesLog.Warning($"[Analytics] Obsolete TrackProgressionEvent method. Please use the new HomaGames.HomaBelly.Analytics.Level* or HomaGames.HomaBelly.Analytics.Checkpoint methods instead");
+            Analytics.DesignEvent("progression_event", new DesignDimensions(key1:progressionStatus.ToString(), key2:progression01, key3:progression02, key4:progression03, score:score));
         }
 
         public void TrackErrorEvent(ErrorSeverity severity, string message)
@@ -359,21 +429,30 @@ namespace HomaGames.HomaBelly
             homaBridge.TrackErrorEvent(severity, message);
         }
 
+        [Obsolete("Use HomaGames.HomaBelly.Analytics.DesignEvent instead")]
         public void TrackDesignEvent(string eventName, float eventValue = 0)
         {
-            homaBridge.TrackDesignEvent(eventName, eventValue);
+            HomaGamesLog.Warning($"[Analytics] Obsolete TrackDesignEvent method. Please use the new HomaGames.HomaBelly.Analytics.DesignEvent instead");
+            Analytics.DesignEvent(eventName, eventValue != 0 ? new DesignDimensions(score:eventValue) : null);
         }
 
+        [Obsolete("If this is a suggested ad, use HomaGames.HomaBelly.Analytics.SuggestedRewardedAd instead. Other ad events are automated.")]
         public void TrackAdEvent(AdAction adAction, AdType adType, string adNetwork, string adPlacementId)
         {
-            homaBridge.TrackAdEvent(adAction, adType, adNetwork, adPlacementId);
+            HomaGamesLog.Warning($"[Analytics] Obsolete TrackAdEvent method. Please use the new HomaGames.HomaBelly.Analytics.SuggestedRewardedAd or remove this call.");
+            Analytics.DesignEvent("TrackAdEvent", new DesignDimensions(adAction.ToString(), adType.ToString(), adNetwork, adPlacementId));
         }
 
         public void TrackAdRevenue(AdRevenueData adRevenueData)
         {
-            homaBridge.TrackAdRevenue(adRevenueData);
+            AnalyticsEventTracker.TrackAdRevenue(adRevenueData);
         }
 
+        /// <summary>
+        /// Tracks an event on the attribution platform
+        /// </summary>
+        /// <param name="eventName">The event name</param>
+        /// <param name="arguments">(Optional) Additional arguments. Dictionary values must have one of these types: string, int, long, float, double, null, List, Dictionary&lt;String,object&gt;</param>
         public void TrackAttributionEvent(string eventName, Dictionary<string, object> arguments = null)
         {
             homaBridge.TrackAttributionEvent(eventName, arguments);
@@ -395,5 +474,18 @@ namespace HomaGames.HomaBelly
         }
 
         #endregion
+
+        private void AfterInitialization(Action action)
+        {
+            
+            if (IsInitialized)
+            {
+                action();
+            }
+            else
+            {
+                Events.onInitialized += action;
+            }
+        }
     }
 }

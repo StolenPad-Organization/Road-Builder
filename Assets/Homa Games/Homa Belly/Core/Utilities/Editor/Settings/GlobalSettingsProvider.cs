@@ -29,13 +29,6 @@ namespace HomaGames.HomaBelly
                     SettingsTooltip = "Homa Belly by default does override Unity's Debug class for optimization reasons. Disabling it will affect performance on mobile devices",
                     DefaultValue = true,
                     DefaultValuePrefKey = "homagames.debug_override_enabled_on_first_install"
-                },
-                new DefineSymbolSettingsElement
-                {
-                    DefineSymbolName = "HOMA_BELLY_DEFAULT_ANALYTICS_ENABLED",
-                    SettingsName = "Default Analytics",
-                    SettingsTooltip = "Default analytics can be disabled in case you already have a custom analytics system in your project",
-                    DefaultValue = true
                 }
             }));
         }

@@ -23,8 +23,8 @@ namespace HomaGames.HomaBelly {
         private const string DEVELOPMENT_MODE_CONSISTENCY_STORAGE_KEY = "homagames.development_mode_consistency_key";
 
         private static bool ShowWarningWindow {
-            get => EditorPrefs.GetBool(DEVELOPMENT_MODE_SHOW_WARNING_PREF_KEY, true) && !Application.isBatchMode;
-            set => EditorPrefs.SetBool(DEVELOPMENT_MODE_SHOW_WARNING_PREF_KEY, value); 
+            get => (!ProjectPrefs.TryGet(DEVELOPMENT_MODE_SHOW_WARNING_PREF_KEY, out bool val) || val) && !Application.isBatchMode;
+            set => ProjectPrefs.Set(DEVELOPMENT_MODE_SHOW_WARNING_PREF_KEY, value); 
         }
         // ReSharper restore UnusedMember.Local
 

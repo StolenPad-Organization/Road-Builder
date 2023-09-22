@@ -67,9 +67,11 @@ namespace HomaGames.HomaBelly
         public string NTestingId { get; set; }
         public string NTestingOverrideId { get; set; }
         /// <summary>
-        /// Unique event id
+        /// Unique event id.
+        ///
+        /// Homa Analytics will be able to replace this with any desired EventId if informed to do so
         /// </summary>
-        public string EventId { get; }
+        public string EventId { get; protected set; }
         
         // Frequently changed from event to event
         public string EventCategory { get; protected set; }

@@ -15,7 +15,8 @@ namespace HomaGames.HomaBelly
         static void MigrateToLatest()
         {
             string currentVersion = HomaBellyConstants.PRODUCT_VERSION;
-            string latestInstalledVersion = EditorPrefs.GetString(LATEST_VERSION_INSTALLED_KEY, "");
+            
+            ProjectPrefs.TryGet(LATEST_VERSION_INSTALLED_KEY, out string latestInstalledVersion);
 
             // If the same version, do nothing
             if (!string.IsNullOrEmpty(latestInstalledVersion) && latestInstalledVersion == currentVersion)
@@ -40,7 +41,7 @@ namespace HomaGames.HomaBelly
             }
 
             // Save latest installed version as current one
-            EditorPrefs.SetString(LATEST_VERSION_INSTALLED_KEY, currentVersion);
+            ProjectPrefs.Set(LATEST_VERSION_INSTALLED_KEY, currentVersion);
         }
     }
 }

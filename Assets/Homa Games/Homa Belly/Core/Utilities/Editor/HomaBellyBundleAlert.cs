@@ -22,7 +22,7 @@ namespace HomaGames.HomaBelly
                 return;
             }
             
-            if (!EditorPrefs.HasKey(BUNDLE_BEST_PRACTICE_ALERT_SHOWN))
+            if (!ProjectPrefs.IsToggleSet(BUNDLE_BEST_PRACTICE_ALERT_SHOWN))
             {
                 string androidBundleId = PlayerSettings.GetApplicationIdentifier(BuildTargetGroup.Android);
                 string iosBundleId = PlayerSettings.GetApplicationIdentifier(BuildTargetGroup.iOS);
@@ -61,7 +61,7 @@ namespace HomaGames.HomaBelly
                     }
 
                     // Avoid showing this in the future
-                    EditorPrefs.SetBool(BUNDLE_BEST_PRACTICE_ALERT_SHOWN, true);
+                    ProjectPrefs.SetToggle(BUNDLE_BEST_PRACTICE_ALERT_SHOWN);
                 }
             }
         }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using HomaGames.HomaBelly.Internal.Analytics;
 using HomaGames.HomaBelly.Utilities;
 using UnityEngine;
 
@@ -108,7 +109,7 @@ namespace HomaGames.HomaBelly
             // Analytics
             if (HomaBridgeDependencies.GetAnalytics(out var analytics))
             {
-                foreach (IAnalytics analytic in analytics)
+                foreach (AnalyticsBase analytic in analytics)
                 {
                     analytic.ValidateIntegration();
                 }
@@ -174,7 +175,7 @@ namespace HomaGames.HomaBelly
 
         public void ShowRewardedVideoAd(string placementName, string placementId = null)
         {
-            DefaultAnalytics.RewardedAdTriggered(placementName,placementId==null ? AdPlacementType.Default : AdPlacementType.User);
+            Analytics.RewardedAdTriggered(placementName,placementId==null ? AdPlacementType.Default : AdPlacementType.User);
 
             if (HomaBridgeDependencies.GetMediators(out var mediators))
             {
@@ -195,7 +196,7 @@ namespace HomaGames.HomaBelly
 
         public void ShowHighValueRewardedVideoAd(string placementName)
         {
-            DefaultAnalytics.RewardedAdTriggered(placementName,AdPlacementType.HighValue);
+            Analytics.RewardedAdTriggered(placementName,AdPlacementType.HighValue);
 
             if (HomaBridgeDependencies.GetMediators(out var mediators))
             {
@@ -245,8 +246,6 @@ namespace HomaGames.HomaBelly
         // Banners
         public void LoadBanner(BannerSize size, BannerPosition position, string placementId = null, UnityEngine.Color bannerBackgroundColor = default)
         {
-            TrackAdEvent(AdAction.Request, AdType.Banner, "homagames.homabelly.default", placementId);
-
             if (HomaBridgeDependencies.GetMediators(out var mediators ))
             {
                 foreach (MediatorBase mediator in mediators)
@@ -382,7 +381,7 @@ namespace HomaGames.HomaBelly
 
         public void ShowInterstitial(string placementName, string placementId = null)
         {
-            DefaultAnalytics.InterstitialAdTriggered(placementName,placementId==null? AdPlacementType.Default : AdPlacementType.User);
+            Analytics.InterstitialAdTriggered(placementName,placementId==null? AdPlacementType.Default : AdPlacementType.User);
             if (HomaBridgeDependencies.GetMediators(out var mediators))
             {
                 foreach (MediatorBase mediator in mediators)
@@ -402,7 +401,7 @@ namespace HomaGames.HomaBelly
 
         public void ShowHighValueInterstitial(string placementName)
         {
-            DefaultAnalytics.InterstitialAdTriggered(placementName,AdPlacementType.HighValue);
+            Analytics.InterstitialAdTriggered(placementName,AdPlacementType.HighValue);
             if (HomaBridgeDependencies.GetMediators(out var mediators))
             {
                 foreach (MediatorBase mediator in mediators)
@@ -480,7 +479,7 @@ namespace HomaGames.HomaBelly
             // For analytics
             if (HomaBridgeDependencies.GetAnalytics(out var analytics))
             {
-                foreach (IAnalytics analytic in analytics)
+                foreach (AnalyticsBase analytic in analytics)
                 {
                     analytic.SetUserIsAboveRequiredAge(consent);
                 }
@@ -519,7 +518,7 @@ namespace HomaGames.HomaBelly
             // For analytics
             if (HomaBridgeDependencies.GetAnalytics(out var analytics))
             {
-                foreach (IAnalytics analytic in analytics)
+                foreach (AnalyticsBase analytic in analytics)
                 {
                     analytic.SetTermsAndConditionsAcceptance(consent);
                 }
@@ -558,7 +557,7 @@ namespace HomaGames.HomaBelly
             // For analytics
             if (HomaBridgeDependencies.GetAnalytics(out var analytics))
             {
-                foreach (IAnalytics analytic in analytics)
+                foreach (AnalyticsBase analytic in analytics)
                 {
                     analytic.SetAnalyticsTrackingConsentGranted(consent);
                 }
@@ -597,7 +596,7 @@ namespace HomaGames.HomaBelly
             // For analytics
             if (HomaBridgeDependencies.GetAnalytics(out var analytics))
             {
-                foreach (IAnalytics analytic in analytics)
+                foreach (AnalyticsBase analytic in analytics)
                 {
                     analytic.SetTailoredAdsConsentGranted(consent);
                 }
@@ -607,105 +606,34 @@ namespace HomaGames.HomaBelly
 #if UNITY_PURCHASING
         public void TrackInAppPurchaseEvent(UnityEngine.Purchasing.Product product, bool isRestored = false)
         {
-            /*
-                As per today we don't want to track IAP events on our attribution (Singular). Reasons are:
-                - This data is highly inaccurate on Singular and our data department is not using it at all
-                - IAP data is tracked through RevenueCat <> Singular which should be quite more accurate
-                
-                TODO: We can make this attribution track optional from Homa Lab manifest
-                See: https://app.asana.com/0/0/1201351293892694/f
-            if (HomaBridgeDependencies.GetAttributions(out var attributions))
-            {
-                foreach (IAttribution attribution in attributions)
-                {
-                    attribution.TrackInAppPurchaseEvent(product, isRestored);
-                }
-            }
-            */
-
-            // For analytics
-            if (HomaBridgeDependencies.GetAnalytics(out var analytics))
-            {
-                foreach (IAnalytics analytic in analytics)
-                {
-                    analytic.TrackInAppPurchaseEvent(product, isRestored);
-                }
-            }
         }
 #endif
 
         public void TrackInAppPurchaseEvent(string productId, string currencyCode, double unitPrice, string transactionId = null, string payload = null, bool isRestored = false)
         {
-            // IAP events are applicable to Attributions and Analytics
-
-            // For attributions
-            if (HomaBridgeDependencies.GetAttributions(out var attributions))
-            {
-                foreach (IAttribution attribution in attributions)
-                {
-                    attribution.TrackInAppPurchaseEvent(productId, currencyCode, unitPrice, transactionId, payload);
-                }
-            }
-
-            // For analytics
-            if (HomaBridgeDependencies.GetAnalytics(out var analytics))
-            {
-                foreach (IAnalytics analytic in analytics)
-                {
-                    analytic.TrackInAppPurchaseEvent(productId, currencyCode, unitPrice, transactionId, payload);
-                }
-            }
         }
-
+        
         public void TrackResourceEvent(ResourceFlowType flowType, string currency, float amount, string itemType, string itemId)
         {
-            if (HomaBridgeDependencies.GetAnalytics(out var analytics))
-            {
-                foreach (IAnalytics analytic in analytics)
-                {
-                    analytic.TrackResourceEvent(flowType, currency, amount, itemType, itemId);
-                }
-            }
         }
 
         public void TrackProgressionEvent(ProgressionStatus progressionStatus, string progression01, int score = 0)
         {
-            if (HomaBridgeDependencies.GetAnalytics(out var analytics))
-            {
-                foreach (IAnalytics analytic in analytics)
-                {
-                    analytic.TrackProgressionEvent(progressionStatus, progression01, score);
-                }
-            }
         }
 
         public void TrackProgressionEvent(ProgressionStatus progressionStatus, string progression01, string progression02, int score = 0)
         {
-            if (HomaBridgeDependencies.GetAnalytics(out var analytics))
-            {
-                foreach (IAnalytics analytic in analytics)
-                {
-                    analytic.TrackProgressionEvent(progressionStatus, progression01, progression02, score);
-                }
-            }
         }
 
         public void TrackProgressionEvent(ProgressionStatus progressionStatus, string progression01, string progression02, string progression03, int score = 0)
         {
-            if (HomaBridgeDependencies.GetAnalytics(out var analytics))
-            {
-                foreach (IAnalytics analytic in analytics)
-                {
-                    analytic.TrackProgressionEvent(progressionStatus, progression01, progression02, progression03, score);
-                }
-            }
         }
 
         public void TrackErrorEvent(ErrorSeverity severity, string message)
         {
             if (HomaBridgeDependencies.GetAnalytics(out var analytics))
             {
-                foreach (IAnalytics analytic in analytics)
+                foreach (AnalyticsBase analytic in analytics)
                 {
                     analytic.TrackErrorEvent(severity, message);
                 }
@@ -714,24 +642,10 @@ namespace HomaGames.HomaBelly
 
         public void TrackDesignEvent(string eventName, float eventValue = 0f)
         {
-            if (HomaBridgeDependencies.GetAnalytics(out var analytics))
-            {
-                foreach (IAnalytics analytic in analytics)
-                {
-                    analytic.TrackDesignEvent(eventName, eventValue);
-                }
-            }
         }
 
         public void TrackAdEvent(AdAction adAction, AdType adType, string adNetwork, string adPlacementId)
         {
-            if (HomaBridgeDependencies.GetAnalytics(out var analytics))
-            {
-                foreach (IAnalytics analytic in analytics)
-                {
-                    analytic.TrackAdEvent(adAction, adType, adNetwork, adPlacementId);
-                }
-            }
         }
 
         public void TrackAdRevenue(AdRevenueData adRevenueData)
@@ -746,12 +660,9 @@ namespace HomaGames.HomaBelly
 
             if (HomaBridgeDependencies.GetAnalytics(out var analytics))
             {
-                foreach (IAnalytics analytic in analytics)
+                foreach (AnalyticsBase analytic in analytics)
                 {
-                    if (analytic is IAnalyticsAdRevenue instance)
-                    {
-                        instance.TrackAdRevenue(adRevenueData);
-                    }
+                    analytic.TrackAdRevenue(adRevenueData);
                 }
             }
         }
@@ -771,12 +682,9 @@ namespace HomaGames.HomaBelly
         {
             if (HomaBridgeDependencies.GetAnalytics(out var analytics))
             {
-                foreach (IAnalytics analytic in analytics)
+                foreach (AnalyticsBase analytic in analytics)
                 {
-                    if (analytic is ICustomDimensions instance)
-                    {
-                        instance.SetCustomDimension01(customDimension);
-                    }
+                    analytic.SetCustomDimension01(customDimension);
                 }
             }
         }
@@ -785,12 +693,9 @@ namespace HomaGames.HomaBelly
         {
             if (HomaBridgeDependencies.GetAnalytics(out var analytics))
             {
-                foreach (IAnalytics analytic in analytics)
+                foreach (AnalyticsBase analytic in analytics)
                 {
-                    if (analytic is ICustomDimensions instance)
-                    {
-                        instance.SetCustomDimension02(customDimension);
-                    }
+                    analytic.SetCustomDimension02(customDimension);
                 }
             }
         }
@@ -799,12 +704,9 @@ namespace HomaGames.HomaBelly
         {
             if (HomaBridgeDependencies.GetAnalytics(out var analytics))
             {
-                foreach (IAnalytics analytic in analytics)
+                foreach (AnalyticsBase analytic in analytics)
                 {
-                    if (analytic is ICustomDimensions instance)
-                    {
-                        instance.SetCustomDimension03(customDimension);
-                    }
+                    analytic.SetCustomDimension03(customDimension);
                 }
             }
         }
@@ -947,20 +849,11 @@ namespace HomaGames.HomaBelly
                 return;
             }
             
-            foreach (IAnalytics analytic in analytics)
+            foreach (AnalyticsBase analytic in analytics)
             {
                 try
                 {
-                    // For Homa Belly v1.2.0+
-                    if (analytic is IAnalyticsWithInitializationCallback instance)
-                    {
-                        instance.Initialize(initializationStatus.OnInnerComponentInitialized);
-                    }
-                    else
-                    {
-                        // For Homa Belly prior 1.2.0
-                        analytic.Initialize();
-                    }
+                    analytic.Initialize(initializationStatus.OnInnerComponentInitialized);
                 }
                 catch (Exception e)
                 {

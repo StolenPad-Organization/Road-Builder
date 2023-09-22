@@ -10,8 +10,8 @@ namespace HomaGames.HomaBelly
         protected long LastTimeReported
         {
             get =>
-                long.Parse(EditorPrefs.GetString(LAST_PACKAGE_REPORT_KEY, "0"));
-            set => EditorPrefs.SetString(LAST_PACKAGE_REPORT_KEY, value.ToString());
+                long.Parse(ProjectPrefs.TryGet(LAST_PACKAGE_REPORT_KEY, out string val) ? val : "0");
+            set => ProjectPrefs.Set(LAST_PACKAGE_REPORT_KEY, value.ToString());
         }
 
         protected bool CanReport => DateTimeOffset.UtcNow.ToUnixTimeSeconds() - LastTimeReported >= MinTimeInSecondsBetweenReports;

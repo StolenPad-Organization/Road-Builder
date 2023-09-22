@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using HomaGames.HomaBelly.Internal.Analytics;
 using HomaGames.HomaBelly.Utilities;
 using JetBrains.Annotations;
 using UnityEditor;
@@ -97,7 +98,7 @@ namespace HomaGames.HomaBelly
             }
             else
             {
-                DefaultAnalytics.RewardedAdTriggered(placementName,placementId==null? AdPlacementType.Default : AdPlacementType.User);
+                Analytics.RewardedAdTriggered(placementName,placementId==null? AdPlacementType.Default : AdPlacementType.User);
                 m_events.OnRewardedVideoAdStartedEvent(new AdInfo(placementId,AdType.RewardedVideo,AdPlacementType.Default));
                 ShowDummyRewardedAd(placementName,placementId);
             }
@@ -262,7 +263,7 @@ namespace HomaGames.HomaBelly
                 m_events.OnInterstitialAdClosedEvent(new AdInfo(placementId,AdType.Interstitial,AdPlacementType.Default));
                 UnityEngine.Object.Destroy(dummyInterstitial);
             });
-            DefaultAnalytics.InterstitialAdTriggered(placementName, placementId==null? AdPlacementType.Default : AdPlacementType.User);
+            Analytics.InterstitialAdTriggered(placementName, placementId==null? AdPlacementType.Default : AdPlacementType.User);
             m_events.OnInterstitialAdShowSucceededEvent(new AdInfo(placementId,AdType.Interstitial,AdPlacementType.Default));
 
             analyticsHelper.OnInterstitialAdWatched();
@@ -357,7 +358,7 @@ namespace HomaGames.HomaBelly
 
         public void TrackAttributionEvent(string eventName, Dictionary<string, object> arguments = null)
         {
-            DummyEvent(eventName, "Arguments=" + Json.Serialize(arguments));
+            DummyEvent(eventName, "arguments=" + Json.Serialize(arguments));
         }
 
         public void SetCustomDimension01(string customDimension)
@@ -377,7 +378,7 @@ namespace HomaGames.HomaBelly
 
         private void DummyEvent(string eventName, params string[] p)
         {
-            var str = "[Homa Belly] Tracking " + eventName + " Event : ";
+            var str = $"[Homa Belly] Tracking Event : eventName={eventName}";
             foreach (string param in p)
                 str += " " + param;
             HomaGamesLog.Debug(str);
