@@ -85,6 +85,10 @@ public class ZoneManager : MonoBehaviour
         {
             removableBlock.SetActive(false);
             lockedBlocks.SetActive(true);
+#if UNITY_EDITOR
+            UnityEditor.EditorUtility.SetDirty(removableBlock);
+            UnityEditor.EditorUtility.SetDirty(lockedBlocks);
+#endif
         }
     }
 

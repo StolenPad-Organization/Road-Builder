@@ -143,6 +143,11 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.layer != 21) return;
+            RemoveWalkTrigger();
+    }
+
+    public void RemoveWalkTrigger()
+    {
         walkTriggersCount--;
         if (mount != null && walkTriggersCount == 0)
             SetWalkType(mount.WalkType);
