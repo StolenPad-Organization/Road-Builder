@@ -44,7 +44,10 @@ public class ScrapeTool : MonoBehaviour
         {
             transform.SetParent(PlayerController.instance.showPos);
             PlayerController.instance.movementController.ToggleMovementAnimation(true);
-            PlayerController.instance.movementController.canRecoverSpeed = false;
+            if(toolAngleController == null)
+                PlayerController.instance.movementController.canRecoverSpeed = false;
+            else
+                PlayerController.instance.movementController.canRecoverSpeed = true;
             showCollider.SetActive(true);
             hideCollider.SetActive(false);
 

@@ -22,16 +22,29 @@ MonoBehaviour:
     - KeyIMediatorCity Builder
     - KeyIAttributionCity Builder
     - KeyAnalyticsBaseCity Builder
+    - KeyIAnalyticsCity Builder
+    - KeyCustomerSupportImplementationCity Builder
+    - homa_last_PackageReporter_date
+    - homa_last_UsageReporter_date
+    - homa_last_PerformanceReporter_date
     Values:
     - 1.8.3
     - 
     - 
     - HomaGames.HomaBelly.AdjustAttributionAdapter
     - HomaGames.HomaBelly.AnalyticsInterfaceForwarder
+    - HomaGames.HomaBelly.FacebookImplementation,HomaGames.HomaBelly.GameAnalyticsImplementation,HomaGames.HomaBelly.HomaAnalyticsAdapter
+    - 
+    - 1695331080
+    - 1695408255
+    - 1695408256
   BoolStore:
     Keys: []
     Values: 
   FloatStore:
     Keys: []
     Values: []
-  ToggleList: []
+  ToggleList:
+  - homagames.homabelly.bundle_best_practice_alert_shown
+  - homagames.development_mode_enabled_on_first_install
+  - homagames.debug_override_enabled_on_first_install
