@@ -459,6 +459,10 @@ public class ZoneManager : MonoBehaviour
                 {
                     item.SetActive(false);
                 }
+                if (lockedBlocks != null)
+                {
+                    lockedBlocks.SetActive(false);
+                }
                 break;
             case ZoneState.Locked:
                 upgrades.SetActive(false);

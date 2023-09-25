@@ -496,24 +496,33 @@ public class PlayerController : MonoBehaviour
     public void SetWalkType(int _walkType)
     {
         model.transform.DOKill();
-        mount.transform.DOKill();
+        if (mount != null)
+            mount.transform.DOKill();
         walkType = _walkType;
-        if(walkType != 0)
+        if (walkType != 0)
         {
             model.transform.DOLocalMove(mountingPos, 0.5f);
-            mount.gameObject.SetActive(true);
-            mount.transform.DOScale(Vector3.one, 0.5f);
+            if (mount != null)
+            {
+                mount.gameObject.SetActive(true);
+                mount.transform.DOScale(Vector3.one, 0.5f);
+            }
         }
         else
         {
             model.transform.DOLocalMove(Vector3.zero, 0.5f);
-            mount.transform.DOScale(Vector3.zero, 0.5f).OnComplete(() => mount.gameObject.SetActive(false));
+            if (mount != null)
+                mount.transform.DOScale(Vector3.zero, 0.5f).OnComplete(() => mount.gameObject.SetActive(false));
         }
-        movementController.SetWalkType(walkType, mount.speedMultiplier);
+        if (mount != null)
+            movementController.SetWalkType(walkType, mount.speedMultiplier);
+        else
+            movementController.SetWalkType(walkType, 100);
     }
 
     public void SetWalkType()
     {
-        SetWalkType(mount.WalkType);
+        if (mount != null)
+            SetWalkType(mount.WalkType);
     }
 }
