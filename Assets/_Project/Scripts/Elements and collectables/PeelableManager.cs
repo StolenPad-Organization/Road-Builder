@@ -349,6 +349,25 @@ public class PeelableManager : MonoBehaviour
         }
         return target;
     }
+    public Peelable ReturnNearestPeelable(Vector3 position)
+    {
+        CheckCurrentBlock();
+        var parts = peelableParts.Where(t => !t.peeled && !t.sold && !t.collected && t.blockNumber == currentBlockNumber).ToList();
+        Peelable target = null;
+        if (parts.Count <= 0) return null;
+        target = parts[0];
+        float closestDistance = math.distance(target.transform.position, position);
+        for (int i = 1; i < parts.Count(); i++)
+        {
+            var tmpDistance = math.distance(parts[i].transform.position, position);
+            if (tmpDistance < closestDistance)
+            {
+                target = parts[i];
+                closestDistance = tmpDistance;
+            }
+        }
+        return target;
+    }
 
     public Peelable ReturnPeelableWithIndex(int index)
     {

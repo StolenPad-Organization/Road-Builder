@@ -10,7 +10,7 @@ public class RBManagerJobs : SingletonMB<RBManagerJobs>
 {
     [SerializeField] private RBTile[] rbTiles;
     [SerializeField] private float radius;
-    [SerializeField] private Transform target;
+    [SerializeField] private Transform[] targets;
 
     [SerializeField] private List<RBHandler> handlers = new List<RBHandler>();
     private Dictionary<byte, List<RBHandler>> subscribedNewHandlers = new Dictionary<byte, List<RBHandler>>();
@@ -36,7 +36,7 @@ public class RBManagerJobs : SingletonMB<RBManagerJobs>
 
     public void SetTarget(Transform _target)
     {
-        target = _target;
+        targets[0] = _target;
     }
 
     public void SetRadius(float _radius)
@@ -55,8 +55,13 @@ public class RBManagerJobs : SingletonMB<RBManagerJobs>
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        if (target == null) return;
-        Gizmos.DrawWireSphere(target.position, radius);
+        if (targets[0] == null) return;
+        Gizmos.DrawWireSphere(targets[0].position, radius);
+
+        Gizmos.color = Color.black;
+
+        if (targets[1] == null) return;
+        Gizmos.DrawWireSphere(targets[1].position, radius);
     }
 
     protected void InitializeIt()
@@ -107,8 +112,9 @@ public class RBManagerJobs : SingletonMB<RBManagerJobs>
         {
             rbPositions = rbPositions,
             agentStates = agentStates,
-            playerPosition = target.position,
-            radius = radius
+            playerPosition = targets[0].position,
+            AIPosition = targets[1].position,
+            radius = radius 
         };
     }
 
@@ -173,11 +179,13 @@ public class RBManagerJobs : SingletonMB<RBManagerJobs>
         public NativeArray<float3> rbPositions;
         public NativeArray<bool> agentStates;
         public float3 playerPosition;
-        public float radius;
+        public float3 AIPosition;
+        public float radius;    
 
         public void Execute(int index)
         {
-            agentStates[index] = math.distance(rbPositions[index], playerPosition) <= radius;
+            bool state = math.distance(rbPositions[index], playerPosition) <= radius || math.distance(rbPositions[index], AIPosition) <= radius;
+            agentStates[index] = state;
         }
     }
 }

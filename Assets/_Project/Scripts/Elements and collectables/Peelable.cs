@@ -8,8 +8,8 @@ public class Peelable : MonoBehaviour
 {
     public int index;
     public float power;
-    private float initialPower;
-    [SerializeField] private float speedAmount;
+    public float initialPower;
+    public float speedAmount;
     [SerializeField] private CollectableType collectableType;
     public MeshFilter peelableMeshFilter;
     public MeshRenderer peelableRenderer;
@@ -41,38 +41,51 @@ public class Peelable : MonoBehaviour
         initialPower = power;
     }
 
-    private void OnTriggerEnter(Collider other)
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
+    //    if (other.CompareTag("Collector")) return;
+    //    CollectPeeled();
+    //}
+
+    public void CollectPeeled()
     {
-        if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
-        if (other.CompareTag("Collector")) return;
         if (!peeled)
         {
-            if(!moved)
+            if (!moved)
+            {
                 PlayEffect();
-            rb.constraints = RigidbodyConstraints.None;
-            moved = true;
-            //peelableRenderer.material.color = movedPieceColor;
-            rb.AddForce(Vector3.up * 4, ForceMode.Impulse);
-            PlayerController.instance.OnPeelableDetection(speedAmount, initialPower, dustColor);
+                rb.constraints = RigidbodyConstraints.None;
+                moved = true;
+                //peelableRenderer.material.color = movedPieceColor;
+                rb.AddForce(Vector3.up * 4, ForceMode.Impulse);
+            }
+         
         }
-        else if(!collected)
-        {
-            PlayerController.instance.OnCollect(this);
-        }
-        if (PlayerController.instance.canDoStrictedHaptic)
-        {
-            EventManager.invokeHaptic.Invoke(vibrationTypes.MediumImpact);
-            PlayerController.instance.canDoStrictedHaptic = false;
-        }
+        //else if (!collected)
+        //{
+        //    PlayerController.instance.OnCollect(this);
+        //}
+        //if (PlayerController.instance.canDoStrictedHaptic)
+        //{
+        //    EventManager.invokeHaptic.Invoke(vibrationTypes.MediumImpact);
+        //    PlayerController.instance.canDoStrictedHaptic = false;
+        //}
     }
 
-    private void OnTriggerStay(Collider other)
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
+    //    if (other.CompareTag("Collector")) return;
+    //    PeeledStay();
+    //}
+
+    public void PeeledStay(float _power)
     {
-        if (zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
-        if (other.CompareTag("Collector")) return;
         if (!peeled)
         {
-            power -= PlayerController.instance.scrapeTool.power;
+          power -= _power;
+
             //PlayerController.instance.scrapeTool.ShakeTool();
             if (power <= 0)
             {
@@ -81,15 +94,15 @@ public class Peelable : MonoBehaviour
                 GameManager.instance.currentZone.OnBlockRemove(blockNumber);
                 SavePeelable();
             }
-            PlayerController.instance.SetScrapingMovementSpeed(speedAmount, initialPower);
+            //PlayerController.instance.SetScrapingMovementSpeed(speedAmount, initialPower);
         }
-        else
-        {
-            PlayerController.instance.SetScrapingMovementSpeed(speedAmount, initialPower);
-        }
+        //else
+        //{
+        //    PlayerController.instance.SetScrapingMovementSpeed(speedAmount, initialPower);
+        //}
     }
 
-    private void PlayEffect()
+    public void PlayEffect()
     {
         ParticleSystem effect = ScrapingEffectPooler.instance.GetEffect();
         effect.transform.position = transform.position;

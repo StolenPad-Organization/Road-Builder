@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PeelableCopy : MonoBehaviour
 {
-    [SerializeField] private Peelable peelable;
+    [SerializeField] public Peelable peelable;
     [SerializeField] private BoxCollider copyCollider;
 
 #if UNITY_EDITOR
@@ -64,14 +64,14 @@ public class PeelableCopy : MonoBehaviour
         copyCollider.enabled = true;
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (peelable.zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
-        if (other.CompareTag("Collector"))
-        {
-            PlayerController.instance.OnCollect(peelable);
-        }
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (peelable.zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
+    //    if (other.CompareTag("Collector"))
+    //    {
+    //        PlayerController.instance.OnCollect(peelable);
+    //    }
+    //}
 
     public void Collect(int index, float collectableOffest, Transform collectableParent)
     {
