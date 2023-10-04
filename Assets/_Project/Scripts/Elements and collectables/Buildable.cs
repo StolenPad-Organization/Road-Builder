@@ -26,9 +26,9 @@ public class Buildable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(PlayerController.instance.asphaltMachine != null)
+        if(GameManager.instance.player.asphaltMachine != null)
         {
-            if(PlayerController.instance.asphaltMachine.UseAsphalt())
+            if(GameManager.instance.player.asphaltMachine.UseAsphalt())
                 BuildPiece();
         }
     }
@@ -39,15 +39,15 @@ public class Buildable : MonoBehaviour
         buildableCollider.enabled = false;
         buildableRenderer.enabled = true;
         float duration = 0.265f;
-        if (PlayerController.instance.asphaltMachine.partsSpawnPoints.Length > 0)
+        if (GameManager.instance.player.asphaltMachine.partsSpawnPoints.Length > 0)
         {
-            transform.position = PlayerController.instance.asphaltMachine.GetNearestSpawnPoint(transform.position).position;
+            transform.position = GameManager.instance.player.asphaltMachine.GetNearestSpawnPoint(transform.position).position;
             transform.localScale = Vector3.one;
             duration = 0.4f;
         }
         else
         {
-            transform.position = PlayerController.instance.asphaltMachine.partsSpawnPoint.position + PlayerController.instance.asphaltMachine.partsSpawnPoint.right * Random.Range(-1.5f, 1.5f);
+            transform.position = GameManager.instance.player.asphaltMachine.partsSpawnPoint.position + GameManager.instance.player.asphaltMachine.partsSpawnPoint.right * Random.Range(-1.5f, 1.5f);
             transform.localScale = Vector3.zero;
         }
         
@@ -75,10 +75,10 @@ public class Buildable : MonoBehaviour
                     SmokePooler.instance.ReturnSmoke(smoke);
             });
 
-        if (PlayerController.instance.canDoStrictedHaptic)
+        if (GameManager.instance.player.canDoStrictedHaptic)
         {
             EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
-            PlayerController.instance.canDoStrictedHaptic = false;
+            GameManager.instance.player.canDoStrictedHaptic = false;
         }
     }
 

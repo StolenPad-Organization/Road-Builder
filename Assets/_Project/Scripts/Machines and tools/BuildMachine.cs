@@ -74,12 +74,12 @@ public class BuildMachine : MonoBehaviour
     {
         if (used)
         {
-            if (!anim.GetBool("Run") && PlayerController.instance.MovementCheck())
+            if (!anim.GetBool("Run") && GameManager.instance.player.MovementCheck())
             {
                 anim.SetBool("Run", true);
             }
 
-            if (anim.GetBool("Run") && !PlayerController.instance.MovementCheck())
+            if (anim.GetBool("Run") && !GameManager.instance.player.MovementCheck())
             {
                 anim.SetBool("Run", false);
             }
@@ -90,7 +90,7 @@ public class BuildMachine : MonoBehaviour
     {
         if (!used && other.CompareTag("Player"))
         {
-            PlayerController.instance.GetOnAsphaltMachine(playerSeat, this);
+            GameManager.instance.player.GetOnAsphaltMachine(playerSeat, this);
             used = true;
             playerTrigger.SetActive(false);
             partsTrigger.SetActive(true);
@@ -139,7 +139,7 @@ public class BuildMachine : MonoBehaviour
             if (!emptyWarning.activeInHierarchy)
             {
                 emptyWarning.SetActive(true);
-                PlayerController.instance.arrowController.GetNewTarget();
+                GameManager.instance.player.arrowController.GetNewTarget();
             }
             return false; 
         }
@@ -194,7 +194,7 @@ public class BuildMachine : MonoBehaviour
         //transform.DOMove(GameManager.instance.currentZone.machinesPosition.position, 2.0f).OnComplete(() => 
         //{
             used = false;
-            PlayerController.instance.arrowController.PointToObject(gameObject);
+            GameManager.instance.player.arrowController.PointToObject(gameObject);
         //    anim.SetBool("Run", false);
         //});
         if(machineIcon != null)
@@ -239,7 +239,7 @@ public class BuildMachine : MonoBehaviour
             partsSpawnPoints = buildMachineUpgrades[upgradeIndex].partsSpawnPoints;
 
         if (used)
-            PlayerController.instance.GetOnAsphaltMachine(playerSeat, this);
+            GameManager.instance.player.GetOnAsphaltMachine(playerSeat, this);
 
         Speed = speedUpgrades[level-1];
         partsTrigger.transform.localScale = CollisionUpgrades[level-1];

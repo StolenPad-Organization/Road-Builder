@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class PlayerMovementController : MonoBehaviour
@@ -18,7 +19,7 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private float speedMultiplayer = 100;
     [SerializeField] private float speedMultiplayerMax = 100;
     public bool canRecoverSpeed;
-    private PlayerController playerController;
+    public PlayerController playerController;
     [SerializeField] private bool drive;
     private bool move;
     [SerializeField] private Rigidbody rb;
@@ -31,9 +32,20 @@ public class PlayerMovementController : MonoBehaviour
 
     private float walkType;
 
+    [Header("AI Movement")]
+    [SerializeField] private bool isAI;
+    public AIState state;
+    public AIInternalState aIInternalState;
+    [SerializeField] float3? Target;
+    [SerializeField] RBSplitter Splitter;
+    private int row;
+    [SerializeField] private bool IsMinStart;
+    [SerializeField] private bool isEnd;
+    [SerializeField] private bool isChangingRow;
+
     void Start()
     {
-        playerController = PlayerController.instance;
+        //playerController = GameManager.instance.player;
         rbManager = RBManagerJobs.Instance;
         gameManager = GameManager.instance;
     }
@@ -54,8 +66,18 @@ public class PlayerMovementController : MonoBehaviour
                 speedMultiplayer = speedMultiplayerMax;
         }
 
-        horizontalInput = joystick.HorizontalAxis;
-        verticalInput = joystick.VerticalAxis;
+
+        if (isAI)
+        {
+            // look at bottom
+            TakeInternalDecision();
+        }
+        else
+        {
+            horizontalInput = joystick.HorizontalAxis;
+            verticalInput = joystick.VerticalAxis;
+        }
+        
         moveDirection.x = horizontalInput;
         moveDirection.z = verticalInput;
         moveDirection.Normalize();
@@ -155,8 +177,8 @@ public class PlayerMovementController : MonoBehaviour
             }
             else
             {
-                if(playerController == null)
-                    playerController = PlayerController.instance;
+                //if(playerController == null)
+                //    playerController = GameManager.instance.player;
 
                 if (playerController.scrapeToolHolder.gameObject.activeInHierarchy || playerController.paintMachine != null || 
                     (playerController.asphaltMachine != null && !playerController.asphaltMachine.drivable))
@@ -250,5 +272,130 @@ public class PlayerMovementController : MonoBehaviour
                 }
                 speedMultiplayer = speedMultiplayerMax;
             });
+    }
+
+    private void TakeInternalDecision()
+    {
+        switch (aIInternalState)
+        {
+            case AIInternalState.Waiting:
+
+                break;
+            case AIInternalState.MovingToPosition:
+                if (Target == null)
+                {
+                    MoveToStartPosition();
+                }
+
+                MoveToPosition();
+                break;
+            case AIInternalState.Working:
+
+                break;
+        }
+    }
+
+    private void MoveToStartPosition()
+    {
+        var t = Splitter.Grid.GetCell(row, 0);
+        Target = t.MinPosition;
+        //row++;
+    }
+    private void MoveToNextPosition()
+    {
+        if (isEnd)
+        {
+            row++;
+            isChangingRow = true;
+            IsMinStart = !IsMinStart;
+
+        }
+
+        isEnd = !isEnd;
+
+        if (isEnd)
+        {
+            if (IsMinStart)
+            {
+                var t = Splitter.Grid.GetCell(row, 0);
+                if (t == null)
+                {
+                    aIInternalState = AIInternalState.Waiting;
+
+                    return;
+                }
+                Target = t.MaxPosition;
+            }
+            else
+            {
+                var t = Splitter.Grid.GetCell(row, 0);
+                if (t == null)
+                {
+                    aIInternalState = AIInternalState.Waiting;
+
+                    return;
+                }
+                Target = t.MinPosition;
+            }
+        }
+        else
+        {
+            if (IsMinStart)
+            {
+                var t = Splitter.Grid.GetCell(row, 0);
+                if (t == null)
+                {
+                    aIInternalState = AIInternalState.Waiting;
+
+                    return;
+                }
+                Target = t.MinPosition;
+            }
+            else
+            {
+                var t = Splitter.Grid.GetCell(row, 0);
+                if (t == null)
+                {
+                    aIInternalState = AIInternalState.Waiting;
+                    return;
+
+                }
+                Target = t.MaxPosition;
+            }
+        }
+
+    }
+
+    private void MoveToPosition()
+    {
+        rb.velocity = Vector3.zero;
+
+        float3 position = transform.position;
+
+        var direction = (float3)Target - (float3)transform.position;
+        direction.y = 0f;
+
+        var horizontalDirection = float3.zero;
+        horizontalDirection.x = direction.x;
+        horizontalDirection.z = direction.z;
+
+        horizontalInput = horizontalDirection.x;
+        verticalInput = horizontalDirection.z;
+
+
+        //var rotation = quaternion.LookRotationSafe(horizontalDirection, math.up());
+
+        //position += math.normalize(direction) * MoveSpeed * Time.deltaTime;
+
+        //rb.transform.SetPositionAndRotation(position, rotation);
+
+        if (math.distance(transform.position, (float3)Target) <= 0.2f)
+        {
+            MoveToNextPosition();
+            if (isChangingRow)
+            {
+                isChangingRow = false;
+            }
+        }
     }
 }

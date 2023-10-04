@@ -14,6 +14,7 @@ public class WheelBarrow : MonoBehaviour
     [SerializeField] private NavMeshAgent agent;
     private Transform playerTransform;
     Vector3 velocity = Vector3.zero;
+    public PlayerController player;
 
     private void Awake()
     {
@@ -22,7 +23,7 @@ public class WheelBarrow : MonoBehaviour
 
     void Start()
     {
-        playerTransform = PlayerController.instance.wheelBarrowFollowTransform;
+        playerTransform = GameManager.instance.player.wheelBarrowFollowTransform;
     }
 
     void FixedUpdate()
@@ -37,10 +38,10 @@ public class WheelBarrow : MonoBehaviour
     public void OnCollect(Peelable collectable)
     {
         if (collectables.Count >= collectablesLimit) return;
-        if(PlayerController.instance.scrapeTool.toolAngleController != null)
-            collectable.Collect(collectables.Count, angleCollectableOffest, collectableParent);
+        if(GameManager.instance.player.scrapeTool.toolAngleController != null)
+            collectable.Collect(collectables.Count, angleCollectableOffest, collectableParent, player);
         else
-            collectable.Collect(collectables.Count, collectableOffest, collectableParent);
+            collectable.Collect(collectables.Count, collectableOffest, collectableParent, player);
         collectables.Add(collectable);
         GameManager.instance.currentZone.AddCollectableData(false, collectable.index);
     }
@@ -55,13 +56,14 @@ public class WheelBarrow : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        ActivateWheelBarrow();
+        ActivateWheelBarrow(other.GetComponent<PlayerController>());
     }
 
-    public void ActivateWheelBarrow()
+    public void ActivateWheelBarrow(PlayerController _player)
     {
         used = true;
-        PlayerController.instance.ActivateWheelBarrow(this);
+        player = _player;
+        player.ActivateWheelBarrow(this);
     }
 
     public void LoadCollectables(List<CollectableData> collectableDatas)
@@ -70,7 +72,7 @@ public class WheelBarrow : MonoBehaviour
         for (int i = 0; i < collectableDatas.Count; i++)
         {
             collectable = GameManager.instance.currentZone.peelableManager.ReturnPeelableWithIndex(collectableDatas[i].index);
-            if (PlayerController.instance.scrapeTool.toolAngleController != null)
+            if (GameManager.instance.player.scrapeTool.toolAngleController != null)
                 collectable.LoadCollectable(collectables.Count, angleCollectableOffest, collectableParent);
             else
                 collectable.LoadCollectable(collectables.Count, collectableOffest, collectableParent);

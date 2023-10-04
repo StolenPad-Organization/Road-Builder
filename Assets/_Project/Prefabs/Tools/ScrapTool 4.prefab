@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 222581348081985425}
   - component: {fileID: 1388916831762253005}
   - component: {fileID: 6006367521167905721}
+  - component: {fileID: 6479634998988151441}
   m_Layer: 8
   m_Name: ScrapTool 4
   m_TagString: Tool
@@ -47,6 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e633e2ebf0c4cf4585512fa882ee642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  collector: {fileID: 6479634998988151441}
   scrapeToolType: 0
   power: 32
   shovelHead: {fileID: 1045005144955246171}
@@ -89,6 +92,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6479634998988151441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222581348081985424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312a0d482434ebd4493b5e05f60c762b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerType: 0
+  player: {fileID: 0}
 --- !u!1 &222581349565768564
 GameObject:
   m_ObjectHideFlags: 0

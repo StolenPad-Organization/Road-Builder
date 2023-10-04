@@ -333,7 +333,7 @@ public class PeelableManager : MonoBehaviour
     {
         CheckCurrentBlock();
         var parts = peelableParts.Where(t =>!t.peeled && !t.sold && !t.collected && t.blockNumber == currentBlockNumber).ToList();
-        float3 playerPos = PlayerController.instance.transform.position;
+        float3 playerPos = GameManager.instance.player.transform.position;
         Peelable target = null;
         if (parts.Count <= 0) return null;
         target = parts[0];

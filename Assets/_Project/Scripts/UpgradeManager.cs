@@ -22,7 +22,7 @@ public class UpgradeManager : MonoBehaviour
     }
     private void Start()
     {
-        //playerController = PlayerController.instance;
+        //playerController = GameManager.instance.player;
     }
 
     private void OnEnable()

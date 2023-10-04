@@ -72,7 +72,7 @@ public class Collectable : MonoBehaviour
 
     //private void OnTriggerEnter(Collider other)
     //{
-    //    PlayerController.instance.OnCollect(this);
+    //    GameManager.instance.player.OnCollect(this);
     //}
 
     public void Sell(Transform sellPoint)
@@ -81,10 +81,10 @@ public class Collectable : MonoBehaviour
         transform.SetParent(sellPoint);
         transform.DOLocalJump(Vector3.zero, 3, 1, 0.6f).OnComplete(() => 
         {
-            if (PlayerController.instance.canDoStrictedHaptic)
+            if (GameManager.instance.player.canDoStrictedHaptic)
             {
                 EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
-                PlayerController.instance.canDoStrictedHaptic = false;
+                GameManager.instance.player.canDoStrictedHaptic = false;
             }
             CollectablesPooler.Instance.ReturnCollectable(this);
             Money money = MoneyPooler.instance.GetMoney();

@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ZoneManager[] zones;
     public ZoneManager currentZone;
     private bool gameStarted;
+    public PlayerController player;
 
     private void Awake()
     {
@@ -45,7 +46,7 @@ public class GameManager : MonoBehaviour
 
     public void UnlockNextZone()
     {
-        PlayerController.instance.ResetForNextZone();
+        player.ResetForNextZone();
         if (levelProgressData.ZoneIndex + 1 < levelProgressData.ZoneDatas.Count)
         {
             levelProgressData.ZoneIndex++;

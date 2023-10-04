@@ -13,6 +13,7 @@ public class ArrowController : MonoBehaviour
     [SerializeField] private float checkTargetCooldown;
     private float nextTargetCheck;
     GameManager gameManager;
+    public PlayerController player;
 
     void Start()
     {
@@ -42,12 +43,12 @@ public class ArrowController : MonoBehaviour
         switch (gameManager.currentZone.zoneState)
         {
             case ZoneState.PeelingStage:
-                if(PlayerController.instance.fullWarning.activeInHierarchy)
+                if(player.fullWarning.activeInHierarchy)
                     PointToObject(gameManager.currentZone.sellManager.gameObject);
                 else
                 {
-                    if (PlayerController.instance.scrapeTool.toolAngleController != null)
-                        checkOrigin = PlayerController.instance.scrapeTool.toolAngleController.toolHead;
+                    if (player.scrapeTool.toolAngleController != null)
+                        checkOrigin = player.scrapeTool.toolAngleController.toolHead;
                     else
                         checkOrigin = transform;
                     PointToObject(gameManager.currentZone.peelableManager.ReturnNearestPeelable().gameObject, false);
@@ -64,8 +65,8 @@ public class ArrowController : MonoBehaviour
                     PointToObject(gameManager.currentZone.paintAmmo.gameObject);
                 else
                 {
-                    if (PlayerController.instance.paintMachine.toolAngleController != null)
-                        checkOrigin = PlayerController.instance.paintMachine.toolAngleController.toolHead;
+                    if (player.paintMachine.toolAngleController != null)
+                        checkOrigin = player.paintMachine.toolAngleController.toolHead;
                     else
                         checkOrigin = transform;
                     PointToObject(gameManager.currentZone.paintableManager.ReturnNearestPaintable().gameObject, false);

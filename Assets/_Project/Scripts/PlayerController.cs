@@ -5,7 +5,7 @@ using DG.Tweening;
 
 public class PlayerController : MonoBehaviour
 {
-    public static PlayerController instance;
+    //public static PlayerController instance;
 
     public PlayerMovementController movementController;
     [SerializeField] private List<Peelable> collectables;
@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        //instance = this;
     }
 
     void Start()
@@ -247,9 +247,9 @@ public class PlayerController : MonoBehaviour
         }
         if (collectables.Count >= collectablesLimit) return;
         if (scrapeTool.toolAngleController != null)
-            collectable.Collect(collectables.Count, angleCollectableOffest, collectableParent);
+            collectable.Collect(collectables.Count, angleCollectableOffest, collectableParent, this);
         else
-            collectable.Collect(collectables.Count, collectableOffest, collectableParent);
+            collectable.Collect(collectables.Count, collectableOffest, collectableParent, this);
         collectables.Add(collectable);
         GameManager.instance.currentZone.AddCollectableData(true, collectable.index);
         if (collectables.Count >= collectablesLimit)
@@ -290,6 +290,8 @@ public class PlayerController : MonoBehaviour
         if (index >= scrapeToolsPrefabs.Length)
             index = scrapeToolsPrefabs.Length - 1;
         scrapeTool = Instantiate(scrapeToolsPrefabs[index], scrapeToolHolder);
+        scrapeTool.player = this;
+        scrapeTool.collector.player = this;
         scrapeTool.ShowTool(false);
 
         if(scrapeTool.toolAngleController != null)

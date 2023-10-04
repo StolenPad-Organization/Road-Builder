@@ -10,6 +10,7 @@ public enum PlayerType
 public class Collector : MonoBehaviour
 {
     [SerializeField] PlayerType playerType;
+    public PlayerController player;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -25,7 +26,7 @@ public class Collector : MonoBehaviour
                 switch (playerType)
                 {
                     case PlayerType.Player:
-                        PlayerController.instance.OnPeelableDetection(p.speedAmount, p.initialPower, p.dustColor);
+                        player.OnPeelableDetection(p.speedAmount, p.initialPower, p.dustColor);
 
                         break;
                     case PlayerType.AI:
@@ -39,7 +40,7 @@ public class Collector : MonoBehaviour
                 switch (playerType)
                 {
                     case PlayerType.Player:
-                        PlayerController.instance.OnCollect(p);
+                        player.OnCollect(p);
                         break;
                     case PlayerType.AI:
                         break;
@@ -47,10 +48,10 @@ public class Collector : MonoBehaviour
             }
             if(playerType == PlayerType.Player)
             {
-                if (PlayerController.instance.canDoStrictedHaptic)
+                if (player.canDoStrictedHaptic)
                 {
                     EventManager.invokeHaptic.Invoke(vibrationTypes.MediumImpact);
-                    PlayerController.instance.canDoStrictedHaptic = false;
+                    player.canDoStrictedHaptic = false;
                 }
             }
        
@@ -65,7 +66,7 @@ public class Collector : MonoBehaviour
                 switch (playerType)
                 {
                     case PlayerType.Player:
-                        PlayerController.instance.OnCollect(p);
+                        player.OnCollect(p);
                         break;
                     case PlayerType.AI:
                         break;
@@ -86,8 +87,8 @@ public class Collector : MonoBehaviour
             {
                 case PlayerType.Player:
 
-                    p.PeeledStay(PlayerController.instance.scrapeTool.power);
-                    PlayerController.instance.SetScrapingMovementSpeed(p.speedAmount, p.initialPower);
+                    p.PeeledStay(player.scrapeTool.power);
+                    player.SetScrapingMovementSpeed(p.speedAmount, p.initialPower);
 
                     break;
                 case PlayerType.AI:

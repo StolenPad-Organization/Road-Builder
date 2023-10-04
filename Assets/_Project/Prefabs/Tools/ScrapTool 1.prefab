@@ -48,6 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e633e2ebf0c4cf4585512fa882ee642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  collector: {fileID: 187554127294358213}
   scrapeToolType: 0
   power: 2
   shovelHead: {fileID: 590284875681865764}
@@ -102,6 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312a0d482434ebd4493b5e05f60c762b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerType: 0
+  player: {fileID: 0}
 --- !u!1 &222581349565768564
 GameObject:
   m_ObjectHideFlags: 0

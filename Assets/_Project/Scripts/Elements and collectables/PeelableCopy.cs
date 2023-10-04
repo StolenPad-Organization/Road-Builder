@@ -69,20 +69,17 @@ public class PeelableCopy : MonoBehaviour
     //    if (peelable.zoneIndex != GameManager.instance.levelProgressData.ZoneIndex || other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
     //    if (other.CompareTag("Collector"))
     //    {
-    //        PlayerController.instance.OnCollect(peelable);
+    //        GameManager.instance.player.OnCollect(peelable);
     //    }
     //}
 
-    public void Collect(int index, float collectableOffest, Transform collectableParent)
+    public void Collect(int index, float collectableOffest, Transform collectableParent, PlayerController player)
     {
         copyCollider.enabled = false;
         peelable.collected = true;
 
-        //peelableCollider.enabled = false;
-        //rb.isKinematic = true;
-        //rb.useGravity = false;
         transform.SetParent(collectableParent);
-        if(PlayerController.instance.scrapeTool.toolAngleController!=null)
+        if(player.scrapeTool.toolAngleController!=null)
             transform.DOLocalRotate(Vector3.right * 90, 0.4f);
         else
             transform.DOLocalRotate(Vector3.zero, 0.4f);
@@ -98,10 +95,10 @@ public class PeelableCopy : MonoBehaviour
         transform.SetParent(sellPoint);
         transform.DOLocalJump(Vector3.zero, 3, 1, 0.6f).OnComplete(() =>
         {
-            if (PlayerController.instance.canDoStrictedHaptic)
+            if (GameManager.instance.player.canDoStrictedHaptic)
             {
                 EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
-                PlayerController.instance.canDoStrictedHaptic = false;
+                GameManager.instance.player.canDoStrictedHaptic = false;
             }
             Money money = MoneyPooler.instance.GetMoney();
             money.transform.position = GameManager.instance.currentZone.sellManager.transform.position;
@@ -113,23 +110,17 @@ public class PeelableCopy : MonoBehaviour
     public void LoadCollectable(int index, float collectableOffest, Transform collectableParent)
     {
         copyCollider.enabled = false;
-        // set transform and settings for the peelable as it's collected
-        peelable.peeled = true;
-        peelable.collected = true;
 
-        //peelableCollider.enabled = false;
-        //rb.isKinematic = true;
-        //rb.useGravity = false;
+        peelable.peeled = true;
+        peelable.collected = true;;
 
         transform.SetParent(collectableParent);
         Vector3 rot = Vector3.zero;
-        if (PlayerController.instance.scrapeTool.toolAngleController != null)
-            rot = Vector3.right * 90;
+        //if (GameManager.instance.player.scrapeTool.toolAngleController != null)
+        //    rot = Vector3.right * 90;
         transform.localEulerAngles = rot;
         transform.localPosition = Vector3.up * index * collectableOffest;
         peelable.readyToTilt = true;
-        //peelable.peelableRenderer.material.color = peelable.movedPieceColor;
-        //GetComponent<Renderer>().material.color = peelable.movedPieceColor;
     }
 
     public void LoadCopy()
@@ -140,7 +131,6 @@ public class PeelableCopy : MonoBehaviour
         {
             transform.position = peelable.transform.position;
             transform.localEulerAngles = peelable.transform.eulerAngles;
-            //GetComponent<Renderer>().material.color = peelable.movedPieceColor;
         }
     }
 }

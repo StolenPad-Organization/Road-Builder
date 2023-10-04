@@ -8,6 +8,6 @@ public class CollectableTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //if (other.gameObject.layer != LayerMask.NameToLayer("ScrapTool")) return;
-        //    PlayerController.instance.OnCollect(collectable);
+        //    GameManager.instance.player.OnCollect(collectable);
     }
 }

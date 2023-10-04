@@ -23,9 +23,9 @@ public class PaintAmmo : MonoBehaviour
         {
             if (nextFill <= 0)
             {
-                if (PlayerController.instance.paintMachine != null)
+                if (GameManager.instance.player.paintMachine != null)
                 {
-                    PlayerController.instance.paintMachine.FillPaint();
+                    GameManager.instance.player.paintMachine.FillPaint();
                 }
                 nextFill = fillRate;
             }
@@ -38,9 +38,9 @@ public class PaintAmmo : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (PlayerController.instance.paintMachine == null) return;
+        if (GameManager.instance.player.paintMachine == null) return;
         filling = true;
-        PlayerController.instance.paintMachine.OnFillStart();
+        GameManager.instance.player.paintMachine.OnFillStart();
         nextFill = 0;
         disloveTween.Kill();
         effect.Play();
@@ -56,9 +56,9 @@ public class PaintAmmo : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (PlayerController.instance.paintMachine == null) return;
+        if (GameManager.instance.player.paintMachine == null) return;
         filling = false;
-        PlayerController.instance.paintMachine.OnFillEnd();
+        GameManager.instance.player.paintMachine.OnFillEnd();
         //var main = effect.main;
         //main.loop = false;
         disloveTween.Kill();

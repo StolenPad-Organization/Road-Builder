@@ -23,9 +23,9 @@ public class BuildAmmo : MonoBehaviour
         {
             if (nextFill <= 0)
             {
-                if(PlayerController.instance.asphaltMachine != null)
+                if(GameManager.instance.player.asphaltMachine != null)
                 {
-                    PlayerController.instance.asphaltMachine.FillAsphalt();
+                    GameManager.instance.player.asphaltMachine.FillAsphalt();
                 }
                 nextFill = fillRate;
             }

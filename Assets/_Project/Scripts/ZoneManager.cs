@@ -95,7 +95,7 @@ public class ZoneManager : MonoBehaviour
     public void InitZone(ZoneData _zoneData)
     {
         zoneData = _zoneData;
-        player = PlayerController.instance;
+        player = GameManager.instance.player;
         playerData = Database.Instance.GetPlayerData();
         levelData = Database.Instance.GetLevelData();
         //yield return new WaitForEndOfFrame();
@@ -178,7 +178,7 @@ public class ZoneManager : MonoBehaviour
         if (buildMachine.hasUpgrade)
             buildMachineUpgradeTrigger.SetActive(true);
         removableBlock.SetActive(false);
-        //PlayerController.instance.RemovePeelingAndCollectingTools();
+        //GameManager.instance.player.RemovePeelingAndCollectingTools();
         asphaltBlock.SetActive(true);
         asphaltAmmo.gameObject.SetActive(true);
         player.arrowController.PointToObject(asphaltAmmo.gameObject);
@@ -208,11 +208,11 @@ public class ZoneManager : MonoBehaviour
         {
             removableBlock.SetActive(false);
             upgrades.SetActive(false);
-            PlayerController.instance.ReadyForPaint();
+            GameManager.instance.player.ReadyForPaint();
         }
 
         if (buildMachine != null)
-            PlayerController.instance.GetOffAsphaltMachine();
+            GameManager.instance.player.GetOffAsphaltMachine();
 
         if (paintingMachine == null)
         {
@@ -237,7 +237,7 @@ public class ZoneManager : MonoBehaviour
         UIManager.instance.UpdateStepText();
         if (paintingMachine.hasUpgrade)
             paintMachineUpgradeTrigger.SetActive(true);
-        //PlayerController.instance.GetOffAsphaltMachine();
+        //GameManager.instance.player.GetOffAsphaltMachine();
         buildMachineUpgradeTrigger.SetActive(false);
         asphaltAmmo.gameObject.SetActive(false);
         paintBlock.SetActive(true);
@@ -381,7 +381,7 @@ public class ZoneManager : MonoBehaviour
                 {
                     wheelBarrow.transform.position = playerData.WheelBarrowPosition;
                     wheelBarrow.transform.eulerAngles = playerData.WheelBarrowRotation;
-                    wheelBarrow.ActivateWheelBarrow();
+                    wheelBarrow.ActivateWheelBarrow(player);
                     wheelBarrow.LoadCollectables(playerData.wheelBarrowCollectables);
                 }
                 player.LoadCollectables(playerData.playerCollectables);

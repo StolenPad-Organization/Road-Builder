@@ -13,12 +13,12 @@ public class UpgradeMenuTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         uIManager.ShowUpgradeMenu();
-        PlayerController.instance.ActivateUpgradeCamera(true);
+        GameManager.instance.player.ActivateUpgradeCamera(true);
     }
 
     private void OnTriggerExit(Collider other)
     {
         uIManager.HideUpgradeMenu();
-        PlayerController.instance.ActivateUpgradeCamera(false);
+        GameManager.instance.player.ActivateUpgradeCamera(false);
     }
 }

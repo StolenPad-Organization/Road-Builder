@@ -64,12 +64,12 @@ public class Peelable : MonoBehaviour
         }
         //else if (!collected)
         //{
-        //    PlayerController.instance.OnCollect(this);
+        //    GameManager.instance.player.OnCollect(this);
         //}
-        //if (PlayerController.instance.canDoStrictedHaptic)
+        //if (GameManager.instance.player.canDoStrictedHaptic)
         //{
         //    EventManager.invokeHaptic.Invoke(vibrationTypes.MediumImpact);
-        //    PlayerController.instance.canDoStrictedHaptic = false;
+        //    GameManager.instance.player.canDoStrictedHaptic = false;
         //}
     }
 
@@ -86,7 +86,7 @@ public class Peelable : MonoBehaviour
         {
           power -= _power;
 
-            //PlayerController.instance.scrapeTool.ShakeTool();
+            //GameManager.instance.player.scrapeTool.ShakeTool();
             if (power <= 0)
             {
                 peeled = true;
@@ -94,11 +94,11 @@ public class Peelable : MonoBehaviour
                 GameManager.instance.currentZone.OnBlockRemove(blockNumber);
                 SavePeelable();
             }
-            //PlayerController.instance.SetScrapingMovementSpeed(speedAmount, initialPower);
+            //GameManager.instance.player.SetScrapingMovementSpeed(speedAmount, initialPower);
         }
         //else
         //{
-        //    PlayerController.instance.SetScrapingMovementSpeed(speedAmount, initialPower);
+        //    GameManager.instance.player.SetScrapingMovementSpeed(speedAmount, initialPower);
         //}
     }
 
@@ -114,7 +114,7 @@ public class Peelable : MonoBehaviour
         ScrapingEffectPooler.instance.ReturnEffect(effect);
     }
 
-    public void Collect(int index, float collectableOffest, Transform collectableParent)
+    public void Collect(int index, float collectableOffest, Transform collectableParent, PlayerController player)
     {
         //collected = true;
 
@@ -129,7 +129,7 @@ public class Peelable : MonoBehaviour
         RBManagerJobs.Instance.RemoveAgent(rbHandler);
         rbHandler.RemoveFromTile();
         rbHandler.CheckSwitch(false);
-        peelableCopy.Collect(index, collectableOffest, collectableParent);
+        peelableCopy.Collect(index, collectableOffest, collectableParent, player);
     }
 
     public void Sell(Transform sellPoint)
