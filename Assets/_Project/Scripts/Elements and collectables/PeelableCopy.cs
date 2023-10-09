@@ -106,7 +106,18 @@ public class PeelableCopy : MonoBehaviour
             gameObject.SetActive(false);
         });
     }
-
+    public void AISell(AISellPoint sellPoint,ScrappingAIController ai)
+    {
+        peelable.collected = false;
+        peelable.sold = true;
+        peelable.readyToTilt = false;   
+        transform.SetParent(sellPoint.transform);
+        transform.DOLocalJump(Vector3.zero, 3, 1, 0.6f).OnComplete(() =>
+        {
+            gameObject.SetActive(false);
+            sellPoint.AddCollectable(peelable);
+        });
+    }
     public void LoadCollectable(int index, float collectableOffest, Transform collectableParent)
     {
         copyCollider.enabled = false;

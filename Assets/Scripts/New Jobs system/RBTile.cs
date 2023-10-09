@@ -49,7 +49,7 @@ public class RBTile : GridElement
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") || other.CompareTag("AI"))
         {
             RBManagerJobs.Instance.SubscribeNewTile(adjustantTiles);
         }

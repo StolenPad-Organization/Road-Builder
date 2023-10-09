@@ -149,7 +149,10 @@ public class Peelable : MonoBehaviour
 
         peelableCopy.Sell(sellPoint);
     }
-
+    public void AISell(AISellPoint sellPoint,ScrappingAIController ai)
+    {
+        peelableCopy.AISell(sellPoint,ai);
+    }
     public void SetRBHandler(RBHandler _rbHandler)
     {
         rbHandler = _rbHandler;

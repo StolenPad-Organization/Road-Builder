@@ -7,43 +7,34 @@ using UnityEngine;
 public class PlayerMovementController : MonoBehaviour
 {
     public UltimateJoystick joystick;
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float paintMoveSpeed = 5f;
-    [SerializeField] private float angleSpeed = 2f;
+    [SerializeField] protected float moveSpeed = 5f;
+    [SerializeField] protected float paintMoveSpeed = 5f;
+    [SerializeField] protected float angleSpeed = 2f;
     [SerializeField] private float rotationSpeed = 5.0f;
     [SerializeField] private float originalRotationSpeed = 5.0f;
-    [SerializeField] private Animator anim;
-    private Vector3 moveDirection = Vector3.zero;
+    [SerializeField] protected Animator anim;
+    protected Vector3 moveDirection = Vector3.zero;
     public bool canMove = false;
     public bool canRotate;
-    [SerializeField] private float speedMultiplayer = 100;
-    [SerializeField] private float speedMultiplayerMax = 100;
+    [SerializeField] protected float speedMultiplayer = 100;
+    [SerializeField] protected float speedMultiplayerMax = 100;
     public bool canRecoverSpeed;
     public PlayerController playerController;
-    [SerializeField] private bool drive;
-    private bool move;
-    [SerializeField] private Rigidbody rb;
+    [SerializeField] protected bool drive;
+    protected bool move;
+    [SerializeField] protected Rigidbody rb;
     private RBManagerJobs rbManager;
     private GameManager gameManager;
     public bool insideAngleTrigger;
 
-    private float horizontalInput;
-    private float verticalInput;
+    protected float horizontalInput;
+    protected float verticalInput;
 
     private float walkType;
 
-    [Header("AI Movement")]
-    [SerializeField] private bool isAI;
-    public AIState state;
-    public AIInternalState aIInternalState;
-    [SerializeField] float3? Target;
-    [SerializeField] RBSplitter Splitter;
-    private int row;
-    [SerializeField] private bool IsMinStart;
-    [SerializeField] private bool isEnd;
-    [SerializeField] private bool isChangingRow;
 
-    void Start()
+
+    private void Start()
     {
         //playerController = GameManager.instance.player;
         rbManager = RBManagerJobs.Instance;
@@ -55,7 +46,7 @@ public class PlayerMovementController : MonoBehaviour
         speedMultiplayer = amount;
     }
 
-    void FixedUpdate()
+   protected virtual void FixedUpdate()
     {
         if (!canMove) return;
 
@@ -67,17 +58,9 @@ public class PlayerMovementController : MonoBehaviour
         }
 
 
-        if (isAI)
-        {
-            // look at bottom
-            TakeInternalDecision();
-        }
-        else
-        {
-            horizontalInput = joystick.HorizontalAxis;
-            verticalInput = joystick.VerticalAxis;
-        }
-        
+        horizontalInput = joystick.HorizontalAxis;
+        verticalInput = joystick.VerticalAxis;
+
         moveDirection.x = horizontalInput;
         moveDirection.z = verticalInput;
         moveDirection.Normalize();
@@ -130,7 +113,7 @@ public class PlayerMovementController : MonoBehaviour
         //}
     }
 
-    private void Rotate()
+    protected void Rotate()
     {
         //rb.MoveRotation(Quaternion.LookRotation(moveDirection));
 
@@ -156,7 +139,7 @@ public class PlayerMovementController : MonoBehaviour
         SetAnimation();
     }
 
-    private void ToggleMoveAnimation(bool activate)
+    protected void ToggleMoveAnimation(bool activate)
     {
         if (drive || move == activate) return;
         move = activate;
@@ -241,7 +224,7 @@ public class PlayerMovementController : MonoBehaviour
         }
     }
 
-    private void SetPushSpeed()
+    protected void SetPushSpeed()
     {
         anim.SetFloat("PushSpeed", speedMultiplayer / 100);
     }
@@ -274,128 +257,5 @@ public class PlayerMovementController : MonoBehaviour
             });
     }
 
-    private void TakeInternalDecision()
-    {
-        switch (aIInternalState)
-        {
-            case AIInternalState.Waiting:
-
-                break;
-            case AIInternalState.MovingToPosition:
-                if (Target == null)
-                {
-                    MoveToStartPosition();
-                }
-
-                MoveToPosition();
-                break;
-            case AIInternalState.Working:
-
-                break;
-        }
-    }
-
-    private void MoveToStartPosition()
-    {
-        var t = Splitter.Grid.GetCell(row, 0);
-        Target = t.MinPosition;
-        //row++;
-    }
-    private void MoveToNextPosition()
-    {
-        if (isEnd)
-        {
-            row++;
-            isChangingRow = true;
-            IsMinStart = !IsMinStart;
-
-        }
-
-        isEnd = !isEnd;
-
-        if (isEnd)
-        {
-            if (IsMinStart)
-            {
-                var t = Splitter.Grid.GetCell(row, 0);
-                if (t == null)
-                {
-                    aIInternalState = AIInternalState.Waiting;
-
-                    return;
-                }
-                Target = t.MaxPosition;
-            }
-            else
-            {
-                var t = Splitter.Grid.GetCell(row, 0);
-                if (t == null)
-                {
-                    aIInternalState = AIInternalState.Waiting;
-
-                    return;
-                }
-                Target = t.MinPosition;
-            }
-        }
-        else
-        {
-            if (IsMinStart)
-            {
-                var t = Splitter.Grid.GetCell(row, 0);
-                if (t == null)
-                {
-                    aIInternalState = AIInternalState.Waiting;
-
-                    return;
-                }
-                Target = t.MinPosition;
-            }
-            else
-            {
-                var t = Splitter.Grid.GetCell(row, 0);
-                if (t == null)
-                {
-                    aIInternalState = AIInternalState.Waiting;
-                    return;
-
-                }
-                Target = t.MaxPosition;
-            }
-        }
-
-    }
-
-    private void MoveToPosition()
-    {
-        rb.velocity = Vector3.zero;
-
-        float3 position = transform.position;
-
-        var direction = (float3)Target - (float3)transform.position;
-        direction.y = 0f;
-
-        var horizontalDirection = float3.zero;
-        horizontalDirection.x = direction.x;
-        horizontalDirection.z = direction.z;
-
-        horizontalInput = horizontalDirection.x;
-        verticalInput = horizontalDirection.z;
-
-
-        //var rotation = quaternion.LookRotationSafe(horizontalDirection, math.up());
-
-        //position += math.normalize(direction) * MoveSpeed * Time.deltaTime;
-
-        //rb.transform.SetPositionAndRotation(position, rotation);
-
-        if (math.distance(transform.position, (float3)Target) <= 0.2f)
-        {
-            MoveToNextPosition();
-            if (isChangingRow)
-            {
-                isChangingRow = false;
-            }
-        }
-    }
+    
 }

@@ -1,8 +1,9 @@
+using DG.Tweening;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using DG.Tweening;
 using Unity.Mathematics;
+using UnityEngine;
 
 public class BuildMachine : MonoBehaviour
 {
@@ -43,6 +44,10 @@ public class BuildMachine : MonoBehaviour
 
     [Header("Machine Icon")]
     [SerializeField] private MachineIconController machineIcon;
+    [SerializeField] private PlayerController playerController;
+    public bool IsFull;
+    public Action OnEmptyAmmo;
+    public Action OnFullAmmo;
 
     void Start()
     {
@@ -54,7 +59,7 @@ public class BuildMachine : MonoBehaviour
 
     private void initAmmo()
     {
-        if(asphaltObjects.Length != 0)
+        if (asphaltObjects.Length != 0)
         {
             for (int i = 0; i < asphaltObjects.Length; i++)
             {
@@ -74,12 +79,12 @@ public class BuildMachine : MonoBehaviour
     {
         if (used)
         {
-            if (!anim.GetBool("Run") && GameManager.instance.player.MovementCheck())
+            if (!anim.GetBool("Run") && playerController.MovementCheck())
             {
                 anim.SetBool("Run", true);
             }
 
-            if (anim.GetBool("Run") && !GameManager.instance.player.MovementCheck())
+            if (anim.GetBool("Run") && !playerController.MovementCheck())
             {
                 anim.SetBool("Run", false);
             }
@@ -88,15 +93,39 @@ public class BuildMachine : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!used && other.CompareTag("Player"))
+        if (!used && other.CompareTag("Player") || other.CompareTag("AI"))
         {
-            GameManager.instance.player.GetOnAsphaltMachine(playerSeat, this);
+            playerController = other.GetComponent<PlayerController>();
+            if (playerController != null)
+            {
+                playerController.GetOnAsphaltMachine(playerSeat, this);
+            }
+            //GameManager.instance.player.GetOnAsphaltMachine(playerSeat, this);
             used = true;
             playerTrigger.SetActive(false);
             partsTrigger.SetActive(true);
             if (machineIcon != null)
                 machineIcon.Fade();
+            return;
         }
+        if (playerController.asphaltMachine != null)
+        {
+            if (playerController.ReadyToBuild)
+                if (playerController.asphaltMachine.UseAsphalt())
+                {
+                    if (other.TryGetComponent(out Buildable buildable))
+                    {
+                        buildable.BuildPiece(this);
+
+                        if (GameManager.instance.player == playerController && GameManager.instance.player.canDoStrictedHaptic)
+                        {
+                            EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
+                            GameManager.instance.player.canDoStrictedHaptic = false;
+                        }
+                    }
+                }
+        }
+
     }
 
     public void FillAsphalt()
@@ -107,11 +136,16 @@ public class BuildMachine : MonoBehaviour
             {
                 fullWarning.SetActive(true);
             }
+            if (!IsFull)
+            {
+                OnFullAmmo?.Invoke();
+                IsFull = true;
+            }
             return;
         }
         if (scalingObject == null)
         {
-            if(asphaltScalingObject != null)
+            if (asphaltScalingObject != null)
             {
                 asphaltScalingObject.transform.localScale = calculateScale();
             }
@@ -139,9 +173,14 @@ public class BuildMachine : MonoBehaviour
             if (!emptyWarning.activeInHierarchy)
             {
                 emptyWarning.SetActive(true);
-                GameManager.instance.player.arrowController.GetNewTarget();
+                playerController.arrowController?.GetNewTarget();
             }
-            return false; 
+            if (IsFull)
+            {
+                OnEmptyAmmo?.Invoke();
+                IsFull = false;
+            }
+            return false;
         }
         if (consumeRate <= consumeValue)
         {
@@ -170,7 +209,7 @@ public class BuildMachine : MonoBehaviour
 
     private Vector3 calculateScale()
     {
-        if(hasUpgrade)
+        if (hasUpgrade)
             return Vector3.Lerp(Vector3.zero, Vector3.one * 1.65f, Mathf.InverseLerp(0, asphaltObjects.Length, asphaltCount));
         else
             return Vector3.Lerp(Vector3.zero, Vector3.one * 0.95f, Mathf.InverseLerp(0.0f, asphaltObjects.Length, asphaltCount));
@@ -178,7 +217,7 @@ public class BuildMachine : MonoBehaviour
 
     private void SetObjectScale()
     {
-        scalingObject.localScale = new Vector3(1, minScale, minScale) + (new Vector3(0,1,1) * scalingRate * asphaltCount);
+        scalingObject.localScale = new Vector3(1, minScale, minScale) + (new Vector3(0, 1, 1) * scalingRate * asphaltCount);
         float t = Mathf.InverseLerp(minScale, maxScale, scalingObject.localScale.y);
         Vector3 newPos = scalingObjectHolder.transform.localPosition;
         newPos.y = Mathf.Lerp(movingYLimits.x, movingYLimits.y, t);
@@ -193,11 +232,11 @@ public class BuildMachine : MonoBehaviour
         //anim.SetBool("Run", true);
         //transform.DOMove(GameManager.instance.currentZone.machinesPosition.position, 2.0f).OnComplete(() => 
         //{
-            used = false;
-            GameManager.instance.player.arrowController.PointToObject(gameObject);
+        used = false;
+        GameManager.instance.player.arrowController.PointToObject(gameObject);
         //    anim.SetBool("Run", false);
         //});
-        if(machineIcon != null)
+        if (machineIcon != null)
             machineIcon.OnSpawn();
     }
 
@@ -235,15 +274,15 @@ public class BuildMachine : MonoBehaviour
             }
         }
 
-        if(buildMachineUpgrades[upgradeIndex].partsSpawnPoints.Length > 0)
+        if (buildMachineUpgrades[upgradeIndex].partsSpawnPoints.Length > 0)
             partsSpawnPoints = buildMachineUpgrades[upgradeIndex].partsSpawnPoints;
 
         if (used)
-            GameManager.instance.player.GetOnAsphaltMachine(playerSeat, this);
+            playerController.GetOnAsphaltMachine(playerSeat, this);
 
-        Speed = speedUpgrades[level-1];
-        partsTrigger.transform.localScale = CollisionUpgrades[level-1];
-        consumeRate = consumeRateUpgrade[level-1];
+        Speed = speedUpgrades[level - 1];
+        partsTrigger.transform.localScale = CollisionUpgrades[level - 1];
+        consumeRate = consumeRateUpgrade[level - 1];
     }
 
     public Transform GetNearestSpawnPoint(Vector3 pos)

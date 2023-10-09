@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UltimateJoystickExample.Spaceship;
 
 public class BuildAmmo : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class BuildAmmo : MonoBehaviour
     [SerializeField] private float nextFill;
     [SerializeField] private ParticleSystem effect;
     private Tween disloveTween;
+    private PlayerController playerController;
 
     void Start()
     {
@@ -21,11 +23,13 @@ public class BuildAmmo : MonoBehaviour
     {
         if (filling)
         {
+            if (playerController == null) return;
+
             if (nextFill <= 0)
             {
-                if(GameManager.instance.player.asphaltMachine != null)
+                if(playerController.asphaltMachine != null)
                 {
-                    GameManager.instance.player.asphaltMachine.FillAsphalt();
+                    playerController.asphaltMachine.FillAsphalt();
                 }
                 nextFill = fillRate;
             }
@@ -38,6 +42,9 @@ public class BuildAmmo : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        playerController = other.GetComponentInParent<PlayerController>();
+
+        if (playerController == null) return;
         filling = true;
         nextFill = 0;
         //effect.Play();
@@ -55,6 +62,9 @@ public class BuildAmmo : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
+
+        playerController = null;
+
         filling = false;
         //var main = effect.main;
         //main.loop = false;

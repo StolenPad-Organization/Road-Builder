@@ -112,11 +112,6 @@ public class ZoneManager : MonoBehaviour
         upgradeManager.CheckButtons();
     }
 
-    void Update()
-    {
-        
-    }
-
     private void SendProgressionEvent(ProgressionStatus status)
     {
         string message = "";
@@ -133,13 +128,14 @@ public class ZoneManager : MonoBehaviour
                 break;
         }
         HomaBelly.Instance.TrackProgressionEvent(status, message);
+        Debug.LogError("UPDATE THIS !");
     }
 
     public void OnBlockRemove(int _blockNumber, bool load = false)
     {
         currentBlocks++;
         //if (!load)
-            peelableManager.CheckBlock(_blockNumber);
+        peelableManager.CheckBlock(_blockNumber);
         CheckBlocks();
     }
     private void CheckBlocks()
@@ -153,7 +149,7 @@ public class ZoneManager : MonoBehaviour
         SendProgressionEvent(ProgressionStatus.Complete);
         EventManager.invokeHaptic.Invoke(vibrationTypes.Success);
 
-        if(buildMachine == null)
+        if (buildMachine == null)
         {
             ShowPaintMachine();
             return;
@@ -197,7 +193,7 @@ public class ZoneManager : MonoBehaviour
     }
     public void ShowPaintMachine()
     {
-        if (buildMachine != null) 
+        if (buildMachine != null)
         {
             SendProgressionEvent(ProgressionStatus.Complete);
             asphaltBlock.gameObject.SetActive(false);
@@ -285,7 +281,7 @@ public class ZoneManager : MonoBehaviour
                 paintingMachine.gameObject.SetActive(false);
                 paintAmmo.gameObject.SetActive(false);
             }
-            if(buildMachine != null)
+            if (buildMachine != null)
             {
                 buildMachine.gameObject.SetActive(false);
                 asphaltAmmo.gameObject.SetActive(false);
@@ -310,12 +306,12 @@ public class ZoneManager : MonoBehaviour
         LoadZone();
         if (hideMachine)
         {
-            if(paintingMachine != null)
+            if (paintingMachine != null)
             {
                 paintingMachine.gameObject.SetActive(true);
                 paintAmmo.gameObject.SetActive(true);
             }
-            if(buildMachine != null)
+            if (buildMachine != null)
             {
                 buildMachine.gameObject.SetActive(true);
                 asphaltAmmo.gameObject.SetActive(true);
@@ -329,14 +325,16 @@ public class ZoneManager : MonoBehaviour
         }
     }
 
+    [ContextMenu("Load Zone")]
     public void LoadZone()
     {
-        //load level State
+        //load level State  
+
         zoneState = zoneData.ZoneState;
 
         if (GameManager.instance.currentZone == this)
         {
-            if(buildMachine != null)
+            if (buildMachine != null)
             {
                 if (buildMachine.machineUpgradeType != BuildMachineUpgradeType.none)
                 {
@@ -346,7 +344,7 @@ public class ZoneManager : MonoBehaviour
                     buildMachineUpgradeMenu.CheckButtons();
                 }
             }
-            if(paintingMachine != null)
+            if (paintingMachine != null)
             {
                 if (paintingMachine.hasUpgrade)
                 {
@@ -390,7 +388,8 @@ public class ZoneManager : MonoBehaviour
                 UIManager.instance.ChangeProgressBarIcon(0);
                 break;
             case ZoneState.BuildingStage:
-                lockedBlocks.SetActive(false);
+                if (lockedBlocks != null)
+                    lockedBlocks.SetActive(false);
                 if (zoneCollider != null)
                     zoneCollider.gameObject.SetActive(false);
                 // load buildable and building machine
@@ -435,7 +434,7 @@ public class ZoneManager : MonoBehaviour
                 upgrades.SetActive(false);
                 removableBlock.SetActive(false);
                 //asphaltBlock.SetActive(true);
-                if(paintingMachine != null)
+                if (paintingMachine != null)
                     paintBlock.gameObject.SetActive(true);
                 //buildableManager.LoadBuildables(zoneData.BuildableDatas, false);
                 if (buildMachine != null)
@@ -449,7 +448,7 @@ public class ZoneManager : MonoBehaviour
                         paintingMachine.gameObject.SetActive(false);
                         paintAmmo.gameObject.SetActive(false);
                     }
-                    if(buildMachine != null)
+                    if (buildMachine != null)
                         buildMachine.gameObject.SetActive(false);
                     asphaltAmmo.gameObject.SetActive(false);
                     wheelBarrow.gameObject.SetActive(false);
@@ -473,7 +472,7 @@ public class ZoneManager : MonoBehaviour
                         paintingMachine.gameObject.SetActive(false);
                         paintAmmo.gameObject.SetActive(false);
                     }
-                    if(buildMachine != null)
+                    if (buildMachine != null)
                     {
                         buildMachine.gameObject.SetActive(false);
                         asphaltAmmo.gameObject.SetActive(false);
@@ -482,7 +481,7 @@ public class ZoneManager : MonoBehaviour
                     upgrades.SetActive(false);
                 }
                 peelableManager.ShowCopyOnly();
-                if(lockedBlocks != null)
+                if (lockedBlocks != null)
                 {
                     removableBlock.SetActive(false);
                     lockedBlocks.SetActive(true);
@@ -501,7 +500,7 @@ public class ZoneManager : MonoBehaviour
         zoneData.currentPeelableBlock = peelableManager.currentBlockNumber;
         playerData.PlayerPosition = player.transform.position;
         playerData.PlayerRotation = player.transform.eulerAngles;
-        if(player.wheelBarrow != null)
+        if (player.wheelBarrow != null)
         {
             playerData.HasWheelBarrow = true;
             playerData.WheelBarrowPosition = player.wheelBarrow.transform.position;
@@ -578,13 +577,13 @@ public class ZoneManager : MonoBehaviour
         {
             for (int i = 0; i < playerData.playerCollectables.Count; i++)
             {
-                if(playerData.playerCollectables[i].index == index)
+                if (playerData.playerCollectables[i].index == index)
                 {
                     collectableData = playerData.playerCollectables[i];
                     break;
                 }
             }
-            if(collectableData != null)
+            if (collectableData != null)
                 playerData.playerCollectables.Remove(collectableData);
         }
         else
@@ -612,11 +611,11 @@ public class ZoneManager : MonoBehaviour
         MoneyData moneyData = null;
         for (int i = 0; i < zoneData.MoneyDatas.Count; i++)
         {
-            if(zoneData.MoneyDatas[i].Index == index && zoneData.MoneyDatas[i].Price == price)
+            if (zoneData.MoneyDatas[i].Index == index && zoneData.MoneyDatas[i].Price == price)
             {
                 moneyData = zoneData.MoneyDatas[i];
                 break;
-            }   
+            }
         }
         if (moneyData != null)
             zoneData.MoneyDatas.Remove(moneyData);

@@ -24,30 +24,30 @@ public class Buildable : MonoBehaviour
         initialscale = transform.localScale;
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(GameManager.instance.player.asphaltMachine != null)
-        {
-            if(GameManager.instance.player.asphaltMachine.UseAsphalt())
-                BuildPiece();
-        }
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if(GameManager.instance.player.asphaltMachine != null)
+    //    {
+    //        if(GameManager.instance.player.asphaltMachine.UseAsphalt())
+    //            BuildPiece();
+    //    }
+    //}
 
-    private void BuildPiece()
+    public void BuildPiece(BuildMachine _bm)    
     {
         GameManager.instance.currentZone.SaveBuildable(index, true);
         buildableCollider.enabled = false;
-        buildableRenderer.enabled = true;
+        buildableRenderer.enabled = true;   
         float duration = 0.265f;
-        if (GameManager.instance.player.asphaltMachine.partsSpawnPoints.Length > 0)
+        if (_bm.partsSpawnPoints.Length > 0)
         {
-            transform.position = GameManager.instance.player.asphaltMachine.GetNearestSpawnPoint(transform.position).position;
+            transform.position = _bm.GetNearestSpawnPoint(transform.position).position;
             transform.localScale = Vector3.one;
             duration = 0.4f;
         }
         else
         {
-            transform.position = GameManager.instance.player.asphaltMachine.partsSpawnPoint.position + GameManager.instance.player.asphaltMachine.partsSpawnPoint.right * Random.Range(-1.5f, 1.5f);
+            transform.position = _bm.partsSpawnPoint.position + _bm.partsSpawnPoint.right * Random.Range(-1.5f, 1.5f);
             transform.localScale = Vector3.zero;
         }
         
@@ -74,12 +74,6 @@ public class Buildable : MonoBehaviour
                 if (smoke != null)
                     SmokePooler.instance.ReturnSmoke(smoke);
             });
-
-        if (GameManager.instance.player.canDoStrictedHaptic)
-        {
-            EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
-            GameManager.instance.player.canDoStrictedHaptic = false;
-        }
     }
 
 #if UNITY_EDITOR
