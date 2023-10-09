@@ -102,6 +102,9 @@ namespace GameAnalyticsSDK.Wrapper
         private static extern void setEventSubmission(bool enabled);
 
         [DllImport ("__Internal")]
+        private static extern void setEventSubmission(bool enabled, bool doCache);
+
+        [DllImport ("__Internal")]
         private static extern void gameAnalyticsStartSession();
 
         [DllImport ("__Internal")]
@@ -137,6 +140,13 @@ namespace GameAnalyticsSDK.Wrapper
 
         [DllImport ("__Internal")]
         private static extern long stopTimer(string key);
+
+        [DllImport ("__Internal")]
+        [return: MarshalAs(UnmanagedType.LPStr)]
+        public static extern string getUserId();
+
+        [DllImport ("__Internal")]
+        public static extern void useRandomizedId(bool flag);
 
         private static void initialize(string gamekey, string gamesecret)
         {

@@ -80,6 +80,14 @@ namespace GameAnalyticsSDK.Wrapper
             }
         }
 
+        public static string getUserId() {
+            if (GameAnalytics.SettingsGA.InfoLogEditor) {
+                Debug.Log ("getUserId");
+            }
+
+            return "";
+        }
+
         private static void initialize (string gamekey, string gamesecret)
         {
             if (GameAnalytics.SettingsGA.InfoLogEditor) {
@@ -403,6 +411,15 @@ namespace GameAnalyticsSDK.Wrapper
             setEventSubmission (enabled);
         }
 
+        public static void SetEnabledEventSubmission (bool enabled, bool doCache)
+        {
+            #if !UNITY_EDITOR && (UNITY_IOS || UNITY_ANDROID)
+                setEventSubmission (enabled, doCache);
+            #else
+                setEventSubmission (enabled);
+            #endif
+        }
+
         public static void SetAutoDetectAppVersion (bool flag)
         {
             configureAutoDetectAppVersion (flag);
@@ -698,4 +715,5 @@ namespace GameAnalyticsSDK.Wrapper
 #endif
         }
     }
+
 }

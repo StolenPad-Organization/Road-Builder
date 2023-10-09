@@ -1,4 +1,3 @@
-using HomaGames.HomaBelly;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,12 +19,11 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Start()
     {
+        YsoCorp.GameUtils.YCManager.instance.OnGameStarted(1);
         Application.targetFrameRate = 60;
         UIManager.instance.transitionAnim.gameObject.SetActive(true);
-        DefaultAnalytics.GameplayStarted();
         yield return new WaitForSeconds(0.1f);
         levelData = Database.Instance.GetLevelData();
-        DefaultAnalytics.LevelStarted(levelData.LevelTextValue);
         levelProgressData = Database.Instance.GetLevelProgressData(levelData.LevelValue - 1);
         currentZone = zones[levelProgressData.ZoneIndex];
         LoadLevel();
@@ -59,8 +57,7 @@ public class GameManager : MonoBehaviour
     }
     public void WinLevel()
     {
-        DefaultAnalytics.LevelCompleted();
-
+        YsoCorp.GameUtils.YCManager.instance.OnGameFinished(true);
         PlayerData playerData = Database.Instance.GetPlayerData();
         playerData.ResetData();
         Database.Instance.SetPlayerData(playerData);

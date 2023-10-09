@@ -1,4 +1,3 @@
-using HomaGames.HomaBelly;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -117,7 +116,7 @@ public class ZoneManager : MonoBehaviour
         
     }
 
-    private void SendProgressionEvent(ProgressionStatus status)
+    private void SendProgressionEvent(string status)
     {
         string message = "";
         switch (zoneState)
@@ -132,7 +131,6 @@ public class ZoneManager : MonoBehaviour
                 message = "Level " + levelData.LevelTextValue + " / Zone :" + GameManager.instance.levelProgressData.ZoneIndex + " / " + "Painting Stage";
                 break;
         }
-        HomaBelly.Instance.TrackProgressionEvent(status, message);
     }
 
     public void OnBlockRemove(int _blockNumber, bool load = false)
@@ -150,7 +148,7 @@ public class ZoneManager : MonoBehaviour
     }
     public void ShowAsphaltMachine()
     {
-        SendProgressionEvent(ProgressionStatus.Complete);
+      //  SendProgressionEvent(ProgressionStatus.Complete);
         EventManager.invokeHaptic.Invoke(vibrationTypes.Success);
 
         if(buildMachine == null)
@@ -170,7 +168,7 @@ public class ZoneManager : MonoBehaviour
     {
         lockedBlocks.SetActive(false);
         UIManager.instance.UpdateStepText();
-        SendProgressionEvent(ProgressionStatus.Start);
+        // SendProgressionEvent(ProgressionStatus.Start);
 
         UIManager.instance.ChangeProgressBarIcon(1);
         UIManager.instance.UpdateProgressBar(0);
@@ -199,7 +197,7 @@ public class ZoneManager : MonoBehaviour
     {
         if (buildMachine != null) 
         {
-            SendProgressionEvent(ProgressionStatus.Complete);
+            //  SendProgressionEvent(ProgressionStatus.Complete);
             asphaltBlock.gameObject.SetActive(false);
             completeBlocks.SetActive(true);
             EventManager.invokeHaptic.Invoke(vibrationTypes.Success);
@@ -231,7 +229,7 @@ public class ZoneManager : MonoBehaviour
     public void StartPaintStage()
     {
         lockedBlocks.SetActive(false);
-        SendProgressionEvent(ProgressionStatus.Start);
+        // SendProgressionEvent(ProgressionStatus.Start);
         UIManager.instance.ChangeProgressBarIcon(2);
         UIManager.instance.UpdateProgressBar(0);
         UIManager.instance.UpdateStepText();
@@ -263,7 +261,7 @@ public class ZoneManager : MonoBehaviour
         playerData.playerCollectables.Clear();
         playerData.wheelBarrowCollectables.Clear();
 
-        SendProgressionEvent(ProgressionStatus.Complete);
+        // SendProgressionEvent(ProgressionStatus.Complete);
         EventManager.invokeHaptic.Invoke(vibrationTypes.Success);
         yield return new WaitForSeconds(1.0f);
 
@@ -491,7 +489,7 @@ public class ZoneManager : MonoBehaviour
             default:
                 break;
         }
-        SendProgressionEvent(ProgressionStatus.Start);
+        //   SendProgressionEvent(ProgressionStatus.Start);
     }
 
     public ZoneData SaveZone()
