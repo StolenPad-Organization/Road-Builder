@@ -11,6 +11,8 @@ public enum ScrapeToolType
 
 public class ScrapeTool : MonoBehaviour
 {
+    public PlayerController player;
+    public Collector collector;
     public ScrapeToolType scrapeToolType;
     public float power;
     [SerializeField] private GameObject shovelHead;
@@ -42,12 +44,12 @@ public class ScrapeTool : MonoBehaviour
         showing = show;
         if (showing)
         {
-            transform.SetParent(PlayerController.instance.showPos);
-            PlayerController.instance.movementController.ToggleMovementAnimation(true);
+            transform.SetParent(player.showPos);
+            player.movementController.ToggleMovementAnimation(true);
             if (toolAngleController == null)
-                PlayerController.instance.movementController.canRecoverSpeed = false;
+                player.movementController.canRecoverSpeed = false;
             else
-                PlayerController.instance.movementController.canRecoverSpeed = true;
+                player.movementController.canRecoverSpeed = true;
             showCollider.SetActive(true);
             hideCollider.SetActive(false);
 
@@ -55,9 +57,9 @@ public class ScrapeTool : MonoBehaviour
         }
         else
         {
-            transform.SetParent(PlayerController.instance.hidePos);
-            PlayerController.instance.movementController.ToggleMovementAnimation(true);
-            PlayerController.instance.movementController.canRecoverSpeed = true;
+            transform.SetParent(player.hidePos);
+            player.movementController.ToggleMovementAnimation(true);
+            player.movementController.canRecoverSpeed = true;
             showCollider.SetActive(false);
             hideCollider.SetActive(true);
             if (toolAngleController != null)
@@ -74,7 +76,7 @@ public class ScrapeTool : MonoBehaviour
         if (shakeTween != null || !canShake) return;
         shakeTween = shovelHead.transform.DOScale(currentScale * 2f, 0.1f).OnComplete(() =>
         {
-            PlayerController.instance.EmitDust();
+            player.EmitDust();
             shakeTween = shovelHead.transform.DOScale(currentScale, 0.1f).OnComplete(() => shakeTween = null);
         });
     }

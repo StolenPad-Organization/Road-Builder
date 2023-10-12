@@ -8,7 +8,7 @@ public class PaintableWallTrigger : MonoBehaviour
     [SerializeField] private Transform distanceTarget;
     void Start()
     {
-        playerController = PlayerController.instance;
+        playerController = GameManager.instance.player;
     }
 
     private void OnTriggerEnter(Collider other)

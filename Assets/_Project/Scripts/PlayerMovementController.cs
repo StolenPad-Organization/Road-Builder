@@ -1,39 +1,42 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class PlayerMovementController : MonoBehaviour
 {
     public UltimateJoystick joystick;
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float paintMoveSpeed = 5f;
-    [SerializeField] private float angleSpeed = 2f;
+    [SerializeField] protected float moveSpeed = 5f;
+    [SerializeField] protected float paintMoveSpeed = 5f;
+    [SerializeField] protected float angleSpeed = 2f;
     [SerializeField] private float rotationSpeed = 5.0f;
     [SerializeField] private float originalRotationSpeed = 5.0f;
-    [SerializeField] private Animator anim;
-    private Vector3 moveDirection = Vector3.zero;
+    [SerializeField] protected Animator anim;
+    protected Vector3 moveDirection = Vector3.zero;
     public bool canMove = false;
     public bool canRotate;
-    [SerializeField] private float speedMultiplayer = 100;
-    [SerializeField] private float speedMultiplayerMax = 100;
+    [SerializeField] protected float speedMultiplayer = 100;
+    [SerializeField] protected float speedMultiplayerMax = 100;
     public bool canRecoverSpeed;
-    private PlayerController playerController;
-    [SerializeField] private bool drive;
-    private bool move;
-    [SerializeField] private Rigidbody rb;
+    public PlayerController playerController;
+    [SerializeField] protected bool drive;
+    protected bool move;
+    [SerializeField] protected Rigidbody rb;
     private RBManagerJobs rbManager;
     private GameManager gameManager;
     public bool insideAngleTrigger;
 
-    private float horizontalInput;
-    private float verticalInput;
+    protected float horizontalInput;
+    protected float verticalInput;
 
     private float walkType;
 
-    void Start()
+
+
+    private void Start()
     {
-        playerController = PlayerController.instance;
+        //playerController = GameManager.instance.player;
         rbManager = RBManagerJobs.Instance;
         gameManager = GameManager.instance;
     }
@@ -43,7 +46,7 @@ public class PlayerMovementController : MonoBehaviour
         speedMultiplayer = amount;
     }
 
-    void FixedUpdate()
+   protected virtual void FixedUpdate()
     {
         if (!canMove) return;
 
@@ -54,8 +57,10 @@ public class PlayerMovementController : MonoBehaviour
                 speedMultiplayer = speedMultiplayerMax;
         }
 
+
         horizontalInput = joystick.HorizontalAxis;
         verticalInput = joystick.VerticalAxis;
+
         moveDirection.x = horizontalInput;
         moveDirection.z = verticalInput;
         moveDirection.Normalize();
@@ -108,7 +113,7 @@ public class PlayerMovementController : MonoBehaviour
         //}
     }
 
-    private void Rotate()
+    protected void Rotate()
     {
         //rb.MoveRotation(Quaternion.LookRotation(moveDirection));
 
@@ -134,7 +139,7 @@ public class PlayerMovementController : MonoBehaviour
         SetAnimation();
     }
 
-    private void ToggleMoveAnimation(bool activate)
+    protected void ToggleMoveAnimation(bool activate)
     {
         if (drive || move == activate) return;
         move = activate;
@@ -155,8 +160,8 @@ public class PlayerMovementController : MonoBehaviour
             }
             else
             {
-                if(playerController == null)
-                    playerController = PlayerController.instance;
+                //if(playerController == null)
+                //    playerController = GameManager.instance.player;
 
                 if (playerController.scrapeToolHolder.gameObject.activeInHierarchy || playerController.paintMachine != null || 
                     (playerController.asphaltMachine != null && !playerController.asphaltMachine.drivable))
@@ -219,7 +224,7 @@ public class PlayerMovementController : MonoBehaviour
         }
     }
 
-    private void SetPushSpeed()
+    protected void SetPushSpeed()
     {
         anim.SetFloat("PushSpeed", speedMultiplayer / 100);
     }
@@ -251,4 +256,6 @@ public class PlayerMovementController : MonoBehaviour
                 speedMultiplayer = speedMultiplayerMax;
             });
     }
+
+    
 }

@@ -57,12 +57,12 @@ public class PaintMachine : MonoBehaviour
 
         if (used)
         {
-            if (!anim.GetBool("Run") && PlayerController.instance.MovementCheck())
+            if (!anim.GetBool("Run") && GameManager.instance.player.MovementCheck())
             {
                 anim.SetBool("Run", true);
             }
 
-            if (anim.GetBool("Run") && !PlayerController.instance.MovementCheck())
+            if (anim.GetBool("Run") && !GameManager.instance.player.MovementCheck())
             {
                 anim.SetBool("Run", false);
             }
@@ -82,13 +82,13 @@ public class PaintMachine : MonoBehaviour
     {
         if (!used && other.CompareTag("Player"))
         {
-            PlayerController.instance.paintMachine = this;
+            GameManager.instance.player.paintMachine = this;
             used = true;
             
             if(machineIcon != null)
                 machineIcon.Fade();
-            PlayerController.instance.movementController.canMove = false;
-            PlayerController.instance.SetWalkType(0);
+            GameManager.instance.player.movementController.canMove = false;
+            GameManager.instance.player.SetWalkType(0);
 
             StartCoroutine(PaintMachineEquipe());
         }
@@ -97,17 +97,17 @@ public class PaintMachine : MonoBehaviour
     IEnumerator PaintMachineEquipe()
     {
         yield return new WaitForSeconds(0.75f);
-        transform.SetParent(PlayerController.instance.transform);
+        transform.SetParent(GameManager.instance.player.transform);
         transform.DOLocalJump(Vector3.zero, 1.5f, 1, 0.5f);
         transform.DOLocalRotate(Vector3.zero, 0.5f);
         GameManager.instance.currentZone.StartPaintStage();
         if (toolAngleController == null)
-            PlayerController.instance.TogglePaintCollider(true);
+            GameManager.instance.player.TogglePaintCollider(true);
         else
             toolAngleController.OnPick();
         playerTrigger.SetActive(false);
         partsTrigger.SetActive(true);
-        PlayerController.instance.movementController.canMove = true;
+        GameManager.instance.player.movementController.canMove = true;
     }
 
     public void FillPaint()
@@ -141,7 +141,7 @@ public class PaintMachine : MonoBehaviour
             if (!emptyWarning.activeInHierarchy)
             {
                 emptyWarning.SetActive(true);
-                PlayerController.instance.arrowController.GetNewTarget();
+                GameManager.instance.player.arrowController.GetNewTarget();
             }
             return false;
         }
@@ -165,7 +165,7 @@ public class PaintMachine : MonoBehaviour
         //transform.DOMove(GameManager.instance.currentZone.machinesPosition.position + Vector3.right * 1.75f, 2.0f).OnComplete(()=>
         //{
         used = false;
-            PlayerController.instance.arrowController.PointToObject(gameObject);
+            GameManager.instance.player.arrowController.PointToObject(gameObject);
         //anim.SetBool("Run", false);
         //});
         if (machineIcon != null)

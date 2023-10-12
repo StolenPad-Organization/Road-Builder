@@ -18,6 +18,6 @@ public class ForceWalkTrigger : MonoBehaviour
     private void OnDisable()
     {
         if(isPlayerInside)
-            PlayerController.instance.RemoveWalkTrigger();
+            GameManager.instance.player.RemoveWalkTrigger();
     }
 }

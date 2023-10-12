@@ -23,13 +23,13 @@ public class PaintMachineUpgradeMenuTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         uIManager.ShowPaintMachineUpgradeMenu();
-        PlayerController.instance.ActivateUpgradeCamera(true);
+        GameManager.instance.player.ActivateUpgradeCamera(true);
     }
 
     private void OnTriggerExit(Collider other)
     {
         uIManager.HidePaintMachineUpgradeMenu();
-        PlayerController.instance.ActivateUpgradeCamera(false);
+        GameManager.instance.player.ActivateUpgradeCamera(false);
     }
 
     private void PlayUpgradeEffect()

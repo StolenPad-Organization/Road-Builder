@@ -2,14 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
-    public static PlayerController instance;
+    //public static PlayerController instance;
 
     public PlayerMovementController movementController;
-    [SerializeField] private List<Peelable> collectables;
-    [SerializeField] private float collectablesLimit;
+    [SerializeField] public List<Peelable> collectables;
+    [SerializeField] public float collectablesLimit;
+    [SerializeField] public bool EmptyCollectables;     
     [SerializeField] private float collectableOffest;
     [SerializeField] private float angleCollectableOffest;
     [SerializeField] private Transform collectableParent;
@@ -70,9 +72,13 @@ public class PlayerController : MonoBehaviour
 
     private int walkTriggersCount = 0;
 
+    public Action OnFullCollectables;
+
+    public bool ReadyToBuild;
+
     private void Awake()
     {
-        instance = this;
+        //instance = this;
     }
 
     void Start()
@@ -233,6 +239,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnCollect(Peelable collectable)
     {
+        EmptyCollectables = false;
         lastToolUsingTime = toolCoolDown;
         if (!scrapeTool.showing && !fullWarning.activeInHierarchy)
             scrapeTool.ShowTool(true);
@@ -247,15 +254,16 @@ public class PlayerController : MonoBehaviour
         }
         if (collectables.Count >= collectablesLimit) return;
         if (scrapeTool.toolAngleController != null)
-            collectable.Collect(collectables.Count, angleCollectableOffest, collectableParent);
+            collectable.Collect(collectables.Count, angleCollectableOffest, collectableParent, this);
         else
-            collectable.Collect(collectables.Count, collectableOffest, collectableParent);
+            collectable.Collect(collectables.Count, collectableOffest, collectableParent, this);
         collectables.Add(collectable);
         GameManager.instance.currentZone.AddCollectableData(true, collectable.index);
         if (collectables.Count >= collectablesLimit)
         {
             fullWarning.SetActive(true);
             arrowController.GetNewTarget();
+            OnFullCollectables?.Invoke();
         }
     }
 
@@ -279,6 +287,26 @@ public class PlayerController : MonoBehaviour
         if (fullWarning.activeInHierarchy)
             fullWarning.SetActive(false);
     }
+    public void AISellCollectable(AISellPoint sellPoint,ScrappingAIController ai)
+    {
+        if (collectables.Count == 0)
+        {
+            EmptyCollectables = true;
+            return;
+        }
+        if (!sellPoint.CheckCanGetPeelable())
+        {
+            ai.CheckIfCanWorkOnSell();
+            return;
+        }
+
+        Peelable collectable = collectables[collectables.Count - 1];
+        collectables.Remove(collectable);
+        collectable.AISell(sellPoint,ai);
+        //GameManager.instance.currentZone.RemoveCollectableData(true, collectable.index);
+        if (fullWarning.activeInHierarchy)
+            fullWarning.SetActive(false);
+    }
 
     public void ChangeScrapeTool(int index)
     {
@@ -290,6 +318,8 @@ public class PlayerController : MonoBehaviour
         if (index >= scrapeToolsPrefabs.Length)
             index = scrapeToolsPrefabs.Length - 1;
         scrapeTool = Instantiate(scrapeToolsPrefabs[index], scrapeToolHolder);
+        scrapeTool.player = this;
+        scrapeTool.collector.player = this;
         scrapeTool.ShowTool(false);
 
         if(scrapeTool.toolAngleController != null)

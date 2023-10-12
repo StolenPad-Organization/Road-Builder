@@ -22,26 +22,26 @@ public class Paintable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (PlayerController.instance.paintMachine != null && !fullyPainted)
+        if (GameManager.instance.player.paintMachine != null && !fullyPainted)
         {
             if (other.CompareTag("FootTrigger")) return;
-            if (PlayerController.instance.paintMachine.UsePaint())
+            if (GameManager.instance.player.paintMachine.UsePaint())
                 PaintPiece();
         }
         if (fullyPainted && other.CompareTag("FootTrigger"))
         {
-            PlayerController.instance.ActivateFootPrints(true);
+            GameManager.instance.player.ActivateFootPrints(true);
         }
     }
 
     private void PaintPiece()
     {
         fullyPainted = true;
-        PlayerController.instance.movementController.SetSpeedMultiplayer(50);
+        GameManager.instance.player.movementController.SetSpeedMultiplayer(50);
         GameManager.instance.currentZone.SavePaintable(index, true);
         //paintableCollider.enabled = false;
         paintableRenderer.enabled = true;
-        transform.position = PlayerController.instance.paintMachine.partsSpawnPoint.position + PlayerController.instance.paintMachine.partsSpawnPoint.right * Random.Range(-0.5f, 0.5f);
+        transform.position = GameManager.instance.player.paintMachine.partsSpawnPoint.position + GameManager.instance.player.paintMachine.partsSpawnPoint.right * Random.Range(-0.5f, 0.5f);
         transform.localScale = Vector3.zero;
         transform.DOLocalMove(initialPos, 0.1f).OnComplete(() =>
         {
@@ -49,17 +49,17 @@ public class Paintable : MonoBehaviour
 
             //Material mat = paintableRenderer.material;
             //float t = 1.0f;
-            //DOTween.To(() => t, x => t = x, 0.0f, PlayerController.instance.paintMachine.paintDuration)
-            //   .OnUpdate(() => mat.SetFloat("_Animation", t)).SetDelay(PlayerController.instance.paintMachine.paintDelay);
+            //DOTween.To(() => t, x => t = x, 0.0f, GameManager.instance.player.paintMachine.paintDuration)
+            //   .OnUpdate(() => mat.SetFloat("_Animation", t)).SetDelay(GameManager.instance.player.paintMachine.paintDelay);
             GameManager.instance.currentZone.paintableManager.OnPaint(transform.position);
         });
         transform.DOLocalRotate(initialRot, 0.1f);
         transform.DOScale(initialscale, 0.1f);
 
-        if (PlayerController.instance.canDoStrictedHaptic)
+        if (GameManager.instance.player.canDoStrictedHaptic)
         {
             EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
-            PlayerController.instance.canDoStrictedHaptic = false;
+            GameManager.instance.player.canDoStrictedHaptic = false;
         }
     }
 

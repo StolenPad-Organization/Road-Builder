@@ -88,6 +88,7 @@ public class RBSplitter : MonoBehaviour
                 RbTileList.Add(rbtile);
                 Grid.Add(i, j, rbtile);
                 Undo.RegisterCreatedObjectUndo(newColliderGO, "Created new Box Collider");
+                rbtile.DebugBounds();
             }
         }
 

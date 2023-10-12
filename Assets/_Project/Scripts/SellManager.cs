@@ -26,7 +26,7 @@ public class SellManager : MonoBehaviour
         {
             if(nextSell <= 0)
             {
-                PlayerController.instance.SellCollectable(sellPoint);
+                GameManager.instance.player.SellCollectable(sellPoint);
                 sellCount++;
                 nextSell = currentSellRate - (sellCount * 0.005f);
                 if (nextSell < 0.01f) nextSell = 0.01f;
@@ -43,12 +43,12 @@ public class SellManager : MonoBehaviour
         currentSellRate = sellRate;
         selling = true;
         nextSell = 0;
-        PlayerController.instance.ActivateUpgradeCamera(true);
+        GameManager.instance.player.ActivateUpgradeCamera(true);
     }
     private void OnTriggerExit(Collider other)
     {
         selling = false;
-        PlayerController.instance.ActivateUpgradeCamera(false);
+        GameManager.instance.player.ActivateUpgradeCamera(false);
     }
 
     public MoneySpot GetMoneySpot()

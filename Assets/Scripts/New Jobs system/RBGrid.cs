@@ -62,9 +62,9 @@ public class Grid<T> where T : GridElement
 
         return at;
     }
-    private T GetCell(int row, int column)
+    public T GetCell(int row, int column)
     {
-        //if (!CheckCellIndex(row, column)) return default;
+        if (!CheckCellIndex(row, column)) return default;
 
         return Rows[row].Column[column];
     }

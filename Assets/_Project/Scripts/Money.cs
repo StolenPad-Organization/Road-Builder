@@ -31,10 +31,10 @@ public class Money : MonoBehaviour
 
     private void Collect()
     {
-        if (PlayerController.instance.canDoStrictedHaptic)
+        if (GameManager.instance.player.canDoStrictedHaptic)
         {
             EventManager.invokeHaptic.Invoke(vibrationTypes.LightImpact);
-            PlayerController.instance.canDoStrictedHaptic = false;
+            GameManager.instance.player.canDoStrictedHaptic = false;
         }
         target.used = false;
         EventManager.AddMoney.Invoke(value, transform);

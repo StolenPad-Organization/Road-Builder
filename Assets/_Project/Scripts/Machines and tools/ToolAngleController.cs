@@ -40,7 +40,7 @@ public class ToolAngleController : MonoBehaviour
 
     void Start()
     {
-        joystick = PlayerController.instance.movementController.joystick;
+        joystick = GameManager.instance.player.movementController.joystick;
         //CalculateScale(index);
     }
 
